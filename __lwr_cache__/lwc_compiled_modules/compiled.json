@@ -1,0 +1,130 @@
+[
+  [
+    "example/app@0.0.1",
+    {
+      "ownHash": "71cb8f8c42b428459408dca3e0ae787d",
+      "module": "./cache/example_app_0_0_1.js",
+      "moduleMeta": "./cache/example_app_0_0_1.meta.json"
+    }
+  ],
+  [
+    "lwr/esmLoader@0.6.5",
+    {
+      "ownHash": "c2acce481c2e03203b128b8d3f26fd22",
+      "module": "./cache/lwr_esmLoader_0_6_5.js",
+      "moduleMeta": "./cache/lwr_esmLoader_0_6_5.meta.json"
+    }
+  ],
+  [
+    "lwr/preInit@0.6.5",
+    {
+      "ownHash": "4abc90ae314e383e4c23f4dc607d9643",
+      "module": "./cache/lwr_preInit_0_6_5.js",
+      "moduleMeta": "./cache/lwr_preInit_0_6_5.meta.json"
+    }
+  ],
+  [
+    "lwr/hmr@0.6.5",
+    {
+      "ownHash": "2f68061c139772e4a92f0fa94287e855",
+      "module": "./cache/lwr_hmr_0_6_5.js",
+      "moduleMeta": "./cache/lwr_hmr_0_6_5.meta.json"
+    }
+  ],
+  [
+    "lwr/init@0.6.5",
+    {
+      "ownHash": "6258bcb20cc2d5d6a9f3c5a6f9d0acaf",
+      "module": "./cache/lwr_init_0_6_5.js",
+      "moduleMeta": "./cache/lwr_init_0_6_5.meta.json"
+    }
+  ],
+  [
+    "lwr/hmr#util/swap@0.6.5",
+    {
+      "ownHash": "b90e85947b9514fa4d53fbced946e451",
+      "module": "./cache/lwr_hmr_util_swap_0_6_5.js",
+      "moduleMeta": "./cache/lwr_hmr_util_swap_0_6_5.meta.json"
+    }
+  ],
+  [
+    "lwr/metrics@0.6.5",
+    {
+      "ownHash": "6b913486b13cd66431c3290dec2a60cf",
+      "module": "./cache/lwr_metrics_0_6_5.js",
+      "moduleMeta": "./cache/lwr_metrics_0_6_5.meta.json"
+    }
+  ],
+  [
+    "lwr/profiler@0.6.5",
+    {
+      "ownHash": "5a10236d8c52bc9f6dee22875cd7016d",
+      "module": "./cache/lwr_profiler_0_6_5.js",
+      "moduleMeta": "./cache/lwr_profiler_0_6_5.meta.json"
+    }
+  ],
+  [
+    "lwc@2.5.8",
+    {
+      "ownHash": "b80931622ff351177ea774ccf430e35b",
+      "module": "./cache/lwc_2_5_8.js",
+      "moduleMeta": "./cache/lwc_2_5_8.meta.json"
+    }
+  ],
+  [
+    "example/app#app.html@0.0.1",
+    {
+      "ownHash": "ad1f3f8583d9184c7f458e0911cf7047",
+      "module": "./cache/example_app_app_html_0_0_1.js",
+      "moduleMeta": "./cache/example_app_app_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "example/app#app.css@0.0.1",
+    {
+      "ownHash": "85c881c185f08e541373b2b395ed488c",
+      "module": "./cache/example_app_app_css_0_0_1.js",
+      "moduleMeta": "./cache/example_app_app_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "example/app#app.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/example_app_app_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/example_app_app_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/app@0.0.1",
+    {
+      "ownHash": "71cb8f8c42b428459408dca3e0ae787d",
+      "module": "./cache/c_app_0_0_1.js",
+      "moduleMeta": "./cache/c_app_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/app#app.html@0.0.1",
+    {
+      "ownHash": "ad1f3f8583d9184c7f458e0911cf7047",
+      "module": "./cache/c_app_app_html_0_0_1.js",
+      "moduleMeta": "./cache/c_app_app_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/app#app.css@0.0.1",
+    {
+      "ownHash": "85c881c185f08e541373b2b395ed488c",
+      "module": "./cache/c_app_app_css_0_0_1.js",
+      "moduleMeta": "./cache/c_app_app_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/app#app.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/c_app_app_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/c_app_app_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ]
+]

@@ -1,10 +1,17 @@
 {
     "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
+    "bundleConfig": { "exclude": ["lwc"] },
     "routes": [
         {
             "id": "example",
+            "path": "/example",
+            "rootComponent": "c/app"
+        },
+        {
+            "id": "Home",
             "path": "/",
-            "rootComponent": "example/app"
+            "contentTemplate": "$contentDir/home.md",
+            "layoutTemplate": "$layoutsDir/main_layout.njk"
         }
     ]
 }
