@@ -1,0 +1,21 @@
+{
+  "name": "qudzoo",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf __lwr_cache__",
+    "dev": "lwr serve",
+    "start": "lwr serve --mode prod",
+    "start:compat": "lwr serve --mode compat",
+    "start:prod-compat": "lwr serve --mode prod-compat"
+  },
+  "dependencies": {
+    "lwc": "2.5.8",
+    "lwr": "0.6.5"
+  },
+  "engines": {
+    "node": ">=14.15.4 <17"
+  }
+}
