@@ -1,0 +1,12 @@
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    width: 55vw;
+}
+
+.sidebar {
+    width: 20vw;
+}

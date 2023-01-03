@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <title></title>
+        <link rel="stylesheet" href="$assetsDir/styles/advice.css" />
+        <link rel="stylesheet" href="$assetsDir/styles/global.css" />
+    </head>
+    <body>
+        <c-header></c-header>
+        <main>
+            <section>
+                <div class="sidebar">
+                    <div>
+                        <span id="mobile-contents"><c-table-of-contents></c-table-of-contents></span>
+                        <c-advice-articles></c-advice-articles>
+                    </div>
+                </div>
+            </section>
+            <section class="content">{{ body | safe }} {{ lwr_resources | safe }}</section>
+            <section id="desktop-contents">
+                <div class="sidebar">
+                    <c-table-of-contents></c-table-of-contents>
+                </div>
+            </section>
+        </main>
+        <c-footer></c-footer>
+    </body>
+</html>

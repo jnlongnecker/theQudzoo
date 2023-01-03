@@ -1,0 +1,10 @@
+<template>
+    <div class="container">
+        <h1>Advice Articles</h1>
+
+        <template for:each={articles} for:item="article">
+            <p key={article.link}><a class={article.class} href={article.link} onclick={handleClick}>{article.label}</a>
+            </p>
+        </template>
+    </div>
+</template>

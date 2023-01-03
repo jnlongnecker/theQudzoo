@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: -.5rem;
+}
+
+.content {
+    width: 55vw;
+}
+
+.sidebar {
+    width: 20vw;
+}

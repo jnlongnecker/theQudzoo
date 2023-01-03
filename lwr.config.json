@@ -12,6 +12,24 @@
             "path": "/",
             "contentTemplate": "$contentDir/home.md",
             "layoutTemplate": "$layoutsDir/main_layout.njk"
+        },
+        {
+            "id": "Tinkering",
+            "path": "/advice/tinkering",
+            "contentTemplate": "$contentDir/tinkering.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk"
+        },
+        {
+            "id": "Breakdown",
+            "path": "/advice/breakdown",
+            "contentTemplate": "$contentDir/breakdown.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk"
+        },
+        {
+            "id": "Mutations",
+            "path": "/advice/mutations",
+            "contentTemplate": "$contentDir/mutations.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk"
         }
     ]
 }

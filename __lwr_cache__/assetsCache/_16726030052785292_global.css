@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --bg-color: radial-gradient(rgba(5,41,41,0.9),rgba(8,14,14,0.9));
+    --hover-darken: rgba(8,14,14, 0.3);
+    --text-color: white;
+    --text-color-faded: rgba(255,255,255, 0.5);
+    --anchor-unvisited-color: #d3adc1;
+    --anchor-visited-color: #c27ba0;
+}
+
+html {
+    background-image: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: var(--anchor-unvisited-color);
+}
+
+a:visited {
+    color: var(--anchor-visited-color);
+}

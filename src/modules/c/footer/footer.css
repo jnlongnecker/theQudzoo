@@ -1,0 +1,18 @@
+footer {
+    border-top: 2px solid var(--hover-darken);
+    display: flex;
+    flex-direction: column;
+}
+
+
+a {
+    color: var(--anchor-unvisited-color);
+}
+
+a:visited {
+    color: var(--anchor-visited-color);
+}
+
+.links {
+    border-top: 2px solid var(--hover-darken);
+}

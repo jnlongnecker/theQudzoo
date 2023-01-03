@@ -1,0 +1,66 @@
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+}
+
+header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0;
+    border-bottom: 3px solid var(--text-color-faded);
+    background-color: var(--bg-color-dark);
+    height: calc(var(--heading-height) - 3px);
+    padding: 0 var(--desktop-margin-size);
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    width: 25vw;
+    color: var(--qudzoo-color);
+    font-weight: bold;
+}
+
+.site-name {
+    font-size: 2rem;
+    font-family: var(--qud-font);
+    margin: 0;
+    display: inline;
+}
+
+.blinker {
+    animation: blink forwards infinite 2s;
+}
+
+.links {
+    padding-top: 2px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dot-divider {
+    width: .25rem;
+    height: .25rem;
+    background-color: var(--text-color);
+    border-radius: 100%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 var(--mobile-margin-size);
+    }
+}

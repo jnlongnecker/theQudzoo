@@ -1,0 +1,10 @@
+<template>
+    <div class="container">
+        <h1><a onclick={scrollToTop}>{pageTitle}</a></h1>
+        <div class="sections">
+            <template for:each={sections} for:item="section">
+                <p class={section.class} key={section.id} onclick={sectionClicked}><a>{section.name}</a></p>
+            </template>
+        </div>
+    </div>
+</template>

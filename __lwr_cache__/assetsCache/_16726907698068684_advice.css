@@ -1,0 +1,61 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: -1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--h2-color);
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: var(--h3-color);
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: var(--h4-color);
+    margin: .75rem 0;
+}
+
+h3,h4 {
+    font-weight: normal;
+}
+
+hr {
+    height: 0;
+    border-top: solid 3px var(--text-color);
+}
+
+.content {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.sidebar {
+    min-width: 25vw;
+}
+
+.section-info {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-info p {
+    margin: 0;
+}
+
+.star-filled {
+    color: var(--star-filled-color);
+}
+
+.star-empty {
+    color: var(--text-color-inverted);
+}
