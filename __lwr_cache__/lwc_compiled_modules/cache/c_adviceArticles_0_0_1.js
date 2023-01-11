@@ -17,8 +17,11 @@ class AdviceArticles extends LightningElement {
           article.class = "selected";
           break;
         }
+        this.fetchQuests(path);
       });
     });
+  }
+  fetchQuests(path) {
     fetch("/api/quests").then(result => {
       result.json().then(payload => {
         this.quests = payload.quests;
@@ -44,6 +47,7 @@ class AdviceArticles extends LightningElement {
     }
   }
   buildItemList() {
+    this.itemList = [];
     for (let article of this.articles) {
       this.itemList.push(article);
       if (article.link.indexOf("quest") != -1) {

@@ -3,10 +3,10 @@ import { LightningElement, track } from "lwc";
 export default class AdviceArticles extends LightningElement {
 
     @track
-    itemList = []
+    itemList = [];
 
-    articles = []
-    quests = []
+    articles = [];
+    quests = [];
 
     connectedCallback() {
         let path = window.location.pathname;
@@ -22,9 +22,12 @@ export default class AdviceArticles extends LightningElement {
                             article.class = "selected";
                             break;
                         }
+                        this.fetchQuests(path);
                     })
             });
+    }
 
+    fetchQuests(path) {
         fetch("/api/quests")
             .then(result => {
                 result.json()
@@ -39,7 +42,6 @@ export default class AdviceArticles extends LightningElement {
                         this.buildItemList();
                     })
             });
-
     }
 
     handleClick(event) {
@@ -60,6 +62,7 @@ export default class AdviceArticles extends LightningElement {
     }
 
     buildItemList() {
+        this.itemList = [];
         for (let article of this.articles) {
             this.itemList.push(article);
 
