@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <title>qudzoo</title>
+        <link rel="stylesheet" href="$assetsDir/styles/global.css" />
+        <link rel="stylesheet" href="$assetsDir/styles/advice.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="$assetsDir/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="$assetsDir/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="$assetsDir/favicon/favicon-16x16.png">
+        <link rel="manifest" href="$assetsDir/favicon/site.webmanifest">
+    </head>
+    <body>
+        <c-header></c-header>
+        <main>
+            <section></section>
+            <section class="content">{{ body | safe }} {{ lwr_resources | safe }}</section>
+            <section id="desktop-contents">
+                <div class="sidebar">
+                    <c-table-of-contents></c-table-of-contents>
+                </div>
+            </section>
+        </main>
+        <c-footer></c-footer>
+    </body>
+</html>

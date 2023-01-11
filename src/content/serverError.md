@@ -1,0 +1,3 @@
+# Well, this is embarrassing...
+
+It seems you've done something that I wasn't expecting anyone to do. Home base doesn't know how to proceed. Let me know how this happened by sending a message using one of my social links in the footer.

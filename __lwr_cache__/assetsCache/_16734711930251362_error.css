@@ -1,0 +1,18 @@
+h1 {
+    font-style: var(--qud-font);
+    color: var(--qudzoo-color);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    display: flex;
+    gap: 5rem;
+}

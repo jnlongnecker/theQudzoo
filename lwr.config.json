@@ -1,12 +1,32 @@
 {
     "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
     "bundleConfig": { "exclude": ["lwc"] },
+    "errorRoutes": [
+        {
+            "id": "not_found",
+            "status": 404,
+            "contentTemplate": "$contentDir/clientError.md",
+            "layoutTemplate": "$layoutsDir/error_layout.njk"
+        },
+        {
+            "id": "server_error",
+            "status": 500,
+            "contentTemplate": "$contentDir/serverError.md",
+            "layoutTemplate": "$layoutsDir/error_layout.njk"
+        }
+    ],
     "routes": [
         {
             "id": "Home",
             "path": "/",
             "contentTemplate": "$contentDir/home.md",
             "layoutTemplate": "$layoutsDir/main_layout.njk"
+        },
+        {
+            "id": "Nerds",
+            "path": "/nerds",
+            "contentTemplate": "$contentDir/forNerds.md",
+            "layoutTemplate": "$layoutsDir/nerd_layout.njk"
         },
         {
             "id": "Story-Quests",

@@ -91,27 +91,34 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 16
   }, [api_text("Qudzoo Site Created and Maintained by Jared Longnecker")]), api_element("p", {
     key: 17
-  }, [api_text("Caves of Qud is a Freehold Games copyright")])])]), api_element("section", {
+  }, [api_text("Caves of Qud is a Freehold Games copyright")]), api_element("p", {
+    key: 18
+  }, [api_element("a", {
+    attrs: {
+      "href": "/nerds"
+    },
+    key: 19
+  }, [api_text("Site info")]), api_text(" for nerds")])])]), api_element("section", {
     classMap: {
       "links": true
     },
-    key: 18
+    key: 20
   }, api_flatten([api_element("h2", {
-    key: 19
+    key: 21
   }, [api_text("Caves of Qud Links")]), api_iterator($cmp.linkGrid, function (rowLinks) {
     return api_element("div", {
       classMap: {
         "row": true
       },
-      key: api_key(20, rowLinks.id)
+      key: api_key(22, rowLinks.id)
     }, api_iterator(rowLinks.links, function (link) {
       return api_element("button", {
-        key: api_key(21, link.link)
+        key: api_key(23, link.link)
       }, [api_element("a", {
         attrs: {
           "href": link.link
         },
-        key: 22
+        key: 24
       }, [api_text(api_dynamic_text(link.label))])]);
     }));
   })]))])];
