@@ -19,7 +19,7 @@ h1 {
     font-family: var(--qud-font);
 }
 
-.normal:hover {
+a:not(.selected):hover {
     background-color: var(--hover-darken);
 }
 
@@ -33,4 +33,8 @@ h1 {
 
 .selected:hover {
     cursor: default;
+}
+
+.indented {
+    padding-left: 1.4rem;
 }

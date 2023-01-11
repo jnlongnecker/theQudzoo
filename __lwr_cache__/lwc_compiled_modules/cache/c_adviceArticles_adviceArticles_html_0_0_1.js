@@ -13,7 +13,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 0
   }, api_flatten([api_element("h1", {
     key: 1
-  }, [api_text("Advice Articles")]), api_iterator($cmp.articles, function (article) {
+  }, [api_text("Advice Articles")]), api_iterator($cmp.itemList, function (article) {
     return api_element("p", {
       key: api_key(2, article.link)
     }, [api_element("a", {

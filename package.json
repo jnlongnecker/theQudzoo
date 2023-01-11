@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf __lwr_cache__",
-    "dev": "lwr serve",
-    "start": "lwr serve --mode prod",
+    "dev": "node src/server/startServer.cjs",
+    "start": "MODE=prod src/server/startServer.cjs",
     "start:compat": "lwr serve --mode compat",
     "start:prod-compat": "lwr serve --mode prod-compat"
   },

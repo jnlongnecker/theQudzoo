@@ -72,7 +72,7 @@ h1:hover {
 
 .selected {
     color: var(--h4-color);
-    border-left: 3px solid var(--h4-color);
+    border-color: var(--h4-color);
 }
 
 .selected::before {
@@ -88,6 +88,12 @@ h1:hover {
 
     .sections {
         max-height: calc((100vh - var(--heading-height) )* 0.5);
+        direction: rtl;
+    }
+
+    .sections p {
+        direction: ltr;
+        border-left: 0;
     }
 
     .container {

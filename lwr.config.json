@@ -3,33 +3,160 @@
     "bundleConfig": { "exclude": ["lwc"] },
     "routes": [
         {
-            "id": "example",
-            "path": "/example",
-            "rootComponent": "c/app"
-        },
-        {
             "id": "Home",
             "path": "/",
             "contentTemplate": "$contentDir/home.md",
             "layoutTemplate": "$layoutsDir/main_layout.njk"
         },
         {
-            "id": "Tinkering",
-            "path": "/advice/tinkering",
-            "contentTemplate": "$contentDir/tinkering.md",
-            "layoutTemplate": "$layoutsDir/advice_layout.njk"
+            "id": "Story-Quests",
+            "path": "/advice/quests",
+            "contentTemplate": "$contentDir/adviceArticles/questsHome.md",
+            "layoutTemplate": "$layoutsDir/quest_home_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/quests.png"
+            }
         },
         {
-            "id": "Breakdown",
+            "id": "Weirdwire-Conduit",
+            "path": "/advice/quests/weirdwire-conduit",
+            "contentTemplate": "$contentDir/adviceArticles/weirdwire.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/quests/weirdwire-well.png"
+            }
+        },
+        {
+            "id": "A-Canticle-for-Barathrum",
+            "path": "/advice/quests/a-canticle-for-barathrum",
+            "contentTemplate": "$contentDir/adviceArticles/canticle.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/canticle.png"
+            }
+        },
+        {
+            "id": "More-Than-a-Willing-Spirit",
+            "path": "/advice/quests/more-than-a-willing-spirit",
+            "contentTemplate": "$contentDir/adviceArticles/golgotha.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/quests/golgotha-pickle.png"
+            }
+        },
+        {
+            "id": "Decoding-the-Signal",
+            "path": "/advice/quests/decoding-the-signal",
+            "contentTemplate": "$contentDir/adviceArticles/bethesda.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/quests/bethesda-jotun.png"
+            }
+        },
+        {
+            "id": "The-Earl-of-Omonporch",
+            "path": "/advice/quests/the-earl-of-omonporch",
+            "contentTemplate": "$contentDir/adviceArticles/omonporch.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/earl.png"
+            }
+        },
+        {
+            "id": "A-Call-to-Arms",
+            "path": "/advice/quests/a-call-to-arms",
+            "contentTemplate": "$contentDir/adviceArticles/attack.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/arms.png"
+            }
+        },
+        {
+            "id": "Pax-Klanq,-I-Presume?",
+            "path": "/advice/quests/pax-klanq",
+            "contentTemplate": "$contentDir/adviceArticles/klanq.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/quests/klanq-map.png"
+            }
+        },
+        {
+            "id": "Tomb-of-the-Eaters",
+            "path": "/advice/quests/tomb-of-the-eaters",
+            "contentTemplate": "$contentDir/adviceArticles/tomb.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/tomb.png"
+            }
+        },
+        {
+            "id": "Breaking-Down-a-Run",
             "path": "/advice/breakdown",
-            "contentTemplate": "$contentDir/breakdown.md",
-            "layoutTemplate": "$layoutsDir/advice_layout.njk"
+            "contentTemplate": "$contentDir/adviceArticles/breakdown.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/run.png"
+            }
+        },
+        {
+            "id": "Combat-Positioning",
+            "path": "/advice/positioning",
+            "contentTemplate": "$contentDir/adviceArticles/positioning.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/positioning/positioning_3.png"
+            }
         },
         {
             "id": "Mutations",
             "path": "/advice/mutations",
-            "contentTemplate": "$contentDir/mutations.md",
-            "layoutTemplate": "$layoutsDir/advice_layout.njk"
+            "contentTemplate": "$contentDir/adviceArticles/mutations.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/mutations.png"
+            }
+        },
+        {
+            "id": "Tinkering",
+            "path": "/advice/tinkering",
+            "contentTemplate": "$contentDir/adviceArticles/tinkering.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/tinkering.png"
+            }
+        },
+        {
+            "id": "Skills",
+            "path": "/advice/skills",
+            "contentTemplate": "$contentDir/adviceArticles/skills.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/skills.png"
+            }
+        },
+        {
+            "id": "How-to-Make-a-Build",
+            "path": "/advice/build-making",
+            "contentTemplate": "$contentDir/adviceArticles/builds.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/build.png"
+            }
+        },
+        {
+            "id": "Reputation",
+            "path": "/advice/reputation",
+            "contentTemplate": "$contentDir/adviceArticles/reputation.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/reputation.png"
+            }
+        },
+        {
+            "id": "Advice-Home",
+            "path": "/advice",
+            "contentTemplate": "$contentDir/adviceHome.md",
+            "layoutTemplate": "$layoutsDir/advice_home_layout.njk"
         }
     ]
 }

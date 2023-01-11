@@ -1,0 +1,16 @@
+section {
+    padding: 0 var(--desktop-margin-size);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+    section {
+        padding: 0 var(--mobile-margin-size)
+    }
+}

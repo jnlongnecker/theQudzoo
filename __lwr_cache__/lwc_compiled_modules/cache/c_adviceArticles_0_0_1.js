@@ -3,32 +3,36 @@ import _tmpl from "./adviceArticles.html";
 class AdviceArticles extends LightningElement {
   constructor(...args) {
     super(...args);
-    this.articles = [{
-      label: "Breaking Down a Run",
-      link: "/advice/breakdown",
-      class: "normal"
-    }, {
-      label: "Mutations",
-      link: "/advice/mutations",
-      class: "normal"
-    }, {
-      label: "Tinkering",
-      link: "/advice/tinkering",
-      class: "normal"
-    }];
+    this.itemList = [];
+    this.articles = [];
+    this.quests = [];
   }
   connectedCallback() {
     let path = window.location.pathname;
-    for (let article of this.articles) {
-      if (article.link !== path) continue;
-      article.class = "selected";
-      break;
-    }
+    fetch("/api/articles").then(result => {
+      result.json().then(payload => {
+        this.articles = payload.articles;
+        for (let article of this.articles) {
+          if (article.link !== path) continue;
+          article.class = "selected";
+          break;
+        }
+      });
+    });
+    fetch("/api/quests").then(result => {
+      result.json().then(payload => {
+        this.quests = payload.quests;
+        for (let quest of this.quests) {
+          if (quest.link === path) quest.class = "selected indented";else quest.class = "indented";
+        }
+        this.buildItemList();
+      });
+    });
   }
   handleClick(event) {
     let articleLabelClicked = event.target.textContent;
     let articleClicked;
-    for (let article of this.articles) {
+    for (let article of this.itemList) {
       if (article.label === articleLabelClicked) {
         articleClicked = article;
         break;
@@ -39,9 +43,22 @@ class AdviceArticles extends LightningElement {
       return;
     }
   }
+  buildItemList() {
+    for (let article of this.articles) {
+      this.itemList.push(article);
+      if (article.link.indexOf("quest") != -1) {
+        for (let quest of this.quests) {
+          this.itemList.push(quest);
+        }
+      }
+    }
+  }
 }
 _registerDecorators(AdviceArticles, {
-  fields: ["articles"]
+  track: {
+    itemList: 1
+  },
+  fields: ["articles", "quests"]
 });
 export default _registerComponent(AdviceArticles, {
   tmpl: _tmpl

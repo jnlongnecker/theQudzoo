@@ -1,0 +1,38 @@
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.5, 0.5);
+    }
+    90% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+img {
+    max-width: 80vw;
+    max-height: 80vh;
+    animation: bounce-in .25s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bg-darken {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.container {
+    background-image: var(--scanlines-image);
+}
+
+.bg-darken:hover {
+    cursor: zoom-out;
+}

@@ -1,7 +1,0 @@
-:root {
-    --bg-color: rgba(6,28,23,0.8);
-}
-
-html {
-    background-image: var(--bg-color);
-}

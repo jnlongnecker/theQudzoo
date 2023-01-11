@@ -1,0 +1,41 @@
+section {
+    font-family: var(--qud-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid var(--hover-darken);
+    padding: 0 var(--desktop-margin-size);
+}
+
+div {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2 a {
+    color: var(--h2-color);
+    font-weight: normal;
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+p {
+    max-width: 55vw;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    section {
+        padding: 0 var(--mobile-margin-size);
+    }
+}

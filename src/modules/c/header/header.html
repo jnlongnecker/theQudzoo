@@ -1,12 +1,34 @@
 <template>
     <header>
         <div class="logo">
-            <p class="site-name">qudzoo<span class="blinker">|</span></p>
+            <p class="site-name"><a href="/">qudzoo</a></p>
         </div>
-        <div class="links">
-            <a>A-F-F-I-N-E's Advice</a>
-            <div class="dot-divider"></div>
-            <a>More Coming Soon!</a>
-        </div>
+        <template if:true={useDesktopLayout}>
+            <div class="links">
+                <template iterator:it={links}>
+                    <a key={it.value.link} href={it.value.link}>{it.value.label}</a>
+                    <div key={it.value.link} class="dot-divider"></div>
+                    <p key={it.value.link} if:true={it.last}>More Coming Soon!</p>
+                </template>
+            </div>
+        </template>
+        <template if:true={useMobileLayout}>
+            <button class="hamburger-menu" onclick={activateHamburgerMenu}>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </button>
+            <div class="hamburger-items">
+                <div class="hamburger-item-container">
+                    <template iterator:it={links}>
+                        <li key={it.value.link}><a href={it.value.link}>{it.value.label}</a></li>
+                        <hr key={it.value.link} />
+                        <li key={it.value.link} if:true={it.last}>
+                            <p>More Coming Soon!</p>
+                        </li>
+                    </template>
+                </div>
+            </div>
+        </template>
     </header>
 </template>
