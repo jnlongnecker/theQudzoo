@@ -22,6 +22,8 @@ export default class QudzooBanner extends LightningElement {
 
     interval;
 
+    blinkerClass = "";
+
     connectedCallback() {
         let randomOptionIndex = Math.floor(Math.random() * this.textOptions.length);
         this.textChoice = this.textOptions[randomOptionIndex];
@@ -35,6 +37,7 @@ export default class QudzooBanner extends LightningElement {
         this.interval = setInterval(() => {
             if (index >= this.textChoice.length) {
                 clearInterval(this.interval);
+                this.blinkerClass = "blinker";
                 return;
             }
 

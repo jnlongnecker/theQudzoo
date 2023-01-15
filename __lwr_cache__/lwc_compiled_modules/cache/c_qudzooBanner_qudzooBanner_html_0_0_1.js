@@ -20,9 +20,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   }, [api_text("qudzoo >")]), api_element("p", {
     key: 3
   }, [api_text(api_dynamic_text($cmp.pathText)), api_element("span", {
-    classMap: {
-      "blinker": true
-    },
+    className: $cmp.blinkerClass,
     key: 4
   }, [api_text("|")])])]), api_element("div", {
     key: 5

@@ -1,0 +1,2112 @@
+{
+    "skillCategories": [
+        {
+            "name": "Un-named",
+            "plural": "undefined",
+            "entryCost": 0,
+            "skills": [
+                {
+                    "name": "Sprint",
+                    "plural": "Sprinting",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Defensive Stance",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Aggressive Stance",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Charging",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Harvest",
+                    "plural": "Harvested",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Dismembered",
+                    "plural": "Dismembering",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                }
+            ]
+        },
+        {
+            "name": "Acrobatics",
+            "plural": "undefined",
+            "entryCost": 75,
+            "skills": [
+                {
+                    "name": "Swift Reflexes",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 17,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "Cats",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Spry",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 17,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Jump",
+                    "plural": "Jumps",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 17,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "Frogs",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Tumble",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": ["juke"],
+                        "strength": 0,
+                        "agility": 23,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                }
+            ]
+        },
+        {
+            "name": "Axe",
+            "plural": "Axes",
+            "entryCost": 50,
+            "skills": [
+                {
+                    "name": "Axe Proficiency",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Charging Strike",
+                    "plural": "Charging Strikes",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": ["cleave", "charge"],
+                        "strength": 19,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Cleave",
+                    "plural": "Cleaves",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 19,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Dismember",
+                    "plural": "Dismembers",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 21,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Hook and Drag",
+                    "plural": "Hook and Drags",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 23,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Sometimes"
+                },
+                {
+                    "name": "Decapitate",
+                    "plural": "Decapitates",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": ["dismember"],
+                        "strength": 25,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Berserk!",
+                    "plural": "undefined",
+                    "cost": 300,
+                    "prerequisites": {
+                        "skills": ["dismember"],
+                        "strength": 29,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                }
+            ]
+        },
+        {
+            "name": "Bow and Rifle",
+            "plural": "Bows and Rifles",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Draw a Bead",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 19,
+                       "toughness": 0,
+                      "intelligence": 0,
+                      "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Steady Hands",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 19,
+                       "toughness": 0,
+                      "intelligence": 0,
+                      "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Suppressive Fire",
+                    "plural": "Suppressive Fires",
+                    "cost": 150,
+                    "prerequisites": {
+                       "skills": ["draw a bead"],
+                       "strength": 0,
+                       "agility": 19,
+                       "toughness": 0,
+                      "intelligence": 0,
+                      "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Sure Fire",
+                    "plural": "Sure Fires",
+                    "cost": 150,
+                    "prerequisites": {
+                       "skills": ["draw a bead"],
+                       "strength": 0,
+                       "agility": 19,
+                       "toughness": 0,
+                      "intelligence": 0,
+                      "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Wounding Fire",
+                    "plural": "Wounding Fires",
+                    "cost": 150,
+                    "prerequisites": {
+                       "skills": ["draw a bead"],
+                       "strength": 0,
+                       "agility": 19,
+                       "toughness": 0,
+                      "intelligence": 0,
+                      "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Kickback",
+                    "plural": "Kickbacks",
+                    "cost": 50,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 19,
+                       "agility": 0,
+                       "toughness": 0,
+                      "intelligence": 0,
+                      "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Disorienting Fire",
+                    "plural": "Disorienting Fires",
+                    "cost": 200,
+                    "prerequisites": {
+                       "skills": ["draw a bead", "wounding fire"],
+                       "strength": 0,
+                       "agility": 25,
+                       "toughness": 0,
+                      "intelligence": 0,
+                      "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Beacon Fire",
+                    "plural": "Beacon Fires",
+                    "cost": 200,
+                    "prerequisites": {
+                       "skills": ["draw a bead", "sure fire"],
+                       "strength": 0,
+                       "agility": 25,
+                       "toughness": 0,
+                      "intelligence": 0,
+                      "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Flattening Fire",
+                    "plural": "Flattening Fires",
+                    "cost": 200,
+                    "prerequisites": {
+                       "skills": ["draw a bead", "suppressive fire"],
+                       "strength": 0,
+                       "agility": 25,
+                       "toughness": 0,
+                      "intelligence": 0,
+                      "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Ultra Fire",
+                    "plural": "Ultra Fires",
+                    "cost": 300,
+                    "prerequisites": {
+                       "skills": ["draw a bead"],
+                       "strength": 0,
+                       "agility": 29,
+                       "toughness": 0,
+                      "intelligence": 0,
+                      "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                }
+            ]
+        },
+        {
+            "name": "Cooking and Gathering",
+            "plural": "undefined",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Meal Preparation",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 15,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "Villagers of Kyakukya",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Harvestry",
+                    "plural": "Harvesting",
+                    "cost": 50,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 15,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "Villagers of Joppa",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Butchery",
+                    "plural": "Butchering",
+                    "cost": 50,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 15,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "Cannibals",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Spicer",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 17,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "Denizens of Yd Freehold",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Carbide Chef",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 17,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                }
+            ]
+        },
+        {
+            "name": "Cudgel",
+            "plural": "Cudgels",
+            "entryCost": 50,
+            "skills": [
+                {
+                    "name": "Cudgel Proficiency",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Bludgeon",
+                    "plural": "Bludgeons",
+                    "cost": 150,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 17,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Charging Strike",
+                    "plural": "Charging Strikes",
+                    "cost": 100,
+                    "prerequisites": {
+                       "skills": ["bludgeon", "charge"],
+                       "strength": 19,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Conk",
+                    "plural": "Conks",
+                    "cost": 150,
+                    "prerequisites": {
+                       "skills": ["bludgeon"],
+                       "strength": 21,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Backswing",
+                    "plural": "Backswings",
+                    "cost": 100,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 23,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Slam",
+                    "plural": "Slams",
+                    "cost": 150,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 25,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Demolish",
+                    "plural": "undefined",
+                    "cost": 300,
+                    "prerequisites": {
+                       "skills": ["slam"],
+                       "strength": 29,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                }
+            ]
+        },
+        {
+            "name": "Customs and Folklore",
+            "plural": "undefined",
+            "entryCost": 150,
+            "skills": [
+                {
+                    "name": "Tactful",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 19,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "Villagers of Ezra",
+                    "worth": "No"
+                },
+                {
+                    "name": "Trash Divining",
+                    "plural": "undefined",
+                    "cost": 150,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 21,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "Pariahs",
+                    "worth": "No"
+                }
+            ]
+        },
+        {
+            "name": "Dual Wield",
+            "plural": "Dual Wielding",
+            "entryCost": 300,
+            "skills": [
+                {
+                    "name": "Flurry",
+                    "plural": "Flurries",
+                    "cost": 0,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 17,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "Hindren of Bey Lah - Eskhind",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Offhand Strikes",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 17,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Ambidexterity",
+                    "plural": "undefined",
+                    "cost": 300,
+                    "prerequisites": {
+                       "skills": ["offhand strikes"],
+                       "strength": 0,
+                       "agility": 21,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "Vines",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Two-weapon Fighting",
+                    "plural": "undefined",
+                    "cost": 300,
+                    "prerequisites": {
+                       "skills": ["ambidexterity"],
+                       "strength": 0,
+                       "agility": 25,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                }
+            ]
+        },
+        {
+            "name": "Endurance",
+            "plural": "undefined",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Shake It Off",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 0,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Swimming",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 15,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "Fish",
+                    "worth": "No"
+                },
+                {
+                    "name": "Poison Tolerance",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                       "skills": [],
+                       "strength": 0,
+                       "agility": 0,
+                       "toughness": 19,
+                       "intelligence": 0,
+                       "willpower": 0,
+                       "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Weathered",
+                    "plural": "undefined",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 21,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Juicer",
+                    "plural": "undefined",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 23,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Calloused",
+                    "plural": "undefined",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 23,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Longstrider",
+                    "plural": "undefined",
+                    "cost": 250,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 25,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                }
+            ]
+        },
+        {
+            "name": "First Aid",
+            "plural": "undefined",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Staunch Wounds",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "Cult of the Coiled Lamb",
+                    "worth": "No"
+                },
+                {
+                    "name": "Heal",
+                    "plural": "Heals",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 17,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Set Limb",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 19,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                }
+            ]
+        },
+        {
+            "name": "Heavy Weapon",
+            "plural": "Heavy Weapons",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Strapping Shoulders",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 19,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Tank",
+                    "plural": "undefined",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 23,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Sweep",
+                    "plural": "Sweeps",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 27,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                }
+            ]
+        },
+        {
+            "name": "Long Blade",
+            "plural": "Long Blades",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Long Blade Proficiency",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Lunge",
+                    "plural": "Lunges",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 17,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Dueling Stance",
+                    "plural": "undefined",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 17,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Swipe",
+                    "plural": "Swipes",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 17,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Improved Dueling Stance",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 21,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Improved Defensive Stance",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 23,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Improved Aggressive Stance",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 23,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "En Garde!",
+                    "plural": "undefined",
+                    "cost": 300,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 29,
+                        "agility": 23,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Sometimes"
+                }
+            ]
+        },
+        {
+            "name": "Persuasion",
+            "plural": "undefined",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Menacing Stare",
+                    "plural": "Menacing Stares",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 17
+                     },
+                    "faction": "Flowers",
+                    "worth": "Sometimes"
+                },
+                {
+                    "name": "Intimidate",
+                    "plural": "Intimidates",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 17
+                     },
+                    "faction": "Fellowship of Wardens - Warden Indrix",
+                    "worth": "No"
+                },
+                {
+                    "name": "Berate",
+                    "plural": "Berates",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 19
+                     },
+                    "faction": "Hermits",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Snake Oiler",
+                    "plural": "undefined",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 19
+                     },
+                    "faction": "Consortium of Phyta",
+                    "worth": "No"
+                },
+                {
+                    "name": "Proselytize",
+                    "plural": "Proselytizes",
+                    "cost": 300,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 23
+                     },
+                    "faction": "Mechanimists",
+                    "worth": "No"
+                },
+                {
+                    "name": "Inspiring Presence",
+                    "plural": "undefined",
+                    "cost": 250,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 25
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                }
+            ]
+        },
+        {
+            "name": "Pistol",
+            "plural": "Pistols",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Steady Hand",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Akimbo",
+                    "plural": "undefined",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 17,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Weak Spotter",
+                    "plural": "undefined",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 19,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Sling and Run",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 21,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Disarming Shot",
+                    "plural": "Disarming Shots",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 23,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Dead Shot",
+                    "plural": "undefined",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 25,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Empty the Clips",
+                    "plural": "undefined",
+                    "cost": 300,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 27,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Fastest Gun in the Rust",
+                    "plural": "undefined",
+                    "cost": 400,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 29,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                }
+            ]
+        },
+        {
+            "name": "Self-Discipline",
+            "plural": "undefined",
+            "entryCost": 150,
+            "skills": [
+                {
+                    "name": "Meditate",
+                    "plural": "Meditates",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "Seekers of the Sightless Way",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Fasting Way",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 17,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Lionheart",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 21,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Iron Mind",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 21,
+                        "ego": 0
+                     },
+                    "faction": "Robots",
+                    "worth": "No"
+                },
+                {
+                    "name": "Conatus",
+                    "plural": "undefined",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 23,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Mind over Body",
+                    "plural": "undefined",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 29,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                }
+            ]
+        },
+        {
+            "name": "Shield",
+            "plural": "Shields",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Block",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "Fellowship of Wardens - Wardens Esther or Warden Une",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Shield Slam",
+                    "plural": "Shield Slams",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 17,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Swift Blocking",
+                    "plural": "undefined",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 19,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Deft Blocking",
+                    "plural": "undefined",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 19,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Staggering Block",
+                    "plural": "undefined",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 21,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Shield Wall",
+                    "plural": "undefined",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 25,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                }
+            ]
+        },
+        {
+            "name": "Short Blades",
+            "plural": "Short Blade",
+            "entryCost": 50,
+            "skills": [
+                {
+                    "name": "Short Blade Expertise",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Jab",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 17,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Bloodletter",
+                    "plural": "undefined",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 17,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Hobble",
+                    "plural": "Hobbles",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 21,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Pointed Circle",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": ["juke"],
+                        "strength": 0,
+                        "agility": 23,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Sometimes"
+                },
+                {
+                    "name": "Rejoinder",
+                    "plural": "undefined",
+                    "cost": 250,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 25,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Shank",
+                    "plural": "Shanks",
+                    "cost": 250,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 27,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                }
+            ]
+        },
+        {
+            "name": "Tactics",
+            "plural": "undefined",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Hurdle",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Deft Throwing",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 10,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Charge",
+                    "plural": "Charges",
+                    "cost": 150,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 17,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Juke",
+                    "plural": "Jukes",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 21,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                }
+            ]
+        },
+        {
+            "name": "Tinkering",
+            "plural": "undefined",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Gadget Inspector",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 15,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "Barathrumites",
+                    "worth": "No"
+                },
+                {
+                    "name": "Disassemble",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 15,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Scavenger",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 15,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Lay Mine / Set Bomb",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 17,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Repair",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 17,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "Daughters of Exile",
+                    "worth": "No"
+                },
+                {
+                    "name": "Deploy Turret",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 17,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Sometimes"
+                },
+                {
+                    "name": "Tinker I",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 19,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Tinker II",
+                    "plural": "undefined",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": ["tinker i"],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 23,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Reverse Engineer",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": ["disassemble"],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 25,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Tinker III",
+                    "plural": "undefined",
+                    "cost": 300,
+                    "prerequisites": {
+                        "skills": ["tinker iI"],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 29,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                }
+            ]
+        },
+        {
+            "name": "Wayfaring",
+            "plural": "undefined",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Mind's Compass",
+                    "plural": "Minds Compass",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 15,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Make Camp",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 15,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Wilderness Lore: Flower Fields",
+                    "plural": "undefined",
+                    "cost": 25,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 15,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Wilderness Lore: Marshes",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 15,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Wilderness Lore: Hills and Mountains",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 17,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Wilderness Lore: Canyons",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 17,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Wilderness Lore: Rivers and Lakes",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 19,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Wilderness Lore: Salt Dunes",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 19,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Wilderness Lore: Jungles",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 19,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "Roots",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Wilderness Lore: Ruins",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 21,
+                        "willpower": 0,
+                        "ego": 0
+                     },
+                    "faction": "None",
+                    "worth": "No"
+                }
+            ]
+        }
+    ]
+}

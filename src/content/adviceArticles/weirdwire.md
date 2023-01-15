@@ -10,9 +10,9 @@ Make your way to the Rust Wells to collect 200 feet of wire for Argyve. Live and
 
 ---
 
-| Level | Abilities | Stats         |
-| ----- | --------- | ------------- |
-| 7     | Flight    | 6 AV or 13 DV |
+| Level | Abilities | Stats                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ----- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 7     | Flight    | 6 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/AV.png" /></span></span><span class="injected"><span class="stat">AV</span></span> or 13 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span> |
 
 </div>
 
@@ -26,15 +26,15 @@ For those of us unlucky souls, we will have to travel down the well. Before we d
 
 ![Player Nomad to the south of an open rust well]($assetsDir/images/quests/weirdwire-well.png)
 
-In this screenshot, we can see all of these as promised. Our strong enemy is a slumberling; which is handy because it won’t bother us unless provoked. Be sure to check this ahead of time; if you get something particularly nasty like a two-headed slugsnout, you may want to just choose a different well. Keep in mind that you don’t have to go down to the bottom, you can go to a different rust well after the first 2 strata.
+In this screenshot, we can see all of these as promised. Our strong enemy is a slumberling; which is handy because it won’t bother us unless provoked. Be sure to check this ahead of time; if you get something particularly nasty like a slugsnout, you may want to just choose a different well. Keep in mind that you don’t have to go down to the bottom, you can go to a different rust well after the first 2 strata.
 
-The enemies you find here will be well within your capabilities at the recommended strength, especially if you don’t go all the way down to the bottom. Don’t underestimate the strong enemy at the bottom though; even at the recommended strength, it can still kill you if you lack experience with combat!
+The enemies you find here will be well within your capabilities at the recommended levels, especially if you don’t go all the way down to the bottom. Don’t underestimate the strong enemy at the bottom though; even at the recommended levels, it can still kill you if you lack experience with combat!
 
 ## Every Flight Begins with a Fall
 
 At this point, you may be curious why the recommended ability is flight here. That’s because the best strategy to complete this quest is to not go to the rust wells first. Instead, we’re going to comb the salt marsh.
 
-In a single center zone of the salt marsh, there are flattened remains. These are the remnants of Argyve’s unfortunate prior apprentice. Luckily for us, they have exactly the equipment we need as long as we use them a little more intelligently than our flattened fellow here. On the corpse are a set of broken mechanical wings, 50-150 feet of wire, some good equipment, and potentially an artifact or two. In order to find these, pick a salt marsh tile, jump into it and explore the zone you get dropped into. If you find a ruin, village, or lair, you can safely go back to the world map; the flattened remains will never be there. While the path you take doesn’t matter, here’s one of the more efficient search patterns I use:
+In a single center zone of the salt marsh, there are flattened remains. These are the remnants of Argyve’s unfortunate prior apprentice. Luckily for us, they have exactly the equipment we need as long as we use them a little more intelligently than our flattened fellow here. On the corpse are a set of broken mechanical wings, 50-150 feet of wire, some good equipment, and potentially an artifact or two. In order to find these, pick a salt marsh tile, <span class="injected"><span class="skill">Jump</span></span> into it and explore the zone you get dropped into. If you find a ruin, village, or lair, you can safely go back to the world map; the flattened remains will never be there. While the path you take doesn’t matter, here’s one of the more efficient search patterns I use:
 
 ![World map shot of the Salt Marshes with the Player Nomad standing on Joppa. There is a red line denoting a path]($assetsDir/images/quests/weirdwire-marshPath.png)
 
@@ -48,4 +48,4 @@ Making our way back to the rust wells, we can now reach the bottom quickly and, 
 
 Don’t fly at this point, there’s no need and we can fall, which as Argyve’s former apprentice demonstrated for us is not comfortable. Walking over the edge will only drop us 1 stratum at a time, which deals no damage. By doing this, we can go right to the bottom taking no damage. From here, we loot the wire (and the chest if there is one and you can) and fly out. While flying out, make sure you always have ground beneath you, like in gif.
 
-This ensures that in the unlikely event that you do fall, you only fall 1 stratum and don’t take any damage. Repeat for however many wells you need to go down, and if you have the wings mutation, enjoy not having to search for mechanical wings and just go right here at your earliest convenience.
+This ensures that in the unlikely event that you do fall, you only fall 1 stratum and don’t take any damage. Repeat for however many wells you need to go down, and if you have the <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/mutationImages/wings.png" /></span><span class="mutation">Wings</span></span> mutation, enjoy not having to search for mechanical wings and just go right here at your earliest convenience.

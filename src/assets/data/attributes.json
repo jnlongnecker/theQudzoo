@@ -1,0 +1,22 @@
+{
+    "attributes": [
+        {
+            "name": "Strength"
+        },
+        {
+            "name": "Agility"
+        },
+        {
+            "name": "Toughness"
+        },
+        {
+            "name": "Willpower"
+        },
+        {
+            "name": "Intelligence"
+        },
+        {
+            "name": "Ego"
+        }
+    ]
+}

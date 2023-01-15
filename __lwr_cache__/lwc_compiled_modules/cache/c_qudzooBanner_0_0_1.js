@@ -9,6 +9,7 @@ class QudzooBanner extends LightningElement {
     this.pathText = void 0;
     this.textChoice = void 0;
     this.interval = void 0;
+    this.blinkerClass = "";
   }
   connectedCallback() {
     let randomOptionIndex = Math.floor(Math.random() * this.textOptions.length);
@@ -21,6 +22,7 @@ class QudzooBanner extends LightningElement {
     this.interval = setInterval(() => {
       if (index >= this.textChoice.length) {
         clearInterval(this.interval);
+        this.blinkerClass = "blinker";
         return;
       }
       let randomChoice = Math.random();
@@ -38,7 +40,7 @@ _registerDecorators(QudzooBanner, {
       config: 0
     }
   },
-  fields: ["textOptions", "chanceToSkipFrame", "pathText", "textChoice", "interval"]
+  fields: ["textOptions", "chanceToSkipFrame", "pathText", "textChoice", "interval", "blinkerClass"]
 });
 export default _registerComponent(QudzooBanner, {
   tmpl: _tmpl

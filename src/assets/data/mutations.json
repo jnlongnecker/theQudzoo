@@ -1,0 +1,438 @@
+{
+    "mutations": [
+        {
+            "name": "Chimera",
+            "category": "Morphotype",
+            "cost": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/chimera.png",
+            "code": "aa"
+        },
+        {
+            "name": "Esper",
+            "category": "Morphotype",
+            "cost": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/esper.png",
+            "code": "ab"
+        },
+        {
+            "name": "Unstable Genome",
+            "category": "Morphotype",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/unstableGenome.png",
+            "code": "uu"
+        },
+        {
+            "name": "Adrenal Control",
+            "category": "Physical Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/adrenalControl.png",
+            "code": "ba"
+        },
+        {
+            "name": "Beak",
+            "category": "Physical Mutation",
+            "cost": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/beak.png",
+            "code": "cd"
+        },
+        {
+            "name": "Burrowing Claws",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/burrowingClaws.png",
+            "code": "bb"
+        },
+        {
+            "name": "Carapace",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/carapace.png",
+            "code": "bc"
+        },
+        {
+            "name": "Corrosive Gas Generation",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/corrosiveGasGeneration.png",
+            "code": "bd"
+        },
+        {
+            "name": "Double-muscled",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/doubleMuscled.png",
+            "code": "be"
+        },
+        {
+            "name": "Electrical Generation",
+            "category": "Physical Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/electricalGeneration.png",
+            "code": "bf"
+        },
+        {
+            "name": "Electromagnetic Pulse",
+            "category": "Physical Mutation",
+            "cost": 2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/electromagneticPulse.png",
+            "code": "bg"
+        },
+        {
+            "name": "Flaming Ray",
+            "category": "Physical Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/flamingRay.png",
+            "code": "bh"
+        },
+        {
+            "name": "Freezing Ray",
+            "category": "Physical Mutation",
+            "cost": 5,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/freezingRay.png",
+            "code": "bi"
+        },
+        {
+            "name": "Heightened Hearing",
+            "category": "Physical Mutation",
+            "cost": 2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/heightenedHearing.png",
+            "code": "bj"
+        },
+        {
+            "name": "Heightened Quickness",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/heightenedQuickness.png",
+            "code": "bk"
+        },
+        {
+            "name": "Horns",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/horns.png",
+            "code": "bl"
+        },
+        {
+            "name": "Multiple Arms",
+            "category": "Physical Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/multipleArms.png",
+            "code": "bn"
+        },
+        {
+            "name": "Multiple Legs",
+            "category": "Physical Mutation",
+            "cost": 5,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/multipleLegs.png",
+            "code": "bo"
+        },
+        {
+            "name": "Night Vision",
+            "category": "Physical Mutation",
+            "cost": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/nightVision.png",
+            "code": "bp"
+        },
+        {
+            "name": "Phasing",
+            "category": "Physical Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/phasing.png",
+            "code": "bq"
+        },
+        {
+            "name": "Photosynthetic Skin",
+            "category": "Physical Mutation",
+            "cost": 2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/photosyntheticSkin.png",
+            "code": "br"
+        },
+        {
+            "name": "Quills",
+            "category": "Physical Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/quills.png",
+            "code": "bs"
+        },
+        {
+            "name": "Regeneration",
+            "category": "Physical Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/regeneration.png",
+            "code": "bt"
+        },
+        {
+            "name": "Sleep Gas Generation",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/sleepGasGeneration.png",
+            "code": "bu"
+        },
+        {
+            "name": "Slime Glands",
+            "category": "Physical Mutation",
+            "cost": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/slimeGlands.png",
+            "code": "bv"
+        },
+        {
+            "name": "Spinnerets",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/spinnerets.png",
+            "code": "bw"
+        },
+        {
+            "name": "Stinger (Confusing Venom)",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
+            "code": "bx"
+        },
+        {
+            "name": "Stinger (Paralyzing Venom)",
+            "category": "Physical Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
+            "code": "by"
+        },
+        {
+            "name": "Stinger (Poisoning Venom)",
+            "category": "Physical Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
+            "code": "bz"
+        },
+        {
+            "name": "Stinger",
+            "category": "Physical Mutation",
+            "cost": 0,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
+            "code": ""
+        },
+        {
+            "name": "Thick Fur",
+            "category": "Physical Mutation",
+            "cost": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/thickFur.png",
+            "code": "b1"
+        },
+        {
+            "name": "Triple-jointed",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/tripleJointed.png",
+            "code": "b2"
+        },
+        {
+            "name": "Two-Headed",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/twoHeaded.png",
+            "code": "b3"
+        },
+        {
+            "name": "Two-Hearted",
+            "category": "Physical Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/twoHearted.png",
+            "code": "b4"
+        },
+        {
+            "name": "Wings",
+            "category": "Physical Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/wings.png",
+            "code": "b5"
+        },
+        {
+            "name": "Beguiling",
+            "category": "Mental Mutation",
+            "cost": 5,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/beguiling.png",
+            "code": "da"
+        },
+        {
+            "name": "Burgeoning",
+            "category": "Mental Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/burgeoning.png",
+            "code": "db"
+        },
+        {
+            "name": "Clairvoyance",
+            "category": "Mental Mutation",
+            "cost": 2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/clairvoyance.png",
+            "code": "dc"
+        },
+        {
+            "name": "Confusion",
+            "category": "Mental Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/confusion.png",
+            "code": "dd"
+        },
+        {
+            "name": "Cryokinesis",
+            "category": "Mental Mutation",
+            "cost": 5,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/cryokinesis.png",
+            "code": "de"
+        },
+        {
+            "name": "Disintegration",
+            "category": "Mental Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/disintegration.png",
+            "code": "dg"
+        },
+        {
+            "name": "Domination",
+            "category": "Mental Mutation",
+            "cost": 5,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/domination.png",
+            "code": "df"
+        },
+        {
+            "name": "Ego Projection",
+            "category": "Mental Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/egoProjection.png",
+            "code": "dh"
+        },
+        {
+            "name": "Force Bubble",
+            "category": "Mental Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/forceBubble.png",
+            "code": "di"
+        },
+        {
+            "name": "Force Wall",
+            "category": "Mental Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/forceWall.png",
+            "code": "dj"
+        },
+        {
+            "name": "Kindle",
+            "category": "Mental Mutation",
+            "cost": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/kindle.png",
+            "code": "dk"
+        },
+        {
+            "name": "Light Manipulation",
+            "category": "Mental Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/lightManipulation.png",
+            "code": "dl"
+        },
+        {
+            "name": "Mass Mind",
+            "category": "Mental Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/massMind.png",
+            "code": "dm"
+        },
+        {
+            "name": "Mental Mirror",
+            "category": "Mental Mutation",
+            "cost": 2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/mentalMirror.png",
+            "code": "dn"
+        },
+        {
+            "name": "Precognition",
+            "category": "Mental Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/precognition.png",
+            "code": "do"
+        },
+        {
+            "name": "Psychometry",
+            "category": "Mental Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/psychometry.png",
+            "code": "dp"
+        },
+        {
+            "name": "Pyrokinesis",
+            "category": "Mental Mutation",
+            "cost": 5,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/pyrokinesis.png",
+            "code": "dq"
+        },
+        {
+            "name": "Sense Psychic",
+            "category": "Mental Mutation",
+            "cost": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/sensePsychic.png",
+            "code": "dr"
+        },
+        {
+            "name": "Space-Time Vortex",
+            "category": "Mental Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/spaceTimeVortex.png",
+            "code": "ds"
+        },
+        {
+            "name": "Stunning Force",
+            "category": "Mental Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/stunningForce.png",
+            "code": "dt"
+        },
+        {
+            "name": "Sunder Mind",
+            "category": "Mental Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/sunderMind.png",
+            "code": "du"
+        },
+        {
+            "name": "Syphon Vim",
+            "category": "Mental Mutation",
+            "cost": 3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/syphonVim.png",
+            "code": "dv"
+        },
+        {
+            "name": "Telepathy",
+            "category": "Mental Mutation",
+            "cost": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/telepathy.png",
+            "code": "dw"
+        },
+        {
+            "name": "Teleport Other",
+            "category": "Mental Mutation",
+            "cost": 2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/teleportOther.png",
+            "code": "dy"
+        },
+        {
+            "name": "Teleportation",
+            "category": "Mental Mutation",
+            "cost": 5,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/teleportation.png",
+            "code": "dx"
+        },
+        {
+            "name": "Temporal Fugue",
+            "category": "Mental Mutation",
+            "cost": 5,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/temporalFugue.png",
+            "code": "d1"
+        },
+        {
+            "name": "Time Dilation",
+            "category": "Mental Mutation",
+            "cost": 4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/timeDilation.png",
+            "code": "dz"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "stats": [
+        {
+            "name": "AV",
+            "src": "/1/asset/s/latest/public/assets/images/statImages/AV.png"
+        },
+        {
+            "name": "DV",
+            "src": "/1/asset/s/latest/public/assets/images/statImages/DV.png"
+        },
+        {
+            "name": "MA",
+            "src": ""
+        },
+        {
+            "name": "PV",
+            "src": ""
+        }
+    ]
+}
