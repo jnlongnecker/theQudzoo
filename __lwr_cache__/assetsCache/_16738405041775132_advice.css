@@ -217,9 +217,8 @@ td {
         display: none;
     }
 
-    p:nth-child(even) img, img {
+    img {
         float: none;
-        text-align: center;
-        margin: auto;
+        clear: both;
     }
 }

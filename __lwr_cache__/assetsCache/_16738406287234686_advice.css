@@ -219,7 +219,8 @@ td {
 
     p:nth-child(even) img, img {
         float: none;
+        clear: both;
         text-align: center;
-        margin: auto;
+        margin: 0;
     }
 }

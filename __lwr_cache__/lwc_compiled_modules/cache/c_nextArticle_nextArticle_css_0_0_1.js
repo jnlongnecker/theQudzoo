@@ -1,0 +1,6 @@
+function stylesheet(useActualHostSelector, token) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  return ["section", shadowSelector, " {display: flex;justify-content: space-between;padding: 0 calc(20vw + var(--desktop-margin-size));}svg", shadowSelector, " {fill: var(--text-color-light);width: 2rem;margin: 0 0.5rem;}a", shadowSelector, " {padding: 1rem;text-align: center;text-decoration: none;color: var(--text-color-light);white-space: nowrap;display: flex;justify-content: center;align-items: center;}a:hover", shadowSelector, " {background-color: var(--hover-darken);color: var(--text-color);}@media only screen and (max-width: 1300px) {section", shadowSelector, " {padding: 0 var(--desktop-margin-size) 0 calc(20vw + var(--desktop-margin-size));}}@media only screen and (max-width: 900px) {section", shadowSelector, " {padding: 0;flex-direction: column;max-width: 100vw;justify-content: center;align-items: center;}}"].join('');
+}
+export default [stylesheet];

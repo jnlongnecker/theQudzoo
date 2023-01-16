@@ -382,5 +382,37 @@
       "module": "./cache/c_adviceBanner_adviceBanner_scoped_css_scoped=true_0_0_1.js",
       "moduleMeta": "./cache/c_adviceBanner_adviceBanner_scoped_css_scoped=true_0_0_1.meta.json"
     }
+  ],
+  [
+    "c/nextArticle@0.0.1",
+    {
+      "ownHash": "4508e9d1c368dcdb758f96ce64342ccb",
+      "module": "./cache/c_nextArticle_0_0_1.js",
+      "moduleMeta": "./cache/c_nextArticle_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/nextArticle#nextArticle.html@0.0.1",
+    {
+      "ownHash": "a95b9db879e507cd38bef53a27b708d7",
+      "module": "./cache/c_nextArticle_nextArticle_html_0_0_1.js",
+      "moduleMeta": "./cache/c_nextArticle_nextArticle_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/nextArticle#nextArticle.css@0.0.1",
+    {
+      "ownHash": "39085835dbfd453d88a029c3e80a57ea",
+      "module": "./cache/c_nextArticle_nextArticle_css_0_0_1.js",
+      "moduleMeta": "./cache/c_nextArticle_nextArticle_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/nextArticle#nextArticle.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/c_nextArticle_nextArticle_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/c_nextArticle_nextArticle_scoped_css_scoped=true_0_0_1.meta.json"
+    }
   ]
 ]

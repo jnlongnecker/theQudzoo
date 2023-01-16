@@ -217,9 +217,14 @@ td {
         display: none;
     }
 
+    p:has(p+img) {
+        text-align: center;
+    }
+
     p:nth-child(even) img, img {
         float: none;
+        clear: both;
         text-align: center;
-        margin: auto;
+        margin: 0;
     }
 }
