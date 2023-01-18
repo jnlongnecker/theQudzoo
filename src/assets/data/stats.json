@@ -9,6 +9,10 @@
             "src": "/1/asset/s/latest/public/assets/images/statImages/DV.png"
         },
         {
+            "name": "HP",
+            "src": "/1/asset/s/latest/public/assets/images/statImages/HP.png"
+        },
+        {
             "name": "MA",
             "src": ""
         },
