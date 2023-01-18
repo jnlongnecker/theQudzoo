@@ -1,6 +1,6 @@
 # The Golem
 
-The plan to the Spindle has gone slightly awry and now instead of the lifter, the plan is to ascend in the interior of a Golem of overwhelming power. In order to complete the construction of the behemoth, a strange variety of materials must be assembled. Live and drink, metyr.
+The plan to the Spindle has gone slightly awry and now instead of the lifter, the plan is to ascend in the interior of a Golem of overwhelming power. In order to complete the construction of the behemoth, a strange variety of materials must be assembled. Live and drink, mevyn.
 
 <div class="section-info">
 
