@@ -22,6 +22,13 @@ exports.processRequest = async (res, info) => {
                 response = await getQuestsPayload();
                 res.status(200);
                 return response;
+            case "mutations":
+            case "skills":
+            case "attributes":
+            case "stats":
+                response = await getData(path);
+                res.status(200);
+                return response;
             default:
                 res.status(400);
                 return { error: "Invalid parameters supplied." };
@@ -78,6 +85,19 @@ async function getArticlesPayload() {
     }
 
     return payload;
+}
+
+async function getData(dataString) {
+    let path;
+    try {
+        path = `${rootDir}/src/assets/data/${dataString}.json`;
+    }
+    catch (exception) {
+        throw new Error("No data found for " + dataString);
+    }
+
+    let json = JSON.parse(fs.readFileSync(path));
+    return json;
 }
 
 function replaceAll(str, character, replacement) {

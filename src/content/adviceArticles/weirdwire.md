@@ -12,7 +12,7 @@ Make your way to the Rust Wells to collect 200 feet of wire for Argyve. Live and
 
 | Level | Abilities | Stats                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ----- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 7     | Flight    | 6 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/AV.png" /></span></span><span class="injected"><span class="stat">AV</span></span> or 13 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span> |
+| 7     | Flight    | 6 AV or 13 DV |
 
 </div>
 
@@ -48,4 +48,4 @@ Making our way back to the rust wells, we can now reach the bottom quickly and, 
 
 Don’t fly at this point, there’s no need and we can fall, which as Argyve’s former apprentice demonstrated for us is not comfortable. Walking over the edge will only drop us 1 stratum at a time, which deals no damage. By doing this, we can go right to the bottom taking no damage. From here, we loot the wire (and the chest if there is one and you can) and fly out. While flying out, make sure you always have ground beneath you, like in gif.
 
-This ensures that in the unlikely event that you do fall, you only fall 1 stratum and don’t take any damage. Repeat for however many wells you need to go down, and if you have the <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/mutationImages/wings.png" /></span><span class="mutation">Wings</span></span> mutation, enjoy not having to search for mechanical wings and just go right here at your earliest convenience.
+This ensures that in the unlikely event that you do fall, you only fall 1 stratum and don’t take any damage. Repeat for however many wells you need to go down, and if you have the Wings mutation, enjoy not having to search for mechanical wings and just go right here at your earliest convenience.

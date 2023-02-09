@@ -12,7 +12,7 @@ We've decoded the strange signal, but the Barathrumites have more work for us. W
 
 | Level | Abilities                               | Stats          |
 | ----- | --------------------------------------- | -------------- |
-| 21    | 250 reputation with at least 4 factions | 13 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/AV.png" /></span></span><span class="injected"><span class="stat">AV</span></span> or 19 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span> |
+| 21    | 250 reputation with at least 4 factions | 13 AV or 19 DV |
 
 </div>
 

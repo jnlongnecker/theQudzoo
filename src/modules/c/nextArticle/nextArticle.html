@@ -3,7 +3,7 @@
         <div>
             <template if:true={prevArticle}>
 
-                <a href={prevArticle.link}>
+                <a class="prev" href={prevArticle.link}>
                     <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -15,7 +15,7 @@
         </div>
         <div>
             <template if:true={nextArticle}>
-                <a href={nextArticle.link}>
+                <a class="next" href={nextArticle.link}>
                     {nextArticle.label}
                     <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

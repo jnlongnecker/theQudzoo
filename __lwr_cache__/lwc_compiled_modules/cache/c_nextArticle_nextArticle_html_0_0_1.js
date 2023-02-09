@@ -10,6 +10,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   }, [api_element("div", {
     key: 1
   }, [$cmp.prevArticle ? api_element("a", {
+    classMap: {
+      "prev": true
+    },
     attrs: {
       "href": $cmp.prevArticle.link
     },
@@ -35,6 +38,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   }, [])]), api_text(api_dynamic_text($cmp.prevArticle.label))]) : null]), api_element("div", {
     key: 5
   }, [$cmp.nextArticle ? api_element("a", {
+    classMap: {
+      "next": true
+    },
     attrs: {
       "href": $cmp.nextArticle.link
     },

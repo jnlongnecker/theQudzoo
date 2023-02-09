@@ -30,7 +30,7 @@ class Footer extends LightningElement {
       link: "https://wiki.cavesofqud.com/wiki/Caves_of_Qud_Wiki"
     }, {
       label: "Patreon",
-      link: "https://www.facebook.com/freeholdgames"
+      link: "https://www.patreon.com/freeholdgames"
     }];
   }
   get rowOneLinks() {

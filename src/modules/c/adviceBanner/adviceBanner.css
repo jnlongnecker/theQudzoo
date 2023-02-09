@@ -34,6 +34,10 @@ p {
     text-align: center;
 }
 
+.name {
+    white-space: nowrap;
+}
+
 @media only screen and (max-width: 900px) {
     section {
         padding: 0 var(--mobile-margin-size);

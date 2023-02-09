@@ -2,15 +2,15 @@
     "stats": [
         {
             "name": "AV",
-            "src": "/1/asset/s/latest/public/assets/images/statImages/AV.png"
+            "src": "/1/asset/s/latest/public/assets/images/statImages/av.png"
         },
         {
             "name": "DV",
-            "src": "/1/asset/s/latest/public/assets/images/statImages/DV.png"
+            "src": "/1/asset/s/latest/public/assets/images/statImages/dv.png"
         },
         {
             "name": "HP",
-            "src": "/1/asset/s/latest/public/assets/images/statImages/HP.png"
+            "src": "/1/asset/s/latest/public/assets/images/statImages/hp.png"
         },
         {
             "name": "MA",

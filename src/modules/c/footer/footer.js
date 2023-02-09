@@ -41,7 +41,7 @@ export default class Footer extends LightningElement {
         },
         {
             label: "Patreon",
-            link: "https://www.facebook.com/freeholdgames"
+            link: "https://www.patreon.com/freeholdgames"
         }
     ]
 

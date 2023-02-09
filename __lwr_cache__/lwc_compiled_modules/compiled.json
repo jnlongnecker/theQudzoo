@@ -106,7 +106,7 @@
   [
     "c/footer@0.0.1",
     {
-      "ownHash": "1e5ce862496dd8f676716b2a9ae019b4",
+      "ownHash": "14b9fdb876278effe2e45409d1e5b43e",
       "module": "./cache/c_footer_0_0_1.js",
       "moduleMeta": "./cache/c_footer_0_0_1.meta.json"
     }
@@ -362,7 +362,7 @@
   [
     "c/adviceBanner#adviceBanner.html@0.0.1",
     {
-      "ownHash": "dedd43756c141f6c769fae8463dc7f2f",
+      "ownHash": "cd9528fce3c5029d646615270bb2e6af",
       "module": "./cache/c_adviceBanner_adviceBanner_html_0_0_1.js",
       "moduleMeta": "./cache/c_adviceBanner_adviceBanner_html_0_0_1.meta.json"
     }
@@ -370,7 +370,7 @@
   [
     "c/adviceBanner#adviceBanner.css@0.0.1",
     {
-      "ownHash": "994ebfbd1a65f38cad9deb5ed1fd0052",
+      "ownHash": "9abc77eaf3b929d0f9f86818fa6994d8",
       "module": "./cache/c_adviceBanner_adviceBanner_css_0_0_1.js",
       "moduleMeta": "./cache/c_adviceBanner_adviceBanner_css_0_0_1.meta.json"
     }
@@ -394,7 +394,7 @@
   [
     "c/nextArticle#nextArticle.html@0.0.1",
     {
-      "ownHash": "a95b9db879e507cd38bef53a27b708d7",
+      "ownHash": "f06d2774551754ba5b0d5aacd286317c",
       "module": "./cache/c_nextArticle_nextArticle_html_0_0_1.js",
       "moduleMeta": "./cache/c_nextArticle_nextArticle_html_0_0_1.meta.json"
     }
@@ -402,7 +402,7 @@
   [
     "c/nextArticle#nextArticle.css@0.0.1",
     {
-      "ownHash": "f36d7bbcf5278edc27d358c5f136885c",
+      "ownHash": "836098d8abb27cfa9f9ecceb0609e857",
       "module": "./cache/c_nextArticle_nextArticle_css_0_0_1.js",
       "moduleMeta": "./cache/c_nextArticle_nextArticle_css_0_0_1.meta.json"
     }
@@ -413,6 +413,70 @@
       "ownHash": "13fcec3d73f055fccd306149598cb9b5",
       "module": "./cache/c_nextArticle_nextArticle_scoped_css_scoped=true_0_0_1.js",
       "moduleMeta": "./cache/c_nextArticle_nextArticle_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/keywordHighlighter@0.0.1",
+    {
+      "ownHash": "19a9e67670b8952b2aed107096ac1fe1",
+      "module": "./cache/c_keywordHighlighter_0_0_1.js",
+      "moduleMeta": "./cache/c_keywordHighlighter_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/keywordHighlighter#keywordHighlighter.html@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/c_keywordHighlighter_keywordHighlighter_html_0_0_1.js",
+      "moduleMeta": "./cache/c_keywordHighlighter_keywordHighlighter_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/keywordHighlighter#keywordHighlighter.css@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/c_keywordHighlighter_keywordHighlighter_css_0_0_1.js",
+      "moduleMeta": "./cache/c_keywordHighlighter_keywordHighlighter_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/keywordHighlighter#keywordHighlighter.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/c_keywordHighlighter_keywordHighlighter_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/c_keywordHighlighter_keywordHighlighter_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/sugarInjector@0.0.1",
+    {
+      "ownHash": "37b47b9880372474fe3dc53802498e53",
+      "module": "./cache/c_sugarInjector_0_0_1.js",
+      "moduleMeta": "./cache/c_sugarInjector_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/sugarInjector#sugarInjector.html@0.0.1",
+    {
+      "ownHash": "f420990315751370e1237e86b4043332",
+      "module": "./cache/c_sugarInjector_sugarInjector_html_0_0_1.js",
+      "moduleMeta": "./cache/c_sugarInjector_sugarInjector_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/sugarInjector#sugarInjector.css@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/c_sugarInjector_sugarInjector_css_0_0_1.js",
+      "moduleMeta": "./cache/c_sugarInjector_sugarInjector_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/sugarInjector#sugarInjector.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/c_sugarInjector_sugarInjector_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/c_sugarInjector_sugarInjector_scoped_css_scoped=true_0_0_1.meta.json"
     }
   ]
 ]

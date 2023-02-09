@@ -146,6 +146,15 @@
       }
     },
     {
+      "id": "Cybernetics",
+      "path": "/advice/cybernetics",
+      "contentTemplate": "$contentDir/adviceArticles/cybernetics.md",
+      "layoutTemplate": "$layoutsDir/advice_layout.njk",
+      "properties": {
+        "preview": "/1/asset/s/latest/public/assets/images/previews/cybernetics.png"
+      }
+    },
+    {
       "id": "Tinkering",
       "path": "/advice/tinkering",
       "contentTemplate": "$contentDir/adviceArticles/tinkering.md",

@@ -17,10 +17,15 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 2
   }, [api_text("Advice Articles")])]), api_element("p", {
     key: 3
-  }, [api_text("Breakdowns of the most relevant layers of Qud by A-F-F-I-N-E")]), api_element("div", {
+  }, [api_text("Breakdowns of the most relevant layers of Qud by "), api_element("span", {
+    classMap: {
+      "name": true
+    },
     key: 4
-  }, [api_custom_element("c-article-hub", _cArticleHub, {
+  }, [api_text("A-F-F-I-N-E")])]), api_element("div", {
     key: 5
+  }, [api_custom_element("c-article-hub", _cArticleHub, {
+    key: 6
   }, [])])])];
 }
 export default registerTemplate(tmpl);

@@ -12,7 +12,7 @@ Having returned from Omonporch, we didn't come alone. A strange rumbling around 
 
 | Level | Abilities                                                                                                           | Stats                   |
 | ----- | ------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 30    | <span class="injected"><span class="skill">Tinker II</span></span> or 4+ Portable Walls, Freeze Ray/Flamethrower, <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/mutationImages/phasing.png" /></span><span class="mutation">Phasing</span></span>, EMP/Stasis/Sleep/Stun, 5+ Salve Injectors, Disarm | 8 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/AV.png" /></span></span><span class="injected"><span class="stat">AV</span></span> and 20 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span> or 15 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/AV.png" /></span></span><span class="injected"><span class="stat">AV</span></span> |
+| 30    | Tinker II or 4+ Portable Walls, Freeze Ray/Flamethrower, Phasing, EMP/Stasis/Sleep/Stun, 5+ Salve Injectors, Disarm | 8 AV and 20 DV or 15 AV |
 
 </div>
 
@@ -30,7 +30,7 @@ These will remove some focus to yourself, but can also shoot you and allies. The
 
 ### Activate Rodanis Y
 
-Rodanis Y is a powerhouse and can easily handle a few templars on its own. Since it has <span class="injected"><span class="skill">Dismember</span></span> skills, if it gets the right luck it can even handle the templar leader. It does suck a ton of power, however, and we cannot direct it to go to a particular location. For these reasons, Rodanis Y is only really useful if one of the drop parties will land nearby.
+Rodanis Y is a powerhouse and can easily handle a few templars on its own. Since it has Dismember skills, if it gets the right luck it can even handle the templar leader. It does suck a ton of power, however, and we cannot direct it to go to a particular location. For these reasons, Rodanis Y is only really useful if one of the drop parties will land nearby.
 
 ### Power Force Projectors
 
@@ -46,7 +46,7 @@ However, I am not merely interested in victory at any cost here. I have a vested
 
 Portable walls are simply the most accessible way to perform this strategy, but step sowers or 3D cobblers would also do the job. The idea here is to figure out where the templar will drop, and then wall them in so they cannot get out until you let them out. There are many places where they can drop, and not every place will allow you to tidily perform this strategy (they can even drop dead-center of Grit Gate), most configurations will at least allow you to wall in a single group if not both.
 
-In order to pull this off, you will need a variable amount of portable walls. Most places can be safely walled off with a single portable wall, but some will need 2 or more. To be safe, it is recommended that you either come with 4 portable walls or come with the capability to have at least 4 portable walls. A legendary templar will always have 2 portable walls on them, so if you’re incapable of <span class="injected"><span class="skill">Tinkering</span></span> them yourself (requires <span class="injected"><span class="skill">Tinker II</span></span>), then you’ll have to search for those legendary templars ahead of time.
+In order to pull this off, you will need a variable amount of portable walls. Most places can be safely walled off with a single portable wall, but some will need 2 or more. To be safe, it is recommended that you either come with 4 portable walls or come with the capability to have at least 4 portable walls. A legendary templar will always have 2 portable walls on them, so if you’re incapable of Tinkering them yourself (requires Tinker II), then you’ll have to search for those legendary templars ahead of time.
 
 Your goal in placing the wall is twofold:
 
@@ -55,7 +55,7 @@ When placing the wall, you want to ensure that no Barathrumites will get locked 
 
 Our true objective in placing these walls is to protect the Barathrumites; never forget that. It may be easier to contain the urshiib rather than the templar; especially if they are all sleeping and the templar are not dropping in the bedrooms. The reason the walls in particular are more preferred than the force projectors is precisely because the force projectors will not keep the Barathrumites out. In a pinch, they can be useful since if the templars do not have a way to pathfind to an enemy, they will just stand still.
 
-When placing the wall, you need to also be aware of what to do when you inevitably need to break a hole in it to kill the templar. Ensure that you have a plan for this, such as leaving a single hole in the container for the first drop party and having a final wall to place behind you before opening the seal on the second. You may also consider shaping a favorable chokepoint in the container and <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/mutationImages/phasing.png" /></span><span class="mutation">Phasing</span></span> through to fight the templar.
+When placing the wall, you need to also be aware of what to do when you inevitably need to break a hole in it to kill the templar. Ensure that you have a plan for this, such as leaving a single hole in the container for the first drop party and having a final wall to place behind you before opening the seal on the second. You may also consider shaping a favorable chokepoint in the container and Phasing through to fight the templar.
 
 If you’re looking for inspiration on places to put walls or where exactly the force projectors are, you can refer to the following map of Grit Gate:
 
@@ -69,6 +69,6 @@ Once the templar arrive, they tend to prioritize throwing an excessive amount of
 
 The flamethrower and freeze ray work exceptionally well here, as if you can construct an “L” shape in your fighting arena, you can use line of sight to fight a single enemy at a time. You can then use the freeze ray or flamethrower to incapacitate your single opponent and kill them easily; rinsing and repeating for the rest of the templar. Even if you don’t do this, the fact that an enemy on fire will not fight back typically and a frozen enemy cannot fight back can be used to your advantage to single out templars with dangerous weapons, such as freeze rays and flamethrowers they have themselves.
 
-If you don’t happen to have those weapons, disarm in particular works wonders here; especially if you can get the templar to trickle in one at a time. Being creatures that rely on weaponry, they are extremely vulnerable when that weaponry is taken from them. Additionally, having good resistance against forced movement (asphalt cooking effects, fitted with cleats mod, anchor spikes, etc) will be quite handy as the leader of the group likes to spam <span class="injected"><span class="skill">Shield</span></span> <span class="injected"><span class="skill">Slam</span></span>.
+If you don’t happen to have those weapons, disarm in particular works wonders here; especially if you can get the templar to trickle in one at a time. Being creatures that rely on weaponry, they are extremely vulnerable when that weaponry is taken from them. Additionally, having good resistance against being knocked prone (asphalt cooking effects, fitted with cleats mod, motorized treads, etc) will be quite handy as the leader of the group likes to spam Shield Slam.
 
 Despite your best efforts, sometimes you’ll just get a bad configuration or the templar will strangely drop far beyond the indicator circle or Shem -1 will just inexplicably be dead even though you never saw it the entire time. The goal with these strategies is to merely mitigate the damage in the most consistent way. Unfortunately, this is the one mission that has eluded perfect consistency for me, but has been the only time I have finished this mission without any Barathrumites dying.

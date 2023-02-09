@@ -6,13 +6,13 @@ There are far more items and enemies than I care to cover in this document, so i
 
 ## Red Rock (Level 1-10)
 
-The first section of the game revolves around the legendary quest to Red Rock. This is where most dreams are crushed instantly by a <span class="injected"><span class="skill">Flurry</span></span> of stones from baboons or the gnashing teeth of a legendary snapjaw. Included in this section are all the story quests from Argyve until A Canticle for Barathrum. This part of the game is highly volatile, and I usually play it pretty fast and loose since death here is pretty meaningless. I personally like to level up on baboons to 5-7 before clearing out Red Rock, then completing the Weirdwire Conduit immediately after.
+The first section of the game revolves around the legendary quest to Red Rock. This is where most dreams are crushed instantly by a flurry of stones from baboons or the gnashing teeth of a legendary snapjaw. Included in this section are all the story quests from Argyve until A Canticle for Barathrum. This part of the game is highly volatile, and I usually play it pretty fast and loose since death here is pretty meaningless. I personally like to level up on baboons to 5-7 before clearing out Red Rock, then completing the Weirdwire Conduit immediately after.
 
 ### Notable Enemies - Red Rock
 
 #### Slugsnout
 
-<div class="section-info"><span class="injected"><span class="skill">Swift Reflexes</span></span>, 12-13 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span> or 6 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/AV.png" /></span></span><span class="injected"><span class="stat">AV</span></span></div>
+<p class="section-info">Swift Reflexes, 12-13 DV or 6 AV</p>
 
 ### Equipment Wishlist - Red Rock
 
@@ -30,11 +30,11 @@ The first section of the game revolves around the legendary quest to Red Rock. T
 
 ### Skill Wishlist - Red Rock
 
-- <span class="injected"><span class="skill">Swift Reflexes</span></span>
-- <span class="injected"><span class="skill">Acrobatics</span></span>
-- <span class="injected"><span class="skill">Hurdle</span></span>
-- <span class="injected"><span class="skill">Charge</span></span>
-- <span class="injected"><span class="skill">Mind's Compass</span></span>
+- Swift Reflexes
+- Acrobatics
+- Hurdle
+- Charge
+- Mind's Compass
 - Basic weapon skills
 
 ## Grit Gate (Level 10-18)
@@ -45,15 +45,15 @@ The second section involves the quests just up to Decoding the Signal, all revol
 
 #### Novice of the Sightless Way
 
-<div class="section-info">-249 Seekers of the Sightless Way reputation, <span class="injected"><span class="skill">Harvestry</span></span> + <span class="injected"><span class="skill">Meal Preparation</span></span></div>
+<p class="section-info">-249 Seekers of the Sightless Way reputation, Harvestry + Meal Preparation</p>
 
 #### Goatfolk Sower
 
-<div class="section-info"><span class="injected"><span class="skill">Juke</span></span>, Hologram Bracelet, Forcefield source; solved primarily through positioning</div>
+<p class="section-info">Juke, Hologram Bracelet, Forcefield source; solved primarily through positioning</p>
 
 #### Slog of the Cloaca
 
-<div class="section-info">-249 Mollusk reputation</div>
+<p class="section-info">-249 Mollusk reputation</p>
 
 ### Equipment Wishlist - Grit Gate
 
@@ -62,26 +62,26 @@ The second section involves the quests just up to Decoding the Signal, all revol
 - Sparbine
 - Carbide or above weaponry
 - Steel tier or above equipment for every slot
-- Glowsphere/Floating Glowsphere (if no <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/mutationImages/nightVision.png" /></span><span class="mutation">Night Vision</span></span>)
+- Glowsphere/Floating Glowsphere (if no Night Vision)
 
 #### Nice-to-Have
 
 - Hologram Bracelet
 - Elemental damage option
 - Sower Seeds x30
-- Stopsvalin
+- Stopsvalinn
 
 ### Skill Wishlist - Grit Gate
 
-- <span class="injected"><span class="skill">Tinker I</span></span>
-- <span class="injected"><span class="skill">Disassemble</span></span>
-- <span class="injected"><span class="skill">Dual Wield</span></span>
-- <span class="injected"><span class="skill">Ambidexterity</span></span>
-- <span class="injected"><span class="skill">Shake It Off</span></span>
-- <span class="injected"><span class="skill">Meal Preparation</span></span>
+- Tinker I
+- Disassemble
+- Dual Wield
+- Ambidexterity
+- Shake It Off
+- Meal Preparation
+- Block
+- Juke
 - Mid-Level Weapon Skills
-- <span class="injected"><span class="skill">Block</span></span>
-- <span class="injected"><span class="skill">Juke</span></span>
 
 ## Bethesda Susa (Level 18-26)
 
@@ -91,27 +91,27 @@ At the third section of the game, I’m ready to rock through Bethesda Susa and 
 
 #### Rimewyk
 
-<div class="section-info">-249 Unshelled Reptile reputation, 70+ Cold Resistance, <span class="injected"><span class="skill">Weathered</span></span>, 24+ <span class="injected"><span class="attribute agility">Agility</span></span></div>
+<p class="section-info">-249 Unshelled Reptile reputation, 70+ Cold Resistance, Weathered, 24+ Agility</p>
 
 #### Cragmensch
 
-<div class="section-info">9 Penetration weapon, Elemental damage, 8+ <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/AV.png" /></span></span><span class="injected"><span class="stat">AV</span></span></div>
+<p class="section-info">9 PV weapon, Elemental damage, 8+ AV</p>
 
 #### Gyrohumor
 
-<div class="section-info">Reliable Ranged weapon, -249 Ooze reputation, Stunning capabilities, 16+ <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span></div>
+<p class="section-info">Reliable Ranged weapon, -249 Ooze reputation, Stunning capabilities, 16+ DV</p>
 
 #### Stat Sap
 
-<div class="section-info">Sparbine, 15 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/AV.png" /></span></span><span class="injected"><span class="stat">AV</span></span>, 250 Winged Mammal reputation, Sight through walls</div>
+<p class="section-info">Sparbine, 15 AV, 250 Winged Mammal reputation, Sight through walls</p>
 
 #### Dervish/High Dervish of the Sightless Way
 
-<div class="section-info">-249 Seekers of the Sightless Way reputation, Disarm, Stunning capabilities, Enhanced quickness/movement speed, Reliable Ranged weapon</div>
+<p class="section-info">-249 Seekers of the Sightless Way reputation, Disarm, Stunning capabilities, Enhanced quickness/movement speed, Reliable Ranged weapon</p>
 
 #### Twinning Lamprey
 
-<div class="section-info">-249 Fish reputation, Normality gas, Sparbine</div>
+<p class="section-info">-249 Fish reputation, Normality gas, Sparbine</p>
 
 ### Equipment Wishlist - Bethesda Susa
 
@@ -130,17 +130,17 @@ At the third section of the game, I’m ready to rock through Bethesda Susa and 
 
 ### Skill Wishlist - Bethesda Susa
 
-- <span class="injected"><span class="skill">Calloused</span></span>
-- <span class="injected"><span class="skill">Weathered</span></span>
-- <span class="injected"><span class="skill">Tinker II</span></span>
-- <span class="injected"><span class="skill">Two-weapon Fighting</span></span>
-- <span class="injected"><span class="skill">Tumble</span></span>
-- <span class="injected"><span class="skill">Jump</span></span>
-- <span class="injected"><span class="skill">Snake Oiler</span></span>
-- <span class="injected"><span class="skill">Meditate</span></span>
-- <span class="injected"><span class="skill">Bow and Rifle</span></span>
-- Basic <span class="injected"><span class="skill">Pistol</span></span> skills
-- <span class="injected"><span class="skill">Deft Blocking</span></span>
+- Calloused
+- Weathered
+- Tinker II
+- Two-weapon Fighting
+- Tumble
+- Jump
+- Snake Oiler
+- Meditate
+- Bow and Rifle
+- Basic Pistol skills
+- Deft Blocking
 
 ## Endgame (Level 26-35)
 
@@ -150,39 +150,39 @@ Very suddenly, at this section of the game we gain access to extremely powerful 
 
 #### Gamma Moth
 
-<div class="section-info">20+ <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span>, <span class="injected"><span class="skill">Swift Reflexes</span></span>, -249 Insect reputation, Level 5 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/mutationImages/regeneration.png" /></span><span class="mutation">Regeneration</span></span></div>
+<p class="section-info">20+ DV, Swift Reflexes, -249 Insect reputation, Level 5 Regeneration</p>
 
 #### Mirror Bug
 
-<div class="section-info"><span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/mutationImages/phasing.png" /></span><span class="mutation">Phasing</span></span>, Vibro Weapons, -249 Insect reputation, <span class="injected"><span class="skill">Juke</span></span></div>
+<p class="section-info">Phasing, Vibro Weapons, -249 Insect reputation, Juke</p>
 
 #### Svardym Eld
 
-<div class="section-info"><span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/mutationImages/mentalMirror.png" /></span><span class="mutation">Mental Mirror</span></span>, Enhanced quickness/movement speed, Geomagnetic Disc, Quartzfur Equipment</div>
+<p class="section-info">Mental Mirror, Enhanced quickness/movement speed, Geomagnetic Disc, Quartzfur Equipment</p>
 
 #### Galgal
 
-<div class="section-info">Forcefield source, 270+ Movement Speed, Geomagnetic Disc, Perfect Flight + 25 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span>, High-Voltage Arc Winders, -249 Robot reputation</div>
+<p class="section-info">Forcefield source, 270+ Movement Speed, Geomagnetic Disc, Perfect Flight + 25 DV, High-Voltage Arc Winders, -249 Robot reputation</p>
 
 #### Trining Lamprey
 
-<div class="section-info">Normality Grenades III, -249 Fish reputation</div>
+<p class="section-info">Normality Grenades III, -249 Fish reputation</p>
 
 #### Chrome Pyramid
 
-<div class="section-info">Geomagnetic Disc, 25 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span> and <span class="injected"><span class="skill">Swift Reflexes</span></span>, -249 Robot reputation</div>
+<p class="section-info">Geomagnetic Disc, 25 DV and Swift Reflexes, -249 Robot reputation</p>
 
 #### Leering Stalker
 
-<div class="section-info">Ceremonial Vibrokhopesh, Electricity modded weapons, 25 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span>, Stunning capabilities, -249 Robot reputation, Geomagnetic Disc, High-Voltage Arc Winders</div>
+<p class="section-info">Ceremonial Vibrokhopesh, Electricity modded weapons, 25 DV, Stunning capabilities, -249 Robot reputation, Geomagnetic Disc, High-Voltage Arc Winders</p>
 
 #### Cherubim
 
-<div class="section-info">EMP Grenades III, Explosives, Level 6 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/mutationImages/wings.png" /></span><span class="mutation">Wings</span></span>, 24 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/AV.png" /></span></span><span class="injected"><span class="stat">AV</span></span>, Enhanced Quickness, 300 Movement speed, Geomagnetic Disc, Mental attacks, Stunning capabilities</div>
+<p class="section-info">EMP Grenades III, Explosives, Level 6 Wings, 24 AV, Enhanced Quickness, 300 Movement speed, Geomagnetic Disc, Mental attacks, Stunning capabilities</p>
 
 #### Red Ooze/Purple Jell
 
-<div class="section-info">-249 Ooze reputation, Forcefield source, Ranged weapons, Enhanced quickness/movement speed</div>
+<p class="section-info">-249 Ooze reputation, Forcefield source, Ranged weapons, Enhanced quickness/movement speed</p>
 
 ### Equipment Wishlist - Endgame
 
@@ -190,7 +190,7 @@ Very suddenly, at this section of the game we gain access to extremely powerful 
 
 - Flawless Crysteel weaponry
 - Full Flawless Crysteel tier gear
-- 25 <span class="injected"><span><img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/DV.png" /></span></span><span class="injected"><span class="stat">DV</span></span> with some armor/weapon configuration
+- 25 DV with some armor/weapon configuration
 - Geomagnetic Disc
 - Light Rail/High-Voltage Arc Winder x2/Hand Rail x2
 

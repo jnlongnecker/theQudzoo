@@ -1,109 +1,6 @@
 {
     "skillCategories": [
         {
-            "name": "Un-named",
-            "plural": "undefined",
-            "entryCost": 0,
-            "skills": [
-                {
-                    "name": "Sprint",
-                    "plural": "Sprinting",
-                    "cost": 0,
-                    "prerequisites": {
-                        "skills": [],
-                        "strength": 0,
-                        "agility": 0,
-                        "toughness": 0,
-                        "intelligence": 0,
-                        "willpower": 0,
-                        "ego": 0
-                    },
-                    "faction": "None",
-                    "worth": "Yes"
-                },
-                {
-                    "name": "Defensive Stance",
-                    "plural": "undefined",
-                    "cost": 0,
-                    "prerequisites": {
-                        "skills": [],
-                        "strength": 0,
-                        "agility": 0,
-                        "toughness": 0,
-                        "intelligence": 0,
-                        "willpower": 0,
-                        "ego": 0
-                    },
-                    "faction": "None",
-                    "worth": "Yes"
-                },
-                {
-                    "name": "Aggressive Stance",
-                    "plural": "undefined",
-                    "cost": 0,
-                    "prerequisites": {
-                        "skills": [],
-                        "strength": 0,
-                        "agility": 0,
-                        "toughness": 0,
-                        "intelligence": 0,
-                        "willpower": 0,
-                        "ego": 0
-                    },
-                    "faction": "None",
-                    "worth": "Yes"
-                },
-                {
-                    "name": "Charging",
-                    "plural": "undefined",
-                    "cost": 0,
-                    "prerequisites": {
-                        "skills": [],
-                        "strength": 0,
-                        "agility": 0,
-                        "toughness": 0,
-                        "intelligence": 0,
-                        "willpower": 0,
-                        "ego": 0
-                    },
-                    "faction": "None",
-                    "worth": "Yes"
-                },
-                {
-                    "name": "Harvest",
-                    "plural": "Harvested",
-                    "cost": 0,
-                    "prerequisites": {
-                        "skills": [],
-                        "strength": 0,
-                        "agility": 0,
-                        "toughness": 0,
-                        "intelligence": 0,
-                        "willpower": 0,
-                        "ego": 0
-                    },
-                    "faction": "None",
-                    "worth": "Yes"
-                },
-                {
-                    "name": "Dismembered",
-                    "plural": "Dismembering",
-                    "cost": 0,
-                    "prerequisites": {
-                        "skills": [],
-                        "strength": 0,
-                        "agility": 0,
-                        "toughness": 0,
-                        "intelligence": 0,
-                        "willpower": 0,
-                        "ego": 0
-                    },
-                    "faction": "None",
-                    "worth": "Yes"
-                }
-            ]
-        },
-        {
             "name": "Acrobatics",
             "plural": "undefined",
             "entryCost": 75,
@@ -2105,6 +2002,141 @@
                      },
                     "faction": "None",
                     "worth": "No"
+                }
+            ]
+        },
+        {
+            "name": "Un-named",
+            "plural": "undefined",
+            "entryCost": 0,
+            "skills": [
+                {
+                    "name": "Sprint",
+                    "plural": "Sprinting",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Defensive Stance",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Aggressive Stance",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Charging",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Harvest",
+                    "plural": "Harvested",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Dismembered",
+                    "plural": "Dismembering",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Rifle",
+                    "plural": "Rifles",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Bow",
+                    "plural": "Bows",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
                 }
             ]
         }
