@@ -1,5 +1,5 @@
 const fs = require("fs");
-const rootDir = __dirname.substring(0, __dirname.indexOf("\\src"));
+const rootDir = __dirname.substring(0, __dirname.indexOf("src") - 1);
 let app;
 
 
