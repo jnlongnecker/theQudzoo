@@ -95,7 +95,6 @@ async function getData(dataString) {
         json = JSON.parse(fs.readFileSync(path));
     }
     catch (exception) {
-        console.log(__dirname);
         throw new Error("No data found for " + dataString);
     }
 
