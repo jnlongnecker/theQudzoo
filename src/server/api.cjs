@@ -89,14 +89,15 @@ async function getArticlesPayload() {
 
 async function getData(dataString) {
     let path;
+    let json;
     try {
-        path = `${rootDir}/src/assets/data/${dataString}.json`;
+        path = `${rootDir}/src/api/data/${dataString}.json`;
+        json = JSON.parse(fs.readFileSync(path));
     }
     catch (exception) {
         throw new Error("No data found for " + dataString);
     }
 
-    let json = JSON.parse(fs.readFileSync(path));
     return json;
 }
 
