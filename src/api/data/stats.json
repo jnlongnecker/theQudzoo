@@ -2,15 +2,15 @@
     "stats": [
         {
             "name": "AV",
-            "src": "/1/asset/s/latest/public/assets/images/statImages/av.png"
+            "src": "/1/asset/s/latest/public/assets/images/statImages/armorValue.png"
         },
         {
             "name": "DV",
-            "src": "/1/asset/s/latest/public/assets/images/statImages/dv.png"
+            "src": "/1/asset/s/latest/public/assets/images/statImages/dodgeValue.png"
         },
         {
             "name": "HP",
-            "src": "/1/asset/s/latest/public/assets/images/statImages/hp.png"
+            "src": "/1/asset/s/latest/public/assets/images/statImages/hitpoints.png"
         },
         {
             "name": "MA",
