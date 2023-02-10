@@ -20,7 +20,7 @@ The first section of the game revolves around the legendary quest to Red Rock. T
 
 - Equipment for every gear slot
 - Steel or above weaponry
-- Mechanical Wings
+- Mechanical wings
 
 #### Nice-to-Have
 

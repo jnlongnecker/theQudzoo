@@ -115,7 +115,7 @@ class SugarInjector extends LightningElement {
     if (name.indexOf("-") !== -1) {
       alternateWords = name.split("-");
     }
-    let prefixes = "(?<!(t|T)hrowing )(?<!(m|M)ental )(?<!(m|M)echanical )(?<!<span[^>]*)(?<!<span.*>)(?<!#.+)(?<![\\w])";
+    let prefixes = "";
     let regexString = prefixes + "(";
     let alternateRegex = "";
     if (alternateWords) {
