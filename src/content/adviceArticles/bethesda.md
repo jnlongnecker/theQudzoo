@@ -90,7 +90,7 @@ You didn’t honestly think I was going to leave you to just fight it out now di
 
 ![Player Warden at the end of a long tunnel dug in the wall of a troll chamber starting at the staircase]($assetsDir/images/quests/bethesda-cheese.png)
 
-To the far left, you can see where I came into the room and started digging. Now look carefully at the walls to the north of my character. You can see that the wall to my direct northeast extends further upwards, which tells me that the walls to the right of it will lead into the room behind the door. By breaking down one of these walls, we can move down to the next room and repeat. Just make sure you bring a capable digging method if you decide to do this.
+To the far left, you can see where I came into the room and started digging. Now look carefully at the walls to the north of my character. You can see that the wall to my direct northwest extends further upwards, which tells me that the walls to the right of it will lead into the room behind the door. By breaking down one of these walls, we can move down to the next room and repeat. Just make sure you bring a capable digging method if you decide to do this.
 
 Digging is not our only solution. We can alternatively use our phase silk to pass through the wall and down the stairs. Care should be taken of choosing this option, since the trolls can and will open the door to get to you (the foals will be unable to open the door though). Do your best to combine Sprint to drop aggro as you pass through the wall, that way you can reset your cooldowns before advancing and won’t have the troll pop in on you.
 

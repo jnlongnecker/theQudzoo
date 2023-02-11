@@ -59,7 +59,7 @@ export default class SugarInjector extends LightningElement {
     highlightAll() {
         this.dataReady = 0;
         this.documentReady = false;
-        let allParagraphs = document.querySelectorAll("p,ul,td");
+        let allParagraphs = document.querySelectorAll("p,li,td");
 
         for (let paragraph of allParagraphs) {
             let text = paragraph.innerHTML;
