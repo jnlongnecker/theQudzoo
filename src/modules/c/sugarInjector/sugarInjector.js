@@ -61,8 +61,6 @@ export default class SugarInjector extends LightningElement {
         this.documentReady = false;
         let allParagraphs = document.querySelectorAll("p,ul,td");
 
-        console.log(allParagraphs[5]);
-
         for (let paragraph of allParagraphs) {
             let text = paragraph.innerHTML;
             if (text.indexOf("<img") !== -1) continue;

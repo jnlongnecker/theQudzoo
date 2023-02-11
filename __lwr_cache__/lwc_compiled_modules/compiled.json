@@ -226,7 +226,7 @@
   [
     "c/tableOfContents@0.0.1",
     {
-      "ownHash": "3657f01f1eac76c458cc9593325a4024",
+      "ownHash": "d957bf9a7df6bf059754b37057b23bef",
       "module": "./cache/c_tableOfContents_0_0_1.js",
       "moduleMeta": "./cache/c_tableOfContents_0_0_1.meta.json"
     }
@@ -386,7 +386,7 @@
   [
     "c/nextArticle@0.0.1",
     {
-      "ownHash": "4508e9d1c368dcdb758f96ce64342ccb",
+      "ownHash": "8356c72d8afe3ad1d97c71d26ecf09db",
       "module": "./cache/c_nextArticle_0_0_1.js",
       "moduleMeta": "./cache/c_nextArticle_0_0_1.meta.json"
     }
@@ -450,7 +450,7 @@
   [
     "c/sugarInjector@0.0.1",
     {
-      "ownHash": "7bb1c155f0e5e3f133f745b88cd8bb69",
+      "ownHash": "86c269967f2b55653b2ec282517e0ce2",
       "module": "./cache/c_sugarInjector_0_0_1.js",
       "moduleMeta": "./cache/c_sugarInjector_0_0_1.meta.json"
     }

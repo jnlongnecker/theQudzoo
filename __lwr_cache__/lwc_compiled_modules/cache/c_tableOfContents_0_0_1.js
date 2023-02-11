@@ -3,7 +3,6 @@ import _tmpl from "./tableOfContents.html";
 class TableOfContents extends LightningElement {
   constructor(...args) {
     super(...args);
-    this.pageTitle = void 0;
     this.titleElement = void 0;
     this.containerElement = void 0;
     this.sections = void 0;
@@ -16,12 +15,9 @@ class TableOfContents extends LightningElement {
     return this.sectionNameToId(this.pageTitle);
   }
   connectedCallback() {
-    this.titleElement = document.querySelector("h1");
     this.containerElement = this.template.querySelector(".sections");
     let remText = getComputedStyle(document.documentElement).getPropertyValue('--heading-height');
     this.newSectionMarginPixels = this.convertRemToPixels(remText.substring(0, remText.indexOf("rem"))) + 10;
-    this.pageTitle = this.titleElement.textContent;
-    document.title = this.pageTitle;
     this.gatherPageSections();
     window.addEventListener("scroll", event => this.handleScroll(event));
   }
@@ -115,7 +111,7 @@ _registerDecorators(TableOfContents, {
   track: {
     sections: 1
   },
-  fields: ["pageTitle", "titleElement", "containerElement", "scrolling", "lastHighlightedSectionIndex", "newSectionMarginPixels"]
+  fields: ["titleElement", "containerElement", "scrolling", "lastHighlightedSectionIndex", "newSectionMarginPixels"]
 });
 export default _registerComponent(TableOfContents, {
   tmpl: _tmpl

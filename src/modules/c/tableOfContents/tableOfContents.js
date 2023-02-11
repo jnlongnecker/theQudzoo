@@ -1,7 +1,6 @@
 import { LightningElement, api, track } from "lwc";
 
 export default class TableOfContents extends LightningElement {
-    pageTitle;
     titleElement;
     containerElement;
 
@@ -21,14 +20,11 @@ export default class TableOfContents extends LightningElement {
     }
 
     connectedCallback() {
-        this.titleElement = document.querySelector("h1");
         this.containerElement = this.template.querySelector(".sections");
 
         let remText = getComputedStyle(document.documentElement).getPropertyValue('--heading-height');
         this.newSectionMarginPixels = this.convertRemToPixels(remText.substring(0, remText.indexOf("rem"))) + 10;
 
-        this.pageTitle = this.titleElement.textContent;
-        document.title = this.pageTitle;
         this.gatherPageSections();
         window.addEventListener("scroll", (event) => this.handleScroll(event));
     }

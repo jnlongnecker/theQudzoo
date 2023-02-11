@@ -24,7 +24,6 @@ export default class NextArticle extends LightningElement {
                         let articleList = payload[objectName];
                         for (let index = 0; index < articleList.length; index++) {
                             let item = articleList[index];
-                            console.log(item);
                             if (item.link === path) {
                                 if (index < articleList.length - 1) {
                                     this.nextArticle = articleList[index + 1];

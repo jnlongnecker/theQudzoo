@@ -34,6 +34,7 @@
       "contentTemplate": "$contentDir/adviceArticles/questsHome.md",
       "layoutTemplate": "$layoutsDir/quest_home_layout.njk",
       "properties": {
+        "title": "Story Quests",
         "preview": "/1/asset/s/latest/public/assets/images/previews/quests.png"
       }
     },
@@ -43,6 +44,7 @@
       "contentTemplate": "$contentDir/adviceArticles/weirdwire.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Quests - Weirdwire Conduit",
         "preview": "/1/asset/s/latest/public/assets/images/quests/weirdwire-well.png"
       }
     },
@@ -52,6 +54,7 @@
       "contentTemplate": "$contentDir/adviceArticles/canticle.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Quests - A Canticle for Barathrum",
         "preview": "/1/asset/s/latest/public/assets/images/previews/canticle.png"
       }
     },
@@ -61,6 +64,7 @@
       "contentTemplate": "$contentDir/adviceArticles/golgotha.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Quests - More Than a Willing Spirit",
         "preview": "/1/asset/s/latest/public/assets/images/quests/golgotha-pickle.png"
       }
     },
@@ -70,6 +74,7 @@
       "contentTemplate": "$contentDir/adviceArticles/bethesda.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Quests - Decoding the Signal",
         "preview": "/1/asset/s/latest/public/assets/images/quests/bethesda-jotun.png"
       }
     },
@@ -79,6 +84,7 @@
       "contentTemplate": "$contentDir/adviceArticles/omonporch.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Quests - The Earl of Omonporch",
         "preview": "/1/asset/s/latest/public/assets/images/previews/earl.png"
       }
     },
@@ -88,6 +94,7 @@
       "contentTemplate": "$contentDir/adviceArticles/attack.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Quests - A Call to Arms",
         "preview": "/1/asset/s/latest/public/assets/images/previews/arms.png"
       }
     },
@@ -97,6 +104,7 @@
       "contentTemplate": "$contentDir/adviceArticles/klanq.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Quests - Pax Klanq, I Presume",
         "preview": "/1/asset/s/latest/public/assets/images/quests/klanq-map.png"
       }
     },
@@ -106,6 +114,7 @@
       "contentTemplate": "$contentDir/adviceArticles/tomb.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Quests - Tomb of the Eaters",
         "preview": "/1/asset/s/latest/public/assets/images/previews/tomb.png"
       }
     },
@@ -115,6 +124,7 @@
       "contentTemplate": "$contentDir/adviceArticles/golem.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Quests - The Golem",
         "preview": "/1/asset/s/latest/public/assets/images/previews/golem.png"
       }
     },
@@ -124,6 +134,7 @@
       "contentTemplate": "$contentDir/adviceArticles/breakdown.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Run Breakdown",
         "preview": "/1/asset/s/latest/public/assets/images/previews/run.png"
       }
     },
@@ -133,6 +144,7 @@
       "contentTemplate": "$contentDir/adviceArticles/positioning.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Combat Positioning",
         "preview": "/1/asset/s/latest/public/assets/images/positioning/positioning_3.png"
       }
     },
@@ -142,6 +154,7 @@
       "contentTemplate": "$contentDir/adviceArticles/mutations.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Mutations",
         "preview": "/1/asset/s/latest/public/assets/images/previews/mutations.png"
       }
     },
@@ -151,6 +164,7 @@
       "contentTemplate": "$contentDir/adviceArticles/cybernetics.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Cybernetics",
         "preview": "/1/asset/s/latest/public/assets/images/previews/cybernetics.png"
       }
     },
@@ -160,6 +174,7 @@
       "contentTemplate": "$contentDir/adviceArticles/tinkering.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Tinkering",
         "preview": "/1/asset/s/latest/public/assets/images/previews/tinkering.png"
       }
     },
@@ -169,6 +184,7 @@
       "contentTemplate": "$contentDir/adviceArticles/skills.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Skills",
         "preview": "/1/asset/s/latest/public/assets/images/previews/skills.png"
       }
     },
@@ -178,6 +194,7 @@
       "contentTemplate": "$contentDir/adviceArticles/builds.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Qud Builds",
         "preview": "/1/asset/s/latest/public/assets/images/previews/build.png"
       }
     },
@@ -187,6 +204,7 @@
       "contentTemplate": "$contentDir/adviceArticles/reputation.md",
       "layoutTemplate": "$layoutsDir/advice_layout.njk",
       "properties": {
+        "title": "Reputation",
         "preview": "/1/asset/s/latest/public/assets/images/previews/reputation.png"
       }
     },
