@@ -916,7 +916,7 @@ In Aggressive Stance, you make an attack against everything in melee with you ex
 
 In Defensive Stance, you push all creatures in melee with you back 1 space and try to trip the enemies. This synergizes extremely well with Lunge in Aggressive Stance and can be used to give yourself some space for ranged attacks or for positioning adjustments. Another great defensive tool for ranged builds.
 
-In Dueling Stance, you have the crown jewel of Long Blade effects: a highly effective disarm. This rarely fails even against powerful enemies and for many creatures that use weapons, being disarmed can completely neuter them. Enemies will not try to pick up their disarmed weapon, and will instead just scratch at you with their fists or other natural weapons they may have. This is also extraordinarily effective against turrets as it not only renders them completely useless, it also gives you access to their weapon which is guaranteed to be jacked. This synergizes extraordinarily well with true kin with a biodynamic power plant or mutants with Electrical Generation. It also allows you to get your weapon back if you use the Deploy Turrets Tinkering skill, which can allow you to plant down strong ranged weapons and then get them back at the end of combat. In case all that wasn’t enough, turret weapons are incredibly expensive and a fantastic source of bits, so disassembling or selling the guns and cells can give massive amounts of wealth to quickly purchase stronger weapons and armor.
+In Dueling Stance, you have the crown jewel of Long Blade effects: a highly effective disarm. This rarely fails even against powerful enemies and for many creatures that use weapons, being disarmed can completely neuter them. Enemies will not try to pick up their disarmed weapon, and will instead just scratch at you with their fists or other natural weapons they may have. This is also extraordinarily effective against turrets as it not only renders them completely useless, it also gives you access to their weapon which is guaranteed to be jacked. This synergizes extraordinarily well with true kin with a biodynamic power plant or mutants with Electrical Generation. It also allows you to get your weapon back if you use the Deploy Turret skill, which can allow you to plant down strong ranged weapons and then get them back at the end of combat. In case all that wasn’t enough, turret weapons are incredibly expensive and a fantastic source of bits, so disassembling or selling the guns and cells can give massive amounts of wealth to quickly purchase stronger weapons and armor.
 
 ### Improved Dueling Stance
 
@@ -1030,7 +1030,7 @@ In the rare scenario you find yourself surrounded, this can be effective. But th
 
 </div>
 
-The great thing about this skill is it always works and has a pretty long duration, 6-36 rounds. It also has a decent range of 8 tiles and is a guaranteed way of breaking Sunder Mind. It also won’t make the target try to kill you, so it naturally synergizes with Proselytize to get neutral creatures as followers (Domination and Beguile will still anger the creature, so use at your own risk). The bad thing about this skill is that you have to get Menacing Stare first, so it’s usually not worth it in total to take this skill because the cost is a bit higher than displayed. However, if you already have Menacing Stare then this is actually a pretty good pickup. If you manage to find legendary Hermits, this is also a good pickup to get from them.
+The great thing about this skill is it always works and has a pretty long duration, 6-36 rounds. It also has a decent range of 8 tiles and is a guaranteed way of breaking Sunder Mind. It also won’t make the target try to kill you, so it naturally synergizes with Proselytize to get neutral creatures as followers (Domination and Beguiling will still anger the creature, so use at your own risk). The bad thing about this skill is that you have to get Menacing Stare first, so it’s usually not worth it in total to take this skill because the cost is a bit higher than displayed. However, if you already have Menacing Stare then this is actually a pretty good pickup. If you manage to find legendary Hermits, this is also a good pickup to get from them.
 
 ### Snake Oiler
 
@@ -1160,7 +1160,7 @@ I mean you’re probably not using Sprint much and if you are, you’re probably
 
 </div>
 
-The disarm here isn’t as reliable as the disarm from Long Blades, but with high Agility and many shots you can disarm pretty often. The only difference here is that you’ll kill your target more often before you disarm them with Pistols, but that’s rarely a problem except for the case of turrets where you want their weapons. It’s passive and can easily save you, and if you combine this with Akimbo chain Pistols, you’ll actually very reliably disarm enemies. Fantastic skill.
+The disarm here isn’t as reliable as the disarm from Long Blades, but with high Agility and many shots you can disarm pretty often. The only difference here is that you’ll kill your target more often before you disarm them with Pistols, but that’s rarely a problem except for the case of turrets where you want their weapons. It’s passive and can easily save you, and if you combine this with Akimbo chain pistols, you’ll actually very reliably disarm enemies. Fantastic skill.
 
 ### Dead Shot
 
@@ -1274,7 +1274,7 @@ Basically the only thing that will ever actually fear you are dreadroot. Unless 
 
 </div>
 
-Very few things in the game confuse you, so unless you are an Esper with high amounts of glimmer this will rarely be used. The Seekers that use this are very rarely found anyways, so essentially your only real source of Confusion are Enigma Snails and Esper hunters. The chance to Shake It Off isn’t great either, so unless you’ve got points burning a hole in your inventory there’s no point in this one.
+Very few things in the game confuse you, so unless you are an Esper with high amounts of glimmer this will rarely be used. The Seekers that use this are very rarely found anyways, so essentially your only real source of Confusion are Enigma Snails and Esper hunters. The chance to shake it off isn’t great either, so unless you’ve got points burning a hole in your inventory there’s no point in this one.
 
 ### Conatus
 
@@ -1326,9 +1326,9 @@ Fasting Way is already enough in case you’re being bothered by eating often, t
 
 Again, like all equipment skills I am rating these assuming you are playing a build that utilizes them. Let’s take this time to explain Shield mechanics, since they are not simple or obvious.
 
-Baseline, you have a 25% chance to Block an attack if you are wielding a Shield in any hand. An equipped Shield will constantly apply the DV penalty (if it has one), but only apply its AV benefit on a successful Block. If you have multiple Shields equipped, the DV penalty will apply for each Shield. When a creature makes an attack on its turn, the chance to Block is rolled once. If the Block was successful, you gain an AV bonus for that attack only equal to the highest AV bonus of all your equipped Shields. That Shield can then no longer Block any other attack that creature makes this turn. If the Block was unsuccessful, then you gain no Shield benefit for that attack. This process repeats for every subsequent attack made by that creature on this turn.
+Baseline, you have a 25% chance to block an attack if you are wielding a Shield in any hand. An equipped Shield will constantly apply the DV penalty (if it has one), but only apply its AV benefit on a successful block. If you have multiple Shields equipped, the DV penalty will apply for each Shield. When a creature makes an attack on its turn, the chance to block is rolled once. If the block was successful, you gain an AV bonus for that attack only equal to the highest AV bonus of all your equipped Shields. That Shield can then no longer block any other attack that creature makes this turn. If the block was unsuccessful, then you gain no Shield benefit for that attack. This process repeats for every subsequent attack made by that creature on this turn.
 
-This means that since enemies rarely attack more than once per turn, wearing multiple Shields is not worth it. Now that we know Shield mechanics, Block increases our Block chance to 50%; not much more to say just makes your Shields more effective.
+This means that since many enemies only attack with one limb (or only with an occasional offhand strike), wearing multiple Shields usually isn't worth it since we incur the negatives of the Shield at all times. Now that we know Shield mechanics, Block increases our block chance to 50%; not much more to say just makes your Shields more effective.
 
 ### Shield Slam
 
@@ -1376,7 +1376,7 @@ Since we’ve already established that enemies will rarely attack more than once
 
 </div>
 
-We now have a 75% chance to Block, this is an easy take. Shield can’t benefit you if it doesn’t Block so we want to boost this at every opportunity.
+We now have a 75% chance to block, this is an easy take. A Shield can’t benefit you if it doesn’t block so we want to boost this at every opportunity.
 
 ### Staggering Block
 
@@ -1408,7 +1408,7 @@ This skill is by no means reliable in any way. With very high Strength, it can b
 
 </div>
 
-Shield Wall is like other stance skills, it has zero activation cost. Unlike other stance skills, it has much more attainable costs and the benefits are equally huge. Unfortunately, it does only last 3 turns which isn’t much, but can be the difference between life and death if you get yourself caught with enemies on all sides since it literally does Block every attack for those 3 turns, regardless of your other Shield skills and regardless of just how many attacks are made against you. You could have 9 Oboroquoru using Flurry for a total of 54 attacks in one turn, Shield Wall will Block them all. Note that blocking means that you get the benefit of your Shield; which for the non-bucklers that you can use this with means you get a significant increase but doesn’t make you invincible.
+Shield Wall is like other stance skills, it has zero activation cost. Unlike other stance skills, it has much more attainable costs and the benefits are equally huge. Unfortunately, it does only last 3 turns which isn’t much, but can be the difference between life and death if you get yourself caught with enemies on all sides since it literally does block every attack for those 3 turns, regardless of your other Shield skills and regardless of just how many attacks are made against you. You could have 9 Oboroquoru using Flurry for a total of 54 attacks in one turn, Shield Wall will block them all. Note that blocking means that you get the benefit of your Shield; which for the non-bucklers that you can use this with means you get a significant increase but doesn’t make you invincible.
 
 The real thing that puts this stance over others despite its short duration is that it also has a fairly short cooldown as well; meaning that at high Willpower you can essentially just spam this for massive AV benefit. While high AV won’t make you invincible to everything, it will make you exceptionally difficult to kill for the vast majority of creatures.
 
@@ -1546,7 +1546,7 @@ While this seems like just free damage from an activated ability, in Dual Wield 
 
 You’ll probably not see the value in this very often, but it’s common enough to want to Sprint to either close the gap on a ranged enemy or to escape from a ranged enemy so having a better chance of dodging those attacks is quite useful. This is especially useful early on in combating slugsnouts since you’ll absolutely want to get away or close the gap on them as fast as possible because of their high damage. Aside from these, you’ll have to get this one in order to get better skills in the tree so this is an easy early take.
 
-If you happen to not have Sprint (like if you permanently Dominate a creature), you can gain that ability when you buy this skill.
+If you happen to not have Sprint (like through permanent Domination), you can gain that ability when you buy this skill.
 
 ### Deft Throwing
 
@@ -1580,7 +1580,7 @@ Most of my runs will just ignore this one since I don’t throw things very ofte
 
 This is my favorite skill in the game, and arguably also the best skill in the game. It has so many applications and so many synergies that it’s really hard to overvalue it. Charge actually has quite a few mechanics around it, so let’s first cover what it does.
 
-When you use Charge, you need to select a target 2-3 tiles away from you. Any target within 1 tile is too close. After selecting your target, you’ll make an attack on the first wall or creature you hit on the way to that target. You’ll then make an attack and if you hit, your attack has +1 penetration on it. If you are in melee with a hostile enemy, you will be unable to use Charge.
+When you use Charge, you need to select a target 2-3 tiles away from you. Any target within 1 tile is too close. After selecting your target, you’ll make an attack on the first wall or creature you hit on the way to that target. You’ll then make an attack and if you hit, your attack has +1 PV on it. If you are in melee with a hostile enemy, you will be unable to use Charge.
 
 The first thing to add to the mix is what constitutes a target. A target can be anything that isn’t an empty tile, which means you can even target items on the floor. You won’t attack items on the floor, so in these cases you will actually Charge beyond your target and get Stunned for one turn. You can use this fact as well as the fact that you can Charge walls to use Charge as an escape tool as well as an initiation tool. While using Charge in this way has more requirements, it gets you farther than anything else in a single turn.
 
@@ -1628,7 +1628,7 @@ In addition to being a great tool for the purposes of moving that one tricky til
 
 </div>
 
-Gadget Inspector will improve your ability to identify artifacts, which is pretty handy. With it, you will quite rarely fail at inspecting artifacts even with low Intelligence and even on high complexity artifacts. Even more rarely will you break artifacts you try to identify. Deploying wiring is, as of now, rather useless but this skill does give one ability not explicitly mentioned.
+Gadget Inspector will improve your ability to identify artifacts, which is pretty handy. With it, you will quite rarely fail at inspecting artifacts even with low Intelligence and even on high complexity artifacts. Even more rarely will you break artifacts you try to identify. Deploying wiring is, as of now, rather useless but if you need to repair power links for gates then this is what you need.
 
 There are several ways to learn artifact recipes that don’t involve data disks. The most well-known is Psychometry which anyone can get from cooking with bananas, but you can also learn recipes from Barathrumites and Daughters of Exile you can water ritual. In either of these circumstances, you need Gadget Inspector in order to actually craft these recipes. Of course, you’ll also need bits so Disassemble is also a must-have, but you don’t actually need any of the Tinker X skills to craft artifacts. Gadget Inspector will also allow you to see what recipes are on data disks so you can begin your collection for when you get Tinker X skills.
 
@@ -1796,7 +1796,7 @@ Don’t get me wrong, you can build some pretty insane gear with Tinker III and 
 
 </div>
 
-The obvious use of this skill is to save your sanity by making overworld travel not completely awful, but this is actually highly beneficial to your survival as you won’t get lost as often in dangerous areas. While getting lost isn’t an immediate death sentence, depending on your abilities, how dangerous the area is you got lost in and the look of the map you got lost in, you can be pretty dead pretty quickly with the wrong luck. This is especially true early game, so this is a must-have as soon as you start looking to leave for Grit Gate. Make Camp comes standard on all characters, but if you happen to permanently Dominate a creature you won’t have this. In this scenario, getting the first Wayfaring skill becomes even more important since not being able to ease your hunger whenever you want becomes seriously annoying (believe me).
+The obvious use of this skill is to save your sanity by making overworld travel not completely awful, but this is actually highly beneficial to your survival as you won’t get lost as often in dangerous areas. While getting lost isn’t an immediate death sentence, depending on your abilities, how dangerous the area is you got lost in and the look of the map you got lost in, you can be pretty dead pretty quickly with the wrong luck. This is especially true early game, so this is a must-have as soon as you start looking to leave for Grit Gate. Make Camp comes standard on all _player_ characters, but if you've gone through permanent Domination you won’t have this. In this scenario, getting the first Wayfaring skill becomes even more important since not being able to ease your hunger whenever you want becomes seriously annoying (believe me).
 
 ### Wilderness Lore
 
