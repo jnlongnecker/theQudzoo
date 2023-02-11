@@ -13,13 +13,15 @@
         <meta property="og:title" content="For Nerds" />
         <meta property="og:site_name" content="The Qudzoo" />
         <meta property="og:url" content="https://www.qudzoo.com/nerds" />
-        <meta property="og:image" content="$assetsDir/pyramids.png" />
+        <meta property="og:image" content="$assetsDir/images/pyramids.png" />
+        <meta property="og:description" content="Someone shared these site details with you so they also think you're a nerd." />
+        {{lwr_resources | safe}}
     </head>
     <body>
         <c-header></c-header>
         <main>
             <section></section>
-            <section class="content">{{ body | safe }} {{ lwr_resources | safe }}</section>
+            <section class="content">{{ body | safe }}</section>
             <section id="desktop-contents">
                 <div class="sidebar">
                     <c-table-of-contents></c-table-of-contents>

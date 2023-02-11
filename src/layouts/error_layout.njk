@@ -10,12 +10,13 @@
         <link rel="icon" type="image/png" sizes="32x32" href="$assetsDir/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="$assetsDir/favicon/favicon-16x16.png">
         <link rel="manifest" href="$assetsDir/favicon/site.webmanifest">
+        {{lwr_resources | safe}}
     </head>
     <body>
         <c-header></c-header>
         <main>
             <section class="home-container">
-                {{ body | safe }} {{ lwr_resources | safe }}
+                {{ body | safe }}
             </section>
         </main>
         <c-footer></c-footer>

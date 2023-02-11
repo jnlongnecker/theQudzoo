@@ -14,6 +14,8 @@
         <meta property="og:site_name" content="The Qudzoo" />
         <meta property="og:url" content="https://www.qudzoo.com{{page.url}}" />
         <meta property="og:image" content="{{preview}}" />
+        <meta property="og:description" content="{{description}}" />
+        {{lwr_resources | safe}}
     </head>
     <body>
         <c-header></c-header>
@@ -26,7 +28,7 @@
                     </div>
                 </div>
             </section>
-            <section class="content">{{ body | safe }} {{ lwr_resources | safe }}</section>
+            <section class="content">{{ body | safe }}</section>
             <section id="desktop-contents">
                 <div class="sidebar">
                     <c-table-of-contents></c-table-of-contents>
