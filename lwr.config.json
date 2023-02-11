@@ -6,13 +6,19 @@
       "id": "not_found",
       "status": 404,
       "contentTemplate": "$contentDir/clientError.md",
-      "layoutTemplate": "$layoutsDir/error_layout.njk"
+      "layoutTemplate": "$layoutsDir/error_layout.njk",
+      "properties": {
+        "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+      }
     },
     {
       "id": "server_error",
       "status": 500,
       "contentTemplate": "$contentDir/serverError.md",
-      "layoutTemplate": "$layoutsDir/error_layout.njk"
+      "layoutTemplate": "$layoutsDir/error_layout.njk",
+      "properties": {
+        "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+      }
     }
   ],
   "routes": [
@@ -20,13 +26,19 @@
       "id": "Home",
       "path": "/",
       "contentTemplate": "$contentDir/home.md",
-      "layoutTemplate": "$layoutsDir/main_layout.njk"
+      "layoutTemplate": "$layoutsDir/main_layout.njk",
+      "properties": {
+        "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+      }
     },
     {
       "id": "Nerds",
       "path": "/nerds",
       "contentTemplate": "$contentDir/forNerds.md",
-      "layoutTemplate": "$layoutsDir/nerd_layout.njk"
+      "layoutTemplate": "$layoutsDir/nerd_layout.njk",
+      "properties": {
+        "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+      }
     },
     {
       "id": "Story-Quests",
@@ -229,7 +241,10 @@
       "id": "Advice-Home",
       "path": "/advice",
       "contentTemplate": "$contentDir/adviceHome.md",
-      "layoutTemplate": "$layoutsDir/advice_home_layout.njk"
+      "layoutTemplate": "$layoutsDir/advice_home_layout.njk",
+      "properties": {
+        "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+      }
     }
   ]
 }

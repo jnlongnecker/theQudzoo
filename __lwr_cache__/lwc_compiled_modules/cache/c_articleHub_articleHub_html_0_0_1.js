@@ -8,8 +8,8 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   const {k: api_key, c: api_custom_element, i: api_iterator, h: api_element} = $api;
   return [api_element("section", {
     key: 0
-  }, api_iterator($cmp.linkGrid, function (rowLinks) {
-    return api_element("div", {
+  }, $cmp.linkGrid ? api_iterator($cmp.linkGrid, function (rowLinks) {
+    return rowLinks ? api_element("div", {
       classMap: {
         "row": true
       },
@@ -21,8 +21,8 @@ function tmpl($api, $cmp, $slotset, $ctx) {
         },
         key: api_key(2, link.link)
       }, []);
-    }));
-  }))];
+    })) : null;
+  }) : [])];
 }
 export default registerTemplate(tmpl);
 tmpl.stylesheets = [];
