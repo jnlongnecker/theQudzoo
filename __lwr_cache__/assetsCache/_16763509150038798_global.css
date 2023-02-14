@@ -98,10 +98,6 @@ a:visited {
     color: var(--anchor-visited-color);
 }
 
-code {
-    font-family: var(--qud-font);
-}
-
 .injected {
     white-space: nowrap;
 }

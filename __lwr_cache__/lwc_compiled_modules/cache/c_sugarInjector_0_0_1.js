@@ -102,8 +102,9 @@ class SugarInjector extends LightningElement {
     let suffix = "</span></span>";
     for (let mutation of this.mutations.mutations) {
       let prefix = `<span class="injected"><span><img class="inline-icon" src="${mutation.src}" /></span><span class="mutation">`;
+      let tempSuffix = mutation.cost < 0 ? `</span><code>(<span class="defect">D</span>)</code></span>` : suffix;
       const regex = this.buildRegexFromName(mutation.name);
-      textDocument = textDocument.replace(regex, `${prefix}${mutation.name}${suffix}`);
+      textDocument = textDocument.replace(regex, `${prefix}${mutation.name}${tempSuffix}`);
     }
     return textDocument;
   }

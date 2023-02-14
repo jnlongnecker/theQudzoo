@@ -23,6 +23,11 @@
   ],
   "routes": [
     {
+      "id": "Test",
+      "path": "/test",
+      "rootComponent": "c/codesTest"
+    },
+    {
       "id": "Home",
       "path": "/",
       "contentTemplate": "$contentDir/home.md",

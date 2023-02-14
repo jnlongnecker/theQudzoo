@@ -1,4 +1,5 @@
 const fs = require("fs");
+const codeManager = require("./buildCodes.cjs");
 const rootDir = __dirname.substring(0, __dirname.indexOf("src") - 1);
 let app;
 
@@ -7,12 +8,11 @@ exports.setApp = (lwrApp) => {
     app = lwrApp;
 }
 
-exports.processRequest = async (res, info) => {
+exports.processRequest = async (res, req) => {
     try {
         let response;
-        let parts = info.split("?");
-        let path = parts[0];
-        let query = parts.length == 2 ? parts[1] : undefined;
+        let path = req.params.info;
+        let query = req.query;
         switch (path) {
             case "articles":
                 response = await getArticlesPayload();
@@ -29,6 +29,22 @@ exports.processRequest = async (res, info) => {
                 response = await getData(path);
                 res.status(200);
                 return response;
+            case "codes":
+                if (!query) {
+                    res.status(400);
+                    throw "Error: No query supplied";
+                }
+                if (query.method == "parse") {
+                    response = codeManager.codeToJSON(decodeURIComponent(query.value));
+                }
+                else if (query.method == "build") {
+                    response = codeManager.jsonToCode(decodeURIComponent(query.value));
+                }
+                else {
+                    res.status(400);
+                    throw "Error: Invalid method supplied.";
+                }
+                return response;
             default:
                 res.status(400);
                 return { error: "Invalid parameters supplied." };
@@ -36,8 +52,22 @@ exports.processRequest = async (res, info) => {
     }
     catch (exception) {
         res.status(500);
-        return { error: exception.message };
+        console.log(exception);
+        return { error: exception };
     }
+}
+
+function buildQueryObject(rawQuery) {
+    let params = rawQuery.split("&");
+    let queryObj = {};
+    for (let parameter of params) {
+        let keyValue = parameter.split("=");
+        let key = keyValue[0];
+        let value = keyValue[1];
+        queryObj[key] = value;
+    }
+
+    return queryObj;
 }
 
 async function getQuestsPayload() {

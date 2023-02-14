@@ -6,7 +6,7 @@ const lwrServer = lwr.createServer();
 const app = lwrServer.getInternalServer("express");
 
 app.get("/api/:info", (req, res) => {
-    api.processRequest(res, req.params.info).then(result => res.json(result));
+    api.processRequest(res, req).then(result => res.json(result));
 });
 let mode = "dev";
 

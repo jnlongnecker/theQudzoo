@@ -5,434 +5,672 @@
             "category": "Morphotype",
             "cost": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/chimera.png",
-            "code": "aa"
+            "code": "aa",
+            "variants": [],
+            "excludes": ["Esper", "Mental Mutation", "Mental Defect"]
         },
         {
             "name": "Esper",
             "category": "Morphotype",
             "cost": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/esper.png",
-            "code": "ab"
+            "code": "ab",
+            "variants": [],
+            "excludes": ["Chimera", "Physical Mutation", "Physical Defect"]
         },
         {
             "name": "Unstable Genome",
             "category": "Morphotype",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/unstableGenome.png",
-            "code": "uu"
+            "code": "uu",
+            "variants": [],
+            "excludes": []
         },
         {
             "name": "Adrenal Control",
             "category": "Physical Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/adrenalControl.png",
-            "code": "ba"
+            "code": "ba",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Beak",
             "category": "Physical Mutation",
             "cost": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/beak.png",
-            "code": "cd"
+            "code": "cd",
+            "variants": [
+                "Beak", 
+                "Bill", 
+                "Rostrum", 
+                "Frill", 
+                "Proboscis"
+            ],
+            "excludes": ["Esper"]
         },
         {
             "name": "Burrowing Claws",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/burrowingClaws.png",
-            "code": "bb"
+            "code": "bb",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Carapace",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/carapace.png",
-            "code": "bc"
+            "code": "bc",
+            "variants": [],
+            "excludes": ["Esper", "Quills"]
         },
         {
             "name": "Corrosive Gas Generation",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/corrosiveGasGeneration.png",
-            "code": "bd"
+            "code": "bd",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Double-muscled",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/doubleMuscled.png",
-            "code": "be"
+            "code": "be",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Electrical Generation",
             "category": "Physical Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/electricalGeneration.png",
-            "code": "bf"
+            "code": "bf",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Electromagnetic Pulse",
             "category": "Physical Mutation",
             "cost": 2,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/electromagneticPulse.png",
-            "code": "bg"
+            "code": "bg",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Flaming Ray",
             "category": "Physical Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/flamingRay.png",
-            "code": "bh"
+            "code": "bh",
+            "variants": ["Hands", "Face", "Feet"],
+            "excludes": ["Esper", "Freezing Ray"]
         },
         {
             "name": "Freezing Ray",
             "category": "Physical Mutation",
             "cost": 5,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/freezingRay.png",
-            "code": "bi"
+            "code": "bi",
+            "variants": ["Hands", "Face", "Feet"],
+            "excludes": ["Esper", "Flaming Ray"]
         },
         {
             "name": "Heightened Hearing",
             "category": "Physical Mutation",
             "cost": 2,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/heightenedHearing.png",
-            "code": "bj"
+            "code": "bj",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Heightened Quickness",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/heightenedQuickness.png",
-            "code": "bk"
+            "code": "bk",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Horns",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/horns.png",
-            "code": "bl"
+            "code": "bl",
+            "variants": ["horns", "horn", "antlers", "casque"],
+            "excludes": ["Esper", "Psionic Migraines"]
         },
         {
             "name": "Multiple Arms",
             "category": "Physical Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/multipleArms.png",
-            "code": "bn"
+            "code": "bn",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Multiple Legs",
             "category": "Physical Mutation",
             "cost": 5,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/multipleLegs.png",
-            "code": "bo"
+            "code": "bo",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Night Vision",
             "category": "Physical Mutation",
             "cost": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/nightVision.png",
-            "code": "bp"
+            "code": "bp",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Phasing",
             "category": "Physical Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/phasing.png",
-            "code": "bq"
+            "code": "bq",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Photosynthetic Skin",
             "category": "Physical Mutation",
             "cost": 2,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/photosyntheticSkin.png",
-            "code": "br"
+            "code": "br",
+            "variants": [],
+            "excludes": ["Esper", "Albino", "Carnivorous"]
         },
         {
             "name": "Quills",
             "category": "Physical Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/quills.png",
-            "code": "bs"
+            "code": "bs",
+            "variants": [],
+            "excludes": ["Esper", "Carapace"]
         },
         {
             "name": "Regeneration",
             "category": "Physical Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/regeneration.png",
-            "code": "bt"
+            "code": "bt",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Sleep Gas Generation",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/sleepGasGeneration.png",
-            "code": "bu"
+            "code": "bu",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Slime Glands",
             "category": "Physical Mutation",
             "cost": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/slimeGlands.png",
-            "code": "bv"
+            "code": "bv",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Spinnerets",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/spinnerets.png",
-            "code": "bw"
+            "code": "bw",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Stinger (Confusing Venom)",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
-            "code": "bx"
+            "code": "bx",
+            "variants": [],
+            "excludes": ["Esper", "Stinger (Paralyzing Venom)", "Stinger (Poisoning Venom)"]
         },
         {
             "name": "Stinger (Paralyzing Venom)",
             "category": "Physical Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
-            "code": "by"
+            "code": "by",
+            "variants": [],
+            "excludes": ["Esper", "Stinger (Confusing Venom)", "Stinger (Poisoning Venom)"]
         },
         {
             "name": "Stinger (Poisoning Venom)",
             "category": "Physical Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
-            "code": "bz"
+            "code": "bz",
+            "variants": [],
+            "excludes": ["Esper", "Stinger (Confusing Venom)", "Stinger (Paralyzing Venom)"]
         },
         {
             "name": "Stinger",
             "category": "Physical Mutation",
             "cost": 0,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
-            "code": ""
+            "code": "",
+            "variants": [],
+            "excludes": []
         },
         {
             "name": "Thick Fur",
             "category": "Physical Mutation",
             "cost": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/thickFur.png",
-            "code": "b1"
+            "code": "b1",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Triple-jointed",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/tripleJointed.png",
-            "code": "b2"
+            "code": "b2",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Two-Headed",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/twoHeaded.png",
-            "code": "b3"
+            "code": "b3",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Two-Hearted",
             "category": "Physical Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/twoHearted.png",
-            "code": "b4"
+            "code": "b4",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Wings",
             "category": "Physical Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/wings.png",
-            "code": "b5"
+            "code": "b5",
+            "variants": [],
+            "excludes": ["Esper"]
         },
         {
             "name": "Beguiling",
             "category": "Mental Mutation",
             "cost": 5,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/beguiling.png",
-            "code": "da"
+            "code": "da",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Burgeoning",
             "category": "Mental Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/burgeoning.png",
-            "code": "db"
+            "code": "db",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Clairvoyance",
             "category": "Mental Mutation",
             "cost": 2,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/clairvoyance.png",
-            "code": "dc"
+            "code": "dc",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Confusion",
             "category": "Mental Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/confusion.png",
-            "code": "dd"
+            "code": "dd",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Cryokinesis",
             "category": "Mental Mutation",
             "cost": 5,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/cryokinesis.png",
-            "code": "de"
+            "code": "de",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Disintegration",
             "category": "Mental Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/disintegration.png",
-            "code": "dg"
+            "code": "dg",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Domination",
             "category": "Mental Mutation",
             "cost": 5,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/domination.png",
-            "code": "df"
+            "code": "df",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Ego Projection",
             "category": "Mental Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/egoProjection.png",
-            "code": "dh"
+            "code": "dh",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Force Bubble",
             "category": "Mental Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/forceBubble.png",
-            "code": "di"
+            "code": "di",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Force Wall",
             "category": "Mental Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/forceWall.png",
-            "code": "dj"
+            "code": "dj",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Kindle",
             "category": "Mental Mutation",
             "cost": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/kindle.png",
-            "code": "dk"
+            "code": "dk",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Light Manipulation",
             "category": "Mental Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/lightManipulation.png",
-            "code": "dl"
+            "code": "dl",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Mass Mind",
             "category": "Mental Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/massMind.png",
-            "code": "dm"
+            "code": "dm",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Mental Mirror",
             "category": "Mental Mutation",
             "cost": 2,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/mentalMirror.png",
-            "code": "dn"
+            "code": "dn",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Precognition",
             "category": "Mental Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/precognition.png",
-            "code": "do"
+            "code": "do",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Psychometry",
             "category": "Mental Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/psychometry.png",
-            "code": "dp"
+            "code": "dp",
+            "variants": [],
+            "excludes": ["Chimera", "Dystechnia"]
         },
         {
             "name": "Pyrokinesis",
             "category": "Mental Mutation",
             "cost": 5,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/pyrokinesis.png",
-            "code": "dq"
+            "code": "dq",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Sense Psychic",
             "category": "Mental Mutation",
             "cost": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/sensePsychic.png",
-            "code": "dr"
+            "code": "dr",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Space-Time Vortex",
             "category": "Mental Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/spaceTimeVortex.png",
-            "code": "ds"
+            "code": "ds",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Stunning Force",
             "category": "Mental Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stunningForce.png",
-            "code": "dt"
+            "code": "dt",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Sunder Mind",
             "category": "Mental Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/sunderMind.png",
-            "code": "du"
+            "code": "du",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Syphon Vim",
             "category": "Mental Mutation",
             "cost": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/syphonVim.png",
-            "code": "dv"
+            "code": "dv",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Telepathy",
             "category": "Mental Mutation",
             "cost": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/telepathy.png",
-            "code": "dw"
+            "code": "dw",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Teleport Other",
             "category": "Mental Mutation",
             "cost": 2,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/teleportOther.png",
-            "code": "dy"
+            "code": "dy",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Teleportation",
             "category": "Mental Mutation",
             "cost": 5,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/teleportation.png",
-            "code": "dx"
+            "code": "dx",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Temporal Fugue",
             "category": "Mental Mutation",
             "cost": 5,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/temporalFugue.png",
-            "code": "d1"
+            "code": "d1",
+            "variants": [],
+            "excludes": ["Chimera"]
         },
         {
             "name": "Time Dilation",
             "category": "Mental Mutation",
             "cost": 4,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/timeDilation.png",
-            "code": "dz"
+            "code": "dz",
+            "variants": [],
+            "excludes": ["Chimera"]
+        },
+        {
+            "name": "Albino",
+            "category": "Physical Defect",
+            "cost": -2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/albino.png",
+            "code": "ca",
+            "variants": [],
+            "excludes": ["Esper", "Photosynthetic Skin"]
+        },
+        {
+            "name": "Amphibious",
+            "category": "Physical Defect",
+            "cost": -3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/amphibious.png",
+            "code": "cb",
+            "variants": [],
+            "excludes": ["Esper"]
+        },
+        {
+            "name": "Brittle Bones",
+            "category": "Physical Defect",
+            "cost": -4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/brittleBones.png",
+            "code": "cf",
+            "variants": [],
+            "excludes": ["Esper"]
+        },
+        {
+            "name": "Carnivorous",
+            "category": "Physical Defect",
+            "cost": -2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/carnivorous.png",
+            "code": "b6",
+            "variants": [],
+            "excludes": ["Esper", "Photosynthetic Skin"]
+        },
+        {
+            "name": "Cold Blooded",
+            "category": "Physical Defect",
+            "cost": -2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/coldBlooded.png",
+            "code": "cd",
+            "variants": [],
+            "excludes": ["Esper"]
+        },
+        {
+            "name": "Electromagnetic Impulse",
+            "category": "Physical Defect",
+            "cost": -2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/electromagneticImpulse.png",
+            "code": "cg",
+            "variants": [],
+            "excludes": ["Esper"]
+        },
+        {
+            "name": "Hooks for Feet",
+            "category": "Physical Defect",
+            "cost": -4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/hooksForFeet.png",
+            "code": "ci",
+            "variants": [],
+            "excludes": ["Esper"]
+        },
+        {
+            "name": "Irritable Genome",
+            "category": "Physical Defect",
+            "cost": -4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/irritableGenome.png",
+            "code": "cn",
+            "variants": [],
+            "excludes": ["Esper"]
+        },
+        {
+            "name": "Myopic",
+            "category": "Physical Defect",
+            "cost": -3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/myopic.png",
+            "code": "cj",
+            "variants": [],
+            "excludes": ["Esper"]
+        },
+        {
+            "name": "Nerve Poppy",
+            "category": "Physical Defect",
+            "cost": -2,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/nervePoppy.png",
+            "code": "cc",
+            "variants": [],
+            "excludes": ["Esper"]
+        },
+        {
+            "name": "Spontaneous Combustion",
+            "category": "Physical Defect",
+            "cost": -3,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/spontaneousCombustion.png",
+            "code": "cl",
+            "variants": [],
+            "excludes": ["Esper"]
+        },
+        {
+            "name": "Tonic Allergy",
+            "category": "Physical Defect",
+            "cost": -4,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/tonicAllergy.png",
+            "code": "cm",
+            "variants": [],
+            "excludes": ["Esper"]
         }
     ]
 }

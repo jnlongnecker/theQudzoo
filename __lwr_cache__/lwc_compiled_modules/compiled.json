@@ -450,7 +450,7 @@
   [
     "c/sugarInjector@0.0.1",
     {
-      "ownHash": "6d219e06fee916f3f7318660516843d7",
+      "ownHash": "017952e2486001939d30f4b642911c5c",
       "module": "./cache/c_sugarInjector_0_0_1.js",
       "moduleMeta": "./cache/c_sugarInjector_0_0_1.meta.json"
     }
@@ -477,6 +477,38 @@
       "ownHash": "13fcec3d73f055fccd306149598cb9b5",
       "module": "./cache/c_sugarInjector_sugarInjector_scoped_css_scoped=true_0_0_1.js",
       "moduleMeta": "./cache/c_sugarInjector_sugarInjector_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/codesTest@0.0.1",
+    {
+      "ownHash": "be9bfcf9e3e499e726f70ba1a24e343c",
+      "module": "./cache/c_codesTest_0_0_1.js",
+      "moduleMeta": "./cache/c_codesTest_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/codesTest#codesTest.html@0.0.1",
+    {
+      "ownHash": "4b8d92a885b203b083817e233e5c1978",
+      "module": "./cache/c_codesTest_codesTest_html_0_0_1.js",
+      "moduleMeta": "./cache/c_codesTest_codesTest_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/codesTest#codesTest.css@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/c_codesTest_codesTest_css_0_0_1.js",
+      "moduleMeta": "./cache/c_codesTest_codesTest_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "c/codesTest#codesTest.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/c_codesTest_codesTest_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/c_codesTest_codesTest_scoped_css_scoped=true_0_0_1.meta.json"
     }
   ]
 ]
