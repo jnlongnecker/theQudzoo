@@ -26,6 +26,9 @@ exports.processRequest = async (res, req) => {
             case "skills":
             case "attributes":
             case "stats":
+            case "callings":
+            case "castes":
+            case "cybernetics":
                 response = await getData(path);
                 res.status(200);
                 return response;

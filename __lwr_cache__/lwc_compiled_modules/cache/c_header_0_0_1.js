@@ -6,6 +6,9 @@ class Header extends LightningElement {
     this.links = [{
       label: "A-F-F-I-N-E's Advice",
       link: "/advice"
+    }, {
+      label: "Build Maker",
+      link: "/builds"
     }];
     this.mobileSized = false;
   }

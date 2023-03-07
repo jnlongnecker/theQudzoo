@@ -1,0 +1,9 @@
+section {
+    padding: 0 var(--desktop-margin-size);
+}
+
+@media only screen and (max-width: 900px) {
+    section {
+        padding: 0 var(--mobile-margin-size);
+    }
+}

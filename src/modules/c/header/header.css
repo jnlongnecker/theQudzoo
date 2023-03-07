@@ -111,7 +111,7 @@ header {
     background-color: var(--bg-color-dark);
     height: calc(var(--heading-height) - 3px);
     padding: 0 var(--desktop-margin-size);
-    z-index: 1;
+    z-index: 10;
 }
 
 a {

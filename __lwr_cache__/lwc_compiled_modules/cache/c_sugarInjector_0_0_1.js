@@ -48,12 +48,16 @@ class SugarInjector extends LightningElement {
     for (let paragraph of allParagraphs) {
       let text = paragraph.innerHTML;
       if (text.indexOf("<img") !== -1) continue;
-      text = this.highlightAttributes(text);
-      text = this.highlightMutations(text);
-      text = this.highlightSkills(text);
-      text = this.highlightStats(text);
+      text = this.highlightText(text);
       paragraph.innerHTML = text;
     }
+  }
+  highlightText(text) {
+    text = this.highlightAttributes(text);
+    text = this.highlightMutations(text);
+    text = this.highlightSkills(text);
+    text = this.highlightStats(text);
+    return text;
   }
   highlightSkills(textDocument) {
     for (let category of this.skills.skillCategories) {
@@ -169,6 +173,7 @@ class SugarInjector extends LightningElement {
   }
 }
 _registerDecorators(SugarInjector, {
+  publicMethods: ["highlightText"],
   fields: ["skills", "attributes", "stats", "mutations", "paragraphs", "dataReady", "documentReady", "thumbUpSVG", "thumbDownSVG"]
 });
 export default _registerComponent(SugarInjector, {

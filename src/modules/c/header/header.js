@@ -5,6 +5,10 @@ export default class Header extends LightningElement {
         {
             label: "A-F-F-I-N-E's Advice",
             link: "/advice"
+        },
+        {
+            label: "Build Maker",
+            link: "/builds"
         }
     ]
 

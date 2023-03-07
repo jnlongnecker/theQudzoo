@@ -1,4 +1,4 @@
-import { LightningElement } from "lwc";
+import { LightningElement, api } from "lwc";
 
 export default class SugarInjector extends LightningElement {
     skills;
@@ -65,12 +65,18 @@ export default class SugarInjector extends LightningElement {
             let text = paragraph.innerHTML;
             if (text.indexOf("<img") !== -1) continue;
 
-            text = this.highlightAttributes(text);
-            text = this.highlightMutations(text);
-            text = this.highlightSkills(text);
-            text = this.highlightStats(text);
+            text = this.highlightText(text);
             paragraph.innerHTML = text;
         }
+    }
+
+    @api
+    highlightText(text) {
+        text = this.highlightAttributes(text);
+        text = this.highlightMutations(text);
+        text = this.highlightSkills(text);
+        text = this.highlightStats(text);
+        return text;
     }
 
     highlightSkills(textDocument) {

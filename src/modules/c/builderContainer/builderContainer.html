@@ -1,0 +1,53 @@
+<template>
+    <section class="container">
+        <div class="builder-app">
+            <div class="tabs">
+                <button selected onclick={tabSwitch}>Mutants</button>
+                <button onclick={tabSwitch}>True Kin</button>
+            </div>
+            <section class="builder">
+                <template if:true={mutantSelected}>
+                    <c-mutant-builder build={sanitisedBuild} onbuildupdated={calculateBuildCode}></c-mutant-builder>
+                </template>
+                <template if:true={truekinSelected}>
+                    <c-truekin-builder build={sanitisedBuild} onbuildupdated={calculateBuildCode}></c-truekin-builder>
+                </template>
+            </section>
+        </div>
+        <section class="code">
+            <div class="build-action">
+                <h2 class="no-mobile">:copy build code:</h2>
+                <button class="x-btn" if:false={codeAvailable} onclick={copyCode}>
+                    <svg if:false={codeAvailable} clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z">
+                        </path>
+                    </svg>
+                </button>
+                <button onclick={copyCode} if:true={codeAvailable}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d={usePath}>
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="build-action">
+                <h2 class="no-mobile">:save build:</h2>
+                <button onclick={saveBuild}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="build-action">
+                <h2>:character name:</h2>
+                <input class="name-input" onchange={updateName} />
+            </div>
+        </section>
+    </section>
+</template>

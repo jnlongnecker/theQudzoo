@@ -1,0 +1,246 @@
+{
+    "callings": [
+        {
+            "name": "Apostle",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/apostle.png",
+            "starters": [
+                "+2 Ego",
+                "Customs and Folklore",
+                "Intimidate",
+                "Proselytize"
+            ],
+            "modifiers": {
+                "Strength": 0,
+                "Agility": 0,
+                "Toughness": 0,
+                "Intelligence": 0,
+                "Willpower": 0,
+                "Ego": 2
+            }
+        },
+        {
+            "name": "Arconaut",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/arconaut.png",
+            "starters": [
+                "+2 Agility",
+                "Short Blade",
+                "Tinkering",
+                "Scavenger",
+                "Acrobatics",
+                "Spry",
+                "Starts with random junk and artifacts"
+            ],
+            "modifiers": {
+                "Strength": 0,
+                "Agility": 2,
+                "Toughness": 0,
+                "Intelligence": 0,
+                "Willpower": 0,
+                "Ego": 0
+            }
+        },
+        {
+            "name": "Greybeard",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/greybeard.png",
+            "starters": [
+                "-1 Strength",
+                "+3 Willpower",
+                "Cudgel",
+                "Berate",
+                "Calloused",
+                "+100 reputation with bears"
+            ],
+            "modifiers": {
+                "Strength": -1,
+                "Agility": 0,
+                "Toughness": 0,
+                "Intelligence": 0,
+                "Willpower": 3,
+                "Ego": 0
+            }
+        },
+        {
+            "name": "Gunslinger",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/gunslinger.png",
+            "starters": [
+                "+2 Agility",
+                "Pistol",
+                "Akimbo",
+                "+200 reputation with mysterious strangers"
+            ],
+            "modifiers": {
+                "Strength": 0,
+                "Agility": 2,
+                "Toughness": 0,
+                "Intelligence": 0,
+                "Willpower": 0,
+                "Ego": 0
+            }
+        },
+        {
+            "name": "Marauder",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/marauder.png",
+            "starters": [
+                "+2 Strength",
+                "Axe",
+                "Dismember",
+                "Charge",
+                "Butchery"
+            ],
+            "modifiers": {
+                "Strength": 2,
+                "Agility": 0,
+                "Toughness": 0,
+                "Intelligence": 0,
+                "Willpower": 0,
+                "Ego": 0
+            }
+        },
+        {
+            "name": "Pilgrim",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/pilgrim.png",
+            "starters": [
+                "+2 Willpower",
+                "Self-discipline",
+                "Fasting Way",
+                "Iron Mind",
+                "Wayfaring"
+            ],
+            "modifiers": {
+                "Strength": 0,
+                "Agility": 0,
+                "Toughness": 0,
+                "Intelligence": 0,
+                "Willpower": 2,
+                "Ego": 0
+            }
+        },
+        {
+            "name": "Nomad",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/nomad.png",
+            "starters": [
+                "+2 Toughness",
+                "Wayfaring",
+                "Wilderness Lore: Salt Dunes",
+                "Harvestry",
+                "Weathered",
+                "+200 reputation with the Issachari tribe",
+                "Starts with a recycling suit"
+            ],
+            "modifiers": {
+                "Strength": 0,
+                "Agility": 0,
+                "Toughness": 2,
+                "Intelligence": 0,
+                "Willpower": 0,
+                "Ego": 0
+            }
+        },
+        {
+            "name": "Scholar",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/scholar.png",
+            "starters": [
+                "+2 Intelligence",
+                "Tinkering",
+                "First Aid",
+                "Heal",
+                "Tactics",
+                "Customs and Folklore",
+                "Harvestry",
+                "Wilderness Lore: Random",
+                "Wilderness Lore: Random"
+            ],
+            "modifiers": {
+                "Strength": 0,
+                "Agility": 0,
+                "Toughness": 0,
+                "Intelligence": 2,
+                "Willpower": 0,
+                "Ego": 0
+            }
+        },
+        {
+            "name": "Tinker",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/tinker.png",
+            "starters": [
+                "+2 Intelligence",
+                "Tinkering",
+                "Lay Mine / Set Bomb",
+                "Disassemble",
+                "Repair",
+                "Tinker I",
+                "+100 reputation with the Barathrumites",
+                "Begins with a number of random artifacts and scrap"
+            ],
+            "modifiers": {
+                "Strength": 0,
+                "Agility": 0,
+                "Toughness": 0,
+                "Intelligence": 2,
+                "Willpower": 0,
+                "Ego": 0
+            }
+        },
+        {
+            "name": "Warden",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/warden.png",
+            "starters": [
+                "+2 Strength",
+                "Long Blade",
+                "Shield",
+                "Shield Slam",
+                "Bow and Rifle",
+                "Pistol",
+                "+300 reputation with the Fellowship of Wardens"
+            ],
+            "modifiers": {
+                "Strength": 2,
+                "Agility": 0,
+                "Toughness": 0,
+                "Intelligence": 0,
+                "Willpower": 0,
+                "Ego": 0
+            }
+        },
+        {
+            "name": "Water Merchant",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/waterMerchant.png",
+            "starters": [
+                "+2 Ego",
+                "Short Blade",
+                "Snake Oiler",
+                "+200 reputation with water barons",
+                "Allowed entrance to many settlements for purposes of trade",
+                "Starts with trade goods"
+            ],
+            "modifiers": {
+                "Strength": 0,
+                "Agility": 0,
+                "Toughness": 0,
+                "Intelligence": 0,
+                "Willpower": 0,
+                "Ego": 2
+            }
+        },
+        {
+            "name": "Watervine Farmer",
+            "src": "/1/asset/s/latest/public/assets/images/callingImages/watervineFarmer.png",
+            "starters": [
+                "+2 Toughness",
+                "Cooking and Gathering",
+                "Axe",
+                "Wilderness Lore: Marshes",
+                "+100 reputation with the villagers of Joppa",
+                "Starts with random cooking ingredients"
+            ],
+            "modifiers": {
+                "Strength": 0,
+                "Agility": 0,
+                "Toughness": 2,
+                "Intelligence": 0,
+                "Willpower": 0,
+                "Ego": 0
+            }
+        }
+    ]
+}

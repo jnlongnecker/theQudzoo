@@ -1,0 +1,34 @@
+<template>
+    <h2>:choose attributes:</h2>
+    <div class="container">
+        <p class="blurb">
+            <span></span>
+            <span class="blurb-injection" lwc:dom="manual"></span>
+            <span></span>
+        </p>
+        <div class="attribute-grid">
+            <template for:each={attributes} for:item="attribute" for:index="num">
+                <div class={attribute.class} key={attribute.name} index={num} onclick={handleClick}
+                    onmouseenter={changeBlurb}>
+                    <div class="attribute-input">
+                        <div class="stat-container" onclick={changeBlurb} index={num}>
+                            <h3>{attribute.abbreviation}</h3>
+                            <h3 class={attribute.classModifier}>{attribute.displayTotal}</h3>
+                            <p class="modifier">[{attribute.modifier}]</p>
+                        </div>
+                        <div class="buttons">
+                            <button>+</button>
+                            <button>-</button>
+                        </div>
+                    </div>
+                    <p class="point-cost" key={attribute.name}>[{attribute.cost}pts]</p>
+                </div>
+            </template>
+        </div>
+    </div>
+    <div class="options">
+        <span>Points Remaining: {points}</span>
+        <span><button onclick={randomizeChanges}>Randomize</button></span>
+        <span><button onclick={resetChanges}>Reset</button></span>
+    </div>
+</template>

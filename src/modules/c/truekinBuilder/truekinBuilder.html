@@ -1,0 +1,21 @@
+<template>
+    <div class="builder-container">
+        <button class="previous" onclick={backtrack}>&#60;</button>
+        <div class="scroll-container">
+            <div class="scrolling-banner">
+                <section class="calling">
+                    <c-caste-chooser caste={caste} oncallingselected={handleCallingSelection}></c-caste-chooser>
+                </section>
+                <section class="mutations">
+                    <c-attribute-chooser truekin modifier={callingModifiers} attr={attributes} pts={pointsUsed}
+                        onattributeschosen={handleAttributesChosen}></c-attribute-chooser>
+                </section>
+                <section class="attributes">
+                    <c-cybernetic-chooser enabled={callingModifiers.cybernetic} cybs={cybernetics}
+                        onmutationselected={handleCyberneticSelection}></c-cybernetic-chooser>
+                </section>
+            </div>
+        </div>
+        <button class="next" onclick={advance}>></button>
+    </div>
+</template>

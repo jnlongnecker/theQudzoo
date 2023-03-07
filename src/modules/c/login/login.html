@@ -1,0 +1,63 @@
+<template>
+    <div onclick={componentClicked}>
+        <button class="logout-btn" if:true={authenticated} onclick={logout}>Log Out</button>
+        <a href="/my-profile">
+            <button class="login-btn" if:true={authenticated}>
+                {displayName}
+            </button>
+        </a>
+        <button class="login-btn" if:false={authenticated} onclick={loginDesired}>
+            {loginButtonText}
+        </button>
+        <div class="popup" if:true={showPopup}>
+            <div class="container" if:false={authenticated}>
+                <form if:true={useLogin} method="post" onsubmit={login}>
+                    <h2>{formTitle}</h2>
+                    <div>
+                        <label for="username">Username</label>
+                        <input name="username" type="text" />
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" />
+                    </div>
+                    <div>
+                        <button type="button" onclick={changeForm} class="change-form">
+                            I don't have an account
+                        </button>
+                        <button type="submit">Submit</button>
+                    </div>
+                    <p if:true={isError} class="error">
+                        <span>{errorMessage}</span>
+                        <button class="dismiss-error" onclick={dismissError}>OK</button>
+                    </p>
+                </form>
+                <form if:false={useLogin} method="post" onsubmit={register}>
+                    <h2>{formTitle}</h2>
+                    <div>
+                        <label for="username">Username</label>
+                        <input name="username" type="text" />
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" />
+                    </div>
+                    <div>
+                        <label for="password">Confirm Password</label>
+                        <input type="password" name="passwordConfirm" />
+                    </div>
+                    <div>
+                        <button type="button" onclick={changeForm} class="change-form">
+                            I have an account
+                        </button>
+                        <button type="submit">Submit</button>
+                    </div>
+                    <p if:true={isError} class="error">
+                        <span>{errorMessage}</span>
+                        <button class="dismiss-error" onclick={dismissError}>OK</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>

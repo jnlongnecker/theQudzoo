@@ -1,0 +1,291 @@
+{
+    "castes": [
+        {
+            "arcologyName": "The Toxic Arboreta of Ekuemekiyye, the Holy City",
+            "shortName": "Ekuemekiyye",
+            "castes": [
+                {
+                    "name": "Horticulturist",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/horticulturist.png",
+                    "starters": [
+                        "+3 Intelligence",
+                        "+2 to saves vs. bleeding",
+                        "Cooking and Gathering",
+                        "Harvestry",
+                        "Axe",
+                        "Bow and Rifle",
+                        "Wilderness Lore: Jungles"
+                    ],
+                    "modifiers": {
+                        "Strength": 0,
+                        "Agility": 0,
+                        "Toughness": 0,
+                        "Intelligence": 3,
+                        "Willpower": 0,
+                        "Ego": 0,
+                        "cybernetic": "Nocturnal apex"
+                    }
+                },
+                {
+                    "name": "Priest of All Suns",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/priestOfAllSuns.png",
+                    "starters": [
+                        "+3 Ego",
+                        "+2 to saves vs. bleeding",
+                        "Cudgel",
+                        "First Aid",
+                        "Heal",
+                        "Persuasion",
+                        "Snake Oiler",
+                        "Intimidate",
+                        "Wilderness Lore: Jungles"
+                    ],
+                    "modifiers": {
+                        "Strength": 0,
+                        "Agility": 0,
+                        "Toughness": 0,
+                        "Intelligence": 0,
+                        "Willpower": 0,
+                        "Ego": 3,
+                        "cybernetic": "Nocturnal apex"
+                    }
+                },
+                {
+                    "name": "Priest of All Moons",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/priestOfAllMoons.png",
+                    "starters": [
+                        "+2 Toughness",
+                        "+2 Willpower",
+                        "+2 to saves vs. bleeding",
+                        "Axe",
+                        "Butchery",
+                        "Lionheart",
+                        "Poison Tolerance",
+                        "Wilderness Lore: Jungles"
+                    ],
+                    "modifiers": {
+                        "Strength": 0,
+                        "Agility": 0,
+                        "Toughness": 2,
+                        "Intelligence": 0,
+                        "Willpower": 2,
+                        "Ego": 0,
+                        "cybernetic": "Nocturnal apex"
+                    }
+                },
+                {
+                    "name": "Syzygyrior",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/syzygyrior.png",
+                    "starters": [
+                        "+3 Agility",
+                        "+2 to saves vs. bleeding",
+                        "Dual Wield",
+                        "Ambidexterity",
+                        "Wilderness Lore: Jungles"
+                    ],
+                    "modifiers": {
+                        "Strength": 0,
+                        "Agility": 3,
+                        "Toughness": 0,
+                        "Intelligence": 0,
+                        "Willpower": 0,
+                        "Ego": 0,
+                        "cybernetic": "Nocturnal apex"
+                    }
+                }
+            ]
+        },
+        {
+            "arcologyName": "The Ice-Shattered Arcology of Ibul",
+            "shortName": "Ibul",
+            "castes": [
+                {
+                    "name": "Artifex",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/artifex.png",
+                    "starters": [
+                        "+3 Intelligence",
+                        "+15 cold resistance",
+                        "Tinkering",
+                        "Repair",
+                        "Disassemble",
+                        "Deploy Turret",
+                        "Tinker I",
+                        "Tinker II"
+                    ],
+                    "modifiers": {
+                        "Strength": 0,
+                        "Agility": 0,
+                        "Toughness": 0,
+                        "Intelligence": 3,
+                        "Willpower": 0,
+                        "Ego": 0,
+                        "cybernetic": "Cherubic visage"
+                    }
+                },
+                {
+                    "name": "Consul",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/consul.png",
+                    "starters": [
+                        "+3 Ego",
+                        "+15 cold resistance",
+                        "Inspiring Presence",
+                        "Proselytize"
+                    ],
+                    "modifiers": {
+                        "Strength": 0,
+                        "Agility": 0,
+                        "Toughness": 0,
+                        "Intelligence": 0,
+                        "Willpower": 0,
+                        "Ego": 3,
+                        "cybernetic": "Cherubic visage"
+                    }
+                },
+                {
+                    "name": "Praetorian",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/praetorian.png",
+                    "starters": [
+                        "+2 Strength",
+                        "+1 Toughness",
+                        "+1 Willpower",
+                        "+15 cold resistance",
+                        "Long Blade",
+                        "Shield",
+                        "Shield Slam",
+                        "Bow and Rifle"
+                    ],
+                    "modifiers": {
+                        "Strength": 2,
+                        "Agility": 0,
+                        "Toughness": 1,
+                        "Intelligence": 0,
+                        "Willpower": 1,
+                        "Ego": 0,
+                        "cybernetic": "Cherubic visage"
+                    }
+                },
+                {
+                    "name": "Eunuch",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/eunuch.png",
+                    "starters": [
+                        "+2 Agility",
+                        "+2 Intelligence",
+                        "+15 cold resistance",
+                        "Short Blade",
+                        "Hobble",
+                        "Pistol",
+                        "Weak Spotter",
+                        "Acrobatics",
+                        "Spry",
+                        "Tactics"
+                    ],
+                    "modifiers": {
+                        "Strength": 0,
+                        "Agility": 2,
+                        "Toughness": 0,
+                        "Intelligence": 2,
+                        "Willpower": 0,
+                        "Ego": 0,
+                        "cybernetic": "Cherubic visage"
+                    }
+                }
+            ]
+        },
+        {
+            "arcologyName": "The Crustal Mortars of Yawningmoon",
+            "shortName": "Yawningmoon",
+            "castes": [
+                {
+                    "name": "Child of the Hearth",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/childOfTheHearth.png",
+                    "starters": [
+                        "+3 Strength",
+                        "+15 heat resistance",
+                        "Cudgel",
+                        "Slam",
+                        "Heavy Weapon",
+                        "Calloused"
+                    ],
+                    "modifiers": {
+                        "Strength": 3,
+                        "Agility": 0,
+                        "Toughness": 0,
+                        "Intelligence": 0,
+                        "Willpower": 0,
+                        "Ego": 0,
+                        "cybernetic": "Air current microsensor"
+                    }
+                },
+                {
+                    "name": "Child of the Wheel",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/childOfTheWheel.png",
+                    "starters": [
+                        "+1 Strength",
+                        "+2 Agility",
+                        "+1 Ego",
+                        "+15 heat resistance",
+                        "Short Blade",
+                        "Axe",
+                        "Cleave",
+                        "Dual Wield",
+                        "Iron Mind"
+                    ],
+                    "modifiers": {
+                        "Strength": 1,
+                        "Agility": 2,
+                        "Toughness": 0,
+                        "Intelligence": 0,
+                        "Willpower": 0,
+                        "Ego": 1,
+                        "cybernetic": "Air current microsensor"
+                    }
+                },
+                {
+                    "name": "Child of the Deep",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/childOfTheDeep.png",
+                    "starters": [
+                        "+3 Toughness",
+                        "+15 heat resistance",
+                        "Heavy Weapon",
+                        "Tank",
+                        "Endurance",
+                        "Wilderness Lore: Hills and Mountains",
+                        "Wilderness Lore: Canyons"
+                    ],
+                    "modifiers": {
+                        "Strength": 0,
+                        "Agility": 0,
+                        "Toughness": 3,
+                        "Intelligence": 0,
+                        "Willpower": 0,
+                        "Ego": 0,
+                        "cybernetic": "Air current microsensor"
+                    }
+                },
+                {
+                    "name": "Fuming God-Child",
+                    "src": "/1/asset/s/latest/public/assets/images/casteImages/fumingGodChild.png",
+                    "starters": [
+                        "+4 Willpower",
+                        "+15 heat resistance",
+                        "Self-discipline",
+                        "Fasting Way",
+                        "Lionheart",
+                        "Persuasion",
+                        "Intimidate",
+                        "Poison Tolerance"
+                    ],
+                    "modifiers": {
+                        "Strength": 0,
+                        "Agility": 0,
+                        "Toughness": 0,
+                        "Intelligence": 0,
+                        "Willpower": 4,
+                        "Ego": 0,
+                        "cybernetic": "Air current microsensor"
+                    }
+                }
+            ]
+        }
+    ]
+}

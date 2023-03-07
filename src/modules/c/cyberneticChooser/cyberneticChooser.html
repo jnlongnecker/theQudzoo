@@ -1,0 +1,49 @@
+<template>
+    <c-sugar-injector></c-sugar-injector>
+    <h2>:choose starting cybernetic:</h2>
+    <section>
+        <div class="mutations">
+            <fieldset>
+                <legend class="morphotype">Cybernetics</legend>
+                <ul>
+                    <template for:each={cybernetics} for:item="cyb">
+                        <div class={cyb.class} key={cyb.key} onmouseenter={mutHover} onclick={mutClick} name={cyb.name}
+                            variant={cyb.variant}>
+                            <div>
+                                [<span class="marker">{cyb.marker}</span>] {cyb.name}
+                                <span class="variant" if:true={cyb.variant}>
+                                    ({cyb.variant})
+                                </span>
+                            </div>
+                            <div class="info-btn">
+                                <button class="v-button" onclick={showInfo} name={cyb.name}
+                                    variant={cyb.variant}>Info</button>
+                            </div>
+                        </div>
+                    </template>
+                </ul>
+            </fieldset>
+        </div>
+        <hr />
+        <div class={blurbClass} onclick={hideBlurb}>
+            <fieldset>
+                <legend>{selectedCybText}</legend>
+                <div class="blurb-format">
+                    <div>
+                        <img if:true={selectedSrc} src={selectedSrc} class="mut-img" />
+                    </div>
+                    <div>
+                        <p class="blurbText" lwc:dom="manual">
+                        </p>
+                        <p class="levelBlurb" lwc:dom="manual">
+                        </p>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <div class="options">
+        <span><button onclick={randomizeChanges}>Randomize</button></span>
+        <span><button onclick={resetChanges}>Reset</button></span>
+    </div>
+</template>

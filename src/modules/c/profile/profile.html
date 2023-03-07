@@ -1,0 +1,8 @@
+<template>
+    <section if:true={userExists}>
+        <h1>{user.name}</h1>
+        <hr />
+        <h2>My Library</h2>
+        <c-build-library mode="delete" filters={libraryFilters}></c-build-library>
+    </section>
+</template>

@@ -23,9 +23,16 @@
   ],
   "routes": [
     {
-      "id": "Test",
-      "path": "/test",
-      "rootComponent": "c/codesTest"
+      "id": "Builder",
+      "path": "/builds",
+      "layoutTemplate": "$layoutsDir/builder_layout.njk",
+      "rootComponent": "c/builderContainer"
+    },
+    {
+      "id": "Profile",
+      "path": "/my-profile",
+      "layoutTemplate": "$layoutsDir/profile_layout.njk",
+      "rootComponent": "c/profile"
     },
     {
       "id": "Home",

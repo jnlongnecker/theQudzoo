@@ -8,7 +8,7 @@
                 <template iterator:it={links}>
                     <a key={it.value.link} href={it.value.link}>{it.value.label}</a>
                     <div key={it.value.link} class="dot-divider"></div>
-                    <p key={it.value.link} if:true={it.last}>More Coming Soon!</p>
+                    <p key={it.value.link} if:true={it.last}><c-login></c-login></p>
                 </template>
             </div>
         </template>

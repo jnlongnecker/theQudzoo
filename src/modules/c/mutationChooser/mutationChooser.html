@@ -1,0 +1,132 @@
+<template>
+    <c-sugar-injector></c-sugar-injector>
+    <div class="variant-selector" if:true={selectingVariant}>
+        <fieldset>
+            <legend>:choose variant:</legend>
+            <ul class="insert-variant">
+                <template for:each={variantChoices} for:item="variant" for:index="i">
+                    <li key={variant}>
+                        <button class="v-button" i={i} onclick={variantChosen}>
+                            {variant}
+                        </button>
+                    </li>
+                </template>
+            </ul>
+        </fieldset>
+    </div>
+    <h2>:choose mutations:</h2>
+    <section>
+        <div class="mutations">
+            <fieldset>
+                <legend class="morphotype">Morphotypes</legend>
+                <ul>
+                    <template for:each={morphotypes} for:item="mut">
+                        <div class={mut.class} key={mut.code} onmouseenter={mutHover} onclick={mutClick}
+                            name={mut.name}>
+                            <div>
+                                [<span class="marker">{mut.marker}</span>][<span class="positive">{mut.cost}</span>]
+                                {mut.displayName}
+                            </div>
+                            <div class="info-btn">
+                                <button class="v-button" onclick={showInfo} name={mut.name}>Info</button>
+                            </div>
+                        </div>
+                    </template>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend class="positive">Physical Mutations</legend>
+                <ul>
+                    <template for:each={physicalMutations} for:item="mut">
+                        <div class={mut.class} key={mut.code} onmouseenter={mutHover} onclick={mutClick}
+                            name={mut.name}>
+                            <div>
+                                [<span class="marker">{mut.marker}</span>][<span class="positive">{mut.cost}</span>]
+                                {mut.displayName}
+                            </div>
+                            <div class="multi-btn">
+                                <div if:true={mut.variant} class="variations">
+                                    <button onclick={chooseVariant} name={mut.name} class="v-button">Variant</button>
+                                </div>
+                                <div class="info-btn">
+                                    <button class="v-button" onclick={showInfo} name={mut.name}>Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend class="negative">Physical Defects</legend>
+                <ul>
+                    <template for:each={physicalDefects} for:item="mut">
+                        <div class={mut.class} key={mut.code} onmouseenter={mutHover} onclick={mutClick}
+                            name={mut.name}>
+                            <div>
+                                [<span class="marker">{mut.marker}</span>][<span class="negative">{mut.cost}</span>]
+                                {mut.displayName}
+                            </div>
+                            <div class="info-btn">
+                                <button class="v-button" onclick={showInfo} name={mut.name}>Info</button>
+                            </div>
+                        </div>
+                    </template>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend class="positive">Mental Mutations</legend>
+                <ul>
+                    <template for:each={mentalMutations} for:item="mut">
+                        <div class={mut.class} key={mut.code} onmouseenter={mutHover} onclick={mutClick}
+                            name={mut.name}>
+                            <div>
+                                [<span class="marker">{mut.marker}</span>][<span class="positive">{mut.cost}</span>]
+                                {mut.displayName}
+                            </div>
+                            <div class="info-btn">
+                                <button class="v-button" onclick={showInfo} name={mut.name}>Info</button>
+                            </div>
+                        </div>
+                    </template>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend class="negative">Mental Defects</legend>
+                <ul>
+                    <template for:each={mentalDefects} for:item="mut">
+                        <div class={mut.class} key={mut.code} onmouseenter={mutHover} onclick={mutClick}
+                            name={mut.name}>
+                            <div>
+                                [<span class="marker">{mut.marker}</span>][<span class="negative">{mut.cost}</span>]
+                                {mut.displayName}
+                            </div>
+                            <div class="info-btn">
+                                <button class="v-button" onclick={showInfo} name={mut.name}>Info</button>
+                            </div>
+                        </div>
+                    </template>
+                </ul>
+            </fieldset>
+        </div>
+        <hr />
+        <div class={blurbClass} onclick={hideBlurb}>
+            <fieldset>
+                <legend>{selectedMutation}</legend>
+                <div class="blurb-format">
+                    <img if:true={selectedSrc} src={selectedSrc} class="mut-img" />
+                    <div>
+                        <p class="blurbText" lwc:dom="manual">
+                        </p>
+                        <p class="levelBlurb" lwc:dom="manual">
+                        </p>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <div class="options">
+        <span>Points Remaining: {points}</span>
+        <span><button onclick={randomizeChanges}>Randomize</button></span>
+        <span><button onclick={resetChanges}>Reset</button></span>
+    </div>
+</template>

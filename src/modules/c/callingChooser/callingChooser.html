@@ -1,0 +1,21 @@
+<template>
+    <c-sugar-injector></c-sugar-injector>
+    <h2>:choose your calling:</h2>
+    <div class="container">
+        <div class="starters">
+            <div></div>
+            <ul class="starter-list" lwc:dom="manual"></ul>
+            <div></div>
+        </div>
+
+        <div class="calling-grid">
+            <template for:each={callings} for:item="calling">
+                <figure key={calling.name} class="calling-card" onmouseover={callingHovered} onclick={callingSelected}
+                    calling={calling.name}>
+                    <img src={calling.src} class={calling.class} />
+                    <figcaption>{calling.name}</figcaption>
+                </figure>
+            </template>
+        </div>
+    </div>
+</template>

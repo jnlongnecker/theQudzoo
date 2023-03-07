@@ -4,42 +4,53 @@
             "name": "Chimera",
             "category": "Morphotype",
             "cost": 1,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/chimera.png",
             "code": "aa",
             "variants": [],
-            "excludes": ["Esper", "Mental Mutation", "Mental Defect"]
+            "excludes": ["Esper", "Mental Mutation", "Mental Defect"],
+            "description": "You only manifest physical mutations, and all of your mutation choices when manifesting a new mutations are physical.",
+            "levelText": "Whenever you manifest a new mutation, one of your choices will also cause you to grow a new limb at random"
         },
         {
             "name": "Esper",
             "category": "Morphotype",
             "cost": 1,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/esper.png",
             "code": "ab",
             "variants": [],
-            "excludes": ["Chimera", "Physical Mutation", "Physical Defect"]
+            "excludes": ["Chimera", "Physical Mutation", "Physical Defect"],
+            "description": "You only manifest mental mutations, and all of your mutation choices when manifesting a new mutation are mental."
         },
         {
             "name": "Unstable Genome",
             "category": "Morphotype",
             "cost": 3,
+            "max": 3,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/unstableGenome.png",
             "code": "uu",
             "variants": [],
-            "excludes": []
+            "excludes": [],
+            "description": "You gain one extra mutation each time you buy this, but the mutations don't manifest right away. Whenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations."
         },
         {
             "name": "Adrenal Control",
             "category": "Physical Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/adrenalControl.png",
             "code": "ba",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You regulate your body's release of adrenaline.",
+            "levelText": "You can increase your body's adrenaline flow for 20 rounds.\nWhile it's flowing, you gain +10 quickness and other physical mutations gain +1 rank.\nCooldown: 200 rounds"
         },
         {
             "name": "Beak",
             "category": "Physical Mutation",
             "cost": 1,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/beak.png",
             "code": "cd",
             "variants": [
@@ -49,223 +60,295 @@
                 "Frill", 
                 "Proboscis"
             ],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "Your face bears a sightly beak.\n\n+1 Ego\nYou occasionally peck at your opponents.\n+200 reputation with birds"
         },
         {
             "name": "Burrowing Claws",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/burrowingClaws.png",
             "code": "bb",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You bear spade-like claws that can burrow through the earth.",
+            "levelText": "Claw penetration vs. walls: +3\nClaws destroy walls after 4 penetrating hits.\nClaws are also a short-blade class natural weapon that deal 1d2 base damage to non-walls."
         },
         {
             "name": "Carapace",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/carapace.png",
             "code": "bc",
             "variants": [],
-            "excludes": ["Esper", "Quills"]
+            "excludes": ["Esper", "Quills"],
+            "description": "You are protected by a durable carapace.",
+            "levelText": "+3 AV\n-2 DV\n+10 Heat Resistance\n+10 Cold Resistance\nYou may tighten your carapace to receive double the AV bonus at a -2 DV penalty as long as you remain still.\nCannot wear body armor.\n+400 reputation with tortoises"
         },
         {
             "name": "Corrosive Gas Generation",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/corrosiveGasGeneration.png",
             "code": "bd",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You release a burst of corrosive gas around yourself.",
+            "levelText": "Releases gas for 3 rounds\nCooldown: 40 rounds"
         },
         {
             "name": "Double-muscled",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/doubleMuscled.png",
             "code": "be",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You are possessed of hulking strength.",
+            "levelText": "+2 Strength\n15% chance to daze your opponent on a successful melee attack for 2-3 rounds"
         },
         {
             "name": "Electrical Generation",
             "category": "Physical Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/electricalGeneration.png",
             "code": "bf",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You accrue electrical charge that you can use and discharge to deal damage.",
+            "levelText": "Maximum charge: 4000\nAccrue base 100 charge per turn\nCan discharge all held charge for 1d4 damage per 1000 charge\nDischarge can arc to adjacent targets dealing reduced damage, up to 1 target per 1000 charge\nEMP causes involuntary discharge (difficulty 18 Willpower save)\nYou can drink charge from energy cells and capacitors.\nYou gain 100 charge per point of electrical damage taken.\nYou can provide charge to equipped devices that have integrated power systems."
         },
         {
             "name": "Electromagnetic Pulse",
             "category": "Physical Mutation",
             "cost": 2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/electromagneticPulse.png",
             "code": "bg",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You generate an electromagnetic pulse that disables nearby artifacts and machines.",
+            "levelText": "Area: 5x5 centered around yourself\nDuration: 6-15 rounds\nCooldown: 200 rounds"
         },
         {
             "name": "Flaming Ray",
             "category": "Physical Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/flamingRay.png",
             "code": "bh",
             "variants": ["Hands", "Face", "Feet"],
-            "excludes": ["Esper", "Freezing Ray"]
+            "excludes": ["Esper", "Freezing Ray"],
+            "description": "You emit a ray of flame.",
+            "levelText": "Emits a 9-square ray of flame in the direction of your choice.\nDamage: 1d4+1\nCooldown: 10 rounds\nMelee attacks heat opponents by 2d8 degrees"
         },
         {
             "name": "Freezing Ray",
             "category": "Physical Mutation",
             "cost": 5,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/freezingRay.png",
             "code": "bi",
             "variants": ["Hands", "Face", "Feet"],
-            "excludes": ["Esper", "Flaming Ray"]
+            "excludes": ["Esper", "Flaming Ray"],
+            "description": "You emit a ray of frost.",
+            "levelText": "Emits a 9-square ray of frost in the direction of your choice.\nDamage: 1d3+1\nCooldown: 20 rounds\nMelee attacks cool opponents by -1d4 degrees"
         },
         {
             "name": "Heightened Hearing",
             "category": "Physical Mutation",
             "cost": 2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/heightenedHearing.png",
             "code": "bj",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You are possessed of unnaturally acute hearing.",
+            "levelText": "You detect the presence of creatures within a radius of 5.\nChance to identify nearby detected creatures"
         },
         {
             "name": "Heightened Quickness",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/heightenedQuickness.png",
             "code": "bk",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You are gifted with tremendous speed.",
+            "levelText": "+15 Quickness"
         },
         {
             "name": "Horns",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/horns.png",
             "code": "bl",
             "variants": ["horns", "horn", "antlers", "casque"],
-            "excludes": ["Esper", "Psionic Migraines"]
+            "excludes": ["Esper", "Psionic Migraines"],
+            "description": "Horns jut out of your head.",
+            "levelText": "20% chance on melee attack to gore your opponent\nDamage increment: 2d3\nGoring attacks may cause bleeding\nHorns are a short-blade class natural weapon.\n+1 AV\nCannot wear helmets\n+100 reputation with antelopes and goatfolk"
         },
         {
             "name": "Multiple Arms",
             "category": "Physical Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/multipleArms.png",
             "code": "bn",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You have an extra set of arms.",
+            "levelText": "10% chance for each extra arm to deliver an additional melee attack whenever you make a melee attack"
         },
         {
             "name": "Multiple Legs",
             "category": "Physical Mutation",
             "cost": 5,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/multipleLegs.png",
             "code": "bo",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You have an extra set of legs.",
+            "levelText": "+20 move speed\n+6% carry capacity"
         },
         {
             "name": "Night Vision",
             "category": "Physical Mutation",
             "cost": 1,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/nightVision.png",
             "code": "bp",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You see in the dark."
         },
         {
             "name": "Phasing",
             "category": "Physical Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/phasing.png",
             "code": "bq",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You may phase through solid objects for brief periods of time.",
+            "levelText": "Duration: 7 rounds\nCooldown: 100 rounds"
         },
         {
             "name": "Photosynthetic Skin",
             "category": "Physical Mutation",
             "cost": 2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/photosyntheticSkin.png",
             "code": "br",
             "variants": [],
-            "excludes": ["Esper", "Albino", "Carnivorous"]
+            "excludes": ["Esper", "Albino", "Carnivorous"],
+            "description": "You replenish yourself by absorbing sunlight through your hearty green skin.",
+            "levelText": "You can bask in the sunlight instead of eating a meal to gain a special metabolizing effect for 1 day: +30% to natural healing rate and +15 Quickness\nWhile in the sunlight, you accrue starch and lignin that you can use as ingredients in meals you cook (max 1 serving of each).\n+200 reputation with roots, trees, vines, and the Consortium of Phyta"
         },
         {
             "name": "Quills",
             "category": "Physical Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/quills.png",
             "code": "bs",
             "variants": [],
-            "excludes": ["Esper", "Carapace"]
+            "excludes": ["Esper", "Carapace"],
+            "description": "Hundreds of needle-pointed quills cover your body.",
+            "levelText": "300 quills\nMay expel 10% of your quills in a burst around yourself (→0 1d3)\nRegenerate quills at the approximate rate of 0.25 per round\n+2 AV as long as you retain half your quills (+1 AV otherwise)\nCreatures attacking you in melee may impale themselves on your quills, breaking roughly 1% of them and reflecting 3% damage per quill broken.\nCannot wear body armor\nImmune to other creatures' quills"
         },
         {
             "name": "Regeneration",
             "category": "Physical Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/regeneration.png",
             "code": "bt",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "Your wounds heal very quickly.",
+            "levelText": "Your full natural healing rate applies in combat.\n+20% faster natural healing rate\n10% chance to regrow a missing limb each round\n1% chance to remove a minor physical debuff at random each round"
         },
         {
             "name": "Sleep Gas Generation",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/sleepGasGeneration.png",
             "code": "bu",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You release a burst of sleep gas around yourself.",
+            "levelText": "Releases gas for 3 rounds\nCooldown 40 rounds"
         },
         {
             "name": "Slime Glands",
             "category": "Physical Mutation",
             "cost": 1,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/slimeGlands.png",
             "code": "bv",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You produce a viscous slime that you can spit at things.",
+            "levelText": "Covers an area with slime\nRange: 8\nArea: 3x3\nCooldown: 40 rounds\nYou can walk over slime without slipping."
         },
         {
             "name": "Spinnerets",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/spinnerets.png",
             "code": "bw",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You can spin sticky silk webs.",
+            "levelText": "While spinning, you leave webs in your wake as you move.\nDuration: 6 move actions\n+6 to saves vs. forced movement\nCooldown: 80 rounds\nYou don't get stuck in other creatures' webs.\n+300 reputation with arachnids"
         },
         {
             "name": "Stinger (Confusing Venom)",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
             "code": "bx",
             "variants": [],
-            "excludes": ["Esper", "Stinger (Paralyzing Venom)", "Stinger (Poisoning Venom)"]
+            "excludes": ["Esper", "Stinger (Paralyzing Venom)", "Stinger (Poisoning Venom)"],
+            "description": "You bear a tail with a stinger that delivers confusing venom to your enemies.",
+            "levelText": "20% chance on melee attack to sting your opponent (→7 1d6)\nStinger is a long blade and can only penetrate once.\nAlways sting on charge or lunge.\nStinger applies venom on damage (only 20% chance if Stinger is your primary weapon).\nMay use Sting activated ability to strike with your stinger and automatically hit and penetrate.\nSting cooldown: 25\nVenom confuses opponents for 2d3+2 rounds\n+200 reputation with arachnids"
         },
         {
             "name": "Stinger (Paralyzing Venom)",
             "category": "Physical Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
             "code": "by",
             "variants": [],
-            "excludes": ["Esper", "Stinger (Confusing Venom)", "Stinger (Poisoning Venom)"]
+            "excludes": ["Esper", "Stinger (Confusing Venom)", "Stinger (Poisoning Venom)"],
+            "description": "You bear a tail with a stinger that delivers paralyzing venom to your enemies.",
+            "levelText": "20% chance on melee attack to sting your opponent (→7 1d6)\nStinger is a long blade and can only penetrate once.\nAlways sting on charge or lunge.\nStinger applies venom on damage (only 20% chance if Stinger is your primary weapon).\nMay use Sting activated ability to strike with your stinger and automatically hit and penetrate.\nSting cooldown: 25\nVenom paralyzes opponents for 1d3+1 rounds\n+200 reputation with arachnids"
         },
         {
             "name": "Stinger (Poisoning Venom)",
             "category": "Physical Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
             "code": "bz",
             "variants": [],
-            "excludes": ["Esper", "Stinger (Confusing Venom)", "Stinger (Paralyzing Venom)"]
+            "excludes": ["Esper", "Stinger (Confusing Venom)", "Stinger (Paralyzing Venom)"],
+            "description": "You bear a tail with a stinger that delivers poisonous venom to your enemies.",
+            "levelText": "20% chance on melee attack to sting your opponent (→7 1d6)\nStinger is a long blade and can only penetrate once.\nAlways sting on charge or lunge.\nStinger applies venom on damage (only 20% chance if Stinger is your primary weapon).\nMay use Sting activated ability to strike with your stinger and automatically hit and penetrate.\nSting cooldown: 25\nVenom poisons opponents for 8-12 rounds (damage increment 1d2)\n+200 reputation with arachnids"
         },
         {
             "name": "Stinger",
@@ -280,397 +363,605 @@
             "name": "Thick Fur",
             "category": "Physical Mutation",
             "cost": 1,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/thickFur.png",
             "code": "b1",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You are covered in a thick coat of fur, which protects you from the elements.",
+            "levelText": "+5 Heat Resistance\n+5 Cold Resistance\n+100 reputation with apes, baboons, bears, and grazing hedonists"
         },
         {
             "name": "Triple-jointed",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/tripleJointed.png",
             "code": "b2",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "Your joints stretch much further than usual.",
+            "levelText": "+2 Agility\n10% chance that Sprint and skills with Agility prerequisites don't go on cooldown after use"
         },
         {
             "name": "Two-Headed",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/twoHeaded.png",
             "code": "b3",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You have two heads.",
+            "levelText": "Mental actions have 20% lower action costs\n50% chance initially and each round to shake off a negative mental status effect"
         },
         {
             "name": "Two-Hearted",
             "category": "Physical Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/twoHearted.png",
             "code": "b4",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You have two hearts.",
+            "levelText": "+2 Toughness\nYou can sprint for 30% longer."
         },
         {
             "name": "Wings",
             "category": "Physical Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/wings.png",
             "code": "b5",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You fly.",
+            "levelText": "You travel on the world map at 2x speed.\n40% reduced chance of becoming lost\nWhile outside, you may fly. You cannot be hit in melee by grounded creatures while flying.\n5% chance of falling clumsily to the ground\n+20% move speed while sprinting\nYou can jump 1 square farther.\nYou can charge 2 squares farther.\n+300 reputation with birds and winged mammals"
         },
         {
             "name": "Beguiling",
             "category": "Mental Mutation",
             "cost": 5,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/beguiling.png",
             "code": "da",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You beguile a nearby creature into serving you loyally.",
+            "levelText": "Mental attack versus a creature with a mind\nSuccess roll: mutation rank or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level\nRange: 1\nBeguiled creature: +5 bonus hit points\nCooldown: 50 rounds"
         },
         {
             "name": "Burgeoning",
             "category": "Mental Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/burgeoning.png",
             "code": "db",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You cause plants to spontaneously grow in a nearby area, hindering your enemies.",
+            "levelText": "Range: 8\nArea: 3x3 + growth into adjacent tiles\nCooldown: 105 rounds\n+200 reputation with the Consortium of Phyta."
         },
         {
             "name": "Clairvoyance",
             "category": "Mental Mutation",
             "cost": 2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/clairvoyance.png",
             "code": "dc",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You briefly gain vision of a nearby area.",
+            "levelText": "Vision radius: 4\nVision duration: 20 rounds.\nCooldown: 100"
         },
         {
             "name": "Confusion",
             "category": "Mental Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/confusion.png",
             "code": "dd",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You confuse nearby enemies.",
+            "levelText": "Affected creates act semi-randomly and receive a -3 penalty to their mental abilities.\nCone angle: 30 degrees\nCone length: 4\nDuration: 8-12 rounds\nCooldown: 75 rounds"
         },
         {
             "name": "Cryokinesis",
             "category": "Mental Mutation",
             "cost": 5,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/cryokinesis.png",
             "code": "de",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You chill a nearby area with your mind.",
+            "levelText": "Chills affected area over 3 rounds\nRange: 8\nArea: 3x3\nRound 1 Damage: 1d2 divided by 2\nRound 2 Damage: 1d3 divided by 2\nRound 3 Damage: 1d4 divided by 2\nCooldown: 50 rounds"
         },
         {
             "name": "Disintegration",
             "category": "Mental Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/disintegration.png",
             "code": "dg",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You disintegrate nearby matter.",
+            "levelText": "Area: 7x7 around self\nDamage to non-structural objects: 1d10+2\nDamage to structural objects: 1d100+20\nYou are exhausted for 3 rounds after using this power\nCooldown: 75 rounds"
         },
         {
             "name": "Domination",
             "category": "Mental Mutation",
             "cost": 5,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/domination.png",
             "code": "df",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You garrote an adjacent creature's mind and control its actions while your own body lies dormant.",
+            "levelText": "Mental attack versus creature with a mind\nSuccess roll: mutation rank or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level\nRange: 1\nDuration: 200 rounds\nCooldown: 75 rounds"
         },
         {
             "name": "Ego Projection",
             "category": "Mental Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/egoProjection.png",
             "code": "dh",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "Through sheer force of will, you perform uncanny physical feats.",
+            "levelText": "Augments one physical attribute by an amount equal to twice your Ego bonus\nDuration: 18-22 rounds\nCooldown: 200 rounds"
         },
         {
             "name": "Force Bubble",
             "category": "Mental Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/forceBubble.png",
             "code": "di",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You generate a force field around your person.",
+            "levelText": "Creates a 3x3 force field centered around yourself\nDuration: 12 rounds\nCooldown: 100 rounds\nYou may fire missile weapons through the force field."
         },
         {
             "name": "Force Wall",
             "category": "Mental Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/forceWall.png",
             "code": "dj",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You generate a wall of force that protects you from your enemies.",
+            "levelText": "Creates 9 contiguous squares of immobile force field\nDuration: 16 rounds\nCooldown: 100 rounds\nYou may fire missile weapons through the force field."
         },
         {
             "name": "Kindle",
             "category": "Mental Mutation",
             "cost": 1,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/kindle.png",
             "code": "dk",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You ignite a small fire with your mind",
+            "levelText": "Range: 12\nCooldown: 50"
         },
         {
             "name": "Light Manipulation",
             "category": "Mental Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/lightManipulation.png",
             "code": "dl",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You manipulate light to your advantage.",
+            "levelText": "You produce ambient light within a radius of 4.\nYou may focus the light into a laser beam (doing so reduces the radius of your ambient light by 1).\nLaser damage increment: 1d3\nLaser penetration: 4\nAmbient light recharges at a rate of 1 unit every 15 rounds until it reaches its maximum value.\n13% chance to reflect light-based damage"
         },
         {
             "name": "Mass Mind",
             "category": "Mental Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/massMind.png",
             "code": "dm",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You tap into the aggregate mind and steal power from other espers.",
+            "levelText": "Refreshes all mental mutations\nCooldown: 500 rounds\nCooldown is not affected by Willpower.\nEach use attracts slightly more attention from psychic interlopers.\nSmall chance each round for another esper to steal your powers\n-200 reputation with the Seekers of the Sightless Way"
         },
         {
             "name": "Mental Mirror",
             "category": "Mental Mutation",
             "cost": 2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/mentalMirror.png",
             "code": "dn",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You reflect mental attacks back at your attackers.",
+            "levelText": "When you suffer a mental attack while Mental Mirror is off cooldown, you gain +4 mental armor (MA).\nIf the attack then fails to penetrate your MA, it's reflected back at your attacker.\nCooldown: 50"
         },
         {
             "name": "Precognition",
             "category": "Mental Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/precognition.png",
             "code": "do",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You peer into your near future.",
+            "levelText": "You may activate this power and then later revert to the point in time when you activated it.\nDuration between use and reversion: 16 rounds\nCooldown: 500 rounds"
         },
         {
             "name": "Psychometry",
             "category": "Mental Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/psychometry.png",
             "code": "dp",
             "variants": [],
-            "excludes": ["Chimera", "Dystechnia"]
+            "excludes": ["Chimera", "Dystechnia"],
+            "description": "You read the history of artifacts by touching them, learning what they do and how they were made.",
+            "levelText": "Unerringly identify artifacts up to complexity tier 4.\nLearn how to construct identified artifacts up to complexity tier 2 (must have the appropriate Tinker  power).\nYou may open security doors by touching them."
         },
         {
             "name": "Pyrokinesis",
             "category": "Mental Mutation",
             "cost": 5,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/pyrokinesis.png",
             "code": "dq",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You heat a nearby area with your mind.",
+            "levelText": "Toasts affected area over 3 rounds\nRange: 8\nArea: 3x3\nRound 1 Damage: 1d3 divided by 2\nRound 2 Damage: 1d4 divided by 2\nRound 3 Damage: 1d6 divided by 2\nCooldown: 50 rounds"
         },
         {
             "name": "Sense Psychic",
             "category": "Mental Mutation",
             "cost": 1,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/sensePsychic.png",
             "code": "dr",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You can sense other mental mutants through the psychic aether.",
+            "levelText": "You detect the presence of psychic enemies within a radius of 9.\nThere's a chance you identify detected enemies."
         },
         {
             "name": "Space-Time Vortex",
             "category": "Mental Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/spaceTimeVortex.png",
             "code": "ds",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You sunder spacetime, sending things nearby careening through a tear in the cosmic fabric.",
+            "levelText": "Summons a vortex that swallows everything in its path.\nCooldown: 500 rounds\nYou may enter the vortex to teleport to a random location in Qud.\n+200 reputation with highly entropic beings"
         },
         {
             "name": "Stunning Force",
             "category": "Mental Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stunningForce.png",
             "code": "dt",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You invoke a concussive force in a nearby area, throwing enemies back and stunning them.",
+            "levelText": "Range: 8\nArea: 7x7\nCreatures are pushed away from center of blast, stunned, and dealt crushing damage in up to 3 increments.\nDamage increment: 1d3\nCooldown: 50 rounds"
         },
         {
             "name": "Sunder Mind",
             "category": "Mental Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/sunderMind.png",
             "code": "du",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You sunder the mind of an enemy, leaving them reeling in pain.",
+            "levelText": "For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.\nTaking any action other than passing the turn will break the connection.\nEach round you make a mental attack vs mental armor (MA).\nDamage increment: 1d3\nAfter the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.\nRange: sight\nCooldown: 80 rounds"
         },
         {
             "name": "Syphon Vim",
             "category": "Mental Mutation",
             "cost": 3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/syphonVim.png",
             "code": "dv",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You bond with a nearby organic creature and leech its life force.",
+            "levelText": "Mental attack versus an organic creature\nDuration: 20 rounds\nCooldown: 200 rounds\nDrains 1 hit point per round"
         },
         {
             "name": "Telepathy",
             "category": "Mental Mutation",
             "cost": 1,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/telepathy.png",
             "code": "dw",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You may communicate with others through the psychic aether.",
+            "levelText": "Chat with anyone in vision\nTakes you much less time to issue orders to companions"
         },
         {
             "name": "Teleport Other",
             "category": "Mental Mutation",
             "cost": 2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/teleportOther.png",
             "code": "dy",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You teleport an adjacent creature to a random nearby location.",
+            "levelText": "Cooldown: 105 rounds"
         },
         {
             "name": "Teleportation",
             "category": "Mental Mutation",
             "cost": 5,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/teleportation.png",
             "code": "dx",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You teleport to a nearby location.",
+            "levelText": "Teleport to a random location within a designated area.\nUncertainty radius: 12\nCooldown: 100 rounds"
         },
         {
             "name": "Temporal Fugue",
             "category": "Mental Mutation",
             "cost": 5,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/temporalFugue.png",
             "code": "d1",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You quickly pass back and forth through time creating multiple copies of yourself.",
+            "levelText": "Duration: 20 rounds\nCopies: 1\nCooldown: 200 rounds"
         },
         {
             "name": "Time Dilation",
             "category": "Mental Mutation",
             "cost": 4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/timeDilation.png",
             "code": "dz",
             "variants": [],
-            "excludes": ["Chimera"]
+            "excludes": ["Chimera"],
+            "description": "You distort time around your person in order to slow down your enemies.",
+            "levelText": "Creatures within 9 tiles are slowed according to how close they are to you.\nDuration: 15 rounds\nCooldown: 150 rounds\nDistance 1: creatures receive a 57% Quickness penalty\nDistance 4: creatures receive a 22% Quickness penalty\nDistance 7: creatures receive a 3% Quickness penalty"
         },
         {
             "name": "Albino",
             "category": "Physical Defect",
             "cost": -2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/albino.png",
             "code": "ca",
             "variants": [],
-            "excludes": ["Esper", "Photosynthetic Skin"]
+            "excludes": ["Esper", "Photosynthetic Skin"],
+            "description": "You eat meat exclusively.\n\nYou get no satiation from foods that aren't meat.\nIf you eat raw food that isn't meat, there's a 50% chance you become ill for 2 hours.\nYou can't cook with plant or fungus ingredients.\nYou don't get ill when you eat raw meat.\nYou can eat raw meat without being famished.\n"
         },
         {
             "name": "Amphibious",
             "category": "Physical Defect",
             "cost": -3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/amphibious.png",
             "code": "cb",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "Your skin must be kept moist with fresh water.\n\nYou pour water on yourself rather than drinking it to quench your thirst.\nYou require about two-thirds more water than usual.\n+100 reputation with {{w|frogs}}"
         },
         {
             "name": "Brittle Bones",
             "category": "Physical Defect",
             "cost": -4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/brittleBones.png",
             "code": "cf",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "Your bones are brittle.\n\nYou suffer 50% more damage from bludgeoning attacks, falling, and other sources of concussive damage."
         },
         {
             "name": "Carnivorous",
             "category": "Physical Defect",
             "cost": -2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/carnivorous.png",
             "code": "b6",
             "variants": [],
-            "excludes": ["Esper", "Photosynthetic Skin"]
+            "excludes": ["Esper", "Photosynthetic Skin"],
+            "description": "You eat meat exclusively.\n\nYou get no satiation from foods that aren't meat.\nIf you eat raw food that isn't meat, there's a 50% chance you become ill for 2 hours.\nYou can't cook with plant or fungus ingredients.\nYou don't get ill when you eat raw meat.\nYou can eat raw meat without being famished.\n"
         },
         {
             "name": "Cold Blooded",
             "category": "Physical Defect",
             "cost": -2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/coldBlooded.png",
             "code": "cd",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "Your vitality depends on your temperature; at higher temperatures, you are more lively. At lower temperatures, you are more torpid.\n\nYour base quickness score is reduced by 10.\nYour quickness increases as your temperature increases and decreases as your temperature decreases.\n+100 reputation with unshelled reptiles."
         },
         {
             "name": "Electromagnetic Impulse",
             "category": "Physical Defect",
             "cost": -2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/electromagneticImpulse.png",
             "code": "cg",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You involuntarily release electromagnetic pulses, deactivating robots and artifacts around yourself.\n\nSmall chance each round you're in combat that you release an electromagnetic pulse with radius 3, deactivating robots and artifacts (including those you carry) for 11-20 rounds."
         },
         {
             "name": "Hooks for Feet",
             "category": "Physical Defect",
             "cost": -4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/hooksForFeet.png",
             "code": "ci",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You have hooks for feet.\n\nYou cannot wear shoes."
         },
         {
             "name": "Irritable Genome",
             "category": "Physical Defect",
             "cost": -4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/irritableGenome.png",
             "code": "cn",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "Your genome is irritable and unpredictable.\n\nWhenever you spend a mutation point, the next mutation point you gain will be spent randomly.\nWhenever you buy a new mutation, you get a random one instead of a choice of three."
         },
         {
             "name": "Myopic",
             "category": "Physical Defect",
             "cost": -3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/myopic.png",
             "code": "cj",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You are nearsighted.\n\nYou can only see up to a radius of 10."
         },
         {
             "name": "Nerve Poppy",
             "category": "Physical Defect",
             "cost": -2,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/nervePoppy.png",
             "code": "cc",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You lack a developed sense of pain.\n\nYou only know your general state of health and not your precise number of hit points."
         },
         {
             "name": "Spontaneous Combustion",
             "category": "Physical Defect",
             "cost": -3,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/spontaneousCombustion.png",
             "code": "cl",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You spontaneously erupt into flames.\n\nSmall chance each round you're in combat that you spontaneously erupt into flames."
         },
         {
             "name": "Tonic Allergy",
             "category": "Physical Defect",
             "cost": -4,
+            "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/tonicAllergy.png",
             "code": "cm",
             "variants": [],
-            "excludes": ["Esper"]
+            "excludes": ["Esper"],
+            "description": "You are allergic to tonics.\n\nThe chance your mutant physiology reacts adversely to a tonic is increased to 33%.\nIf you react adversely this way to a salve or ubernostrum tonic, the adverse reaction effect is chosen randomly from among other tonic effects. You will still heal."
+        },
+        {
+            "name": "Amnesia",
+            "category": "Mental Defect",
+            "cost": -2,
+            "max": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/amnesia.png",
+            "code": "ea",
+            "variants": [],
+            "excludes": ["Chimera"],
+            "description": "You forget things and places.\n\nWhenever you learn a new secret, there's a small chance you forget a secret.\nWhenever you return to a map you previously visited, there's a small chance you forget the layout."
+        },
+        {
+            "name": "Blinking Tic",
+            "category": "Mental Defect",
+            "cost": -3,
+            "max": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/blinkingTic.png",
+            "code": "eb",
+            "variants": [],
+            "excludes": ["Chimera"],
+            "description": "You teleport about uncontrollably.\n\nSmall chance each round you're in combat that you randomly teleport to a nearby location."
+        },
+        {
+            "name": "Dystechnia",
+            "category": "Mental Defect",
+            "cost": -2,
+            "max": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/dystechnia.png",
+            "code": "ei",
+            "variants": [],
+            "excludes": ["Chimera", "Psychometry"],
+            "description": "You are befuddled by technological complexity.\n\nYou're much worse at examining artifacts.\nYou can't have artifacts identified for you because you don't understand their explanations.\nWhen you fail severely during artifact examination, the artifact explodes."
+        },
+        {
+            "name": "Evil Twin",
+            "category": "Mental Defect",
+            "cost": -3,
+            "max": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/evilTwin.png",
+            "code": "ec",
+            "variants": [],
+            "excludes": ["Chimera"],
+            "description": "Acting on some inscrutable impulse, a parallel version of yourself travels through space and time to destroy you.\n\nEach time you embark on a new location, there's a small chance your evil twin has tracked you there and attempts to kill you."
+        },
+        {
+            "name": "Narcolepsy",
+            "category": "Mental Defect",
+            "cost": -3,
+            "max": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/narcolepsy.png",
+            "code": "ed",
+            "variants": [],
+            "excludes": ["Chimera"],
+            "description": "You fall asleep involuntarily from time to time.\n\nSmall chance each round you're in combat that you fall asleep for 20-29 rounds."
+        },
+        {
+            "name": "Psionic Migraines",
+            "category": "Mental Defect",
+            "cost": -4,
+            "max": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/psionicMigraines.png",
+            "code": "ow",
+            "variants": [],
+            "excludes": ["Chimera", "Horns"],
+            "description": "You suffer from powerful psionic migraines that render your head extremely sensitive.\n\nYou can't wear hats or helmets."
+        },
+        {
+            "name": "Quantum Jitters",
+            "category": "Mental Defect",
+            "cost": -3,
+            "max": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/quantumJitters.png",
+            "code": "eh",
+            "variants": [],
+            "excludes": ["Chimera"],
+            "description": "Your willful acts sometimes dent spacetime.\n\nWhenever you use an activated ability, there's a small chance your focus slips and you dent spacetime in the local region, causing 1-2 spacetime vortices to appear. This chance increases the longer you go without using an activated ability."
+        },
+        {
+            "name": "Socially Repugnant",
+            "category": "Mental Defect",
+            "cost": -3,
+            "max": 1,
+            "src": "/1/asset/s/latest/public/assets/images/mutationImages/sociallyRepugnant.png",
+            "code": "ef",
+            "variants": [],
+            "excludes": ["Chimera"],
+            "description": "Others find it difficult to tolerate you in social settings.\n\n-50 reputation with every faction"
         }
     ]
 }

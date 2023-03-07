@@ -1276,7 +1276,7 @@
             ]
         },
         {
-            "name": "Self-Discipline",
+            "name": "Self-discipline",
             "plural": "undefined",
             "entryCost": 150,
             "skills": [
@@ -2125,6 +2125,22 @@
                 {
                     "name": "Bow",
                     "plural": "Bows",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Wilderness Lore: Random",
+                    "plural": "Wilderness Lore: Random",
                     "cost": 0,
                     "prerequisites": {
                         "skills": [],

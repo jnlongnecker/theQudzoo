@@ -1,0 +1,37 @@
+<template>
+    <c-sugar-injector></c-sugar-injector>
+    <h2>:choose your caste:</h2>
+    <div class="container">
+        <div class="starters">
+            <div></div>
+            <ul class="starter-list" lwc:dom="manual"></ul>
+            <div></div>
+        </div>
+
+        <div class="arc-name-grid">
+            <template for:each={castes} for:item="arcology">
+                <h2 key={arcology.shortName} class={arcology.shortName}>
+                    {arcology.arcologyName}
+                </h2>
+                <div class="mobile-castes" key={arcology.arcologyName} if:true={mobileLayout}>
+                    <template for:each={arcology.castes} for:item="caste">
+                        <figure key={caste.name} class="calling-card" onmouseover={callingHovered}
+                            onclick={callingSelected} calling={caste.name}>
+                            <img src={caste.src} class={caste.class} />
+                            <figcaption>{caste.name}</figcaption>
+                        </figure>
+                    </template>
+                </div>
+            </template>
+        </div>
+        <div class="calling-grid" if:true={desktopLayout}>
+            <template for:each={casteDisplay} for:item="caste">
+                <figure key={caste.name} class="calling-card" onmouseover={callingHovered} onclick={callingSelected}
+                    calling={caste.name}>
+                    <img src={caste.src} class={caste.class} />
+                    <figcaption>{caste.name}</figcaption>
+                </figure>
+            </template>
+        </div>
+    </div>
+</template>
