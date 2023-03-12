@@ -6,7 +6,7 @@ class MutantBuilder extends LightningElement {
     this.scrollingContainer = void 0;
     this.callingModifiers = void 0;
     this.buildPayload = {
-      genotype: "Mutant",
+      genotype: "Mutated Human",
       subtype: "Apostle",
       mpRemaining: "12",
       mutations: [],

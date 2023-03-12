@@ -74,12 +74,13 @@ class BuildCard extends LightningElement {
   }
   get bonus() {
     if (!this.buildJson) return;
-    return this.genotype == "Mutant" ? "Mutations" : "Cybernetics";
+    return this.genotype == "True Kin" ? "Cybernetics" : "Mutations";
   }
   get cardClass() {
     let capClass = this.editable ? "" : " static";
     if (!this.buildJson) return "card" + capClass;
-    return this.genotype == "Mutant" ? "card mutant" + capClass : "card truekin" + capClass;
+    console.log(this.genotype);
+    return this.genotype == "True Kin" ? "card truekin" + capClass : "card mutant" + capClass;
   }
   get attributes() {
     if (!this.buildJson) return [];

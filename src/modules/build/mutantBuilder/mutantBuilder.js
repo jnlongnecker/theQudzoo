@@ -6,7 +6,7 @@ export default class MutantBuilder extends LightningElement {
     callingModifiers;
 
     buildPayload = {
-        genotype: "Mutant",
+        genotype: "Mutated Human",
         subtype: "Apostle",
         mpRemaining: "12",
         mutations: [],

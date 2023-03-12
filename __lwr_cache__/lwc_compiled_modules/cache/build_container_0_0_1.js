@@ -175,7 +175,7 @@ class BuilderContainer extends LightningElement {
     let selections;
     let pointsUsed;
     let mpRemaining;
-    if (genotype == "Mutant") {
+    if (genotype != "True Kin") {
       attributes = fullBuild.modules[3].data.PointsPurchased;
       selections = fullBuild.modules[2].data.selections;
       pointsUsed = 0 - fullBuild.modules[3].data.apSpent;
