@@ -5,6 +5,7 @@ class BuilderContainer extends LightningElement {
   constructor(...args) {
     super(...args);
     this.mutantSelected = true;
+    this.saveRequested = false;
     this.buildCode = "";
     this.inputForCopying = void 0;
     this.lastBuildCode = void 0;
@@ -32,6 +33,21 @@ class BuilderContainer extends LightningElement {
   get codeAvailable() {
     return this.buildCode ? true : false;
   }
+  get startingbuild() {
+    return this.build;
+  }
+  set startingbuild(b) {
+    if (!b) return;
+    this.build = b;
+    this.buildCode = this.build.code;
+    this.initializeFromExistingCode();
+  }
+  get buildName() {
+    return this.build.name;
+  }
+  get isPublic() {
+    return this.build.public;
+  }
   get truekinSelected() {
     return !this.mutantSelected;
   }
@@ -39,6 +55,7 @@ class BuilderContainer extends LightningElement {
     return this.build._id;
   }
   set idval(idVal) {
+    if (!idVal) return;
     this.build._id = idVal;
   }
   connectedCallback() {
@@ -65,7 +82,7 @@ class BuilderContainer extends LightningElement {
   }
   calculateBuildCode(event) {
     if (!this.nameInput) {
-      this.nameInput = this.template.querySelector(".name-input");
+      this.nameInput = this.template.querySelector(".build-action .name-input");
     }
     let payload = event.detail;
     payload.name = this.nameInput.value;
@@ -115,7 +132,14 @@ class BuilderContainer extends LightningElement {
     };
     event.currentTarget.firstChild.addEventListener("animationend", funcA);
   }
-  async saveBuild() {
+  saveClick() {
+    this.saveRequested = true;
+  }
+  saveCancel() {
+    this.saveRequested = false;
+  }
+  async saveBuild(event) {
+    event.preventDefault();
     if (!this.buildCode) return;
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
@@ -130,6 +154,7 @@ class BuilderContainer extends LightningElement {
       console.log(await response.text());
     }
     this.build = JSON.parse((await response.json()).build);
+    this.saveRequested = false;
   }
   async initializeFromExistingCode() {
     let fullBuild = await fetchJsonForBuildCode(this.buildCode);
@@ -162,7 +187,17 @@ class BuilderContainer extends LightningElement {
       genotype: genotype,
       subtype: subtype
     };
-    this.template.querySelector(".name-input").value = name;
+    this.template.querySelector(".build-action .name-input").value = name;
+  }
+  updateBuildName(event) {
+    this.build.name = event.currentTarget.value;
+  }
+  updateAccessibility(event) {
+    this.build.public = !this.build.public;
+    console.log(this.build.public);
+  }
+  stopProp(event) {
+    event.stopPropagation();
   }
 }
 _registerDecorators(BuilderContainer, {
@@ -170,14 +205,18 @@ _registerDecorators(BuilderContainer, {
     code: {
       config: 3
     },
+    startingbuild: {
+      config: 3
+    },
     idval: {
       config: 3
     }
   },
   track: {
-    sanitisedBuild: 1
+    sanitisedBuild: 1,
+    build: 1
   },
-  fields: ["mutantSelected", "buildCode", "inputForCopying", "lastBuildCode", "clipboardPath", "checkPath", "usePath", "build"]
+  fields: ["mutantSelected", "saveRequested", "buildCode", "inputForCopying", "lastBuildCode", "clipboardPath", "checkPath", "usePath"]
 });
 export default _registerComponent(BuilderContainer, {
   tmpl: _tmpl

@@ -9,8 +9,8 @@
         <button class="login-btn" if:false={authenticated} onclick={loginDesired}>
             {loginButtonText}
         </button>
-        <div class="popup" if:true={showPopup}>
-            <div class="container" if:false={authenticated}>
+        <div class="popup" if:true={showPopup} onclick={cancelLogin}>
+            <div class="container" if:false={authenticated} onclick={stopBubble}>
                 <form if:true={useLogin} method="post" onsubmit={login}>
                     <h2>{formTitle}</h2>
                     <div>
@@ -26,6 +26,7 @@
                             I don't have an account
                         </button>
                         <button type="submit">Submit</button>
+                        <button onclick={cancelLogin}>Cancel</button>
                     </div>
                     <p if:true={isError} class="error">
                         <span>{errorMessage}</span>
@@ -51,6 +52,7 @@
                             I have an account
                         </button>
                         <button type="submit">Submit</button>
+                        <button onclick={cancelLogin}>Cancel</button>
                     </div>
                     <p if:true={isError} class="error">
                         <span>{errorMessage}</span>

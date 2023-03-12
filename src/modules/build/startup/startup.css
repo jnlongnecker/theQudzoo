@@ -1,0 +1,117 @@
+@keyframes flicker {
+    0% {
+        color: var(--text-color-faded);
+        border-color: var(--text-color-faded);
+    }
+    33% {
+        color: var(--highlight-color);
+        border-color: var(--highlight-color);
+    }
+    66% {
+        color: var(--text-color-faded);
+        border-color: var(--text-color-faded);
+    }
+    100% {
+        color: var(--highlight-color);
+        border-color: var(--highlight-color);
+    }
+}
+
+h2 {
+    color: var(--stat-color);
+    font-family: var(--qud-font);
+    font-weight: 400;
+}
+
+hr {
+    height: 0;
+    width: 40rem;
+    border: 0;
+    border-top: 1px solid var(--text-color-faded);
+    transform: rotate(-25deg);
+}
+
+button {
+    font-size: 1.25rem;
+    min-width: 20ch;
+    padding: 0.25rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--text-color-faded);
+    color: var(--text-color-faded);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--hover-darken);
+    border-color: var(--highlight-color);
+    color: var(--highlight-color);
+    animation: flicker 0.25s forwards;
+}
+
+section {
+    padding-bottom: 2rem;
+}
+
+.half {
+    display: grid;
+    min-width: 45vw;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.load-build {
+    --highlight-color: var(--intelligence-color);
+}
+
+.create-new {
+    --highlight-color: var(--willpower-color);
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.build-input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-bottom: 2px solid var(--skills-color);
+    color: var(--skills-color);
+    font-size: 1em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0.5rem;
+}
+
+.build-input:hover {
+    background-color: var(--hover-darken);
+}
+
+.build-input:focus {
+    outline: 0;
+    background-color: var(--hover-darken);
+}
+
+.error {
+    font-family: var(--qud-font);
+    color: var(--strength-color);
+}
+
+@media only screen and (max-width: 650px) {
+    .half {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        padding: 0 var(--mobile-margin-size) 2rem;
+        box-sizing: border-box;
+    }
+
+    hr {
+        transform: rotate(0);
+        width: 80vw;
+    }
+}

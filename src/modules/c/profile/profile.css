@@ -2,6 +2,64 @@ section {
     padding: 0 var(--desktop-margin-size);
 }
 
+h1 {
+    display: flex;
+    gap: 0.5ch;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-bottom: 2px solid var(--skills-color);
+    color: var(--skills-color);
+    font-size: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0.4rem;
+}
+
+input:hover {
+    background-color: var(--hover-darken);
+}
+
+input:focus {
+    outline: 0;
+    background-color: var(--hover-darken);
+}
+
+.name {
+    color: var(--skills-color);
+}
+
+.edit-name {
+    background-color: transparent;
+    fill: var(--text-color-faded);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5ch;
+    border: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.edit-name:hover {
+    cursor: pointer;
+    background-color: var(--hover-darken);
+}
+
+.edit-name:hover svg {
+    fill: var(--text-color);
+}
+
+.edit-name svg {
+    height: 1.4rem;
+}
+
 @media only screen and (max-width: 900px) {
     section {
         padding: 0 var(--mobile-margin-size);

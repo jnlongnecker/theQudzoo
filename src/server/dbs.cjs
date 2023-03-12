@@ -128,6 +128,30 @@ exports.getAuthenticatedUser = async (req, res) => {
     }
 }
 
+exports.updateUser = async function (req, res) {
+    let user = req.body;
+    let updateObj = {};
+    if (user.name) {
+        updateObj['displayName'] = user.name;
+    }
+    if (user.password) {
+        updateObj['password'] = user.password;
+    }
+
+    let updatedUser = await User.updateOne({ username: user.username }, updateObj);
+    if (user.name) {
+        await Build.updateMany({ 'owner.username': user.username }, { 'owner.displayName': user.name });
+    }
+
+    res.status(200);
+
+    return {
+        error: false,
+        username: user.username,
+        name: user.name,
+    }
+}
+
 exports.getBuilds = async function (req, res) {
     let filters = req.body.filters;
     let allBuilds;
@@ -144,6 +168,16 @@ exports.getBuilds = async function (req, res) {
         return {
             error: true,
             message: e.message
+        }
+    }
+
+    let contextUser = req.session.user;
+
+    // Strip owner and id from builds not owned by the requesting user
+    for (let build of allBuilds) {
+        if (!build.owner || build.owner.username != contextUser) {
+            build._id = "";
+            build.owner = null;
         }
     }
 

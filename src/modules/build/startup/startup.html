@@ -1,0 +1,31 @@
+<template>
+    <template if:false={choiceConfirmed}>
+        <section class="choices">
+            <h2>:qudzoo build editor:</h2>
+            <div class="half">
+                <div class="choices">
+                    <button aria-labelledby="create-label" class="create-new" onclick={createNew}>
+                        Create New
+                    </button>
+                    <label id="create-label">Craft your megamind builds here</label>
+                </div>
+                <span></span>
+            </div>
+            <hr />
+            <div class="half">
+                <span></span>
+                <div class="choices">
+                    <button class="load-build" onclick={loadCode}>
+                        Load Build Code
+                    </button>
+                    <input class="build-input" />
+                    <p class="error" if:true={error}>{error}</p>
+                    <label>Or adjust one that's already been made</label>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template if:true={choiceConfirmed}>
+        <build-container idval={startingId} startingbuild={startingBuild}></build-container>
+    </template>
+</template>

@@ -1,0 +1,85 @@
+code {
+    font-family: var(--qud-font);
+}
+
+.injected {
+    white-space: nowrap;
+}
+
+.skill {
+    font-family: var(--qud-font);
+    color: var(--skills-color);
+}
+
+.attribute {
+    font-family: var(--qud-font);
+}
+
+.strength {
+    color: var(--strength-color);
+}
+
+.agility {
+    color: var(--agility-color);
+}
+
+.toughness {
+    color: var(--toughness-color);
+}
+
+.willpower {
+    color: var(--willpower-color);
+}
+
+.intelligence {
+    color: var(--intelligence-color);
+}
+
+.ego {
+    color: var(--ego-color);
+}
+
+.stat {
+    font: var(--qud-font);
+    font-weight: bold;
+    color: var(--stat-color);
+}
+
+.stat::before {
+    content: " ";
+}
+
+.mutation {
+    font-family: var(--qud-font);
+    color: var(--mutation-color);
+    margin-left: 2px;
+}
+
+.defect {
+    color: var(--qudzoo-color);
+}
+
+.pv::before {
+    content: "→ ";
+    color: #77bfcf;
+}
+
+.inline-icon {
+    height: 1em;
+    float: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    display: inline;
+    position: relative;
+    top: 2px;
+    min-width: 13px;
+}
+
+.thumb-up {
+    fill: var(--willpower-color);
+}
+
+.thumb-down {
+    fill: var(--qudzoo-color);
+}

@@ -1,5 +1,6 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./login.html";
+import { attemptLogin, attemptRegister, logout as logMeOut } from "c/api";
 class Login extends LightningElement {
   get formTitle() {
     return this.useLogin ? "Login" : "Create Account";
@@ -36,7 +37,6 @@ class Login extends LightningElement {
     fetch("/db/authenticated").then(response => {
       response.json().then(result => {
         this.authenticated = !result.error;
-        console.log(result);
         this.displayName = result.name;
       });
     });
@@ -52,27 +52,12 @@ class Login extends LightningElement {
     event.preventDefault();
     let username = event.submitter.form[0].value;
     let password = event.submitter.form[1].value;
-    let result = await this.attemptLogin(username, password);
+    let result = await attemptLogin(username, password);
     if (!result.success) {
       this.errorMessage = result.message;
       return;
     }
     location.reload();
-  }
-  async attemptLogin(username, password) {
-    let headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    let rawBody = JSON.stringify({
-      "username": username,
-      "password": password
-    });
-    let reqOptions = {
-      method: "POST",
-      headers: headers,
-      body: rawBody
-    };
-    let response = await fetch("/db/login", reqOptions);
-    return await response.json();
   }
   async register(event) {
     event.preventDefault();
@@ -84,7 +69,7 @@ class Login extends LightningElement {
       this.errorMessage = validationCheckResult.message;
       return;
     }
-    let result = await this.attemptRegister(username, password);
+    let result = await attemptRegister(username, password);
     if (!result.success) {
       this.errorMessage = result.message;
       return;
@@ -110,32 +95,46 @@ class Login extends LightningElement {
         message: "Password is required."
       };
     }
+    if (!username.match(/^[\w_\-\d]*$/)) {
+      return {
+        valid: false,
+        message: "Username can only include -, _ and alphanumeric characters."
+      };
+    }
+    if (username.length < 5) {
+      return {
+        valid: false,
+        message: "Username must be at least 5 characters long."
+      };
+    }
+    if (username.length > 15) {
+      return {
+        valid: false,
+        message: "Username can be up to 15 characters long."
+      };
+    }
+    if (password.length < 7) {
+      return {
+        valid: false,
+        message: "Password must be at least 7 characters long."
+      };
+    }
     return {
       valid: true
     };
   }
-  async attemptRegister(username, password) {
-    let headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    let rawBody = JSON.stringify({
-      "username": username,
-      "password": password
-    });
-    let reqOptions = {
-      method: "POST",
-      headers: headers,
-      body: rawBody
-    };
-    let response = await fetch("/db/register", reqOptions);
-    return await response.json();
-  }
   logout() {
     this.showPopup = false;
-    fetch("/db/logout", {
-      method: "POST"
-    }).then(response => {
+    console.log(logMeOut);
+    logMeOut().then(() => {
       location.reload();
     });
+  }
+  cancelLogin() {
+    this.showPopup = false;
+  }
+  stopBubble(event) {
+    event.stopPropagation();
   }
 }
 _registerDecorators(Login, {

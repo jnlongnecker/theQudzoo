@@ -1,0 +1,25 @@
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: 0;
+}
+
+::-webkit-scrollbar-track-piece {
+    outline: 1px solid var(--text-color-faded);
+    outline-offset: -0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color-dark);
+}
+
+::-webkit-scrollbar-button {
+    height: 3px;
+    background: var(--text-color);
+}

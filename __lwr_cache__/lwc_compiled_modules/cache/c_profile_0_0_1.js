@@ -4,6 +4,8 @@ class Profile extends LightningElement {
   constructor() {
     super();
     this.user = void 0;
+    this.editingName = false;
+    this.nameInput = void 0;
     this.fetchUser();
   }
   get userExists() {
@@ -22,9 +24,42 @@ class Profile extends LightningElement {
     }
     this.user = await response.json();
   }
+  allowEdit(event) {
+    event.stopPropagation();
+    this.editingName = true;
+  }
+  endEdit() {
+    this.editingName = false;
+    this.nameInput = this.template.querySelector('input');
+    this.user.name = this.nameInput.value;
+    this.saveUser();
+  }
+  confirmEdit(event) {
+    if (event.key === 'Enter') {
+      this.endEdit();
+    }
+  }
+  async saveUser() {
+    let headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    let rawBody = JSON.stringify(this.user);
+    let reqOptions = {
+      method: "POST",
+      headers: headers,
+      body: rawBody
+    };
+    let response = await fetch("/db/users", reqOptions);
+    if (!response.ok) {
+      console.log(await response.text());
+    }
+    this.user = await response.json();
+  }
 }
 _registerDecorators(Profile, {
-  fields: ["user"]
+  track: {
+    user: 1
+  },
+  fields: ["editingName", "nameInput"]
 });
 export default _registerComponent(Profile, {
   tmpl: _tmpl

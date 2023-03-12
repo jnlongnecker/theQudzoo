@@ -5,7 +5,7 @@ import _implicitScopedStylesheets from "./login.scoped.css?scoped=true";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, t: api_text, h: api_element, d: api_dynamic_text, gid: api_scoped_id} = $api;
-  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8} = $ctx;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12} = $ctx;
   return [api_element("div", {
     key: 0,
     on: {
@@ -41,19 +41,25 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     classMap: {
       "popup": true
     },
-    key: 5
+    key: 5,
+    on: {
+      "click": _m3 || ($ctx._m3 = api_bind($cmp.cancelLogin))
+    }
   }, [!$cmp.authenticated ? api_element("div", {
     classMap: {
       "container": true
     },
-    key: 6
+    key: 6,
+    on: {
+      "click": _m4 || ($ctx._m4 = api_bind($cmp.stopBubble))
+    }
   }, [$cmp.useLogin ? api_element("form", {
     attrs: {
       "method": "post"
     },
     key: 7,
     on: {
-      "submit": _m3 || ($ctx._m3 = api_bind($cmp.login))
+      "submit": _m5 || ($ctx._m5 = api_bind($cmp.login))
     }
   }, [api_element("h2", {
     key: 8
@@ -94,79 +100,84 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 16,
     on: {
-      "click": _m4 || ($ctx._m4 = api_bind($cmp.changeForm))
+      "click": _m6 || ($ctx._m6 = api_bind($cmp.changeForm))
     }
   }, [api_text("I don't have an account")]), api_element("button", {
     attrs: {
       "type": "submit"
     },
     key: 17
-  }, [api_text("Submit")])]), $cmp.isError ? api_element("p", {
+  }, [api_text("Submit")]), api_element("button", {
+    key: 18,
+    on: {
+      "click": _m7 || ($ctx._m7 = api_bind($cmp.cancelLogin))
+    }
+  }, [api_text("Cancel")])]), $cmp.isError ? api_element("p", {
     classMap: {
       "error": true
     },
-    key: 18
-  }, [api_element("span", {
     key: 19
+  }, [api_element("span", {
+    key: 20
   }, [api_text(api_dynamic_text($cmp.errorMessage))]), api_element("button", {
     classMap: {
       "dismiss-error": true
     },
-    key: 20,
+    key: 21,
     on: {
-      "click": _m5 || ($ctx._m5 = api_bind($cmp.dismissError))
+      "click": _m8 || ($ctx._m8 = api_bind($cmp.dismissError))
     }
   }, [api_text("OK")])]) : null]) : null, !$cmp.useLogin ? api_element("form", {
     attrs: {
       "method": "post"
     },
-    key: 21,
+    key: 22,
     on: {
-      "submit": _m6 || ($ctx._m6 = api_bind($cmp.register))
+      "submit": _m9 || ($ctx._m9 = api_bind($cmp.register))
     }
   }, [api_element("h2", {
-    key: 22
-  }, [api_text(api_dynamic_text($cmp.formTitle))]), api_element("div", {
     key: 23
+  }, [api_text(api_dynamic_text($cmp.formTitle))]), api_element("div", {
+    key: 24
   }, [api_element("label", {
     attrs: {
       "for": api_scoped_id("username")
     },
-    key: 24
+    key: 25
   }, [api_text("Username")]), api_element("input", {
     attrs: {
       "name": "username",
       "type": "text"
     },
-    key: 25
-  }, [])]), api_element("div", {
     key: 26
+  }, [])]), api_element("div", {
+    key: 27
   }, [api_element("label", {
     attrs: {
       "for": api_scoped_id("password")
     },
-    key: 27
+    key: 28
   }, [api_text("Password")]), api_element("input", {
     attrs: {
       "type": "password",
       "name": "password"
     },
-    key: 28
-  }, [])]), api_element("div", {
     key: 29
+  }, [])]), api_element("div", {
+    key: 30
   }, [api_element("label", {
     attrs: {
       "for": api_scoped_id("password")
     },
-    key: 30
+    key: 31
   }, [api_text("Confirm Password")]), api_element("input", {
     attrs: {
       "type": "password",
       "name": "passwordConfirm"
     },
-    key: 31
-  }, [])]), api_element("div", {
     key: 32
+  }, [])]), api_element("div", {
+    key: 33
   }, [api_element("button", {
     classMap: {
       "change-form": true
@@ -174,29 +185,34 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     attrs: {
       "type": "button"
     },
-    key: 33,
+    key: 34,
     on: {
-      "click": _m7 || ($ctx._m7 = api_bind($cmp.changeForm))
+      "click": _m10 || ($ctx._m10 = api_bind($cmp.changeForm))
     }
   }, [api_text("I have an account")]), api_element("button", {
     attrs: {
       "type": "submit"
     },
-    key: 34
-  }, [api_text("Submit")])]), $cmp.isError ? api_element("p", {
+    key: 35
+  }, [api_text("Submit")]), api_element("button", {
+    key: 36,
+    on: {
+      "click": _m11 || ($ctx._m11 = api_bind($cmp.cancelLogin))
+    }
+  }, [api_text("Cancel")])]), $cmp.isError ? api_element("p", {
     classMap: {
       "error": true
     },
-    key: 35
+    key: 37
   }, [api_element("span", {
-    key: 36
+    key: 38
   }, [api_text(api_dynamic_text($cmp.errorMessage))]), api_element("button", {
     classMap: {
       "dismiss-error": true
     },
-    key: 37,
+    key: 39,
     on: {
-      "click": _m8 || ($ctx._m8 = api_bind($cmp.dismissError))
+      "click": _m12 || ($ctx._m12 = api_bind($cmp.dismissError))
     }
   }, [api_text("OK")])]) : null]) : null]) : null]) : null])];
 }

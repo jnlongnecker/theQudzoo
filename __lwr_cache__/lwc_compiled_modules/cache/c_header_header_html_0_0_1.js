@@ -104,7 +104,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       key: api_key(18, it.value.link)
     }, [api_element("p", {
       key: 19
-    }, [api_text("More Coming Soon!")])]) : null];
+    }, [api_custom_element("c-login", _cLogin, {
+      key: 20
+    }, [])])]) : null];
   }))]) : null])];
 }
 export default registerTemplate(tmpl);

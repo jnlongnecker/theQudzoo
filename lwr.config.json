@@ -1,262 +1,262 @@
 {
-  "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
-  "bundleConfig": { "exclude": ["lwc"] },
-  "errorRoutes": [
-    {
-      "id": "not_found",
-      "status": 404,
-      "contentTemplate": "$contentDir/clientError.md",
-      "layoutTemplate": "$layoutsDir/error_layout.njk",
-      "properties": {
-        "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
-      }
-    },
-    {
-      "id": "server_error",
-      "status": 500,
-      "contentTemplate": "$contentDir/serverError.md",
-      "layoutTemplate": "$layoutsDir/error_layout.njk",
-      "properties": {
-        "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "id": "Builder",
-      "path": "/builds",
-      "layoutTemplate": "$layoutsDir/builder_layout.njk",
-      "rootComponent": "c/builderContainer"
-    },
-    {
-      "id": "Profile",
-      "path": "/my-profile",
-      "layoutTemplate": "$layoutsDir/profile_layout.njk",
-      "rootComponent": "c/profile"
-    },
-    {
-      "id": "Home",
-      "path": "/",
-      "contentTemplate": "$contentDir/home.md",
-      "layoutTemplate": "$layoutsDir/main_layout.njk",
-      "properties": {
-        "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
-      }
-    },
-    {
-      "id": "Nerds",
-      "path": "/nerds",
-      "contentTemplate": "$contentDir/forNerds.md",
-      "layoutTemplate": "$layoutsDir/nerd_layout.njk",
-      "properties": {
-        "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
-      }
-    },
-    {
-      "id": "Story-Quests",
-      "path": "/advice/quests",
-      "contentTemplate": "$contentDir/adviceArticles/questsHome.md",
-      "layoutTemplate": "$layoutsDir/quest_home_layout.njk",
-      "properties": {
-        "title": "Story Quests",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/quests.png"
-      }
-    },
-    {
-      "id": "Weirdwire-Conduit",
-      "path": "/advice/quests/weirdwire-conduit",
-      "contentTemplate": "$contentDir/adviceArticles/weirdwire.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Quests - Weirdwire Conduit",
-        "preview": "/1/asset/s/latest/public/assets/images/quests/weirdwire-well.png",
-        "description": "Make your way to the Rust Wells to collect 200 feet of wire for Argyve. Live and drink, stranger."
-      }
-    },
-    {
-      "id": "A-Canticle-for-Barathrum",
-      "path": "/advice/quests/a-canticle-for-barathrum",
-      "contentTemplate": "$contentDir/adviceArticles/canticle.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Quests - A Canticle for Barathrum",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/canticle.png",
-        "description": "Argyve wishes to make contact with the legendary enclave of Tinkerers known as the Barathrumites with a compound at Grit Gate. The enclave is comprised of Urshiib, mutated bear creatures that are known to keep to themselves. Getting there won't be easy, but we have a Droid Scrambler to aid against their defense systems. Live and drink, stranger."
-      }
-    },
-    {
-      "id": "More-Than-a-Willing-Spirit",
-      "path": "/advice/quests/more-than-a-willing-spirit",
-      "contentTemplate": "$contentDir/adviceArticles/golgotha.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Quests - More Than a Willing Spirit",
-        "preview": "/1/asset/s/latest/public/assets/images/quests/golgotha-pickle.png",
-        "description": "The Barathrumites are unconvinced that you will make a worthwhile addition. In order to prove your mettle, they have as you to delve into the depths of Golgotha to retrieve and restore one of the Scrapped Waydroids that litter the cloaca. Unknown dangers writhe in the horrible depths. Live and drink, stranger."
-      }
-    },
-    {
-      "id": "Decoding-the-Signal",
-      "path": "/advice/quests/decoding-the-signal",
-      "contentTemplate": "$contentDir/adviceArticles/bethesda.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Quests - Decoding the Signal",
-        "preview": "/1/asset/s/latest/public/assets/images/quests/bethesda-jotun.png",
-        "description": "Having proven ourselves, we were accepted into the Barathrumite enclave. Our work has only begun; we have been tasked to decode a strange signal and need the Baetyl at the bottom of Bethesda Susa to do so. Make sure to pack a coat. Live and drink, apprentice."
-      }
-    },
-    {
-      "id": "The-Earl-of-Omonporch",
-      "path": "/advice/quests/the-earl-of-omonporch",
-      "contentTemplate": "$contentDir/adviceArticles/omonporch.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Quests - The Earl of Omonporch",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/earl.png",
-        "description": "We've decoded the strange signal, but the Barathrumites have more work for us. We are to go to Omonporch and negotiate with its Earl for the next stages of whatever Barathrum has planned. Live and drink, journeyfriend."
-      }
-    },
-    {
-      "id": "A-Call-to-Arms",
-      "path": "/advice/quests/a-call-to-arms",
-      "contentTemplate": "$contentDir/adviceArticles/attack.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Quests - A Call to Arms",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/arms.png",
-        "description": "Having returned from Omonporch, we didn't come alone. A strange rumbling around the compound brings unwanted visitors, and we must now defend Grit Gate in its time of need. To Arms! Live and drink, journeyfriend."
-      }
-    },
-    {
-      "id": "Pax-Klanq,-I-Presume?",
-      "path": "/advice/quests/pax-klanq",
-      "contentTemplate": "$contentDir/adviceArticles/klanq.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Quests - Pax Klanq, I Presume",
-        "preview": "/1/asset/s/latest/public/assets/images/quests/klanq-map.png",
-        "description": "With Grit Gate secured, we finally meet the enigmatic leader of the Barathrumites, Barathrum himself. In order to further the goals of the enclave, he has tasked us with securing the assistance of a fungi who owes a favor. Live and drink, disciple."
-      }
-    },
-    {
-      "id": "Tomb-of-the-Eaters",
-      "path": "/advice/quests/tomb-of-the-eaters",
-      "contentTemplate": "$contentDir/adviceArticles/tomb.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Quests - Tomb of the Eaters",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/tomb.png",
-        "description": "The ancient resting place of the legendary Sultans, the Tomb of the Eaters holds some of the most closely guarded secrets in Qud. We were told that inside, the gateway to Brightsheol lies. We must find this place and disable the magnetic field around the spindle. Live and drink, disciple."
-      }
-    },
-    {
-      "id": "The Golem",
-      "path": "/advice/quests/the-golem",
-      "contentTemplate": "$contentDir/adviceArticles/golem.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Quests - The Golem",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/golem.png",
-        "description": "The plan to the Spindle has gone slightly awry and now instead of the lifter, the plan is to ascend in the interior of a Golem of overwhelming power. In order to complete the construction of the behemoth, a strange variety of materials must be assembled. Live and drink, mevyn."
-      }
-    },
-    {
-      "id": "Breaking-Down-a-Run",
-      "path": "/advice/breakdown",
-      "contentTemplate": "$contentDir/adviceArticles/breakdown.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Run Breakdown",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/run.png",
-        "description": "There are far more items and enemies than I care to cover in this document, so instead of a comprehensive list of my opinions on all items and all enemies, instead I will share my thoughts on the way I break down a run in my mind and a glimpse into my internal checklist for the part of the game I'm currently on."
-      }
-    },
-    {
-      "id": "Combat-Positioning",
-      "path": "/advice/positioning",
-      "contentTemplate": "$contentDir/adviceArticles/positioning.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Combat Positioning",
-        "preview": "/1/asset/s/latest/public/assets/images/positioning/positioning_3.png",
-        "description": "The most important thing in the entire game to learn is how to position your character. If you can master this, your consistency will go through the roof. 1 on 1, your character tends to be far stronger than any individual enemy you will face."
-      }
-    },
-    {
-      "id": "Mutations",
-      "path": "/advice/mutations",
-      "contentTemplate": "$contentDir/adviceArticles/mutations.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Mutations",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/mutations.png",
-        "description": "To preface this section, every mutation in the game can be quite useful in the right circumstances. Some mutations require significantly less investment in order to be good, so I'll be analyzing the cost of taking the mutation vs the impact that it has."
-      }
-    },
-    {
-      "id": "Cybernetics",
-      "path": "/advice/cybernetics",
-      "contentTemplate": "$contentDir/adviceArticles/cybernetics.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Cybernetics",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/cybernetics.png",
-        "description": "For the true kin enjoyers out there, we'll take a look at the available cybernetics. Here's the deal about cybernetics: by their very nature, they are meant to be swapped out and upgraded over time."
-      }
-    },
-    {
-      "id": "Tinkering",
-      "path": "/advice/tinkering",
-      "contentTemplate": "$contentDir/adviceArticles/tinkering.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Tinkering",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/tinkering.png",
-        "description": "In this section, I'll be primarily talking about the modifications you can make, as in my opinion that is the primary draw of Tinkering. Of course, being able to make artifacts that you may not have is a great addition, but the times you will be doing this are few and far between. Therefore, I'll start by discussing Tinkering in the realm outside of modifications and speak in generalities here."
-      }
-    },
-    {
-      "id": "Skills",
-      "path": "/advice/skills",
-      "contentTemplate": "$contentDir/adviceArticles/skills.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Skills",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/skills.png",
-        "description": "Skills are the unsung hero of Caves of Qud. In fact, I'd argue that your skills are more important than both your gear and your mutations/cybernetics. While not as obviously powerful as exploding some dude's head with your mind, skills shape your run in the more subtle, less appreciated ways that are nonetheless extremely important."
-      }
-    },
-    {
-      "id": "How-to-Make-a-Build",
-      "path": "/advice/build-making",
-      "contentTemplate": "$contentDir/adviceArticles/builds.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Qud Builds",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/build.png",
-        "description": "I'm not a big believer in “handing out” builds for you to try; instead I believe in understanding what makes a build effective and then allowing you to shape that knowledge into an experience that is fun and engaging for you. I'll break down making a build into smaller parts to consider and leave it to you to decide what to fit into those pieces."
-      }
-    },
-    {
-      "id": "Reputation",
-      "path": "/advice/reputation",
-      "contentTemplate": "$contentDir/adviceArticles/reputation.md",
-      "layoutTemplate": "$layoutsDir/advice_layout.njk",
-      "properties": {
-        "title": "Reputation",
-        "preview": "/1/asset/s/latest/public/assets/images/previews/reputation.png",
-        "description": "This mechanic is what separates the zeros from the heroes. Understanding reputation and factions is one of the easiest and most impactful things you can do in order to improve your game."
-      }
-    },
-    {
-      "id": "Advice-Home",
-      "path": "/advice",
-      "contentTemplate": "$contentDir/adviceHome.md",
-      "layoutTemplate": "$layoutsDir/advice_home_layout.njk",
-      "properties": {
-        "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
-      }
-    }
-  ]
+    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
+    "bundleConfig": { "exclude": ["lwc"] },
+    "errorRoutes": [
+        {
+            "id": "not_found",
+            "status": 404,
+            "contentTemplate": "$contentDir/clientError.md",
+            "layoutTemplate": "$layoutsDir/error_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+            }
+        },
+        {
+            "id": "server_error",
+            "status": 500,
+            "contentTemplate": "$contentDir/serverError.md",
+            "layoutTemplate": "$layoutsDir/error_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "id": "Builder",
+            "path": "/builds",
+            "layoutTemplate": "$layoutsDir/builder_layout.njk",
+            "rootComponent": "build/startup"
+        },
+        {
+            "id": "Profile",
+            "path": "/my-profile",
+            "layoutTemplate": "$layoutsDir/profile_layout.njk",
+            "rootComponent": "c/profile"
+        },
+        {
+            "id": "Home",
+            "path": "/",
+            "contentTemplate": "$contentDir/home.md",
+            "layoutTemplate": "$layoutsDir/main_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+            }
+        },
+        {
+            "id": "Nerds",
+            "path": "/nerds",
+            "contentTemplate": "$contentDir/forNerds.md",
+            "layoutTemplate": "$layoutsDir/nerd_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+            }
+        },
+        {
+            "id": "Story-Quests",
+            "path": "/advice/quests",
+            "contentTemplate": "$contentDir/adviceArticles/questsHome.md",
+            "layoutTemplate": "$layoutsDir/quest_home_layout.njk",
+            "properties": {
+                "title": "Story Quests",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/quests.png"
+            }
+        },
+        {
+            "id": "Weirdwire-Conduit",
+            "path": "/advice/quests/weirdwire-conduit",
+            "contentTemplate": "$contentDir/adviceArticles/weirdwire.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - Weirdwire Conduit",
+                "preview": "/1/asset/s/latest/public/assets/images/quests/weirdwire-well.png",
+                "description": "Make your way to the Rust Wells to collect 200 feet of wire for Argyve. Live and drink, stranger."
+            }
+        },
+        {
+            "id": "A-Canticle-for-Barathrum",
+            "path": "/advice/quests/a-canticle-for-barathrum",
+            "contentTemplate": "$contentDir/adviceArticles/canticle.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - A Canticle for Barathrum",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/canticle.png",
+                "description": "Argyve wishes to make contact with the legendary enclave of Tinkerers known as the Barathrumites with a compound at Grit Gate. The enclave is comprised of Urshiib, mutated bear creatures that are known to keep to themselves. Getting there won't be easy, but we have a Droid Scrambler to aid against their defense systems. Live and drink, stranger."
+            }
+        },
+        {
+            "id": "More-Than-a-Willing-Spirit",
+            "path": "/advice/quests/more-than-a-willing-spirit",
+            "contentTemplate": "$contentDir/adviceArticles/golgotha.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - More Than a Willing Spirit",
+                "preview": "/1/asset/s/latest/public/assets/images/quests/golgotha-pickle.png",
+                "description": "The Barathrumites are unconvinced that you will make a worthwhile addition. In order to prove your mettle, they have as you to delve into the depths of Golgotha to retrieve and restore one of the Scrapped Waydroids that litter the cloaca. Unknown dangers writhe in the horrible depths. Live and drink, stranger."
+            }
+        },
+        {
+            "id": "Decoding-the-Signal",
+            "path": "/advice/quests/decoding-the-signal",
+            "contentTemplate": "$contentDir/adviceArticles/bethesda.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - Decoding the Signal",
+                "preview": "/1/asset/s/latest/public/assets/images/quests/bethesda-jotun.png",
+                "description": "Having proven ourselves, we were accepted into the Barathrumite enclave. Our work has only begun; we have been tasked to decode a strange signal and need the Baetyl at the bottom of Bethesda Susa to do so. Make sure to pack a coat. Live and drink, apprentice."
+            }
+        },
+        {
+            "id": "The-Earl-of-Omonporch",
+            "path": "/advice/quests/the-earl-of-omonporch",
+            "contentTemplate": "$contentDir/adviceArticles/omonporch.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - The Earl of Omonporch",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/earl.png",
+                "description": "We've decoded the strange signal, but the Barathrumites have more work for us. We are to go to Omonporch and negotiate with its Earl for the next stages of whatever Barathrum has planned. Live and drink, journeyfriend."
+            }
+        },
+        {
+            "id": "A-Call-to-Arms",
+            "path": "/advice/quests/a-call-to-arms",
+            "contentTemplate": "$contentDir/adviceArticles/attack.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - A Call to Arms",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/arms.png",
+                "description": "Having returned from Omonporch, we didn't come alone. A strange rumbling around the compound brings unwanted visitors, and we must now defend Grit Gate in its time of need. To Arms! Live and drink, journeyfriend."
+            }
+        },
+        {
+            "id": "Pax-Klanq,-I-Presume?",
+            "path": "/advice/quests/pax-klanq",
+            "contentTemplate": "$contentDir/adviceArticles/klanq.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - Pax Klanq, I Presume",
+                "preview": "/1/asset/s/latest/public/assets/images/quests/klanq-map.png",
+                "description": "With Grit Gate secured, we finally meet the enigmatic leader of the Barathrumites, Barathrum himself. In order to further the goals of the enclave, he has tasked us with securing the assistance of a fungi who owes a favor. Live and drink, disciple."
+            }
+        },
+        {
+            "id": "Tomb-of-the-Eaters",
+            "path": "/advice/quests/tomb-of-the-eaters",
+            "contentTemplate": "$contentDir/adviceArticles/tomb.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - Tomb of the Eaters",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/tomb.png",
+                "description": "The ancient resting place of the legendary Sultans, the Tomb of the Eaters holds some of the most closely guarded secrets in Qud. We were told that inside, the gateway to Brightsheol lies. We must find this place and disable the magnetic field around the spindle. Live and drink, disciple."
+            }
+        },
+        {
+            "id": "The Golem",
+            "path": "/advice/quests/the-golem",
+            "contentTemplate": "$contentDir/adviceArticles/golem.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - The Golem",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/golem.png",
+                "description": "The plan to the Spindle has gone slightly awry and now instead of the lifter, the plan is to ascend in the interior of a Golem of overwhelming power. In order to complete the construction of the behemoth, a strange variety of materials must be assembled. Live and drink, mevyn."
+            }
+        },
+        {
+            "id": "Breaking-Down-a-Run",
+            "path": "/advice/breakdown",
+            "contentTemplate": "$contentDir/adviceArticles/breakdown.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Run Breakdown",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/run.png",
+                "description": "There are far more items and enemies than I care to cover in this document, so instead of a comprehensive list of my opinions on all items and all enemies, instead I will share my thoughts on the way I break down a run in my mind and a glimpse into my internal checklist for the part of the game I'm currently on."
+            }
+        },
+        {
+            "id": "Combat-Positioning",
+            "path": "/advice/positioning",
+            "contentTemplate": "$contentDir/adviceArticles/positioning.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Combat Positioning",
+                "preview": "/1/asset/s/latest/public/assets/images/positioning/positioning_3.png",
+                "description": "The most important thing in the entire game to learn is how to position your character. If you can master this, your consistency will go through the roof. 1 on 1, your character tends to be far stronger than any individual enemy you will face."
+            }
+        },
+        {
+            "id": "Mutations",
+            "path": "/advice/mutations",
+            "contentTemplate": "$contentDir/adviceArticles/mutations.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Mutations",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/mutations.png",
+                "description": "To preface this section, every mutation in the game can be quite useful in the right circumstances. Some mutations require significantly less investment in order to be good, so I'll be analyzing the cost of taking the mutation vs the impact that it has."
+            }
+        },
+        {
+            "id": "Cybernetics",
+            "path": "/advice/cybernetics",
+            "contentTemplate": "$contentDir/adviceArticles/cybernetics.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Cybernetics",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/cybernetics.png",
+                "description": "For the true kin enjoyers out there, we'll take a look at the available cybernetics. Here's the deal about cybernetics: by their very nature, they are meant to be swapped out and upgraded over time."
+            }
+        },
+        {
+            "id": "Tinkering",
+            "path": "/advice/tinkering",
+            "contentTemplate": "$contentDir/adviceArticles/tinkering.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Tinkering",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/tinkering.png",
+                "description": "In this section, I'll be primarily talking about the modifications you can make, as in my opinion that is the primary draw of Tinkering. Of course, being able to make artifacts that you may not have is a great addition, but the times you will be doing this are few and far between. Therefore, I'll start by discussing Tinkering in the realm outside of modifications and speak in generalities here."
+            }
+        },
+        {
+            "id": "Skills",
+            "path": "/advice/skills",
+            "contentTemplate": "$contentDir/adviceArticles/skills.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Skills",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/skills.png",
+                "description": "Skills are the unsung hero of Caves of Qud. In fact, I'd argue that your skills are more important than both your gear and your mutations/cybernetics. While not as obviously powerful as exploding some dude's head with your mind, skills shape your run in the more subtle, less appreciated ways that are nonetheless extremely important."
+            }
+        },
+        {
+            "id": "How-to-Make-a-Build",
+            "path": "/advice/build-making",
+            "contentTemplate": "$contentDir/adviceArticles/builds.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Qud Builds",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/build.png",
+                "description": "I'm not a big believer in “handing out” builds for you to try; instead I believe in understanding what makes a build effective and then allowing you to shape that knowledge into an experience that is fun and engaging for you. I'll break down making a build into smaller parts to consider and leave it to you to decide what to fit into those pieces."
+            }
+        },
+        {
+            "id": "Reputation",
+            "path": "/advice/reputation",
+            "contentTemplate": "$contentDir/adviceArticles/reputation.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Reputation",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/reputation.png",
+                "description": "This mechanic is what separates the zeros from the heroes. Understanding reputation and factions is one of the easiest and most impactful things you can do in order to improve your game."
+            }
+        },
+        {
+            "id": "Advice-Home",
+            "path": "/advice",
+            "contentTemplate": "$contentDir/adviceHome.md",
+            "layoutTemplate": "$layoutsDir/advice_home_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+            }
+        }
+    ]
 }

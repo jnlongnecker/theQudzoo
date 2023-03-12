@@ -88,13 +88,17 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 14,
     svg: true
-  }, [])])]) : null, api_element("h1", {
+  }, [])])]) : null, !$cmp.copyable ? api_element("span", {
     key: 15
-  }, [api_text(api_dynamic_text($cmp.buildName) + " by " + api_dynamic_text($cmp.displayName))]), $cmp.deletable ? api_element("button", {
+  }, []) : null, api_element("h1", {
+    key: 16
+  }, [api_text(api_dynamic_text($cmp.buildName)), $cmp.hasOwner ? api_element("span", {
+    key: 17
+  }, [api_text(" by " + api_dynamic_text($cmp.displayName))]) : null]), $cmp.deletable ? api_element("button", {
     classMap: {
       "delete": true
     },
-    key: 16,
+    key: 18,
     on: {
       "click": _m5 || ($ctx._m5 = api_bind($cmp.promptDelete))
     }
@@ -105,75 +109,75 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "height": "24",
       "viewBox": "0 0 24 24"
     },
-    key: 17,
+    key: 19,
     svg: true
   }, [api_element("title", {
-    key: 18,
+    key: 20,
     svg: true
   }, [api_text("Delete Build")]), api_element("path", {
     attrs: {
       "d": "M9 19c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm4 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm4 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5-17v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.315c0 .901.73 2 1.631 2h5.712zm-3 4v16h-14v-16h-2v18h18v-18h-2z"
     },
-    key: 19,
+    key: 21,
     svg: true
   }, [])])]) : null]), api_element("div", {
     classMap: {
       "grid": true
     },
-    key: 20
+    key: 22
   }, [api_element("div", {
     classMap: {
       "attributes": true
     },
-    key: 21
-  }, [api_element("fieldset", {
-    key: 22
-  }, [api_element("legend", {
     key: 23
-  }, [api_text("Attributes")]), api_element("ul", {
+  }, [api_element("fieldset", {
     key: 24
+  }, [api_element("legend", {
+    key: 25
+  }, [api_text("Attributes")]), api_element("ul", {
+    key: 26
   }, api_iterator($cmp.attributes, function (attribute) {
     return api_element("li", {
       className: attribute.class,
-      key: api_key(25, attribute.class)
+      key: api_key(27, attribute.class)
     }, [api_element("span", {
-      key: 26
+      key: 28
     }, [api_text(api_dynamic_text(attribute.name))]), api_element("span", {
-      key: 27
+      key: 29
     }, [api_text(api_dynamic_text(attribute.value))])]);
   }))])]), api_element("div", {
     classMap: {
       "char-info": true
     },
-    key: 28
+    key: 30
   }, [api_element("img", {
     attrs: {
       "src": $cmp.subtypeImg
     },
-    key: 29
+    key: 31
   }, []), api_element("p", {
-    key: 30
+    key: 32
   }, [api_text(api_dynamic_text($cmp.subtypeName))]), api_element("p", {
     classMap: {
       "char-name": true
     },
-    key: 31
+    key: 33
   }, [api_text(api_dynamic_text($cmp.characterName))])]), api_element("div", {
     classMap: {
       "mutations": true
     },
-    key: 32
-  }, [api_element("fieldset", {
-    key: 33
-  }, [api_element("legend", {
     key: 34
-  }, [api_text(api_dynamic_text($cmp.bonus))]), api_element("ul", {
+  }, [api_element("fieldset", {
     key: 35
+  }, [api_element("legend", {
+    key: 36
+  }, [api_text(api_dynamic_text($cmp.bonus))]), api_element("ul", {
+    key: 37
   }, api_iterator($cmp.mutations, function (mutation) {
     return api_element("li", {
-      key: api_key(36, mutation.value)
+      key: api_key(38, mutation.value)
     }, [api_element("span", {
-      key: 37
+      key: 39
     }, [api_text(api_dynamic_text(mutation.value))])]);
   }))])])])])]) : null];
 }

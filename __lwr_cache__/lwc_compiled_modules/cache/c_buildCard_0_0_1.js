@@ -51,6 +51,7 @@ class BuildCard extends LightningElement {
     return this.buildInfo;
   }
   set build(newBuild) {
+    if (!newBuild) return;
     this.buildInfo = newBuild;
     this.fetchJson();
   }
@@ -61,7 +62,11 @@ class BuildCard extends LightningElement {
     return this.buildInfo.name ? this.buildInfo.name : "Unnamed Build";
   }
   get displayName() {
+    if (!this.buildInfo.owner) return;
     return this.buildInfo.owner.displayName ? this.buildInfo.owner.displayName : "Anonymous";
+  }
+  get hasOwner() {
+    return this.buildInfo.owner ? true : false;
   }
   get genotype() {
     if (!this.buildJson) return;
@@ -72,8 +77,9 @@ class BuildCard extends LightningElement {
     return this.genotype == "Mutant" ? "Mutations" : "Cybernetics";
   }
   get cardClass() {
-    if (!this.buildJson) return "card";
-    return this.genotype == "Mutant" ? "card mutant" : "card truekin";
+    let capClass = this.editable ? "" : " static";
+    if (!this.buildJson) return "card" + capClass;
+    return this.genotype == "Mutant" ? "card mutant" + capClass : "card truekin" + capClass;
   }
   get attributes() {
     if (!this.buildJson) return [];
@@ -151,7 +157,6 @@ class BuildCard extends LightningElement {
   async fetchJson() {
     let json = await fetchJsonForBuildCode(this.buildInfo.code);
     this.buildJson = json;
-    console.log(json);
   }
   camelCaseSubtype() {
     let subtype = this.subtypeName;
@@ -167,6 +172,7 @@ class BuildCard extends LightningElement {
   }
   promptDelete(event) {
     event.stopPropagation();
+    event.preventDefault();
     this.deleting = true;
   }
   stopBubble(event) {
@@ -192,6 +198,7 @@ class BuildCard extends LightningElement {
     this.buildJson = null;
   }
   copyCode(event) {
+    event.preventDefault();
     event.stopPropagation();
     if (!this.inputForCopying) {
       this.inputForCopying = document.createElement("input");

@@ -33,6 +33,9 @@ app.post("/db/login", (req, res) => {
         res.json({ success: true });
     });
 });
+app.post("/db/users", (req, res) => {
+    return dbs.updateUser(req, res).then(result => res.json(result)).catch(err => res.json(err));
+});
 app.post("/db/register", (req, res) => {
     return dbs.registerUser(req, res).then(result => {
         if (!result.success) { res.json(result); return; }
@@ -46,6 +49,15 @@ app.get("/db/authenticated", (req, res) => {
     return dbs.getAuthenticatedUser(req, res).then(result => {
         res.json(result);
     })
+});
+app.get("/db/login", (req, res) => {
+    if (req.session.user) {
+        res.status(200);
+    }
+    else {
+        res.status(400);
+    }
+    res.json({ user: req.session.user });
 });
 app.get("/db/builds", (req, res) => {
     return dbs.getBuilds(req, res).then(result => res.json(result));
