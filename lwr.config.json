@@ -26,7 +26,10 @@
             "id": "Builder",
             "path": "/builds",
             "layoutTemplate": "$layoutsDir/builder_layout.njk",
-            "rootComponent": "build/startup"
+            "rootComponent": "build/startup",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/builder.png"
+            }
         },
         {
             "id": "Profile",
