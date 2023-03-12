@@ -12,7 +12,7 @@ app.use(session({
     store: MongoStore.create({
         mongoUrl: `mongodb+srv://admin:${process.env.PW}${process.env.INSTANCE}`
     }),
-    secret: process.env.secret,
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true
 }));
