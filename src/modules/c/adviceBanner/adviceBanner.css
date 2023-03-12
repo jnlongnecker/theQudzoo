@@ -34,6 +34,23 @@ p {
     text-align: center;
 }
 
+button {
+    width: 20ch;
+    color: var(--text-color-faded);
+    background-color: transparent;
+    border: 1px solid var(--text-color-faded);
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--hover-darken);
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
 .name {
     white-space: nowrap;
 }

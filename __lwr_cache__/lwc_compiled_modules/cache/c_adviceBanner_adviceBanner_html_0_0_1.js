@@ -12,20 +12,38 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 1
   }, [api_element("a", {
     attrs: {
-      "href": "/advice"
+      "href": "/builds"
     },
     key: 2
-  }, [api_text("Advice Articles")])]), api_element("p", {
+  }, [api_text("Build Maker")])]), api_element("p", {
     key: 3
+  }, [api_text("Make your own builds for Qud and import them into your game.")]), api_element("a", {
+    attrs: {
+      "href": "/builds"
+    },
+    key: 4
+  }, [api_element("button", {
+    key: 5
+  }, [api_text("Take Me There")])])]), api_element("section", {
+    key: 6
+  }, [api_element("h2", {
+    key: 7
+  }, [api_element("a", {
+    attrs: {
+      "href": "/advice"
+    },
+    key: 8
+  }, [api_text("Advice Articles")])]), api_element("p", {
+    key: 9
   }, [api_text("Breakdowns of the most relevant layers of Qud by "), api_element("span", {
     classMap: {
       "name": true
     },
-    key: 4
+    key: 10
   }, [api_text("A-F-F-I-N-E")])]), api_element("div", {
-    key: 5
+    key: 11
   }, [api_custom_element("c-article-hub", _cArticleHub, {
-    key: 6
+    key: 12
   }, [])])])];
 }
 export default registerTemplate(tmpl);
