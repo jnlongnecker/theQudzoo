@@ -450,7 +450,7 @@
   [
     "c/sugarInjector@0.0.1",
     {
-      "ownHash": "1ac8012356347e1f9d4d11a912cdb4b8",
+      "ownHash": "4abb0237672db5664ec8707db2cdf6bc",
       "module": "./cache/c_sugarInjector_0_0_1.js",
       "moduleMeta": "./cache/c_sugarInjector_0_0_1.meta.json"
     }
@@ -1322,7 +1322,7 @@
   [
     "build/card@0.0.1",
     {
-      "ownHash": "1cb029a7d8569af38bb75d37592911be",
+      "ownHash": "bbc46349ea5904226992252c1b2b84a9",
       "module": "./cache/build_card_0_0_1.js",
       "moduleMeta": "./cache/build_card_0_0_1.meta.json"
     }
@@ -1330,7 +1330,7 @@
   [
     "build/card#card.html@0.0.1",
     {
-      "ownHash": "c34f2c93f47b10edd1e6141c8a6d1bd7",
+      "ownHash": "5f3bd6e744c52e7ff96500ca3780a4d7",
       "module": "./cache/build_card_card_html_0_0_1.js",
       "moduleMeta": "./cache/build_card_card_html_0_0_1.meta.json"
     }
