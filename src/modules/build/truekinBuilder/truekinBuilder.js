@@ -3,15 +3,7 @@ import { LightningElement, api } from "lwc";
 export default class TruekinBuilder extends LightningElement {
     scrollingContainer;
 
-    callingModifiers = {
-        "Strength": 0,
-        "Agility": 0,
-        "Toughness": 0,
-        "Intelligence": 3,
-        "Willpower": 0,
-        "Ego": 0,
-        "cybernetic": "Nocturnal Apex"
-    };
+    callingModifiers;
 
     buildPayload = {
         genotype: "True Kin",
@@ -30,13 +22,21 @@ export default class TruekinBuilder extends LightningElement {
 
     startBuild;
 
+    currOffset = 0;
+    modified = false;
+
+    get allowedCybernetic() {
+        if (!this.callingModifiers) return;
+        return this.callingModifiers.cybernetic;
+    }
+
     @api
     get build() {
         return this.startBuild;
     }
 
     set build(build) {
-        console.log(build);
+        if (!build || build.genotype != "True Kin") return;
         this.startBuild = build;
     }
 
@@ -64,21 +64,27 @@ export default class TruekinBuilder extends LightningElement {
         let scrollingContainer = this.template.querySelector(".scrolling-banner");
     }
 
+    get noBacktrack() {
+        return this.currOffset == 0;
+    }
+
+    get noAdvance() {
+        if (this.currOffset == 3) return true;
+        return this.currOffset == 2 && !this.modified;
+    }
+
     advance() {
-        let currOffset = this.template.host.style.getPropertyValue("--offset");
-        currOffset = Number(currOffset);
-        let newOffset = currOffset + 1 < 3 ? currOffset + 1 : currOffset;
-        this.template.host.style.setProperty("--offset", newOffset);
+        this.currOffset = this.currOffset + 1 < 4 ? this.currOffset + 1 : this.currOffset;
+        this.template.host.style.setProperty("--offset", this.currOffset);
     }
 
     backtrack() {
-        let currOffset = this.template.host.style.getPropertyValue("--offset");
-        currOffset = Number(currOffset);
-        let newOffset = currOffset - 1 >= 0 ? currOffset - 1 : currOffset;
-        this.template.host.style.setProperty("--offset", newOffset);
+        this.currOffset = this.currOffset - 1 >= 0 ? this.currOffset - 1 : this.currOffset;
+        this.template.host.style.setProperty("--offset", this.currOffset);
     }
 
     handleCallingSelection(event) {
+        this.modified = true;
         let callingDetails = event.detail;
         this.buildPayload.subtype = callingDetails.callingName;
         this.callingModifiers = callingDetails.attributeModifiers
@@ -89,6 +95,7 @@ export default class TruekinBuilder extends LightningElement {
     }
 
     handleAttributesChosen(event) {
+        this.modified = true;
         let attributeDetails = event.detail;
         this.buildPayload.pointSpread = attributeDetails.attributes;
         this.buildPayload.apSpent = attributeDetails.apSpent;
@@ -99,6 +106,7 @@ export default class TruekinBuilder extends LightningElement {
     }
 
     handleCyberneticSelection(event) {
+        this.modified = true;
         let cyberDetails = event.detail;
         this.buildPayload.cybernetics = cyberDetails.cybernetics;
 

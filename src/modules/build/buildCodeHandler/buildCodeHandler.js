@@ -194,6 +194,8 @@ const stringifyForEncoding = function (json) {
 }
 
 const fetchJsonForBuildCode = async function (buildCode) {
+    if (!buildCode) return;
+
     let req = new Request(`/api/codes?` + new URLSearchParams({
         method: "parse",
         value: buildCode

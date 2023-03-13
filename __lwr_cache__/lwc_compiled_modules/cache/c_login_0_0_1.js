@@ -1,6 +1,6 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./login.html";
-import { attemptLogin, attemptRegister, logout as logMeOut } from "c/api";
+import { attemptLogin, attemptRegister, logout as logMeOut, getAuthenticatedUser } from "c/api";
 class Login extends LightningElement {
   get formTitle() {
     return this.useLogin ? "Login" : "Create Account";
@@ -34,11 +34,9 @@ class Login extends LightningElement {
     this.errorMessage = "";
   }
   runAuth() {
-    fetch("/db/authenticated").then(response => {
-      response.json().then(result => {
-        this.authenticated = !result.error;
-        this.displayName = result.name;
-      });
+    getAuthenticatedUser().then(result => {
+      this.authenticated = result.username ? true : false;
+      this.displayName = result.name;
     });
   }
   loginDesired() {

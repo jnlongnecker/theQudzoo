@@ -1,5 +1,11 @@
 async function isLoggedIn() {
-    let result = await fetch("/db/login");
+    let result;
+    try {
+        result = await fetch("/db/login");
+    }
+    catch (e) {
+        return false;
+    }
 
     if (!result.ok) {
         return false;
@@ -10,7 +16,14 @@ async function isLoggedIn() {
 }
 
 async function getAuthenticatedUser() {
-    let result = await fetch("/db/authenticated");
+    let result;
+
+    try {
+        result = await fetch("/db/authenticated");
+    }
+    catch (e) {
+        return { error: true, username: null };
+    }
 
     return await result.json();
 }

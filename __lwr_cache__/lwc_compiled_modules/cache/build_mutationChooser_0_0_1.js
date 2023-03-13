@@ -99,9 +99,9 @@ class MutationChooser extends LightningElement {
     this.selectedLevelBlurb.innerHTML = this.highlight(hoveredMutation.levelText);
   }
   async setSelectedMutations(muts) {
-    while (!this.mutations.length > 0) {
-      await new Promise(t => setTimeout(t, 100));
-    }
+    do {
+      await new Promise(t => setTimeout(t, 1000));
+    } while (!this.mutations.length > 0);
     for (let rawMut of muts) {
       let mut = this.mutations.find(mut => mut.name == rawMut.Mutation);
       mut.numSelected = rawMut.Count;
@@ -114,8 +114,8 @@ class MutationChooser extends LightningElement {
         mut.marker = "■";
       }
       this.selectedMutations.push(mut);
-      this.calculateChoiceConsequence();
     }
+    this.calculateChoiceConsequence();
   }
   mutClick(event) {
     let target = event.currentTarget;

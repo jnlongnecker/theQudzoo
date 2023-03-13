@@ -246,7 +246,6 @@ export default class AttributeChooser extends LightningElement {
             }
         };
 
-        console.log(payload);
         let evt = new CustomEvent("attributeschosen", { detail: payload });
         this.dispatchEvent(evt);
     }

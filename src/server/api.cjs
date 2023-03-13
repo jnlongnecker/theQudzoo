@@ -33,9 +33,9 @@ exports.processRequest = async (res, req) => {
                 res.status(200);
                 return response;
             case "codes":
-                if (!query) {
+                if (!query || !query.value) {
                     res.status(400);
-                    throw "Error: No query supplied";
+                    return { error: "No query supplied" };
                 }
                 if (query.method == "parse") {
                     response = codeManager.codeToJSON(decodeURIComponent(query.value));

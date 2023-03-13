@@ -10,7 +10,12 @@ async function attemptLogin(username, password) {
     headers: headers,
     body: rawBody
   };
-  let response = await fetch("/db/login", reqOptions);
+  let response;
+  try {
+    response = await fetch("/db/login", reqOptions);
+  } catch (e) {
+    return;
+  }
   return await response.json();
 }
 async function attemptRegister(username, password) {

@@ -1,6 +1,8 @@
 import { api, LightningElement, track } from "lwc";
 
 export default class CasteChooser extends LightningElement {
+
+    @track
     castes = [];
 
     @track
@@ -99,6 +101,13 @@ export default class CasteChooser extends LightningElement {
                 elem.class = "";
             return elem;
         });
+
+        this.castes.map(list => list.castes.map(elem => {
+            elem.class = "selected";
+            if (elem.name != calling.name)
+                elem.class = "";
+            return elem;
+        }))
 
         const payload = {
             id: "calling info",

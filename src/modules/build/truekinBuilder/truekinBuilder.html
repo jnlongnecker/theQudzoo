@@ -1,6 +1,6 @@
 <template>
     <div class="builder-container">
-        <button class="previous" onclick={backtrack}>&#60;</button>
+        <button disabled={noBacktrack} class="previous" onclick={backtrack}>&#60;</button>
         <div class="scroll-container">
             <div class="scrolling-banner">
                 <section class="calling">
@@ -11,11 +11,14 @@
                         onattributeschosen={handleAttributesChosen}></build-attribute-chooser>
                 </section>
                 <section class="attributes">
-                    <build-cybernetic-chooser enabled={callingModifiers.cybernetic} cybs={cybernetics}
+                    <build-cybernetic-chooser enabled={allowedCybernetic} cybs={cybernetics}
                         onmutationselected={handleCyberneticSelection}></build-cybernetic-chooser>
+                </section>
+                <section>
+                    <slot></slot>
                 </section>
             </div>
         </div>
-        <button class="next" onclick={advance}>></button>
+        <button disabled={noAdvance} class="next" onclick={advance}>></button>
     </div>
 </template>

@@ -157,6 +157,7 @@ class BuildCard extends LightningElement {
     return "/builds?id=" + this.buildInfo._id;
   }
   async fetchJson() {
+    if (!this.buildInfo.code) return;
     let json = await fetchJsonForBuildCode(this.buildInfo.code);
     this.buildJson = json;
     if (!this.mutationHolder) {

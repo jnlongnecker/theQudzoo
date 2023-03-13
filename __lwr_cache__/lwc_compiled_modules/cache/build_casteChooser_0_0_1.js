@@ -79,6 +79,11 @@ class CasteChooser extends LightningElement {
       if (elem.name != calling.name) elem.class = "";
       return elem;
     });
+    this.castes.map(list => list.castes.map(elem => {
+      elem.class = "selected";
+      if (elem.name != calling.name) elem.class = "";
+      return elem;
+    }));
     const payload = {
       id: "calling info",
       callingName: calling.name,
@@ -119,9 +124,10 @@ _registerDecorators(CasteChooser, {
     }
   },
   track: {
+    castes: 1,
     casteDisplay: 1
   },
-  fields: ["castes", "starterList", "sugarInjector", "mobileSized"]
+  fields: ["starterList", "sugarInjector", "mobileSized"]
 });
 export default _registerComponent(CasteChooser, {
   tmpl: _tmpl

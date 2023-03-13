@@ -1,5 +1,5 @@
 import { LightningElement } from "lwc";
-import { attemptLogin, attemptRegister, logout as logMeOut } from "c/api";
+import { attemptLogin, attemptRegister, logout as logMeOut, getAuthenticatedUser } from "c/api";
 
 export default class Login extends LightningElement {
 
@@ -45,11 +45,9 @@ export default class Login extends LightningElement {
     }
 
     runAuth() {
-        fetch("/db/authenticated").then(response => {
-            response.json().then(result => {
-                this.authenticated = !result.error;
-                this.displayName = result.name;
-            });
+        getAuthenticatedUser().then(result => {
+            this.authenticated = result.username ? true : false;
+            this.displayName = result.name;
         })
     }
 

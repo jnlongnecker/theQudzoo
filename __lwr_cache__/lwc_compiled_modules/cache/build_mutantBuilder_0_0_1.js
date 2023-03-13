@@ -20,12 +20,15 @@ class MutantBuilder extends LightningElement {
       },
       apSpent: 0
     };
+    this.modified = false;
+    this.currOffset = 0;
     this.startBuild = void 0;
   }
   get build() {
     return this.startBuild;
   }
   set build(b) {
+    if (!b || b.genotype == "True Kin") return;
     this.startBuild = b;
   }
   get calling() {
@@ -48,19 +51,23 @@ class MutantBuilder extends LightningElement {
     if (!this.startBuild) return;
     return this.startBuild.mpRemaining;
   }
+  get noBacktrack() {
+    return this.currOffset == 0;
+  }
+  get noAdvance() {
+    if (this.currOffset == 3) return true;
+    return this.currOffset == 2 && !this.modified;
+  }
   advance() {
-    let currOffset = this.template.host.style.getPropertyValue("--offset");
-    currOffset = Number(currOffset);
-    let newOffset = currOffset + 1 < 3 ? currOffset + 1 : currOffset;
-    this.template.host.style.setProperty("--offset", newOffset);
+    this.currOffset = this.currOffset + 1 < 4 ? this.currOffset + 1 : this.currOffset;
+    this.template.host.style.setProperty("--offset", this.currOffset);
   }
   backtrack() {
-    let currOffset = this.template.host.style.getPropertyValue("--offset");
-    currOffset = Number(currOffset);
-    let newOffset = currOffset - 1 >= 0 ? currOffset - 1 : currOffset;
-    this.template.host.style.setProperty("--offset", newOffset);
+    this.currOffset = this.currOffset - 1 >= 0 ? this.currOffset - 1 : this.currOffset;
+    this.template.host.style.setProperty("--offset", this.currOffset);
   }
   handleCallingSelection(event) {
+    this.modified = true;
     let callingDetails = event.detail;
     this.buildPayload.subtype = callingDetails.callingName;
     this.callingModifiers = callingDetails.attributeModifiers;
@@ -71,6 +78,7 @@ class MutantBuilder extends LightningElement {
     this.dispatchEvent(updateEvent);
   }
   handleAttributesChosen(event) {
+    this.modified = true;
     let attributeDetails = event.detail;
     this.buildPayload.pointSpread = attributeDetails.attributes;
     this.buildPayload.apSpent = attributeDetails.apSpent;
@@ -81,6 +89,7 @@ class MutantBuilder extends LightningElement {
     this.dispatchEvent(updateEvent);
   }
   handleMutationSelection(event) {
+    this.modified = true;
     let mutDetails = event.detail;
     this.buildPayload.mpRemaining = mutDetails.mpRemaining;
     this.buildPayload.mutations = mutDetails.mutations;
@@ -97,7 +106,7 @@ _registerDecorators(MutantBuilder, {
       config: 3
     }
   },
-  fields: ["scrollingContainer", "callingModifiers", "buildPayload", "startBuild"]
+  fields: ["scrollingContainer", "callingModifiers", "buildPayload", "modified", "currOffset", "startBuild"]
 });
 export default _registerComponent(MutantBuilder, {
   tmpl: _tmpl

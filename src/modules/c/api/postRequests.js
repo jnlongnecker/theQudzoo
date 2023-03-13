@@ -12,7 +12,13 @@ async function attemptLogin(username, password) {
         body: rawBody,
     }
 
-    let response = await fetch("/db/login", reqOptions);
+    let response;
+    try {
+        response = await fetch("/db/login", reqOptions);
+    }
+    catch (e) {
+        return;
+    }
 
     return await response.json();
 }

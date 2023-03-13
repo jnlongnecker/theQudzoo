@@ -7,7 +7,7 @@ import _buildAttributeChooser from "build/attributeChooser";
 import _buildCyberneticChooser from "build/cyberneticChooser";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {b: api_bind, t: api_text, h: api_element, c: api_custom_element} = $api;
+  const {b: api_bind, t: api_text, h: api_element, c: api_custom_element, s: api_slot} = $api;
   const {_m0, _m1, _m2, _m3, _m4} = $ctx;
   return [api_element("div", {
     classMap: {
@@ -17,6 +17,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   }, [api_element("button", {
     classMap: {
       "previous": true
+    },
+    attrs: {
+      "disabled": $cmp.noBacktrack ? "" : null
     },
     key: 1,
     on: {
@@ -68,24 +71,32 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 8
   }, [api_custom_element("build-cybernetic-chooser", _buildCyberneticChooser, {
     props: {
-      "enabled": $cmp.callingModifiers.cybernetic,
+      "enabled": $cmp.allowedCybernetic,
       "cybs": $cmp.cybernetics
     },
     key: 9,
     on: {
       "mutationselected": _m3 || ($ctx._m3 = api_bind($cmp.handleCyberneticSelection))
     }
-  }, [])])])]), api_element("button", {
+  }, [])]), api_element("section", {
+    key: 10
+  }, [api_slot("", {
+    key: 11
+  }, [], $slotset)])])]), api_element("button", {
     classMap: {
       "next": true
     },
-    key: 10,
+    attrs: {
+      "disabled": $cmp.noAdvance ? "" : null
+    },
+    key: 12,
     on: {
       "click": _m4 || ($ctx._m4 = api_bind($cmp.advance))
     }
   }, [api_text(">")])])];
 }
 export default registerTemplate(tmpl);
+tmpl.slots = [""];
 tmpl.stylesheets = [];
 
 

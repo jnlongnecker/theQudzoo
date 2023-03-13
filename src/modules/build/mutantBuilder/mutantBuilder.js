@@ -21,6 +21,10 @@ export default class MutantBuilder extends LightningElement {
         apSpent: 0
     }
 
+    modified = false;
+
+    currOffset = 0;
+
     startBuild;
 
     @api
@@ -29,6 +33,7 @@ export default class MutantBuilder extends LightningElement {
     }
 
     set build(b) {
+        if (!b || b.genotype == "True Kin") return;
         this.startBuild = b;
     }
 
@@ -57,21 +62,27 @@ export default class MutantBuilder extends LightningElement {
         return this.startBuild.mpRemaining;
     }
 
+    get noBacktrack() {
+        return this.currOffset == 0;
+    }
+
+    get noAdvance() {
+        if (this.currOffset == 3) return true;
+        return this.currOffset == 2 && !this.modified;
+    }
+
     advance() {
-        let currOffset = this.template.host.style.getPropertyValue("--offset");
-        currOffset = Number(currOffset);
-        let newOffset = currOffset + 1 < 3 ? currOffset + 1 : currOffset;
-        this.template.host.style.setProperty("--offset", newOffset);
+        this.currOffset = this.currOffset + 1 < 4 ? this.currOffset + 1 : this.currOffset;
+        this.template.host.style.setProperty("--offset", this.currOffset);
     }
 
     backtrack() {
-        let currOffset = this.template.host.style.getPropertyValue("--offset");
-        currOffset = Number(currOffset);
-        let newOffset = currOffset - 1 >= 0 ? currOffset - 1 : currOffset;
-        this.template.host.style.setProperty("--offset", newOffset);
+        this.currOffset = this.currOffset - 1 >= 0 ? this.currOffset - 1 : this.currOffset;
+        this.template.host.style.setProperty("--offset", this.currOffset);
     }
 
     handleCallingSelection(event) {
+        this.modified = true;
         let callingDetails = event.detail;
         this.buildPayload.subtype = callingDetails.callingName;
         this.callingModifiers = callingDetails.attributeModifiers
@@ -82,6 +93,7 @@ export default class MutantBuilder extends LightningElement {
     }
 
     handleAttributesChosen(event) {
+        this.modified = true;
         let attributeDetails = event.detail;
         this.buildPayload.pointSpread = attributeDetails.attributes;
         this.buildPayload.apSpent = attributeDetails.apSpent;
@@ -92,6 +104,7 @@ export default class MutantBuilder extends LightningElement {
     }
 
     handleMutationSelection(event) {
+        this.modified = true;
         let mutDetails = event.detail;
         this.buildPayload.mpRemaining = mutDetails.mpRemaining;
         this.buildPayload.mutations = mutDetails.mutations;

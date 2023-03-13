@@ -96,17 +96,19 @@ exports.registerUser = async (req, res) => {
 
 exports.getAuthenticatedUser = async (req, res) => {
     if (!req.session) {
-        res.status(400);
         return {
-            error: true,
+            error: false,
+            username: null,
+            name: null,
             message: "User is not authenticated"
         }
     }
     let userCookie = req.session.user;
     if (!userCookie) {
-        res.status(400);
         return {
-            error: true,
+            error: false,
+            username: null,
+            name: null,
             message: "User is not authenticated"
         }
     }

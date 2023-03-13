@@ -205,7 +205,6 @@ class AttributeChooser extends LightningElement {
         Willpower: this.attributes[4].total - this.min
       }
     };
-    console.log(payload);
     let evt = new CustomEvent("attributeschosen", {
       detail: payload
     });

@@ -1,6 +1,6 @@
 <template>
     <div class="builder-container">
-        <button class="previous" onclick={backtrack}>&#60;</button>
+        <button disabled={noBacktrack} class="previous" onclick={backtrack}>&#60;</button>
         <div class="scroll-container">
             <div class="scrolling-banner">
                 <section class="calling">
@@ -15,8 +15,11 @@
                     <build-attribute-chooser modifier={callingModifiers} attr={attributes} pts={pointsUsed}
                         onattributeschosen={handleAttributesChosen}></build-attribute-chooser>
                 </section>
+                <section>
+                    <slot></slot>
+                </section>
             </div>
         </div>
-        <button class="next" onclick={advance}>></button>
+        <button disabled={noAdvance} class="next" onclick={advance}>></button>
     </div>
 </template>

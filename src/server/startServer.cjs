@@ -51,12 +51,6 @@ app.get("/db/authenticated", (req, res) => {
     })
 });
 app.get("/db/login", (req, res) => {
-    if (req.session.user) {
-        res.status(200);
-    }
-    else {
-        res.status(400);
-    }
     res.json({ user: req.session.user });
 });
 app.get("/db/builds", (req, res) => {

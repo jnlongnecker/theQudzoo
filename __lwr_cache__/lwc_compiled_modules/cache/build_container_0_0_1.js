@@ -2,7 +2,7 @@ import { registerDecorators as _registerDecorators, registerComponent as _regist
 import _tmpl from "./container.html";
 import { fetchBuildCodeForPayload, fetchJsonForBuildCode } from "build/buildCodeHandler";
 import { isLoggedIn } from "c/api";
-class BuilderContainer extends LightningElement {
+class Container extends LightningElement {
   constructor(...args) {
     super(...args);
     this.mutantSelected = true;
@@ -15,7 +15,7 @@ class BuilderContainer extends LightningElement {
     this.clipboardPath = "M16 10c3.469 0 2 4 2 4s4-1.594 4 2v6h-10v-12h4zm.827-2h-6.827v16h14v-8.842c0-2.392-4.011-7.158-7.173-7.158zm-8.827 12h-6v-16h4l2.102 2h3.898l2-2h4v2.145c.656.143 1.327.391 2 .754v-4.899h-3c-1.229 0-2.18-1.084-3-2h-8c-.82.916-1.771 2-3 2h-3v20h8v-2zm2-18c.553 0 1 .448 1 1s-.447 1-1 1-1-.448-1-1 .447-1 1-1zm4 18h6v-1h-6v1zm0-2h6v-1h-6v1zm0-2h6v-1h-6v1z";
     this.checkPath = "M9 22l-10-10.598 2.798-2.859 7.149 7.473 13.144-14.016 2.909 2.806z";
     this.usePath = this.clipboardPath;
-    this.build = {
+    this.currBuild = {
       _id: null,
       code: "",
       name: "",
@@ -29,19 +29,19 @@ class BuilderContainer extends LightningElement {
   }
   set code(newCode) {
     this.buildCode = newCode;
-    this.build.code = newCode;
+    this.currBuild.code = newCode;
     this.initializeFromExistingCode();
   }
   get codeAvailable() {
     return this.buildCode ? true : false;
   }
   get startingbuild() {
-    return this.build;
+    return this.currBuild;
   }
   set startingbuild(b) {
     if (!b) return;
-    this.build = b;
-    this.buildCode = this.build.code;
+    this.currBuild = b;
+    this.buildCode = this.currBuild.code;
     this.initializeFromExistingCode();
   }
   get isSaveable() {
@@ -49,20 +49,23 @@ class BuilderContainer extends LightningElement {
     return this.userLoggedIn;
   }
   get buildName() {
-    return this.build.name;
+    return this.currBuild.name;
   }
   get isPublic() {
-    return this.build.public;
+    return this.currBuild.public;
   }
   get truekinSelected() {
     return !this.mutantSelected;
   }
   get idval() {
-    return this.build._id;
+    return this.currBuild._id;
   }
   set idval(idVal) {
     if (!idVal) return;
-    this.build._id = idVal;
+    this.currBuild._id = idVal;
+  }
+  get popupClass() {
+    return this.saveRequested ? "popup-background" : "in-build";
   }
   connectedCallback() {
     this.inputForCopying = document.createElement("input");
@@ -101,7 +104,8 @@ class BuilderContainer extends LightningElement {
   async fetchCode(payload) {
     let result = await fetchBuildCodeForPayload(payload);
     this.buildCode = result;
-    this.build.code = result;
+    this.currBuild = JSON.parse(JSON.stringify(this.currBuild));
+    this.currBuild.code = result;
   }
   copyCode(event) {
     if (!this.buildCode) {
@@ -153,7 +157,7 @@ class BuilderContainer extends LightningElement {
     if (!this.buildCode) return;
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
-    let rawBody = JSON.stringify(this.build);
+    let rawBody = JSON.stringify(this.currBuild);
     let reqOptions = {
       method: "POST",
       headers: headers,
@@ -163,7 +167,7 @@ class BuilderContainer extends LightningElement {
     if (!response.ok) {
       console.log(await response.text());
     }
-    this.build = JSON.parse((await response.json()).build);
+    this.currBuild = JSON.parse((await response.json()).build);
     this.saveRequested = false;
   }
   async initializeFromExistingCode() {
@@ -179,7 +183,6 @@ class BuilderContainer extends LightningElement {
       attributes = fullBuild.modules[3].data.PointsPurchased;
       selections = fullBuild.modules[2].data.selections;
       pointsUsed = 0 - fullBuild.modules[3].data.apSpent;
-      console.log(fullBuild.modules[3].data.apSpent);
       mpRemaining = fullBuild.modules[2].data.mp;
       this.template.querySelector(".tabs button:first-child").click();
     } else {
@@ -200,17 +203,16 @@ class BuilderContainer extends LightningElement {
     this.template.querySelector(".build-action .name-input").value = name;
   }
   updateBuildName(event) {
-    this.build.name = event.currentTarget.value;
+    this.currBuild.name = event.currentTarget.value;
   }
   updateAccessibility(event) {
-    this.build.public = !this.build.public;
-    console.log(this.build.public);
+    this.currBuild.public = !this.currBuild.public;
   }
   stopProp(event) {
     event.stopPropagation();
   }
 }
-_registerDecorators(BuilderContainer, {
+_registerDecorators(Container, {
   publicProps: {
     code: {
       config: 3
@@ -224,10 +226,10 @@ _registerDecorators(BuilderContainer, {
   },
   track: {
     sanitisedBuild: 1,
-    build: 1
+    currBuild: 1
   },
   fields: ["mutantSelected", "saveRequested", "userLoggedIn", "buildCode", "inputForCopying", "lastBuildCode", "clipboardPath", "checkPath", "usePath"]
 });
-export default _registerComponent(BuilderContainer, {
+export default _registerComponent(Container, {
   tmpl: _tmpl
 });

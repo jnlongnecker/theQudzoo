@@ -6,7 +6,7 @@ export default class CyberneticChooser extends LightningElement {
     rawCybernetics = [];
 
     @api
-    enabled;
+    enabled = 'Nocturnal Apex';
 
     points = 12;
     selectedBlurb;
@@ -55,9 +55,9 @@ export default class CyberneticChooser extends LightningElement {
     }
 
     async setSelectedCybernetic(cyb) {
-        while (!this.rawCybernetics.length > 0) {
-            await new Promise(t => setTimeout(t, 500));
-        }
+        do {
+            await new Promise(t => setTimeout(t, 1000));
+        } while (!this.rawCybernetics.length > 0)
 
         let clickedCyb =
             this.rawCybernetics.find(item => {

@@ -3,7 +3,7 @@ import { fetchBuildCodeForPayload, fetchJsonForBuildCode } from "build/buildCode
 import { isLoggedIn } from "c/api";
 
 
-export default class BuilderContainer extends LightningElement {
+export default class Container extends LightningElement {
     mutantSelected = true;
 
     saveRequested = false;
@@ -29,7 +29,7 @@ export default class BuilderContainer extends LightningElement {
 
     set code(newCode) {
         this.buildCode = newCode;
-        this.build.code = newCode;
+        this.currBuild.code = newCode;
         this.initializeFromExistingCode();
     }
 
@@ -38,7 +38,7 @@ export default class BuilderContainer extends LightningElement {
     }
 
     @track
-    build = {
+    currBuild = {
         _id: null,
         code: "",
         name: "",
@@ -49,13 +49,13 @@ export default class BuilderContainer extends LightningElement {
 
     @api
     get startingbuild() {
-        return this.build;
+        return this.currBuild;
     }
 
     set startingbuild(b) {
         if (!b) return;
-        this.build = b;
-        this.buildCode = this.build.code;
+        this.currBuild = b;
+        this.buildCode = this.currBuild.code;
         this.initializeFromExistingCode();
     }
 
@@ -65,11 +65,11 @@ export default class BuilderContainer extends LightningElement {
     }
 
     get buildName() {
-        return this.build.name;
+        return this.currBuild.name;
     }
 
     get isPublic() {
-        return this.build.public;
+        return this.currBuild.public;
     }
 
     get truekinSelected() {
@@ -78,12 +78,16 @@ export default class BuilderContainer extends LightningElement {
 
     @api
     get idval() {
-        return this.build._id;
+        return this.currBuild._id;
     }
 
     set idval(idVal) {
         if (!idVal) return;
-        this.build._id = idVal;
+        this.currBuild._id = idVal;
+    }
+
+    get popupClass() {
+        return this.saveRequested ? "popup-background" : "in-build"
     }
 
     connectedCallback() {
@@ -128,7 +132,8 @@ export default class BuilderContainer extends LightningElement {
     async fetchCode(payload) {
         let result = await fetchBuildCodeForPayload(payload);
         this.buildCode = result;
-        this.build.code = result;
+        this.currBuild = JSON.parse(JSON.stringify(this.currBuild));
+        this.currBuild.code = result;
     }
 
     copyCode(event) {
@@ -194,7 +199,7 @@ export default class BuilderContainer extends LightningElement {
 
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
-        let rawBody = JSON.stringify(this.build);
+        let rawBody = JSON.stringify(this.currBuild);
 
         let reqOptions = {
             method: "POST",
@@ -208,7 +213,7 @@ export default class BuilderContainer extends LightningElement {
             console.log(await response.text());
         }
 
-        this.build = JSON.parse((await response.json()).build);
+        this.currBuild = JSON.parse((await response.json()).build);
         this.saveRequested = false;
     }
 
@@ -227,7 +232,6 @@ export default class BuilderContainer extends LightningElement {
             attributes = fullBuild.modules[3].data.PointsPurchased;
             selections = fullBuild.modules[2].data.selections;
             pointsUsed = 0 - fullBuild.modules[3].data.apSpent;
-            console.log(fullBuild.modules[3].data.apSpent);
             mpRemaining = fullBuild.modules[2].data.mp;
             this.template.querySelector(".tabs button:first-child").click();
         }
@@ -252,12 +256,11 @@ export default class BuilderContainer extends LightningElement {
     }
 
     updateBuildName(event) {
-        this.build.name = event.currentTarget.value;
+        this.currBuild.name = event.currentTarget.value;
     }
 
     updateAccessibility(event) {
-        this.build.public = !this.build.public;
-        console.log(this.build.public);
+        this.currBuild.public = !this.currBuild.public;
     }
 
     stopProp(event) {

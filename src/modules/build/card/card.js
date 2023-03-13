@@ -185,6 +185,7 @@ export default class BuildCard extends LightningElement {
     }
 
     async fetchJson() {
+        if (!this.buildInfo.code) return;
         let json = await fetchJsonForBuildCode(this.buildInfo.code);
 
         this.buildJson = json;

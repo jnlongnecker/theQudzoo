@@ -1,26 +1,5 @@
 <template>
-    <section class="popup-background" if:true={saveRequested} onclick={saveCancel}>
-        <div class="save-customization" onclick={stopProp}>
-            <h2>:finalize build details:</h2>
-            <build-card mode="static" build={build}></build-card>
-            <form>
-                <label class="major-label">:build name:</label>
-                <input class="name-input" value={buildName} onchange={updateBuildName} />
-                <label class="major-label">:build accessibility:</label>
-                <div class="privacy">
-                    <label>private</label>
-                    <span class="switch">
-                        <input type="checkbox" checked={isPublic} onclick={updateAccessibility} />
-                        <span class="slider-dot"></span>
-                    </span>
-                    <label>public</label>
-                </div>
-                <div class="btns">
-                    <button onclick={saveCancel}>Cancel</button><button onclick={saveBuild}>Save</button>
-                </div>
-            </form>
-        </div>
-    </section>
+
     <section class="container">
         <div class="builder-app">
             <div class="tabs">
@@ -29,12 +8,58 @@
             </div>
             <section class="builder">
                 <template if:true={mutantSelected}>
-                    <build-mutant-builder build={sanitisedBuild}
-                        onbuildupdated={calculateBuildCode}></build-mutant-builder>
+                    <build-mutant-builder build={sanitisedBuild} onbuildupdated={calculateBuildCode}>
+                        <section class={popupClass} onclick={saveCancel}>
+                            <div class="save-customization" onclick={stopProp}>
+                                <h2>:finalize build details:</h2>
+                                <build-card mode="static" build={currBuild}></build-card>
+                                <form>
+                                    <label class="major-label">:build name:</label>
+                                    <input class="name-input" value={buildName} onchange={updateBuildName} />
+                                    <label class="major-label">:build accessibility:</label>
+                                    <div class="privacy">
+                                        <label>private</label>
+                                        <span class="switch">
+                                            <input type="checkbox" checked={isPublic} onclick={updateAccessibility} />
+                                            <span class="slider-dot"></span>
+                                        </span>
+                                        <label>public</label>
+                                    </div>
+                                    <div class="btns">
+                                        <button if:true={saveRequested} onclick={saveCancel}>Cancel</button>
+                                        <button if:true={isSaveable} onclick={saveBuild}>Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </build-mutant-builder>
                 </template>
                 <template if:true={truekinSelected}>
-                    <build-truekin-builder build={sanitisedBuild}
-                        onbuildupdated={calculateBuildCode}></build-truekin-builder>
+                    <build-truekin-builder build={sanitisedBuild} onbuildupdated={calculateBuildCode}>
+                        <section class={popupClass} onclick={saveCancel}>
+                            <div class="save-customization" onclick={stopProp}>
+                                <h2>:finalize build details:</h2>
+                                <build-card mode="static" build={currBuild}></build-card>
+                                <form>
+                                    <label class="major-label">:build name:</label>
+                                    <input class="name-input" value={buildName} onchange={updateBuildName} />
+                                    <label class="major-label">:build accessibility:</label>
+                                    <div class="privacy">
+                                        <label>private</label>
+                                        <span class="switch">
+                                            <input type="checkbox" checked={isPublic} onclick={updateAccessibility} />
+                                            <span class="slider-dot"></span>
+                                        </span>
+                                        <label>public</label>
+                                    </div>
+                                    <div class="btns">
+                                        <button if:true={saveRequested} onclick={saveCancel}>Cancel</button>
+                                        <button if:true={isSaveable} onclick={saveBuild}>Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </build-truekin-builder>
                 </template>
             </section>
         </div>

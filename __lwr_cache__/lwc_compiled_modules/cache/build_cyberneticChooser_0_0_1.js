@@ -22,7 +22,7 @@ class CyberneticChooser extends LightningElement {
   constructor() {
     super();
     this.rawCybernetics = [];
-    this.enabled = void 0;
+    this.enabled = 'Nocturnal Apex';
     this.points = 12;
     this.selectedBlurb = void 0;
     this.selectedLevelBlurb = void 0;
@@ -39,9 +39,9 @@ class CyberneticChooser extends LightningElement {
     this.fetchMutations();
   }
   async setSelectedCybernetic(cyb) {
-    while (!this.rawCybernetics.length > 0) {
-      await new Promise(t => setTimeout(t, 500));
-    }
+    do {
+      await new Promise(t => setTimeout(t, 1000));
+    } while (!this.rawCybernetics.length > 0);
     let clickedCyb = this.rawCybernetics.find(item => {
       let sameName = item.id == cyb.Cybernetic;
       let sameVar = item.variant == cyb.Variant;
