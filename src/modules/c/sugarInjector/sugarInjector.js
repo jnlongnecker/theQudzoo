@@ -73,8 +73,8 @@ export default class SugarInjector extends LightningElement {
 
     @api
     highlightText(text) {
-        text = this.highlightAttributes(text);
         text = this.highlightMutations(text);
+        text = this.highlightAttributes(text);
         text = this.highlightSkills(text);
         text = this.highlightStats(text);
         return text;
