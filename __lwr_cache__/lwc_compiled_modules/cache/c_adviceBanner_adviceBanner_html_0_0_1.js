@@ -2,7 +2,7 @@ import _implicitStylesheets from "./adviceBanner.css";
 
 import _implicitScopedStylesheets from "./adviceBanner.scoped.css?scoped=true";
 
-import _cArticleHub from "c/articleHub";
+import _adviceHub from "advice/hub";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {t: api_text, h: api_element, c: api_custom_element} = $api;
@@ -42,7 +42,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 10
   }, [api_text("A-F-F-I-N-E")])]), api_element("div", {
     key: 11
-  }, [api_custom_element("c-article-hub", _cArticleHub, {
+  }, [api_custom_element("advice-hub", _adviceHub, {
     key: 12
   }, [])])])];
 }

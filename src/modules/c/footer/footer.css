@@ -5,21 +5,8 @@ footer {
     flex-direction: column;
 }
 
-button {
-    background: 0;
-    border: 2px solid var(--text-color-faded);
-    border-radius: 0px;
-    padding: 0;
-    margin: 1rem;
-}
-
-button:hover {
-    border-color: var(--text-color);
-}
-
 a {
     color: var(--anchor-unvisited-color);
-
 }
 
 a:visited {
@@ -40,7 +27,6 @@ svg {
 
 .socials svg:hover {
     fill: var(--text-color-light);
-
 }
 
 .links {
@@ -53,19 +39,13 @@ svg {
     color: var(--text-color-faded);
     display: inline-block;
     text-decoration: none;
-    padding: .5rem 1rem;
-    width: 6rem;
-}
-
-.links a:hover {
-    color: var(--text-color);
-    background-color: var(--hover-darken);
 }
 
 .row {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin: 1rem 0;
 }
 
 .top-section {

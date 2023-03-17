@@ -2,10 +2,11 @@ import _implicitStylesheets from "./startup.css";
 
 import _implicitScopedStylesheets from "./startup.scoped.css?scoped=true";
 
+import _inputButton from "input/button";
 import _buildContainer from "build/container";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {t: api_text, h: api_element, gid: api_scoped_id, b: api_bind, d: api_dynamic_text, c: api_custom_element} = $api;
+  const {t: api_text, h: api_element, gid: api_scoped_id, b: api_bind, c: api_custom_element, d: api_dynamic_text} = $api;
   const {_m0, _m1} = $ctx;
   return [!$cmp.choiceConfirmed ? api_element("section", {
     classMap: {
@@ -24,12 +25,12 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "choices": true
     },
     key: 3
-  }, [api_element("button", {
-    classMap: {
-      "create-new": true
-    },
-    attrs: {
-      "aria-labelledby": api_scoped_id("create-label")
+  }, [api_custom_element("input-button", _inputButton, {
+    props: {
+      "ariaLabelledBy": api_scoped_id("create-label"),
+      "variant": "willpower",
+      "animation": "flicker",
+      "size": "large thin"
     },
     key: 4,
     on: {
@@ -56,9 +57,12 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "choices": true
     },
     key: 10
-  }, [api_element("button", {
-    classMap: {
-      "load-build": true
+  }, [api_custom_element("input-button", _inputButton, {
+    props: {
+      "ariaLabelledBy": api_scoped_id("load-label"),
+      "variant": "intelligence",
+      "animation": "flicker",
+      "size": "large thin"
     },
     key: 11,
     on: {
@@ -75,6 +79,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 13
   }, [api_text(api_dynamic_text($cmp.error))]) : null, api_element("label", {
+    attrs: {
+      "id": api_scoped_id("load-label")
+    },
     key: 14
   }, [api_text("Or adjust one that's already been made")])])])]) : null, $cmp.choiceConfirmed ? api_custom_element("build-container", _buildContainer, {
     props: {

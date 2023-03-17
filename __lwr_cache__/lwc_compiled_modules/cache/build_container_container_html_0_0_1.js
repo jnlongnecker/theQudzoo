@@ -3,8 +3,10 @@ import _implicitStylesheets from "./container.css";
 import _implicitScopedStylesheets from "./container.scoped.css?scoped=true";
 
 import _buildCard from "build/card";
+import _inputButton from "input/button";
 import _buildMutantBuilder from "build/mutantBuilder";
 import _buildTruekinBuilder from "build/truekinBuilder";
+import _inputIcon from "input/icon";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, t: api_text, h: api_element, c: api_custom_element} = $api;
@@ -130,12 +132,20 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "btns": true
     },
     key: 21
-  }, [$cmp.saveRequested ? api_element("button", {
+  }, [$cmp.saveRequested ? api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large",
+      "variant": "toughness"
+    },
     key: 22,
     on: {
       "click": _m7 || ($ctx._m7 = api_bind($cmp.saveCancel))
     }
-  }, [api_text("Cancel")]) : null, $cmp.isSaveable ? api_element("button", {
+  }, [api_text("Cancel")]) : null, $cmp.isSaveable ? api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large",
+      "variant": "willpower"
+    },
     key: 23,
     on: {
       "click": _m8 || ($ctx._m8 = api_bind($cmp.saveBuild))
@@ -228,12 +238,20 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "btns": true
     },
     key: 39
-  }, [$cmp.saveRequested ? api_element("button", {
+  }, [$cmp.saveRequested ? api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large",
+      "variant": "toughness"
+    },
     key: 40,
     on: {
       "click": _m14 || ($ctx._m14 = api_bind($cmp.saveCancel))
     }
-  }, [api_text("Cancel")]) : null, $cmp.isSaveable ? api_element("button", {
+  }, [api_text("Cancel")]) : null, $cmp.isSaveable ? api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large",
+      "variant": "willpower"
+    },
     key: 41,
     on: {
       "click": _m15 || ($ctx._m15 = api_bind($cmp.saveBuild))
@@ -261,112 +279,70 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     on: {
       "click": _m16 || ($ctx._m16 = api_bind($cmp.copyCode))
     }
-  }, [api_element("svg", {
-    attrs: {
-      "clip-rule": "evenodd",
-      "fill-rule": "evenodd",
-      "stroke-linejoin": "round",
-      "stroke-miterlimit": "2",
-      "viewBox": "0 0 24 24",
-      "xmlns": "http://www.w3.org/2000/svg"
+  }, [api_custom_element("input-icon", _inputIcon, {
+    props: {
+      "variant": "cross",
+      "padding": "x-large",
+      "title": $cmp.btnTitle
     },
-    key: 46,
-    svg: true
-  }, [!$cmp.codeAvailable ? api_element("title", {
+    key: 46
+  }, [])]) : null, $cmp.codeAvailable ? api_element("button", {
     key: 47,
-    svg: true
-  }, [api_text("You must have a build to save first.")]) : null, api_element("path", {
-    attrs: {
-      "d": "m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"
-    },
-    key: 48,
-    svg: true
-  }, [])])]) : null, $cmp.codeAvailable ? api_element("button", {
-    key: 49,
     on: {
       "click": _m17 || ($ctx._m17 = api_bind($cmp.copyCode))
     }
-  }, [api_element("svg", {
-    attrs: {
-      "xmlns": "http://www.w3.org/2000/svg",
-      "viewBox": "0 0 24 24"
+  }, [api_custom_element("input-icon", _inputIcon, {
+    props: {
+      "variant": "clipboard",
+      "flipvariant": "check",
+      "padding": "x-large"
     },
-    key: 50,
-    svg: true
-  }, [api_element("path", {
-    attrs: {
-      "d": $cmp.usePath
-    },
-    key: 51,
-    svg: true
-  }, [])])]) : null]), api_element("div", {
+    key: 48
+  }, [])]) : null]), api_element("div", {
     classMap: {
       "build-action": true
     },
-    key: 52
+    key: 49
   }, [api_element("h2", {
     classMap: {
       "no-mobile": true
     },
-    key: 53
+    key: 50
   }, [api_text(":save build:")]), !$cmp.isSaveable ? api_element("button", {
     classMap: {
       "x-btn": true
     },
-    key: 54
-  }, [api_element("svg", {
-    attrs: {
-      "clip-rule": "evenodd",
-      "fill-rule": "evenodd",
-      "stroke-linejoin": "round",
-      "stroke-miterlimit": "2",
-      "viewBox": "0 0 24 24",
-      "xmlns": "http://www.w3.org/2000/svg"
+    key: 51
+  }, [api_custom_element("input-icon", _inputIcon, {
+    props: {
+      "variant": "cross",
+      "padding": "x-large",
+      "title": $cmp.btnTitle
     },
-    key: 55,
-    svg: true
-  }, [!$cmp.codeAvailable ? api_element("title", {
-    key: 56,
-    svg: true
-  }, [api_text("You must have a build to save first.")]) : null, !$cmp.isSaveable ? api_element("title", {
-    key: 57,
-    svg: true
-  }, [api_text("You must be logged in to save a build.")]) : null, api_element("path", {
-    attrs: {
-      "d": "m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"
-    },
-    key: 58,
-    svg: true
-  }, [])])]) : null, $cmp.isSaveable ? api_element("button", {
-    key: 59,
+    key: 52
+  }, [])]) : null, $cmp.isSaveable ? api_element("button", {
+    key: 53,
     on: {
       "click": _m18 || ($ctx._m18 = api_bind($cmp.saveClick))
     }
-  }, [api_element("svg", {
-    attrs: {
-      "xmlns": "http://www.w3.org/2000/svg",
-      "viewBox": "0 0 24 24"
+  }, [api_custom_element("input-icon", _inputIcon, {
+    props: {
+      "variant": "save",
+      "padding": "x-large"
     },
-    key: 60,
-    svg: true
-  }, [api_element("path", {
-    attrs: {
-      "d": "M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
-    },
-    key: 61,
-    svg: true
-  }, [])])]) : null]), api_element("div", {
+    key: 54
+  }, [])]) : null]), api_element("div", {
     classMap: {
       "build-action": true
     },
-    key: 62
+    key: 55
   }, [api_element("h2", {
-    key: 63
+    key: 56
   }, [api_text(":character name:")]), api_element("input", {
     classMap: {
       "name-input": true
     },
-    key: 64,
+    key: 57,
     on: {
       "change": _m19 || ($ctx._m19 = api_bind($cmp.updateName))
     }

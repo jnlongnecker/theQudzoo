@@ -2,9 +2,10 @@ import _implicitStylesheets from "./attributeChooser.css";
 
 import _implicitScopedStylesheets from "./attributeChooser.scoped.css?scoped=true";
 
+import _inputButton from "input/button";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {t: api_text, h: api_element, k: api_key, b: api_bind, d: api_dynamic_text, i: api_iterator} = $api;
+  const {t: api_text, h: api_element, k: api_key, b: api_bind, d: api_dynamic_text, i: api_iterator, c: api_custom_element} = $api;
   const {_m0, _m1, _m2, _m3, _m4} = $ctx;
   return [api_element("h2", {
     key: 0
@@ -98,14 +99,22 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 18
   }, [api_text("Points Remaining: " + api_dynamic_text($cmp.points))]), api_element("span", {
     key: 19
-  }, [api_element("button", {
+  }, [api_custom_element("input-button", _inputButton, {
+    props: {
+      "variant": "stat",
+      "size": "thin"
+    },
     key: 20,
     on: {
       "click": _m3 || ($ctx._m3 = api_bind($cmp.randomizeChanges))
     }
   }, [api_text("Randomize")])]), api_element("span", {
     key: 21
-  }, [api_element("button", {
+  }, [api_custom_element("input-button", _inputButton, {
+    props: {
+      "variant": "stat",
+      "size": "thin"
+    },
     key: 22,
     on: {
       "click": _m4 || ($ctx._m4 = api_bind($cmp.resetChanges))

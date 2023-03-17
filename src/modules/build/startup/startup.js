@@ -1,4 +1,5 @@
 import { LightningElement } from "lwc";
+import { getBuilds } from "c/api";
 
 export default class BuilderStartup extends LightningElement {
 
@@ -46,23 +47,9 @@ export default class BuilderStartup extends LightningElement {
     }
 
     async loadBuildFromId(id) {
-        let headers = new Headers();
-        headers.append("Content-Type", "application/json");
-        headers.append("filters", JSON.stringify({ _id: id }));
+        let response = await getBuilds({ _id: id });
 
-        let reqOptions = {
-            method: "GET",
-            headers: headers,
-        }
-
-        let response = await fetch("/db/builds", reqOptions);
-
-        if (!response.ok) {
-            console.error(await response.text());
-            return;
-        }
-
-        this.startingBuild = (await response.json()).builds[0];
+        this.startingBuild = response.builds[0];
         this.choiceConfirmed = true;
     }
 }

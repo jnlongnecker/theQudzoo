@@ -40,8 +40,10 @@ export default class Profile extends LightningElement {
     }
 
     endEdit() {
+        if (!this.editingName) return;
+
+        this.nameInput = this.template.querySelector('input-text');
         this.editingName = false;
-        this.nameInput = this.template.querySelector('input');
 
         this.user.name = this.nameInput.value;
         this.saveUser();

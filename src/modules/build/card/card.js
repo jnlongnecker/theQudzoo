@@ -1,5 +1,6 @@
 import { LightningElement, api, track } from "lwc";
 import { fetchJsonForBuildCode } from "build/buildCodeHandler";
+import { deleteBuilds } from "c/api";
 
 export default class BuildCard extends LightningElement {
 
@@ -235,19 +236,7 @@ export default class BuildCard extends LightningElement {
     }
 
     async confirmDelete() {
-        let headers = new Headers();
-        headers.append("Content-Type", "application/json");
-        let rawBody = {
-            ids: [this.buildInfo._id]
-        }
-
-        let reqOptions = {
-            method: "DELETE",
-            headers: headers,
-            body: JSON.stringify(rawBody)
-        }
-
-        let response = await fetch("/db/builds", reqOptions);
+        deleteBuilds([this.build._id]);
 
         this.deleting = false;
         this.buildInfo = null;
@@ -265,35 +254,6 @@ export default class BuildCard extends LightningElement {
         this.inputForCopying.select();
         this.inputForCopying.setSelectionRange(0, 99999);
         navigator.clipboard.writeText(this.inputForCopying.value);
-
-        event.currentTarget.firstChild.classList.remove("grow");
-        event.currentTarget.firstChild.classList.add("shrink");
-
-        let funcA = (ev) => {
-            if (ev.currentTarget.classList.contains("shrink")) {
-                ev.currentTarget.classList.remove("shrink");
-                ev.currentTarget.classList.add("grow");
-                this.usePath = this.checkPath;
-                return;
-            }
-
-            ev.currentTarget.removeEventListener("animationend", funcA);
-            var lastElem = ev.currentTarget;
-            setTimeout(() => {
-                lastElem.classList.remove("grow");
-                lastElem.classList.add("shrink");
-                let funcB = (evnt) => {
-                    evnt.currentTarget.classList.remove("shrink");
-                    evnt.currentTarget.classList.add("grow");
-                    this.usePath = this.clipboardPath;
-
-                    evnt.currentTarget.removeEventListener("animationend", funcB);
-                }
-                let el = lastElem.addEventListener("animationend", funcB);
-            }, 1000);
-        }
-
-        event.currentTarget.firstChild.addEventListener("animationend", funcA);
     }
 
 }

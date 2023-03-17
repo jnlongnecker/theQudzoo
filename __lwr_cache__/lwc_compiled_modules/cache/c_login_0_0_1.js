@@ -131,6 +131,9 @@ class Login extends LightningElement {
   cancelLogin() {
     this.showPopup = false;
   }
+  submit(event) {
+    this.template.querySelector('form').submit();
+  }
   stopBubble(event) {
     event.stopPropagation();
   }

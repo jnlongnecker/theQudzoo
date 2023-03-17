@@ -1,5 +1,6 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./callingChooser.html";
+import { getCallings } from "c/api";
 class CallingChooser extends LightningElement {
   get calling() {
     return false;
@@ -71,13 +72,7 @@ class CallingChooser extends LightningElement {
     this.dispatchEvent(evt);
   }
   async fetchCallingInfo() {
-    let request = new Request("/api/callings");
-    let response = await fetch(request);
-    if (!response.ok) {
-      console.error(await response.text());
-      return;
-    }
-    let callingJson = await response.json();
+    let callingJson = await getCallings();
     this.callings = callingJson.callings;
   }
 }

@@ -162,6 +162,10 @@ export default class Login extends LightningElement {
         this.showPopup = false;
     }
 
+    submit(event) {
+        this.template.querySelector('form').submit();
+    }
+
     stopBubble(event) {
         event.stopPropagation();
     }

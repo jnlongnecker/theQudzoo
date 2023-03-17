@@ -73,6 +73,10 @@ form button:hover {
     border-color: var(--stat-color);
 }
 
+input-button + a {
+    margin-left: 1rem;
+}
+
 .error {
     color: var(--toughness-color);
     display: flex;
@@ -117,36 +121,6 @@ form button:hover {
 .change-form:hover {
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
-}
-
-.login-btn {
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid var(--text-color);
-    color: var(--text-color);
-    min-width: 10ch;
-    padding: 0.25rem;
-}
-
-.login-btn:hover {
-    cursor: pointer;
-    background-color: var(--hover-darken);
-    color: var(--ego-color);
-    border-color: var(--ego-color);
-}
-
-.logout-btn {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    width: 10ch;
-    color: var(--text-color-faded);
-    padding: 0.25rem 0;
-    margin-right: 1rem;
-}
-
-.logout-btn:hover {
-    cursor: pointer;
-    background-color: var(--hover-darken);
-    color: var(--cybernetic-color);
 }
 
 @media only screen and (max-width: 900px) {

@@ -23,15 +23,45 @@ async function getAuthenticatedUser() {
   }
   return await result.json();
 }
+async function getMiddleware(endpoint) {
+  const response = await fetch(endpoint);
+  if (!response.ok) {
+    console.error(await response.text());
+    return;
+  }
+  return await response.json();
+}
 async function getBuilds(filters) {
   let headers = new Headers();
   headers.append("Content-Type", "application/json");
-  headers.append("filters", JSON.stringify(filters));
+  //headers.append("filters", JSON.stringify(filters));
+
   let reqOptions = {
     method: "GET",
     headers: headers
   };
-  let response = await fetch("/db/builds", reqOptions);
+  let response = await fetch("/db/builds/" + encodeURIComponent(JSON.stringify(filters)), reqOptions);
   return await response.json();
 }
-export { getBuilds, getAuthenticatedUser, isLoggedIn };
+async function getMutations() {
+  return await getMiddleware("/api/mutations");
+}
+async function getCybernetics() {
+  return await getMiddleware("/api/cybernetics");
+}
+async function getCastes() {
+  return await getMiddleware("/api/castes");
+}
+async function getCallings() {
+  return await getMiddleware("/api/callings");
+}
+async function getAttributes() {
+  return await getMiddleware("/api/attributes");
+}
+async function getSkills() {
+  return await getMiddleware("/api/skills");
+}
+async function getStats() {
+  return await getMiddleware("/api/stats");
+}
+export { getBuilds, getAuthenticatedUser, isLoggedIn, getMutations, getCybernetics, getCastes, getCallings, getAttributes, getSkills, getStats };

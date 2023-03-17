@@ -8,7 +8,7 @@ export default class Footer extends LightningElement {
     @track
     allLinks = [
         {
-            label: "Official Website",
+            label: "Website",
             link: "https://www.cavesofqud.com/"
         },
         {

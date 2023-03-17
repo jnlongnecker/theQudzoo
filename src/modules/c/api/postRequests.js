@@ -48,4 +48,24 @@ async function logout() {
     return await result.json();
 }
 
-export { attemptLogin, attemptRegister, logout };
+async function saveBuild(build) {
+    let headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    let rawBody = JSON.stringify(build);
+
+    let reqOptions = {
+        method: "POST",
+        headers: headers,
+        body: rawBody,
+    }
+
+    let response = await fetch("/db/savebuild", reqOptions);
+
+    if (!response.ok) {
+        console.log(await response.text());
+    }
+
+    return await response.json();
+}
+
+export { attemptLogin, attemptRegister, logout, saveBuild };

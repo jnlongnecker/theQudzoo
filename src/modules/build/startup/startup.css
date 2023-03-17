@@ -1,22 +1,3 @@
-@keyframes flicker {
-    0% {
-        color: var(--text-color-faded);
-        border-color: var(--text-color-faded);
-    }
-    33% {
-        color: var(--highlight-color);
-        border-color: var(--highlight-color);
-    }
-    66% {
-        color: var(--text-color-faded);
-        border-color: var(--text-color-faded);
-    }
-    100% {
-        color: var(--highlight-color);
-        border-color: var(--highlight-color);
-    }
-}
-
 h2 {
     color: var(--stat-color);
     font-family: var(--qud-font);
@@ -29,23 +10,6 @@ hr {
     border: 0;
     border-top: 1px solid var(--text-color-faded);
     transform: rotate(-25deg);
-}
-
-button {
-    font-size: 1.25rem;
-    min-width: 20ch;
-    padding: 0.25rem 1rem;
-    background-color: transparent;
-    border: 1px solid var(--text-color-faded);
-    color: var(--text-color-faded);
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: var(--hover-darken);
-    border-color: var(--highlight-color);
-    color: var(--highlight-color);
-    animation: flicker 0.25s forwards;
 }
 
 section {

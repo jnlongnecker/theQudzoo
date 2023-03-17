@@ -53,15 +53,10 @@
             "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/beak.png",
             "code": "cd",
-            "variants": [
-                "Beak", 
-                "Bill", 
-                "Rostrum", 
-                "Frill", 
-                "Proboscis"
-            ],
+            "variants": ["Beak", "Bill", "Rostrum", "Frill", "Proboscis"],
             "excludes": ["Esper"],
-            "description": "Your face bears a sightly beak.\n\n+1 Ego\nYou occasionally peck at your opponents.\n+200 reputation with birds"
+            "description": "Your face bears a sightly beak.",
+            "levelText": "+1 Ego\nYou occasionally peck at your opponents.\n+200 reputation with birds"
         },
         {
             "name": "Burrowing Claws",
@@ -322,7 +317,11 @@
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
             "code": "bx",
             "variants": [],
-            "excludes": ["Esper", "Stinger (Paralyzing Venom)", "Stinger (Poisoning Venom)"],
+            "excludes": [
+                "Esper",
+                "Stinger (Paralyzing Venom)",
+                "Stinger (Poisoning Venom)"
+            ],
             "description": "You bear a tail with a stinger that delivers confusing venom to your enemies.",
             "levelText": "20% chance on melee attack to sting your opponent (→7 1d6)\nStinger is a long blade and can only penetrate once.\nAlways sting on charge or lunge.\nStinger applies venom on damage (only 20% chance if Stinger is your primary weapon).\nMay use Sting activated ability to strike with your stinger and automatically hit and penetrate.\nSting cooldown: 25\nVenom confuses opponents for 2d3+2 rounds\n+200 reputation with arachnids"
         },
@@ -334,7 +333,11 @@
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
             "code": "by",
             "variants": [],
-            "excludes": ["Esper", "Stinger (Confusing Venom)", "Stinger (Poisoning Venom)"],
+            "excludes": [
+                "Esper",
+                "Stinger (Confusing Venom)",
+                "Stinger (Poisoning Venom)"
+            ],
             "description": "You bear a tail with a stinger that delivers paralyzing venom to your enemies.",
             "levelText": "20% chance on melee attack to sting your opponent (→7 1d6)\nStinger is a long blade and can only penetrate once.\nAlways sting on charge or lunge.\nStinger applies venom on damage (only 20% chance if Stinger is your primary weapon).\nMay use Sting activated ability to strike with your stinger and automatically hit and penetrate.\nSting cooldown: 25\nVenom paralyzes opponents for 1d3+1 rounds\n+200 reputation with arachnids"
         },
@@ -346,7 +349,11 @@
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stinger.png",
             "code": "bz",
             "variants": [],
-            "excludes": ["Esper", "Stinger (Confusing Venom)", "Stinger (Paralyzing Venom)"],
+            "excludes": [
+                "Esper",
+                "Stinger (Confusing Venom)",
+                "Stinger (Paralyzing Venom)"
+            ],
             "description": "You bear a tail with a stinger that delivers poisonous venom to your enemies.",
             "levelText": "20% chance on melee attack to sting your opponent (→7 1d6)\nStinger is a long blade and can only penetrate once.\nAlways sting on charge or lunge.\nStinger applies venom on damage (only 20% chance if Stinger is your primary weapon).\nMay use Sting activated ability to strike with your stinger and automatically hit and penetrate.\nSting cooldown: 25\nVenom poisons opponents for 8-12 rounds (damage increment 1d2)\n+200 reputation with arachnids"
         },
@@ -752,7 +759,8 @@
             "code": "ca",
             "variants": [],
             "excludes": ["Esper", "Photosynthetic Skin"],
-            "description": "You eat meat exclusively.\n\nYou get no satiation from foods that aren't meat.\nIf you eat raw food that isn't meat, there's a 50% chance you become ill for 2 hours.\nYou can't cook with plant or fungus ingredients.\nYou don't get ill when you eat raw meat.\nYou can eat raw meat without being famished.\n"
+            "description": "You eat meat exclusively.",
+            "levelText": "You get no satiation from foods that aren't meat.\nIf you eat raw food that isn't meat, there's a 50% chance you become ill for 2 hours.\nYou can't cook with plant or fungus ingredients.\nYou don't get ill when you eat raw meat.\nYou can eat raw meat without being famished.\n"
         },
         {
             "name": "Amphibious",
@@ -763,7 +771,8 @@
             "code": "cb",
             "variants": [],
             "excludes": ["Esper"],
-            "description": "Your skin must be kept moist with fresh water.\n\nYou pour water on yourself rather than drinking it to quench your thirst.\nYou require about two-thirds more water than usual.\n+100 reputation with {{w|frogs}}"
+            "description": "Your skin must be kept moist with fresh water.",
+            "levelText": "You pour water on yourself rather than drinking it to quench your thirst.\nYou require about two-thirds more water than usual.\n+100 reputation with frogs"
         },
         {
             "name": "Brittle Bones",
@@ -774,7 +783,8 @@
             "code": "cf",
             "variants": [],
             "excludes": ["Esper"],
-            "description": "Your bones are brittle.\n\nYou suffer 50% more damage from bludgeoning attacks, falling, and other sources of concussive damage."
+            "description": "Your bones are brittle.",
+            "levelText": "You suffer 50% more damage from bludgeoning attacks, falling, and other sources of concussive damage."
         },
         {
             "name": "Carnivorous",
@@ -785,7 +795,8 @@
             "code": "b6",
             "variants": [],
             "excludes": ["Esper", "Photosynthetic Skin"],
-            "description": "You eat meat exclusively.\n\nYou get no satiation from foods that aren't meat.\nIf you eat raw food that isn't meat, there's a 50% chance you become ill for 2 hours.\nYou can't cook with plant or fungus ingredients.\nYou don't get ill when you eat raw meat.\nYou can eat raw meat without being famished.\n"
+            "description": "You eat meat exclusively.",
+            "levelText": "You get no satiation from foods that aren't meat.\nIf you eat raw food that isn't meat, there's a 50% chance you become ill for 2 hours.\nYou can't cook with plant or fungus ingredients.\nYou don't get ill when you eat raw meat.\nYou can eat raw meat without being famished.\n"
         },
         {
             "name": "Cold Blooded",
@@ -796,7 +807,8 @@
             "code": "cd",
             "variants": [],
             "excludes": ["Esper"],
-            "description": "Your vitality depends on your temperature; at higher temperatures, you are more lively. At lower temperatures, you are more torpid.\n\nYour base quickness score is reduced by 10.\nYour quickness increases as your temperature increases and decreases as your temperature decreases.\n+100 reputation with unshelled reptiles."
+            "description": "Your vitality depends on your temperature; at higher temperatures, you are more lively. At lower temperatures, you are more torpid.",
+            "levelText": "Your base quickness score is reduced by 10.\nYour quickness increases as your temperature increases and decreases as your temperature decreases.\n+100 reputation with unshelled reptiles."
         },
         {
             "name": "Electromagnetic Impulse",
@@ -807,7 +819,8 @@
             "code": "cg",
             "variants": [],
             "excludes": ["Esper"],
-            "description": "You involuntarily release electromagnetic pulses, deactivating robots and artifacts around yourself.\n\nSmall chance each round you're in combat that you release an electromagnetic pulse with radius 3, deactivating robots and artifacts (including those you carry) for 11-20 rounds."
+            "description": "You involuntarily release electromagnetic pulses, deactivating robots and artifacts around yourself.",
+            "levelText": "Small chance each round you're in combat that you release an electromagnetic pulse with radius 3, deactivating robots and artifacts (including those you carry) for 11-20 rounds."
         },
         {
             "name": "Hooks for Feet",
@@ -818,7 +831,8 @@
             "code": "ci",
             "variants": [],
             "excludes": ["Esper"],
-            "description": "You have hooks for feet.\n\nYou cannot wear shoes."
+            "description": "You have hooks for feet.",
+            "levelText": "You cannot wear shoes."
         },
         {
             "name": "Irritable Genome",
@@ -829,7 +843,8 @@
             "code": "cn",
             "variants": [],
             "excludes": ["Esper"],
-            "description": "Your genome is irritable and unpredictable.\n\nWhenever you spend a mutation point, the next mutation point you gain will be spent randomly.\nWhenever you buy a new mutation, you get a random one instead of a choice of three."
+            "description": "Your genome is irritable and unpredictable.",
+            "levelText": "Whenever you spend a mutation point, the next mutation point you gain will be spent randomly.\nWhenever you buy a new mutation, you get a random one instead of a choice of three."
         },
         {
             "name": "Myopic",
@@ -840,7 +855,8 @@
             "code": "cj",
             "variants": [],
             "excludes": ["Esper"],
-            "description": "You are nearsighted.\n\nYou can only see up to a radius of 10."
+            "description": "You are nearsighted.",
+            "levelText": "You can only see up to a radius of 10."
         },
         {
             "name": "Nerve Poppy",
@@ -851,7 +867,8 @@
             "code": "cc",
             "variants": [],
             "excludes": ["Esper"],
-            "description": "You lack a developed sense of pain.\n\nYou only know your general state of health and not your precise number of hit points."
+            "description": "You lack a developed sense of pain.",
+            "levelText": "You only know your general state of health and not your precise number of hit points."
         },
         {
             "name": "Spontaneous Combustion",
@@ -862,7 +879,8 @@
             "code": "cl",
             "variants": [],
             "excludes": ["Esper"],
-            "description": "You spontaneously erupt into flames.\n\nSmall chance each round you're in combat that you spontaneously erupt into flames."
+            "description": "You spontaneously erupt into flames.",
+            "levelText": "Small chance each round you're in combat that you spontaneously erupt into flames."
         },
         {
             "name": "Tonic Allergy",
@@ -873,7 +891,8 @@
             "code": "cm",
             "variants": [],
             "excludes": ["Esper"],
-            "description": "You are allergic to tonics.\n\nThe chance your mutant physiology reacts adversely to a tonic is increased to 33%.\nIf you react adversely this way to a salve or ubernostrum tonic, the adverse reaction effect is chosen randomly from among other tonic effects. You will still heal."
+            "description": "You are allergic to tonics.",
+            "levelText": "The chance your mutant physiology reacts adversely to a tonic is increased to 33%.\nIf you react adversely this way to a salve or ubernostrum tonic, the adverse reaction effect is chosen randomly from among other tonic effects. You will still heal."
         },
         {
             "name": "Amnesia",
@@ -884,7 +903,8 @@
             "code": "ea",
             "variants": [],
             "excludes": ["Chimera"],
-            "description": "You forget things and places.\n\nWhenever you learn a new secret, there's a small chance you forget a secret.\nWhenever you return to a map you previously visited, there's a small chance you forget the layout."
+            "description": "You forget things and places.",
+            "levelText": "Whenever you learn a new secret, there's a small chance you forget a secret.\nWhenever you return to a map you previously visited, there's a small chance you forget the layout."
         },
         {
             "name": "Blinking Tic",
@@ -895,7 +915,8 @@
             "code": "eb",
             "variants": [],
             "excludes": ["Chimera"],
-            "description": "You teleport about uncontrollably.\n\nSmall chance each round you're in combat that you randomly teleport to a nearby location."
+            "description": "You teleport about uncontrollably.",
+            "levelText": "Small chance each round you're in combat that you randomly teleport to a nearby location."
         },
         {
             "name": "Dystechnia",
@@ -906,7 +927,8 @@
             "code": "ei",
             "variants": [],
             "excludes": ["Chimera", "Psychometry"],
-            "description": "You are befuddled by technological complexity.\n\nYou're much worse at examining artifacts.\nYou can't have artifacts identified for you because you don't understand their explanations.\nWhen you fail severely during artifact examination, the artifact explodes."
+            "description": "You are befuddled by technological complexity.",
+            "levelText": "You're much worse at examining artifacts.\nYou can't have artifacts identified for you because you don't understand their explanations.\nWhen you fail severely during artifact examination, the artifact explodes."
         },
         {
             "name": "Evil Twin",
@@ -917,7 +939,8 @@
             "code": "ec",
             "variants": [],
             "excludes": ["Chimera"],
-            "description": "Acting on some inscrutable impulse, a parallel version of yourself travels through space and time to destroy you.\n\nEach time you embark on a new location, there's a small chance your evil twin has tracked you there and attempts to kill you."
+            "description": "Acting on some inscrutable impulse, a parallel version of yourself travels through space and time to destroy you.",
+            "levelText": "Each time you embark on a new location, there's a small chance your evil twin has tracked you there and attempts to kill you."
         },
         {
             "name": "Narcolepsy",
@@ -928,7 +951,8 @@
             "code": "ed",
             "variants": [],
             "excludes": ["Chimera"],
-            "description": "You fall asleep involuntarily from time to time.\n\nSmall chance each round you're in combat that you fall asleep for 20-29 rounds."
+            "description": "You fall asleep involuntarily from time to time.",
+            "levelText": "Small chance each round you're in combat that you fall asleep for 20-29 rounds."
         },
         {
             "name": "Psionic Migraines",
@@ -939,7 +963,8 @@
             "code": "ow",
             "variants": [],
             "excludes": ["Chimera", "Horns"],
-            "description": "You suffer from powerful psionic migraines that render your head extremely sensitive.\n\nYou can't wear hats or helmets."
+            "description": "You suffer from powerful psionic migraines that render your head extremely sensitive.",
+            "levelText": "You can't wear hats or helmets."
         },
         {
             "name": "Quantum Jitters",
@@ -950,7 +975,8 @@
             "code": "eh",
             "variants": [],
             "excludes": ["Chimera"],
-            "description": "Your willful acts sometimes dent spacetime.\n\nWhenever you use an activated ability, there's a small chance your focus slips and you dent spacetime in the local region, causing 1-2 spacetime vortices to appear. This chance increases the longer you go without using an activated ability."
+            "description": "Your willful acts sometimes dent spacetime.",
+            "levelText": "Whenever you use an activated ability, there's a small chance your focus slips and you dent spacetime in the local region, causing 1-2 spacetime vortices to appear. This chance increases the longer you go without using an activated ability."
         },
         {
             "name": "Socially Repugnant",
@@ -961,7 +987,8 @@
             "code": "ef",
             "variants": [],
             "excludes": ["Chimera"],
-            "description": "Others find it difficult to tolerate you in social settings.\n\n-50 reputation with every faction"
+            "description": "Others find it difficult to tolerate you in social settings.",
+            "levelText": "-50 reputation with every faction"
         }
     ]
 }

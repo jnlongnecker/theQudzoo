@@ -4,32 +4,6 @@
     --code-color: var(--mutant-color);
 }
 
-@keyframes shrink {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
-
-@keyframes grow {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.shrink {
-    animation: 0.125s shrink;
-}
-
-.grow {
-    animation: 0.125s grow;
-}
-
 fieldset {
     border: 0;
     border-top: 1px solid var(--text-color);
@@ -125,7 +99,7 @@ a {
     border-left: 1px solid var(--code-color);
     border-bottom: 1px solid var(--code-color);
     border-bottom-left-radius: 5px;
-    padding: 0.75rem;
+    padding: 0;
 }
 
 .copy-code {
@@ -136,7 +110,7 @@ a {
     border-right: 1px solid var(--code-color);
     border-bottom: 1px solid var(--code-color);
     border-bottom-right-radius: 5px;
-    padding: 0.75rem;
+    padding: 0;
 }
 
 .copy-code:hover {
@@ -152,64 +126,6 @@ a {
 .header {
     display: grid;
     grid-template-columns: 3rem minmax(0, 1fr) 3rem;
-}
-
-.popup-background {
-    background: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 20;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    box-sizing: border-box;
-}
-
-.popup {
-    background-color: var(--bg-color-dark);
-    padding: 1rem;
-    max-width: 100%;
-}
-
-.popup h1 {
-    color: var(--strength-color);
-    font-size: 1.75rem;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    flex-wrap: wrap;
-}
-
-.buttons button {
-    background: transparent;
-    border: 1px solid;
-    font-family: var(--qud-font);
-    font-size: 1.2rem;
-    min-width: 15ch;
-}
-
-.buttons button:hover {
-    cursor: pointer;
-    background-color: var(--hover-darken);
-}
-
-.confirm-delete {
-    color: var(--strength-color);
-    border-color: var(--strength-color);
-}
-
-.cancel-delete {
-    color: var(--willpower-color);
-    border-color: var(--willpower-color);
 }
 
 @media only screen and (max-width: 580px) {

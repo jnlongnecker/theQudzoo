@@ -1,14 +1,16 @@
 <template>
     <div onclick={componentClicked}>
-        <button class="logout-btn" if:true={authenticated} onclick={logout}>Log Out</button>
+        <input-button size="large minimal" variant="subtle intelligence" if:true={authenticated} onclick={logout}>
+            Log Out
+        </input-button>
         <a href="/my-profile">
-            <button class="login-btn" if:true={authenticated}>
+            <input-button size="large minimal" variant="prominent mutant" if:true={authenticated}>
                 {displayName}
-            </button>
+            </input-button>
         </a>
-        <button class="login-btn" if:false={authenticated} onclick={loginDesired}>
+        <input-button size="large minimal" variant="prominent stat" if:false={authenticated} onclick={loginDesired}>
             {loginButtonText}
-        </button>
+        </input-button>
         <div class="popup" if:true={showPopup} onclick={cancelLogin}>
             <div class="container" if:false={authenticated} onclick={stopBubble}>
                 <form if:true={useLogin} method="post" onsubmit={login}>

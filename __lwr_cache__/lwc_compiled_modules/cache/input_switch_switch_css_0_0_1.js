@@ -1,0 +1,6 @@
+function stylesheet(useActualHostSelector, token) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  return ["input[type=\"checkbox\"]", shadowSelector, " {opacity: 0;left: 0;right: 0;top: 0;bottom: 0;margin: 0;z-index: 1;position: absolute;}input[type=\"checkbox\"]:hover", shadowSelector, " {cursor: pointer;}.switch:has(*:checked)", shadowSelector, " {--slider-color: var(--intelligence-color);}.switch", shadowSelector, " {--slider-color: var(--strength-color);--transition-time: 0.125s;width: 3rem;height: 1.5rem;display: inline-block;background-color: var(--slider-color);padding: 0;text-align: left;position: relative;padding: 0.25rem;border-radius: 25px;transition: var(--transition-time);}.slider-dot", shadowSelector, " {width: 100%;background-color: transparent;}.slider-dot", shadowSelector, ":before {content: \"\";height: 1.5rem;width: 1.5rem;background-color: white;border-radius: 50%;margin: 0;appearance: none;opacity: 1;transition: var(--transition-time);vertical-align: top;display: inline-block;}.slider-dot:hover", shadowSelector, " {cursor: pointer;}"].join('');
+}
+export default [stylesheet];

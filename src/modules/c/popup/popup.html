@@ -1,0 +1,15 @@
+<template>
+    <div class="popup-background" onclick={closePopup} if:true={show}>
+        <div class="popup-container" onclick={stopProp}>
+            <fieldset>
+                <legend>
+                    <slot name="header"></slot>
+                </legend>
+                <slot></slot>
+                <div class="buttons">
+                    <slot name="input"></slot>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</template>

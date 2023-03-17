@@ -7,6 +7,8 @@ export default class BuildLibrary extends LightningElement {
 
     builds = [];
 
+    ghostBuilds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
     @api
     mode = "copy"
 
@@ -18,6 +20,10 @@ export default class BuildLibrary extends LightningElement {
     set filters(newFilters) {
         this.filterStore = newFilters;
         this.fetchBuilds();
+    }
+
+    get noBuilds() {
+        return this.builds.length == 0;
     }
 
     async fetchBuilds() {

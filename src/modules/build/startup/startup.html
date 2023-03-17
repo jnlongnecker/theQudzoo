@@ -4,9 +4,10 @@
             <h2>:qudzoo build editor:</h2>
             <div class="half">
                 <div class="choices">
-                    <button aria-labelledby="create-label" class="create-new" onclick={createNew}>
+                    <input-button aria-labelledby="create-label" onclick={createNew} variant="willpower"
+                        animation="flicker" size="large thin">
                         Create New
-                    </button>
+                    </input-button>
                     <label id="create-label">Craft your megamind builds here</label>
                 </div>
                 <span></span>
@@ -15,12 +16,13 @@
             <div class="half">
                 <span></span>
                 <div class="choices">
-                    <button class="load-build" onclick={loadCode}>
+                    <input-button aria-labelledby="load-label" onclick={loadCode} variant="intelligence"
+                        animation="flicker" size="large thin">
                         Load Build Code
-                    </button>
+                    </input-button>
                     <input class="build-input" />
                     <p class="error" if:true={error}>{error}</p>
-                    <label>Or adjust one that's already been made</label>
+                    <label id="load-label">Or adjust one that's already been made</label>
                 </div>
             </div>
         </section>

@@ -1,4 +1,5 @@
 import { LightningElement, api } from "lwc";
+import { getMutations, getAttributes, getSkills, getStats } from "c/api";
 
 export default class SugarInjector extends LightningElement {
     skills;
@@ -17,34 +18,30 @@ export default class SugarInjector extends LightningElement {
     constructor() {
         super();
 
-        fetch("/api/mutations")
-            .then(result => result.json()
-                .then(data => {
-                    this.mutations = data;
-                    this.infoReady++;
-                    if (this.isReadyToHighlight()) this.highlightAll();
-                }));
-        fetch("/api/attributes")
-            .then(result => result.json()
-                .then(data => {
-                    this.attributes = data;
-                    this.infoReady++;
-                    if (this.isReadyToHighlight()) this.highlightAll();
-                }));
-        fetch("/api/skills")
-            .then(result => result.json()
-                .then(data => {
-                    this.skills = data;
-                    this.infoReady++;
-                    if (this.isReadyToHighlight()) this.highlightAll();
-                }));
-        fetch("/api/stats")
-            .then(result => result.json()
-                .then(data => {
-                    this.stats = data;
-                    this.infoReady++;
-                    if (this.isReadyToHighlight()) this.highlightAll();
-                }));
+        getMutations()
+            .then(data => {
+                this.mutations = data;
+                this.infoReady++;
+                if (this.isReadyToHighlight()) this.highlightAll();
+            });
+        getAttributes()
+            .then(data => {
+                this.attributes = data;
+                this.infoReady++;
+                if (this.isReadyToHighlight()) this.highlightAll();
+            });
+        getSkills()
+            .then(data => {
+                this.skills = data;
+                this.infoReady++;
+                if (this.isReadyToHighlight()) this.highlightAll();
+            });
+        getStats()
+            .then(data => {
+                this.stats = data;
+                this.infoReady++;
+                if (this.isReadyToHighlight()) this.highlightAll();
+            });
     }
 
     connectedCallback() {

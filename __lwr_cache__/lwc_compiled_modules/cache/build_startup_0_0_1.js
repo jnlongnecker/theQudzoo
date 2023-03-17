@@ -1,5 +1,6 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./startup.html";
+import { getBuilds } from "c/api";
 class BuilderStartup extends LightningElement {
   constructor() {
     super();
@@ -36,21 +37,10 @@ class BuilderStartup extends LightningElement {
     this.choiceConfirmed = true;
   }
   async loadBuildFromId(id) {
-    let headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    headers.append("filters", JSON.stringify({
+    let response = await getBuilds({
       _id: id
-    }));
-    let reqOptions = {
-      method: "GET",
-      headers: headers
-    };
-    let response = await fetch("/db/builds", reqOptions);
-    if (!response.ok) {
-      console.error(await response.text());
-      return;
-    }
-    this.startingBuild = (await response.json()).builds[0];
+    });
+    this.startingBuild = response.builds[0];
     this.choiceConfirmed = true;
   }
 }

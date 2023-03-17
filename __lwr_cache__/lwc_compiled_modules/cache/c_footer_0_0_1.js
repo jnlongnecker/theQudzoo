@@ -5,7 +5,7 @@ class Footer extends LightningElement {
     super(...args);
     this.linkGrid = void 0;
     this.allLinks = [{
-      label: "Official Website",
+      label: "Website",
       link: "https://www.cavesofqud.com/"
     }, {
       label: "Facebook",

@@ -155,10 +155,9 @@ exports.updateUser = async function (req, res) {
 }
 
 exports.getBuilds = async function (req, res) {
-    let filters = req.body.filters;
     let allBuilds;
 
-    filters = buildFiltersFromHeader(req);
+    let filters = buildFiltersFromQuery(req.params.info);
 
     try {
         allBuilds = await Build.find(filters,
@@ -265,8 +264,8 @@ async function buildExists(build) {
     return foundBuild != null;
 }
 
-function buildFiltersFromHeader(req) {
-    let headers = JSON.parse(req.headers.filters);
+function buildFiltersFromQuery(query) {
+    let headers = JSON.parse(decodeURIComponent(query));
 
     if (!headers) return {};
 

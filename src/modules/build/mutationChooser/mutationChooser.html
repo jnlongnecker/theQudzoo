@@ -1,19 +1,17 @@
 <template>
     <c-sugar-injector></c-sugar-injector>
-    <div class="variant-selector" if:true={selectingVariant}>
-        <fieldset>
-            <legend>:choose variant:</legend>
-            <ul class="insert-variant">
-                <template for:each={variantChoices} for:item="variant" for:index="i">
-                    <li key={variant}>
-                        <button class="v-button" i={i} onclick={variantChosen}>
-                            {variant}
-                        </button>
-                    </li>
-                </template>
-            </ul>
-        </fieldset>
-    </div>
+    <c-popup show={selectingVariant} onclose={cancelChoice}>
+        <span slot="header">:choose variant:</span>
+        <ul class="insert-variant">
+            <template for:each={variantChoices} for:item="variant" for:index="i">
+                <li key={variant}>
+                    <button class="v-button" i={i} onclick={variantChosen}>
+                        {variant}
+                    </button>
+                </li>
+            </template>
+        </ul>
+    </c-popup>
     <h2>:choose mutations:</h2>
     <section>
         <div class="mutations">
@@ -126,7 +124,7 @@
     </section>
     <div class="options">
         <span>Points Remaining: {points}</span>
-        <span><button onclick={randomizeChanges}>Randomize</button></span>
-        <span><button onclick={resetChanges}>Reset</button></span>
+        <span><input-button size="thin" variant="stat" onclick={randomizeChanges}>Randomize</input-button></span>
+        <span><input-button size="thin" variant="stat" onclick={resetChanges}>Reset</input-button></span>
     </div>
 </template>

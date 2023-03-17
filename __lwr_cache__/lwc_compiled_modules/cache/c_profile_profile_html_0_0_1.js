@@ -2,6 +2,7 @@ import _implicitStylesheets from "./profile.css";
 
 import _implicitScopedStylesheets from "./profile.scoped.css?scoped=true";
 
+import _inputText from "input/text";
 import _buildLibrary from "build/library";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
@@ -33,11 +34,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     }
   }, [!$cmp.editingName ? api_element("span", {
     key: 5
-  }, [api_text(api_dynamic_text($cmp.user.name))]) : null, $cmp.editingName ? api_element("input", {
-    classMap: {
-      "name-input": true
-    },
+  }, [api_text(api_dynamic_text($cmp.user.name))]) : null, $cmp.editingName ? api_custom_element("input-text", _inputText, {
     props: {
+      "variant": "skill",
       "value": $cmp.user.name
     },
     key: 6

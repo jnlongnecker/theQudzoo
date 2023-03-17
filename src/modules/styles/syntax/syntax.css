@@ -2,9 +2,9 @@ code {
     font-family: var(--qud-font);
 }
 
-.injected {
+/* .injected {
     white-space: nowrap;
-}
+} */
 
 .skill {
     font-family: var(--qud-font);

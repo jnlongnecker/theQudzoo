@@ -1,0 +1,13 @@
+<template>
+    <section>
+        <template if:true={linkGrid}>
+            <template for:each={linkGrid} for:item="rowLinks">
+                <div if:true={rowLinks} key={rowLinks.id} class="row">
+                    <template for:each={rowLinks.links} for:item="link">
+                        <advice-card key={link.link} info={link}></advice-card>
+                    </template>
+                </div>
+            </template>
+        </template>
+    </section>
+</template>

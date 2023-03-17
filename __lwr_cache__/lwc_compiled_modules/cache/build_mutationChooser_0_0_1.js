@@ -1,5 +1,6 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./mutationChooser.html";
+import { getMutations } from "c/api";
 class MutationChooser extends LightningElement {
   constructor() {
     super();
@@ -57,14 +58,11 @@ class MutationChooser extends LightningElement {
     if (!mp) return;
     this.points = mp;
   }
+  cancelChoice() {
+    this.selectingVariant = false;
+  }
   async fetchMutations() {
-    let req = new Request("/api/mutations");
-    const response = await fetch(req);
-    if (!response.ok) {
-      console.error(await response.text());
-      return;
-    }
-    let mutJson = await response.json();
+    let mutJson = await getMutations();
     this.mutations = mutJson.mutations;
     this.mutations.map(item => {
       item.class = "selectable";

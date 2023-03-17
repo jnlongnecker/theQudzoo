@@ -1,5 +1,6 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./casteChooser.html";
+import { getCastes } from "c/api";
 class CasteChooser extends LightningElement {
   constructor() {
     super();
@@ -95,13 +96,7 @@ class CasteChooser extends LightningElement {
     this.dispatchEvent(evt);
   }
   async fetchCasteInfo() {
-    let request = new Request("/api/castes");
-    let response = await fetch(request);
-    if (!response.ok) {
-      console.error(await response.text());
-      return;
-    }
-    let casteJson = await response.json();
+    let casteJson = await getCastes();
     this.castes = casteJson.castes;
     this.buildCasteDisplay();
   }

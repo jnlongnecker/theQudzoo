@@ -1,5 +1,6 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./cyberneticChooser.html";
+import { getCybernetics } from "c/api";
 class CyberneticChooser extends LightningElement {
   get cybs() {
     return [];
@@ -60,13 +61,7 @@ class CyberneticChooser extends LightningElement {
     this.sendPayload();
   }
   async fetchMutations() {
-    let req = new Request("/api/cybernetics");
-    const response = await fetch(req);
-    if (!response.ok) {
-      console.error(await response.text());
-      return;
-    }
-    let mutJson = await response.json();
+    let mutJson = await getCybernetics();
     let rawList = mutJson.cybernetics;
     this.rawCybernetics = [];
     for (let cyb of rawList) {

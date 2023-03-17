@@ -1,4 +1,5 @@
 import { LightningElement, api, track } from "lwc";
+import { getCallings } from "c/api";
 
 export default class CallingChooser extends LightningElement {
 
@@ -87,14 +88,7 @@ export default class CallingChooser extends LightningElement {
     }
 
     async fetchCallingInfo() {
-        let request = new Request("/api/callings");
-        let response = await fetch(request);
-        if (!response.ok) {
-            console.error(await response.text());
-            return;
-        }
-
-        let callingJson = await response.json();
+        let callingJson = await getCallings();
         this.callings = callingJson.callings;
     }
 }

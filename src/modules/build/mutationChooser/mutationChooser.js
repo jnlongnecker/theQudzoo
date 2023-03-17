@@ -1,4 +1,5 @@
 import { api, LightningElement, track } from "lwc";
+import { getMutations } from "c/api";
 
 export default class MutationChooser extends LightningElement {
 
@@ -77,15 +78,12 @@ export default class MutationChooser extends LightningElement {
         this.points = mp;
     }
 
-    async fetchMutations() {
-        let req = new Request("/api/mutations");
-        const response = await fetch(req);
-        if (!response.ok) {
-            console.error(await response.text());
-            return;
-        }
+    cancelChoice() {
+        this.selectingVariant = false;
+    }
 
-        let mutJson = await response.json();
+    async fetchMutations() {
+        let mutJson = await getMutations();
         this.mutations = mutJson.mutations;
         this.mutations.map(item => {
             item.class = "selectable";

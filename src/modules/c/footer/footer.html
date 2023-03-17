@@ -38,7 +38,7 @@
             <template for:each={linkGrid} for:item="rowLinks">
                 <div key={rowLinks.id} class="row">
                     <template for:each={rowLinks.links} for:item="link">
-                        <button key={link.link}><a href={link.link}>{link.label}</a></button>
+                        <a href={link.link} key={link.link}><input-button>{link.label}</input-button></a>
                     </template>
                 </div>
             </template>

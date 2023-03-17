@@ -1,6 +1,6 @@
 import { api, LightningElement, track } from "lwc";
 import { fetchBuildCodeForPayload, fetchJsonForBuildCode } from "build/buildCodeHandler";
-import { isLoggedIn } from "c/api";
+import { isLoggedIn, saveBuild } from "c/api";
 
 
 export default class Container extends LightningElement {
@@ -16,11 +16,6 @@ export default class Container extends LightningElement {
 
     @track
     sanitisedBuild;
-
-    clipboardPath = "M16 10c3.469 0 2 4 2 4s4-1.594 4 2v6h-10v-12h4zm.827-2h-6.827v16h14v-8.842c0-2.392-4.011-7.158-7.173-7.158zm-8.827 12h-6v-16h4l2.102 2h3.898l2-2h4v2.145c.656.143 1.327.391 2 .754v-4.899h-3c-1.229 0-2.18-1.084-3-2h-8c-.82.916-1.771 2-3 2h-3v20h8v-2zm2-18c.553 0 1 .448 1 1s-.447 1-1 1-1-.448-1-1 .447-1 1-1zm4 18h6v-1h-6v1zm0-2h6v-1h-6v1zm0-2h6v-1h-6v1z";
-    checkPath = "M9 22l-10-10.598 2.798-2.859 7.149 7.473 13.144-14.016 2.909 2.806z";
-
-    usePath = this.clipboardPath;
 
     @api
     get code() {
@@ -90,6 +85,12 @@ export default class Container extends LightningElement {
         return this.saveRequested ? "popup-background" : "in-build"
     }
 
+    get btnTitle() {
+        if (!this.codeAvailable) return 'You must have a build to save first.';
+        if (!this.isSaveable) return 'You must be logged in to save a build.';
+        return '';
+    }
+
     connectedCallback() {
         this.inputForCopying = document.createElement("input");
         isLoggedIn().then(result => {
@@ -151,37 +152,6 @@ export default class Container extends LightningElement {
         this.inputForCopying.select();
         this.inputForCopying.setSelectionRange(0, 99999);
         navigator.clipboard.writeText(this.inputForCopying.value);
-
-        event.currentTarget.firstChild.classList.remove("grow");
-        event.currentTarget.firstChild.classList.add("shrink");
-
-
-
-        let funcA = (ev) => {
-            if (ev.currentTarget.classList.contains("shrink")) {
-                ev.currentTarget.classList.remove("shrink");
-                ev.currentTarget.classList.add("grow");
-                this.usePath = this.checkPath;
-                return;
-            }
-
-            ev.currentTarget.removeEventListener("animationend", funcA);
-            var lastElem = ev.currentTarget;
-            setTimeout(() => {
-                lastElem.classList.remove("grow");
-                lastElem.classList.add("shrink");
-                let funcB = (evnt) => {
-                    evnt.currentTarget.classList.remove("shrink");
-                    evnt.currentTarget.classList.add("grow");
-                    this.usePath = this.clipboardPath;
-
-                    evnt.currentTarget.removeEventListener("animationend", funcB);
-                }
-                let el = lastElem.addEventListener("animationend", funcB);
-            }, 1000);
-        }
-
-        event.currentTarget.firstChild.addEventListener("animationend", funcA);
     }
 
     saveClick() {
@@ -197,23 +167,7 @@ export default class Container extends LightningElement {
         event.preventDefault();
         if (!this.buildCode) return;
 
-        let headers = new Headers();
-        headers.append("Content-Type", "application/json");
-        let rawBody = JSON.stringify(this.currBuild);
-
-        let reqOptions = {
-            method: "POST",
-            headers: headers,
-            body: rawBody,
-        }
-
-        let response = await fetch("/db/savebuild", reqOptions);
-
-        if (!response.ok) {
-            console.log(await response.text());
-        }
-
-        this.currBuild = JSON.parse((await response.json()).build);
+        this.currBuild = JSON.parse((await saveBuild(this.currBuild)).build);
         this.saveRequested = false;
     }
 

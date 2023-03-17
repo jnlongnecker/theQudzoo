@@ -9,26 +9,6 @@ h1 {
     font-size: 1.4rem;
 }
 
-input {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    border-bottom: 2px solid var(--skills-color);
-    color: var(--skills-color);
-    font-size: 1rem;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 0.4rem;
-}
-
-input:hover {
-    background-color: var(--hover-darken);
-}
-
-input:focus {
-    outline: 0;
-    background-color: var(--hover-darken);
-}
-
 .name {
     color: var(--skills-color);
 }

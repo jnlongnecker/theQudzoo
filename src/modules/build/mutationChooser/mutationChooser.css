@@ -42,26 +42,6 @@ ul {
     padding: 0;
 }
 
-.variant-selector {
-    position: absolute;
-    width: 30ch;
-    left: 150%;
-    top: 25%;
-    transform: translate(-50%, 0);
-    border: 5px solid var(--text-color-dark);
-    background-color: var(--bg-color-dark);
-    padding: 1.5rem;
-    z-index: 5;
-}
-
-.variant-selector fieldset {
-    padding: 0;
-}
-
-.variant-selector legend {
-    text-align: center;
-}
-
 .marker {
     display: inline-block;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;

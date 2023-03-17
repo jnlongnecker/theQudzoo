@@ -207,6 +207,7 @@ input[type="checkbox"]:checked + .slider-dot:before {
     display: grid;
     grid-template-columns: 5fr 1fr;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .code-and-name {
@@ -304,7 +305,7 @@ input[type="checkbox"]:checked + .slider-dot:before {
 .build-action button {
     height: 5rem;
     width: 5rem;
-    padding: 1rem;
+    padding: 0;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid var(--code-color);

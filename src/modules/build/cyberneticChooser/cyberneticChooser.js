@@ -1,4 +1,5 @@
 import { LightningElement, track, api } from "lwc";
+import { getCybernetics } from "c/api";
 
 export default class CyberneticChooser extends LightningElement {
 
@@ -80,14 +81,7 @@ export default class CyberneticChooser extends LightningElement {
     }
 
     async fetchMutations() {
-        let req = new Request("/api/cybernetics");
-        const response = await fetch(req);
-        if (!response.ok) {
-            console.error(await response.text());
-            return;
-        }
-
-        let mutJson = await response.json();
+        let mutJson = await getCybernetics();
         let rawList = mutJson.cybernetics;
         this.rawCybernetics = [];
         for (let cyb of rawList) {

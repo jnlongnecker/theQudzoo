@@ -2,18 +2,20 @@ import _implicitStylesheets from "./login.css";
 
 import _implicitScopedStylesheets from "./login.scoped.css?scoped=true";
 
+import _inputButton from "input/button";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {b: api_bind, t: api_text, h: api_element, d: api_dynamic_text, gid: api_scoped_id} = $api;
+  const {b: api_bind, t: api_text, c: api_custom_element, d: api_dynamic_text, h: api_element, gid: api_scoped_id} = $api;
   const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12} = $ctx;
   return [api_element("div", {
     key: 0,
     on: {
       "click": _m0 || ($ctx._m0 = api_bind($cmp.componentClicked))
     }
-  }, [$cmp.authenticated ? api_element("button", {
-    classMap: {
-      "logout-btn": true
+  }, [$cmp.authenticated ? api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large minimal",
+      "variant": "subtle intelligence"
     },
     key: 1,
     on: {
@@ -24,14 +26,16 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "href": "/my-profile"
     },
     key: 2
-  }, [$cmp.authenticated ? api_element("button", {
-    classMap: {
-      "login-btn": true
+  }, [$cmp.authenticated ? api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large minimal",
+      "variant": "prominent mutant"
     },
     key: 3
-  }, [api_text(api_dynamic_text($cmp.displayName))]) : null]), !$cmp.authenticated ? api_element("button", {
-    classMap: {
-      "login-btn": true
+  }, [api_text(api_dynamic_text($cmp.displayName))]) : null]), !$cmp.authenticated ? api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large minimal",
+      "variant": "prominent stat"
     },
     key: 4,
     on: {

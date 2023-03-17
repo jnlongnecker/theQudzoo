@@ -190,16 +190,13 @@ const go = async function () {
 const stringifyForEncoding = function (json) {
     let ret = JSON.stringify(json, null, 2);
     ret = ret.replace(/\n/g, "\r\n");
-    return ret;
+    return encodeURIComponent(ret);
 }
 
 const fetchJsonForBuildCode = async function (buildCode) {
     if (!buildCode) return;
 
-    let req = new Request(`/api/codes?` + new URLSearchParams({
-        method: "parse",
-        value: buildCode
-    }));
+    let req = new Request(`/api/codes/parse/` + encodeURIComponent(buildCode));
     let response = await fetch(req);
     if (!response.ok) {
         console.log(await response.text());
@@ -237,10 +234,7 @@ const fetchBuildCodeForPayload = async function (payload) {
 }
 
 const fetchBuildCodeForJson = async function (json) {
-    let req = new Request(`/api/codes?` + new URLSearchParams({
-        method: "build",
-        value: stringifyForEncoding(json)
-    }));
+    let req = new Request(`/api/codes/serialize/` + stringifyForEncoding(json));
     let response = await fetch(req);
     if (!response.ok) {
         console.log(await response.text());

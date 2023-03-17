@@ -29,8 +29,9 @@ class Profile extends LightningElement {
     this.editingName = true;
   }
   endEdit() {
+    if (!this.editingName) return;
+    this.nameInput = this.template.querySelector('input-text');
     this.editingName = false;
-    this.nameInput = this.template.querySelector('input');
     this.user.name = this.nameInput.value;
     this.saveUser();
   }

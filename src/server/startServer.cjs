@@ -6,6 +6,8 @@ const api = require("./api.cjs");
 const dbs = require("./dbs.cjs");
 
 const lwrServer = lwr.createServer();
+const longCache = 60 * 60;
+const shortCache = 60 * 5;
 
 const app = lwrServer.getInternalServer("express");
 app.use(session({
@@ -22,7 +24,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 dbs.dbConnect();
 
 app.get("/api/:info", (req, res) => {
+    res.set("Cache-control", `public, max-age=${longCache}`);
     api.processRequest(res, req).then(result => res.json(result));
+});
+app.get("/api/codes/serialize/:info", (req, res) => {
+    res.set("Cache-control", `public, max-age=${longCache}`);
+    api.processBuildRequest(res, req, 'serialize').then(result => res.json(result));
+});
+app.get("/api/codes/parse/:info", (req, res) => {
+    res.set("Cache-control", `public, max-age=${longCache}`);
+    api.processBuildRequest(res, req, 'parse').then(result => res.json(result));
 });
 app.post("/db/login", (req, res) => {
     return dbs.validateLogin(req, res).then(result => {
@@ -53,7 +64,7 @@ app.get("/db/authenticated", (req, res) => {
 app.get("/db/login", (req, res) => {
     res.json({ user: req.session.user });
 });
-app.get("/db/builds", (req, res) => {
+app.get("/db/builds/:info", (req, res) => {
     return dbs.getBuilds(req, res).then(result => res.json(result));
 });
 app.delete("/db/builds", (req, res) => {

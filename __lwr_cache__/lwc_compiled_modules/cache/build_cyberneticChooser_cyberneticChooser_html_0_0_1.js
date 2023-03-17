@@ -3,6 +3,7 @@ import _implicitStylesheets from "./cyberneticChooser.css";
 import _implicitScopedStylesheets from "./cyberneticChooser.scoped.css?scoped=true";
 
 import _cSugarInjector from "c/sugarInjector";
+import _inputButton from "input/button";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {c: api_custom_element, t: api_text, h: api_element, k: api_key, b: api_bind, d: api_dynamic_text, i: api_iterator} = $api;
@@ -125,14 +126,22 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 23
   }, [api_element("span", {
     key: 24
-  }, [api_element("button", {
+  }, [api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "thin",
+      "variant": "stat"
+    },
     key: 25,
     on: {
       "click": _m4 || ($ctx._m4 = api_bind($cmp.randomizeChanges))
     }
   }, [api_text("Randomize")])]), api_element("span", {
     key: 26
-  }, [api_element("button", {
+  }, [api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "thin",
+      "variant": "stat"
+    },
     key: 27,
     on: {
       "click": _m5 || ($ctx._m5 = api_bind($cmp.resetChanges))

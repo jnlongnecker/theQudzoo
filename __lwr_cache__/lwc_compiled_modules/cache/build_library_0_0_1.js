@@ -6,6 +6,7 @@ class BuildLibrary extends LightningElement {
     super(...args);
     this.filterStore = void 0;
     this.builds = [];
+    this.ghostBuilds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     this.mode = "copy";
   }
   get filters() {
@@ -14,6 +15,9 @@ class BuildLibrary extends LightningElement {
   set filters(newFilters) {
     this.filterStore = newFilters;
     this.fetchBuilds();
+  }
+  get noBuilds() {
+    return this.builds.length == 0;
   }
   async fetchBuilds() {
     let response = await getBuilds(this.filters);
@@ -33,7 +37,7 @@ _registerDecorators(BuildLibrary, {
       config: 3
     }
   },
-  fields: ["filterStore", "builds"]
+  fields: ["filterStore", "builds", "ghostBuilds"]
 });
 export default _registerComponent(BuildLibrary, {
   tmpl: _tmpl

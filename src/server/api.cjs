@@ -8,11 +8,29 @@ exports.setApp = (lwrApp) => {
     app = lwrApp;
 }
 
+exports.processBuildRequest = async (res, req, method) => {
+    try {
+        let response;
+        let val = req.params.info;
+        if (method == "parse") {
+            response = codeManager.codeToJSON(decodeURIComponent(val));
+        }
+        else if (method == "serialize") {
+            response = codeManager.jsonToCode(decodeURIComponent(val));
+        }
+        return response;
+    }
+    catch (e) {
+        res.status(500);
+        console.log(exception);
+        return { error: exception };
+    }
+}
+
 exports.processRequest = async (res, req) => {
     try {
         let response;
         let path = req.params.info;
-        let query = req.query;
         switch (path) {
             case "articles":
                 response = await getArticlesPayload();
@@ -31,22 +49,6 @@ exports.processRequest = async (res, req) => {
             case "cybernetics":
                 response = await getData(path);
                 res.status(200);
-                return response;
-            case "codes":
-                if (!query || !query.value) {
-                    res.status(400);
-                    return { error: "No query supplied" };
-                }
-                if (query.method == "parse") {
-                    response = codeManager.codeToJSON(decodeURIComponent(query.value));
-                }
-                else if (query.method == "build") {
-                    response = codeManager.jsonToCode(decodeURIComponent(query.value));
-                }
-                else {
-                    res.status(400);
-                    throw "Error: Invalid method supplied.";
-                }
                 return response;
             default:
                 res.status(400);

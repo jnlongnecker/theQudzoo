@@ -1,4 +1,5 @@
 import { api, LightningElement, track } from "lwc";
+import { getCastes } from "c/api";
 
 export default class CasteChooser extends LightningElement {
 
@@ -120,14 +121,7 @@ export default class CasteChooser extends LightningElement {
     }
 
     async fetchCasteInfo() {
-        let request = new Request("/api/castes");
-        let response = await fetch(request);
-        if (!response.ok) {
-            console.error(await response.text());
-            return;
-        }
-
-        let casteJson = await response.json();
+        let casteJson = await getCastes();
         this.castes = casteJson.castes;
         this.buildCasteDisplay();
     }

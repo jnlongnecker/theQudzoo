@@ -2,9 +2,10 @@ import _implicitStylesheets from "./footer.css";
 
 import _implicitScopedStylesheets from "./footer.scoped.css?scoped=true";
 
+import _inputButton from "input/button";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {t: api_text, h: api_element, k: api_key, d: api_dynamic_text, i: api_iterator, f: api_flatten} = $api;
+  const {t: api_text, h: api_element, k: api_key, d: api_dynamic_text, c: api_custom_element, i: api_iterator, f: api_flatten} = $api;
   return [api_element("footer", {
     key: 0
   }, [api_element("section", {
@@ -112,12 +113,12 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       },
       key: api_key(22, rowLinks.id)
     }, api_iterator(rowLinks.links, function (link) {
-      return api_element("button", {
-        key: api_key(23, link.link)
-      }, [api_element("a", {
+      return api_element("a", {
         attrs: {
           "href": link.link
         },
+        key: api_key(23, link.link)
+      }, [api_custom_element("input-button", _inputButton, {
         key: 24
       }, [api_text(api_dynamic_text(link.label))])]);
     }));

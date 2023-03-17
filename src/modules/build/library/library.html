@@ -1,5 +1,8 @@
 <template>
     <section>
+        <template if:true={noBuilds} for:each={ghostBuilds} for:item="ghost">
+            <build-ghost-box key={ghost}></build-ghost-box>
+        </template>
         <template for:each={builds} for:item="build">
             <build-card mode={mode} build={build} key={build.code}></build-card>
         </template>

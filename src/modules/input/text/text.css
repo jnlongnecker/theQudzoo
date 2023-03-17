@@ -1,0 +1,63 @@
+:host {
+    --color: var(--text-color);
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-bottom: 2px solid var(--color);
+    color: var(--color);
+    font-size: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0.4rem;
+}
+
+input:hover {
+    background-color: var(--hover-darken);
+}
+
+input:focus {
+    outline: 0;
+    background-color: var(--hover-darken);
+}
+
+.mutant {
+    --color: var(--mutation-color);
+}
+
+.true-kin {
+    --color: var(--cybernetic-color);
+}
+
+.skill {
+    --color: var(--skills-color);
+}
+
+.stat {
+    --color: var(--stat-color);
+}
+
+.strength {
+    --color: var(--strength-color);
+}
+
+.agility {
+    --color: var(--agility-color);
+}
+
+.toughness {
+    --color: var(--toughness-color);
+}
+
+.willpower {
+    --color: var(--willpower-color);
+}
+
+.intelligence {
+    --color: var(--intelligence-color);
+}
+
+.ego {
+    --color: var(--ego-color);
+}
