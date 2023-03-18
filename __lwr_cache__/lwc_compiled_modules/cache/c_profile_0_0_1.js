@@ -18,11 +18,12 @@ class Profile extends LightningElement {
   }
   async fetchUser() {
     let response = await fetch("/db/authenticated");
-    if (!response.ok) {
+    let u = await response.json();
+    if (!response.ok || !u.username) {
       console.log("User not authenticated");
       window.location.replace("/");
     }
-    this.user = await response.json();
+    this.user = u;
   }
   allowEdit(event) {
     event.stopPropagation();
