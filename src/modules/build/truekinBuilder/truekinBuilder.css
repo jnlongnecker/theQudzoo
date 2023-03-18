@@ -14,7 +14,14 @@ section {
     color: var(--stat-color);
     font-size: 1.5rem;
     border: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+.next *,
+.previous * {
+    margin: 0;
+    padding: 0;
 }
 
 .next[disabled],
