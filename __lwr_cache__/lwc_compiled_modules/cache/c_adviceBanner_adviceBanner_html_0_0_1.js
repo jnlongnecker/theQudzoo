@@ -2,6 +2,7 @@ import _implicitStylesheets from "./adviceBanner.css";
 
 import _implicitScopedStylesheets from "./adviceBanner.scoped.css?scoped=true";
 
+import _inputButton from "input/button";
 import _adviceHub from "advice/hub";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
@@ -22,7 +23,10 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "href": "/builds"
     },
     key: 4
-  }, [api_element("button", {
+  }, [api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large thin"
+    },
     key: 5
   }, [api_text("Take Me There")])])]), api_element("section", {
     key: 6

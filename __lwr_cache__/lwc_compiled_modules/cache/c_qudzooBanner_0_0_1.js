@@ -4,7 +4,7 @@ class QudzooBanner extends LightningElement {
   constructor(...args) {
     super(...args);
     this.imageSrc = void 0;
-    this.textOptions = ["caves_of_qud_guides", "mutation_overviews", "skill_breakdowns", "story_quest_walkthroughs", "demystifying_qud", "snapjaw_zero_to_chrome_hero"];
+    this.textOptions = ["caves_of_qud_guides", "mutation_overviews", "skill_breakdowns", "story_quest_walkthroughs", "demystifying_qud", "snapjaw_zero_to_chrome_hero", "qud_builds"];
     this.chanceToSkipFrame = 0.3;
     this.pathText = void 0;
     this.textChoice = void 0;

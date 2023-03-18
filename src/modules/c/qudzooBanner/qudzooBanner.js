@@ -11,7 +11,8 @@ export default class QudzooBanner extends LightningElement {
         "skill_breakdowns",
         "story_quest_walkthroughs",
         "demystifying_qud",
-        "snapjaw_zero_to_chrome_hero"
+        "snapjaw_zero_to_chrome_hero",
+        "qud_builds",
     ];
 
     chanceToSkipFrame = 0.3;

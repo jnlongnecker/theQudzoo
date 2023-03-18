@@ -35,6 +35,8 @@ p {
     font-size: 2.2rem;
     text-overflow: ellipsis;
     overflow: hidden;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 img {
@@ -61,7 +63,6 @@ img {
     padding-left: 20vw;
 }
 
-
 .blinker {
     animation: blink forwards infinite 2s;
 }
@@ -85,12 +86,11 @@ img {
     }
 
     div {
-        width:fit-content;
+        width: fit-content;
     }
 }
 
 @media only screen and (max-width: 900px) {
-    
     .banner {
         padding: 0 var(--mobile-margin-size);
     }
@@ -98,5 +98,4 @@ img {
     .blurb {
         padding: 0 var(--mobile-margin-size);
     }
-
 }
