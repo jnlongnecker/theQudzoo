@@ -2,12 +2,6 @@
     --offset: 0;
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 0;
-}
-
 .next,
 .previous {
     height: 100%;
@@ -16,6 +10,7 @@
     color: var(--stat-color);
     font-size: 1.5rem;
     border: 0;
+    box-sizing: border-box;
 }
 
 .next:hover,
@@ -33,14 +28,6 @@
 .previous[disabled]:hover {
     background-color: transparent;
     cursor: default;
-}
-
-.next {
-    content: ">";
-}
-
-.previous {
-    content: "<";
 }
 
 .builder-container {
