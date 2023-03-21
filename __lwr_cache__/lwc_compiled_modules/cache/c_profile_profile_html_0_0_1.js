@@ -36,7 +36,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 5
   }, [api_text(api_dynamic_text($cmp.user.name))]) : null, $cmp.editingName ? api_custom_element("input-text", _inputText, {
     props: {
-      "variant": "skill",
+      "variant": "stat",
       "value": $cmp.user.name
     },
     key: 6
@@ -58,15 +58,32 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 8,
     svg: true
-  }, [])])])])]) : null, api_element("hr", {
+  }, [])])])]), api_element("p", {
     key: 9
+  }, [api_element("span", {
+    classMap: {
+      "info-bubble": true
+    },
+    attrs: {
+      "title": "info"
+    },
+    key: 10
+  }, [api_text("i")]), api_element("span", {
+    key: 11
+  }, [api_text("Your "), api_element("span", {
+    classMap: {
+      "stat": true
+    },
+    key: 12
+  }, [api_text("display name")]), api_text(" will display on builds you make public. Don't put any personal information!")])])]) : null, api_element("hr", {
+    key: 13
   }, []), $cmp.userExists ? api_custom_element("build-library", _buildLibrary, {
     props: {
       "headerText": "My Builds",
       "mode": "delete",
       "filters": $cmp.libraryFilters
     },
-    key: 10
+    key: 14
   }, []) : null];
 }
 export default registerTemplate(tmpl);

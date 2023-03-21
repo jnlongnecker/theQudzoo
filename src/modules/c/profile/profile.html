@@ -5,7 +5,7 @@
                 <span if:false={editingName}>
                     {user.name}
                 </span>
-                <input-text variant="skill" if:true={editingName} value={user.name}></input-text>
+                <input-text variant="stat" if:true={editingName} value={user.name}></input-text>
                 <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -14,6 +14,13 @@
                 </svg>
             </span>
         </h1>
+        <p>
+            <span class="info-bubble" title="info">i</span>
+            <span>
+                Your <span class="stat">display name</span> will display on builds you make public. Don't put any
+                personal information!
+            </span>
+        </p>
     </section>
     <hr />
     <build-library header-text="My Builds" if:true={userExists} mode="delete" filters={libraryFilters}></build-library>
