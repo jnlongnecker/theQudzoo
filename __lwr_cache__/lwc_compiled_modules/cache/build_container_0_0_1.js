@@ -78,6 +78,9 @@ class Container extends LightningElement {
   }
   tabSwitch(event) {
     let selectedAttribute = document.createAttribute("selected");
+    this.currBuild = {
+      ...this.currBuild
+    };
     if (event.currentTarget.textContent == "Mutants") {
       this.mutantSelected = true;
       event.currentTarget.setAttributeNode(selectedAttribute);
