@@ -258,6 +258,7 @@ exports.updateBuild = async function (req, res) {
 
     for (let key in rawBuild) {
         if (rawBuild[key] === undefined || rawBuild[key] === null) continue;
+        if (key == 'owner') continue;
         if (key == 'created' || key == 'likes') continue;
 
         updatedBuild[key] = rawBuild[key];
