@@ -3,7 +3,7 @@ import { LightningElement, api } from "lwc";
 export default class Text extends LightningElement {
 
     @api
-    value;
+    value = '';
 
     @api
     variant;
@@ -14,5 +14,6 @@ export default class Text extends LightningElement {
 
     updateValue(event) {
         this.value = event.target.value;
+        this.dispatchEvent(new CustomEvent('change', { detail: this.value }));
     }
 }

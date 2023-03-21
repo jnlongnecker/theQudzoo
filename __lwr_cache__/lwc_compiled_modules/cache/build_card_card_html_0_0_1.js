@@ -9,7 +9,7 @@ import _inputIcon from "input/icon";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {c: api_custom_element, b: api_bind, d: api_dynamic_text, t: api_text, h: api_element, k: api_key, i: api_iterator} = $api;
-  const {_m0, _m1, _m2, _m3, _m4} = $ctx;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6} = $ctx;
   return [api_custom_element("c-sugar-injector", _cSugarInjector, {
     key: 0
   }, []), $cmp.buildInfo ? api_custom_element("c-popup", _cPopup, {
@@ -93,72 +93,84 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 14
   }, [api_text(api_dynamic_text($cmp.buildName)), $cmp.hasOwner ? api_element("span", {
     key: 15
-  }, [api_text(" by " + api_dynamic_text($cmp.displayName))]) : null]), $cmp.deletable ? api_element("button", {
+  }, [api_text(" by "), api_element("span", {
+    classMap: {
+      "name": true
+    },
+    key: 16
+  }, [api_text(api_dynamic_text($cmp.displayName))])]) : null]), $cmp.copyable ? api_element("button", {
     classMap: {
       "delete": true
     },
-    key: 16,
+    key: 17,
     on: {
-      "click": _m4 || ($ctx._m4 = api_bind($cmp.promptDelete))
+      "click": _m4 || ($ctx._m4 = api_bind($cmp.promptRightButtonClick))
     }
-  }, [api_custom_element("input-icon", _inputIcon, {
+  }, [$cmp.deletable ? api_custom_element("input-icon", _inputIcon, {
     props: {
       "variant": "delete",
       "title": "Delete Build",
       "padding": "large"
     },
-    key: 17
-  }, [])]) : null]), api_element("div", {
+    key: 18
+  }, []) : null, $cmp.onlyCopyable ? api_custom_element("input-icon", _inputIcon, {
+    props: {
+      "variant": "puzzle",
+      "title": "Remix Build",
+      "padding": "large"
+    },
+    key: 19
+  }, []) : null]) : null]), api_element("div", {
     classMap: {
       "grid": true
     },
-    key: 18
+    key: 20
   }, [api_element("div", {
     classMap: {
       "attributes": true
     },
-    key: 19
-  }, [api_element("fieldset", {
-    key: 20
-  }, [api_element("legend", {
     key: 21
-  }, [api_text("Attributes")]), api_element("ul", {
+  }, [api_element("fieldset", {
     key: 22
+  }, [api_element("legend", {
+    key: 23
+  }, [api_text("Attributes")]), api_element("ul", {
+    key: 24
   }, api_iterator($cmp.attributes, function (attribute) {
     return api_element("li", {
       className: attribute.class,
-      key: api_key(23, attribute.class)
+      key: api_key(25, attribute.class)
     }, [api_element("span", {
-      key: 24
+      key: 26
     }, [api_text(api_dynamic_text(attribute.name))]), api_element("span", {
-      key: 25
+      key: 27
     }, [api_text(api_dynamic_text(attribute.value))])]);
   }))])]), api_element("div", {
     classMap: {
       "char-info": true
     },
-    key: 26
+    key: 28
   }, [api_element("img", {
     attrs: {
       "src": $cmp.subtypeImg
     },
-    key: 27
+    key: 29
   }, []), api_element("p", {
-    key: 28
+    key: 30
   }, [api_text(api_dynamic_text($cmp.subtypeName))]), api_element("p", {
     classMap: {
       "char-name": true
     },
-    key: 29
+    key: 31
   }, [api_text(api_dynamic_text($cmp.characterName))])]), api_element("div", {
     classMap: {
       "mutations": true
     },
-    key: 30
-  }, [api_element("fieldset", {
-    key: 31
-  }, [api_element("legend", {
     key: 32
+  }, [api_element("fieldset", {
+    key: 33
+  }, [api_element("legend", {
+    key: 34
   }, [api_text(api_dynamic_text($cmp.bonus))]), api_element("ul", {
     classMap: {
       "mutation-list": true
@@ -168,8 +180,73 @@ function tmpl($api, $cmp, $slotset, $ctx) {
         dom: "manual"
       }
     },
-    key: 33
-  }, [])])])])])]) : null];
+    key: 35
+  }, [])])])]), $cmp.copyable ? api_element("div", {
+    classMap: {
+      "footer": true
+    },
+    key: 36,
+    on: {
+      "click": _m5 || ($ctx._m5 = api_bind($cmp.stopBubble))
+    }
+  }, [api_element("div", {
+    classMap: {
+      "footer-item": true,
+      "updated": true
+    },
+    attrs: {
+      "title": "Last Updated"
+    },
+    key: 37
+  }, [api_custom_element("input-icon", _inputIcon, {
+    props: {
+      "variant": "refresh",
+      "size": "big"
+    },
+    key: 38
+  }, []), api_element("span", {
+    key: 39
+  }, [api_text(api_dynamic_text($cmp.lastUpdated))])]), api_element("div", {
+    classMap: {
+      "footer-item": true,
+      "likes": true
+    },
+    attrs: {
+      "title": "Likes"
+    },
+    key: 40
+  }, [api_element("span", {
+    className: $cmp.likeClass,
+    key: 41
+  }, [api_custom_element("input-icon", _inputIcon, {
+    props: {
+      "variant": "like",
+      "size": "big"
+    },
+    key: 42,
+    on: {
+      "click": _m6 || ($ctx._m6 = api_bind($cmp.likeMyBuild))
+    }
+  }, [])]), api_element("span", {
+    key: 43
+  }, [api_text(api_dynamic_text($cmp.likes))])]), api_element("div", {
+    classMap: {
+      "footer-item": true,
+      "created": true
+    },
+    attrs: {
+      "title": "Created Date"
+    },
+    key: 44
+  }, [api_custom_element("input-icon", _inputIcon, {
+    props: {
+      "variant": "save",
+      "size": "big"
+    },
+    key: 45
+  }, []), api_element("span", {
+    key: 46
+  }, [api_text(api_dynamic_text($cmp.created))])])]) : null])]) : null];
 }
 export default registerTemplate(tmpl);
 tmpl.stylesheets = [];

@@ -49,6 +49,10 @@ a {
     color: var(--text-color);
 }
 
+.name {
+    white-space: nowrap;
+}
+
 .mutant {
     --code-color: var(--mutation-color);
 }
@@ -68,6 +72,8 @@ a {
     border-radius: 5px;
     font-family: var(--qud-font);
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
@@ -81,6 +87,7 @@ a {
 }
 
 .grid {
+    flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -126,6 +133,46 @@ a {
 .header {
     display: grid;
     grid-template-columns: 3rem minmax(0, 1fr) 3rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--code-color);
+}
+
+.footer:hover {
+    cursor: default;
+}
+
+.footer-item {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.updated {
+    fill: var(--ego-color);
+}
+
+.user-liked {
+    fill: var(--willpower-color);
+}
+
+.user-not-liked {
+    fill: transparent;
+    stroke: var(--willpower-color);
+    stroke-width: 1px;
+}
+
+.likes:hover {
+    cursor: pointer;
+    background-color: var(--hover-darken);
+}
+
+.created {
+    fill: var(--stat-color);
 }
 
 @media only screen and (max-width: 580px) {

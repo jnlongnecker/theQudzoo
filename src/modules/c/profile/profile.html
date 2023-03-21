@@ -14,8 +14,7 @@
                 </svg>
             </span>
         </h1>
-        <hr />
-        <h2>My Library</h2>
-        <build-library mode="delete" filters={libraryFilters}></build-library>
     </section>
+    <hr />
+    <build-library header-text="My Builds" if:true={userExists} mode="delete" filters={libraryFilters}></build-library>
 </template>

@@ -11,6 +11,7 @@ input {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 0.4rem;
+    max-width: 100%;
 }
 
 input:hover {

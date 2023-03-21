@@ -17,14 +17,9 @@
                                     <label class="major-label">:build name:</label>
                                     <input class="name-input" value={buildName} onchange={updateBuildName} />
                                     <label class="major-label">:build accessibility:</label>
-                                    <div class="privacy">
-                                        <label>private</label>
-                                        <span class="switch">
-                                            <input type="checkbox" checked={isPublic} onclick={updateAccessibility} />
-                                            <span class="slider-dot"></span>
-                                        </span>
-                                        <label>public</label>
-                                    </div>
+                                    <input-switch left="private" right="public" uncheckcolor="strength"
+                                        checkcolor="intelligence" checked={isPublic}
+                                        onswitch={updateAccessibility}></input-switch>
                                     <div class="btns">
                                         <input-button size="large" variant="toughness" if:true={saveRequested}
                                             onclick={saveCancel}>Cancel</input-button>
@@ -46,14 +41,9 @@
                                     <label class="major-label">:build name:</label>
                                     <input class="name-input" value={buildName} onchange={updateBuildName} />
                                     <label class="major-label">:build accessibility:</label>
-                                    <div class="privacy">
-                                        <label>private</label>
-                                        <span class="switch">
-                                            <input type="checkbox" checked={isPublic} onclick={updateAccessibility} />
-                                            <span class="slider-dot"></span>
-                                        </span>
-                                        <label>public</label>
-                                    </div>
+                                    <input-switch left="private" right="public" uncheckcolor="strength"
+                                        checkcolor="intelligence" checked={isPublic}
+                                        onswitch={updateAccessibility}></input-switch>
                                     <div class="btns">
                                         <input-button size="large" variant="toughness" if:true={saveRequested}
                                             onclick={saveCancel}>Cancel</input-button>

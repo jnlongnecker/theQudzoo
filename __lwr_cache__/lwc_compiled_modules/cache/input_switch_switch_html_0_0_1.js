@@ -4,26 +4,37 @@ import _implicitScopedStylesheets from "./switch.scoped.css?scoped=true";
 
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {h: api_element} = $api;
-  return [api_element("span", {
+  const {d: api_dynamic_text, t: api_text, h: api_element, b: api_bind} = $api;
+  const {_m0} = $ctx;
+  return [api_element("div", {
+    className: $cmp.containerClass,
+    key: 0
+  }, [api_element("label", {
+    key: 1
+  }, [api_text(api_dynamic_text($cmp.left))]), api_element("span", {
     classMap: {
       "switch": true
     },
-    key: 0
+    key: 2
   }, [api_element("input", {
     attrs: {
       "type": "checkbox"
     },
     props: {
-      "checked": $cmp.checked
+      "checked": $cmp.internalValue
     },
-    key: 1
+    key: 3,
+    on: {
+      "click": _m0 || ($ctx._m0 = api_bind($cmp.notifyChange))
+    }
   }, []), api_element("span", {
     classMap: {
       "slider-dot": true
     },
-    key: 2
-  }, [])])];
+    key: 4
+  }, [])]), api_element("label", {
+    key: 5
+  }, [api_text(api_dynamic_text($cmp.right))])])];
 }
 export default registerTemplate(tmpl);
 tmpl.stylesheets = [];

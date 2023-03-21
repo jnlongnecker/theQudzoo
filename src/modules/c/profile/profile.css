@@ -1,5 +1,6 @@
 section {
-    padding: 0 var(--desktop-margin-size);
+    padding: 1.5rem var(--desktop-margin-size);
+    background-color: rgb(25, 25, 25);
 }
 
 h1 {
@@ -7,10 +8,23 @@ h1 {
     gap: 0.5ch;
     font-weight: 500;
     font-size: 1.4rem;
+    flex-wrap: wrap;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        var(--cybernetic-color),
+        var(--mutation-color)
+    );
+    margin: 0;
 }
 
 .name {
     color: var(--skills-color);
+    white-space: nowrap;
 }
 
 .edit-name {

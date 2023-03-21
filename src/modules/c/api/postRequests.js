@@ -68,4 +68,24 @@ async function saveBuild(build) {
     return await response.json();
 }
 
-export { attemptLogin, attemptRegister, logout, saveBuild };
+async function likeBuild(build) {
+    let headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    let rawBody = JSON.stringify(build);
+
+    let reqOptions = {
+        method: "POST",
+        headers: headers,
+        body: rawBody,
+    }
+
+    let response = await fetch("/db/likebuild", reqOptions);
+
+    if (!response.ok) {
+        console.log(await response.text());
+    }
+
+    return await response.json();
+}
+
+export { attemptLogin, attemptRegister, logout, saveBuild, likeBuild };

@@ -1,6 +1,10 @@
 <template>
-    <span class="switch">
-        <input type="checkbox" checked={checked} />
-        <span class="slider-dot"></span>
-    </span>
+    <div class={containerClass}>
+        <label>{left}</label>
+        <span class="switch">
+            <input type="checkbox" checked={internalValue} onclick={notifyChange} />
+            <span class="slider-dot"></span>
+        </span>
+        <label>{right}</label>
+    </div>
 </template>

@@ -13,7 +13,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 0,
     on: {
-      "keydown": _m0 || ($ctx._m0 = api_bind($cmp.updateValue)),
+      "keyup": _m0 || ($ctx._m0 = api_bind($cmp.updateValue)),
       "change": _m1 || ($ctx._m1 = api_bind($cmp.updateValue))
     }
   }, [])];

@@ -1,0 +1,14 @@
+<template>
+    <div class="container">
+        <span class="chosen" onclick={startChoosing} onkeydown={startChoosing} tabindex="0">
+            {chosen}
+            <input-icon variant="dropdown" size="normal"></input-icon>
+        </span>
+        <div class="option-list" if:true={choosing}>
+            <template for:each={choices} for:item="item">
+                <span class="option" key={item} value={item} onclick={makeChoice} onkeydown={makeChoice}
+                    tabindex="0">{item}</span>
+            </template>
+        </div>
+    </div>
+</template>

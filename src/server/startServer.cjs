@@ -65,6 +65,7 @@ app.get("/db/login", (req, res) => {
     res.json({ user: req.session.user });
 });
 app.get("/db/builds/:info", (req, res) => {
+    res.set("Cache-control", `no-cache`);
     return dbs.getBuilds(req, res).then(result => res.json(result));
 });
 app.delete("/db/builds", (req, res) => {
@@ -92,6 +93,13 @@ app.post("/db/savebuild", async (req, res) => {
     }
 
     let response = await dbs.saveBuild(req, res);
+    res.json(response);
+});
+app.post("/db/likebuild", async (req, res) => {
+    if (!req.session || !req.session.user) {
+        return { message: "Must be logged in to like builds" };
+    }
+    let response = await dbs.toggleLike(req, res);
     res.json(response);
 })
 let mode = "dev";

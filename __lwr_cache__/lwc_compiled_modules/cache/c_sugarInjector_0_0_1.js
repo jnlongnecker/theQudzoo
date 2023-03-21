@@ -54,6 +54,7 @@ class SugarInjector extends LightningElement {
     }
   }
   highlightText(text) {
+    if (!text) return text;
     text = this.highlightMutations(text);
     text = this.highlightAttributes(text);
     text = this.highlightSkills(text);
@@ -103,14 +104,31 @@ class SugarInjector extends LightningElement {
     }
     return textDocument;
   }
+
+  // This is awful and needs refactor to get around stupid safari and no negataive lookbehind
   highlightMutations(textDocument) {
     let suffix = "</span></span>";
     for (let mutation of this.mutations.mutations) {
+      if (!textDocument.includes(mutation.name)) continue;
       let prefix = `<span class="injected"><span><img class="inline-icon" src="${mutation.src}" /></span><span class="mutation">`;
       let tempSuffix = mutation.cost < 0 ? `</span><code>(<span class="defect">D</span>)</code></span>` : suffix;
-      const regex = this.buildRegexFromName(mutation.name);
-      textDocument = textDocument.replace(regex, `${prefix}${mutation.name}${tempSuffix}`);
+      //const regex = this.buildRegexFromName(mutation.name);
+      const parts = textDocument.split(mutation.name);
+      let newDoc = '';
+      for (let i = 0; i < parts.length; i++) {
+        let part = parts[i];
+        newDoc += part;
+        if (i == parts.length - 1) continue;
+        if (part.endsWith('<span class="mutation">')) {
+          newDoc += mutation.name;
+        } else {
+          newDoc += `${prefix}${mutation.name}${tempSuffix}`;
+        }
+      }
+      textDocument = newDoc;
+      //textDocument = textDocument.replace(regex, `${prefix}${mutation.name}${tempSuffix}`);
     }
+
     return textDocument;
   }
   buildRegexFromName(name) {

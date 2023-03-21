@@ -1,3 +1,8 @@
+:host {
+    --left-color: var(--text-color);
+    --right-color: var(--text-color);
+}
+
 input[type="checkbox"] {
     opacity: 0;
     left: 0;
@@ -13,12 +18,20 @@ input[type="checkbox"]:hover {
     cursor: pointer;
 }
 
+label:has(+ span input:not(:checked)) {
+    color: var(--left-color);
+}
+
+.switch:has(*:checked) + label {
+    color: var(--right-color);
+}
+
 .switch:has(*:checked) {
-    --slider-color: var(--intelligence-color);
+    --slider-color: var(--right-color);
 }
 
 .switch {
-    --slider-color: var(--strength-color);
+    --slider-color: var(--left-color);
     --transition-time: 0.125s;
     width: 3rem;
     height: 1.5rem;
@@ -53,4 +66,95 @@ input[type="checkbox"]:hover {
 
 .slider-dot:hover {
     cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .slider-dot:before {
+    transform: translateX(1.5rem);
+    transition: var(--transition-time);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mutant-right {
+    --right-color: var(--mutation-color);
+}
+
+.mutant-left {
+    --left-color: var(--mutation-color);
+}
+
+.cybernetic-right {
+    --right-color: var(--cybernetic-color);
+}
+
+.cybernetic-left {
+    --left-color: var(--cybernetic-color);
+}
+
+.stat-right {
+    --right-color: var(--stat-color);
+}
+
+.stat-left {
+    --left-color: var(--stat-color);
+}
+
+.skill-right {
+    --right-color: var(--skills-color);
+}
+
+.skill-left {
+    --left-color: var(--skills-color);
+}
+
+.strength-right {
+    --right-color: var(--strength-color);
+}
+
+.strength-left {
+    --left-color: var(--strength-color);
+}
+
+.toughness-right {
+    --right-color: var(--toughness-color);
+}
+
+.toughness-left {
+    --left-color: var(--toughness-color);
+}
+
+.agility-right {
+    --right-color: var(--agility-color);
+}
+
+.agility-left {
+    --left-color: var(--agility-color);
+}
+
+.willpower-right {
+    --right-color: var(--willpower-color);
+}
+
+.willpower-left {
+    --left-color: var(--willpower-color);
+}
+
+.intelligence-right {
+    --right-color: var(--intelligence-color);
+}
+
+.intelligence-left {
+    --left-color: var(--intelligence-color);
+}
+
+.ego-right {
+    --right-color: var(--ego-color);
+}
+
+.ego-left {
+    --left-color: var(--ego-color);
 }

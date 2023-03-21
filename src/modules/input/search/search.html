@@ -1,0 +1,11 @@
+<template>
+    <div class="container">
+        <input-icon variant="search" size="normal" padding="medium" onclick={updateValue}></input-icon>
+        <input value={value} placeholder={placeholder} onkeyup={updateValue} onchange={updateValue} />
+        <span class="x-icon">
+            <span class="wrapper" onclick={clearInput}>
+                <input-icon variant="cross" size="normal"></input-icon>
+            </span>
+        </span>
+    </div>
+</template>

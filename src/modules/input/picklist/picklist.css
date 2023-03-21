@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+}
+
+.option-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--bg-color-dark);
+    border: 1px solid var(--hover-darken);
+}
+
+.chosen {
+    background-color: var(--hover-darken);
+    display: flex;
+    gap: 0.5rem;
+    fill: var(--stat-color);
+}
+
+.chosen:hover {
+    cursor: pointer;
+}
+
+.option,
+.chosen {
+    font-size: 1rem;
+    color: var(--stat-color);
+    font-family: var(--qud-font);
+    padding: 0.5rem;
+    white-space: nowrap;
+}
+
+.option:hover {
+    background-color: var(--hover-darken);
+    cursor: pointer;
+}

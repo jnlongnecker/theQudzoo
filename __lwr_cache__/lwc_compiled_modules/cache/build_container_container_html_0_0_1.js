@@ -3,6 +3,7 @@ import _implicitStylesheets from "./container.css";
 import _implicitScopedStylesheets from "./container.scoped.css?scoped=true";
 
 import _buildCard from "build/card";
+import _inputSwitch from "input/switch";
 import _inputButton from "input/button";
 import _buildMutantBuilder from "build/mutantBuilder";
 import _buildTruekinBuilder from "build/truekinBuilder";
@@ -97,47 +98,29 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "major-label": true
     },
     key: 14
-  }, [api_text(":build accessibility:")]), api_element("div", {
-    classMap: {
-      "privacy": true
-    },
-    key: 15
-  }, [api_element("label", {
-    key: 16
-  }, [api_text("private")]), api_element("span", {
-    classMap: {
-      "switch": true
-    },
-    key: 17
-  }, [api_element("input", {
-    attrs: {
-      "type": "checkbox"
-    },
+  }, [api_text(":build accessibility:")]), api_custom_element("input-switch", _inputSwitch, {
     props: {
+      "left": "private",
+      "right": "public",
+      "uncheckcolor": "strength",
+      "checkcolor": "intelligence",
       "checked": $cmp.isPublic
     },
-    key: 18,
+    key: 15,
     on: {
-      "click": _m6 || ($ctx._m6 = api_bind($cmp.updateAccessibility))
+      "switch": _m6 || ($ctx._m6 = api_bind($cmp.updateAccessibility))
     }
-  }, []), api_element("span", {
-    classMap: {
-      "slider-dot": true
-    },
-    key: 19
-  }, [])]), api_element("label", {
-    key: 20
-  }, [api_text("public")])]), api_element("div", {
+  }, []), api_element("div", {
     classMap: {
       "btns": true
     },
-    key: 21
+    key: 16
   }, [$cmp.saveRequested ? api_custom_element("input-button", _inputButton, {
     props: {
       "size": "large",
       "variant": "toughness"
     },
-    key: 22,
+    key: 17,
     on: {
       "click": _m7 || ($ctx._m7 = api_bind($cmp.saveCancel))
     }
@@ -146,7 +129,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "size": "large",
       "variant": "willpower"
     },
-    key: 23,
+    key: 18,
     on: {
       "click": _m8 || ($ctx._m8 = api_bind($cmp.saveBuild))
     }
@@ -154,13 +137,13 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "build": $cmp.sanitisedBuild
     },
-    key: 24,
+    key: 19,
     on: {
       "buildupdated": _m9 || ($ctx._m9 = api_bind($cmp.calculateBuildCode))
     }
   }, [api_element("section", {
     className: $cmp.popupClass,
-    key: 25,
+    key: 20,
     on: {
       "click": _m10 || ($ctx._m10 = api_bind($cmp.saveCancel))
     }
@@ -168,25 +151,25 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     classMap: {
       "save-customization": true
     },
-    key: 26,
+    key: 21,
     on: {
       "click": _m11 || ($ctx._m11 = api_bind($cmp.stopProp))
     }
   }, [api_element("h2", {
-    key: 27
+    key: 22
   }, [api_text(":finalize build details:")]), api_custom_element("build-card", _buildCard, {
     props: {
       "mode": "static",
       "build": $cmp.currBuild
     },
-    key: 28
+    key: 23
   }, []), api_element("form", {
-    key: 29
+    key: 24
   }, [api_element("label", {
     classMap: {
       "major-label": true
     },
-    key: 30
+    key: 25
   }, [api_text(":build name:")]), api_element("input", {
     classMap: {
       "name-input": true
@@ -194,7 +177,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.buildName
     },
-    key: 31,
+    key: 26,
     on: {
       "change": _m12 || ($ctx._m12 = api_bind($cmp.updateBuildName))
     }
@@ -202,48 +185,30 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     classMap: {
       "major-label": true
     },
-    key: 32
-  }, [api_text(":build accessibility:")]), api_element("div", {
-    classMap: {
-      "privacy": true
-    },
-    key: 33
-  }, [api_element("label", {
-    key: 34
-  }, [api_text("private")]), api_element("span", {
-    classMap: {
-      "switch": true
-    },
-    key: 35
-  }, [api_element("input", {
-    attrs: {
-      "type": "checkbox"
-    },
+    key: 27
+  }, [api_text(":build accessibility:")]), api_custom_element("input-switch", _inputSwitch, {
     props: {
+      "left": "private",
+      "right": "public",
+      "uncheckcolor": "strength",
+      "checkcolor": "intelligence",
       "checked": $cmp.isPublic
     },
-    key: 36,
+    key: 28,
     on: {
-      "click": _m13 || ($ctx._m13 = api_bind($cmp.updateAccessibility))
+      "switch": _m13 || ($ctx._m13 = api_bind($cmp.updateAccessibility))
     }
-  }, []), api_element("span", {
-    classMap: {
-      "slider-dot": true
-    },
-    key: 37
-  }, [])]), api_element("label", {
-    key: 38
-  }, [api_text("public")])]), api_element("div", {
+  }, []), api_element("div", {
     classMap: {
       "btns": true
     },
-    key: 39
+    key: 29
   }, [$cmp.saveRequested ? api_custom_element("input-button", _inputButton, {
     props: {
       "size": "large",
       "variant": "toughness"
     },
-    key: 40,
+    key: 30,
     on: {
       "click": _m14 || ($ctx._m14 = api_bind($cmp.saveCancel))
     }
@@ -252,7 +217,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "size": "large",
       "variant": "willpower"
     },
-    key: 41,
+    key: 31,
     on: {
       "click": _m15 || ($ctx._m15 = api_bind($cmp.saveBuild))
     }
@@ -260,22 +225,22 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     classMap: {
       "code": true
     },
-    key: 42
+    key: 32
   }, [api_element("div", {
     classMap: {
       "build-action": true
     },
-    key: 43
+    key: 33
   }, [api_element("h2", {
     classMap: {
       "no-mobile": true
     },
-    key: 44
+    key: 34
   }, [api_text(":copy build code:")]), !$cmp.codeAvailable ? api_element("button", {
     classMap: {
       "x-btn": true
     },
-    key: 45,
+    key: 35,
     on: {
       "click": _m16 || ($ctx._m16 = api_bind($cmp.copyCode))
     }
@@ -285,9 +250,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "padding": "x-large",
       "title": $cmp.btnTitle
     },
-    key: 46
+    key: 36
   }, [])]) : null, $cmp.codeAvailable ? api_element("button", {
-    key: 47,
+    key: 37,
     on: {
       "click": _m17 || ($ctx._m17 = api_bind($cmp.copyCode))
     }
@@ -297,31 +262,31 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "flipvariant": "check",
       "padding": "x-large"
     },
-    key: 48
+    key: 38
   }, [])]) : null]), api_element("div", {
     classMap: {
       "build-action": true
     },
-    key: 49
+    key: 39
   }, [api_element("h2", {
     classMap: {
       "no-mobile": true
     },
-    key: 50
+    key: 40
   }, [api_text(":save build:")]), !$cmp.isSaveable ? api_element("button", {
     classMap: {
       "x-btn": true
     },
-    key: 51
+    key: 41
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
       "variant": "cross",
       "padding": "x-large",
       "title": $cmp.btnTitle
     },
-    key: 52
+    key: 42
   }, [])]) : null, $cmp.isSaveable ? api_element("button", {
-    key: 53,
+    key: 43,
     on: {
       "click": _m18 || ($ctx._m18 = api_bind($cmp.saveClick))
     }
@@ -330,19 +295,19 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "variant": "save",
       "padding": "x-large"
     },
-    key: 54
+    key: 44
   }, [])]) : null]), api_element("div", {
     classMap: {
       "build-action": true
     },
-    key: 55
+    key: 45
   }, [api_element("h2", {
-    key: 56
+    key: 46
   }, [api_text(":character name:")]), api_element("input", {
     classMap: {
       "name-input": true
     },
-    key: 57,
+    key: 47,
     on: {
       "change": _m19 || ($ctx._m19 = api_bind($cmp.updateName))
     }

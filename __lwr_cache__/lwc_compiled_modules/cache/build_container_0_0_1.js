@@ -18,7 +18,8 @@ class Container extends LightningElement {
       name: "",
       owner: null,
       public: false,
-      likes: 0
+      likes: 0,
+      genotype: 'Mutated Human'
     };
   }
   get code() {
@@ -82,11 +83,13 @@ class Container extends LightningElement {
       event.currentTarget.setAttributeNode(selectedAttribute);
       event.currentTarget.nextSibling.removeAttribute("selected");
       this.template.host.style.setProperty("--code-color", "var(--mutation-color");
+      this.currBuild.genotype = 'Mutated Human';
     } else {
       this.mutantSelected = false;
       event.currentTarget.setAttributeNode(selectedAttribute);
       event.currentTarget.previousSibling.removeAttribute("selected");
       this.template.host.style.setProperty("--code-color", "var(--intelligence-color");
+      this.currBuild.genotype = 'True Kin';
     }
   }
   updateName(event) {
@@ -172,7 +175,8 @@ class Container extends LightningElement {
     this.currBuild.name = event.currentTarget.value;
   }
   updateAccessibility(event) {
-    this.currBuild.public = !this.currBuild.public;
+    console.log('updating');
+    this.currBuild.public = event.detail;
   }
   stopProp(event) {
     event.stopPropagation();

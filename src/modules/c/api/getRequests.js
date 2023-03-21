@@ -41,7 +41,6 @@ async function getMiddleware(endpoint) {
 async function getBuilds(filters) {
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
-    //headers.append("filters", JSON.stringify(filters));
 
     let reqOptions = {
         method: "GET",

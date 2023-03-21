@@ -7,6 +7,10 @@ export default class Header extends LightningElement {
             link: "/advice"
         },
         {
+            label: "Build Library",
+            link: "/library"
+        },
+        {
             label: "Build Maker",
             link: "/builds"
         }
@@ -30,7 +34,7 @@ export default class Header extends LightningElement {
     }
 
     calculateHeaderLayout() {
-        this.mobileSized = window.innerWidth <= 900;
+        this.mobileSized = window.innerWidth <= 1100;
     }
 
     activateHamburgerMenu(event) {

@@ -25,9 +25,12 @@
                             padding="large"></input-icon>
                     </button>
                     <span if:false={copyable}></span>
-                    <h1>{buildName}<span if:true={hasOwner}> by {displayName}</span></h1>
-                    <button class="delete" onclick={promptDelete} if:true={deletable}>
-                        <input-icon variant="delete" title="Delete Build" padding="large"></input-icon>
+                    <h1>{buildName}<span if:true={hasOwner}> by <span class="name">{displayName}</span></span></h1>
+                    <button class="delete" onclick={promptRightButtonClick} if:true={copyable}>
+                        <input-icon if:true={deletable} variant="delete" title="Delete Build"
+                            padding="large"></input-icon>
+                        <input-icon if:true={onlyCopyable} variant="puzzle" title="Remix Build"
+                            padding="large"></input-icon>
                     </button>
                 </div>
                 <div class="grid">
@@ -54,6 +57,22 @@
                             <legend>{bonus}</legend>
                             <ul class="mutation-list" lwc:dom="manual"></ul>
                         </fieldset>
+                    </div>
+                </div>
+                <div class="footer" if:true={copyable} onclick={stopBubble}>
+                    <div class="footer-item updated" title="Last Updated">
+                        <input-icon variant="refresh" size="big"></input-icon>
+                        <span>{lastUpdated}</span>
+                    </div>
+                    <div class="footer-item likes" title="Likes">
+                        <span class={likeClass}>
+                            <input-icon variant="like" size="big" onclick={likeMyBuild}></input-icon>
+                        </span>
+                        <span>{likes}</span>
+                    </div>
+                    <div class="footer-item created" title="Created Date">
+                        <input-icon variant="save" size="big"></input-icon>
+                        <span>{created}</span>
                     </div>
                 </div>
             </div>

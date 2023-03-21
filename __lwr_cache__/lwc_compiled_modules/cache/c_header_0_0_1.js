@@ -7,6 +7,9 @@ class Header extends LightningElement {
       label: "A-F-F-I-N-E's Advice",
       link: "/advice"
     }, {
+      label: "Build Library",
+      link: "/library"
+    }, {
       label: "Build Maker",
       link: "/builds"
     }];
@@ -25,7 +28,7 @@ class Header extends LightningElement {
     this.calculateHeaderLayout();
   }
   calculateHeaderLayout() {
-    this.mobileSized = window.innerWidth <= 900;
+    this.mobileSized = window.innerWidth <= 1100;
   }
   activateHamburgerMenu(event) {
     let status = event.currentTarget.getAttribute("status");

@@ -58,17 +58,16 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 8,
     svg: true
-  }, [])])])]), api_element("hr", {
+  }, [])])])])]) : null, api_element("hr", {
     key: 9
-  }, []), api_element("h2", {
-    key: 10
-  }, [api_text("My Library")]), api_custom_element("build-library", _buildLibrary, {
+  }, []), $cmp.userExists ? api_custom_element("build-library", _buildLibrary, {
     props: {
+      "headerText": "My Builds",
       "mode": "delete",
       "filters": $cmp.libraryFilters
     },
-    key: 11
-  }, [])]) : null];
+    key: 10
+  }, []) : null];
 }
 export default registerTemplate(tmpl);
 tmpl.stylesheets = [];

@@ -3,18 +3,53 @@ import _tmpl from "./switch.html";
 class Switch extends LightningElement {
   constructor(...args) {
     super(...args);
-    this.checked = false;
+    this.internalValue = false;
+    this.left = '';
+    this.right = '';
+    this.uncheckcolor = '';
+    this.checkcolor = '';
   }
-  changeCheck() {
-    this.checked = !this.checked;
+  get checked() {
+    return this.internalValue;
+  }
+  set checked(val) {
+    this.internalValue = val;
+  }
+  get leftColor() {
+    return this.uncheckcolor ? this.uncheckcolor + '-left' : '';
+  }
+  get rightColor() {
+    return this.checkcolor ? this.checkcolor + '-right' : '';
+  }
+  get containerClass() {
+    return `container ${this.leftColor} ${this.rightColor}`.trim();
+  }
+  notifyChange() {
+    this.internalValue = !this.internalValue;
+    this.dispatchEvent(new CustomEvent('switch', {
+      detail: this.internalValue
+    }));
   }
 }
 _registerDecorators(Switch, {
   publicProps: {
-    checked: {
+    left: {
       config: 0
+    },
+    right: {
+      config: 0
+    },
+    uncheckcolor: {
+      config: 0
+    },
+    checkcolor: {
+      config: 0
+    },
+    checked: {
+      config: 3
     }
-  }
+  },
+  fields: ["internalValue"]
 });
 export default _registerComponent(Switch, {
   tmpl: _tmpl

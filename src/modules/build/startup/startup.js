@@ -14,7 +14,21 @@ export default class BuilderStartup extends LightningElement {
     constructor() {
         super();
         const params = new URLSearchParams(window.location.search);
-        if (!params || !params.get("id")) return;
+        if (!params) return;
+
+        if (params.get("code")) {
+            this.startingBuild = {
+                _id: null,
+                code: decodeURIComponent(params.get("code")),
+                name: "",
+                owner: null,
+                public: false,
+                likes: 0,
+            }
+            this.choiceConfirmed = true;
+            return;
+        }
+        if (!params.get("id")) return;
 
         this.startingId = params.get("id");
         this.loadBuildFromId(params.get("id"));

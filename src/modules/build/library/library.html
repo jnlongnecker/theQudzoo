@@ -1,10 +1,43 @@
 <template>
-    <section>
-        <template if:true={noBuilds} for:each={ghostBuilds} for:item="ghost">
-            <build-ghost-box key={ghost}></build-ghost-box>
-        </template>
+    <div class="shadow">
+        <section class="settings">
+            <div class="filters">
+                <div class="search">
+                    <h2>{headerText}</h2>
+                    <input-search placeholder="Search by Build Name" value={buildNameFilter}
+                        onchange={updateName}></input-search>
+                </div>
+                <div class="option">
+                    <button class={filterClass} onclick={toggleFilters}>
+                        <input-icon variant="filter" size="normal"></input-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="sort" if:false={hideFilters}>
+                <div class="option">
+                    <label>Genotype</label>
+                    <input-picklist options="Any,Mutated Human,True Kin" onchange={updateGenotype}></input-picklist>
+                </div>
+                <div class="option">
+                    <label>Sort Order</label>
+                    <input-switch left="Ascending" right="Descending" uncheckcolor="cybernetic" checkcolor="mutant"
+                        onswitch={updateOrder} checked="true">
+                    </input-switch>
+                </div>
+                <div class="option">
+                    <label>Sort By</label>
+                    <input-picklist options="Likes,Created Date,Last Updated" onchange={updateSort}></input-picklist>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="container">
         <template for:each={builds} for:item="build">
-            <build-card mode={mode} build={build} key={build.code}></build-card>
+            <build-card mode={mode} build={build} key={build._id} contextid={contextUserId}
+                ondeletedbuild={fetchBuilds}></build-card>
+        </template>
+        <template if:true={working} for:each={ghostBuilds} for:item="ghost">
+            <build-ghost-box key={ghost}></build-ghost-box>
         </template>
     </section>
 </template>

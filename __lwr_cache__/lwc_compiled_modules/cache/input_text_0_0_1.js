@@ -3,7 +3,7 @@ import _tmpl from "./text.html";
 class Text extends LightningElement {
   constructor(...args) {
     super(...args);
-    this.value = void 0;
+    this.value = '';
     this.variant = void 0;
   }
   get inputClass() {
@@ -11,6 +11,9 @@ class Text extends LightningElement {
   }
   updateValue(event) {
     this.value = event.target.value;
+    this.dispatchEvent(new CustomEvent('change', {
+      detail: this.value
+    }));
   }
 }
 _registerDecorators(Text, {

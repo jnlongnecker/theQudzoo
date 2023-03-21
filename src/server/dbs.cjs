@@ -4,6 +4,8 @@ const dbUrl = `mongodb+srv://admin:${process.env.PW}${process.env.INSTANCE}${pro
 let User;
 let Build;
 
+const pageSize = 20;
+
 exports.dbConnect = function connect() {
     mongoose.set("strictQuery", false);
     mongoose.connect(dbUrl, { useNewUrlParser: true });
@@ -36,14 +38,17 @@ exports.dbConnect = function connect() {
             type: userSchema,
             required: true
         },
-        likes: Number
+        likes: Array,
+        genotype: String,
+        created: Date,
+        updated: Date,
     });
 
     User = mongoose.model("User", userSchema);
     Build = mongoose.model("Build", buildSchema);
 }
 
-function disconnect() {
+exports.disconnect = function () {
     mongoose.connection.close();
 }
 
@@ -125,6 +130,7 @@ exports.getAuthenticatedUser = async (req, res) => {
 
     return {
         error: false,
+        id: user._id,
         username: user.username,
         name: user.displayName
     }
@@ -157,11 +163,14 @@ exports.updateUser = async function (req, res) {
 exports.getBuilds = async function (req, res) {
     let allBuilds;
 
-    let filters = buildFiltersFromQuery(req.params.info);
+    let results = buildFiltersFromQuery(req.params.info);
+    let filters = results.filters;
+    let sort = results.sort;
+    let page = results.page;
 
     try {
         allBuilds = await Build.find(filters,
-            "name code owner.username owner.displayName public likes");
+            "name code owner.username owner.displayName public likes genotype created updated");
     }
     catch (e) {
         res.status(400);
@@ -171,13 +180,32 @@ exports.getBuilds = async function (req, res) {
             message: e.message
         }
     }
+    let maxBuilds = allBuilds.length;
+
+    allBuilds = allBuilds.sort((a, b) => {
+        let valA;
+        let valB;
+        switch (sort.sortBy) {
+            case 'Likes':
+                return sort.ascending ? a.likes.length - b.likes.length : b.likes.length - a.likes.length;
+            case 'Created Date':
+                valA = new Date(a.created).getMilliseconds();
+                valB = new Date(b.created).getMilliseconds();
+                return sort.ascending ? valA - valB : valB - valA
+            case 'Last Updated':
+                valA = new Date(a.updated).getMilliseconds();
+                valB = new Date(b.updated).getMilliseconds();
+                return sort.ascending ? valA - valB : valB - valA
+        }
+    });
+
+    allBuilds = allBuilds.slice(page * pageSize, (page + 1) * pageSize);
 
     let contextUser = req.session.user;
 
-    // Strip owner and id from builds not owned by the requesting user
+    // Strip owner from builds not owned by the requesting user
     for (let build of allBuilds) {
         if (!build.owner || build.owner.username != contextUser) {
-            build._id = "";
             build.owner = null;
         }
     }
@@ -185,7 +213,8 @@ exports.getBuilds = async function (req, res) {
     res.status(200);
     return {
         error: false,
-        builds: allBuilds
+        builds: allBuilds,
+        maxBuilds: maxBuilds,
     }
 }
 
@@ -214,9 +243,12 @@ exports.saveBuild = async function (req, res) {
     let newBuild = new Build({
         code: build.code,
         name: build.name,
-        likes: build.likes,
+        likes: [owner._id],
         public: build.public,
-        owner: owner
+        owner: owner,
+        genotype: build.genotype,
+        created: Date.now(),
+        updated: Date.now(),
     });
 
     await newBuild.save();
@@ -234,10 +266,12 @@ exports.updateBuild = async function (req, res) {
     let updatedBuild = {};
 
     for (let key in rawBuild) {
-        if (!rawBuild[key]) continue;
+        if (rawBuild[key] === undefined || rawBuild[key] === null) continue;
+        if (key == 'created' || key == 'likes') continue;
 
         updatedBuild[key] = rawBuild[key];
     }
+    updatedBuild['updated'] = Date.now();
 
     let result = await Build.updateOne({ _id: updatedBuild._id }, updatedBuild);
 
@@ -257,6 +291,29 @@ exports.updateBuild = async function (req, res) {
     }
 }
 
+exports.toggleLike = async function (req, res) {
+    let build = req.body;
+    let user = req.session.user;
+
+    let buildToLike = await Build.findOne({ _id: build._id });
+    let loggedUser = await User.findOne({ username: user });
+
+    if (!buildToLike.likes.find(item => item.toString() === loggedUser._id.toString())) {
+        buildToLike.likes.push(loggedUser._id);
+    }
+    else {
+        buildToLike.likes = buildToLike.likes.filter(item => item.toString() !== loggedUser._id.toString());
+    }
+
+    let result = await Build.updateOne({ _id: buildToLike._id }, buildToLike);
+
+    res.status(200);
+    return {
+        error: false,
+        build: JSON.stringify(buildToLike),
+    }
+}
+
 async function buildExists(build) {
     if (!build._id) return false;
 
@@ -267,12 +324,37 @@ async function buildExists(build) {
 function buildFiltersFromQuery(query) {
     let headers = JSON.parse(decodeURIComponent(query));
 
-    if (!headers) return {};
+    if (!headers) {
+        return {
+            filters: {},
+            sort: {
+                ascending: false,
+                sortBy: 'likes',
+            },
+            page: 0,
+        };
+    }
 
     let filters = {};
+    let sort = {};
+    let page = 0;
 
     for (let key in headers) {
         if (!headers[key]) continue;
+        if (key == "owner.displayName" || key == "name") {
+            headers[key] = new RegExp(headers[key], "i");
+        }
+
+        if (key == "sort") {
+            sort = headers[key];
+            continue;
+        }
+
+        if (key == "page") {
+            page = headers[key];
+            continue;
+        }
+
         if (key == "username") {
             filters["owner.username"] = headers[key];
         }
@@ -281,14 +363,12 @@ function buildFiltersFromQuery(query) {
         }
     }
 
-    return filters;
-}
+    if (sort == {}) {
+        sort = {
+            ascending: false,
+            sortBy: 'likes',
+        }
+    }
 
-function getId(string) {
-    console.log(typeof string);
-    console.log(string);
-    let endIndex = string.lastIndexOf(`"`);
-    let startIndex = string.indexOf(`"`);
-
-    return string(startIndex + 1, endIndex);
+    return { filters, sort, page };
 }

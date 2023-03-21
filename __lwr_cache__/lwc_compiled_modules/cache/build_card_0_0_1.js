@@ -1,13 +1,14 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./card.html";
 import { fetchJsonForBuildCode } from "build/buildCodeHandler";
-import { deleteBuilds } from "c/api";
+import { deleteBuilds, likeBuild } from "c/api";
 class BuildCard extends LightningElement {
   constructor(...args) {
     super(...args);
     this.buildInfo = void 0;
     this.buildJson = void 0;
     this.mode = "static";
+    this.contextid = void 0;
     this.sugarInjector = void 0;
     this.mutationHolder = void 0;
     this.clipboardPath = "M16 10c3.469 0 2 4 2 4s4-1.594 4 2v6h-10v-12h4zm.827-2h-6.827v16h14v-8.842c0-2.392-4.011-7.158-7.173-7.158zm-8.827 12h-6v-16h4l2.102 2h3.898l2-2h4v2.145c.656.143 1.327.391 2 .754v-4.899h-3c-1.229 0-2.18-1.084-3-2h-8c-.82.916-1.771 2-3 2h-3v20h8v-2zm2-18c.553 0 1 .448 1 1s-.447 1-1 1-1-.448-1-1 .447-1 1-1zm4 18h6v-1h-6v1zm0-2h6v-1h-6v1zm0-2h6v-1h-6v1z";
@@ -50,6 +51,9 @@ class BuildCard extends LightningElement {
   get editable() {
     return this.mode == "delete";
   }
+  get onlyCopyable() {
+    return this.copyable && !this.editable;
+  }
   get build() {
     return this.buildInfo;
   }
@@ -57,6 +61,25 @@ class BuildCard extends LightningElement {
     if (!newBuild) return;
     this.buildInfo = newBuild;
     this.fetchJson();
+  }
+  get lastUpdated() {
+    if (!this.buildInfo) return '';
+    return new Date(this.buildInfo.updated).toDateString();
+  }
+  get created() {
+    if (!this.buildInfo) return '';
+    return new Date(this.buildInfo.created).toDateString();
+  }
+  get likes() {
+    if (!this.buildInfo) return '';
+    return this.buildInfo.likes.length;
+  }
+  get userLikedBuild() {
+    if (!this.buildInfo || !this.contextid) return false;
+    return this.buildInfo.likes.find(item => item.toString() == this.contextid.toString());
+  }
+  get likeClass() {
+    return this.userLikedBuild ? 'user-liked' : 'user-not-liked';
   }
   get buildCode() {
     return this.buildInfo.code;
@@ -157,6 +180,10 @@ class BuildCard extends LightningElement {
     if (!this.editable) return;
     return "/builds?id=" + this.buildInfo._id;
   }
+  get remixLink() {
+    if (!this.copyable) return;
+    return "/builds?code=" + encodeURIComponent(this.buildCode);
+  }
   async fetchJson() {
     if (!this.buildInfo.code) return;
     let json = await fetchJsonForBuildCode(this.buildInfo.code);
@@ -176,15 +203,26 @@ class BuildCard extends LightningElement {
   }
   camelCaseSubtype() {
     let subtype = this.subtypeName;
-    let parts = subtype.split(" ");
+    let parts = subtype.split(/( )|(-)/);
     let ret = parts[0].toLowerCase();
     for (let i = 1; i < parts.length; i++) {
       let part = parts[i];
+      if (!part) continue;
+      if (part.match(/( )|(-)/)) continue;
       part = part.toLowerCase();
       part = part[0].toUpperCase() + part.substring(1);
       ret += part;
     }
     return ret;
+  }
+  promptRightButtonClick(event) {
+    if (this.deletable) {
+      return this.promptDelete(event);
+    }
+    this.sendToBuilder();
+  }
+  sendToBuilder() {
+    window.open(this.remixLink, '_blank');
   }
   promptDelete(event) {
     event.stopPropagation();
@@ -192,16 +230,18 @@ class BuildCard extends LightningElement {
     this.deleting = true;
   }
   stopBubble(event) {
+    event.preventDefault();
     event.stopPropagation();
   }
   cancelDelete() {
     this.deleting = false;
   }
   async confirmDelete() {
-    deleteBuilds([this.build._id]);
+    await deleteBuilds([this.build._id]);
     this.deleting = false;
     this.buildInfo = null;
     this.buildJson = null;
+    this.dispatchEvent(new CustomEvent('deletedbuild'));
   }
   copyCode(event) {
     event.preventDefault();
@@ -214,10 +254,17 @@ class BuildCard extends LightningElement {
     this.inputForCopying.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(this.inputForCopying.value);
   }
+  async likeMyBuild() {
+    let result = await likeBuild(this.buildInfo);
+    this.buildInfo = JSON.parse(result.build);
+  }
 }
 _registerDecorators(BuildCard, {
   publicProps: {
     mode: {
+      config: 0
+    },
+    contextid: {
       config: 0
     },
     build: {

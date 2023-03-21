@@ -1,11 +1,9 @@
-
-
 @keyframes bounce {
     0% {
-        transform:translateX(0);
+        transform: translateX(0);
     }
     20% {
-        transform: translateX(-.25rem);
+        transform: translateX(-0.25rem);
     }
     40% {
         transform: translateX(0);
@@ -30,7 +28,7 @@
 @keyframes collapseBottom {
     0% {
         transform: rotate(0);
-        left: calc(var(--hamburger-size) * .75 - var(--hamburger-line-weight));
+        left: calc(var(--hamburger-size) * 0.75 - var(--hamburger-line-weight));
     }
     50% {
         transform: rotate(0);
@@ -72,7 +70,7 @@
 @keyframes expandBottom {
     0% {
         transform: rotate(0);
-        left: calc(var(--hamburger-size) * .75 - var(--hamburger-line-weight));
+        left: calc(var(--hamburger-size) * 0.75 - var(--hamburger-line-weight));
     }
     50% {
         transform: rotate(0);
@@ -153,14 +151,14 @@ hr {
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 2rem;
+    gap: 2%;
     flex-grow: 1;
     flex-shrink: 1;
 }
 
 .dot-divider {
-    width: .25rem;
-    height: .25rem;
+    width: 0.25rem;
+    height: 0.25rem;
     background-color: var(--text-color);
     border-radius: 100%;
     display: inline-block;
@@ -175,22 +173,23 @@ hr {
     list-style-type: none;
     overflow: hidden;
     max-height: 0;
-    transition:.5s;
+    transition: 0.5s;
 }
 
-.hamburger-menu[status="open"]+.hamburger-items {
+.hamburger-menu[status="open"] + .hamburger-items {
     max-height: 33vh;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .hamburger-item-container {
     padding: 0 calc(10px + 2rem) 0 1rem;
     border: 1px solid var(--qudzoo-color);
     font-family: var(--qud-font);
-    background-image: var(--scanlines-image)
+    background-image: var(--scanlines-image);
 }
 
-.hamburger-item-container a,.hamburger-item-container p {
+.hamburger-item-container a,
+.hamburger-item-container p {
     display: block;
     padding: 1rem 0;
     margin: 0;
@@ -227,25 +226,25 @@ hr {
 }
 
 .hamburger-menu[status="open"] .line1 {
-    animation: .5s ease both collapseTop;
+    animation: 0.5s ease both collapseTop;
 }
 .hamburger-menu[status="open"] .line2 {
-    animation: .5s ease both collapseMiddle;
+    animation: 0.5s ease both collapseMiddle;
 }
 .hamburger-menu[status="open"] .line3 {
-    animation: .5s ease both collapseBottom;
+    animation: 0.5s ease both collapseBottom;
 }
 
 .hamburger-menu[status="closed"] .line1 {
-    animation: .5s ease both expandTop;
+    animation: 0.5s ease both expandTop;
     animation-direction: reverse;
 }
 .hamburger-menu[status="closed"] .line2 {
-    animation: .5s ease both expandMiddle;
+    animation: 0.5s ease both expandMiddle;
     animation-direction: reverse;
 }
 .hamburger-menu[status="closed"] .line3 {
-    animation: .5s ease both expandBottom;
+    animation: 0.5s ease both expandBottom;
     animation-direction: reverse;
 }
 
@@ -256,13 +255,15 @@ hr {
 
 .line2 {
     position: relative;
-    left: calc(var(--hamburger-size) * 0.25 - var(--hamburger-line-weight) * 0.5);
+    left: calc(
+        var(--hamburger-size) * 0.25 - var(--hamburger-line-weight) * 0.5
+    );
     top: calc(var(--hamburger-size) * -1);
 }
 
 .line3 {
     position: relative;
-    left: calc(var(--hamburger-size) * .75 - var(--hamburger-line-weight));
+    left: calc(var(--hamburger-size) * 0.75 - var(--hamburger-line-weight));
     top: calc(var(--hamburger-size) * -2);
 }
 

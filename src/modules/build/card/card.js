@@ -1,6 +1,6 @@
 import { LightningElement, api, track } from "lwc";
 import { fetchJsonForBuildCode } from "build/buildCodeHandler";
-import { deleteBuilds } from "c/api";
+import { deleteBuilds, likeBuild } from "c/api";
 
 export default class BuildCard extends LightningElement {
 
@@ -12,6 +12,9 @@ export default class BuildCard extends LightningElement {
 
     @api
     mode = "static";
+
+    @api
+    contextid;
 
     sugarInjector;
     mutationHolder;
@@ -63,6 +66,10 @@ export default class BuildCard extends LightningElement {
         return this.mode == "delete";
     }
 
+    get onlyCopyable() {
+        return this.copyable && !this.editable;
+    }
+
     @api
     get build() {
         return this.buildInfo;
@@ -72,6 +79,30 @@ export default class BuildCard extends LightningElement {
         if (!newBuild) return;
         this.buildInfo = newBuild;
         this.fetchJson();
+    }
+
+    get lastUpdated() {
+        if (!this.buildInfo) return '';
+        return new Date(this.buildInfo.updated).toDateString();
+    }
+
+    get created() {
+        if (!this.buildInfo) return '';
+        return new Date(this.buildInfo.created).toDateString();
+    }
+
+    get likes() {
+        if (!this.buildInfo) return '';
+        return this.buildInfo.likes.length;
+    }
+
+    get userLikedBuild() {
+        if (!this.buildInfo || !this.contextid) return false;
+        return this.buildInfo.likes.find(item => item.toString() == this.contextid.toString());
+    }
+
+    get likeClass() {
+        return this.userLikedBuild ? 'user-liked' : 'user-not-liked';
     }
 
     get buildCode() {
@@ -185,6 +216,11 @@ export default class BuildCard extends LightningElement {
         return "/builds?id=" + this.buildInfo._id;
     }
 
+    get remixLink() {
+        if (!this.copyable) return;
+        return "/builds?code=" + encodeURIComponent(this.buildCode);
+    }
+
     async fetchJson() {
         if (!this.buildInfo.code) return;
         let json = await fetchJsonForBuildCode(this.buildInfo.code);
@@ -208,17 +244,30 @@ export default class BuildCard extends LightningElement {
 
     camelCaseSubtype() {
         let subtype = this.subtypeName;
-        let parts = subtype.split(" ");
+        let parts = subtype.split(/( )|(-)/);
         let ret = parts[0].toLowerCase();
 
         for (let i = 1; i < parts.length; i++) {
             let part = parts[i];
+            if (!part) continue;
+            if (part.match(/( )|(-)/)) continue;
             part = part.toLowerCase();
             part = part[0].toUpperCase() + part.substring(1);
             ret += part;
         }
 
         return ret;
+    }
+
+    promptRightButtonClick(event) {
+        if (this.deletable) {
+            return this.promptDelete(event);
+        }
+        this.sendToBuilder();
+    }
+
+    sendToBuilder() {
+        window.open(this.remixLink, '_blank');
     }
 
     promptDelete(event) {
@@ -228,6 +277,7 @@ export default class BuildCard extends LightningElement {
     }
 
     stopBubble(event) {
+        event.preventDefault();
         event.stopPropagation();
     }
 
@@ -236,11 +286,13 @@ export default class BuildCard extends LightningElement {
     }
 
     async confirmDelete() {
-        deleteBuilds([this.build._id]);
 
+        await deleteBuilds([this.build._id]);
         this.deleting = false;
         this.buildInfo = null;
         this.buildJson = null;
+
+        this.dispatchEvent(new CustomEvent('deletedbuild'));
     }
 
     copyCode(event) {
@@ -254,6 +306,11 @@ export default class BuildCard extends LightningElement {
         this.inputForCopying.select();
         this.inputForCopying.setSelectionRange(0, 99999);
         navigator.clipboard.writeText(this.inputForCopying.value);
+    }
+
+    async likeMyBuild() {
+        let result = await likeBuild(this.buildInfo);
+        this.buildInfo = JSON.parse(result.build);
     }
 
 }

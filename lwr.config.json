@@ -32,6 +32,15 @@
             }
         },
         {
+            "id": "Library",
+            "path": "/library",
+            "layoutTemplate": "$layoutsDir/library_layout.njk",
+            "rootComponent": "build/library",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/builder.png"
+            }
+        },
+        {
             "id": "Profile",
             "path": "/my-profile",
             "layoutTemplate": "$layoutsDir/profile_layout.njk",

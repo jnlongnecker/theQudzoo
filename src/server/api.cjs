@@ -22,8 +22,8 @@ exports.processBuildRequest = async (res, req, method) => {
     }
     catch (e) {
         res.status(500);
-        console.log(exception);
-        return { error: exception };
+        console.log(e);
+        return { error: e };
     }
 }
 
