@@ -37,7 +37,7 @@
             "layoutTemplate": "$layoutsDir/library_layout.njk",
             "rootComponent": "build/library",
             "properties": {
-                "preview": "/1/asset/s/latest/public/assets/images/previews/builder.png"
+                "preview": "/1/asset/s/latest/public/assets/images/previews/library.png"
             }
         },
         {

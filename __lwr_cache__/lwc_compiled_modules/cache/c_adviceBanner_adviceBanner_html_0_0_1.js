@@ -18,7 +18,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 2
   }, [api_text("Build Maker")])]), api_element("p", {
     key: 3
-  }, [api_text("Make your own builds for Qud and import them into your game.")]), api_element("a", {
+  }, [api_text("Make your own builds for Qud and import them into your game, or pick one made by someone else.")]), api_element("a", {
     attrs: {
       "href": "/builds"
     },
@@ -28,26 +28,36 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "size": "large thin"
     },
     key: 5
-  }, [api_text("Take Me There")])])]), api_element("section", {
+  }, [api_text("Take Me There")])]), api_element("a", {
+    attrs: {
+      "href": "/library"
+    },
     key: 6
-  }, [api_element("h2", {
+  }, [api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large thin"
+    },
     key: 7
+  }, [api_text("Browse Builds")])])]), api_element("section", {
+    key: 8
+  }, [api_element("h2", {
+    key: 9
   }, [api_element("a", {
     attrs: {
       "href": "/advice"
     },
-    key: 8
+    key: 10
   }, [api_text("Advice Articles")])]), api_element("p", {
-    key: 9
+    key: 11
   }, [api_text("Breakdowns of the most relevant layers of Qud by "), api_element("span", {
     classMap: {
       "name": true
     },
-    key: 10
-  }, [api_text("A-F-F-I-N-E")])]), api_element("div", {
-    key: 11
-  }, [api_custom_element("advice-hub", _adviceHub, {
     key: 12
+  }, [api_text("A-F-F-I-N-E")])]), api_element("div", {
+    key: 13
+  }, [api_custom_element("advice-hub", _adviceHub, {
+    key: 14
   }, [])])])];
 }
 export default registerTemplate(tmpl);

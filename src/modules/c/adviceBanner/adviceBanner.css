@@ -6,6 +6,7 @@ section {
     align-items: center;
     border-top: 3px solid var(--hover-darken);
     padding: 0 var(--desktop-margin-size) 1rem;
+    gap: 1rem;
 }
 
 div {
