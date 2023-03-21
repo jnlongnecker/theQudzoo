@@ -170,7 +170,7 @@ exports.getBuilds = async function (req, res) {
 
     try {
         allBuilds = await Build.find(filters,
-            "name code owner.username owner.displayName public likes genotype created updated");
+            "name code owner.displayName public likes genotype created updated");
     }
     catch (e) {
         res.status(400);
@@ -200,15 +200,6 @@ exports.getBuilds = async function (req, res) {
     });
 
     allBuilds = allBuilds.slice(page * pageSize, (page + 1) * pageSize);
-
-    let contextUser = req.session.user;
-
-    // Strip owner from builds not owned by the requesting user
-    for (let build of allBuilds) {
-        if (!build.owner || build.owner.username != contextUser) {
-            build.owner = null;
-        }
-    }
 
     res.status(200);
     return {
