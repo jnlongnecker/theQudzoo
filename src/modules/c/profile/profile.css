@@ -88,6 +88,6 @@ p {
 
 @media only screen and (max-width: 900px) {
     section {
-        padding: 0 var(--mobile-margin-size);
+        padding: 1.5rem var(--mobile-margin-size);
     }
 }
