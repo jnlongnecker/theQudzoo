@@ -74,7 +74,8 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 11
   }, [api_text("Genotype")]), api_custom_element("input-picklist", _inputPicklist, {
     props: {
-      "options": "Any,Mutated Human,True Kin"
+      "options": "Any,Mutated Human,True Kin",
+      "chosen": $cmp.genotypeFilter
     },
     key: 12,
     on: {
@@ -93,7 +94,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "right": "Descending",
       "uncheckcolor": "cybernetic",
       "checkcolor": "mutant",
-      "checked": "true"
+      "checked": $cmp.switchChecked
     },
     key: 15,
     on: {
@@ -108,7 +109,8 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 17
   }, [api_text("Sort By")]), api_custom_element("input-picklist", _inputPicklist, {
     props: {
-      "options": "Likes,Created Date,Last Updated"
+      "options": "Likes,Created Date,Last Updated",
+      "chosen": $cmp.sortBy
     },
     key: 18,
     on: {

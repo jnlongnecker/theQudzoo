@@ -17,7 +17,7 @@ export default class BuildLibrary extends LightningElement {
 
     buildNameFilter = '';
 
-    genotypeFilter = '';
+    genotypeFilter = 'Any';
 
     sortBy = 'Likes';
 
@@ -35,6 +35,10 @@ export default class BuildLibrary extends LightningElement {
     headerText = '';
 
     hideFilters = true;
+
+    get switchChecked() {
+        return !this.ascending;
+    }
 
     @api
     get filters() {
@@ -82,7 +86,7 @@ export default class BuildLibrary extends LightningElement {
     constructBuildFilters() {
         this.filterStore['owner.displayName'] = this.ownerFilter;
         this.filterStore['name'] = this.buildNameFilter;
-        this.filterStore['genotype'] = this.genotypeFilter;
+        this.filterStore['genotype'] = this.genotypeFilter == 'Any' ? '' : this.genotypeFilter;
         this.filterStore['public'] = this.mode != 'delete' ? true : null;
         this.filterStore['sort'] = { ascending: this.ascending, sortBy: this.sortBy }
         this.filterStore['page'] = this.page;
@@ -148,7 +152,6 @@ export default class BuildLibrary extends LightningElement {
 
     updateGenotype(event) {
         this.genotypeFilter = event.detail;
-        if (event.detail == 'Any') this.genotypeFilter = '';
         this.runSearch();
     }
 

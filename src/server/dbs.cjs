@@ -189,12 +189,12 @@ exports.getBuilds = async function (req, res) {
             case 'Likes':
                 return sort.ascending ? a.likes.length - b.likes.length : b.likes.length - a.likes.length;
             case 'Created Date':
-                valA = new Date(a.created).getMilliseconds();
-                valB = new Date(b.created).getMilliseconds();
+                valA = new Date(a.created).valueOf();
+                valB = new Date(b.created).valueOf();
                 return sort.ascending ? valA - valB : valB - valA
             case 'Last Updated':
-                valA = new Date(a.updated).getMilliseconds();
-                valB = new Date(b.updated).getMilliseconds();
+                valA = new Date(a.updated).valueOf();
+                valB = new Date(b.updated).valueOf();
                 return sort.ascending ? valA - valB : valB - valA
         }
     });

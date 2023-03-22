@@ -4,9 +4,12 @@ export default class Picklist extends LightningElement {
 
     choices = [];
 
+    @api
     chosen = '';
 
     choosing = false;
+
+    _default = 0;
 
     @api
     get options() {
@@ -20,7 +23,9 @@ export default class Picklist extends LightningElement {
         else {
             this.choices = val.split(',');
         }
-        this.chosen = this.choices[0];
+        if (!this.chosen) {
+            this.chosen = this.choices[0];
+        }
     }
 
     startChoosing(event) {

@@ -16,17 +16,19 @@
             <div class="sort" if:false={hideFilters}>
                 <div class="option">
                     <label>Genotype</label>
-                    <input-picklist options="Any,Mutated Human,True Kin" onchange={updateGenotype}></input-picklist>
+                    <input-picklist options="Any,Mutated Human,True Kin" onchange={updateGenotype}
+                        chosen={genotypeFilter}></input-picklist>
                 </div>
                 <div class="option">
                     <label>Sort Order</label>
                     <input-switch left="Ascending" right="Descending" uncheckcolor="cybernetic" checkcolor="mutant"
-                        onswitch={updateOrder} checked="true">
+                        onswitch={updateOrder} checked={switchChecked}>
                     </input-switch>
                 </div>
                 <div class="option">
                     <label>Sort By</label>
-                    <input-picklist options="Likes,Created Date,Last Updated" onchange={updateSort}></input-picklist>
+                    <input-picklist options="Likes,Created Date,Last Updated" onchange={updateSort}
+                        chosen={sortBy}></input-picklist>
                 </div>
             </div>
         </section>

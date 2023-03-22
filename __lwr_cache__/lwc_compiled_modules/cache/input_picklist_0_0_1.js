@@ -6,6 +6,7 @@ class Picklist extends LightningElement {
     this.choices = [];
     this.chosen = '';
     this.choosing = false;
+    this._default = 0;
   }
   get options() {
     return this.choices;
@@ -16,7 +17,9 @@ class Picklist extends LightningElement {
     } else {
       this.choices = val.split(',');
     }
-    this.chosen = this.choices[0];
+    if (!this.chosen) {
+      this.chosen = this.choices[0];
+    }
   }
   startChoosing(event) {
     if (event.key && event.key != 'Enter') return;
@@ -33,11 +36,14 @@ class Picklist extends LightningElement {
 }
 _registerDecorators(Picklist, {
   publicProps: {
+    chosen: {
+      config: 0
+    },
     options: {
       config: 3
     }
   },
-  fields: ["choices", "chosen", "choosing"]
+  fields: ["choices", "choosing", "_default"]
 });
 export default _registerComponent(Picklist, {
   tmpl: _tmpl

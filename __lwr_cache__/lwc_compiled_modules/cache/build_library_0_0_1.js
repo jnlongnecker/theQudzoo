@@ -2,6 +2,9 @@ import { registerDecorators as _registerDecorators, registerComponent as _regist
 import _tmpl from "./library.html";
 import { getBuilds, getAuthenticatedUser } from "c/api";
 class BuildLibrary extends LightningElement {
+  get switchChecked() {
+    return !this.ascending;
+  }
   get filters() {
     return this.filterStore;
   }
@@ -26,7 +29,7 @@ class BuildLibrary extends LightningElement {
     this.mode = "copy";
     this.ownerFilter = '';
     this.buildNameFilter = '';
-    this.genotypeFilter = '';
+    this.genotypeFilter = 'Any';
     this.sortBy = 'Likes';
     this.ascending = false;
     this.working = true;
@@ -54,7 +57,7 @@ class BuildLibrary extends LightningElement {
   constructBuildFilters() {
     this.filterStore['owner.displayName'] = this.ownerFilter;
     this.filterStore['name'] = this.buildNameFilter;
-    this.filterStore['genotype'] = this.genotypeFilter;
+    this.filterStore['genotype'] = this.genotypeFilter == 'Any' ? '' : this.genotypeFilter;
     this.filterStore['public'] = this.mode != 'delete' ? true : null;
     this.filterStore['sort'] = {
       ascending: this.ascending,
@@ -112,7 +115,6 @@ class BuildLibrary extends LightningElement {
   }
   updateGenotype(event) {
     this.genotypeFilter = event.detail;
-    if (event.detail == 'Any') this.genotypeFilter = '';
     this.runSearch();
   }
   updateSort(event) {

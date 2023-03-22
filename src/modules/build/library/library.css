@@ -57,7 +57,7 @@ h2 {
     position: sticky;
     top: var(--heading-height);
     box-shadow: 2px var(--hover-darken);
-    z-index: 20;
+    z-index: 5;
 }
 
 .shadow::before {
