@@ -27,7 +27,7 @@
             "name": "Unstable Genome",
             "category": "Morphotype",
             "cost": 3,
-            "max": 3,
+            "max": 10,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/unstableGenome.png",
             "code": "uu",
             "variants": [],
