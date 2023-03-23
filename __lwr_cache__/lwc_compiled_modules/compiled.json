@@ -1322,7 +1322,7 @@
   [
     "build/card@0.0.1",
     {
-      "ownHash": "87afa264d9616cc3b299b5af9f7fbaef",
+      "ownHash": "b9e009804f4ec1383e58833e30347005",
       "module": "./cache/build_card_0_0_1.js",
       "moduleMeta": "./cache/build_card_0_0_1.meta.json"
     }

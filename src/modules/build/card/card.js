@@ -1,6 +1,6 @@
 import { LightningElement, api, track } from "lwc";
 import { fetchJsonForBuildCode } from "build/buildCodeHandler";
-import { deleteBuilds, likeBuild } from "c/api";
+import { deleteBuilds, likeBuild, getCallings, getCastes } from "c/api";
 
 export default class BuildCard extends LightningElement {
 
@@ -53,6 +53,8 @@ export default class BuildCard extends LightningElement {
     }
 
     deleting = false;
+
+    subtypeBonuses;
 
     get deletable() {
         return this.mode == "delete";
@@ -154,11 +156,13 @@ export default class BuildCard extends LightningElement {
         let arr = [];
         for (let key in obj) {
             let val = obj[key] + add;
+            let bonus = 0;
+            if (this.subtypeBonuses) bonus = this.subtypeBonuses[key];
             arr.push({
                 i: this.order[key],
                 class: key.toLowerCase(),
                 name: `${key}: `,
-                value: val
+                value: val + bonus
             });
         }
         arr.sort((a, b) => {
@@ -188,7 +192,8 @@ export default class BuildCard extends LightningElement {
             if (this.genotype == "True Kin") {
                 return { value: this.cyberneticMap[choice.Cybernetic] };
             }
-            return { value: choice.Mutation };
+            let mutText = choice.Count > 1 ? `${choice.Mutation} x${choice.Count}` : choice.Mutation;
+            return { value: mutText };
         })
     }
 
@@ -237,9 +242,27 @@ export default class BuildCard extends LightningElement {
             await new Promise(t => setTimeout(t, 100))
         }
 
-        let sugaryValues = this.mutations.map(elem => `<li>${this.sugarInjector.highlightText(elem.value)}</li>`);
+        let sugaryValues = this.mutations.map(elem => `<li><span>${this.sugarInjector.highlightText(elem.value)}</span></li>`);
         let html = sugaryValues.reduce((prev, elem) => prev + elem);
         this.mutationHolder.innerHTML = html;
+
+        this.fetchSubtypeBonus();
+    }
+
+    async fetchSubtypeBonus() {
+        if (this.genotype == 'True Kin') {
+            let castes = await getCastes();
+            for (let arcology of castes.castes) {
+                let caste = arcology.castes.filter(item => item.name == this.subtypeName);
+                if (caste.length) {
+                    this.subtypeBonuses = caste[0].modifiers;
+                    return;
+                }
+            }
+        }
+        let callings = await getCallings();
+        let calling = callings.callings.filter(item => item.name == this.subtypeName);
+        this.subtypeBonuses = calling[0].modifiers;
     }
 
     camelCaseSubtype() {

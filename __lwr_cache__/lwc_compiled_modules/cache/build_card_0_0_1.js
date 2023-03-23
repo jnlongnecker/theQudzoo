@@ -1,7 +1,7 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./card.html";
 import { fetchJsonForBuildCode } from "build/buildCodeHandler";
-import { deleteBuilds, likeBuild } from "c/api";
+import { deleteBuilds, likeBuild, getCallings, getCastes } from "c/api";
 class BuildCard extends LightningElement {
   constructor(...args) {
     super(...args);
@@ -41,6 +41,7 @@ class BuildCard extends LightningElement {
       "<none>": "<none>"
     };
     this.deleting = false;
+    this.subtypeBonuses = void 0;
   }
   get deletable() {
     return this.mode == "delete";
@@ -121,11 +122,13 @@ class BuildCard extends LightningElement {
     let arr = [];
     for (let key in obj) {
       let val = obj[key] + add;
+      let bonus = 0;
+      if (this.subtypeBonuses) bonus = this.subtypeBonuses[key];
       arr.push({
         i: this.order[key],
         class: key.toLowerCase(),
         name: `${key}: `,
-        value: val
+        value: val + bonus
       });
     }
     arr.sort((a, b) => {
@@ -155,8 +158,9 @@ class BuildCard extends LightningElement {
           value: this.cyberneticMap[choice.Cybernetic]
         };
       }
+      let mutText = choice.Count > 1 ? `${choice.Mutation} x${choice.Count}` : choice.Mutation;
       return {
-        value: choice.Mutation
+        value: mutText
       };
     });
   }
@@ -197,9 +201,25 @@ class BuildCard extends LightningElement {
     while (this.sugarInjector.infoReady !== 4) {
       await new Promise(t => setTimeout(t, 100));
     }
-    let sugaryValues = this.mutations.map(elem => `<li>${this.sugarInjector.highlightText(elem.value)}</li>`);
+    let sugaryValues = this.mutations.map(elem => `<li><span>${this.sugarInjector.highlightText(elem.value)}</span></li>`);
     let html = sugaryValues.reduce((prev, elem) => prev + elem);
     this.mutationHolder.innerHTML = html;
+    this.fetchSubtypeBonus();
+  }
+  async fetchSubtypeBonus() {
+    if (this.genotype == 'True Kin') {
+      let castes = await getCastes();
+      for (let arcology of castes.castes) {
+        let caste = arcology.castes.filter(item => item.name == this.subtypeName);
+        if (caste.length) {
+          this.subtypeBonuses = caste[0].modifiers;
+          return;
+        }
+      }
+    }
+    let callings = await getCallings();
+    let calling = callings.callings.filter(item => item.name == this.subtypeName);
+    this.subtypeBonuses = calling[0].modifiers;
   }
   camelCaseSubtype() {
     let subtype = this.subtypeName;
@@ -275,7 +295,7 @@ _registerDecorators(BuildCard, {
     buildInfo: 1,
     buildJson: 1
   },
-  fields: ["sugarInjector", "mutationHolder", "clipboardPath", "checkPath", "usePath", "order", "cyberneticMap", "deleting"]
+  fields: ["sugarInjector", "mutationHolder", "clipboardPath", "checkPath", "usePath", "order", "cyberneticMap", "deleting", "subtypeBonuses"]
 });
 export default _registerComponent(BuildCard, {
   tmpl: _tmpl
