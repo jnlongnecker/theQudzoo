@@ -10,30 +10,20 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     className: $cmp.containerClass,
     key: 0
   }, [api_element("label", {
+    className: $cmp.checkedClass,
     key: 1
   }, [api_text(api_dynamic_text($cmp.left))]), api_element("span", {
-    classMap: {
-      "switch": true
-    },
-    key: 2
-  }, [api_element("input", {
-    attrs: {
-      "type": "checkbox"
-    },
-    props: {
-      "checked": $cmp.internalValue
-    },
-    key: 3,
+    className: $cmp.switchClass,
+    key: 2,
     on: {
       "click": _m0 || ($ctx._m0 = api_bind($cmp.notifyChange))
     }
-  }, []), api_element("span", {
-    classMap: {
-      "slider-dot": true
-    },
-    key: 4
+  }, [api_element("span", {
+    className: $cmp.checkboxClass,
+    key: 3
   }, [])]), api_element("label", {
-    key: 5
+    className: $cmp.checkedClass,
+    key: 4
   }, [api_text(api_dynamic_text($cmp.right))])])];
 }
 export default registerTemplate(tmpl);

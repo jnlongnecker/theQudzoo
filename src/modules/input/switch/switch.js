@@ -25,6 +25,18 @@ export default class Switch extends LightningElement {
         this.internalValue = val;
     }
 
+    get checkboxClass() {
+        return 'slider-dot ' + this.checkedClass;
+    }
+
+    get switchClass() {
+        return 'switch ' + this.checkedClass;
+    }
+
+    get checkedClass() {
+        return this.internalValue ? 'checked' : 'unchecked';
+    }
+
     get leftColor() {
         return this.uncheckcolor ? this.uncheckcolor + '-left' : '';
     }

@@ -21,6 +21,9 @@ class BuildLibrary extends LightningElement {
   get filterClass() {
     return this.hideFilters ? "setting-button" : "setting-button on";
   }
+  get sortClass() {
+    return this.hideFilters ? 'sort hide' : 'sort show';
+  }
   constructor() {
     super();
     this.filterStore = null;

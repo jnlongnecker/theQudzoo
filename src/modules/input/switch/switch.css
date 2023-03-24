@@ -3,30 +3,19 @@
     --right-color: var(--text-color);
 }
 
-input[type="checkbox"] {
-    opacity: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: 0;
-    z-index: 1;
-    position: absolute;
-}
-
-input[type="checkbox"]:hover {
+.switch:hover {
     cursor: pointer;
 }
 
-label:has(+ span input:not(:checked)) {
+label:first-child.unchecked {
     color: var(--left-color);
 }
 
-.switch:has(*:checked) + label {
+label:last-child.checked {
     color: var(--right-color);
 }
 
-.switch:has(*:checked) {
+.switch.checked {
     --slider-color: var(--right-color);
 }
 
@@ -68,7 +57,7 @@ label:has(+ span input:not(:checked)) {
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked + .slider-dot:before {
+.checked.slider-dot:before {
     transform: translateX(1.5rem);
     transition: var(--transition-time);
 }

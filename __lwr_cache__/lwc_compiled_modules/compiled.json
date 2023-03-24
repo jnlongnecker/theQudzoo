@@ -1418,7 +1418,7 @@
   [
     "build/library@0.0.1",
     {
-      "ownHash": "7790b3f55aa9d2a91275977ff572af54",
+      "ownHash": "ec929cc2be1c11d529fa28ba421acd44",
       "module": "./cache/build_library_0_0_1.js",
       "moduleMeta": "./cache/build_library_0_0_1.meta.json"
     }
@@ -1786,7 +1786,7 @@
   [
     "input/switch@0.0.1",
     {
-      "ownHash": "0a9b39f6a7e3663bba7a6add47741ab9",
+      "ownHash": "81589ebc2a1bee77ab70d82a7101551c",
       "module": "./cache/input_switch_0_0_1.js",
       "moduleMeta": "./cache/input_switch_0_0_1.meta.json"
     }
@@ -1794,7 +1794,7 @@
   [
     "input/switch#switch.html@0.0.1",
     {
-      "ownHash": "7c7c14a5cbf224b19c188d4a1df0db7f",
+      "ownHash": "7d7aa0e7ec232c2ba21946a8a8d4bf15",
       "module": "./cache/input_switch_switch_html_0_0_1.js",
       "moduleMeta": "./cache/input_switch_switch_html_0_0_1.meta.json"
     }
@@ -1802,7 +1802,7 @@
   [
     "input/switch#switch.css@0.0.1",
     {
-      "ownHash": "ef596e7f09182f3e5826c9c30d2dcad7",
+      "ownHash": "060ba069bf8a43cd487ce7d6772ff36a",
       "module": "./cache/input_switch_switch_css_0_0_1.js",
       "moduleMeta": "./cache/input_switch_switch_css_0_0_1.meta.json"
     }

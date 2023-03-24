@@ -62,6 +62,10 @@ export default class BuildLibrary extends LightningElement {
         return this.hideFilters ? "setting-button" : "setting-button on";
     }
 
+    get sortClass() {
+        return this.hideFilters ? 'sort hide' : 'sort show';
+    }
+
     constructor() {
         super();
         this.getContextUser();
