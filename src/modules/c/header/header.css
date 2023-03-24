@@ -166,7 +166,7 @@ hr {
 
 .hamburger-items {
     position: absolute;
-    width: calc(100vw - var(--mobile-margin-size) * 2 + 20px);
+    width: calc(100vw - var(--mobile-margin-size) * 2 + 10px);
     right: calc(var(--mobile-margin-size) - 10px);
     top: calc(2rem - 10px);
     background: var(--bg-color-dark);
@@ -177,7 +177,7 @@ hr {
 }
 
 .hamburger-menu[status="open"] + .hamburger-items {
-    max-height: 33vh;
+    max-height: 35vh;
     transition: 0.5s;
 }
 
