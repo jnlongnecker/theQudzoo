@@ -9,7 +9,8 @@ module.exports = async function (viewRequest, handlerContext) {
 
     let result = await dbs.getBuilds({ params: { info: { "_id": [`${buildId}`] } }, session: { user: '' } }, { status: () => { } });
 
-    const build = JSON.stringify(result.builds[0]);
+    const build = encodeURIComponent(JSON.stringify(result.builds[0]));
+    const author = result.builds[0].owner != undefined ? result.builds[0].owner.displayName : 'Anonymous';
 
     return {
         view: {
@@ -19,6 +20,8 @@ module.exports = async function (viewRequest, handlerContext) {
         // Required: pass context to the templates
         viewParams: {
             build: build,
+            author: author,
+            preview: "/1/asset/s/latest/public/assets/images/previews/communityBuild.png",
             ...routeProperties, // pass the static route properties
         },
         // Optional: rendering options { skipMetadataCollection?, freezeAssets?, skipCaching? }

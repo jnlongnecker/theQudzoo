@@ -9,7 +9,7 @@ class Viewer extends LightningElement {
     return this._buildInfo;
   }
   set buildInfo(newInfo) {
-    this._buildInfo = JSON.parse(newInfo);
+    this._buildInfo = JSON.parse(decodeURIComponent(newInfo));
   }
   get holderClass() {
     let ret = 'button-holder';

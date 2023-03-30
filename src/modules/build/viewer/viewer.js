@@ -9,7 +9,8 @@ export default class Viewer extends LightningElement {
     }
 
     set buildInfo(newInfo) {
-        this._buildInfo = JSON.parse(newInfo);
+
+        this._buildInfo = JSON.parse(decodeURIComponent(newInfo));
     }
 
     get holderClass() {
