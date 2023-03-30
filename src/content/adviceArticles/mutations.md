@@ -306,7 +306,7 @@ Multiple Legs gives you bonus movement speed and some extra carrying capacity. T
 
 If you are at all interested in ranged combat, this mutation should be at the top of your list. With it, you can reliably kite any enemy in the game throughout the entire game as long as you keep investing into it.
 
-Now, by gaining all this movement speed we have a secondary synergy in perhaps the most unusual place: IronShank. Normally, IronShank is very bad since it will slow you to a crawl at its final stage (-80 movement speed). This doesn’t come without a benefit, as you _do_ gain 5 AV for your trouble. Normally, this is not worth it in any way. However, with Multiple Legs we laugh at losing a mere 80 movement speed. Reducing you from moving 4 times per turn to 3 times per turn is not a big loss, and having a free extra 5 AV is a significant boon. We can obtain this synergy as early as Golgotha; so slap on your Multiple Legs and sip on that black ooze for a very powerful synergy.
+Now, by gaining all this movement speed we have a secondary synergy in perhaps the most unusual place: Ironshank. Normally, Ironshank is very bad since it will slow you to a crawl at its final stage (-80 movement speed). This doesn’t come without a benefit, as you _do_ gain 5 AV for your trouble. Normally, this is not worth it in any way. However, with Multiple Legs we laugh at losing a mere 80 movement speed. Reducing you from moving 4 times per turn to 3 times per turn is not a big loss, and having a free extra 5 AV is a significant boon. We can obtain this synergy as early as Golgotha; so slap on your Multiple Legs and sip on that black ooze for a very powerful synergy.
 
 ### Night Vision
 
