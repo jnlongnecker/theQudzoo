@@ -49,13 +49,13 @@ class Viewer extends LightningElement {
     let isRanged = tags.includes('Ranged');
     let isEsper = tags.includes('Esper');
     if (isMelee && isRanged) {
-      return 'The recommended style is a hybrid of melee and ranged.';
+      return 'The recommended combat style is a hybrid of melee and ranged.';
     }
     if (isMelee && isEsper) {
-      return 'The recommended style is melee with mental mutation support.';
+      return 'The recommended combat style is melee with mental mutation support.';
     }
     if (isRanged && isEsper) {
-      return 'The recommended style is ranged with mental mutation support.';
+      return 'The recommended combat style is ranged with mental mutation support.';
     }
     if (isMelee) {
       return 'It specializes and thrives in melee combat.';

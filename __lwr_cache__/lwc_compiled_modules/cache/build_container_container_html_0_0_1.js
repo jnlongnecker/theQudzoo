@@ -3,16 +3,16 @@ import _implicitStylesheets from "./container.css";
 import _implicitScopedStylesheets from "./container.scoped.css?scoped=true";
 
 import _buildCard from "build/card";
+import _buildTag from "build/tag";
 import _inputSwitch from "input/switch";
 import _inputButton from "input/button";
 import _buildMutantBuilder from "build/mutantBuilder";
-import _buildTag from "build/tag";
 import _buildTruekinBuilder from "build/truekinBuilder";
 import _inputIcon from "input/icon";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, t: api_text, h: api_element, c: api_custom_element} = $api;
-  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16, _m17, _m18, _m19, _m20, _m21, _m22, _m23, _m24, _m25} = $ctx;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16, _m17, _m18, _m19, _m20, _m21, _m22, _m23, _m24, _m25, _m26, _m27, _m28, _m29, _m30, _m31} = $ctx;
   return [api_element("section", {
     classMap: {
       "container": true
@@ -78,118 +78,30 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 10
   }, []), api_element("form", {
     key: 11
-  }, [api_element("label", {
-    classMap: {
-      "major-label": true
-    },
-    key: 12
-  }, [api_text(":build name:")]), api_element("input", {
-    classMap: {
-      "name-input": true
-    },
-    props: {
-      "value": $cmp.buildName
-    },
-    key: 13,
-    on: {
-      "change": _m5 || ($ctx._m5 = api_bind($cmp.updateBuildName))
-    }
-  }, []), api_element("label", {
-    classMap: {
-      "major-label": true
-    },
-    key: 14
-  }, [api_text(":build accessibility:")]), api_custom_element("input-switch", _inputSwitch, {
-    props: {
-      "left": "private",
-      "right": "public",
-      "uncheckcolor": "strength",
-      "checkcolor": "intelligence",
-      "checked": $cmp.isPublic
-    },
-    key: 15,
-    on: {
-      "switch": _m6 || ($ctx._m6 = api_bind($cmp.updateAccessibility))
-    }
-  }, []), api_element("div", {
-    classMap: {
-      "btns": true
-    },
-    key: 16
-  }, [$cmp.saveRequested ? api_custom_element("input-button", _inputButton, {
-    props: {
-      "size": "large",
-      "variant": "toughness"
-    },
-    key: 17,
-    on: {
-      "click": _m7 || ($ctx._m7 = api_bind($cmp.saveCancel))
-    }
-  }, [api_text("Cancel")]) : null, $cmp.isSaveable ? api_custom_element("input-button", _inputButton, {
-    props: {
-      "size": "large",
-      "variant": "willpower"
-    },
-    key: 18,
-    on: {
-      "click": _m8 || ($ctx._m8 = api_bind($cmp.saveBuild))
-    }
-  }, [api_text("Save")]) : null])])])])]) : null, $cmp.truekinSelected ? api_custom_element("build-truekin-builder", _buildTruekinBuilder, {
-    props: {
-      "build": $cmp.sanitisedBuild
-    },
-    key: 19,
-    on: {
-      "buildupdated": _m9 || ($ctx._m9 = api_bind($cmp.calculateBuildCode))
-    }
-  }, [api_element("section", {
-    className: $cmp.popupClass,
-    key: 20,
-    on: {
-      "click": _m10 || ($ctx._m10 = api_bind($cmp.saveCancel))
-    }
-  }, [api_element("div", {
-    classMap: {
-      "save-customization": true
-    },
-    key: 21,
-    on: {
-      "click": _m11 || ($ctx._m11 = api_bind($cmp.stopProp))
-    }
-  }, [api_element("h2", {
-    key: 22
-  }, [api_text(":finalize build details:")]), api_custom_element("build-card", _buildCard, {
-    props: {
-      "mode": "static",
-      "build": $cmp.currBuild
-    },
-    key: 23
-  }, []), api_element("form", {
-    key: 24
   }, [api_element("div", {
     classMap: {
       "build-details": true
     },
-    key: 25
+    key: 12
   }, [api_element("div", {
     classMap: {
       "tags": true
     },
-    key: 26
+    key: 13
   }, [api_element("label", {
     classMap: {
       "major-label": true
     },
-    key: 27
+    key: 14
   }, [api_text(":style:")]), api_custom_element("build-tag", _buildTag, {
     props: {
       "label": "Melee",
       "variant": "strength",
       "activated": $cmp.isMelee
     },
-    key: 28,
+    key: 15,
     on: {
-      "click": _m12 || ($ctx._m12 = api_bind($cmp.handleTagSelect))
+      "click": _m5 || ($ctx._m5 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -197,9 +109,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "variant": "skill",
       "activated": $cmp.isRanged
     },
-    key: 29,
+    key: 16,
     on: {
-      "click": _m13 || ($ctx._m13 = api_bind($cmp.handleTagSelect))
+      "click": _m6 || ($ctx._m6 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -207,20 +119,20 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "variant": "ego",
       "activated": $cmp.isEsper
     },
-    key: 30,
+    key: 17,
     on: {
-      "click": _m14 || ($ctx._m14 = api_bind($cmp.handleTagSelect))
+      "click": _m7 || ($ctx._m7 = api_bind($cmp.handleTagSelect))
     }
   }, [])]), api_element("div", {
     classMap: {
       "form-inputs": true
     },
-    key: 31
+    key: 18
   }, [api_element("label", {
     classMap: {
       "major-label": true
     },
-    key: 32
+    key: 19
   }, [api_text(":build name:")]), api_element("input", {
     classMap: {
       "name-input": true
@@ -228,15 +140,15 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.buildName
     },
-    key: 33,
+    key: 20,
     on: {
-      "change": _m15 || ($ctx._m15 = api_bind($cmp.updateBuildName))
+      "change": _m8 || ($ctx._m8 = api_bind($cmp.updateBuildName))
     }
   }, []), api_element("label", {
     classMap: {
       "major-label": true
     },
-    key: 34
+    key: 21
   }, [api_text(":build accessibility:")]), api_custom_element("input-switch", _inputSwitch, {
     props: {
       "left": "private",
@@ -245,29 +157,29 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "checkcolor": "intelligence",
       "checked": $cmp.isPublic
     },
-    key: 35,
+    key: 22,
     on: {
-      "switch": _m16 || ($ctx._m16 = api_bind($cmp.updateAccessibility))
+      "switch": _m9 || ($ctx._m9 = api_bind($cmp.updateAccessibility))
     }
   }, [])]), api_element("div", {
     classMap: {
       "tags": true
     },
-    key: 36
+    key: 23
   }, [api_element("label", {
     classMap: {
       "major-label": true
     },
-    key: 37
+    key: 24
   }, [api_text(":difficulty:")]), api_custom_element("build-tag", _buildTag, {
     props: {
       "label": "Beginner",
       "variant": "willpower",
       "activated": $cmp.isBeginner
     },
-    key: 38,
+    key: 25,
     on: {
-      "click": _m17 || ($ctx._m17 = api_bind($cmp.handleTagSelect))
+      "click": _m10 || ($ctx._m10 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -275,9 +187,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "variant": "stat",
       "activated": $cmp.isIntermediate
     },
-    key: 39,
+    key: 26,
     on: {
-      "click": _m18 || ($ctx._m18 = api_bind($cmp.handleTagSelect))
+      "click": _m11 || ($ctx._m11 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -285,55 +197,233 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "variant": "toughness",
       "activated": $cmp.isAdvanced
     },
-    key: 40,
+    key: 27,
     on: {
-      "click": _m19 || ($ctx._m19 = api_bind($cmp.handleTagSelect))
+      "click": _m12 || ($ctx._m12 = api_bind($cmp.handleTagSelect))
     }
   }, [])])]), api_element("div", {
     classMap: {
       "btns": true
     },
-    key: 41
+    key: 28
   }, [$cmp.saveRequested ? api_custom_element("input-button", _inputButton, {
     props: {
       "size": "large",
       "variant": "toughness"
     },
-    key: 42,
+    key: 29,
     on: {
-      "click": _m20 || ($ctx._m20 = api_bind($cmp.saveCancel))
+      "click": _m13 || ($ctx._m13 = api_bind($cmp.saveCancel))
     }
   }, [api_text("Cancel")]) : null, $cmp.isSaveable ? api_custom_element("input-button", _inputButton, {
     props: {
       "size": "large",
       "variant": "willpower"
     },
-    key: 43,
+    key: 30,
     on: {
-      "click": _m21 || ($ctx._m21 = api_bind($cmp.saveBuild))
+      "click": _m14 || ($ctx._m14 = api_bind($cmp.saveBuild))
+    }
+  }, [api_text("Save")]) : null])])])])]) : null, $cmp.truekinSelected ? api_custom_element("build-truekin-builder", _buildTruekinBuilder, {
+    props: {
+      "build": $cmp.sanitisedBuild
+    },
+    key: 31,
+    on: {
+      "buildupdated": _m15 || ($ctx._m15 = api_bind($cmp.calculateBuildCode))
+    }
+  }, [api_element("section", {
+    className: $cmp.popupClass,
+    key: 32,
+    on: {
+      "click": _m16 || ($ctx._m16 = api_bind($cmp.saveCancel))
+    }
+  }, [api_element("div", {
+    classMap: {
+      "save-customization": true
+    },
+    key: 33,
+    on: {
+      "click": _m17 || ($ctx._m17 = api_bind($cmp.stopProp))
+    }
+  }, [api_element("h2", {
+    key: 34
+  }, [api_text(":finalize build details:")]), api_custom_element("build-card", _buildCard, {
+    props: {
+      "mode": "static",
+      "build": $cmp.currBuild
+    },
+    key: 35
+  }, []), api_element("form", {
+    key: 36
+  }, [api_element("div", {
+    classMap: {
+      "build-details": true
+    },
+    key: 37
+  }, [api_element("div", {
+    classMap: {
+      "tags": true
+    },
+    key: 38
+  }, [api_element("label", {
+    classMap: {
+      "major-label": true
+    },
+    key: 39
+  }, [api_text(":style:")]), api_custom_element("build-tag", _buildTag, {
+    props: {
+      "label": "Melee",
+      "variant": "strength",
+      "activated": $cmp.isMelee
+    },
+    key: 40,
+    on: {
+      "click": _m18 || ($ctx._m18 = api_bind($cmp.handleTagSelect))
+    }
+  }, []), api_custom_element("build-tag", _buildTag, {
+    props: {
+      "label": "Ranged",
+      "variant": "skill",
+      "activated": $cmp.isRanged
+    },
+    key: 41,
+    on: {
+      "click": _m19 || ($ctx._m19 = api_bind($cmp.handleTagSelect))
+    }
+  }, []), api_custom_element("build-tag", _buildTag, {
+    props: {
+      "label": "Esper",
+      "variant": "ego",
+      "activated": $cmp.isEsper
+    },
+    key: 42,
+    on: {
+      "click": _m20 || ($ctx._m20 = api_bind($cmp.handleTagSelect))
+    }
+  }, [])]), api_element("div", {
+    classMap: {
+      "form-inputs": true
+    },
+    key: 43
+  }, [api_element("label", {
+    classMap: {
+      "major-label": true
+    },
+    key: 44
+  }, [api_text(":build name:")]), api_element("input", {
+    classMap: {
+      "name-input": true
+    },
+    props: {
+      "value": $cmp.buildName
+    },
+    key: 45,
+    on: {
+      "change": _m21 || ($ctx._m21 = api_bind($cmp.updateBuildName))
+    }
+  }, []), api_element("label", {
+    classMap: {
+      "major-label": true
+    },
+    key: 46
+  }, [api_text(":build accessibility:")]), api_custom_element("input-switch", _inputSwitch, {
+    props: {
+      "left": "private",
+      "right": "public",
+      "uncheckcolor": "strength",
+      "checkcolor": "intelligence",
+      "checked": $cmp.isPublic
+    },
+    key: 47,
+    on: {
+      "switch": _m22 || ($ctx._m22 = api_bind($cmp.updateAccessibility))
+    }
+  }, [])]), api_element("div", {
+    classMap: {
+      "tags": true
+    },
+    key: 48
+  }, [api_element("label", {
+    classMap: {
+      "major-label": true
+    },
+    key: 49
+  }, [api_text(":difficulty:")]), api_custom_element("build-tag", _buildTag, {
+    props: {
+      "label": "Beginner",
+      "variant": "willpower",
+      "activated": $cmp.isBeginner
+    },
+    key: 50,
+    on: {
+      "click": _m23 || ($ctx._m23 = api_bind($cmp.handleTagSelect))
+    }
+  }, []), api_custom_element("build-tag", _buildTag, {
+    props: {
+      "label": "Intermediate",
+      "variant": "stat",
+      "activated": $cmp.isIntermediate
+    },
+    key: 51,
+    on: {
+      "click": _m24 || ($ctx._m24 = api_bind($cmp.handleTagSelect))
+    }
+  }, []), api_custom_element("build-tag", _buildTag, {
+    props: {
+      "label": "Advanced",
+      "variant": "toughness",
+      "activated": $cmp.isAdvanced
+    },
+    key: 52,
+    on: {
+      "click": _m25 || ($ctx._m25 = api_bind($cmp.handleTagSelect))
+    }
+  }, [])])]), api_element("div", {
+    classMap: {
+      "btns": true
+    },
+    key: 53
+  }, [$cmp.saveRequested ? api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large",
+      "variant": "toughness"
+    },
+    key: 54,
+    on: {
+      "click": _m26 || ($ctx._m26 = api_bind($cmp.saveCancel))
+    }
+  }, [api_text("Cancel")]) : null, $cmp.isSaveable ? api_custom_element("input-button", _inputButton, {
+    props: {
+      "size": "large",
+      "variant": "willpower"
+    },
+    key: 55,
+    on: {
+      "click": _m27 || ($ctx._m27 = api_bind($cmp.saveBuild))
     }
   }, [api_text("Save")]) : null])])])])]) : null])]), api_element("section", {
     classMap: {
       "code": true
     },
-    key: 44
+    key: 56
   }, [api_element("div", {
     classMap: {
       "build-action": true
     },
-    key: 45
+    key: 57
   }, [api_element("h2", {
     classMap: {
       "no-mobile": true
     },
-    key: 46
+    key: 58
   }, [api_text(":copy build code:")]), !$cmp.codeAvailable ? api_element("button", {
     classMap: {
       "x-btn": true
     },
-    key: 47,
+    key: 59,
     on: {
-      "click": _m22 || ($ctx._m22 = api_bind($cmp.copyCode))
+      "click": _m28 || ($ctx._m28 = api_bind($cmp.copyCode))
     }
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
@@ -341,11 +431,11 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "padding": "x-large",
       "title": $cmp.btnTitle
     },
-    key: 48
+    key: 60
   }, [])]) : null, $cmp.codeAvailable ? api_element("button", {
-    key: 49,
+    key: 61,
     on: {
-      "click": _m23 || ($ctx._m23 = api_bind($cmp.copyCode))
+      "click": _m29 || ($ctx._m29 = api_bind($cmp.copyCode))
     }
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
@@ -353,54 +443,54 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "flipvariant": "check",
       "padding": "x-large"
     },
-    key: 50
+    key: 62
   }, [])]) : null]), api_element("div", {
     classMap: {
       "build-action": true
     },
-    key: 51
+    key: 63
   }, [api_element("h2", {
     classMap: {
       "no-mobile": true
     },
-    key: 52
+    key: 64
   }, [api_text(":save build:")]), !$cmp.isSaveable ? api_element("button", {
     classMap: {
       "x-btn": true
     },
-    key: 53
+    key: 65
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
       "variant": "cross",
       "padding": "x-large",
       "title": $cmp.btnTitle
     },
-    key: 54
+    key: 66
   }, [])]) : null, $cmp.isSaveable ? api_element("button", {
-    key: 55,
+    key: 67,
     on: {
-      "click": _m24 || ($ctx._m24 = api_bind($cmp.saveClick))
+      "click": _m30 || ($ctx._m30 = api_bind($cmp.saveClick))
     }
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
       "variant": "save",
       "padding": "x-large"
     },
-    key: 56
+    key: 68
   }, [])]) : null]), api_element("div", {
     classMap: {
       "build-action": true
     },
-    key: 57
+    key: 69
   }, [api_element("h2", {
-    key: 58
+    key: 70
   }, [api_text(":character name:")]), api_element("input", {
     classMap: {
       "name-input": true
     },
-    key: 59,
+    key: 71,
     on: {
-      "change": _m25 || ($ctx._m25 = api_bind($cmp.updateName))
+      "change": _m31 || ($ctx._m31 = api_bind($cmp.updateName))
     }
   }, [])])])])];
 }
