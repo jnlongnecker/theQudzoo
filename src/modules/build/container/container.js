@@ -39,7 +39,8 @@ export default class Container extends LightningElement {
         name: "",
         owner: null,
         public: false,
-        likes: 0,
+        likes: [],
+        tags: [],
         genotype: 'Mutated Human',
     }
 
@@ -53,6 +54,36 @@ export default class Container extends LightningElement {
         this.currBuild = b;
         this.buildCode = this.currBuild.code;
         this.initializeFromExistingCode();
+    }
+
+    get isBeginner() {
+        if (!this.currBuild.tags) return false;
+        return this.currBuild.tags.includes('Beginner');
+    }
+
+    get isIntermediate() {
+        if (!this.currBuild.tags) return false;
+        return this.currBuild.tags.includes('Intermediate');
+    }
+
+    get isAdvanced() {
+        if (!this.currBuild.tags) return false;
+        return this.currBuild.tags.includes('Advanced');
+    }
+
+    get isMelee() {
+        if (!this.currBuild.tags) return false;
+        return this.currBuild.tags.includes('Melee');
+    }
+
+    get isRanged() {
+        if (!this.currBuild.tags) return false;
+        return this.currBuild.tags.includes('Ranged');
+    }
+
+    get isEsper() {
+        if (!this.currBuild.tags) return false;
+        return this.currBuild.tags.includes('Esper');
     }
 
     get isSaveable() {
@@ -224,5 +255,14 @@ export default class Container extends LightningElement {
 
     stopProp(event) {
         event.stopPropagation();
+    }
+
+    handleTagSelect(event) {
+        if (event.detail.activated) {
+            this.currBuild.tags.push(event.detail.label);
+            return;
+        }
+
+        this.currBuild.tags = this.currBuild.tags.filter(tag => tag != event.detail.label);
     }
 }

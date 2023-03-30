@@ -38,12 +38,34 @@
                                 <h2>:finalize build details:</h2>
                                 <build-card mode="static" build={currBuild}></build-card>
                                 <form>
-                                    <label class="major-label">:build name:</label>
-                                    <input class="name-input" value={buildName} onchange={updateBuildName} />
-                                    <label class="major-label">:build accessibility:</label>
-                                    <input-switch left="private" right="public" uncheckcolor="strength"
-                                        checkcolor="intelligence" checked={isPublic}
-                                        onswitch={updateAccessibility}></input-switch>
+                                    <div class="build-details">
+                                        <div class="tags">
+                                            <label class="major-label">:style:</label>
+                                            <build-tag label="Melee" variant="strength" onclick={handleTagSelect}
+                                                activated={isMelee}></build-tag>
+                                            <build-tag label="Ranged" variant="skill" onclick={handleTagSelect}
+                                                activated={isRanged}></build-tag>
+                                            <build-tag label="Esper" variant="ego" onclick={handleTagSelect}
+                                                activated={isEsper}></build-tag>
+                                        </div>
+                                        <div class="form-inputs">
+                                            <label class="major-label">:build name:</label>
+                                            <input class="name-input" value={buildName} onchange={updateBuildName} />
+                                            <label class="major-label">:build accessibility:</label>
+                                            <input-switch left="private" right="public" uncheckcolor="strength"
+                                                checkcolor="intelligence" checked={isPublic}
+                                                onswitch={updateAccessibility}></input-switch>
+                                        </div>
+                                        <div class="tags">
+                                            <label class="major-label">:difficulty:</label>
+                                            <build-tag label="Beginner" variant="willpower" onclick={handleTagSelect}
+                                                activated={isBeginner}></build-tag>
+                                            <build-tag label="Intermediate" variant="stat" onclick={handleTagSelect}
+                                                activated={isIntermediate}></build-tag>
+                                            <build-tag label="Advanced" variant="toughness" onclick={handleTagSelect}
+                                                activated={isAdvanced}></build-tag>
+                                        </div>
+                                    </div>
                                     <div class="btns">
                                         <input-button size="large" variant="toughness" if:true={saveRequested}
                                             onclick={saveCancel}>Cancel</input-button>

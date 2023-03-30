@@ -1,5 +1,6 @@
 import { LightningElement, api, track } from "lwc";
 import { getBuilds, getAuthenticatedUser } from "c/api";
+import tagNames from 'build/tagNames';
 
 export default class BuildLibrary extends LightningElement {
 
@@ -36,6 +37,8 @@ export default class BuildLibrary extends LightningElement {
 
     hideFilters = true;
 
+    chosenTags = [];
+
     get switchChecked() {
         return !this.ascending;
     }
@@ -66,6 +69,14 @@ export default class BuildLibrary extends LightningElement {
         return this.hideFilters ? 'sort hide' : 'sort show';
     }
 
+    get tags() {
+        let ret = [];
+        for (let tag in tagNames) {
+            ret.push(tag);
+        }
+        return ret;
+    }
+
     constructor() {
         super();
         this.getContextUser();
@@ -94,6 +105,7 @@ export default class BuildLibrary extends LightningElement {
         this.filterStore['public'] = this.mode != 'delete' ? true : null;
         this.filterStore['sort'] = { ascending: this.ascending, sortBy: this.sortBy }
         this.filterStore['page'] = this.page;
+        this.filterStore['tags'] = this.chosenTags.length > 0 ? this.chosenTags : undefined;
     }
 
     async fetchBuilds() {
@@ -166,6 +178,17 @@ export default class BuildLibrary extends LightningElement {
 
     updateOrder(event) {
         this.ascending = !this.ascending;
+        this.runSearch();
+    }
+
+    changeTag(event) {
+        if (event.detail.activated) {
+            this.chosenTags.push(event.detail.label);
+            this.runSearch();
+            return;
+        }
+
+        this.chosenTags = this.chosenTags.filter(tag => tag != event.detail.label);
         this.runSearch();
     }
 

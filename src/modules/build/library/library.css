@@ -88,8 +88,28 @@ h2 {
     z-index: -1;
 }
 
+.tags {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.tags label {
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+}
+
 .sort {
+    display: flex;
+    flex-direction: column;
     box-shadow: inset 0 0.5rem 10px var(--hover-darken);
+}
+
+.horizontal-spread {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: center;
@@ -97,7 +117,7 @@ h2 {
     gap: 3rem;
 }
 
-.sort > * {
+.horizontal-spread > * {
     flex-grow: 1;
 }
 
@@ -136,7 +156,7 @@ h2 {
         display: none;
     }
 
-    .sort {
+    .horizontal-spread {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }

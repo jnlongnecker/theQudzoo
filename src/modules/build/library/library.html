@@ -14,21 +14,29 @@
                 </div>
             </div>
             <div class="sort" if:false={hideFilters}>
-                <div class="option">
-                    <label>Genotype</label>
-                    <input-picklist options="Any,Mutated Human,True Kin" onchange={updateGenotype}
-                        chosen={genotypeFilter}></input-picklist>
+                <div class="horizontal-spread">
+                    <div class="option">
+                        <label>Genotype</label>
+                        <input-picklist options="Any,Mutated Human,True Kin" onchange={updateGenotype}
+                            chosen={genotypeFilter}></input-picklist>
+                    </div>
+                    <div class="option">
+                        <label>Sort Order</label>
+                        <input-switch left="Ascending" right="Descending" uncheckcolor="cybernetic" checkcolor="mutant"
+                            onswitch={updateOrder} checked={switchChecked}>
+                        </input-switch>
+                    </div>
+                    <div class="option">
+                        <label>Sort By</label>
+                        <input-picklist options="Likes,Created Date,Last Updated" onchange={updateSort}
+                            chosen={sortBy}></input-picklist>
+                    </div>
                 </div>
-                <div class="option">
-                    <label>Sort Order</label>
-                    <input-switch left="Ascending" right="Descending" uncheckcolor="cybernetic" checkcolor="mutant"
-                        onswitch={updateOrder} checked={switchChecked}>
-                    </input-switch>
-                </div>
-                <div class="option">
-                    <label>Sort By</label>
-                    <input-picklist options="Likes,Created Date,Last Updated" onchange={updateSort}
-                        chosen={sortBy}></input-picklist>
+                <div class="tags">
+                    <label>Tags</label>
+                    <template for:each={tags} for:item="tag">
+                        <build-tag key={tag} label={tag} onclick={changeTag}></build-tag>
+                    </template>
                 </div>
             </div>
         </section>

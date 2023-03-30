@@ -1,0 +1,16 @@
+.container {
+    padding: 1rem var(--desktop-margin-size);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-wrapper {
+    max-width: 125ch;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        padding: 1rem var(--mobile-margin-size);
+    }
+}

@@ -1,3 +1,5 @@
+@import "styles/scrollbar";
+
 :host {
     --code-color: var(--mutation-color);
 }
@@ -68,6 +70,26 @@ form {
     gap: 0.5rem;
 }
 
+.build-details {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1rem;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .major-label {
     font-size: 1.25rem;
     color: var(--stat-color);
@@ -113,6 +135,7 @@ form {
     max-width: 100%;
     z-index: 20;
     box-sizing: border-box;
+    overflow-x: auto;
 }
 
 .popup-background .save-customization {
@@ -308,5 +331,26 @@ form {
 
     .popup-background .save-customization {
         padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .popup-background {
+        display: block;
+    }
+
+    .build-details {
+        grid-template-columns: 1fr;
+    }
+
+    .tags {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tags label {
+        flex-grow: 1;
+        width: 100%;
     }
 }

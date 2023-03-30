@@ -1,0 +1,12 @@
+<template>
+    <div class="editor-container">
+        <div class="text-container">
+            <div class="text" role="textbox" spellcheck="true" contenteditable lwc:dom="manual"
+                onkeydown={trackChanges}>
+            </div>
+        </div>
+        <div class="editor-option-container">
+            <button onclick={setBold}>B</button>
+        </div>
+    </div>
+</template>

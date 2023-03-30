@@ -17,21 +17,43 @@
                 Delete
             </input-button>
         </c-popup>
-        <a href={editorLink}>
+        <a href={staticLink}>
             <div class={cardClass}>
                 <div class="header">
-                    <button onclick={copyCode} class="copy-code" if:true={copyable}>
-                        <input-icon variant="clipboard" flipvariant="check" title="Copy Build Code"
-                            padding="large"></input-icon>
-                    </button>
-                    <span if:false={copyable}></span>
+                    <div class="top-section">
+                        <div class="tags">
+                            <template for:each={combatTags} for:item="tag">
+                                <build-tag key={tag} label={tag} static="true" activated="true"></build-tag>
+                            </template>
+                        </div>
+                        <div class="header-buttons" if:true={copyable}>
+                            <button onclick={copyCode} class="btn">
+                                <input-icon variant="clipboard" flipvariant="check" title="Copy Build Code"
+                                    padding="medium" size="big"></input-icon>
+                            </button>
+                            <button if:true={deletable} class="btn" onclick={editBuild}>
+                                <input-icon variant="edit" title="Edit Build" padding="medium" size="big"></input-icon>
+                            </button>
+                            <button class="btn" onclick={copyShareLink}>
+                                <input-icon variant="share" flipvariant="check" title="Share Build" padding="medium"
+                                    size="big"></input-icon>
+                            </button>
+                            <button class="btn" if:true={copyable} onclick={sendToBuilder}>
+                                <input-icon variant="puzzle" title="Remix Build" padding="medium"
+                                    size="big"></input-icon>
+                            </button>
+                            <button class="btn" onclick={promptDelete} if:true={deletable}>
+                                <input-icon variant="delete" title="Delete Build" padding="medium"
+                                    size="big"></input-icon>
+                            </button>
+                        </div>
+                        <div class="tags">
+                            <template for:each={difficultyTags} for:item="tag">
+                                <build-tag key={tag} label={tag} static="true" activated="true"></build-tag>
+                            </template>
+                        </div>
+                    </div>
                     <h1>{buildName}<span if:true={hasOwner}> by <span class="name">{displayName}</span></span></h1>
-                    <button class="delete" onclick={promptRightButtonClick} if:true={copyable}>
-                        <input-icon if:true={deletable} variant="delete" title="Delete Build"
-                            padding="large"></input-icon>
-                        <input-icon if:true={onlyCopyable} variant="puzzle" title="Remix Build"
-                            padding="large"></input-icon>
-                    </button>
                 </div>
                 <div class="grid">
                     <div class="attributes">

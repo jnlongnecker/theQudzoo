@@ -1,6 +1,7 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./library.html";
 import { getBuilds, getAuthenticatedUser } from "c/api";
+import tagNames from 'build/tagNames';
 class BuildLibrary extends LightningElement {
   get switchChecked() {
     return !this.ascending;
@@ -24,6 +25,13 @@ class BuildLibrary extends LightningElement {
   get sortClass() {
     return this.hideFilters ? 'sort hide' : 'sort show';
   }
+  get tags() {
+    let ret = [];
+    for (let tag in tagNames) {
+      ret.push(tag);
+    }
+    return ret;
+  }
   constructor() {
     super();
     this.filterStore = null;
@@ -41,6 +49,7 @@ class BuildLibrary extends LightningElement {
     this.hitMax = false;
     this.headerText = '';
     this.hideFilters = true;
+    this.chosenTags = [];
     this.getContextUser();
     setTimeout(() => {
       if (!this.builds.length && !this.filters) {
@@ -67,6 +76,7 @@ class BuildLibrary extends LightningElement {
       sortBy: this.sortBy
     };
     this.filterStore['page'] = this.page;
+    this.filterStore['tags'] = this.chosenTags.length > 0 ? this.chosenTags : undefined;
   }
   async fetchBuilds() {
     this.constructBuildFilters();
@@ -128,6 +138,15 @@ class BuildLibrary extends LightningElement {
     this.ascending = !this.ascending;
     this.runSearch();
   }
+  changeTag(event) {
+    if (event.detail.activated) {
+      this.chosenTags.push(event.detail.label);
+      this.runSearch();
+      return;
+    }
+    this.chosenTags = this.chosenTags.filter(tag => tag != event.detail.label);
+    this.runSearch();
+  }
   sortBuilds() {
     let sorter = [...this.builds];
     this.displayBuilds = sorter.sort((a, b) => {
@@ -168,7 +187,7 @@ _registerDecorators(BuildLibrary, {
   track: {
     builds: 1
   },
-  fields: ["filterStore", "ghostBuilds", "ownerFilter", "buildNameFilter", "genotypeFilter", "sortBy", "ascending", "working", "contextUserId", "page", "hitMax", "hideFilters"]
+  fields: ["filterStore", "ghostBuilds", "ownerFilter", "buildNameFilter", "genotypeFilter", "sortBy", "ascending", "working", "contextUserId", "page", "hitMax", "hideFilters", "chosenTags"]
 });
 export default _registerComponent(BuildLibrary, {
   tmpl: _tmpl

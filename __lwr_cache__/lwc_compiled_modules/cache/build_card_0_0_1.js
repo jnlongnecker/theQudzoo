@@ -104,9 +104,9 @@ class BuildCard extends LightningElement {
     return this.genotype == "True Kin" ? "Cybernetics" : "Mutations";
   }
   get cardClass() {
-    let capClass = this.editable ? "" : " static";
-    if (!this.buildJson) return "card" + capClass;
-    return this.genotype == "True Kin" ? "card truekin" + capClass : "card mutant" + capClass;
+    let extension = !this.mode.includes('static') ? '' : ' static';
+    if (!this.buildJson) return "card" + extension;
+    return this.genotype == "True Kin" ? "card truekin" + extension : "card mutant" + extension;
   }
   get attributes() {
     if (!this.buildJson) return [];
@@ -181,12 +181,23 @@ class BuildCard extends LightningElement {
     return `/1/asset/s/latest/public/assets/images/callingImages/${subName}.png`;
   }
   get editorLink() {
-    if (!this.editable) return;
     return "/builds?id=" + this.buildInfo._id;
+  }
+  get staticLink() {
+    if (this.mode.includes('static')) return;
+    return '/builds/' + this.buildInfo._id;
   }
   get remixLink() {
     if (!this.copyable) return;
     return "/builds?code=" + encodeURIComponent(this.buildCode);
+  }
+  get combatTags() {
+    if (!this.buildInfo) return [];
+    return this.buildInfo.tags.filter(tag => tag === 'Melee' || tag === 'Ranged' || tag === 'Esper');
+  }
+  get difficultyTags() {
+    if (!this.buildInfo) return [];
+    return this.buildInfo.tags.filter(tag => tag === 'Beginner' || tag === 'Intermediate' || tag === 'Advanced');
   }
   async fetchJson() {
     if (!this.buildInfo.code) return;
@@ -235,18 +246,26 @@ class BuildCard extends LightningElement {
     }
     return ret;
   }
-  promptRightButtonClick(event) {
-    if (this.deletable) {
-      return this.promptDelete(event);
-    }
-    this.sendToBuilder();
-  }
-  sendToBuilder() {
+  sendToBuilder(event) {
+    this.stopBubble(event);
     window.open(this.remixLink, '_blank');
   }
+  editBuild(event) {
+    this.stopBubble(event);
+    window.open(this.editorLink, '_blank');
+  }
+  copyShareLink(event) {
+    this.stopBubble(event);
+    if (!this.inputForCopying) {
+      this.inputForCopying = document.createElement("input");
+    }
+    this.inputForCopying.value = `https://www.qudzoo.com${'/builds/' + this.buildInfo._id}`;
+    this.inputForCopying.select();
+    this.inputForCopying.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(this.inputForCopying.value);
+  }
   promptDelete(event) {
-    event.stopPropagation();
-    event.preventDefault();
+    this.stopBubble(event);
     this.deleting = true;
   }
   stopBubble(event) {
@@ -264,8 +283,7 @@ class BuildCard extends LightningElement {
     this.dispatchEvent(new CustomEvent('deletedbuild'));
   }
   copyCode(event) {
-    event.preventDefault();
-    event.stopPropagation();
+    this.stopBubble(event);
     if (!this.inputForCopying) {
       this.inputForCopying = document.createElement("input");
     }

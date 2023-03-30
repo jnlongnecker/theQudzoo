@@ -39,6 +39,7 @@ exports.dbConnect = function connect() {
             required: true
         },
         likes: Array,
+        tags: Array,
         genotype: String,
         created: Date,
         updated: Date,
@@ -170,7 +171,7 @@ exports.getBuilds = async function (req, res) {
 
     try {
         allBuilds = await Build.find(filters,
-            "name code owner.displayName public likes genotype created updated");
+            "name code owner.displayName public likes tags genotype created updated");
     }
     catch (e) {
         res.status(400);
@@ -314,7 +315,13 @@ async function buildExists(build) {
 }
 
 function buildFiltersFromQuery(query) {
-    let headers = JSON.parse(decodeURIComponent(query));
+    let headers;
+    if (typeof query === 'object') {
+        headers = query;
+    }
+    else {
+        headers = JSON.parse(decodeURIComponent(query));
+    }
 
     if (!headers) {
         return {
@@ -347,8 +354,13 @@ function buildFiltersFromQuery(query) {
             continue;
         }
 
+
+
         if (key == "username") {
             filters["owner.username"] = headers[key];
+        }
+        else if (key == 'tags') {
+            filters['tags'] = { '$in': headers[key] };
         }
         else {
             filters[key] = headers[key];

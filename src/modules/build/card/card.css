@@ -49,6 +49,23 @@ a {
     color: var(--text-color);
 }
 
+.top-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tags {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.5rem;
+}
+
 .name {
     white-space: nowrap;
 }
@@ -98,15 +115,17 @@ a {
     align-items: center;
 }
 
-.delete {
+.btn {
     fill: var(--code-color);
     background: transparent;
     height: 100%;
     border: 0;
-    border-left: 1px solid var(--code-color);
-    border-bottom: 1px solid var(--code-color);
-    border-bottom-left-radius: 5px;
     padding: 0;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--hover-darken);
 }
 
 .copy-code {
@@ -131,8 +150,20 @@ a {
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 3rem minmax(0, 1fr) 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid var(--code-color);
+    border-right: 1px solid var(--code-color);
+    border-bottom: 1px solid var(--code-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .footer {

@@ -23,6 +23,11 @@
     ],
     "routes": [
         {
+            "id": "builds",
+            "path": "/builds/:info",
+            "routeHandler": "$rootDir/src/server/buildRouter.cjs"
+        },
+        {
             "id": "Builder",
             "path": "/builds",
             "layoutTemplate": "$layoutsDir/builder_layout.njk",

@@ -1,0 +1,63 @@
+button {
+    border-radius: 100px;
+    padding: 5px 10px;
+    display: inline-block;
+    color: rgb(25, 25, 25);
+    font-weight: bold;
+    font-size: 0.75rem;
+    background: var(--bg-color);
+    border: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button.static:hover {
+    cursor: default;
+}
+
+.mutant {
+    color: var(--mutation-color);
+}
+
+.true-kin {
+    color: var(--cybernetic-color);
+}
+
+.skill {
+    color: var(--skills-color);
+}
+
+.stat {
+    color: var(--stat-color);
+}
+
+.strength {
+    color: var(--strength-color);
+}
+
+.agility {
+    color: var(--agility-color);
+}
+
+.toughness {
+    color: var(--toughness-color);
+}
+
+.willpower {
+    color: var(--willpower-color);
+}
+
+.intelligence {
+    color: var(--intelligence-color);
+}
+
+.ego {
+    color: var(--ego-color);
+}
+
+.deactivated {
+    background: rgb(150, 150, 150);
+    color: rgb(25, 25, 25);
+}
