@@ -11,6 +11,7 @@ module.exports = async function (viewRequest, handlerContext) {
 
     const build = encodeURIComponent(JSON.stringify(result.builds[0]));
     const author = result.builds[0].owner != undefined ? result.builds[0].owner.displayName : 'Anonymous';
+    const name = result.builds[0].name ? result.builds[0].name : 'Unnamed Build';
 
     return {
         view: {
@@ -21,6 +22,7 @@ module.exports = async function (viewRequest, handlerContext) {
         viewParams: {
             build: build,
             author: author,
+            name: name,
             preview: "/1/asset/s/latest/public/assets/images/previews/communityBuild.png",
             ...routeProperties, // pass the static route properties
         },
