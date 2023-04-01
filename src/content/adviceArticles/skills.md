@@ -1630,7 +1630,7 @@ In addition to being a great tool for the purposes of moving that one tricky til
 
 Gadget Inspector will improve your ability to identify artifacts, which is pretty handy. With it, you will quite rarely fail at inspecting artifacts even with low Intelligence and even on high complexity artifacts. Even more rarely will you break artifacts you try to identify. Deploying wiring is, as of now, rather useless but if you need to repair power links for gates then this is what you need.
 
-There are several ways to learn artifact recipes that don’t involve data disks. The most well-known is Psychometry which anyone can get from cooking with bananas, but you can also learn recipes from Barathrumites and Daughters of Exile you can water ritual. In either of these circumstances, you need Gadget Inspector in order to actually craft these recipes. Of course, you’ll also need bits so Disassemble is also a must-have, but you don’t actually need any of the Tinker X skills to craft artifacts. Gadget Inspector will also allow you to see what recipes are on data disks so you can begin your collection for when you get Tinker X skills.
+There are several ways to learn artifact recipes that don’t involve data disks. The most well-known is Psychometry which anyone can get from cooking with bananas, but you can also learn recipes from Barathrumites and Daughters of Exile you can water ritual. However, you will still need the dedicated Tinker skills in order to craft the recipes that you learn. Gadget Inspector will also allow you to see what recipes are on data disks so you can begin your collection for when you get Tinker X skills.
 
 In my experience, you should always save the skill points here and get this skill for reputation from the Barathrumites. Barathrumite rep is absurdly easy to get as you do tons of quests for them and you won’t need the benefit from this skill until about the point you can get the skill for rep from the Barathrumites.
 
@@ -1698,7 +1698,7 @@ While mines are mostly useless, bombs are more useful since these work on a time
 
 </div>
 
-Another skill that while definitely has its uses is far better off being purchased for rep instead of skill points. Keep the skill points for combat effectiveness and such, by the time you need this skill you can buy it from Yla Haj in Ezra. This skill will Repair both broken and rusted items, so it’s definitely worth the pickup at some point just in case.
+Another skill that while definitely has its uses is far better off being purchased for rep instead of skill points. Keep the skill points for combat effectiveness and such, by the time you need this skill you can buy it from Yla Haj in Ezra. This skill will repair both broken and rusted items, so it’s definitely worth the pickup at some point just in case.
 
 ### Deploy Turret
 
