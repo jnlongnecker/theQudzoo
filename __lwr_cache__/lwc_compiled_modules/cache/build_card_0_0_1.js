@@ -192,11 +192,11 @@ class BuildCard extends LightningElement {
     return "/builds?code=" + encodeURIComponent(this.buildCode);
   }
   get combatTags() {
-    if (!this.buildInfo) return [];
+    if (!this.buildInfo || !this.buildInfo.tags) return [];
     return this.buildInfo.tags.filter(tag => tag === 'Melee' || tag === 'Ranged' || tag === 'Esper');
   }
   get difficultyTags() {
-    if (!this.buildInfo) return [];
+    if (!this.buildInfo || !this.buildInfo.tags) return [];
     return this.buildInfo.tags.filter(tag => tag === 'Beginner' || tag === 'Intermediate' || tag === 'Advanced');
   }
   async fetchJson() {

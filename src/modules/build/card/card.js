@@ -231,12 +231,12 @@ export default class BuildCard extends LightningElement {
     }
 
     get combatTags() {
-        if (!this.buildInfo) return [];
+        if (!this.buildInfo || !this.buildInfo.tags) return [];
         return this.buildInfo.tags.filter(tag => tag === 'Melee' || tag === 'Ranged' || tag === 'Esper');
     }
 
     get difficultyTags() {
-        if (!this.buildInfo) return [];
+        if (!this.buildInfo || !this.buildInfo.tags) return [];
         return this.buildInfo.tags.filter(tag => tag === 'Beginner' || tag === 'Intermediate' || tag === 'Advanced');
 
     }
