@@ -1,3 +1,9 @@
+/*
+    Author: Jared Longnecker
+    Description: This module is used to handle the routing for
+    build pages
+*/
+
 const dbs = require("./dbs.cjs");
 
 // Return customized input, from which the LWR server constructs a response
@@ -7,6 +13,7 @@ module.exports = async function (viewRequest, handlerContext) {
     const routeProperties = handlerContext.route.properties || {};
     const buildId = viewRequest.params.info;
 
+    // Retrieves the build passed via URL
     let result = await dbs.getBuilds({ params: { info: { "_id": [`${buildId}`] } }, session: { user: '' } }, { status: () => { } });
 
     const build = encodeURIComponent(JSON.stringify(result.builds[0]));

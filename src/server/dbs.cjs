@@ -1,11 +1,20 @@
+/*
+    Author: Jared Longnecker
+    Description: This module is used to handle the HTTP
+    requests requiring database interaction
+*/
+
 const mongoose = require("mongoose");
-const dbUrl = `mongodb+srv://admin:${process.env.PW}${process.env.INSTANCE}${process.env.DB}`;
+const dbUrl = `${process.env.HOST}${process.env.PW}${process.env.INSTANCE}${process.env.DB}`;
 
 let User;
 let Build;
 
-const pageSize = 20;
+const PAGE_SIZE = 20;
 
+/*
+    Establishes a connection to the MongoDB database
+*/
 exports.dbConnect = function connect() {
     mongoose.set("strictQuery", false);
     mongoose.connect(dbUrl, { useNewUrlParser: true });
@@ -49,21 +58,30 @@ exports.dbConnect = function connect() {
     Build = mongoose.model("Build", buildSchema);
 }
 
+/*
+    Closes the connection to the MongoDB database
+*/
 exports.disconnect = function () {
     mongoose.connection.close();
 }
 
+/*
+    Ensures that the login is request is for a valid user
+*/
 exports.validateLogin = async (req, res) => {
     let username = req.body.username;
     let password = req.body.password;
 
-    let user = await User.findOne({ username: username, password: password });
-
-    if (!user) {
+    let user;
+    try {
+        user = await exports.getLoggedInUser(username, password);
+    }
+    catch (e) {
+        res.status(400);
         return {
             success: false,
             user: null,
-            message: "Incorrect username and/or password."
+            message: e.message,
         }
     }
 
@@ -73,12 +91,29 @@ exports.validateLogin = async (req, res) => {
     }
 }
 
+/*
+    Retrieves a user given a username and password. If one does not match,
+    throws an error
+*/
+exports.getLoggedInUser = async (username, password) => {
+    let user = await User.findOne({ username: username, password: password });
+    if (!user) {
+        throw 'Incorrect username and/or password.';
+    }
+
+    return user;
+}
+
+/*
+    Attempts to register the new user
+*/
 exports.registerUser = async (req, res) => {
     let username = req.body.username;
     let password = req.body.password;
 
     let existingUser = await User.exists({ username: username });
     if (existingUser) {
+        req.status(400);
         return {
             success: false,
             message: "Username in use",
@@ -100,19 +135,24 @@ exports.registerUser = async (req, res) => {
     }
 }
 
+/*
+    Retrieves the authenticated user in this session
+*/
 exports.getAuthenticatedUser = async (req, res) => {
     if (!req.session) {
+        req.status(400);
         return {
-            error: false,
+            error: true,
             username: null,
             name: null,
-            message: "User is not authenticated"
+            message: "No session available"
         }
     }
     let userCookie = req.session.user;
     if (!userCookie) {
+        req.status(400);
         return {
-            error: false,
+            error: true,
             username: null,
             name: null,
             message: "User is not authenticated"
@@ -137,6 +177,9 @@ exports.getAuthenticatedUser = async (req, res) => {
     }
 }
 
+/*
+    Updates information about a user
+*/
 exports.updateUser = async function (req, res) {
     let user = req.body;
     let updateObj = {};
@@ -147,7 +190,7 @@ exports.updateUser = async function (req, res) {
         updateObj['password'] = user.password;
     }
 
-    let updatedUser = await User.updateOne({ username: user.username }, updateObj);
+    await User.updateOne({ username: user.username }, updateObj);
     if (user.name) {
         await Build.updateMany({ 'owner.username': user.username }, { 'owner.displayName': user.name });
     }
@@ -161,6 +204,9 @@ exports.updateUser = async function (req, res) {
     }
 }
 
+/*
+    Retrieves all builds matching filters from a request
+*/
 exports.getBuilds = async function (req, res) {
     let allBuilds;
 
@@ -183,24 +229,9 @@ exports.getBuilds = async function (req, res) {
     }
     let maxBuilds = allBuilds.length;
 
-    allBuilds = allBuilds.sort((a, b) => {
-        let valA;
-        let valB;
-        switch (sort.sortBy) {
-            case 'Likes':
-                return sort.ascending ? a.likes.length - b.likes.length : b.likes.length - a.likes.length;
-            case 'Created Date':
-                valA = new Date(a.created).valueOf();
-                valB = new Date(b.created).valueOf();
-                return sort.ascending ? valA - valB : valB - valA
-            case 'Last Updated':
-                valA = new Date(a.updated).valueOf();
-                valB = new Date(b.updated).valueOf();
-                return sort.ascending ? valA - valB : valB - valA
-        }
-    });
+    allBuilds = sortBuilds(allBuilds, sort.sortBy, sort.ascending);
 
-    allBuilds = allBuilds.slice(page * pageSize, (page + 1) * pageSize);
+    allBuilds = allBuilds.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
 
     res.status(200);
     return {
@@ -210,6 +241,32 @@ exports.getBuilds = async function (req, res) {
     }
 }
 
+/*
+    Sorts a list of builds by a field and in an order
+*/
+function sortBuilds(buildList, sortingField, ascending) {
+    buildList = buildList.sort((a, b) => {
+        let valA;
+        let valB;
+        switch (sortingField) {
+            case 'Likes':
+                return ascending ? a.likes.length - b.likes.length : b.likes.length - a.likes.length;
+            case 'Created Date':
+                valA = new Date(a.created).valueOf();
+                valB = new Date(b.created).valueOf();
+                return ascending ? valA - valB : valB - valA
+            case 'Last Updated':
+                valA = new Date(a.updated).valueOf();
+                valB = new Date(b.updated).valueOf();
+                return ascending ? valA - valB : valB - valA
+        }
+    });
+    return buildList;
+}
+
+/*
+    Deletes builds with Ids matching the supplied ids in the request
+*/
 exports.deleteBuilds = async function (req, res) {
     let ids = req.body.ids;
 
@@ -222,6 +279,9 @@ exports.deleteBuilds = async function (req, res) {
     }
 }
 
+/*
+    Upserts a build supplied in the request
+*/
 exports.saveBuild = async function (req, res) {
     let build = req.body;
     let session = req.session;
@@ -253,6 +313,9 @@ exports.saveBuild = async function (req, res) {
 
 }
 
+/*
+    Updates a build supplied in the request
+*/
 exports.updateBuild = async function (req, res) {
     let rawBuild = req.body;
     let updatedBuild = {};
@@ -284,6 +347,10 @@ exports.updateBuild = async function (req, res) {
     }
 }
 
+/*
+    If the user has already liked the build, removes that like.
+    Otherwise, it adds the like
+*/
 exports.toggleLike = async function (req, res) {
     let build = req.body;
     let user = req.session.user;
@@ -307,6 +374,9 @@ exports.toggleLike = async function (req, res) {
     }
 }
 
+/*
+    Returns true if the build exists in the database
+*/
 async function buildExists(build) {
     if (!build._id) return false;
 
@@ -314,16 +384,21 @@ async function buildExists(build) {
     return foundBuild != null;
 }
 
+/*
+    Builds an object for filtering builds in the database
+    from a requests' parameters
+*/
 function buildFiltersFromQuery(query) {
-    let headers;
+    let parameters;
     if (typeof query === 'object') {
-        headers = query;
+        parameters = query;
     }
     else {
-        headers = JSON.parse(decodeURIComponent(query));
+        parameters = JSON.parse(decodeURIComponent(query));
     }
 
-    if (!headers) {
+    // If no parameters are supplied, return the default
+    if (!parameters) {
         return {
             filters: {},
             sort: {
@@ -338,32 +413,31 @@ function buildFiltersFromQuery(query) {
     let sort = {};
     let page = 0;
 
-    for (let key in headers) {
-        if (!headers[key]) continue;
+    // Transform parameter keys into filter keys
+    for (let key in parameters) {
+        if (!parameters[key]) continue;
         if (key == "owner.displayName" || key == "name") {
-            headers[key] = new RegExp(headers[key], "i");
+            parameters[key] = new RegExp(parameters[key], "i");
         }
 
         if (key == "sort") {
-            sort = headers[key];
+            sort = parameters[key];
             continue;
         }
 
         if (key == "page") {
-            page = headers[key];
+            page = parameters[key];
             continue;
         }
 
-
-
         if (key == "username") {
-            filters["owner.username"] = headers[key];
+            filters["owner.username"] = parameters[key];
         }
         else if (key == 'tags') {
-            filters['tags'] = { '$in': headers[key] };
+            filters['tags'] = { '$in': parameters[key] };
         }
         else {
-            filters[key] = headers[key];
+            filters[key] = parameters[key];
         }
     }
 

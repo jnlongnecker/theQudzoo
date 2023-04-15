@@ -1,13 +1,25 @@
+/*
+    Author: Jared Longnecker
+    Description: This module is used to handle HTTP
+    requests to the static server side API
+*/
+
 const fs = require("fs");
 const codeManager = require("./buildCodes.cjs");
 const rootDir = __dirname.substring(0, __dirname.indexOf("src") - 1);
 let app;
 
-
+/*
+    Allows us to cache a reference to the LWC App in this file
+*/
 exports.setApp = (lwrApp) => {
     app = lwrApp;
 }
 
+/*
+    Handles a request for a Qud build code; either decoding a code or 
+    encoding a build as a code
+*/
 exports.processBuildRequest = async (res, req, method) => {
     try {
         let response;
@@ -27,6 +39,9 @@ exports.processBuildRequest = async (res, req, method) => {
     }
 }
 
+/*
+    Handles a basic request to retrieve static data on the server
+*/
 exports.processRequest = async (res, req) => {
     try {
         let response;
@@ -62,19 +77,10 @@ exports.processRequest = async (res, req) => {
     }
 }
 
-function buildQueryObject(rawQuery) {
-    let params = rawQuery.split("&");
-    let queryObj = {};
-    for (let parameter of params) {
-        let keyValue = parameter.split("=");
-        let key = keyValue[0];
-        let value = keyValue[1];
-        queryObj[key] = value;
-    }
-
-    return queryObj;
-}
-
+/*
+    Retrieves all quest names from the routes stored
+    in the LWC App object
+*/
 async function getQuestsPayload() {
     let payload = {
         quests: []
@@ -98,6 +104,10 @@ async function getQuestsPayload() {
     return payload;
 }
 
+/*
+    Retrieves all article names from the routes stored
+    in the LWC App object
+*/
 async function getArticlesPayload() {
     let payload = {
         articles: []
@@ -122,6 +132,10 @@ async function getArticlesPayload() {
     return payload;
 }
 
+/*
+    Retrieves a JSON of static server-side data
+    based on the input dataString
+*/
 async function getData(dataString) {
     let path;
     let json;
@@ -136,6 +150,10 @@ async function getData(dataString) {
     return json;
 }
 
+/*
+    Replaces all instances of the input character with the replacement
+    in the input string
+*/
 function replaceAll(str, character, replacement) {
     let newString = "";
     for (let char of str) {
