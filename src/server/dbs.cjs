@@ -113,7 +113,7 @@ exports.registerUser = async (req, res) => {
 
     let existingUser = await User.exists({ username: username });
     if (existingUser) {
-        req.status(400);
+        res.status(400);
         return {
             success: false,
             message: "Username in use",
@@ -140,7 +140,7 @@ exports.registerUser = async (req, res) => {
 */
 exports.getAuthenticatedUser = async (req, res) => {
     if (!req.session) {
-        req.status(400);
+        res.status(400);
         return {
             error: true,
             username: null,
@@ -150,7 +150,7 @@ exports.getAuthenticatedUser = async (req, res) => {
     }
     let userCookie = req.session.user;
     if (!userCookie) {
-        req.status(400);
+        res.status(400);
         return {
             error: true,
             username: null,
