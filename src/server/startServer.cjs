@@ -12,7 +12,7 @@ const shortCache = 60 * 5;
 const app = lwrServer.getInternalServer("express");
 app.use(session({
     store: MongoStore.create({
-        mongoUrl: `mongodb+srv://admin:${process.env.PW}${process.env.INSTANCE}`
+        mongoUrl: `${process.env.HOST}${process.env.PW}${process.env.INSTANCE}`
     }),
     secret: process.env.SECRET,
     resave: false,
