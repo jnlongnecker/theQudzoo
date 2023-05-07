@@ -59,13 +59,13 @@ The atzmus is a severed body part from a random creature around Qud. If that cre
 
 One of the best atzmus was as I just mentioned: one of your own limbs. This is certainly the easiest and most reliable atzmus to get, however the problem is that the mutation you get is random and if you are a true kin, this is likely not a viable option for you for obvious reasons. Curiously enough, there are actually not many powerful atzmus available, so I'll list out some of the more interesting options:
 
-- Wings 10 from Giant Dragonfly, White Esh or Adiyy
-- Spiral Horn 15 from Unimax
-- Regeneration 20 from Star Kraken
-- Carapace 15 or Space-Time Vortex from N-Dimensional Starshell
-- Temporal Fugue 7 or Electrical Generation 10 from Quatravolt Glider
-- Temporal Fugue 14 or Teleportation 1 from Cyclopean Gibbon
-- Random 4 level 9-12 physical mutations from Glow-wight Apotheote
+-   Wings 10 from Giant Dragonfly, White Esh or Adiyy
+-   Spiral Horn 15 from Unimax
+-   Regeneration 20 from Star Kraken
+-   Carapace 15 or Space-Time Vortex from N-Dimensional Starshell
+-   Temporal Fugue 7 or Electrical Generation 10 from Quatravolt Glider
+-   Temporal Fugue 14 or Teleportation 1 from Cyclopean Gibbon
+-   Random 4 level 9-12 physical mutations from Glow-wight Apotheote
 
 To me, Carapace in particular is quite interesting as the AV increase makes our overwhelming death machine even harder to damage, but we unfortunately don't get high level Carapace guaranteed from any creature. The highest level guaranteed Carapace is found from the Great Saltback, and that's only level 5 Carapace. Over time, there will likely be a more narrow set of contenders.
 
@@ -81,10 +81,10 @@ Axes by contrast have a lot of their benefit reduced due to the raw damage outpu
 
 Chances are fairly high that you already have most if not all the incantations possible from simply playing the game. There are some clear options for me to choose from that I'll point out here.
 
-- +6 Levels: falling in/out of love or witnessing a pentasludge or stronger
-- 4 random pieces of gigantic armor: reading a white or relic book
-- +15 paired quickness: Most quest completions
-- Legendary kill: +10% critical hit chance
+-   +6 Levels: falling in/out of love or witnessing a pentasludge or stronger
+-   4 random pieces of gigantic armor: reading a white or relic book
+-   +15 paired quickness: Most quest completions
+-   Legendary kill: +10% critical hit chance
 
 Even though I list multiple here as interesting, the +6 levels is pretty clearly the winner in my eyes. Not only do you get 6 levels of increased HP, but also 6 mutations points, a rapid advancement, +1 to all attributes and 6 levels worth of skill points. Pretty tough to beat for sure.
 
@@ -92,9 +92,9 @@ Even though I list multiple here as interesting, the +6 levels is pretty clearly
 
 Again, chances are you have the hamsa already that you'd want to use, but you've got a fairly overwhelming wealth of options here. I'll list off some of my favorites.
 
-- Beaded Bracelet/Armor: +6 AV
-- Melee Weapon: 15% lower melee action cost
-- Fix-it Foam or Book: 800 skill points
+-   Beaded Bracelet/Armor: +6 AV
+-   Melee Weapon: 15% lower melee action cost
+-   Fix-it Foam or Book: 800 skill points
 
 Yeah, not too much super interesting to me here. I like the survivability of the AV since more often than not I don't have much (if any) armor on my Golem. You shouldn't have to go searching for anything here.
 
@@ -168,13 +168,13 @@ Not only do pools of this liquid appear after the death of a zero jell, there ar
 
 Our final threat, and easily the most dangerous: the infamous chrome pyramid. If you are somehow unacquainted, here is what you can look forward to:
 
-- Quickly regenerating Force Bubble that is always on
-- A swarm rack, which is a missile launcher shotgun
-- Ability to assemble missiles when out
-- 4,000 HP
-- 35 AV
-- A high accuracy, extremely deadly melee attack with an unavoidable damage type
-- The ability to teleport, just in case you thought you could run
+-   Quickly regenerating Force Bubble that is always on
+-   A swarm rack, which is a missile launcher shotgun
+-   Ability to assemble missiles when out
+-   4,000 HP
+-   35 AV
+-   A high accuracy, extremely deadly melee attack with an unavoidable damage type
+-   The ability to teleport, just in case you thought you could run
 
 There is a lot that I could say here in regards to how you should kill one, but in all honesty you shouldn't really try and kill these unless it becomes a matter of pride. Instead, you should focus on escaping as quickly as possible. This is easier said than done as the chrome pyramid is capable of Teleportation, but luckily for us it is still a robot and suffers from the universal weakness of all robots: EMP. Make sure you have a few EMP MK III grenades in reserve for your escape, as the first may only be enough to get it to burn its Teleportation cooldown. Additionally, if you must endure a turn or two where it can fire on you, make sure you are not next to any terrain and you stand as far as possible from it so the spray of missiles hits you as little as possible. Alternatively, having 25 DV and the Swift Reflexes skill makes it so the missiles will _never_ contact you, allowing you to move in safety as long as they don't explode on nearby terrain.
 
@@ -214,4 +214,4 @@ The floor in every stratum is not made out of strictly solid ground like you mig
 
 There is not much extra strategy here; ensure you either have strong combat capabilities (which you should by this point) or are willing to just run all the way down to the bottom. Since this is still a tier 8 zone, while chests will _often_ spawn with loot that is better suited to a lower area, it will not _always_ spawn with low-tier loot so it's still worth it to search every floor for goodies as you can often find at least one zetachrome weapon somewhere along the path to the bottom for your Golem armament.
 
-Once you're at the bottom, you'll discover Tau as well as a high-level member from the Seekers of the Sightless Way, Aoyg-no-Longer. Aoyg will not attack you, and you can even water ritual them for some Seeker reputation. Bring the still chime to Tau and you'll have completed the ritual of -elseing, allowing Tau to become a member of the Seeker cult. Denying this from happening makes Dyvvrach pretty upset, so make sure you fulfill Tau's wish or else you'll be stuck farming neutron flux and will have wasted this whole effort. Return to Dyvvrach at Chavvah and you'll be able to secure this power source for your Golem.
+Once you're at the bottom, you'll discover Tau as well as a high-level member from the Seekers of the Sightless Way, Aoyg-no-Longer. Aoyg will not attack you, and you can even water ritual them for some Seeker reputation. Bring the still chime to Tau and you'll have completed the ritual of -elseing, allowing Tau to become a member of the Seeker cult. You _can_ kill Aoyg for a hit to your Seeker rep and his equipment, although he is very dangerous and it's generally not recommended. If you kill Aoyg then Tau will be rather upset but it doesn't matter for your success of the quest. Return to Dyvvrach at Chavvah and you'll be able to secure this power source for your Golem.
