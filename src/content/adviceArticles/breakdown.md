@@ -18,24 +18,24 @@ The first section of the game revolves around the legendary quest to Red Rock. T
 
 #### Must-Have
 
-- Equipment for every gear slot
-- Steel or above weaponry
-- Mechanical wings
+-   Equipment for every gear slot
+-   Steel or above weaponry
+-   Mechanical wings
 
 #### Nice-to-Have
 
-- Sphere of Negative Weight
-- Pickaxe
-- Miner’s Helmet
+-   Sphere of Negative Weight
+-   Pickaxe
+-   Miner’s Helmet
 
 ### Skill Wishlist - Red Rock
 
-- Swift Reflexes
-- Acrobatics
-- Hurdle
-- Charge
-- Mind's Compass
-- Basic weapon skills
+-   Swift Reflexes
+-   Acrobatics
+-   Hurdle
+-   Charge
+-   Mind's Compass
+-   Basic weapon skills
 
 ## Grit Gate (Level 10-18)
 
@@ -45,7 +45,7 @@ The second section involves the quests just up to Decoding the Signal, all revol
 
 #### Novice of the Sightless Way
 
-<p class="section-info">-249 Seekers of the Sightless Way reputation, Harvestry + Meal Preparation</p>
+<p class="section-info">-249 Seekers of the Sightless Way reputation, Harvestry + Meal Preparation, Telepathy + Berate, Menacing Stare, Flaming Hands / Freezing Hands</p>
 
 #### Goatfolk Sower
 
@@ -59,33 +59,33 @@ The second section involves the quests just up to Decoding the Signal, all revol
 
 #### Must-Have
 
-- Sparbine
-- Carbide or above weaponry
-- Steel tier or above equipment for every slot
-- Glowsphere/Floating Glowsphere (if no Night Vision)
+-   Sparbine
+-   Carbide or above weaponry
+-   Steel tier or above equipment for every slot
+-   Glowsphere/Floating Glowsphere (if no Night Vision)
 
 #### Nice-to-Have
 
-- Hologram Bracelet
-- Elemental damage option
-- Sower Seeds x30
-- Stopsvalinn
+-   Hologram Bracelet
+-   Elemental damage option
+-   Sower Seeds x30
+-   Stopsvalinn
 
 ### Skill Wishlist - Grit Gate
 
-- Tinker I
-- Disassemble
-- Dual Wield
-- Ambidexterity
-- Shake It Off
-- Meal Preparation
-- Block
-- Juke
-- Mid-Level Weapon Skills
+-   Tinker I
+-   Disassemble
+-   Dual Wield
+-   Ambidexterity
+-   Shake It Off
+-   Meal Preparation
+-   Block
+-   Juke
+-   Mid-Level Weapon Skills
 
 ## Bethesda Susa (Level 18-26)
 
-At the third section of the game, I’m ready to rock through Bethesda Susa and enter the make-or-break point of my runs. Success in this section typically results in the success of the run. By this point I’m very in tune with my build and how powerful it feels. Weaker builds will result in me taking things slower and prolonging this section, while particularly powerful builds will result in me pushing the boundaries here and accessing parts of the map early. Once I’ve completed the prior section, this section starts off with completion of Decoding the Signal and gutting Bethesda Susa of all XP possible. From there, I will spend the rest of my time leveling up and preparing the A Call to Arms, typically in the 3 days of waiting during The Earl of Omonporch. I’ll explore any Historic Site below Deep Jungle tier sites, but it’s important here not to get too overconfident. Ooze sites in particular are extremely dangerous at this tier and should likely be avoided.
+At the third section of the game, I’m ready to rock through Bethesda Susa and enter the make-or-break point of my runs. Success in this section typically results in the success of the run. By this point I’m very in tune with my build and how powerful it feels. Weaker builds will result in me taking things slower and prolonging this section, while particularly powerful builds will result in me pushing the boundaries here and accessing parts of the map early. Once I’ve completed the prior section, this section starts off with completion of Decoding the Signal and gutting Bethesda Susa of all XP possible. From there, I will spend the rest of my time leveling up and preparing for A Call to Arms, typically in the 3 days of waiting during The Earl of Omonporch. I’ll explore any Historic Site below Deep Jungle tier sites, but it’s important here not to get too overconfident. Ooze sites in particular are extremely dangerous at this tier and should likely be avoided.
 
 ### Notable Enemies - Bethesda Susa
 
@@ -117,30 +117,30 @@ At the third section of the game, I’m ready to rock through Bethesda Susa and 
 
 #### Must-Have
 
-- Fullerite and above weaponry
-- Piecemeal fullerite-tier equipment
+-   Fullerite and above weaponry
+-   Piecemeal fullerite-tier equipment
 
 #### Nice-to-Have
 
-- Portable Walls
-- Schrodinger Pages
-- Metamorphic Polygel
-- Freeze Ray/Flamethrower
-- Ceremonial Vibrokhopesh
+-   Portable Walls
+-   Schrodinger Pages
+-   Metamorphic Polygel
+-   Freeze Ray/Flamethrower
+-   Ceremonial Vibrokhopesh
 
 ### Skill Wishlist - Bethesda Susa
 
-- Calloused
-- Weathered
-- Tinker II
-- Two-weapon Fighting
-- Tumble
-- Jump
-- Snake Oiler
-- Meditate
-- Bow and Rifle
-- Basic Pistol skills
-- Deft Blocking
+-   Calloused
+-   Weathered
+-   Tinker II
+-   Two-weapon Fighting
+-   Tumble
+-   Jump
+-   Snake Oiler
+-   Meditate
+-   Bow and Rifle
+-   Basic Pistol skills
+-   Deft Blocking
 
 ## Endgame (Level 26-35)
 
@@ -170,15 +170,15 @@ Very suddenly, at this section of the game we gain access to extremely powerful 
 
 #### Chrome Pyramid
 
-<p class="section-info">Geomagnetic Disc, 25 DV and Swift Reflexes, -249 Robot reputation</p>
+<p class="section-info">Vibro weapons, Electric damage, Electricity modded weapons, Corrosive Gas Generation, 25 DV and Swift Reflexes, -249 Robot reputation</p>
 
 #### Leering Stalker
 
-<p class="section-info">Ceremonial Vibrokhopesh, Electricity modded weapons, 25 DV, Stunning capabilities, -249 Robot reputation, Geomagnetic Disc, High-Voltage Arc Winders</p>
+<p class="section-info">Ceremonial Vibrokhopesh, Electricity modded weapons, 25 DV, Stunning capabilities, -249 Robot reputation, Corrosive Gas Generation, Geomagnetic Disc, High-Voltage Arc Winders</p>
 
 #### Cherubim
 
-<p class="section-info">EMP Grenades III, Explosives, Level 6 Wings, 24 AV, Enhanced Quickness, 300 Movement speed, Geomagnetic Disc, Mental attacks, Stunning capabilities</p>
+<p class="section-info">EMP Grenades III, Explosives, Level 6 Wings, 24 AV, Enhanced Quickness, 300 Movement speed, Geomagnetic Disc, Corrosive Gas Generation, Mental attacks, Stunning capabilities</p>
 
 #### Red Ooze/Purple Jell
 
@@ -188,18 +188,18 @@ Very suddenly, at this section of the game we gain access to extremely powerful 
 
 #### Must-Have
 
-- Flawless Crysteel weaponry
-- Full Flawless Crysteel tier gear
-- 25 DV with some armor/weapon configuration
-- Geomagnetic Disc
-- Light Rail/High-Voltage Arc Winder x2/Hand Rail x2
+-   Flawless Crysteel weaponry
+-   Full Flawless Crysteel tier gear
+-   25 DV with some armor/weapon configuration
+-   Geomagnetic Disc
+-   Light Rail/High-Voltage Arc Winder x2/Hand Rail x2
 
 #### Nice-to-Have
 
-- Anti-Gravity Boots
-- 3D Cobblers
-- Psychic Meridian
-- Tri-Hologram Bracelet
+-   Anti-Gravity Boots
+-   3D Cobblers
+-   Psychic Meridian
+-   Tri-Hologram Bracelet
 
 ### Skill Wishlist - Endgame
 
