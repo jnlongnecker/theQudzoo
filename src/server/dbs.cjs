@@ -301,6 +301,7 @@ exports.saveBuild = async function (req, res) {
         genotype: build.genotype,
         created: Date.now(),
         updated: Date.now(),
+        tags: build.tags,
     });
 
     await newBuild.save();
