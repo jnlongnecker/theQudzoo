@@ -22,7 +22,7 @@ Chimera has a very interesting gimmick associated with it. While you give up all
 
 Is this worth giving up any possibility to gain mental mutations? On average, it tends to be. Especially if you can gain more hands, the DPS increase you can gain from dual-wielding builds skyrockets. However, you can also get unlucky and take a less-useful physical mutation for a weak limb, such as just an extra face. By the time an extra face is super impactful, you’re probably at the end of the game and still an extra hand will probably be more impactful as a permanent change.
 
-Additionally, the Chimera morphotype will provide special interactions with the cloaca surprise (negate it entirely) and brain brine (gain nothing from mental mutation or mental defect rolls).
+Additionally, the Chimera morphotype will provide a special interaction with brain brine, namely you gain nothing from mental mutation or mental defect rolls.
 
 ### Esper
 
