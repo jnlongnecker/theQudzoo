@@ -68,6 +68,7 @@ html {
     background-image: var(--bg-color);
     color: var(--text-color);
     font-family: var(--main-font);
+    font-size: var(--body-size);
     scroll-padding-top: var(--heading-height);
 }
 

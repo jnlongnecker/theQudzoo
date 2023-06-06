@@ -154,7 +154,7 @@ At level 1, this mutation can be useful for keeping enemies at bay as long as yo
 
 </div>
 
-Even without any investment, a +2 to Strength is already pretty worth it. With investment, we can get even higher Strength which allows us to focus our attribute points elsewhere while keeping the highest penetration value possible for our weapons. We can combine this with weapons that have no penetration cap, like Horns and Burrowing Claws to devastating effect. Where propels itself ahead of most mutations is its capability to stun on melee attacks as well. Combine this with a build that makes as many attacks as possible and you can easily stun enemies near permanently. This mutation is a staple in most of my builds; you become far more effective in melee with it and a before and after comparison between having it and not having it is quite noticeable.
+Even without any investment, a +2 to Strength is already pretty worth it. With investment, we can get even higher Strength which allows us to focus our attribute points elsewhere while keeping the highest penetration value possible for our weapons. We can combine this with weapons that have no penetration cap, like Horns and Burrowing Claws to devastating effect. Where Double-muscled propels itself ahead of most mutations is its capability to stun on melee attacks as well. Combine this with a build that makes as many attacks as possible and you can easily stun enemies near permanently. This mutation is a staple in most of my builds; you become far more effective in melee with it and a before and after comparison between having it and not having it is quite noticeable.
 
 ### Electrical Generation
 

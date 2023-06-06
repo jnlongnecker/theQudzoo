@@ -2,7 +2,7 @@
 
 ---
 
-I’m not a big believer in “handing out” builds for you to try; instead I believe in understanding what makes a build effective and then allowing you to shape that knowledge into an experience that is fun and engaging for you. I’ll break down making a build into smaller parts to consider and leave it to you to decide what to fit into those pieces.
+I’m not a big believer in “handing out” builds for you to try; instead I believe in understanding what makes a build effective and then allowing you to shape that knowledge into an experience that is fun and engaging for you (I know, ironic coming from the guy who made a website to share Qud builds). I’ll break down making a build into smaller parts to consider and leave it to you to decide what to fit into those pieces.
 
 ## Tier 0 - Concept
 
