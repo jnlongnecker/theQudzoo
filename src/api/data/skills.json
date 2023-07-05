@@ -200,13 +200,13 @@
                     "plural": "undefined",
                     "cost": 0,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 19,
-                       "toughness": 0,
-                      "intelligence": 0,
-                      "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 19,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -216,13 +216,13 @@
                     "plural": "undefined",
                     "cost": 0,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 19,
-                       "toughness": 0,
-                      "intelligence": 0,
-                      "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 19,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -232,13 +232,13 @@
                     "plural": "Suppressive Fires",
                     "cost": 150,
                     "prerequisites": {
-                       "skills": ["draw a bead"],
-                       "strength": 0,
-                       "agility": 19,
-                       "toughness": 0,
-                      "intelligence": 0,
-                      "willpower": 0,
-                       "ego": 0
+                        "skills": ["draw a bead"],
+                        "strength": 0,
+                        "agility": 19,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -248,13 +248,13 @@
                     "plural": "Sure Fires",
                     "cost": 150,
                     "prerequisites": {
-                       "skills": ["draw a bead"],
-                       "strength": 0,
-                       "agility": 19,
-                       "toughness": 0,
-                      "intelligence": 0,
-                      "willpower": 0,
-                       "ego": 0
+                        "skills": ["draw a bead"],
+                        "strength": 0,
+                        "agility": 19,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "No"
@@ -264,29 +264,13 @@
                     "plural": "Wounding Fires",
                     "cost": 150,
                     "prerequisites": {
-                       "skills": ["draw a bead"],
-                       "strength": 0,
-                       "agility": 19,
-                       "toughness": 0,
-                      "intelligence": 0,
-                      "willpower": 0,
-                       "ego": 0
-                    },
-                    "faction": "None",
-                    "worth": "No"
-                },
-                {
-                    "name": "Kickback",
-                    "plural": "Kickbacks",
-                    "cost": 50,
-                    "prerequisites": {
-                       "skills": [],
-                       "strength": 19,
-                       "agility": 0,
-                       "toughness": 0,
-                      "intelligence": 0,
-                      "willpower": 0,
-                       "ego": 0
+                        "skills": ["draw a bead"],
+                        "strength": 0,
+                        "agility": 19,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "No"
@@ -296,13 +280,13 @@
                     "plural": "Disorienting Fires",
                     "cost": 200,
                     "prerequisites": {
-                       "skills": ["draw a bead", "wounding fire"],
-                       "strength": 0,
-                       "agility": 25,
-                       "toughness": 0,
-                      "intelligence": 0,
-                      "willpower": 0,
-                       "ego": 0
+                        "skills": ["draw a bead", "wounding fire"],
+                        "strength": 0,
+                        "agility": 25,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "No"
@@ -312,13 +296,13 @@
                     "plural": "Beacon Fires",
                     "cost": 200,
                     "prerequisites": {
-                       "skills": ["draw a bead", "sure fire"],
-                       "strength": 0,
-                       "agility": 25,
-                       "toughness": 0,
-                      "intelligence": 0,
-                      "willpower": 0,
-                       "ego": 0
+                        "skills": ["draw a bead", "sure fire"],
+                        "strength": 0,
+                        "agility": 25,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "No"
@@ -328,13 +312,13 @@
                     "plural": "Flattening Fires",
                     "cost": 200,
                     "prerequisites": {
-                       "skills": ["draw a bead", "suppressive fire"],
-                       "strength": 0,
-                       "agility": 25,
-                       "toughness": 0,
-                      "intelligence": 0,
-                      "willpower": 0,
-                       "ego": 0
+                        "skills": ["draw a bead", "suppressive fire"],
+                        "strength": 0,
+                        "agility": 25,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "No"
@@ -344,13 +328,13 @@
                     "plural": "Ultra Fires",
                     "cost": 300,
                     "prerequisites": {
-                       "skills": ["draw a bead"],
-                       "strength": 0,
-                       "agility": 29,
-                       "toughness": 0,
-                      "intelligence": 0,
-                      "willpower": 0,
-                       "ego": 0
+                        "skills": ["draw a bead"],
+                        "strength": 0,
+                        "agility": 29,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "No"
@@ -367,13 +351,13 @@
                     "plural": "undefined",
                     "cost": 0,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 15,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 15,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "Villagers of Kyakukya",
                     "worth": "Yes"
@@ -383,13 +367,13 @@
                     "plural": "Harvesting",
                     "cost": 50,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 15,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 15,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "Villagers of Joppa",
                     "worth": "Yes"
@@ -399,13 +383,13 @@
                     "plural": "Butchering",
                     "cost": 50,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 15,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 15,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "Cannibals",
                     "worth": "Yes"
@@ -415,13 +399,13 @@
                     "plural": "undefined",
                     "cost": 50,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 17,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 17,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "Denizens of Yd Freehold",
                     "worth": "Yes"
@@ -431,13 +415,13 @@
                     "plural": "undefined",
                     "cost": 100,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 17,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 17,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -454,13 +438,13 @@
                     "plural": "undefined",
                     "cost": 0,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -470,13 +454,13 @@
                     "plural": "Bludgeons",
                     "cost": 150,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 17,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 17,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -486,13 +470,13 @@
                     "plural": "Charging Strikes",
                     "cost": 100,
                     "prerequisites": {
-                       "skills": ["bludgeon", "charge"],
-                       "strength": 19,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": ["bludgeon", "charge"],
+                        "strength": 19,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -502,13 +486,13 @@
                     "plural": "Conks",
                     "cost": 150,
                     "prerequisites": {
-                       "skills": ["bludgeon"],
-                       "strength": 21,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": ["bludgeon"],
+                        "strength": 21,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -518,13 +502,13 @@
                     "plural": "Backswings",
                     "cost": 100,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 23,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 23,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -534,13 +518,13 @@
                     "plural": "Slams",
                     "cost": 150,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 25,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 25,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -550,13 +534,13 @@
                     "plural": "undefined",
                     "cost": 300,
                     "prerequisites": {
-                       "skills": ["slam"],
-                       "strength": 29,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": ["slam"],
+                        "strength": 29,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "No"
@@ -573,13 +557,13 @@
                     "plural": "undefined",
                     "cost": 0,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 19,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 19,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "Villagers of Ezra",
                     "worth": "No"
@@ -589,13 +573,13 @@
                     "plural": "undefined",
                     "cost": 150,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 21,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 21,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "Pariahs",
                     "worth": "No"
@@ -612,13 +596,13 @@
                     "plural": "Flurries",
                     "cost": 0,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 17,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 17,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "Hindren of Bey Lah - Eskhind",
                     "worth": "Yes"
@@ -628,13 +612,13 @@
                     "plural": "undefined",
                     "cost": 0,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 17,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 17,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -644,13 +628,13 @@
                     "plural": "undefined",
                     "cost": 300,
                     "prerequisites": {
-                       "skills": ["offhand strikes"],
-                       "strength": 0,
-                       "agility": 21,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": ["offhand strikes"],
+                        "strength": 0,
+                        "agility": 21,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "Vines",
                     "worth": "Yes"
@@ -660,13 +644,13 @@
                     "plural": "undefined",
                     "cost": 300,
                     "prerequisites": {
-                       "skills": ["ambidexterity"],
-                       "strength": 0,
-                       "agility": 25,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": ["ambidexterity"],
+                        "strength": 0,
+                        "agility": 25,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -683,13 +667,13 @@
                     "plural": "undefined",
                     "cost": 0,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 0,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "Yes"
@@ -699,13 +683,13 @@
                     "plural": "undefined",
                     "cost": 100,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 15,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 15,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "Fish",
                     "worth": "No"
@@ -715,13 +699,13 @@
                     "plural": "undefined",
                     "cost": 100,
                     "prerequisites": {
-                       "skills": [],
-                       "strength": 0,
-                       "agility": 0,
-                       "toughness": 19,
-                       "intelligence": 0,
-                       "willpower": 0,
-                       "ego": 0
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 19,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
                     },
                     "faction": "None",
                     "worth": "No"
@@ -738,7 +722,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -754,7 +738,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -770,7 +754,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -786,7 +770,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 }
@@ -809,7 +793,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "Cult of the Coiled Lamb",
                     "worth": "No"
                 },
@@ -825,7 +809,7 @@
                         "intelligence": 17,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -841,7 +825,7 @@
                         "intelligence": 19,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 }
@@ -864,7 +848,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -880,7 +864,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -896,7 +880,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 }
@@ -919,7 +903,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -935,7 +919,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -951,7 +935,7 @@
                         "intelligence": 17,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -967,7 +951,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -983,7 +967,7 @@
                         "intelligence": 21,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -999,7 +983,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1015,7 +999,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1031,7 +1015,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Sometimes"
                 }
@@ -1054,7 +1038,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 17
-                     },
+                    },
                     "faction": "Flowers",
                     "worth": "Sometimes"
                 },
@@ -1070,7 +1054,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 17
-                     },
+                    },
                     "faction": "Fellowship of Wardens - Warden Indrix",
                     "worth": "No"
                 },
@@ -1086,7 +1070,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 19
-                     },
+                    },
                     "faction": "Hermits",
                     "worth": "Yes"
                 },
@@ -1102,7 +1086,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 19
-                     },
+                    },
                     "faction": "Consortium of Phyta",
                     "worth": "No"
                 },
@@ -1118,7 +1102,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 23
-                     },
+                    },
                     "faction": "Mechanimists",
                     "worth": "No"
                 },
@@ -1134,7 +1118,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 25
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 }
@@ -1157,7 +1141,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1173,7 +1157,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1189,7 +1173,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1205,7 +1189,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1221,7 +1205,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1237,7 +1221,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1253,7 +1237,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1269,7 +1253,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 }
@@ -1292,7 +1276,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "Seekers of the Sightless Way",
                     "worth": "Yes"
                 },
@@ -1308,7 +1292,7 @@
                         "intelligence": 0,
                         "willpower": 17,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1324,7 +1308,7 @@
                         "intelligence": 0,
                         "willpower": 21,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -1340,7 +1324,7 @@
                         "intelligence": 0,
                         "willpower": 21,
                         "ego": 0
-                     },
+                    },
                     "faction": "Robots",
                     "worth": "No"
                 },
@@ -1356,7 +1340,7 @@
                         "intelligence": 0,
                         "willpower": 23,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -1372,7 +1356,7 @@
                         "intelligence": 0,
                         "willpower": 29,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 }
@@ -1395,7 +1379,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "Fellowship of Wardens - Wardens Esther or Warden Une",
                     "worth": "Yes"
                 },
@@ -1411,7 +1395,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1427,7 +1411,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1443,7 +1427,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1459,7 +1443,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -1475,7 +1459,7 @@
                         "intelligence": 0,
                         "willpower": 25,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 }
@@ -1498,7 +1482,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1514,7 +1498,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1530,7 +1514,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1546,7 +1530,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1562,7 +1546,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Sometimes"
                 },
@@ -1578,7 +1562,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1594,7 +1578,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 }
@@ -1617,7 +1601,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1633,7 +1617,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -1649,9 +1633,25 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
+                },
+                {
+                    "name": "Kickback",
+                    "plural": "Kickbacks",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 19,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
                 },
                 {
                     "name": "Juke",
@@ -1665,7 +1665,7 @@
                         "intelligence": 0,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 }
@@ -1688,7 +1688,7 @@
                         "intelligence": 15,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "Barathrumites",
                     "worth": "No"
                 },
@@ -1704,7 +1704,7 @@
                         "intelligence": 15,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1720,7 +1720,7 @@
                         "intelligence": 15,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -1736,7 +1736,7 @@
                         "intelligence": 17,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -1752,7 +1752,7 @@
                         "intelligence": 17,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "Daughters of Exile",
                     "worth": "No"
                 },
@@ -1768,7 +1768,7 @@
                         "intelligence": 17,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Sometimes"
                 },
@@ -1784,7 +1784,7 @@
                         "intelligence": 19,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1800,7 +1800,7 @@
                         "intelligence": 23,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1816,7 +1816,7 @@
                         "intelligence": 25,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -1832,7 +1832,7 @@
                         "intelligence": 29,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 }
@@ -1855,7 +1855,7 @@
                         "intelligence": 15,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1871,7 +1871,7 @@
                         "intelligence": 15,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1887,7 +1887,7 @@
                         "intelligence": 15,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -1903,7 +1903,7 @@
                         "intelligence": 15,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1919,7 +1919,7 @@
                         "intelligence": 17,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1935,7 +1935,7 @@
                         "intelligence": 17,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1951,7 +1951,7 @@
                         "intelligence": 19,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "Yes"
                 },
@@ -1967,7 +1967,7 @@
                         "intelligence": 19,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 },
@@ -1983,7 +1983,7 @@
                         "intelligence": 19,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "Roots",
                     "worth": "Yes"
                 },
@@ -1999,7 +1999,7 @@
                         "intelligence": 21,
                         "willpower": 0,
                         "ego": 0
-                     },
+                    },
                     "faction": "None",
                     "worth": "No"
                 }

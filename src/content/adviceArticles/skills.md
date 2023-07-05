@@ -256,22 +256,6 @@ You lose your mark to fire 1 (one!) shot that is guaranteed to hit. Most rifles 
 
 You cause a bleed for each penetration you do and lose your mark. You’re probably only penetrating 3-5 times max, so that’s a 3-5 damage bleed that the enemy can save from for the cost of your mark. This is pathetic, the cost is too high for too small a benefit.
 
-### Kickback
-
-<div class="section-info">
-
-**Cost:** 50
-
-**Obtain By:** Early-Mid Game
-
-**Faction:** N/A
-
-**Worth:** Yes
-
-</div>
-
-If you use guns as your primary weapon, this is actually quite good as it’ll give you space for more shots. If you combine this with liberal use of Suppressive Fire, you can be incredibly hard to reach and very evasive.
-
 ### Disorienting Fire
 
 <div class="section-info">
@@ -1593,6 +1577,22 @@ The fourth thing to add is that you can improve your range significantly whether
 The fifth thing to add is that Charge synergizes naturally with many other skills like Jump, Juke, Swipe and Slam as they all move yourself or the enemy which allow you to get another Charge in the middle of an extended combat. Charge has a low cooldown which with middling levels of Willpower can easily allow it to come off cooldown in the middle of many mid-late game fights.
 
 All in all, there’s no reason to not get Charge in any run; even runs that you don’t fight in melee because of its escape potential.
+
+### Kickback
+
+<div class="section-info">
+
+**Cost:** 50
+
+**Obtain By:** Early-Mid Game
+
+**Faction:** N/A
+
+**Worth:** Yes
+
+</div>
+
+If you use guns as your primary weapon, this is actually quite good as it’ll give you space for more shots. This used to be locked behind the Bow and Rifle tree, so now that it's in the Tactics tree it's much more valuable since you don't have to buy any Bow and Rifle skills for non-rifle builds.
 
 ### Juke
 
