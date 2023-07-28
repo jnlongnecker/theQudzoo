@@ -37,6 +37,15 @@
             }
         },
         {
+            "id": "Build Code",
+            "path": "/build-code",
+            "layoutTemplate": "$layoutsDir/build_code_layout.njk",
+            "contentTemplate": "$contentDir/build_code.md",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/previews/builder.png"
+            }
+        },
+        {
             "id": "Library",
             "path": "/library",
             "layoutTemplate": "$layoutsDir/library_layout.njk",

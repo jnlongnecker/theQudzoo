@@ -38,6 +38,7 @@ class BuildLibrary extends LightningElement {
     this.builds = [];
     this.ghostBuilds = [1, 2, 3, 4, 5, 6];
     this.mode = "copy";
+    this.popup = false;
     this.ownerFilter = '';
     this.buildNameFilter = '';
     this.genotypeFilter = 'Any';
@@ -187,7 +188,7 @@ _registerDecorators(BuildLibrary, {
   track: {
     builds: 1
   },
-  fields: ["filterStore", "ghostBuilds", "ownerFilter", "buildNameFilter", "genotypeFilter", "sortBy", "ascending", "working", "contextUserId", "page", "hitMax", "hideFilters", "chosenTags"]
+  fields: ["filterStore", "ghostBuilds", "popup", "ownerFilter", "buildNameFilter", "genotypeFilter", "sortBy", "ascending", "working", "contextUserId", "page", "hitMax", "hideFilters", "chosenTags"]
 });
 export default _registerComponent(BuildLibrary, {
   tmpl: _tmpl

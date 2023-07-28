@@ -5,6 +5,12 @@ h2 {
     margin: 0;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    fill: inherit;
+}
+
 .setting-button {
     border: 0;
     display: block;
@@ -12,12 +18,14 @@ h2 {
     background-color: var(--hover-darken);
     border-radius: 5px;
     padding: 0.75rem;
+    color: var(--mutation-color);
 }
 
 .setting-button:hover {
     cursor: pointer;
     fill: rgb(25, 25, 25);
     background-color: var(--mutation-color);
+    color: rgb(25, 25, 25);
 }
 
 .setting-button.on {
@@ -123,7 +131,7 @@ h2 {
 
 .option {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
@@ -139,6 +147,14 @@ h2 {
     padding: 0 var(--desktop-margin-size);
 }
 
+.help-text {
+    margin: 0;
+}
+
+.help-icon {
+    display: none;
+}
+
 @media only screen and (max-width: 1300px) {
     .container {
         grid-template-columns: minmax(0, 1fr);
@@ -148,6 +164,14 @@ h2 {
 @media only screen and (max-width: 900px) {
     .container {
         padding: 0 var(--mobile-margin-size);
+    }
+
+    .help-icon {
+        display: block;
+    }
+
+    .help-text {
+        display: none;
     }
 }
 

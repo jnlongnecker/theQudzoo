@@ -14,6 +14,8 @@ export default class BuildLibrary extends LightningElement {
     @api
     mode = "copy"
 
+    popup = false;
+
     ownerFilter = '';
 
     buildNameFilter = '';

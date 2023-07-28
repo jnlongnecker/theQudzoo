@@ -8,6 +8,14 @@
                         onchange={updateName}></input-search>
                 </div>
                 <div class="option">
+                    <button class="setting-button" onclick={showPopup}>
+                        <a href="/build-code">
+                            <p class="help-text">How Do I Add A Build Code?</p>
+                            <span class="help-icon">
+                                <input-icon variant="question" size="normal"></input-icon>
+                            </span>
+                        </a>
+                    </button>
                     <button class={filterClass} onclick={toggleFilters}>
                         <input-icon variant="filter" size="normal"></input-icon>
                     </button>
