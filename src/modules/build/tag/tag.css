@@ -1,4 +1,4 @@
-button {
+span {
     border-radius: 100px;
     padding: 5px 10px;
     display: inline-block;
@@ -9,11 +9,11 @@ button {
     border: 0;
 }
 
-button:hover {
+span:hover {
     cursor: pointer;
 }
 
-button.static:hover {
+span.static:hover {
     cursor: default;
 }
 

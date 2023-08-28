@@ -49,19 +49,22 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "option": true
     },
     key: 6
-  }, [api_element("button", {
-    classMap: {
-      "setting-button": true
-    },
-    key: 7,
-    on: {
-      "click": _m1 || ($ctx._m1 = api_bind($cmp.showPopup))
-    }
   }, [api_element("a", {
     attrs: {
       "href": "/build-code"
     },
-    key: 8
+    key: 7
+  }, [api_element("button", {
+    classMap: {
+      "setting-button": true
+    },
+    attrs: {
+      "tabindex": "-1"
+    },
+    key: 8,
+    on: {
+      "click": _m1 || ($ctx._m1 = api_bind($cmp.showPopup))
+    }
   }, [api_element("p", {
     classMap: {
       "help-text": true

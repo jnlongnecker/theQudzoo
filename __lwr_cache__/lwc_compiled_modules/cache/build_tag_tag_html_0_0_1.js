@@ -6,7 +6,7 @@ import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, d: api_dynamic_text, t: api_text, h: api_element} = $api;
   const {_m0} = $ctx;
-  return [api_element("button", {
+  return [api_element("span", {
     className: $cmp.tagClass,
     key: 0,
     on: {
