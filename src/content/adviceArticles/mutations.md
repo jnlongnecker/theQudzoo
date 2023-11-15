@@ -252,9 +252,9 @@ This is both good and bad, since if you _know_ when to stop, you save on mutatio
 
 <div class="section-info">
 
-**Cost:** 3
+**Cost:** 4
 
-**Character Creation Rating:** <span class="star-filled">★ ★ ★ ★ </span><span class="star-empty">★ </span>
+**Character Creation Rating:** <span class="star-filled">★ ★ ★ </span><span class="star-empty">★ ★ </span>
 
 **Mutation Buy Rating:** <span class="star-filled">★ ★ ★ </span><span class="star-empty">★ ★ </span>
 
@@ -263,6 +263,8 @@ This is both good and bad, since if you _know_ when to stop, you save on mutatio
 Horns try to be a more offensive version of Carapace, and they succeed pretty well. Like Carapace, if you take Horns you are now forced to build around them or at least invest into them. These deal very high damage, especially when invested in, and cause one of the most deadly bleeds in the game. They even have the added benefit of giving an enhanced chance to hit with all attacks made with them, so you will practically never miss even with low Agility. Horns are so powerful in fact that you’ll probably want to use them as your primary weapon, and even if you don’t, they will _always_ strike on a Charge making that skill even better than it already is.
 
 Now, the problem with Horns is that you must now play a melee Strength build in order to get proper efficacy from them. If you don’t, then the armor they provide is simply not worth the investment you must put into them as you cannot mod the Horns. Helmets have some of the most useful mods, and Horns having no defensive benefits besides the AV means not being able to use helmets is actually something significant we’re missing out on. For this reason, if you do not have a build that already can utilize Horns well, you’ll probably not want to take it (hence the lower Mutation Buy Rating).
+
+Horns also come in at a relatively steep cost of 4 mutation points on character creation, which when compared to other offensive mutations such as Sunder Mind and Corrosive Gas Generation is not quite as good. It's _the_ de-facto offensive melee mutation, but while it is a cut above the melee weapons you will find it is not so significant to completely warrant the cost.
 
 ### Multiple Arms
 

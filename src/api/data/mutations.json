@@ -181,7 +181,7 @@
         {
             "name": "Horns",
             "category": "Physical Mutation",
-            "cost": 3,
+            "cost": 4,
             "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/horns.png",
             "code": "bl",
