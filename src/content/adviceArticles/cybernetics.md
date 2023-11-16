@@ -178,7 +178,7 @@ While most classes of Schemasoft [mid-tier] aren't super great, the rifle and ut
 
 </div>
 
-There's not too many skills that cost above 151 skill points, and most of them are pretty good. Of course, not _all_ of them are good for your build (Berserk! as a long blades user? Snooze). If you do happen to get a good one, especially something like Two-weapon Fighting without having purchased any Dual Wield skills, it _may_ just be worth eating up the head slot for. Again, it'll likely skill be conditional as it'll just be a matter of time before you just have the skill points to spend on it anyway and can swap this out for something more meaningful.
+There's not too many skills that cost above 151 skill points, and most of them are pretty good. Of course, not _all_ of them are good for your build (Berserk! as a long blades user? Snooze). If you do happen to get a good one, especially something like Multiweapon Mastery without having purchased any Multiweapon Fighting, it _may_ just be worth eating up the head slot for. Again, it'll likely skill be conditional as it'll just be a matter of time before you just have the skill points to spend on it anyway and can swap this out for something more meaningful.
 
 ### Dopamine Synth
 
@@ -384,7 +384,7 @@ At the cost of a body cybernetic slot, we gain another back slot. It won't give 
 
 This goes without saying that if you use back equipment that _doesn't_ provide armor bonuses, you get even more benefit from this cybernetic as you can now use two of them and get even better bonuses. It also synergizes naturally with cybernetics like Gun Rack and the Cathedras which occupy the back slot because it gives you another back slot to use normal back equipment with. However, if you only use back equipment solely for the armor bonus, there are occasions where they don't give that benefit (especially early game back items). In these cases, you're not getting much benefit so use a different cybernetic but definitely hold on to this one.
 
-One particularly powerful use of this cybernetic is using two pairs of helping hands in order to obtain 6 limbs and using all Dual Wield skills. These robotic hands benefit from this skill tree, and you can quickly become a devastating flurry of weapons.
+One particularly powerful use of this cybernetic is using two pairs of helping hands in order to obtain 6 limbs and using all Multiweapon Fighting skills. These robotic hands benefit from this skill tree, and you can quickly become a devastating flurry of weapons.
 
 ### Matter Recompositor
 
@@ -540,8 +540,8 @@ Ranged weapons are very good, the only downside is that they can miss their targ
 
 The difference between the Bionic arm and other cybernetics that increase your stats are twofold:
 
-- They don't increase Strength.
-- They take up a competitive cybernetics slot.
+-   They don't increase Strength.
+-   They take up a competitive cybernetics slot.
 
 Since neither downsides are true for Bionic arm, it makes it quite a bit better. Of course, this assumes that Strength is actually important for your build in some way, which may not necessarily be true. If you are rocking a melee build, there actually aren't an extensive repertoire of cybernetics to improve your melee capabilities so this is a fantastic one to add to give your hits a bit more juice. You'll still have another arm slot to add something else, or you can go all-in and use two Bionic arms to get a +4 to Strength.
 
@@ -607,7 +607,7 @@ Agility is good, don't get me wrong. If you have nothing to put in the hands slo
 
 For how early you can get this, it's incredibly good. It allows you to wield any two-handed weapon (melee OR ranged) in a single hand, _no matter where that hand may be_. This means it combines with helping hands and Gun rack naturally as you can wield two-handed melee weapons in all 4 of your hands with helping hands and wield Rifles in all hands as well. Since Akimbo shoots all equipped ranged weapons at the same time, that means you can fire _all your held Rifles at the same time_.
 
-Two-handed weapons are just obviously far stronger than one-handed weapons, so being able to wield them in one hand just significantly improves your melee damage. The best part about this cybernetic is that it _also_ does so for your ranged damage. Using Giant hands, you can run powerful melee builds usually reserved for mutants like two-handed weapon and offhand Short Blade/offhand Shield or Dual Wield two-handed weapons. Combine with helping hands and you can Flurry 4 two-handed Axes for devastating results, especially if you have a pair of precision nanon fingers or two.
+Two-handed weapons are just obviously far stronger than one-handed weapons, so being able to wield them in one hand just significantly improves your melee damage. The best part about this cybernetic is that it _also_ does so for your ranged damage. Using Giant hands, you can run powerful melee builds usually reserved for mutants like two-handed weapon and offhand Short Blade/offhand Shield or use Multiweapon Fighting with two-handed weapons. Combine with helping hands and you can Flurry 4 two-handed Axes for devastating results, especially if you have a pair of precision nanon fingers or two.
 
 There are some extremely valid builds that don't benefit from this cybernetic at all, however. If your build revolves around Pistols, you gain no benefit from this as you already wield those in one hand. Similarly, if you have low Strength and compensate with vibro weapons, those are all one-handed and this also does you no good. It can be very powerful, just make sure you're actually getting something from it.
 
@@ -655,7 +655,9 @@ Typically, if you have even average Intelligence you will have no difficulty ide
 
 Here we arrive at the highest tier of unarmed damage, 3d4 per hit which brings it to be slightly better on average than the crysteel mace. Unfortunately for this cybernetic, it's double the cost of the prior tier (Fullerite hand bones) and there are no further tiers of hand bone while there are further tiers of Cudgels: flawless crysteel and zetachrome. While the raw damage per penetration caps off here, the PV does not. This is where the Crysteel hand bones have the potential to outscale conventional weaponry. This does require a significant Strength score and while it can result in some of the highest damage _possible_ in a single hit by a melee weapon, the fact of the matter is that it's just not that necessary.
 
-Additionally, the Crysteel hand bones will always be outscaled by the Fist of the Ape God as it will _also_ scale with Strength infinitely and we can one-hand that with Giant hands, which leaves us room to wield a Shield or offhand Short Blade _and_ allows us to wield double Rifles. By the time we get to the point that Dual Wielding Crysteel hand bones becomes stronger than this combination in terms of melee DPS, we're doing so much damage anyway that it simply doesn't matter anymore.
+Additionally, the Crysteel hand bones will always be outscaled by the Fist of the Ape God as it will _also_ scale with Strength infinitely and we can one-hand that with Giant hands, which leaves us room to wield a Shield or offhand Short Blade _and_ allows us to wield double Rifles. By the time we get to the point that Multiweapon Fighting with Crysteel hand bones becomes stronger than this combination in terms of melee DPS, we're doing so much damage anyway that it simply doesn't matter anymore.
+
+Additionally, uncapped PV only does so much to help you due to the way the penetration formula works. The simple version is this: If your PV exceeds the enemy AV by 3 or more, more PV _does not help you_. So that uncapped PV will help on those stupidly high AV enemies, sure, but those enemies are always better beaten in other ways or by using the Penetrating Strikes skill.
 
 If you for some reason have an unbelievably high Strength score to make use of the uncapped PV before you get access to flawless crysteel/zetachrome weaponry/Fist of the Ape God, then this can be a good weapon in the meantime. But once you get there (which should be pretty soon), you can free up the 8 points and cybernetic slot for something else.
 
@@ -691,11 +693,11 @@ The main use for this is that it prevents slipping of all kinds and from being m
 
 I'll take a moment and list out some of the less-obvious cases where you would be moved if not for Anchor spikes:
 
-- Stunning Force
-- Blast cannon (turrets or Leering stalker)
-- Industrial Fans
-- Conveyor Belts
-- Force Bubble from another creature
+-   Stunning Force
+-   Blast cannon (turrets or Leering stalker)
+-   Industrial Fans
+-   Conveyor Belts
+-   Force Bubble from another creature
 
 The unfortunate thing about Anchor spikes is that there are other great feet slot cybernetics that it competes with, and given that being moved doesn't really happen that often it tends to lose out to the other feet slot cybernetics that have more common uses. It also provides no protection from being knocked prone, which is definitely the more important effect as being moved just doesn't happen a lot until the end game where you have solutions for this.
 
@@ -829,11 +831,11 @@ Always knowing where the stairs are is really quite nice for exploring zones a b
 
 16% chance to refract light-based attacks. Let's go down the list of sources of light-based attacks:
 
-- Light Manipulation
-- Light rail
-- Hand rail
-- Laser pistol
-- Laser rifle
+-   Light Manipulation
+-   Light rail
+-   Hand rail
+-   Laser pistol
+-   Laser rifle
 
 Pick something else.
 
@@ -969,11 +971,11 @@ Palladium electrodeposits grant 20 units of compute power, and you can install m
 
 Now, what improves with compute power? Since cybernetics are not that easy to swap out on a whim, we're interested in including them as part of our build. Here are the relevant cybernetics and items that you'll likely be interested in improving:
 
-- Cathedra
-- High-fidelity matter recompositor
-- Inflatable axons
-- Penetrating Radar
-- Point-defense drone
+-   Cathedra
+-   High-fidelity matter recompositor
+-   Inflatable axons
+-   Penetrating Radar
+-   Point-defense drone
 
 Each Palladium electrodeposit will improve these by 20%. None of these items or cybernetics are really so good that we would want to give up one or more cybernetic slots in order to improve them this small amount. If you happen to have one and you also have a free slot for the Palladium electrodeposits, it's worth installing just for the bonus. If not, you should be able to find something better.
 

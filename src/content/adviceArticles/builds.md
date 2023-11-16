@@ -66,13 +66,13 @@ Once you’ve decided the type of build you’re going for, you need to narrow d
 | Benefits from Long Blade stances | Struggles against high AV                                     |
 | Allows for hit-and-run Tactics   | Requires high Agility for skills and high Strength for damage |
 
-With melee weapons, you also need to consider whether you are Dual Wielding or using a two-handed weapon. I’ll break it down like this:
+With melee weapons, you also need to consider whether you are Multiweapon Fighting or Single Weapon Fighting. I’ll break it down like this:
 
-If you are Dual Wielding, your offhand should always be a Short Blade. The only exception is when you are Dual Wielding Cudgels to try and get more chances for a stun, but even here using an offhand Short Blade and investing in would be preferable.
+If you are Multiweapon Fighting, your offhand should always be a Short Blade. The only exception is when you are Multiweapon Fighting Cudgels to try and get more chances for a stun, but even here using an offhand Short Blade and investing in would be preferable.
 
-If you are using a Shield, you should use anything except a Short Blade. Cudgels and Long Blades are particularly effective with a Shield. If you have Multiple Arms, ensure your Shield is in one of your mutated hands and use a two-handed weapon and an offhand dagger.
+If you are using a Shield, you should use anything except a Short Blade. Cudgels and Long Blades are particularly effective with a Shield. You're probably best off Single Weapon Fighting with the ceremonial vibrokhopesh in the long-term with a Shield, but Multiweapon Fighting builds work well with Shields as well. If you are using Helping Hands, ensure your Shield is in one of your robo-hands.
 
-If you are not Dual Wielding or using a Shield, you should be using a two-handed weapon. Even those who are making a Dual Wielding build, until your build comes online (Jab + Ambidexterity) you should be using a two-handed weapon. Only use Shields if you are investing in them.
+If you are not Multiweapon Fighting or using a Shield, you should be using a two-handed weapon with Single Weapon Fighting. Even those who are making a Multiweapon Fighting build, until your build comes online (Jab + Multiweapon Expertise) you should be using a two-handed weapon. Only use Shields if you are investing in them.
 
 ### Ranged Weapons
 
@@ -161,6 +161,8 @@ Explosions (robots)
 Vibro weapons (saw hander, ickslugs)
 
 On-Hit effects (stun)
+
+Penetrating Strikes
 
 </div>
 

@@ -552,13 +552,13 @@ While you shouldn’t really ever purchase this with skill points, it’s always
 
 Another one you’ll probably only want to get through reputation rather than buy with skill points. As long as you’re crawling around the world and at least investigating points of interest when prompted, you usually have no shortage of secrets to share. You can learn some pretty obscure secrets and sometimes some pretty useful stuff, but it’s all RNG so you may just get nothing but 300 goatfolk villages. It’s pretty easy to get Pariah rep, especially because the Hindren Pariah at the Stilt can be water ritualed.
 
-## Dual Wield
+## Multiweapon Fighting
 
-### Flurry/Offhand Strikes
+### Flurry/Multiweapon Proficiency
 
 <div class="section-info">
 
-**Cost:** 300
+**Cost:** 100
 
 **Obtain By:** Mid Game
 
@@ -568,17 +568,19 @@ Another one you’ll probably only want to get through reputation rather than bu
 
 </div>
 
-In order to be taught these skills, you need to ensure Eskhind becomes the Hindriarch which is not even a guarantee in every playthrough. If the stars align for you and you for some reason don’t have Flurry/Offhand Strikes yet, then it’s worth the rep.
+In order to be taught these skills, you need to ensure Eskhind becomes the Hindriarch which is not even a guarantee in every playthrough. If the stars align for you and you for some reason don’t have Flurry/Multiweapon Proficiency yet, then it’s worth the rep.
 
-Flurry makes a strike with every limb, which is a good placeholder until we can do this naturally every turn (which is the goal with Dual Wield builds). Offhand Strikes brings our offhand strike chance from 15% to 35%; a considerable increase but still not that great. While Dual Wielding, you should always have an offhand Short Blade with Jab; anything else and you’re missing out on DPS. One handy thing about Flurry is that it does have an Agility prerequisite, meaning its cooldown can be nullified with Triple-jointed.
+Flurry makes a strike with every limb, which is a good placeholder until we can do this naturally every turn (which is the goal with Multiweapon Fighting builds). Offhand Strikes brings our offhand strike chance from 15% to 35%; a considerable increase but still not that great. While Multiweapon Fighting, you should almost always have an offhand Short Blade with Jab; anything else and you’re missing out on DPS. One handy thing about Flurry is that it does have an Agility prerequisite, meaning its cooldown can be nullified with Triple-jointed.
 
-Something to note is that all Dual Wield skills affect natural arms, mutated arms, _and_ robotic arms (from helping hands). They **do not** affect the arms from the Multiple Arms mutation or other limbs that have natural weaponry like the head with the Horns mutation. Something to keep in mind about robotic arms during my analysis of these skills is that they do not benefit from Jab, only from these Dual Wield skills.
+Something to note is that all Multiweapon Fighting skills affect natural arms, mutated arms (including those from Multiple Arms), _and_ robotic arms (from helping hands). They **do not** affect special limbs that have natural weaponry like the head with the Horns mutation or Stinger. Something to keep in mind about robotic arms during my analysis of these skills is that they do not benefit from Jab, only from these Multiweapon Fighting skills.
 
-### Ambidexterity
+Before the introduction of Single Weapon Fighting, this tree was the clear best choice in terms of damage. Now, without the proper build to utilize this tree correctly, you're better off with Single Weapon Fighting. However, if you do decide to build around this tree from character creation, you can create a whirlwind of blades for devastating effect. You'll just have to have this in mind from the start to do it properly.
+
+### Multiweapon Expertise
 
 <div class="section-info">
 
-**Cost:** 300
+**Cost:** 150
 
 **Obtain By:** Mid Game
 
@@ -588,13 +590,13 @@ Something to note is that all Dual Wield skills affect natural arms, mutated arm
 
 </div>
 
-Ambidexterity brings us up to a 55% offhand strike chance. This brings our chance with a Short Blade with Jab up to 110%, meaning we reliably strike twice every turn. Combine this with elemental mods on each weapon and we already have a very powerful build. If you still are using a non-Short Blade in your offhand, stop immediately. Swap to a Short Blade, it’s just miles better.
+Multiweapon Expertise brings us up to a 50% offhand strike chance. Combine this with elemental mods on each weapon and we already have a very powerful build. If you still are using a non-Short Blade in your offhand, stop immediately. Swap to a Short Blade, it’s just miles better.
 
-### Two-Weapon Fighting
+### Multiweapon Mastery
 
 <div class="section-info">
 
-**Cost:** 300
+**Cost:** 200
 
 **Obtain By:** Mid-Late Game
 
@@ -604,7 +606,7 @@ Ambidexterity brings us up to a 55% offhand strike chance. This brings our chanc
 
 </div>
 
-If you’re lucky enough to find this being taught by a random village, this is the most expensive skill in the game to get and it confers all of its benefits even if you get it without any of its prerequisites so it’s very worth it. Two-weapon Fighting brings our offhand strike chance to 75%, or 150% with an offhand Short Blade with Jab. At this point, nothing else really compares; whatever skills you have your combat build is basically complete once you get this skill as long as you have Jab. Any other skills would just be icing on the cake; one of the most powerful skills out there.
+If you’re lucky enough to find this being taught by a random village, this is one of the most expensive skill in the game to get and it confers all of its benefits even if you get it without any of its prerequisites so it’s very worth it. Multiweapon Mastery brings our offhand strike chance to 65%. We've made it all the way to the end here, but to get the most out of this tree we want to staple as many limbs and Short Blades as possible to our body. Pop in those girshling dentures, strap a wristblade to all 4 of your arms (you picked Multiple Arms, didn't you?) and just go to town. Bonus points if you have Double Muscled for the stun chance.
 
 ## Endurance
 
@@ -720,56 +722,6 @@ This is another must-have skill. Get this always right as soon as you have 23 To
 
 I usually find that I can Sprint for longer than I need to with nothing boosting my Sprint efficiency. There has never been a moment where I thought to myself “If only Sprint didn’t run out so soon”. Sprint being on cooldown has certainly been an issue, but never it not lasting long enough. For 250 skill points we can get better skills that result in us not needing to Sprint at all, and certainly as the game goes on you will find yourself using Sprint less and less. By the time you even have the stats to get this, you probably won’t need it (even more so because if you have 25 Toughness, you’re already beefy).
 
-## First Aid
-
-### Staunch Wounds
-
-<div class="section-info">
-
-**Cost:** 100
-
-**Obtain By:** Early Game
-
-**Faction:** Cult of the Coiled Lamb (Not Worth It)
-
-**Worth:** No
-
-</div>
-
-You stop bleeding as long as you have a bandage and you’re not in combat. Bandages are common enough, but that second condition should make you blink a few times. That’s right, you cannot use this in combat which means for the cost of 100 skill points, you can have a skill that’s less useful than witchwood bark at doing what it is specifically designed to do. Chances are that if you’re out of combat and bleeding, you’re either fine and can just wait out the bleeding or you can just snack on some witchwood bark and heal through the bleed. If you could use this in combat, it’d be worth it. Even rep with the Cult of the Coiled Lamb is worth more than this skill because you can get a few unlucky legendary kills and reduce your rep with them, which can make Stilt trips tricky if Tszappur squares up since you don’t want to kill him and remove an easy source of EXP from turning in Resheph secrets. As it stands now, just get Harvestry or buy some witchwood bark at literally any apothecary.
-
-### Heal
-
-<div class="section-info">
-
-**Cost:** 100
-
-**Obtain By:** Mid-Late Game
-
-**Faction:** N/A
-
-**Worth:** Yes
-
-</div>
-
-You can very quickly regen up to 25% of your max HP with this, which can be pretty clutch. It’s not too hard to get 5 turns of distance between yourself and an enemy and this skill can be pretty useful in getting rid of Quartziferous Mirrors since Mirror Bugs don’t tend to hurt you themselves so you can wade through a few and heal up with Heal. The only problem with this skill is that you have to get Staunch Wounds first and because of this I tend not to get this skill.
-
-### Set Limb
-
-<div class="section-info">
-
-**Cost:** 100
-
-**Obtain By:** Never
-
-**Faction:** N/A
-
-**Worth:** No
-
-</div>
-
-This skill is a remnant of a lost time; it literally doesn’t do anything anymore. Don’t take it.
-
 ## Heavy Weapon
 
 ### Strapping Shoulders
@@ -840,7 +792,7 @@ Long Blades are a class of weapon that has a considerable amount of complexity s
 
 Defensive Stance should be the stance you primarily stay in; your de facto stance. This stance is what makes Long Blades easily the best weapon for non-melee combatants as you can have any Long Blade equipped and benefit while other classes of weapons only benefit you while you’re actively attacking with them. This is also a powerful stance to increase your durability as having bonus DV means you can invest more into AV in the rare event that you do get hit if your build revolves primarily around DV.
 
-Aggressive Stance is a unique tradeoff, as against enemies with poor DV you can deal more damage than other weapons with your attacks. Against enemies with good or decent DV, Long Blades suffer quite a bit in comparison to other weapons and this issue is exacerbated even more against enemies like goatfolk with decent DV and AV. Of course, in order for any of this to be useful, you have to have the game knowledge and understand what stats enemies have or use things like scanning to be able to read that information in-game. Stances apply to offhand Short Blades as well, and since Short Blades get a +1 to hit from skills, this stance can make Dual Wielding builds even more lethal as Short Blades have less penalty and with Dual Wield skills can reap even more from the benefit.
+Aggressive Stance is a unique tradeoff, as against enemies with poor DV you can deal more damage than other weapons with your attacks. Against enemies with good or decent DV, Long Blades suffer quite a bit in comparison to other weapons and this issue is exacerbated even more against enemies like goatfolk with decent DV and AV. Of course, in order for any of this to be useful, you have to have the game knowledge and understand what stats enemies have or use things like scanning to be able to read that information in-game. Stances apply to offhand Short Blades as well, and since Short Blades get a +1 to hit from skills, this stance can make Multiweapon Fighting builds even more lethal as Short Blades have less penalty and with Multiweapon Fighting skills can reap even more from the benefit.
 
 Most of the time, you’ll end up using Defensive Stance as Aggressive Stance is quite situational and requires much more game knowledge to utilize in those proper situations.
 
@@ -1063,6 +1015,86 @@ This skill has a very hefty skill point cost, and since Mechanimist reputation i
 </div>
 
 Your followers get a miniscule amount of HP (4 \* Ego mod). Even if you stack Ego and have an insane mod, it’ll probably only be around 12 which works out to 48 HP for insane end-tier god Ego. Anything less and this just gives even worse HP. If you have literally nothing else to get and you have tons of followers, then sure why not. But there are better things to get.
+
+## Physic
+
+### Staunch Wounds
+
+<div class="section-info">
+
+**Cost:** 50
+
+**Obtain By:** Mid-Late Game
+
+**Faction:** Cult of the Coiled Lamb (Not Worth It)
+
+**Worth:** Yes
+
+</div>
+
+Bleeding typically is not a big problem, but there are a couple late-game sources of bleed that are pretty nasty and last for a fairly considerable amount of time. By then, you probably have a mountain of bandages that you can run through but for 50 skill points this is not too bad. If you've got the skill points hanging around and are looking to start fighting creatures in Lake Hinnom and beyond, you'll get a bit of use out of this one.
+
+### Nostrums
+
+<div class="section-info">
+
+**Cost:** 100
+
+**Obtain By:** Early-Mid Game
+
+**Faction:** N/A
+
+**Worth:** No
+
+</div>
+
+There are a few issues with this skill, so let's first cover what it does so we can pick it apart properly. You can instantly cure bleeding, poison, illness and the onset of diseases for anyone in your party, given that you have the resources to do so. Let's start with poison and illness.
+
+There are extremely few sources of poison in the game. There is poison gas, which only a single creature can generate (girshworms) or comes from poison gas grenades, there is the poison stinger which only comes from scorpioks (a rare, very early game enemy) and there is the poison from Slog, the unique boss at the bottom of Golgotha. Illness is the condition that comes at the end of being poisoned. Let's be real, you're not using this skill for either of those, especially since all illness does is temporarily remove your ability to regen health.
+
+Bleeding can be cured here, but unfortunately you must already have Staunch Wounds to get this skill. If you have Staunch Wounds, you don't need to treat bleeding at a campfire. You can just use one of your hundreds of bandages to do so. If you're at a campfire, it means you're out of danger and also means you can probably just let the bleed heal naturally as well.
+
+The last thing that can be cured is the onset of disease; and note that this is not the full disease itself, this is just the onset of the disease (think sore throat for Glotrot). You will still need the Corpus Choliys (or a cheesy meal that cures negative conditions on a trigger) in order to cure the full-blown disease. The problem with this is that really the only time you're likely to have a chance of getting a disease is during Golgotha, at which point you are _extremely unlikely_ to have the **21 Intelligence** necessary for this skill. Even if you did, you could just as easily cure the onset disease by eating the meal in the electric ovens of Grit Gate and munching on some raw yuckwheat. This gives you a massive bonus to saves that is plenty to rid yourself of the onset of the disease.
+
+By the time you have the Intelligence necessary for this skill, you're likely already past Golgotha and have access to regeneration tanks if you're _really_ concerned about whatever disease is onset. This is one of those skills that _looks_ appetizing, but in reality has quite a few flaws that hinder its practical usage.
+
+### Amputate Limb
+
+<div class="section-info">
+
+**Cost:** 50
+
+**Obtain By:** Late Game
+
+**Faction:** N/A
+
+**Worth:** No
+
+</div>
+
+Does what it says on the tin, chop off a part for you or your friends. There are exactly three reasons to use this skill, none of them great:
+
+1. You have a companion infected with a fungal infection and you do not have Domination or the Clever Girl mod; and this fungal infection annoys you enough to want to cure it.
+2. Chop off your face and wear it for an Ego bonus (and the achievement I guess).
+3. Chop off a limb to use as an atzmus for the Golem.
+
+If you really want to wear your face and have the **23 Intelligence** required for this, go ahead I guess.
+
+### Apothecary
+
+<div class="section-info">
+
+**Cost:** 100
+
+**Obtain By:** Late Game
+
+**Faction:** N/A
+
+**Worth:** No
+
+</div>
+
+This causes salve and ubernostrum injectors to last one more round, which means it gives one extra tick of healing. It's 100 skill points for about 20 extra HP per salve. This is technically enough to save you, but by the time you have the staggering **25 Intelligence** for this skill, you're probably swimming in salves (if you ever get there). Just pop another one.
 
 ## Pistol
 
@@ -1428,9 +1460,13 @@ The +1 to hit is marginal here, but because it makes our main hand Short Blade a
 
 </div>
 
-It is solely because of this skill that Short Blades are just the best weapon to use in your offhand. It will double your chance to hit with your offhand, and that chance does not cap at 100%; meaning you can very realistically boost your offhand strike chance with a Short Blade to 150% with maxed Dual Wield skills and Jab. If you never use Short Blades in your offhand, then of course you don’t need this skill but if you’re using Short Blades at all, you should have one in your offhand.
+Jab got a sneaky nerf that seems to have largely flown under the radar, but it went from doubling your offhand Short Blade strike chance to making it so that when you strike with your offhand Short Blade, you strike with it twice. While this may seem like the same thing on first glance, it's not. Instead of ensuring you reliably attack with all your offhand Short Blades (by raising your hit chance above 100%), you are now vulnerable to probability bringing you into a damage lull when you _really need that damage_. Of course, it just as likely has the chance to give you more damage than possible with the old version of Jab and over a long enough period of time, it will _almost_ be just as good.
 
-Something to note is that Jab does _not_ affect robotic arms from helping hands, so if you are using helping hands making the swap to Short Blades is actually not worth it for Dual Wielding purposes.
+The other part of the nerf is that bringing your hit chance above 100% will occasionally allow a second attack in addition the guaranteed attack. Since you cannot get an offhand strike chance above 100% now, you cannot benefit from this property of offhand strikes anymore and thus the damage is marginally worse in the aggregate.
+
+Jab is still extremely good, but even though it's not the silver bullet it used to be it definitely still makes Short Blades the best choice when it comes to offhand attacks. If you're not investing in Multiweapon Fighting then of course it won't be any good for you, but if you are then this skill is a must-have.
+
+Something to note is that Jab does _not_ affect robotic arms from helping hands, so if you are using helping hands making the swap to Short Blades is actually not worth it for Multiweapon Fighting purposes.
 
 ### Bloodletter
 
@@ -1510,7 +1546,77 @@ If you have high DV, then this is just a no-brainer take as it’ll give you a s
 
 </div>
 
-While this seems like just free damage from an activated ability, in Dual Wield builds this is typically not worth it since you only get a single attack instead of your multiple attacks from your multiple equipped weapons. If you can get multiple bleeds stacked on your target, this can potentially hit for massive damage. While you probably won’t be using this to punch through crazy AV, it can be used to nuke high HP targets especially if you have ways of applying status effects outside of bleed and have a powerful Short Blade. Triple-jointed builds can also make use of the Agility prerequisite to potentially spam this attack.
+While this seems like just free damage from an activated ability, in Multiweapon Fighting builds this is typically not worth it since you only get a single attack instead of your multiple attacks from your multiple equipped weapons. If you can get multiple bleeds stacked on your target, this can potentially hit for massive damage. While you probably won’t be using this to punch through crazy AV, it can be used to nuke high HP targets especially if you have ways of applying status effects outside of bleed and have a powerful Short Blade. Triple-jointed builds can also make use of the Agility prerequisite to potentially spam this attack.
+
+## Single Weapon Fighting
+
+### Opportune Attacks
+
+<div class="section-info">
+
+**Cost:** 100
+
+**Obtain By:** Early Game
+
+**Faction:** N/A
+
+**Worth:** Yes
+
+</div>
+
+The way this tree is designed is you either take it or you take Multiweapon Fighting (or neither, if you hate yourself I guess). If you are a truekin or a mutant without the Multiple Arms mutation, you should be taking this tree. Even if you do have Multiple Arms, you'd probably be best with this tree, but at least now there's more of an argument for Multiweapon Fighting. I'm not doing a lot of talking about this skill in particular because it's pretty mid, but necessary for the rest of the tree. Let's switch gears and discuss the actual skill.
+
+You're very likely to get this skill very early on because you just have to for the actually good skills, and when you get it you'll probably not notice its impact at all. Critical hits are uncommon enough that refreshing weapon or shield cooldowns won't do a whole lot (and you probably don't have many to begin with). However, in the mid-late game this skill goes absolutely insane with long cooldown stance skills like En Garde! and Berserk!, especially because by then you're likely to have Weapon Expertise or Weapon Mastery and you're striking more often meaning more crits or have masterwork gear/precision nanon fingers to boost your crit chances further. It becomes fairly likely for you to crit and then refresh those powerful, long cooldowns and go on an absolute tear, so don't forget you have this as you gain those powerful cooldown skills!
+
+### Weapon Expertise
+
+<div class="section-info">
+
+**Cost:** 150
+
+**Obtain By:** Early Game
+
+**Faction:** N/A
+
+**Worth:** Yes
+
+</div>
+
+50% chance to strike again, but the crazy thing about this chance is that it can proc from _any_ attack while you're single-weapon fighting. This _includes_ the extra attack from Backswing, meaning cudgels can get a large amount of attacks while still benefitting from all of the powerful Single Weapon Fighting skills. There's not much more to say; it's a powerful passive, if you're not Multiweapon Fighting then get this skill.
+
+### Penetrating Strikes
+
+<div class="section-info">
+
+**Cost:** 200
+
+**Obtain By:** Early-Mid Game
+
+**Faction:** N/A
+
+**Worth:** Yes
+
+</div>
+
+And here it is, the whole reason you take this skill tree. The way this works is that the game will roll its penetrations normally. It will then add 1 to that number. This means that if you hit, _your attack will always penetrate_. No matter the enemy AV, you will always penetrate at least once. Combine this with the naturally high PV of two-handed weapons or the extremely reliable ceremonial vibrokhopesh and you will absolutely rip through enemies. With the vibrokhopesh and this skill, you can turn any build into a melee threat, regardless of their attribute spread.
+
+This also means it pairs extremely well with Axes, as in order to Dismember you must penetrate the enemies' AV. This means as long as you make contact with a Dismember strike, it will always Dismember. Combine this with Berserk! and Opportune Strikes and limbs will go flying. Any creature not immune to decapitation is on a serious timer with this brutal combination.
+
+### Weapon Mastery
+
+<div class="section-info">
+
+**Cost:** 300
+
+**Obtain By:** Mid Game
+
+**Faction:** N/A
+
+**Worth:** Yes
+
+</div>
+
+There isn't a lot to say about this skill; it's Weapon Expertise but better. Everything that applied to Weapon Expertise applies here, x2. Get it.
 
 ## Tactics
 

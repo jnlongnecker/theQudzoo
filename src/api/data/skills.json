@@ -587,9 +587,9 @@
             ]
         },
         {
-            "name": "Dual Wield",
-            "plural": "Dual Wielding",
-            "entryCost": 300,
+            "name": "Multiweapon Fighting",
+            "plural": "undefined",
+            "entryCost": 100,
             "skills": [
                 {
                     "name": "Flurry",
@@ -597,7 +597,7 @@
                     "cost": 0,
                     "prerequisites": {
                         "skills": [],
-                        "strength": 0,
+                        "strength": 17,
                         "agility": 17,
                         "toughness": 0,
                         "intelligence": 0,
@@ -608,12 +608,12 @@
                     "worth": "Yes"
                 },
                 {
-                    "name": "Offhand Strikes",
+                    "name": "Multiweapon Proficiency",
                     "plural": "undefined",
                     "cost": 0,
                     "prerequisites": {
                         "skills": [],
-                        "strength": 0,
+                        "strength": 17,
                         "agility": 17,
                         "toughness": 0,
                         "intelligence": 0,
@@ -624,13 +624,13 @@
                     "worth": "Yes"
                 },
                 {
-                    "name": "Ambidexterity",
+                    "name": "Multiweapon Expertise",
                     "plural": "undefined",
-                    "cost": 300,
+                    "cost": 150,
                     "prerequisites": {
-                        "skills": ["offhand strikes"],
-                        "strength": 0,
-                        "agility": 21,
+                        "skills": ["Multiweapon Proficiency"],
+                        "strength": 23,
+                        "agility": 23,
                         "toughness": 0,
                         "intelligence": 0,
                         "willpower": 0,
@@ -640,13 +640,13 @@
                     "worth": "Yes"
                 },
                 {
-                    "name": "Two-weapon Fighting",
+                    "name": "Multiweapon Mastery",
                     "plural": "undefined",
-                    "cost": 300,
+                    "cost": 200,
                     "prerequisites": {
-                        "skills": ["ambidexterity"],
-                        "strength": 0,
-                        "agility": 25,
+                        "skills": ["Multiweapon Expertise"],
+                        "strength": 27,
+                        "agility": 27,
                         "toughness": 0,
                         "intelligence": 0,
                         "willpower": 0,
@@ -777,9 +777,9 @@
             ]
         },
         {
-            "name": "First Aid",
+            "name": "Physic",
             "plural": "undefined",
-            "entryCost": 100,
+            "entryCost": 50,
             "skills": [
                 {
                     "name": "Staunch Wounds",
@@ -795,26 +795,10 @@
                         "ego": 0
                     },
                     "faction": "Cult of the Coiled Lamb",
-                    "worth": "No"
-                },
-                {
-                    "name": "Heal",
-                    "plural": "Heals",
-                    "cost": 100,
-                    "prerequisites": {
-                        "skills": [],
-                        "strength": 0,
-                        "agility": 0,
-                        "toughness": 0,
-                        "intelligence": 17,
-                        "willpower": 0,
-                        "ego": 0
-                    },
-                    "faction": "None",
                     "worth": "Yes"
                 },
                 {
-                    "name": "Set Limb",
+                    "name": "Nostrum",
                     "plural": "undefined",
                     "cost": 100,
                     "prerequisites": {
@@ -822,7 +806,39 @@
                         "strength": 0,
                         "agility": 0,
                         "toughness": 0,
-                        "intelligence": 19,
+                        "intelligence": 21,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Amputate Limb",
+                    "plural": "undefined",
+                    "cost": 50,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 23,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "No"
+                },
+                {
+                    "name": "Apothecary",
+                    "plural": "undefined",
+                    "cost": 100,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 0,
+                        "agility": 0,
+                        "toughness": 0,
+                        "intelligence": 25,
                         "willpower": 0,
                         "ego": 0
                     },
@@ -1574,6 +1590,77 @@
                         "skills": [],
                         "strength": 0,
                         "agility": 27,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                }
+            ]
+        },
+        {
+            "name": "Single Weapon Fighting",
+            "plural": "undefined",
+            "entryCost": 100,
+            "skills": [
+                {
+                    "name": "Opportune Attacks",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 17,
+                        "agility": 17,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Weapon Expertise",
+                    "plural": "undefined",
+                    "cost": 0,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 21,
+                        "agility": 21,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Penetrating Strikes",
+                    "plural": "undefined",
+                    "cost": 200,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 23,
+                        "agility": 23,
+                        "toughness": 0,
+                        "intelligence": 0,
+                        "willpower": 0,
+                        "ego": 0
+                    },
+                    "faction": "None",
+                    "worth": "Yes"
+                },
+                {
+                    "name": "Weapon Mastery",
+                    "plural": "undefined",
+                    "cost": 300,
+                    "prerequisites": {
+                        "skills": [],
+                        "strength": 29,
+                        "agility": 29,
                         "toughness": 0,
                         "intelligence": 0,
                         "willpower": 0,

@@ -34,6 +34,7 @@ The first section of the game revolves around the legendary quest to Red Rock. T
 -   Acrobatics
 -   Hurdle
 -   Charge
+-   Opportune Attacks
 -   Mind's Compass
 -   Basic weapon skills
 
@@ -75,8 +76,9 @@ The second section involves the quests just up to Decoding the Signal, all revol
 
 -   Tinker I
 -   Disassemble
--   Dual Wield
--   Ambidexterity
+-   Multiweapon Proficiency
+-   Multiweapon Expertise
+-   Weapon Expertise
 -   Shake It Off
 -   Meal Preparation
 -   Block
@@ -133,7 +135,9 @@ At the third section of the game, I’m ready to rock through Bethesda Susa and 
 -   Calloused
 -   Weathered
 -   Tinker II
--   Two-weapon Fighting
+-   Multiweapon Mastery
+-   Penetrating Strikes
+-   Weapon Mastery
 -   Tumble
 -   Jump
 -   Snake Oiler

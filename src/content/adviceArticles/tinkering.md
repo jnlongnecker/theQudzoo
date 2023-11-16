@@ -116,7 +116,7 @@ Electrified is the highest damage mod of all 3 elemental damage mods and like th
 
 </div>
 
-Flaming deals slightly less damage than Electrified, and while fire damage is quite commonly resisted there are in fact ways to increase your fire damage through thermo casks and high-energy thermo casks. Flaming will also cause your weapon to increase the temperature of the enemy and while this probably won’t be enough to ignite most enemies, when you attack multiple times via sources like dual-wielding, you can definitely start to light your foes on fire with your attacks reliably. Flaming also does not suffer from the same downside of chaining to allies, so if you plan on making friends this may be the better option for you.
+Flaming deals slightly less damage than Electrified, and while fire damage is quite commonly resisted there are in fact ways to increase your fire damage through thermo casks and high-energy thermo casks. Flaming will also cause your weapon to increase the temperature of the enemy and while this probably won’t be enough to ignite most enemies, when you attack multiple times via sources like Multiweapon Fighting, you can definitely start to light your foes on fire with your attacks reliably. Flaming also does not suffer from the same downside of chaining to allies, so if you plan on making friends this may be the better option for you.
 
 #### Freezing
 
@@ -544,7 +544,7 @@ Nanon will add a chance to Dismember affected by a little randomness and the tie
 
 When you deal damage with a Morphogenetic weapon to a creature, all _other_ creatures of the same race must make a Willpower save or be dazed for 2-3 rounds. With high quickness, you can easily get two dazes in on creatures before they recover from the first which will upgrade that daze to a stun. The save is actually pretty easy to make if you have a weapon that does low damage, so ideally you use this on a weapon that deals high damage (>15). Particularly noteworthy is the geomagnetic disc and it bounces when striking, resulting in multiple attacks per turn. This causes a Morphogenetic save for each bounce and since the disc can never miss or not deal damage, it can very easily keep a crowd of enemies stunlocked. To be clear, this is a mod designed for crowd control but by the time you gain access to this mod, swarming enemies are simply not very threatening anymore. Historic sites are one of the only places where you encounter large groups of creatures of the same race, so outside of these it may be difficult to find extensive use of this mod. However, in scenarios where the mod is any good, it’s extremely good as it will allow you that breathing room to take on a single enemy at a time.
 
-Additionally, Morphogenetic benefits heavily from compute power as it will increase the difficulty of the save. With high (>30) compute power, your enemies will reliably fail the save to resist the daze and with setups like the geomagnetic disk or dual-wield builds you can reliably keep all enemies of the same race away from you.
+Additionally, Morphogenetic benefits heavily from compute power as it will increase the difficulty of the save. With high (>30) compute power, your enemies will reliably fail the save to resist the daze and with setups like the geomagnetic disk or Multiweapon Fighting builds you can reliably keep all enemies of the same race away from you.
 
 ## A-F-F-I-N-E’s Favorites
 
