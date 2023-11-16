@@ -759,8 +759,8 @@
             "code": "ca",
             "variants": [],
             "excludes": ["Esper", "Photosynthetic Skin"],
-            "description": "You eat meat exclusively.",
-            "levelText": "You get no satiation from foods that aren't meat.\nIf you eat raw food that isn't meat, there's a 50% chance you become ill for 2 hours.\nYou can't cook with plant or fungus ingredients.\nYou don't get ill when you eat raw meat.\nYou can eat raw meat without being famished.\n"
+            "description": "Your skin, hair, and eyes are absent of pigment.",
+            "levelText": "You regenerate hit points at one-fifth the usual rate in the daylight."
         },
         {
             "name": "Amphibious",
