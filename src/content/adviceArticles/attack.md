@@ -46,7 +46,7 @@ However, I am not merely interested in victory at any cost here. I have a vested
 
 Portable walls are simply the most accessible way to perform this strategy, but step sowers or 3D cobblers would also do the job. The idea here is to figure out where the templar will drop, and then wall them in so they cannot get out until you let them out. There are many places where they can drop, and not every place will allow you to tidily perform this strategy (they can even drop dead-center of Grit Gate), most configurations will at least allow you to wall in a single group if not both.
 
-In order to pull this off, you will need a variable amount of portable walls. Most places can be safely walled off with a single portable wall, but some will need 2 or more. To be safe, it is recommended that you either come with 4 portable walls or come with the capability to have at least 4 portable walls. A legendary templar will always have 2 portable walls on them, so if you’re incapable of Tinkering them yourself (requires Tinker II), then you’ll have to search for those legendary templars ahead of time.
+In order to pull this off, you will need a variable amount of portable walls. Most places can be safely walled off with a single portable wall, but some will need 2 or more. To be safe, it is recommended that you either come with 4 portable walls or come with the capability to have at least 4 portable walls. A legendary templar will always have 1 portable wall on them, so if you’re incapable of Tinkering them yourself (requires Tinker II), then you’ll have to search for those legendary templars ahead of time.
 
 Your goal in placing the wall is twofold:
 
