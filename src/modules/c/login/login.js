@@ -45,10 +45,14 @@ export default class Login extends LightningElement {
     }
 
     runAuth() {
-        getAuthenticatedUser().then(result => {
-            this.authenticated = result.username ? true : false;
-            this.displayName = result.name;
-        })
+        try {
+            getAuthenticatedUser().then(result => {
+                this.authenticated = result.username ? true : false;
+                this.displayName = result.name;
+            })
+        } catch (e) {
+            this.authenticated = false;
+        }
     }
 
     loginDesired() {
@@ -70,7 +74,6 @@ export default class Login extends LightningElement {
             this.errorMessage = result.message;
             return;
         }
-
         location.reload();
     }
 

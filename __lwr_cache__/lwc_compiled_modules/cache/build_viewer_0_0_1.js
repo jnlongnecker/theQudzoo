@@ -16,8 +16,17 @@ class Viewer extends LightningElement {
     if (!this.buildInfo) return ret;
     return this.buildInfo.genotype == 'True Kin' ? ret + ' true-kin' : ret + 'mutant';
   }
+  get hasDescription() {
+    if (!this.buildInfo) return false;
+    return this.buildInfo.description;
+  }
+  get description() {
+    if (!this.buildInfo) return this.tagBlurb();
+    return this.buildInfo.description;
+  }
   get tagBlurb() {
     let tags = this.buildInfo.tags;
+    console.log(JSON.parse(JSON.stringify(this.buildInfo)));
     if (!tags || !tags.length) {
       return `The build maker didn't put any tags, so your guess is as good as mine as to how to play it!`;
     }

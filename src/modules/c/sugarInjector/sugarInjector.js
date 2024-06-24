@@ -50,6 +50,7 @@ export default class SugarInjector extends LightningElement {
         if (this.isReadyToHighlight()) this.highlightAll();
     }
 
+    @api
     isReadyToHighlight() {
         return this.infoReady === 4 && this.documentReady;
     }

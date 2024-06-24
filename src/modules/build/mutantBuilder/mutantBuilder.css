@@ -48,7 +48,7 @@
 
 .scrolling-banner {
     display: grid;
-    grid-template-columns: repeat(4, 100%);
+    grid-template-columns: repeat(5, 100%);
     left: calc(var(--offset) * -100%);
     position: relative;
     transition: 0.5s;

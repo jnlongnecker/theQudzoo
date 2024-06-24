@@ -3,9 +3,10 @@ import _implicitStylesheets from "./viewer.css";
 import _implicitScopedStylesheets from "./viewer.scoped.css?scoped=true";
 
 import _buildCard from "build/card";
+import _buildMarkdownRenderer from "build/markdownRenderer";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {c: api_custom_element, d: api_dynamic_text, t: api_text, h: api_element} = $api;
+  const {c: api_custom_element, h: api_element, d: api_dynamic_text, t: api_text} = $api;
   return [api_element("div", {
     classMap: {
       "container": true
@@ -22,9 +23,19 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "mode": "static copy"
     },
     key: 2
-  }, []), api_element("p", {
+  }, [])]), api_element("div", {
+    classMap: {
+      "description-wrapper": true
+    },
     key: 3
-  }, [api_text(api_dynamic_text($cmp.tagBlurb))])])])];
+  }, [$cmp.hasDescription ? api_custom_element("build-markdown-renderer", _buildMarkdownRenderer, {
+    props: {
+      "rawText": $cmp.description
+    },
+    key: 4
+  }, []) : null, !$cmp.hasDescription ? api_element("p", {
+    key: 5
+  }, [api_text(api_dynamic_text($cmp.tagBlurb))]) : null])])];
 }
 export default registerTemplate(tmpl);
 tmpl.stylesheets = [];

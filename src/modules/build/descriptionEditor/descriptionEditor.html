@@ -1,0 +1,22 @@
+<template>
+    <h2>:describe your build:</h2>
+
+    <div class="container">
+        <p>
+            If you know Markdown, the Qudzoo supports Markdown in your build descriptions. If you want to learn,
+            check out the <a target="_blank" href="https://www.markdownguide.org/basic-syntax/">
+                Markdown documentation here
+            </a>!
+        </p>
+        <div class="build-container">
+            <template if:true={editBuild}>
+                <textarea onkeyup={handleChange}
+                    placeholder="Enter your build description here">{description}</textarea>
+            </template>
+            <template if:false={editBuild}>
+                <build-markdown-renderer raw-text={description}></build-markdown-renderer>
+            </template>
+        </div>
+        <input-button size="large" variant="willpower" onclick={toggleEdit}>{buttonLabel}</input-button>
+    </div>
+</template>

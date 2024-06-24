@@ -15,6 +15,10 @@
                         onmutationselected={handleCyberneticSelection}></build-cybernetic-chooser>
                 </section>
                 <section>
+                    <build-description-editor description={description}
+                        ondescriptionset={handleDescriptionSet}></build-description-editor>
+                </section>
+                <section>
                     <slot></slot>
                 </section>
             </div>

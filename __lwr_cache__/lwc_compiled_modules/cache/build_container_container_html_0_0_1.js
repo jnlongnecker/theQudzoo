@@ -12,7 +12,7 @@ import _inputIcon from "input/icon";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, t: api_text, h: api_element, c: api_custom_element} = $api;
-  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16, _m17, _m18, _m19, _m20, _m21, _m22, _m23, _m24, _m25, _m26, _m27, _m28, _m29, _m30, _m31} = $ctx;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16, _m17, _m18, _m19, _m20, _m21, _m22, _m23, _m24, _m25, _m26, _m27, _m28, _m29, _m30, _m31, _m32, _m33} = $ctx;
   return [api_element("section", {
     classMap: {
       "container": true
@@ -52,13 +52,14 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 6,
     on: {
-      "buildupdated": _m2 || ($ctx._m2 = api_bind($cmp.calculateBuildCode))
+      "buildupdated": _m2 || ($ctx._m2 = api_bind($cmp.calculateBuildCode)),
+      "descriptionupdated": _m3 || ($ctx._m3 = api_bind($cmp.handleDescriptionUpdate))
     }
   }, [api_element("section", {
     className: $cmp.popupClass,
     key: 7,
     on: {
-      "click": _m3 || ($ctx._m3 = api_bind($cmp.saveCancel))
+      "click": _m4 || ($ctx._m4 = api_bind($cmp.saveCancel))
     }
   }, [api_element("div", {
     classMap: {
@@ -66,7 +67,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 8,
     on: {
-      "click": _m4 || ($ctx._m4 = api_bind($cmp.stopProp))
+      "click": _m5 || ($ctx._m5 = api_bind($cmp.stopProp))
     }
   }, [api_element("h2", {
     key: 9
@@ -101,7 +102,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 15,
     on: {
-      "click": _m5 || ($ctx._m5 = api_bind($cmp.handleTagSelect))
+      "click": _m6 || ($ctx._m6 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -111,7 +112,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 16,
     on: {
-      "click": _m6 || ($ctx._m6 = api_bind($cmp.handleTagSelect))
+      "click": _m7 || ($ctx._m7 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -121,7 +122,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 17,
     on: {
-      "click": _m7 || ($ctx._m7 = api_bind($cmp.handleTagSelect))
+      "click": _m8 || ($ctx._m8 = api_bind($cmp.handleTagSelect))
     }
   }, [])]), api_element("div", {
     classMap: {
@@ -137,12 +138,15 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     classMap: {
       "name-input": true
     },
+    attrs: {
+      "maxlength": "30"
+    },
     props: {
       "value": $cmp.buildName
     },
     key: 20,
     on: {
-      "change": _m8 || ($ctx._m8 = api_bind($cmp.updateBuildName))
+      "change": _m9 || ($ctx._m9 = api_bind($cmp.updateBuildName))
     }
   }, []), api_element("label", {
     classMap: {
@@ -159,7 +163,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 22,
     on: {
-      "switch": _m9 || ($ctx._m9 = api_bind($cmp.updateAccessibility))
+      "switch": _m10 || ($ctx._m10 = api_bind($cmp.updateAccessibility))
     }
   }, [])]), api_element("div", {
     classMap: {
@@ -179,7 +183,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 25,
     on: {
-      "click": _m10 || ($ctx._m10 = api_bind($cmp.handleTagSelect))
+      "click": _m11 || ($ctx._m11 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -189,7 +193,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 26,
     on: {
-      "click": _m11 || ($ctx._m11 = api_bind($cmp.handleTagSelect))
+      "click": _m12 || ($ctx._m12 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -199,7 +203,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 27,
     on: {
-      "click": _m12 || ($ctx._m12 = api_bind($cmp.handleTagSelect))
+      "click": _m13 || ($ctx._m13 = api_bind($cmp.handleTagSelect))
     }
   }, [])])]), api_element("div", {
     classMap: {
@@ -213,7 +217,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 29,
     on: {
-      "click": _m13 || ($ctx._m13 = api_bind($cmp.saveCancel))
+      "click": _m14 || ($ctx._m14 = api_bind($cmp.saveCancel))
     }
   }, [api_text("Cancel")]) : null, $cmp.isSaveable ? api_custom_element("input-button", _inputButton, {
     props: {
@@ -222,7 +226,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 30,
     on: {
-      "click": _m14 || ($ctx._m14 = api_bind($cmp.saveBuild))
+      "click": _m15 || ($ctx._m15 = api_bind($cmp.saveBuild))
     }
   }, [api_text("Save")]) : null])])])])]) : null, $cmp.truekinSelected ? api_custom_element("build-truekin-builder", _buildTruekinBuilder, {
     props: {
@@ -230,13 +234,14 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 31,
     on: {
-      "buildupdated": _m15 || ($ctx._m15 = api_bind($cmp.calculateBuildCode))
+      "buildupdated": _m16 || ($ctx._m16 = api_bind($cmp.calculateBuildCode)),
+      "descriptionupdated": _m17 || ($ctx._m17 = api_bind($cmp.handleDescriptionUpdate))
     }
   }, [api_element("section", {
     className: $cmp.popupClass,
     key: 32,
     on: {
-      "click": _m16 || ($ctx._m16 = api_bind($cmp.saveCancel))
+      "click": _m18 || ($ctx._m18 = api_bind($cmp.saveCancel))
     }
   }, [api_element("div", {
     classMap: {
@@ -244,7 +249,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 33,
     on: {
-      "click": _m17 || ($ctx._m17 = api_bind($cmp.stopProp))
+      "click": _m19 || ($ctx._m19 = api_bind($cmp.stopProp))
     }
   }, [api_element("h2", {
     key: 34
@@ -279,7 +284,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 40,
     on: {
-      "click": _m18 || ($ctx._m18 = api_bind($cmp.handleTagSelect))
+      "click": _m20 || ($ctx._m20 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -289,7 +294,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 41,
     on: {
-      "click": _m19 || ($ctx._m19 = api_bind($cmp.handleTagSelect))
+      "click": _m21 || ($ctx._m21 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -299,7 +304,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 42,
     on: {
-      "click": _m20 || ($ctx._m20 = api_bind($cmp.handleTagSelect))
+      "click": _m22 || ($ctx._m22 = api_bind($cmp.handleTagSelect))
     }
   }, [])]), api_element("div", {
     classMap: {
@@ -315,12 +320,15 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     classMap: {
       "name-input": true
     },
+    attrs: {
+      "maxlength": "30"
+    },
     props: {
       "value": $cmp.buildName
     },
     key: 45,
     on: {
-      "change": _m21 || ($ctx._m21 = api_bind($cmp.updateBuildName))
+      "change": _m23 || ($ctx._m23 = api_bind($cmp.updateBuildName))
     }
   }, []), api_element("label", {
     classMap: {
@@ -337,7 +345,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 47,
     on: {
-      "switch": _m22 || ($ctx._m22 = api_bind($cmp.updateAccessibility))
+      "switch": _m24 || ($ctx._m24 = api_bind($cmp.updateAccessibility))
     }
   }, [])]), api_element("div", {
     classMap: {
@@ -357,7 +365,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 50,
     on: {
-      "click": _m23 || ($ctx._m23 = api_bind($cmp.handleTagSelect))
+      "click": _m25 || ($ctx._m25 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -367,7 +375,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 51,
     on: {
-      "click": _m24 || ($ctx._m24 = api_bind($cmp.handleTagSelect))
+      "click": _m26 || ($ctx._m26 = api_bind($cmp.handleTagSelect))
     }
   }, []), api_custom_element("build-tag", _buildTag, {
     props: {
@@ -377,7 +385,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 52,
     on: {
-      "click": _m25 || ($ctx._m25 = api_bind($cmp.handleTagSelect))
+      "click": _m27 || ($ctx._m27 = api_bind($cmp.handleTagSelect))
     }
   }, [])])]), api_element("div", {
     classMap: {
@@ -391,7 +399,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 54,
     on: {
-      "click": _m26 || ($ctx._m26 = api_bind($cmp.saveCancel))
+      "click": _m28 || ($ctx._m28 = api_bind($cmp.saveCancel))
     }
   }, [api_text("Cancel")]) : null, $cmp.isSaveable ? api_custom_element("input-button", _inputButton, {
     props: {
@@ -400,7 +408,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 55,
     on: {
-      "click": _m27 || ($ctx._m27 = api_bind($cmp.saveBuild))
+      "click": _m29 || ($ctx._m29 = api_bind($cmp.saveBuild))
     }
   }, [api_text("Save")]) : null])])])])]) : null])]), api_element("section", {
     classMap: {
@@ -423,7 +431,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 59,
     on: {
-      "click": _m28 || ($ctx._m28 = api_bind($cmp.copyCode))
+      "click": _m30 || ($ctx._m30 = api_bind($cmp.copyCode))
     }
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
@@ -435,7 +443,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   }, [])]) : null, $cmp.codeAvailable ? api_element("button", {
     key: 61,
     on: {
-      "click": _m29 || ($ctx._m29 = api_bind($cmp.copyCode))
+      "click": _m31 || ($ctx._m31 = api_bind($cmp.copyCode))
     }
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
@@ -469,7 +477,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   }, [])]) : null, $cmp.isSaveable ? api_element("button", {
     key: 67,
     on: {
-      "click": _m30 || ($ctx._m30 = api_bind($cmp.saveClick))
+      "click": _m32 || ($ctx._m32 = api_bind($cmp.saveClick))
     }
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
@@ -488,9 +496,12 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     classMap: {
       "name-input": true
     },
+    attrs: {
+      "maxlength": "20"
+    },
     key: 71,
     on: {
-      "change": _m31 || ($ctx._m31 = api_bind($cmp.updateName))
+      "change": _m33 || ($ctx._m33 = api_bind($cmp.updateName))
     }
   }, [])])])])];
 }
