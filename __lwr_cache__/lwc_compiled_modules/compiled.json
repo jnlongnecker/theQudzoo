@@ -450,7 +450,7 @@
   [
     "c/sugarInjector@0.0.1",
     {
-      "ownHash": "37be615304669483afa26553e2e126a4",
+      "ownHash": "615aa79cda11cb17c58a2bcdb30fa385",
       "module": "./cache/c_sugarInjector_0_0_1.js",
       "moduleMeta": "./cache/c_sugarInjector_0_0_1.meta.json"
     }
@@ -802,7 +802,7 @@
   [
     "c/login@0.0.1",
     {
-      "ownHash": "a10f62e14c9832edf2487c093e96c1e2",
+      "ownHash": "f449ded6da1f39e7dc249e06fa3dbca7",
       "module": "./cache/c_login_0_0_1.js",
       "moduleMeta": "./cache/c_login_0_0_1.meta.json"
     }
@@ -818,7 +818,7 @@
   [
     "c/login#login.css@0.0.1",
     {
-      "ownHash": "1f934806bf13ff46ad67ba77f2073777",
+      "ownHash": "751d9e59d70cce9784e72bad4d102f49",
       "module": "./cache/c_login_login_css_0_0_1.js",
       "moduleMeta": "./cache/c_login_login_css_0_0_1.meta.json"
     }
@@ -1034,7 +1034,7 @@
   [
     "build/mutantBuilder@0.0.1",
     {
-      "ownHash": "adedf892642d57e73286946de73bfbfa",
+      "ownHash": "954747de53b570dea293019531b63329",
       "module": "./cache/build_mutantBuilder_0_0_1.js",
       "moduleMeta": "./cache/build_mutantBuilder_0_0_1.meta.json"
     }
@@ -1050,7 +1050,7 @@
   [
     "build/truekinBuilder@0.0.1",
     {
-      "ownHash": "297fb81f4e9fe3a1b7c50a1e387d6fa6",
+      "ownHash": "fc6b3c477ddbb42b9f37562b0d1d2262",
       "module": "./cache/build_truekinBuilder_0_0_1.js",
       "moduleMeta": "./cache/build_truekinBuilder_0_0_1.meta.json"
     }
@@ -1066,7 +1066,7 @@
   [
     "build/mutantBuilder#mutantBuilder.html@0.0.1",
     {
-      "ownHash": "6b24e400b9583e263cc2f69031483ade",
+      "ownHash": "96909dcbbff698876b1707ed52767af5",
       "module": "./cache/build_mutantBuilder_mutantBuilder_html_0_0_1.js",
       "moduleMeta": "./cache/build_mutantBuilder_mutantBuilder_html_0_0_1.meta.json"
     }
@@ -1074,7 +1074,7 @@
   [
     "build/truekinBuilder#truekinBuilder.html@0.0.1",
     {
-      "ownHash": "406d48e98ab6df640b28474e224dc5d2",
+      "ownHash": "9c87be3e6bdb42b57bb04a5ea432f5f3",
       "module": "./cache/build_truekinBuilder_truekinBuilder_html_0_0_1.js",
       "moduleMeta": "./cache/build_truekinBuilder_truekinBuilder_html_0_0_1.meta.json"
     }
@@ -1114,7 +1114,7 @@
   [
     "build/mutantBuilder#mutantBuilder.css@0.0.1",
     {
-      "ownHash": "b80af99da99f44f9f2b0bd1b15b0335c",
+      "ownHash": "8afab35d7fcbd7e9af6d6db2ec25ce12",
       "module": "./cache/build_mutantBuilder_mutantBuilder_css_0_0_1.js",
       "moduleMeta": "./cache/build_mutantBuilder_mutantBuilder_css_0_0_1.meta.json"
     }
@@ -1130,7 +1130,7 @@
   [
     "build/truekinBuilder#truekinBuilder.css@0.0.1",
     {
-      "ownHash": "3ada10d63b639108f3d4cc38aae04abf",
+      "ownHash": "4eafa4f36d744e4ef09763728dc929f5",
       "module": "./cache/build_truekinBuilder_truekinBuilder_css_0_0_1.js",
       "moduleMeta": "./cache/build_truekinBuilder_truekinBuilder_css_0_0_1.meta.json"
     }
@@ -1354,7 +1354,7 @@
   [
     "build/container@0.0.1",
     {
-      "ownHash": "f1b4a6cdef904836dbd538b529049972",
+      "ownHash": "c3ce4c672a424f74507a2c87f031ca6c",
       "module": "./cache/build_container_0_0_1.js",
       "moduleMeta": "./cache/build_container_0_0_1.meta.json"
     }
@@ -1362,7 +1362,7 @@
   [
     "build/container#container.html@0.0.1",
     {
-      "ownHash": "e577f5c1083d13c3866158bfc7d91561",
+      "ownHash": "94c3eb2e68d7f836fef122496f27c0c6",
       "module": "./cache/build_container_container_html_0_0_1.js",
       "moduleMeta": "./cache/build_container_container_html_0_0_1.meta.json"
     }
@@ -1922,7 +1922,7 @@
   [
     "build/viewer@0.0.1",
     {
-      "ownHash": "98a29b15b153c5dac31688daad41a730",
+      "ownHash": "4317a76d942f5c9531716b94d28582d0",
       "module": "./cache/build_viewer_0_0_1.js",
       "moduleMeta": "./cache/build_viewer_0_0_1.meta.json"
     }
@@ -1930,7 +1930,7 @@
   [
     "build/viewer#viewer.html@0.0.1",
     {
-      "ownHash": "5143253b7fd0df3bb068dffb66dcdffd",
+      "ownHash": "79daf5b9d018e4009a105cac0b4290f1",
       "module": "./cache/build_viewer_viewer_html_0_0_1.js",
       "moduleMeta": "./cache/build_viewer_viewer_html_0_0_1.meta.json"
     }
@@ -1946,7 +1946,7 @@
   [
     "build/viewer#viewer.css@0.0.1",
     {
-      "ownHash": "9f1104e31d227873bfb2ab5cc90987a5",
+      "ownHash": "cd9ca3fbae67ef09b570c55774a3cfcc",
       "module": "./cache/build_viewer_viewer_css_0_0_1.js",
       "moduleMeta": "./cache/build_viewer_viewer_css_0_0_1.meta.json"
     }
@@ -2029,6 +2029,70 @@
       "ownHash": "13fcec3d73f055fccd306149598cb9b5",
       "module": "./cache/build_tagNames_tagNames_html_0_0_1.js",
       "moduleMeta": "./cache/build_tagNames_tagNames_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "build/descriptionEditor@0.0.1",
+    {
+      "ownHash": "40aabccf4a9b3fe756a4ab3c084e5f93",
+      "module": "./cache/build_descriptionEditor_0_0_1.js",
+      "moduleMeta": "./cache/build_descriptionEditor_0_0_1.meta.json"
+    }
+  ],
+  [
+    "build/descriptionEditor#descriptionEditor.html@0.0.1",
+    {
+      "ownHash": "5472d20c400642f82f2e0819f7f4f147",
+      "module": "./cache/build_descriptionEditor_descriptionEditor_html_0_0_1.js",
+      "moduleMeta": "./cache/build_descriptionEditor_descriptionEditor_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "build/descriptionEditor#descriptionEditor.css@0.0.1",
+    {
+      "ownHash": "9e9b0fd3009d3af5858644fb81f6e453",
+      "module": "./cache/build_descriptionEditor_descriptionEditor_css_0_0_1.js",
+      "moduleMeta": "./cache/build_descriptionEditor_descriptionEditor_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "build/descriptionEditor#descriptionEditor.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/build_descriptionEditor_descriptionEditor_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/build_descriptionEditor_descriptionEditor_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "build/markdownRenderer@0.0.1",
+    {
+      "ownHash": "0f700d87c177c3ee700b448e922ef48c",
+      "module": "./cache/build_markdownRenderer_0_0_1.js",
+      "moduleMeta": "./cache/build_markdownRenderer_0_0_1.meta.json"
+    }
+  ],
+  [
+    "build/markdownRenderer#markdownRenderer.html@0.0.1",
+    {
+      "ownHash": "7a42e858819b2f8415d4d48a28a3875e",
+      "module": "./cache/build_markdownRenderer_markdownRenderer_html_0_0_1.js",
+      "moduleMeta": "./cache/build_markdownRenderer_markdownRenderer_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "build/markdownRenderer#markdownRenderer.css@0.0.1",
+    {
+      "ownHash": "d1062ec7dffc2ca3b099f4056953f3b6",
+      "module": "./cache/build_markdownRenderer_markdownRenderer_css_0_0_1.js",
+      "moduleMeta": "./cache/build_markdownRenderer_markdownRenderer_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "build/markdownRenderer#markdownRenderer.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/build_markdownRenderer_markdownRenderer_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/build_markdownRenderer_markdownRenderer_scoped_css_scoped=true_0_0_1.meta.json"
     }
   ]
 ]

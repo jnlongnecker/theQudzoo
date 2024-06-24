@@ -39,6 +39,9 @@ exports.dbConnect = function connect() {
         name: {
             type: String
         },
+        description: {
+            type: String
+        },
         public: {
             type: Boolean,
             required: true
@@ -81,7 +84,7 @@ exports.validateLogin = async (req, res) => {
         return {
             success: false,
             user: null,
-            message: e.message,
+            message: e,
         }
     }
 
@@ -217,11 +220,10 @@ exports.getBuilds = async function (req, res) {
 
     try {
         allBuilds = await Build.find(filters,
-            "name code owner.displayName public likes tags genotype created updated");
+            "name code owner.displayName public likes tags genotype created updated description");
     }
     catch (e) {
         res.status(400);
-        console.log(e.message);
         return {
             error: true,
             message: e.message
@@ -297,6 +299,7 @@ exports.saveBuild = async function (req, res) {
         name: build.name,
         likes: [owner._id],
         public: build.public,
+        description: build.description,
         owner: owner,
         genotype: build.genotype,
         created: Date.now(),

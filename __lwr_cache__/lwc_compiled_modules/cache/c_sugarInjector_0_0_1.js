@@ -197,7 +197,7 @@ _registerDecorators(SugarInjector, {
       config: 0
     }
   },
-  publicMethods: ["highlightText"],
+  publicMethods: ["isReadyToHighlight", "highlightText"],
   fields: ["skills", "attributes", "stats", "mutations", "paragraphs", "documentReady", "thumbUpSVG", "thumbDownSVG"]
 });
 export default _registerComponent(SugarInjector, {

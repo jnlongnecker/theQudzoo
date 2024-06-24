@@ -9,8 +9,20 @@
     max-width: 125ch;
 }
 
+.description-wrapper {
+    width: 100%;
+    padding: 0 10vw;
+    box-sizing: border-box;
+}
+
 @media only screen and (max-width: 900px) {
     .container {
         padding: 1rem var(--mobile-margin-size);
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .description-wrapper {
+        padding: 0;
     }
 }

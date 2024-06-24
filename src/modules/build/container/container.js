@@ -38,6 +38,7 @@ export default class Container extends LightningElement {
         code: "",
         name: "",
         owner: null,
+        description: "",
         public: false,
         likes: [],
         tags: [],
@@ -232,13 +233,15 @@ export default class Container extends LightningElement {
             this.template.querySelector(".tabs button:nth-child(2)").click();
         }
 
+        console.log(JSON.parse(JSON.stringify(this.currBuild)));
         this.sanitisedBuild = {
             attributes: attributes,
             selections: selections,
             pointsUsed: pointsUsed,
             mpRemaining: mpRemaining,
             genotype: genotype,
-            subtype: subtype
+            subtype: subtype,
+            description: this.currBuild.description
         }
 
         this.template.querySelector(".build-action .name-input").value = name;
@@ -264,5 +267,9 @@ export default class Container extends LightningElement {
         }
 
         this.currBuild.tags = this.currBuild.tags.filter(tag => tag != event.detail.label);
+    }
+
+    handleDescriptionUpdate(event) {
+        this.currBuild.description = event.detail;
     }
 }

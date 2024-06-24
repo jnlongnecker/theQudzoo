@@ -17,6 +17,7 @@ class Container extends LightningElement {
       code: "",
       name: "",
       owner: null,
+      description: "",
       public: false,
       likes: [],
       tags: [],
@@ -189,13 +190,15 @@ class Container extends LightningElement {
       mpRemaining = 0;
       this.template.querySelector(".tabs button:nth-child(2)").click();
     }
+    console.log(JSON.parse(JSON.stringify(this.currBuild)));
     this.sanitisedBuild = {
       attributes: attributes,
       selections: selections,
       pointsUsed: pointsUsed,
       mpRemaining: mpRemaining,
       genotype: genotype,
-      subtype: subtype
+      subtype: subtype,
+      description: this.currBuild.description
     };
     this.template.querySelector(".build-action .name-input").value = name;
   }
@@ -215,6 +218,9 @@ class Container extends LightningElement {
       return;
     }
     this.currBuild.tags = this.currBuild.tags.filter(tag => tag != event.detail.label);
+  }
+  handleDescriptionUpdate(event) {
+    this.currBuild.description = event.detail;
   }
 }
 _registerDecorators(Container, {

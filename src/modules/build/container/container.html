@@ -7,7 +7,8 @@
             </div>
             <section class="builder">
                 <template if:true={mutantSelected}>
-                    <build-mutant-builder build={sanitisedBuild} onbuildupdated={calculateBuildCode}>
+                    <build-mutant-builder build={sanitisedBuild} onbuildupdated={calculateBuildCode}
+                        ondescriptionupdated={handleDescriptionUpdate}>
                         <section class={popupClass} onclick={saveCancel}>
                             <div class="save-customization" onclick={stopProp}>
                                 <h2>:finalize build details:</h2>
@@ -25,7 +26,8 @@
                                         </div>
                                         <div class="form-inputs">
                                             <label class="major-label">:build name:</label>
-                                            <input class="name-input" value={buildName} onchange={updateBuildName} />
+                                            <input class="name-input" maxlength="30" value={buildName}
+                                                onchange={updateBuildName} />
                                             <label class="major-label">:build accessibility:</label>
                                             <input-switch left="private" right="public" uncheckcolor="strength"
                                                 checkcolor="intelligence" checked={isPublic}
@@ -53,7 +55,8 @@
                     </build-mutant-builder>
                 </template>
                 <template if:true={truekinSelected}>
-                    <build-truekin-builder build={sanitisedBuild} onbuildupdated={calculateBuildCode}>
+                    <build-truekin-builder build={sanitisedBuild} onbuildupdated={calculateBuildCode}
+                        ondescriptionupdated={handleDescriptionUpdate}>
                         <section class={popupClass} onclick={saveCancel}>
                             <div class="save-customization" onclick={stopProp}>
                                 <h2>:finalize build details:</h2>
@@ -71,7 +74,8 @@
                                         </div>
                                         <div class="form-inputs">
                                             <label class="major-label">:build name:</label>
-                                            <input class="name-input" value={buildName} onchange={updateBuildName} />
+                                            <input class="name-input" maxlength="30" value={buildName}
+                                                onchange={updateBuildName} />
                                             <label class="major-label">:build accessibility:</label>
                                             <input-switch left="private" right="public" uncheckcolor="strength"
                                                 checkcolor="intelligence" checked={isPublic}
@@ -125,7 +129,7 @@
 
             <div class="build-action">
                 <h2>:character name:</h2>
-                <input class="name-input" onchange={updateName} />
+                <input class="name-input" maxlength="20" onchange={updateName} />
             </div>
         </section>
     </section>

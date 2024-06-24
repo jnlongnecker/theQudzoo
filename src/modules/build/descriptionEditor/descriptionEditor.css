@@ -1,0 +1,41 @@
+@import "styles/scrollbar";
+
+h2 {
+    font-family: var(--qud-font);
+    text-align: center;
+    font-weight: 400;
+    color: var(--stat-color);
+}
+
+a {
+    color: var(--anchor-unvisited-color);
+}
+
+a:visited {
+    color: var(--anchor-visited-color);
+}
+
+textarea {
+    width: calc(100% - 0.5rem);
+    height: calc(100% - 1rem);
+    max-width: calc(100% - 0.5rem);
+    max-height: calc(100% - 1rem);
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+.build-container {
+    height: 33vh;
+    min-height: 33vh;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .build-container {
+        height: 50vh;
+        min-height: 50vh;
+    }
+}
