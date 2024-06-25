@@ -16,10 +16,21 @@ a:visited {
 }
 
 textarea {
+    box-sizing: border-box;
     width: calc(100% - 0.5rem);
     height: calc(100% - 1rem);
     max-width: calc(100% - 0.5rem);
     max-height: calc(100% - 1rem);
+    background-color: transparent;
+    color: var(--text-color-faded);
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color-dark);
+}
+
+textarea:focus {
+    outline: 0;
+    border-color: var(--code-color);
 }
 
 .container {
