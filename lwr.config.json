@@ -188,6 +188,17 @@
             }
         },
         {
+            "id": "Reclamation",
+            "path": "/advice/quests/reclamation",
+            "contentTemplate": "$contentDir/adviceArticles/reclamation.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - Reclamation",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/reclamation.png",
+                "description": "The Golem created successfully, it is time to ascend the Spindle with Barathrum. But hark, something stirs in the trees. Live and drink, mevyn."
+            }
+        },
+        {
             "id": "Breaking-Down-a-Run",
             "path": "/advice/breakdown",
             "contentTemplate": "$contentDir/adviceArticles/breakdown.md",

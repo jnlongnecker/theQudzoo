@@ -324,6 +324,20 @@ This is similar to Cherubic Visage, just with an extra 2 license point cost with
 
 300 reputation is really quite good; it's enough to put nearly any faction to neutrality with you; certainly any of the factions that you'd be interested in actively improving faction relations can be made neutral with this cybernetic. Of course, this only remains good while you don't naturally have good reputation with the given faction, which you will eventually want to do. Like other cybernetics that are destroyed upon removal, this is _good_ but you probably don't want it as a _permanent_ installation; just as a holdover until you can gain the reputation naturally or find something you want more.
 
+### Holographic Visage
+
+<div class="section-info">
+
+**Cost:** 6
+
+**Useful Through:** Tier 5
+
+**General Rating:** <span class="thumb-down"></span>
+
+</div>
+
++200 reputation to a faction of your choice at will is a pretty good benefit, but it does come at the cost of being restricted to the competitive face slot. 200 reputation is unfortunately just large enough to _sound_ really good and just small enough to be _just_ not enough for really anything useful on its own. You'll have to have at least a small bump in reputation in order for the rep to be meaningful and often times if you've been careful with your rep by the point you can afford (or even find) the holographic visage, you probably just don't need it. If you've got something in mind, definitely keep it around in case as it 100% has its niche uses but this one probably won't make up your serious loadout.
+
 ### Optical Multiscanner
 
 <div class="section-info">
@@ -462,11 +476,25 @@ The cooldown here is less than the Matter Recompositor (50 vs 100), has **no** u
 
 ## Cybernetics - Back Only
 
-### Gun Rack
+### Phase-adaptive Scope
 
 <div class="section-info">
 
 **Cost:** 4
+
+**Useful Through:** Tier 5
+
+**General Rating:** <span class="thumb-down"></span>
+
+</div>
+
+Shooting through walls is mega cool, although you are giving up the ability to shoot many guns at once. If this was looked at in a vacuum, it'd be pretty good as long as you could pair it with night-sight interpolators or penetrating radar. Without that, you can't really utilize it but you're going to want those anyways. But not only does this cybernetic _require_ assistance from other tools, you're giving up gun rack or a cathedra in order to use this, which are both better and just about as rare _and_ can stand on their own. If you have penetrating radar/night-sight interpolators and haven't found gun rack yet, maybe look at this as an option for eliminating creatures in tight underground ruin tunnels. Otherwise, pick a better back cybernetic.
+
+### Gun Rack
+
+<div class="section-info">
+
+**Cost:** 6
 
 **Useful Through:** Tier 5
 
@@ -544,6 +572,24 @@ The difference between the Bionic arm and other cybernetics that increase your s
 -   They take up a competitive cybernetics slot.
 
 Since neither downsides are true for Bionic arm, it makes it quite a bit better. Of course, this assumes that Strength is actually important for your build in some way, which may not necessarily be true. If you are rocking a melee build, there actually aren't an extensive repertoire of cybernetics to improve your melee capabilities so this is a fantastic one to add to give your hits a bit more juice. You'll still have another arm slot to add something else, or you can go all-in and use two Bionic arms to get a +4 to Strength.
+
+### Grafted Mirror Arm
+
+<div class="section-info">
+
+**Cost:** 5
+
+**Useful Through:** Tier 5
+
+**General Rating:** <span class="thumb-up"></span> <span class="thumb-down"></span>
+
+</div>
+
+This one is tough to rate properly. It gives an extra throw slot per installation and allows you to throw everything in all throw slots simultaneously. If you're throwing anything, you're probably throwing either a geomagnetic disc or a grenade. If you're throwing a disc, it's pretty good, especially if you're throwing 3 at once. It's not the amazing damage it once was, but respectable ranged damage to many targets. If your build really struggles with many targets, it's a worthwhile investment. For grenades, anything you throw either risks serious damage to yourself or is just overkill.
+
+Grafted mirror arm seems to be build specifically with another cybernetic in mind; namely the precision force lathe. It takes up yet another cybernetic slot, and the force knives you throw with that cybernetic are only marginally better than the geomagnetic disc and only are single-target.
+
+This one has potential if you're able to build around it and get it off the ground (as well as find enough). However, it needs a lot to be worth it and takes up space for flexible cybernetics like penetrating radar.
 
 ## Cybernetics - Hands Only
 
@@ -978,6 +1024,24 @@ Now, what improves with compute power? Since cybernetics are not that easy to sw
 -   Point-defense drone
 
 Each Palladium electrodeposit will improve these by 20%. None of these items or cybernetics are really so good that we would want to give up one or more cybernetic slots in order to improve them this small amount. If you happen to have one and you also have a free slot for the Palladium electrodeposits, it's worth installing just for the bonus. If not, you should be able to find something better.
+
+### Precision Force Lathe
+
+<div class="section-info">
+
+**Cost:** 4
+
+**Available Slots:** Back, Body, Arm, Head
+
+**Useful Through:** Tier 5
+
+**General Rating:** <span class="thumb-down"></span>
+
+</div>
+
+This cybernetic replaces any empty hand and thrown weapon slots with force knives, which are vibro weapons with a d8 damage die. It can slot into the head slot, which is basically dominated by reactive cranial plating so if you're not finding that useful there's a place for this. The problem is what you get; the force knives are just outpaced by other equipment.
+
+The melee attack is outpaced by the ceremonial vibrokhopesh and the thrown attack is outpaced by the geomagnetic disc. However, these are fairly rare items to find, especially in bulk. If you're able to find this cybernetic early and a grafted mirror arm or two, this cybernetic can definitely be worth your while if you're going with a Short Blades build. It's fun and thematic, but when it comes to the numbers it's a lot to give up for not enough.
 
 ### Navigation System
 
