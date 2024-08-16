@@ -152,8 +152,8 @@ export default class Container extends LightningElement {
 
     updateName(event) {
         let value = event.currentTarget.value;
-        if (value.length > 30) {
-            value = value.substring(0, 30);
+        if (value.length > 20) {
+            value = value.substring(0, 20);
             event.currentTarget.value = value;
         }
         let newName = value;
@@ -254,8 +254,8 @@ export default class Container extends LightningElement {
 
     updateBuildName(event) {
         let value = event.currentTarget.value;
-        if (value.length > 20) {
-            value = value.substring(0, 20);
+        if (value.length > 30) {
+            value = value.substring(0, 30);
             event.currentTarget.value = value;
         }
         this.currBuild.name = value;
