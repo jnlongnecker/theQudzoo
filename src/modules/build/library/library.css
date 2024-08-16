@@ -151,7 +151,7 @@ a {
     margin: 0;
 }
 
-.help-icon {
+.mobile-help-button {
     display: none;
 }
 
@@ -166,11 +166,12 @@ a {
         padding: 0 var(--mobile-margin-size);
     }
 
-    .help-icon {
-        display: block;
+    .mobile-help-button {
+        display: flex;
+        justify-content: center;
     }
 
-    .help-text {
+    .non-mobile-help {
         display: none;
     }
 }

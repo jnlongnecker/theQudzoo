@@ -8,12 +8,9 @@
                         onchange={updateName}></input-search>
                 </div>
                 <div class="option">
-                    <a href="/build-code">
-                        <button tabindex="-1" class="setting-button" onclick={showPopup}>
+                    <a class="non-mobile-help" href="/build-code">
+                        <button tabindex="-1" class="setting-button">
                             <p class="help-text">How Do I Add A Build Code?</p>
-                            <span class="help-icon">
-                                <input-icon variant="question" size="normal"></input-icon>
-                            </span>
                         </button>
                     </a>
                     <button class={filterClass} onclick={toggleFilters}>
@@ -50,6 +47,13 @@
         </section>
     </div>
     <section class="container">
+        <div class="mobile-help-button">
+            <a href="/build-code">
+                <button tabindex="-1" class="setting-button">
+                    <p class="help-text">How Do I Add A Build Code?</p>
+                </button>
+            </a>
+        </div>
         <template for:each={builds} for:item="build">
             <build-card mode={mode} build={build} key={build._id} contextid={contextUserId}
                 ondeletedbuild={fetchBuilds}></build-card>
