@@ -1870,12 +1870,12 @@ Tinker II is very notable for the powerful artifacts you’re able to craft with
 
 Reverse Engineer has two effects:
 
-1. You have a 75% chance to learn to build an artifact upon disassembling it.
-2. You have a 25% chance to learn a mod on an artifact upon disassembling it.
+1. You have a 25% chance to learn to build an artifact upon disassembling it.
+2. You have a 15% chance to learn a mod on an artifact upon disassembling it.
 
 It's that second one that makes the difference here. 25 Intelligence is a fairly steep cost to pay, but you're quite likely to find all kinds of artifacts that you don't want anyway with a huge variety of mods. It can be endlessly frustrating to try and find the ones you want from just merchants, especially if you spawn a world with a low amount of schematics drafters in the Stilt. Learning how to make an artifact is generally not helpful as artifacts you want to make in bulk you can just learn from Psychometry and artifacts you want just to have you generally only need one copy and disassembling it is a huge risk. Depending on how rare that artifact is, you may just want to use metamorphic polygel instead of risking the chance to not learn the recipe.
 
-25% chance is pretty low, but some mods can be quite common to find on items but difficult to find on merchants. Jacked is one that comes to the front of mind. Not only are you able to get any mod you'd like, but you also have the side benefit of being able to turn bits from low-value or useless artifacts/scrap into sellable artifacts for items that you _do_ want, which is extremely valuable. This skill becomes available to most builds around the time you finish Earl of Omonporch, which is also around the time you will be purchasing extremely expensive items and will want some cash to throw around.
+15% chance is pretty low, but some mods can be quite common to find on items but difficult to find on merchants. Jacked is one that comes to the front of mind. Not only are you able to get any mod you'd like, but you also have the side benefit of being able to turn bits from low-value or useless artifacts/scrap into sellable artifacts for items that you _do_ want, which is extremely valuable. This skill becomes available to most builds around the time you finish Earl of Omonporch, which is also around the time you will be purchasing extremely expensive items and will want some cash to throw around.
 
 ### Tinker III
 
