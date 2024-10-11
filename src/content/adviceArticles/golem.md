@@ -66,8 +66,9 @@ One of the best atzmus was as I just mentioned: one of your own limbs. This is c
 -   Temporal Fugue 7 or Electrical Generation 10 from Quatravolt Glider
 -   Temporal Fugue 14 or Teleportation 1 from Cyclopean Gibbon
 -   Random 4 level 9-12 physical mutations from Glow-wight Apotheote
+-   Two-Headed from Two-headed Boars and Two-headed Slugsnouts
 
-To me, Carapace in particular is quite interesting as the AV increase makes our overwhelming death machine even harder to damage, but we unfortunately don't get high level Carapace guaranteed from any creature. The highest level guaranteed Carapace is found from the Great Saltback, and that's only level 5 Carapace. Over time, there will likely be a more narrow set of contenders.
+To me, Carapace in particular is quite interesting as the AV increase makes our overwhelming death machine even harder to damage, but we unfortunately don't get high level Carapace guaranteed from any creature. The highest level guaranteed Carapace is found from the Great Saltback, and that's only level 5 Carapace. Two-Headed is also one that should be heavily considered; it's a fantastic mutation to combat Qon specifically so if you don't have a good way of killing her it may be a good idea to take that mutation for your Golem just in case. Do note that a mental shield does **not** help against Qon's confusion ability.
 
 If you do not possess a way to Dismember limbs, then you'll need to draw the creature you want a limb from to a creature that Dismembers. The most obvious choice here are madpoles, so recruit the creature you want a limb from and send it into a pool of hungry madpoles. It should go without saying, but you should probably recruit your follower you want the atzmus from _before_ recruiting the creature you want as a body.
 
