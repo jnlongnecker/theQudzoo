@@ -149,6 +149,12 @@ a {
 
 .notification {
     padding: 0 var(--desktop-margin-size) 1rem;
+    text-align: center;
+    fill: var(--agility-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .help-text {

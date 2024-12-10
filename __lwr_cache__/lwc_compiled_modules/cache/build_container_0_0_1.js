@@ -122,7 +122,12 @@ class Container extends LightningElement {
     }
   }
   updateName(event) {
-    let newName = event.currentTarget.value;
+    let value = event.currentTarget.value;
+    if (value.length > 20) {
+      value = value.substring(0, 20);
+      event.currentTarget.value = value;
+    }
+    let newName = value;
     this.lastBuildCode.name = newName;
     this.fetchCode(this.lastBuildCode);
   }
@@ -203,7 +208,12 @@ class Container extends LightningElement {
     this.template.querySelector(".build-action .name-input").value = name;
   }
   updateBuildName(event) {
-    this.currBuild.name = event.currentTarget.value;
+    let value = event.currentTarget.value;
+    if (value.length > 30) {
+      value = value.substring(0, 30);
+      event.currentTarget.value = value;
+    }
+    this.currBuild.name = value;
   }
   updateAccessibility(event) {
     console.log('updating');
