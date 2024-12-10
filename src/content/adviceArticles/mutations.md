@@ -372,7 +372,7 @@ Photosynthetic Skin is also unique in that it benefits from Self-discipline skil
 
 <div class="section-info">
 
-**Cost:** 4
+**Cost:** 3
 
 **Character Creation Rating:** <span class="star-filled">★ ★ </span><span class="star-empty">★ ★ ★ </span>
 
@@ -656,7 +656,7 @@ Confusion is in a really unique space as a mutation. It’s got a pretty long co
 
 <div class="section-info">
 
-**Cost:** 5
+**Cost:** 4
 
 **Character Creation Rating:** <span class="star-filled">★ </span><span class="star-empty">★ ★ ★ ★ </span>
 
@@ -664,7 +664,7 @@ Confusion is in a really unique space as a mutation. It’s got a pretty long co
 
 </div>
 
-At low levels, enemies are just going to walk out of it. At high levels, you’ll get the enemies in the initial range since it’ll freeze them, but it won’t do much damage. If you get too close to the area at high levels, you’ll end up frozen as well if you linger for too long. This mutation needs quite a bit of investment to be capable of even freezing an enemy caught in the initial zone. Enemies will just walk around this or wait out the 3 turns it’s active, so you’ll only ever hit creatures you specifically drop this on. And 5 MP to start with this trash? Give this mutation a miss.
+At low levels, enemies are just going to walk out of it. At high levels, you’ll get the enemies in the initial range since it’ll freeze them, but it won’t do much damage. If you get too close to the area at high levels, you’ll end up frozen as well if you linger for too long. This mutation needs quite a bit of investment to be capable of even freezing an enemy caught in the initial zone. Enemies will just walk around this or wait out the 3 turns it’s active, so you’ll only ever hit creatures you specifically drop this on. And 4 MP to start with this trash? Give this mutation a miss.
 
 ### Disintegration
 
@@ -843,7 +843,7 @@ Precognition is one of those mutations that has endless applications that will c
 
 <div class="section-info">
 
-**Cost:** 4
+**Cost:** 3
 
 **Character Creation Rating:** <span class="star-filled">★ ★ </span><span class="star-empty">★ ★ ★ </span>
 
@@ -865,7 +865,7 @@ Where Psychometry is quite useful is in learning recipes for injectors or grenad
 
 <div class="section-info">
 
-**Cost:** 5
+**Cost:** 4
 
 **Character Creation Rating:** <span class="star-filled">★ </span><span class="star-empty">★ ★ ★ ★ </span>
 
@@ -873,7 +873,7 @@ Where Psychometry is quite useful is in learning recipes for injectors or grenad
 
 </div>
 
-This is the fire version of Cryokinesis. Instead of freezing the target, it does a little more damage and sets them on fire. Well, it would if you could actually land it on something. Most of the time, the enemy just leaves the range before it does anything significant. For 5 MP, pick something else.
+This is the fire version of Cryokinesis. Instead of freezing the target, it does a little more damage and sets them on fire. Well, it would if you could actually land it on something. Most of the time, the enemy just leaves the range before it does anything significant. For 4 MP, pick something else.
 
 ### Sense Psychic
 

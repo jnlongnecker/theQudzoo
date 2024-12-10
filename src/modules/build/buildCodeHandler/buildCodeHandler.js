@@ -6,11 +6,11 @@ const mutantAp = 44;
 const truekinAp = 38;
 
 const baseMutant = {
-    "gameversion": "2.0.204.58",
+    "gameversion": "2.0.209.35",
     "buildversion": "1.0.0",
     "modules": [
         {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
+            "moduleType": "XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
             "data": {
                 "$type": "XRL.CharacterBuilds.Qud.QudGenotypeModuleData, Assembly-CSharp",
                 "Genotype": "Mutated Human",
@@ -18,90 +18,42 @@ const baseMutant = {
             }
         },
         {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
+            "moduleType": "XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
             "data": {
                 "$type": "XRL.CharacterBuilds.Qud.QudSubtypeModuleData, Assembly-CSharp",
-                "Subtype": "Nomad",
+                "Subtype": "Apostle",
                 "version": "1.0.0"
             }
         },
         {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudMutationsModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
+            "moduleType": "XRL.CharacterBuilds.Qud.QudMutationsModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
             "data": {
                 "$type": "XRL.CharacterBuilds.Qud.QudMutationsModuleData, Assembly-CSharp",
-                "mp": 0,
-                "selections": [
-                    {
-                        "Mutation": "Carapace",
-                        "Count": 1,
-                        "Variant": 0,
-                        "variantName": ""
-                    },
-                    {
-                        "Mutation": "Double-muscled",
-                        "Count": 1,
-                        "Variant": 0,
-                        "variantName": ""
-                    },
-                    {
-                        "Mutation": "Multiple Legs",
-                        "Count": 1,
-                        "Variant": 0,
-                        "variantName": ""
-                    },
-                    {
-                        "Mutation": "Night Vision",
-                        "Count": 1,
-                        "Variant": 0,
-                        "variantName": ""
-                    },
-                    {
-                        "Mutation": "Wings",
-                        "Count": 1,
-                        "Variant": 0,
-                        "variantName": ""
-                    },
-                    {
-                        "Mutation": "Tonic Allergy",
-                        "Count": 1,
-                        "Variant": 0,
-                        "variantName": ""
-                    }
-                ],
-                "version": "1.0.0"
+                "mp": 12,
+                "selections": [],
+                "version": "1.1.0"
             }
         },
         {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
+            "moduleType": "XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
             "data": {
                 "$type": "XRL.CharacterBuilds.Qud.QudAttributesModuleData, Assembly-CSharp",
                 "PointsPurchased": {
-                    "Strength": 8,
-                    "Agility": 8,
-                    "Toughness": 6,
-                    "Intelligence": 8,
-                    "Willpower": 8,
-                    "Ego": 6
+                    "Strength": 0,
+                    "Agility": 0,
+                    "Toughness": 0,
+                    "Intelligence": 0,
+                    "Willpower": 0,
+                    "Ego": 0
                 },
-                "apSpent": -44,
-                "apRemaining": 0,
+                "apSpent": 0,
+                "apRemaining": 44,
                 "baseAp": 44,
                 "version": "1.0.0"
             }
         },
         {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudCustomizeCharacterModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
-            "data": {
-                "$type": "XRL.CharacterBuilds.Qud.QudCustomizeCharacterModuleData, Assembly-CSharp",
-                "name": null,
-                "pet": null,
-                "gender": null,
-                "pronounSet": null,
-                "version": "1.0.0"
-            }
-        },
-        {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
+            "moduleType": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
             "data": {
                 "$type": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModuleData, Assembly-CSharp",
                 "StartingLocation": "Joppa",
@@ -112,11 +64,11 @@ const baseMutant = {
 }
 
 const baseKin = {
-    "gameversion": "2.0.204.59",
+    "gameversion": "2.0.209.35",
     "buildversion": "1.0.0",
     "modules": [
         {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
+            "moduleType": "XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
             "data": {
                 "$type": "XRL.CharacterBuilds.Qud.QudGenotypeModuleData, Assembly-CSharp",
                 "Genotype": "True Kin",
@@ -124,15 +76,15 @@ const baseKin = {
             }
         },
         {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
+            "moduleType": "XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
             "data": {
                 "$type": "XRL.CharacterBuilds.Qud.QudSubtypeModuleData, Assembly-CSharp",
-                "Subtype": "Praetorian",
+                "Subtype": "Horticulturist",
                 "version": "1.0.0"
             }
         },
         {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
+            "moduleType": "XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
             "data": {
                 "$type": "XRL.CharacterBuilds.Qud.QudAttributesModuleData, Assembly-CSharp",
                 "PointsPurchased": {
@@ -150,7 +102,7 @@ const baseKin = {
             }
         },
         {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudCyberneticsModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
+            "moduleType": "XRL.CharacterBuilds.Qud.QudCyberneticsModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
             "data": {
                 "$type": "XRL.CharacterBuilds.Qud.QudCyberneticsModuleData, Assembly-CSharp",
                 "lp": -1,
@@ -159,18 +111,7 @@ const baseKin = {
             }
         },
         {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudCustomizeCharacterModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
-            "data": {
-                "$type": "XRL.CharacterBuilds.Qud.QudCustomizeCharacterModuleData, Assembly-CSharp",
-                "name": null,
-                "pet": null,
-                "gender": null,
-                "pronounSet": null,
-                "version": "1.0.0"
-            }
-        },
-        {
-            "moduleType": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
+            "moduleType": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
             "data": {
                 "$type": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModuleData, Assembly-CSharp",
                 "StartingLocation": "Joppa",

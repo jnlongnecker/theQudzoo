@@ -252,7 +252,7 @@
         {
             "name": "Quills",
             "category": "Physical Mutation",
-            "cost": 4,
+            "cost": 3,
             "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/quills.png",
             "code": "bs",
@@ -477,7 +477,7 @@
         {
             "name": "Cryokinesis",
             "category": "Mental Mutation",
-            "cost": 5,
+            "cost": 4,
             "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/cryokinesis.png",
             "code": "de",
@@ -609,7 +609,7 @@
         {
             "name": "Psychometry",
             "category": "Mental Mutation",
-            "cost": 4,
+            "cost": 3,
             "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/psychometry.png",
             "code": "dp",
@@ -621,7 +621,7 @@
         {
             "name": "Pyrokinesis",
             "category": "Mental Mutation",
-            "cost": 5,
+            "cost": 4,
             "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/pyrokinesis.png",
             "code": "dq",
@@ -657,7 +657,7 @@
         {
             "name": "Stunning Force",
             "category": "Mental Mutation",
-            "cost": 4,
+            "cost": 3,
             "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/stunningForce.png",
             "code": "dt",
