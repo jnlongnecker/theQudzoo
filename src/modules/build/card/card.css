@@ -149,6 +149,16 @@ a {
     background-color: var(--hover-darken);
 }
 
+.outdated-section {
+    fill: var(--agility-color);
+    color: var(--toughness-color);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 5%;
+    gap: 1rem;
+}
+
 .header {
     display: flex;
     flex-direction: column;

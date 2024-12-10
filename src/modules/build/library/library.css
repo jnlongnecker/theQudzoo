@@ -147,6 +147,10 @@ a {
     padding: 0 var(--desktop-margin-size);
 }
 
+.notification {
+    padding: 0 var(--desktop-margin-size) 1rem;
+}
+
 .help-text {
     margin: 0;
 }
@@ -163,6 +167,10 @@ a {
 
 @media only screen and (max-width: 900px) {
     .container {
+        padding: 0 var(--mobile-margin-size);
+    }
+
+    .notification {
         padding: 0 var(--mobile-margin-size);
     }
 

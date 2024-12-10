@@ -192,66 +192,85 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       },
       key: api_key(26, tag)
     }, []);
-  }))]), api_element("h1", {
+  }))]), $cmp.isOutdated ? api_element("div", {
+    classMap: {
+      "outdated-section": true
+    },
     key: 27
-  }, [api_text(api_dynamic_text($cmp.buildName)), $cmp.hasOwner ? api_element("span", {
+  }, [api_custom_element("input-icon", _inputIcon, {
+    props: {
+      "variant": "warning",
+      "size": "big"
+    },
     key: 28
+  }, []), api_element("span", {
+    key: 29
+  }, [api_text("This build is from an outdated version. It may not be compatible with the current version of the game, and the build code may be invalid.")]), api_custom_element("input-icon", _inputIcon, {
+    props: {
+      "variant": "warning",
+      "size": "big"
+    },
+    key: 30
+  }, [])]) : null, api_element("h1", {
+    key: 31
+  }, [api_text(api_dynamic_text($cmp.buildName)), $cmp.hasOwner ? api_element("span", {
+    key: 32
   }, [api_text(" by "), api_element("span", {
     classMap: {
       "name": true
     },
-    key: 29
+    key: 33
   }, [api_text(api_dynamic_text($cmp.displayName))])]) : null])]), api_element("div", {
     classMap: {
       "grid": true
     },
-    key: 30
+    key: 34
   }, [api_element("div", {
     classMap: {
       "attributes": true
     },
-    key: 31
+    key: 35
   }, [api_element("fieldset", {
-    key: 32
+    key: 36
   }, [api_element("legend", {
-    key: 33
+    key: 37
   }, [api_text("Attributes")]), api_element("ul", {
-    key: 34
+    key: 38
   }, api_iterator($cmp.attributes, function (attribute) {
     return api_element("li", {
       className: attribute.class,
-      key: api_key(35, attribute.class)
+      key: api_key(39, attribute.class)
     }, [api_element("span", {
-      key: 36
+      key: 40
     }, [api_text(api_dynamic_text(attribute.name))]), api_element("span", {
-      key: 37
+      key: 41
     }, [api_text(api_dynamic_text(attribute.value))])]);
   }))])]), api_element("div", {
     classMap: {
       "char-info": true
     },
-    key: 38
+    key: 42
   }, [api_element("img", {
     attrs: {
       "src": $cmp.subtypeImg
     },
-    key: 39
+    key: 43
   }, []), api_element("p", {
-    key: 40
+    key: 44
   }, [api_text(api_dynamic_text($cmp.subtypeName))]), api_element("p", {
     classMap: {
       "char-name": true
     },
-    key: 41
+    key: 45
   }, [api_text(api_dynamic_text($cmp.characterName))])]), api_element("div", {
     classMap: {
       "mutations": true
     },
-    key: 42
+    key: 46
   }, [api_element("fieldset", {
-    key: 43
+    key: 47
   }, [api_element("legend", {
-    key: 44
+    key: 48
   }, [api_text(api_dynamic_text($cmp.bonus))]), api_element("ul", {
     classMap: {
       "mutation-list": true
@@ -261,12 +280,12 @@ function tmpl($api, $cmp, $slotset, $ctx) {
         dom: "manual"
       }
     },
-    key: 45
+    key: 49
   }, [])])])]), $cmp.copyable ? api_element("div", {
     classMap: {
       "footer": true
     },
-    key: 46,
+    key: 50,
     on: {
       "click": _m8 || ($ctx._m8 = api_bind($cmp.stopBubble))
     }
@@ -278,15 +297,15 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     attrs: {
       "title": "Last Updated"
     },
-    key: 47
+    key: 51
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
       "variant": "refresh",
       "size": "big"
     },
-    key: 48
+    key: 52
   }, []), api_element("span", {
-    key: 49
+    key: 53
   }, [api_text(api_dynamic_text($cmp.lastUpdated))])]), api_element("div", {
     classMap: {
       "footer-item": true,
@@ -295,21 +314,21 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     attrs: {
       "title": "Likes"
     },
-    key: 50
+    key: 54
   }, [api_element("span", {
     className: $cmp.likeClass,
-    key: 51
+    key: 55
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
       "variant": "like",
       "size": "big"
     },
-    key: 52,
+    key: 56,
     on: {
       "click": _m9 || ($ctx._m9 = api_bind($cmp.likeMyBuild))
     }
   }, [])]), api_element("span", {
-    key: 53
+    key: 57
   }, [api_text(api_dynamic_text($cmp.likes))])]), api_element("div", {
     classMap: {
       "footer-item": true,
@@ -318,15 +337,15 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     attrs: {
       "title": "Created Date"
     },
-    key: 54
+    key: 58
   }, [api_custom_element("input-icon", _inputIcon, {
     props: {
       "variant": "save",
       "size": "big"
     },
-    key: 55
+    key: 59
   }, []), api_element("span", {
-    key: 56
+    key: 60
   }, [api_text(api_dynamic_text($cmp.created))])])]) : null])]) : null];
 }
 export default registerTemplate(tmpl);

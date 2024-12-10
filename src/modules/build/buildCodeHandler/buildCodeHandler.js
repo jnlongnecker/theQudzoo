@@ -5,8 +5,26 @@ const testCode2 = "H4sIAAAAAAAACs1U72vbMBD9Xuj/IMI+Oibp2tIO8iHLSll/QNqEbjD6QbYPW
 const mutantAp = 44;
 const truekinAp = 38;
 
+export function isVersionOutdated(version) {
+    try {
+        let parts = version.split('.');
+        let currParts = currVersion.split('.');
+        console.log(parts);
+        console.log(currParts);
+
+        for (let i = 0; i < parts.length - 1; i++) {
+            let part = Number(parts[i]);
+            let curr = Number(currParts[i]);
+            if (part != curr) return true;
+        }
+        return false;
+    } catch (e) { return true; }
+}
+
+const currVersion = '2.0.209.35';
+
 const baseMutant = {
-    "gameversion": "2.0.209.35",
+    "gameversion": currVersion,
     "buildversion": "1.0.0",
     "modules": [
         {
@@ -64,7 +82,7 @@ const baseMutant = {
 }
 
 const baseKin = {
-    "gameversion": "2.0.209.35",
+    "gameversion": currVersion,
     "buildversion": "1.0.0",
     "modules": [
         {

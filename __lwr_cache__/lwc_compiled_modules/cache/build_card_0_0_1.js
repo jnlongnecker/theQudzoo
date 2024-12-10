@@ -1,6 +1,6 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./card.html";
-import { fetchJsonForBuildCode } from "build/buildCodeHandler";
+import { fetchJsonForBuildCode, isVersionOutdated } from "build/buildCodeHandler";
 import { deleteBuilds, likeBuild, getCallings, getCastes } from "c/api";
 class BuildCard extends LightningElement {
   constructor(...args) {
@@ -42,6 +42,18 @@ class BuildCard extends LightningElement {
     };
     this.deleting = false;
     this.subtypeBonuses = void 0;
+  }
+  connectedCallback() {
+    window.addEventListener('keydown', () => {
+      console.log(this.buildJson);
+    });
+  }
+  get isOutdated() {
+    if (!this.buildJson) return false;
+    let version = this.buildJson.gameversion;
+    let result = isVersionOutdated(version);
+    console.log(result);
+    return isVersionOutdated(version);
   }
   get deletable() {
     return this.mode == "delete";

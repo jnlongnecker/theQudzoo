@@ -1,6 +1,7 @@
 import { LightningElement, api, track } from "lwc";
 import { fetchJsonForBuildCode } from "build/buildCodeHandler";
 import { deleteBuilds, likeBuild, getCallings, getCastes } from "c/api";
+import { isVersionOutdated } from "build/buildCodeHandler";
 
 export default class BuildCard extends LightningElement {
 
@@ -55,6 +56,21 @@ export default class BuildCard extends LightningElement {
     deleting = false;
 
     subtypeBonuses;
+
+    connectedCallback() {
+        window.addEventListener('keydown', () => {
+            console.log(this.buildJson);
+        })
+    }
+
+    get isOutdated() {
+        if (!this.buildJson) return false;
+
+        let version = this.buildJson.gameversion;
+        let result = isVersionOutdated(version);
+        console.log(result);
+        return isVersionOutdated(version);
+    }
 
     get deletable() {
         return this.mode == "delete";

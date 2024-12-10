@@ -2,90 +2,67 @@ const testCode = "H4sIAAAAAAAACs1W32vbMBB+L/R/EGaPjkm67ifkIXPH6NpBVoduMPog24ctJk
 const testCode2 = "H4sIAAAAAAAACs1U72vbMBD9Xuj/IMI+Oibp2tIO8iHLSll/QNqEbjD6QbYPW0yRjHTaMMX/e09xWlsxLOtgJYHg+N67u3dPFz0dHjA2yPkKfoGxQqvBJzY4ikfx0eg4PjkfRGs8cUJmHcKYCKMNttKZk2Ap/MO/M/bUPF6hZVWCT/p+fxPPCm54imA++4o2vnOZ/16C0ki023VCxKbWwiqR1XC2oIQyYg9N70mrLGIzJ9EZmChwaLiM2NwlUqTXUC31T1AT5aRsNK7FZBw5yXhVR6EP+FZpX6hIT17bhGq+8H3ZpXHAroUKCD0bX7C6+VFH/2zjwiV76mKgbLeJG7ovOjccUBvB383FKaIRiUOwe2jktrjdXs61UGjnzqQFt5CFPb3XaEDlWBBwGgXINBdSYEXASQgstcsLBdb2c74qBClFDiqFPvpNSFnq32AIOguhi1z7Rm2s7g7By0UJCokx/HgWAvew4kIJlRM46kIJjTstKRpm/MfNmVUJGAUo0n1cnZ663bsjvX3DcTdkQUKKNEHnxm8+wVoRs+1HTD9CtE3Qbn2k423ggfv/O27SumDdvjy+16EWWltYIDdIS3ajU+6n38fz/YPQv7hyt/J8sytdlvxt165/PB4e1M+X/8VzWAgAAA==";
 const mutantAp = 44;
 const truekinAp = 38;
+export function isVersionOutdated(version) {
+  try {
+    let parts = version.split('.');
+    let currParts = currVersion.split('.');
+    console.log(parts);
+    console.log(currParts);
+    for (let i = 0; i < parts.length - 1; i++) {
+      let part = Number(parts[i]);
+      let curr = Number(currParts[i]);
+      if (part != curr) return true;
+    }
+    return false;
+  } catch (e) {
+    return true;
+  }
+}
+const currVersion = '2.0.209.35';
 const baseMutant = {
-  "gameversion": "2.0.204.58",
+  "gameversion": currVersion,
   "buildversion": "1.0.0",
   "modules": [{
-    "moduleType": "XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
+    "moduleType": "XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudGenotypeModuleData, Assembly-CSharp",
       "Genotype": "Mutated Human",
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
+    "moduleType": "XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudSubtypeModuleData, Assembly-CSharp",
-      "Subtype": "Nomad",
+      "Subtype": "Apostle",
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudMutationsModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
+    "moduleType": "XRL.CharacterBuilds.Qud.QudMutationsModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudMutationsModuleData, Assembly-CSharp",
-      "mp": 0,
-      "selections": [{
-        "Mutation": "Carapace",
-        "Count": 1,
-        "Variant": 0,
-        "variantName": ""
-      }, {
-        "Mutation": "Double-muscled",
-        "Count": 1,
-        "Variant": 0,
-        "variantName": ""
-      }, {
-        "Mutation": "Multiple Legs",
-        "Count": 1,
-        "Variant": 0,
-        "variantName": ""
-      }, {
-        "Mutation": "Night Vision",
-        "Count": 1,
-        "Variant": 0,
-        "variantName": ""
-      }, {
-        "Mutation": "Wings",
-        "Count": 1,
-        "Variant": 0,
-        "variantName": ""
-      }, {
-        "Mutation": "Tonic Allergy",
-        "Count": 1,
-        "Variant": 0,
-        "variantName": ""
-      }],
-      "version": "1.0.0"
+      "mp": 12,
+      "selections": [],
+      "version": "1.1.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
+    "moduleType": "XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudAttributesModuleData, Assembly-CSharp",
       "PointsPurchased": {
-        "Strength": 8,
-        "Agility": 8,
-        "Toughness": 6,
-        "Intelligence": 8,
-        "Willpower": 8,
-        "Ego": 6
+        "Strength": 0,
+        "Agility": 0,
+        "Toughness": 0,
+        "Intelligence": 0,
+        "Willpower": 0,
+        "Ego": 0
       },
-      "apSpent": -44,
-      "apRemaining": 0,
+      "apSpent": 0,
+      "apRemaining": 44,
       "baseAp": 44,
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudCustomizeCharacterModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
-    "data": {
-      "$type": "XRL.CharacterBuilds.Qud.QudCustomizeCharacterModuleData, Assembly-CSharp",
-      "name": null,
-      "pet": null,
-      "gender": null,
-      "pronounSet": null,
-      "version": "1.0.0"
-    }
-  }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=2.0.204.58, Culture=neutral, PublicKeyToken=null",
+    "moduleType": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModuleData, Assembly-CSharp",
       "StartingLocation": "Joppa",
@@ -94,24 +71,24 @@ const baseMutant = {
   }]
 };
 const baseKin = {
-  "gameversion": "2.0.204.59",
+  "gameversion": currVersion,
   "buildversion": "1.0.0",
   "modules": [{
-    "moduleType": "XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
+    "moduleType": "XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudGenotypeModuleData, Assembly-CSharp",
       "Genotype": "True Kin",
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
+    "moduleType": "XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudSubtypeModuleData, Assembly-CSharp",
-      "Subtype": "Praetorian",
+      "Subtype": "Horticulturist",
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
+    "moduleType": "XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudAttributesModuleData, Assembly-CSharp",
       "PointsPurchased": {
@@ -128,7 +105,7 @@ const baseKin = {
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudCyberneticsModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
+    "moduleType": "XRL.CharacterBuilds.Qud.QudCyberneticsModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudCyberneticsModuleData, Assembly-CSharp",
       "lp": -1,
@@ -136,17 +113,7 @@ const baseKin = {
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudCustomizeCharacterModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
-    "data": {
-      "$type": "XRL.CharacterBuilds.Qud.QudCustomizeCharacterModuleData, Assembly-CSharp",
-      "name": null,
-      "pet": null,
-      "gender": null,
-      "pronounSet": null,
-      "version": "1.0.0"
-    }
-  }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=2.0.204.59, Culture=neutral, PublicKeyToken=null",
+    "moduleType": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModuleData, Assembly-CSharp",
       "StartingLocation": "Joppa",
