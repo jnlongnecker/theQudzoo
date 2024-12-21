@@ -969,7 +969,7 @@
         {
             "name": "Quantum Jitters",
             "category": "Mental Defect",
-            "cost": -3,
+            "cost": -4,
             "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/quantumJitters.png",
             "code": "eh",
@@ -981,7 +981,7 @@
         {
             "name": "Socially Repugnant",
             "category": "Mental Defect",
-            "cost": -3,
+            "cost": -2,
             "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/sociallyRepugnant.png",
             "code": "ef",
