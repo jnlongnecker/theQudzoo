@@ -11,7 +11,7 @@ export default class Hub extends LightningElement {
     @api
     mode
 
-    validModes = ["articles", "quests"]
+    validModes = ["articles", "quests", "novice"]
 
     connectedCallback() {
         if (!this.validModes.find(elem => elem === this.mode)) {
@@ -22,7 +22,7 @@ export default class Hub extends LightningElement {
             .then(result => {
                 result.json()
                     .then(payload => {
-                        this.allLinks = payload[this.mode];
+                        this.allLinks = payload.articles;
                         this.calculateRowContents();
                     })
             });

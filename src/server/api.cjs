@@ -7,6 +7,7 @@
 const fs = require("fs");
 const codeManager = require("./buildCodes.cjs");
 const rootDir = __dirname.substring(0, __dirname.indexOf("src") - 1);
+const subsets = ["quests", "novice"];
 let app;
 
 /*
@@ -52,7 +53,11 @@ exports.processRequest = async (res, req) => {
                 res.status(200);
                 return response;
             case "quests":
-                response = await getQuestsPayload();
+                response = await getSubsetPayload("quests");
+                res.status(200);
+                return response;
+            case "novice":
+                response = await getSubsetPayload("novice");
                 res.status(200);
                 return response;
             case "mutations":
@@ -77,28 +82,28 @@ exports.processRequest = async (res, req) => {
     }
 }
 
+
 /*
-    Retrieves all quest names from the routes stored
+    Retrieves all subset article names from the routes stored
     in the LWC App object
 */
-async function getQuestsPayload() {
+async function getSubsetPayload(subsetName) {
     let payload = {
-        quests: []
+        articles: [],
     };
 
     let config = app.config;
-
     for (let route of config.routes) {
-        if (route.path.indexOf("quests/") == -1) continue;
+        if (route.path.indexOf(`${subsetName}/`) == -1) continue;
 
-        let quest = {
+        let article = {
             label: replaceAll(route.id, "-", " "),
             link: route.path,
-            class: "normal",
+            class: "indented",
             preview: route.properties?.preview
         }
 
-        payload.quests.push(quest);
+        payload.articles.push(article);
     }
 
     return payload;
@@ -118,12 +123,19 @@ async function getArticlesPayload() {
     for (let route of config.routes) {
         if (route.path.indexOf("advice/") == -1) continue;
         if (route.path.indexOf("quests/") != -1) continue;
+        if (route.path.indexOf("novice/") != -1) continue;
 
         let article = {
             label: replaceAll(route.id, "-", " "),
             link: route.path,
             class: "normal",
             preview: route.properties?.preview
+        }
+
+        for (let name of subsets) {
+            if (route.path.indexOf(name) != -1) {
+                article.articles = (await getSubsetPayload(name)).articles;
+            }
         }
 
         payload.articles.push(article);

@@ -79,6 +79,38 @@
             }
         },
         {
+            "id": "New-Player-Guide",
+            "path": "/advice/novice",
+            "contentTemplate": "$contentDir/adviceArticles/novice/intro.md",
+            "layoutTemplate": "$layoutsDir/noob_home_layout.njk",
+            "properties": {
+                "title": "New Players",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/run.png"
+            }
+        },
+        {
+            "id": "Qud-Fundamentals",
+            "path": "/advice/novice/fundamentals",
+            "contentTemplate": "$contentDir/adviceArticles/novice/fundamentals.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Combat Positioning",
+                "preview": "/1/asset/s/latest/public/assets/images/positioning/positioning_3.png",
+                "description": "The most important thing in the entire game to learn is how to position your character. If you can master this, your consistency will go through the roof. 1 on 1, your character tends to be far stronger than any individual enemy you will face."
+            }
+        },
+        {
+            "id": "Combat-Positioning",
+            "path": "/advice/novice/positioning",
+            "contentTemplate": "$contentDir/adviceArticles/positioning.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Combat Positioning",
+                "preview": "/1/asset/s/latest/public/assets/images/positioning/positioning_3.png",
+                "description": "The most important thing in the entire game to learn is how to position your character. If you can master this, your consistency will go through the roof. 1 on 1, your character tends to be far stronger than any individual enemy you will face."
+            }
+        },
+        {
             "id": "Story-Quests",
             "path": "/advice/quests",
             "contentTemplate": "$contentDir/adviceArticles/questsHome.md",
@@ -207,17 +239,6 @@
                 "title": "Run Breakdown",
                 "preview": "/1/asset/s/latest/public/assets/images/previews/run.png",
                 "description": "There are far more items and enemies than I care to cover in this document, so instead of a comprehensive list of my opinions on all items and all enemies, instead I will share my thoughts on the way I break down a run in my mind and a glimpse into my internal checklist for the part of the game I'm currently on."
-            }
-        },
-        {
-            "id": "Combat-Positioning",
-            "path": "/advice/positioning",
-            "contentTemplate": "$contentDir/adviceArticles/positioning.md",
-            "layoutTemplate": "$layoutsDir/advice_layout.njk",
-            "properties": {
-                "title": "Combat Positioning",
-                "preview": "/1/asset/s/latest/public/assets/images/positioning/positioning_3.png",
-                "description": "The most important thing in the entire game to learn is how to position your character. If you can master this, your consistency will go through the roof. 1 on 1, your character tends to be far stronger than any individual enemy you will face."
             }
         },
         {

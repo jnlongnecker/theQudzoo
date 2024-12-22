@@ -6,7 +6,7 @@ class Hub extends LightningElement {
     this.linkGrid = void 0;
     this.allLinks = [];
     this.mode = void 0;
-    this.validModes = ["articles", "quests"];
+    this.validModes = ["articles", "quests", "novice"];
   }
   connectedCallback() {
     if (!this.validModes.find(elem => elem === this.mode)) {
@@ -14,7 +14,7 @@ class Hub extends LightningElement {
     }
     fetch("/api/" + this.mode).then(result => {
       result.json().then(payload => {
-        this.allLinks = payload[this.mode];
+        this.allLinks = payload.articles;
         this.calculateRowContents();
       });
     });

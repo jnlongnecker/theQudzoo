@@ -2,6 +2,19 @@
     <div class="container">
         <h1>Advice Articles</h1>
 
+        <template for:each={containerList} for:item="container">
+            <details key={container.link} open={container.defaultOpen}>
+                <summary>
+                    <a class={container.class} href={container.link} onclick={handleClick}>{container.label}</a>
+                </summary>
+                <template for:each={container.articles} for:item="article">
+                    <p key={article.link}>
+                        <a class={article.class} href={article.link} onclick={handleClick}>{article.label}</a>
+                    </p>
+                </template>
+            </details>
+        </template>
+
         <template for:each={itemList} for:item="article">
             <p key={article.link}>
                 <a class={article.class} href={article.link} onclick={handleClick}>{article.label}</a>

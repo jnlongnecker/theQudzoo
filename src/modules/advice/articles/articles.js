@@ -5,73 +5,53 @@ export default class Articles extends LightningElement {
     @track
     itemList = [];
 
-    articles = [];
-    quests = [];
+    @track
+    containerList = [];
 
-    connectedCallback() {
+    masterList = [];
+
+    async connectedCallback() {
         let path = window.location.pathname;
 
-        fetch("/api/articles")
-            .then(result => {
-                result.json()
-                    .then(payload => {
-                        this.articles = payload.articles;
-                        for (let article of this.articles) {
-                            if (article.link !== path) continue;
+        let payload = await (await fetch("/api/articles")).json();
+        for (let article of payload.articles) {
+            if (article.link === path) {
+                article.class += " selected";
+                article.defaultOpen = true;
+            }
 
-                            article.class = "selected";
-                            break;
-                        }
-                        this.fetchQuests(path);
-                    })
-            });
-    }
+            this.masterList.push(article);
+            if (!article.articles) {
+                this.itemList.push(article);
+                continue;
+            }
 
-    fetchQuests(path) {
-        fetch("/api/quests")
-            .then(result => {
-                result.json()
-                    .then(payload => {
-                        this.quests = payload.quests;
-                        for (let quest of this.quests) {
-                            if (quest.link === path)
-                                quest.class = "selected indented"
-                            else
-                                quest.class = "indented";
-                        }
-                        this.buildItemList();
-                    })
-            });
+            this.containerList.push(article);
+            for (let subArticle of article.articles) {
+                if (subArticle.link === path) {
+                    subArticle.class += " selected";
+                    article.defaultOpen = true;
+                }
+
+                this.masterList.push(subArticle);
+            }
+        }
     }
 
     handleClick(event) {
         let articleLabelClicked = event.target.textContent;
         let articleClicked;
 
-        for (let article of this.itemList) {
+        for (let article of this.masterList) {
             if (article.label === articleLabelClicked) {
                 articleClicked = article;
                 break;
             }
         }
 
-        if (!articleClicked || articleClicked.class === "selected") {
+        if (!articleClicked || articleClicked.class.includes("selected")) {
             event.preventDefault();
             return;
-        }
-    }
-
-    buildItemList() {
-        this.itemList = [];
-        for (let article of this.articles) {
-            this.itemList.push(article);
-
-            if (article.link.indexOf("quest") != -1) {
-
-                for (let quest of this.quests) {
-                    this.itemList.push(quest);
-                }
-            }
         }
     }
 }
