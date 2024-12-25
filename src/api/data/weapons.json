@@ -1,0 +1,22 @@
+[
+    {
+        "name": "base",
+        "pvBonus": 0,
+        "pvCap": 0,
+        "damage": "",
+        "type": "cudgel",
+        "mods": [0, 0, 0],
+        "tier": 1,
+        "isWeapon": true
+    },
+    {
+        "name": "Zetachrome Dagger",
+        "pvBonus": 0,
+        "pvCap": 9,
+        "damage": "1d12 + 2",
+        "type": "shortBlade",
+        "mods": [0, 0, 0],
+        "tier": 8,
+        "isWeapon": true
+    }
+]
