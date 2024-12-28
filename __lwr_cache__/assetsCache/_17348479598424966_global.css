@@ -101,16 +101,10 @@ a:visited {
 
 code {
     font-family: var(--qud-font);
-    color: white;
 }
 
 .injected {
     white-space: nowrap;
-}
-
-.misc {
-    font-family: var(--qud-font);
-    color: var(--misc-color);
 }
 
 .skill {

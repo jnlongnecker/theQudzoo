@@ -89,14 +89,25 @@
             }
         },
         {
+            "id": "Parsing-the-UI",
+            "path": "/advice/novice/ui",
+            "contentTemplate": "$contentDir/adviceArticles/novice/ui.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Parsing the UI",
+                "preview": "/1/asset/s/latest/public/assets/images/fundamentals/overview.png",
+                "description": "When you load up your copy of Caves of Qud and spin up a character, you'll be faced with quite a bit of information at once. Let's just take a look at the screen to see what is going on and parse out the information that is there and what is most relevant."
+            }
+        },
+        {
             "id": "Qud-Fundamentals",
             "path": "/advice/novice/fundamentals",
             "contentTemplate": "$contentDir/adviceArticles/novice/fundamentals.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
-                "title": "Combat Positioning",
-                "preview": "/1/asset/s/latest/public/assets/images/positioning/positioning_3.png",
-                "description": "The most important thing in the entire game to learn is how to position your character. If you can master this, your consistency will go through the roof. 1 on 1, your character tends to be far stronger than any individual enemy you will face."
+                "title": "Qud Fundamentals",
+                "preview": "/1/asset/s/latest/public/assets/images/fundamentals/look.png",
+                "description": "Now that we understand what we're looking at, let's talk about Qud as a game and understand our goals and how we're going to achieve them."
             }
         },
         {
