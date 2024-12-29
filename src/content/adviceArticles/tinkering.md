@@ -12,6 +12,35 @@ Most of the artifact Tinkering you should be doing is one-off builds of rare ite
 
 Not all artifacts are worth the same amount per bit; there are some artifacts that are definitely worth more. There is a great [post on Reddit](https://www.reddit.com/r/cavesofqud/comments/y912vn/psa_best_value_tinkering/) by Braekyn that breaks down the most valuable artifacts by bit and tinker skill required for them, so I’ll leave you to browse that if you are interested in it. The idea here is you Disassemble everything except for these particular artifacts, and make copies of these artifacts with the bits you have leftover from other artifacts you Disassemble.
 
+### Grenade Tinkering
+
+Grenade tinkering is such a huge part of Tinkering in general that if you consider half of Tinkering to be mods, the other half might as well be grenades (leave in an extra 5% for injectors and miscellaneous tools). As such, it deserves its own section. There are two ways to use grenades:
+
+1. Plant them as mines (step trigger) or time-bombs (turn trigger)
+2. Throw them
+
+If you're clever and plan things out, you can set up time-bombs in combat but you oftentimes don't gain much from that since equipping a thrown item it completely free to do. More often, you're going to be throwing them, which is also good for you since the useful grenades tend to have a considerable area of effect.
+
+Grenades come in 3 tiers: mkI, mkII and mkIII, the only exceptions being the phase shift grenade and the hand-e-nuke which is less of a "grenade" and more of a "map deletion" so I won't be generally considering the latter when I talk about grenades. Phase shift grenades are useful when you have phase harmonic/phase conjugate gear to take advantage of the target in their phased state (or the Phase-adaptive Scope cybernetic). Other than that, the mkI grenades are generally just too weak to be worth your time.
+
+#### Defensive Grenades
+
+The most obviously useful of all the grenades are the EMP grenades. Robots are always a threat until you gain neutral reputation with them, but they are categorically weak to an EMP. Not only are members of the Robots faction weak to EMPs, but robot creatures from other factions like the temple mechas are also vulnerable to EMP. It's always worth keeping several mkII-mkIII's on you at any point in time to give you that edge from particularly dangerous robots like the galgal and chrome pyramid. Even early on the mkI's can help you get away from a chaingun turret pinning you down or an early rocket turret giving you trouble.
+
+Flashbang grenades of all tiers are useful not only in being a constant part of the cure for monochrome, but also for the confusion that they inflict. This will notably break Sunder Mind, so it's often useful to have a few flashbangs on hand for just such an occasion.
+
+EMPs only work on robots but if all you need is a getaway, the stasis grenades work perfectly for such a role. If you are suddenly ambushed by a powerful enemy you weren't expecting or a large group, a well-placed stasis grenade can be the difference maker between life and death. Likewise, a sleep or stun gas grenade can turn the tide in your favor against organic creatures. If you have a gas mask or a high-tier fitted with filters modded item, these can be even more useful as you can fight in the gas while your opponents flounder.
+
+#### Offensive Grenades
+
+Thermal grenades can be rapidly stacked to absolutely incinerate their target. 6-7 mkIII thermals can literally disintegrate creatures without heat resistance, and even without being instantly killed being essentially permanently on fire is pretty awful since creatures will spend their turn trying to fight the fire. Freeze grenades being the opposite of this, even mkII grenades are extremely handy for locking down creatures. Not only will frozen creatures not fight back, but they also can't dodge (and lamprey can't clone). The mkIII freeze grenades are so potent that even creatures with relatively high cold resistance will be nearly permanently frozen from 1 or 2 of these; certainly long enough to cut them to pieces. These two grenades naturally pair incredibly well with elemental resistance, particularly that from Carapace as you'll be immune to the effects of the grenades while your opponents are not so lucky.
+
+The above naturally pair with plasma grenades. Again, probably stick to mkII and above (mostly for the duration), but stacking the coated in plasma debuff with the elemental effects of the thermal and freeze grenades is absolutely brutal. As if that isn't enough, tossing a gravity grenade right after a plasma grenade will suck all the gas onto your target, massively increasing the density which increases both the damage dealt and the duration of the debuff. Just be sure you're not in range or you're locked down with Anchor Spikes or are in a different phase.
+
+---
+
+The best part about using grenades is you don't need a special build in order to utilize them. You simply need to find 1 copy of the grenade in the wild or its recipe from a tinker, and then with Psychometry (guaranteed temporarily from the meal in the Ezra ovens) you can permanently learn the recipe to the grenades. The bits for their creation are often very cheap, and outside from mkIII time dilation, gravity and plasma grenades all you need is Tinker I. Grenades are the great equalizer between any build you choose and the more powerful residents of Qud, as long as you keep your eye out for them and stay strapped with a few on you at all times.
+
 ## Modification Tinkering
 
 Mods are, to me, the primary draw of Tinkering; if you’re doing any Tinkering at all it should be for mods. Early on, the effects of mods will not be very drastic, but most mods will scale with the quality of item they are modifying so don’t give up on them! I’ll be going over the mods you can apply, breaking them down by the tinker skill required and covering the gear that they can go on. Something to note about all mods: an item can only have up to 3 mods on it at a time, so you have to pick and choose!

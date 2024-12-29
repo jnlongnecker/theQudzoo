@@ -488,7 +488,9 @@ The cooldown here is less than the Matter Recompositor (50 vs 100), has **no** u
 
 </div>
 
-Shooting through walls is mega cool, although you are giving up the ability to shoot many guns at once. If this was looked at in a vacuum, it'd be pretty good as long as you could pair it with night-sight interpolators or penetrating radar. Without that, you can't really utilize it but you're going to want those anyways. But not only does this cybernetic _require_ assistance from other tools, you're giving up gun rack or a cathedra in order to use this, which are both better and just about as rare _and_ can stand on their own. If you have penetrating radar/night-sight interpolators and haven't found gun rack yet, maybe look at this as an option for eliminating creatures in tight underground ruin tunnels. Otherwise, pick a better back cybernetic.
+Shooting through walls is mega cool, although you are giving up the ability to shoot many guns at once. If this was looked at in a vacuum, it'd be pretty good as long as you could pair it with night-sight interpolators or penetrating radar. Without that, you can't really utilize it but you're going to want those anyways. But not only does this cybernetic _require_ assistance from other tools, you're giving up gun rack or a cathedra in order to use this, which are both better and just about as rare _and_ can stand on their own.
+
+This cybernetic does have the capability to hit creatures in any phase, which does have some synergies with shade oil injectors and phase silk cooking. The rough patch is that it doesn't do anything that the phase harmonic/phase conjugate mod don't already do for you. If you don't have those mods and it's integral for your build that you hit things out-of-phase, then this will help. Or, if you have penetrating radar/night-sight interpolators and haven't found gun rack yet, maybe look at this as an option for eliminating creatures in tight underground ruin tunnels. Otherwise, pick a better back cybernetic.
 
 ### Gun Rack
 
@@ -731,13 +733,13 @@ It's certainly not a competitive member of the feet cybernetic family, but given
 
 **Useful Through:** Tier 4
 
-**General Rating:** <span class="thumb-down"></span>
+**General Rating:** <span class="thumb-up"></span>
 
 </div>
 
 The main use for this is that it prevents slipping of all kinds and from being moved with Slam. In the Moon Stair update, a lot more creatures now make use of Slam so this is actually pretty nice for later in the game. It will also prevent you from being dragged from Hook and Drag or from madpoles, so it's also great for that.
 
-I'll take a moment and list out some of the less-obvious cases where you would be moved if not for Anchor spikes:
+I'll take a moment and list out some of the less-obvious cases where you would be moved if not for Anchor Spikes:
 
 -   Stunning Force
 -   Blast cannon (turrets or Leering stalker)
@@ -745,7 +747,7 @@ I'll take a moment and list out some of the less-obvious cases where you would b
 -   Conveyor Belts
 -   Force Bubble from another creature
 
-The unfortunate thing about Anchor spikes is that there are other great feet slot cybernetics that it competes with, and given that being moved doesn't really happen that often it tends to lose out to the other feet slot cybernetics that have more common uses. It also provides no protection from being knocked prone, which is definitely the more important effect as being moved just doesn't happen a lot until the end game where you have solutions for this.
+Additionally, Anchor Spikes will prevent you from being knocked prone which is a major plus for this cybernetic in all tiers of play, but especially for Golgotha as you won't have to worry about getting knocked prone in sludge and getting diseased or poisoned or having your gear rust away. The feet slot is very competitive, but if you wish to keep the option of anti-gravity boots, keep around Anchor Spikes especially if you're not going to be melee focused.
 
 ### Grounding Shunts
 
