@@ -47,9 +47,15 @@ These are the most helpful and most-used keybinds for you to be familiar with.
 -   1 parasang = 9 zones
 -   1 world map tile = 1 parasang
 -   1 game screen = 1 zone
+
+---
+
+-   Avoid <span class="attribute strength">Very Tough</span> or harder creatures
 -   Don't be afraid to run away
 -   Always keep a ranged weapon equipped
 -   Keep a recoiler on you
+-   Health ranges: `Badly Wounded` > `Wounded` > `Injured` > `Fine` > `Perfect`
+-   Selling for 4x an items weight is "weight efficient"
 
 ## Map Tiles
 
