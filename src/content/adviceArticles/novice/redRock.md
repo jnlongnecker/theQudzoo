@@ -60,6 +60,8 @@ In this gif, I'm waiting ([<span class="attribute agility">Numpad 5</span>]) unt
 
 ---
 
+While you're fighting, keep a close eye on your HP. Take note of how much damage your opponent is doing (hint: the chat log always has the precise amounts) and make sure not to let your HP fall too close to that number, try to leave a 2-3 hit threshold. Flee and regen your HP if you have to, or if things get really dicey use your healing items. As Marsh Taur, our only healing item will be witchwood bark which has a chance to confuse us which will jumble our screen. It only jumbles things _visually_ though, so make sure to take a note of what tile your opponent is in before you eat it and continue to attack that tile if you get confused. A superior healing item is the salve injector which we'll get at the end of this quest, which doesn't have the confusion side-effect.
+
 Once you've defeated your baboon opponent, you will likely have sustained some injury and might have an ability on cooldown. First, heal up to full hitpoints by using the [<span class="attribute agility">`</span>] key. This will pass turns until you're at full strength again. Next, use [<span class="attribute agility">shift + w</span>] to bring up the wait menu in case you have an ability on cooldown. It will prompt you for the amount of turns you have to wait, defaulting to 10 and remembering what you last set it to if you manually change it. If you have an ability on cooldown, it will automatically raise the counter to the amount of turns it would take for that ability to come off cooldown. For example, in this screenshot the Sprint ability is on a 78 turn cooldown, so my wait menu will automatically raise to wait 78 turns.
 
 ![Baboon fight]($assetsDir/images/practical/wait.png)
