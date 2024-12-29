@@ -2,7 +2,7 @@
 
 ---
 
-We've learned a lot of information, it's about time we put that information into practice and learn a few more things about the world of Qud as we do. For this section, I will be playing as and assuming you will be playing as the Marshtaur preset. Let's tackle the first quest in the game, "What's Eating the Watervine?".
+We've learned a lot of information, it's about time we put that information into practice and learn a few more things about the world of Qud as we do. For this section, I will be playing as and assuming you will be playing as the Marsh Taur preset. Let's tackle the first quest in the game, "What's Eating the Watervine?".
 
 ## Receiving the Quest
 
