@@ -532,17 +532,21 @@ With this mutation boosting Agility, you can also ignore investment into this at
 
 **Cost:** 3
 
-**Character Creation Rating:** <span class="star-filled">★ ★ ★ </span><span class="star-empty">★ ★ </span>
+**Character Creation Rating:** <span class="star-filled">★ ★ ★ ★ </span><span class="star-empty">★ </span>
 
-**Mutation Buy Rating:** <span class="star-filled">★ ★ </span><span class="star-empty">★ ★ ★ </span>
+**Mutation Buy Rating:** <span class="star-filled">★ ★ ★ ★ ★ </span><span class="star-empty"></span>
 
 </div>
 
-For a Chimera or primarily physical mutation focused build, this mutation is pretty useless. The extra chance to shake off effects like daze and stun are great, but probably aren’t worth the investment into this mutation for. If you run a build heavy on mental mutations and then _happen_ to get this one, then you can sink rapid advancements into this to boost your mental mutations.
+Regeneration doesn't protect you from all status effects; in fact some of the most crippling and hardest to avoid status effects are not covered by Regeneration. Daze, stun and confused all are covered by the effects this mutation can shake off at a massive 50% rate _per turn_. This is effectively improved with higher quickness as you have more turns to proc the chance before the enemy gets to take their turns. Additionally, after the Moon Stair update a lot of creatures got access to skills like Menacing Stare and Berate, giving this mutation even more efficacy as it can shake off shamed and terrified.
 
-The unspoken benefit of this mutation is that you have more equipment slots. While this is not great if your equipment does not bestow secondary bonuses from AV or DV, for equipment that _does_ that means you are able to stack those bonuses (Ego from faces, sultan relics, etc).
+For those of you looking to tackle the games greatest challenges, Two-Headed is a considerable boon against the Nephilim Qon. She constantly confuses the player during the fight, and being able to resist this with reasonable effectiveness is huge, especially to those uncomfortable with fighting while confused. With the addition of many creatures that are able to use these debilitating effects that Two-Headed can negate, it has really brought up its usefulness. The best part of all this? This is at rank 1 and needs no further investment!
 
-Reducing action cost is nice as it allows you to have a single mega-turn if you have a high enough level in this mutation, but a lot of mental mutations have an effect over time or don’t particularly benefit from being used at the same time as other mental mutations. If you’ve got a particular build for this, willing to roll mutations with Precognition or get lucky on a mutation point buy on an Esper run, this can be a pretty solid selection.
+You also gain a second head, and with that comes a headgear slot and a face slot. There are many fantastic face slot items and with two heads, you don't have to worry about relying on the two-faced mod to enjoy multiple. In fact, you can still use two-faced and get even more face slot items. Headgear also comes with the benefit of the fitted with filters mod, so at high gear tiers you can become basically immune to gas by stacking fitted with filters modded items. Stacking Ego with severed faces is also a common strategy at higher tiers of play with this mutation.
+
+For a Chimera or primarily physical mutation focused build, this is where the benefits end. If you're running a build heavy on mental mutations, you get the actual ranked benefit of this mutation which is the mental action cost reduction. This is basically a quickness buff for your mental mutations which can be handy for spamming a rotation of mental abilities (like a Syphon Vim into Teleportation without retaliation) or for specifically Light Manipulation to shred something apart in the blink of an eye. Additionally, it gives those mental focused builds a physical mutation to sink rapid advancements into so they aren't wasted.
+
+There is a downside to this mutation, and that is that your equipment's AV and DV bonuses will be averaged across all the extra slots you now have meaning you have to get more equipment. Luckily, headgear is easy enough to come by that shouldn't be an issue, but in the midgame you may struggle with fleshing out your face slots. Oh, and I guess this also lets you take a Decapitate on the chin, so there's that too.
 
 ### Two-Hearted
 
