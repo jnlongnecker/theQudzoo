@@ -64,6 +64,8 @@ The sky is the limit here, you've likely got even more than the anticipated numb
 
 Cybernetics are quite flexible in where you can place them, so in order to analyze them properly you need to consider what you're **not** getting by using a given cybernetic in a slot. I'll first cover cybernetics that can only be installed in a single slot and then consider cybernetics with flexible positions. For each of these, I'll give a very general rating which considers whether the cybernetic is a competitive choice in most scenarios for most builds. Basically every cybernetic is useful somehow in some context or for some reason, so this doesn't necessarily mean the cybernetic is not redeemable or you should never use it.
 
+Additionally, keep in mind that if you have the points to spare, _some_ cybernetic is always better than _no_ cybernetic. Unless the cybernetic is permanent, just try it out as even the lower rated cybernetics do have redeeming qualities (just not as good as what you'd have to give up for it).
+
 ## Cybernetics - Head Only
 
 ### Skillsoft [low sp]
