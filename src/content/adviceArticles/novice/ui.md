@@ -78,16 +78,16 @@ Below the date, you can see a number of icons. These are for mouse players and w
 
 To the left of these icons and below the majority of our statistics are two large bars, one green and one grey. As you might be able to tell by the text within the bars, the green bar is our current Hitpoints (HP) and the grey bar is our current level (LVL) and experience points (EXP) towards our next level. As you might imagine, if your HP is reduced to 0, your character dies and what happens next depends on the game mode you chose before starting the game:
 
--   If you picked Classic, the character dead for good and the save is deleted.
+-   If you picked Classic, the character is dead for good and the save is deleted.
 -   If you picked Roleplay or Wander, you will respawn at your last village checkpoint.
 
-Other than this, there is no difference whatsoever to the two game modes. You will not be locked out of any achievements, endings, secrets, anything at all if you did not pick Classic.
+Other than this, there is no difference whatsoever between Classic and Roleplay game modes. You will not be locked out of any achievements, endings, secrets, anything at all if you did not pick Classic. With Wander, the only difference is the EXP drops and what creatures are hostile to you.
 
 ### What Game Mode Should I Pick?
 
 This is a question of preference, so I can't answer it for you but I can give you some information to hopefully inform your own decision. Classic is a more difficult, hardcore experience suited to you if you want a challenge or if you earnestly wish to improve at the game. The series of articles on this website are directed at individuals playing on Classic mode; but this just means the advice is considering death to be the end and avoided at all costs.
 
-Roleplay is good if you have limited time to play and still wish to see all the content that Qud has to offer in a reasonable amount of time. It will potentially teach you some bad habits should you want to do more difficult challenges or play on Classic later, so do be aware. This mode also keeps in tact the intended experience of the game.
+Roleplay is good if you have limited time to play and still wish to see all the content that Qud has to offer in a reasonable amount of time. It will potentially teach you some bad habits should you want to do more difficult challenges or play on Classic later, so do be aware. This mode also keeps intact the intended experience of the game.
 
 Wander mode is for those who aren't interested in combat and instead just want to explore the world and learn about the lore, or perhaps individuals that wish to make friends with all the factions instead of taking each one to a brutal death match in the salts. As you might imagine, this mode has even more potential to teach you bad habits than Roleplay but if you're not interested in the challenge to begin with it may not be an issue for you.
 
@@ -97,7 +97,7 @@ The big rectangle below the EXP bar and on the left side of the screen is the ma
 
 > You might be curious why I'm writing [<span class="attribute agility">l</span>]ook in that weird way. Well, that's because the key used for that functionality is the one in brackets (l). In the Qud community, it's very common to write functionality tied to keys in this way. If you see this in the future, just know that it means that key is the shortcut to that functionality!
 
-Beside the main game screen are two panels stacked on top of each other, a minimap of the zone you are currently in and a chat log of events that occur in the game. If you haven't fiddled with any of the settings, it's likely that you don't have a minimap visible. If you would like that, make sure to turn it on in the options (`Esc > Options > UI > Show minimap`). If something happens too fast for you to catch it, look at the chat log to see a log description of what happened.
+Beside the main game screen are two panels stacked on top of each other: a minimap of the zone you are currently in and a chat log of events that occur in the game. If you haven't fiddled with any of the settings, it's likely that you don't have a minimap visible. If you would like that, make sure to turn it on in the options (`Esc > Options > UI > Show minimap`). If something happens too fast for you to catch it, look at the chat log to see a log description of what happened.
 
 ## The Bottom Bar
 
