@@ -49,6 +49,7 @@ These are the most helpful and most-used keybinds for you to be familiar with.
 -   1 game screen = 1 zone
 -   Don't be afraid to run away
 -   Always keep a ranged weapon equipped
+-   Keep a recoiler on you
 
 ## Map Tiles
 
@@ -66,7 +67,7 @@ The generic map tiles, sorted by difficulty. If they're marked as "avoid", there
 -   <span class="inline-img">![Banana grove]($assetsDir/images/fundamentals/banana.png)</span> Banana Groves: Avoid
 -   <span class="inline-img">![Rainbow wood]($assetsDir/images/fundamentals/rainbow.png)</span> Rainbow Wood: Avoid
 -   <span class="inline-img">![Deep jungle]($assetsDir/images/fundamentals/deep.png)</span> Deep Jungles: Level 27
--   <span class="inline-img">![Lake Hinnom]($assetsDir/images/fundamentals/lake.png)</span> Lake Hinnom: Level 30
+-   <span class="inline-img">![Lake Hinnom]($assetsDir/images/fundamentals/lake.png)</span> Lake Hinnom: Level 27
 -   <span class="inline-img">![Palladium reef]($assetsDir/images/fundamentals/reef.png)</span> Palladium Reef: Level 30
 -   <span class="inline-img">![Baroque ruins]($assetsDir/images/fundamentals/bRuins.png)</span> Baroque Ruins: Level 35
 -   <span class="inline-img">![Moon stair]($assetsDir/images/fundamentals/moon.png)</span> Moon Stair: Level 40

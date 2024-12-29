@@ -2,7 +2,7 @@
 
 ---
 
-The world map can be a bit overwhelming at times, and it can be confusing to know what you'll encounter, what you should look for and when to access certain environments. I'll be talking about the generic tiles first, then the unique tiles.
+The world map can be a bit overwhelming at times, and it can be confusing to know what you'll encounter, what you should look for and when to access certain environments. I won't be talking about the unique tiles, just the generic ones.
 
 ## Salt Marsh
 
@@ -97,7 +97,7 @@ There's a healthy mix of creatures that can be found here, but like I mentioned 
 
 **Recommended Level**: 22
 
-There is nothing in the rivers except for blood and anger. It is highly recommended to simply avoid this terrain, and exclusively for 1 single excruciatingly common creature: the madpole. With quite high AV, the madpole is a nuisance more than a threat, but without 18+ AV a madpole is a run-ender to a laissez-faire Qud runner. They latch onto you and dismember you piece by piece, and they are everywhere in the rivers.
+There is nothing in the rivers except for blood and anger. It is highly recommended to simply avoid this terrain, and exclusively for 1 single excruciatingly common creature: the madpole. With quite high AV, the madpole is a nuisance more than a threat, but without 18+ AV a madpole is a run-ender to a laissez-faire Qud runner. They latch onto you and Dismember you piece by piece, and they are everywhere in the rivers.
 
 If you are favored by Fish, then by all means wander the rivers as now they aren't much of a threat to you. But before that, there's simply nothing here. There are fish lairs (as you might imagine) and flower lairs for glowpads, but it's usually not worth dealing with madpole around every corner. There is a chance that Oboroqoru's lair is in a river tile, in which case just try and avoid the madpole if you're going to explore it.
 
@@ -111,4 +111,78 @@ The banana grove is only found around the Spindle, which makes this a pretty lim
 
 It is notable to mention that a somewhat common (if incredibly dull) strategy is to come here fairly early once you have a gun and access to Mafeo for bullets. This is because the only creature that is default hostile to you that can move (the adiyy) is blind, so you can generally avoid it (or just gun it down). This leaves you to spend an eternity shooting the trees in complete safety for easy levels. Do it if you want, just make sure to watch your step.
 
--- WIP --
+## Rainbow Wood
+
+![Rainbow wood]($assetsDir/images/fundamentals/rainbow.png)
+
+**Recommended Level**: 25
+
+The rainbow wood is fairly unique in that it only has 1 threat: soupy sludges. However, soupy sludges range from one of the most pathetic creatures on Qud to the pale horse of Death (capital D); it all depends on how many liquids they've absorbed. Unfortunately for the soup, it can't hurt you if you're flying. It also can't hurt you if you just leave the zone before the primordial soup can coagulate into a soupy sludge since that takes time.
+
+The only reason you'd be here is because there's a historic site or you're here for the main story, so just keep it moving quickly and fly and you'll be good. There is a strategy where you fill up waterskins with primordial soup to sell, but if you're doing that just choose a zone where none of the liquid weeps seep into the primordial soup.
+
+## Deep Jungle
+
+![Deep jungle]($assetsDir/images/fundamentals/deep.png)
+
+**Recommended Level**: 27
+
+The deep jungle is full of pretty nasty things: lush gels, elderbeards, dynamic turret tinkers and greater voiders are the threats of death while the stat saps are the intermediate player's biggest nightmare. In general, you should avoid normal deep jungle zones; they're difficult to navigate and really don't have much worthwhile for the massive slog it is to churn through.
+
+Instead, you should explore the world map until you're prompted to explore a goatfolk haunt. These are guaranteed to only have qlippoths in them, which drop crysteel tier equipment like it's their full-time job and similarly tiered artifacts, as well as there being chests with more loot in them. These are goldmines at this level, and it is highly recommended you have the Wilderness Lore: Jungles skill in order to fully enjoy the bounty of the deep jungle.
+
+## Lake Hinnom
+
+![Lake Hinnom]($assetsDir/images/fundamentals/lake.png)
+
+**Recommended Level**: 27
+
+Yes, Lake Hinnom is indeed different than the Palladium Reef, in a fairly significant way. The creatures you find here are quite weaker than the ones you find in the Palladium Reef. You also find common flocks of white esh, which are pathetically weak for how much EXP they give out. This area is not without risk, as it does come with a healthy dose of sultan croc and svardym eld.
+
+Sultan croc can skulk, which renders them temporarily invisible and they have a massive Charge range. On top of that, they also are known to Dismember very commonly, so they can be quite annoying to deal with. It's definitely recommended to have a few pieces of scaled gear so you don't have to deal with them.
+
+Svardym eld are hit-or-miss. They have absolutely _massive_ Ego bonuses, which means if they roll into a threatening mental mutation like Siphon Vim or Sunder Mind, they are devastating. However, they can just as likely roll Kindle and Mental Mirror and be totally useless, but treat every svardym eld as if it were the most dangerous variant of it. Other than farming white esh for EXP, there's really nothing of note in Lake Hinnom. Sure, you can get the occasional svardym lair but you probably don't want to take the risk of several very deadly svardym eld unless you've got damage reflection on lockdown and good MA.
+
+## Palladium Reef
+
+![Palladium reef]($assetsDir/images/fundamentals/reef.png)
+
+**Recommended Level**: 30
+
+The Palladium Reef has the same threats as Lake Hinnom, with the added threats of tongue tyrants, quatravolt gliders, and galgal. In return, mucking about in the reef has the chance to spawn a dram of sunslag; extremely valuable to find and the primary bit of loot you'll find here. Outside of that, reef hermits are an easy kill and have tons of high tier artifacts on them to loot.
+
+You can find the cradle of Girsh Rermadon here, as well as the Hydropon. These take a considerable effort to find, so make sure you're methodical in your approach so you don't end up missing zones. The forgotten ruins here also occasionally spawn with some valuable chests, but they're pretty few and far between.
+
+The biggest threat as mentioned are the galgal. They tend to be found within the palladium strut reefs themselves, which is just the worst because they obscure vision leaving you clueless to their location until you're right next to them. For that reason, **always** come to the Palladium Reef with several EMP grenades to disable galgal. If you can get distance on them, they'll prefer to shoot at your with their naser cannon. This will not only ground you if you are flying, but it also is a normality gun that can disable force fields. While this is a powerful weapon, it pales in comparison to their Run Over ability so do not approach one that is shooting at you. Instead, try and shoot back with arc winders as they have fairly high AV.
+
+If you have extremely high movement speed, you can actually fight them by weaving in and out of their charge path and shooting them as they are about to charge. This gets easier the higher quickness you have compared to their 175, made easier with skills like Fastest Gun in the Rust, Empty the Clips and the Rapid Release Finger Flexor cybernetic. Additionally, with 100 cold resistance you can toss a few mk III freeze grenades to lock them down, making sure to reapply every now and again to ensure it doesn't thaw. The benefit here is that even when they do thaw, they'll have reduced quickness due to still being cold.
+
+## Baroque Ruins
+
+![Baroque ruins]($assetsDir/images/fundamentals/bRuins.png)
+
+**Recommended Level**: 35
+
+Everything that applies to ruins applies to baroque ruins as well, the only difference being the loot is better and the creatures are far more powerful. There aren't any creatures bespoke to baroque ruins; you primarily get deep jungle creatures with the occasional red gel, but you also will get galgal especially from strata 15 onward.
+
+The loot from these places is simply unparalleled; if you can handle galgal then you should absolutely visit. If you do not have a solution and especially a powerful ranged option, then the baroque ruins are out of your grasp. If you attain neutrality with Robots, these should be one of the first places you visit.
+
+## Moon Stair
+
+![Moon stair]($assetsDir/images/fundamentals/moon.png)
+
+**Recommended Level**: 40
+
+The Moon Stair is awful and everything wants to kill you. The terrain itself is out to get you; between the dilute warm static giving you any effect possible and the hexagonal crystals spawning Evil Twins of you on destruction it becomes difficult to even move around. Then you have the zero jells that can easily roll into some incredibly crippling effect, the n-dimensional starshells teleporting you 30 strata underground, and the leering stalkers spamming their stun cannon making everything more annoying than it needs to be. Luckily with the starshells you start neutral to them, and can avoid them targeting you with their Space-Time Vortex by wearing an ontological anchor.
+
+Still, you should definitely have some form of flight here, primarily to avoid the zero jells and the dilute warm static all over the place. Zero jells are simply not worth the effort to fight unless you feel like some stinky warm static cheese (which to be fair is extremely powerful). Leering stalkers can be beheaded, so Berserk! enjoyers are eating well here. Otherwise, they are actually not immensely dangerous at this level, more annoying with their stun cannon. The real threat is the chrome pyramid.
+
+Chrome pyramid are one of the most dangerous non-boss creatures in the game. They have an immense health pool, a perpetual force field around them, a hugely powerful melee attack and shoot a literal rocket shotgun with relative accuracy. If you are seriously thinking about fighting it instead of tossing an EMP and moving on, you should have a strategy in place to deal with the swarm rack. If you have 25 DV and Swift Reflexes, you will always dodge all of the rockets. This means you can wait until the chrome pyramid has to assemble more rockets to reload and continue to do this over and over. Assembling rockets damages the pyramid, and you can wait until it gives up and tries to pin you against a wall to melee you.
+
+If you don't want to do this, then you can instead have a way to disarm the pyramid; either through true disarm ways or by Dismembering its swarm rack. Then you will again have to deal with the pyramid pinning you against a wall, but this time it will be at relatively high (if not full) HP. The chrome pyramid can hit you through AV, so be sure to have a healthy amount of DV to attempt to dodge its melee attack. Good luck with that though, because the distortion field has a massive +10 to hit on top of the pyramid's Agility and +2 from the Cudgel Proficiency skill.
+
+Keeping the chrome pyramid disabled for you to start to tear it to pieces is a great strategy. Cudgels work especially well here, as does the ceremonial vibrokhopesh and electric modded weapons. Corrosive Gas Generation is the ultimate chrome pyramid killer as you will very quickly shred it to pieces with this mutation being highly ranked. Outside of these methods, grenades work particularly well once you disable the force field with an EMP. Just like anything without 100 cold resistance; mk III freeze grenades really do wonders at locking these guys down. You can also use arc winders to hit the force field and have the electricity simply arc through and hit the pyramid, or do something similar with Electrical Generation.
+
+Regardless of how you choose to kill your first chrome pyramid or first chrome pyramid of the run, you'll probably not want to spare the effort every single time one pops up on the Moon Stair, so for simplicity's sake just come with some EMPs and run away. Chavvah is located here in the Moon Stair, as is the chuppah of Qas and Qon. Again, if you're searching for the chuppah make sure to come with a strategy so you don't miss one zone and have to re-comb the map.
+
+A piece of advise for those traveling through; since you can't travel through the Moon Stair on the world map, you have to move zone-by-zone. If you manage to move to a new parasang, you can go to the world map and then re-enter the same parasang from the center zone. This way you can skip a few zones, especially if you are traveling north-to-south.

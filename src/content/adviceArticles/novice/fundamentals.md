@@ -55,6 +55,8 @@ Last, the concept of "zone tier". When you look at the world map, you'll notice 
 
 > Note that [<span class="attribute agility">l</span>]ook functionality works on the world map too! If you see a unique tile, [<span class="attribute agility">l</span>]ook at it to see what it is.
 
+Not related to the concept of parasangs and zones, but it's advised that you don't do any serious cave-diving or stray too far from the salt marshes without a recoiler. A recoiler is a teleport sphere that brings you to a predefined location when activated, as long as there are no hostiles nearby with a path to you. Argyve will give you one for completing the [Weirdwire Conduit](/advice/quests/weirdwire-conduit) quest (or if you took a random village, the random village equivalent gives a recoiler).
+
 ## Money and Loot
 
 In Qud, fresh water is the currency and it is heavy. If you've read the [Parsing the UI article](./ui), you may recall that I recommend having between 128 - 192 drams of water at any one time. The rest of your cash should be in unsold, high-value loot (most commonly guns) and <span class="attribute agility">trade goods</span>. <span class="attribute agility">Trade goods</span> can be identified by their <span class="attribute agility">yellow price color</span> in the trade screen, like in the screenshot below.

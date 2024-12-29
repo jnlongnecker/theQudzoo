@@ -293,7 +293,7 @@
             "properties": {
                 "title": "Map Breakdown",
                 "preview": "/1/asset/s/latest/public/assets/images/fundamentals/worldMap.png",
-                "description": "The world map can be a bit overwhelming at times, and it can be confusing to know what you'll encounter, what you should look for and when to access certain environments. I'll be talking about the generic tiles first, then the unique tiles."
+                "description": "The world map can be a bit overwhelming at times, and it can be confusing to know what you'll encounter, what you should look for and when to access certain environments. I won't be talking about the unique tiles, just the generic ones."
             }
         },
         {
