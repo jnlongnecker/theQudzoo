@@ -10,15 +10,15 @@ When you load up your copy of Caves of Qud and spin up a character, you'll be fa
 
 We'll go over the information from top to bottom. First, we have the image of our character at the top left and their name. Take this moment to find the corresponding icon on the game screen below; this is where our character stands relative to everything else. The name is purely for flavor, you will give it out to many creatures on your journey and they will refer to you as such.
 
-Moving to the right, the next piece of information is our temperature `T:25°`. This is the ambient temperature in Celsius as felt by our character, and is normally always exactly 25 degrees. If it is lower or higher, something is heating your up or cooling you down. Generally speaking, this will only happen because some creature is lighting you on fire or freezing you with some ability but there is a dungeon that gets very cold (Bethesda Susa). Typically, you can ignore this as it won't change but if you notice you are on fire, frozen, or moving slower than you expect then check your temperature to see how bad it is.
+Moving to the right, the next piece of information is our temperature `T:25°`. This is the ambient temperature in Celsius as felt by our character, and is normally always exactly 25 degrees. If it is lower or higher, something is heating you up or cooling you down. Generally speaking, this will only happen because some creature is lighting you on fire or freezing you with some ability but there is a dungeon that gets very cold (Bethesda Susa). Typically, you can ignore this as it won't change but if you notice you are on fire, frozen, or moving slower than you expect then check your temperature to see how bad it is.
 
 Next, we have <span class="attribute willpower">Sated Quenched</span>. This is actually 2 different pieces of information: how hungry you are and how thirsty you are. Caves of Qud has both mechanics, but luckily managing them isn't quite as tedious as many survival games are. For hunger, there are 3 levels: `Sated` > `Hungry` > `Famished!`.
 
 > If you have Photosynthetic Skin, the `Famished!` level is replaced by `Wilted!`. They're the same, just have different names for flavor.
 
-If you're `Sated`, you don't need to eat. You can still eat up to 2 more times if you're `Sated`, but after that you'll have to wait until you're `Hungry` in order to eat again. Unless you are Carnivorous, you cannot eat corpses unless you're `Famished!`. If you're `Hungry`, nothing changes but you can eat again. If you're `Famished!`, then you now have a 10 point debuff to your Quickness, which means (roughly) that every 10 turns, you lose a turn.
+If you're `Sated`, you don't need to eat. You can still eat up to 2 more times if you're `Sated`, but after that you'll have to wait until you're `Hungry` in order to eat again. Unless you are Carnivorous, you cannot eat corpses unless you're `Famished!`. If you're `Hungry`, nothing changes but you can eat again. If you're `Famished!`, then you now have a 10 point debuff to your quickness, which means (roughly) that every 10 turns, you lose a turn.
 
-> Note that nothing happens when `Famished!` except for the Quickness debuff. You are under no time pressure to eat; nothing else will happen to you.
+> Note that nothing happens when `Famished!` except for the quickness debuff. You are under no time pressure to eat; nothing else will happen to you.
 
 All you need to do is make a campfire using the Make Camp skill and use that to cook. Many campfires already exist in the world as well as ovens, so you may alternatively use those to cook. You'll get a popup telling you that you're `Famished!`, so don't worry about this mechanic too much. Eat when you need to. There are skills you can get to make more use out of the eating mechanic; with the skills meals now become temporary buffs as basically a sort of potion mechanic.
 
@@ -62,6 +62,8 @@ This is again a pretty complicated topic so I'll try and make it simple while yo
 
 At the start of the game, you want to get to 6 AV as soon as you can. Once you have 6 AV, you can think of every point of AV as being worth 2 points of DV. If the ratio is bad, it may not be worth the trade-off. Under 10 DV, you're not missing much by going lower so if you can't reach 12 DV or so with your gear setup, boost your AV as much as you can. A safe AV to hit in the mid game is 10 AV; at this point if you have a very high DV you can reasonably take hits to where you won't instantly splatter if you get hit by a hard-hitting attack. Any DV past 25 is better spent towards AV as the creatures that can hit 25 DV _at all_ can hit it extremely easy due to the massive to-hit bonuses they have.
 
+> Something to note about AV and DV is that the benefit you get from equipment is _averaged_ across all limbs of the same type, rounded down. For example, all player characters have 2 arms. If you equip a snakeskin bracelet (an item that grants 2 DV) on one arm and nothing on the other, the net result is the average of the two arm slot bonuses (2 DV + 0 DV / 2 = 1 DV). If you equip a snakeskin bracelet on both arms, again the net result is the average of the two arm slot bonuses (2 DV + 2 DV / 2 = 2 DV).
+
 ### Mental Armor (MA)
 
 The fifth and final number is your mental armor, which represents how resistant you are to mental attacks. Psychic abilities will roll against your MA instead of your AV, so this number is literally just your AV for mental attacks. This is improved by your Willpower modifier, the Mental Mirror mutation and by some pieces of high-level equipment, so generally speaking you can't do much about this for the majority of the game.
@@ -76,8 +78,8 @@ Below the date, you can see a number of icons. These are for mouse players and w
 
 To the left of these icons and below the majority of our statistics are two large bars, one green and one grey. As you might be able to tell by the text within the bars, the green bar is our current Hitpoints (HP) and the grey bar is our current level (LVL) and experience points (EXP) towards our next level. As you might imagine, if your HP is reduced to 0, your character dies and what happens next depends on the game mode you chose before starting the game:
 
-- If you picked Classic, the character dead for good and the save is deleted.
-- If you picked Roleplay or Wander, you will respawn at your last village checkpoint.
+-   If you picked Classic, the character dead for good and the save is deleted.
+-   If you picked Roleplay or Wander, you will respawn at your last village checkpoint.
 
 Other than this, there is no difference whatsoever to the two game modes. You will not be locked out of any achievements, endings, secrets, anything at all if you did not pick Classic.
 
@@ -105,11 +107,11 @@ _Once more, let's bring back that image for reference_
 
 There are actually 2 bars here, but the top one is skinny and easily missed. The top details 3 things:
 
-- Active effects
-  - These are things that are currently ailing your character, and can be good or bad. You can see more detailed information by going to the effects menu ([<span class="attribute agility">x</span>] > [<span class="attribute agility">e</span>]).
-- Current target
-  - This is information about the creature you have targeted. Unless done manually, this will be whatever you've been attacking. Look here to easily see how the combat is going for you.
-- Missile weapon information
-  - If you have a missle weapon (bow or gun) equipped, you'll see a readout here of which weapon it is and how much ammunition you have left before needing to reload.
+-   Active effects
+    -   These are things that are currently ailing your character, and can be good or bad. You can see more detailed information by going to the effects menu ([<span class="attribute agility">x</span>] > [<span class="attribute agility">e</span>]).
+-   Current target
+    -   This is information about the creature you have targeted. Unless done manually, this will be whatever you've been attacking. Look here to easily see how the combat is going for you.
+-   Missile weapon information
+    -   If you have a missle weapon (bow or gun) equipped, you'll see a readout here of which weapon it is and how much ammunition you have left before needing to reload.
 
 Finally, we have the [<span class="attribute agility">a</span>]bilities bar. This is a subset of the current activated or toggleable [<span class="attribute agility">a</span>]bilities you have. By pressing the key indicated in <brackets>, you can activate that ability. `Ctrl + Tab` will scroll the bar to the next set down, while `Ctrl + Shift + Tab` scrolls the bar up. If you want to reorder the abilities, you do so in the [<span class="attribute agility">a</span>]bilities menu with [<span class="attribute agility">+</span>] and [<span class="attribute agility">-</span>]. This will grow out as you level up and learn more things that you can do.
