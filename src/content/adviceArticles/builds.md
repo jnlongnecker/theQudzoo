@@ -44,19 +44,19 @@ Once you’ve decided the type of build you’re going for, you need to narrow d
 
 #### Cudgels
 
-| Pros                              | Cons                      |
-| --------------------------------- | ------------------------- |
-| Can reliably stun enemies         | Requires high Strength    |
-| Chance based to never be attacked | Struggles against high AV |
-|                                   | Low Damage                |
+| Pros                              | Cons                       |
+| --------------------------------- | -------------------------- |
+| Can reliably stun enemies         | Requires high Strength     |
+| Chance based to never be attacked | Struggles against high AV  |
+| High damage max build             | Low Damage until max build |
 
 #### Long Blades
 
-| Pros                                    | Cons                      |
-| --------------------------------------- | ------------------------- |
-| High amounts of utility                 | Low damage early          |
-| Capable of fighting any enemy late game | Struggles against high DV |
-| Pairs naturally with Short Blades       |                           |
+| Pros                                    | Cons                         |
+| --------------------------------------- | ---------------------------- |
+| High amounts of utility                 | Low damage outside of niches |
+| Capable of fighting any enemy late game | Struggles against high DV    |
+| Pairs naturally with Short Blades       |                              |
 
 #### Short Blades
 
@@ -68,7 +68,7 @@ Once you’ve decided the type of build you’re going for, you need to narrow d
 
 With melee weapons, you also need to consider whether you are Multiweapon Fighting or Single Weapon Fighting. I’ll break it down like this:
 
-If you are Multiweapon Fighting, your offhand should always be a Short Blade. The only exception is when you are Multiweapon Fighting Cudgels to try and get more chances for a stun, but even here using an offhand Short Blade and investing in would be preferable.
+If you are Multiweapon Fighting, your offhand should always be a Short Blade. The only exception is when you are Multiweapon Fighting Cudgels to try and get more chances for a stun, but even here using an offhand Short Blade and investing in Short Blades would be preferable.
 
 If you are using a Shield, you should use anything except a Short Blade. Cudgels and Long Blades are particularly effective with a Shield. You're probably best off Single Weapon Fighting with the ceremonial vibrokhopesh in the long-term with a Shield, but Multiweapon Fighting builds work well with Shields as well. If you are using Helping Hands, ensure your Shield is in one of your robo-hands.
 

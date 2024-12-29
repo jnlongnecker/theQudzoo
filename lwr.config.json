@@ -85,7 +85,7 @@
             "layoutTemplate": "$layoutsDir/noob_home_layout.njk",
             "properties": {
                 "title": "New Players",
-                "preview": "/1/asset/s/latest/public/assets/images/previews/run.png"
+                "preview": "/1/asset/s/latest/public/assets/images/practical/girshling.png"
             }
         },
         {
@@ -119,6 +119,28 @@
                 "title": "Combat Positioning",
                 "preview": "/1/asset/s/latest/public/assets/images/positioning/positioning_3.png",
                 "description": "The most important thing in the entire game to learn is how to position your character. If you can master this, your consistency will go through the roof. 1 on 1, your character tends to be far stronger than any individual enemy you will face."
+            }
+        },
+        {
+            "id": "Practical-Application",
+            "path": "/advice/novice/application",
+            "contentTemplate": "$contentDir/adviceArticles/novice/redRock.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Practical Application",
+                "preview": "/1/asset/s/latest/public/assets/images/practical/hulker.png",
+                "description": "We've learned a lot of information, it's about time we put that information into practice and learn a few more things about the world of Qud as we do. For this section, I will be playing as and assuming you will be playing as the Marshtaur preset."
+            }
+        },
+        {
+            "id": "Cheat-Sheet",
+            "path": "/advice/novice/sheet",
+            "contentTemplate": "$contentDir/adviceArticles/novice/cheatSheet.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Cheat Sheet",
+                "preview": "/1/asset/s/latest/public/assets/images/fundamentals/sheet.png",
+                "description": "There's a lot of information that we covered in this section, and a lot of information still to be covered. It can be very overwhelming to try and remember all of it, so this article is so you don't have to memorize so much and can instead reference it for what you need while you're playing."
             }
         },
         {
@@ -253,6 +275,28 @@
             }
         },
         {
+            "id": "How-to-Make-a-Build",
+            "path": "/advice/build-making",
+            "contentTemplate": "$contentDir/adviceArticles/builds.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Qud Builds",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/build.png",
+                "description": "I'm not a big believer in “handing out” builds for you to try; instead I believe in understanding what makes a build effective and then allowing you to shape that knowledge into an experience that is fun and engaging for you. I'll break down making a build into smaller parts to consider and leave it to you to decide what to fit into those pieces."
+            }
+        },
+        {
+            "id": "Map-Breakdown",
+            "path": "/advice/map-breakdown",
+            "contentTemplate": "$contentDir/adviceArticles/map.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Map Breakdown",
+                "preview": "/1/asset/s/latest/public/assets/images/fundamentals/worldMap.png",
+                "description": "The world map can be a bit overwhelming at times, and it can be confusing to know what you'll encounter, what you should look for and when to access certain environments. I'll be talking about the generic tiles first, then the unique tiles."
+            }
+        },
+        {
             "id": "Mutations",
             "path": "/advice/mutations",
             "contentTemplate": "$contentDir/adviceArticles/mutations.md",
@@ -294,17 +338,6 @@
                 "title": "Skills",
                 "preview": "/1/asset/s/latest/public/assets/images/previews/skills.png",
                 "description": "Skills are the unsung hero of Caves of Qud. In fact, I'd argue that your skills are more important than both your gear and your mutations/cybernetics. While not as obviously powerful as exploding some dude's head with your mind, skills shape your run in the more subtle, less appreciated ways that are nonetheless extremely important."
-            }
-        },
-        {
-            "id": "How-to-Make-a-Build",
-            "path": "/advice/build-making",
-            "contentTemplate": "$contentDir/adviceArticles/builds.md",
-            "layoutTemplate": "$layoutsDir/advice_layout.njk",
-            "properties": {
-                "title": "Qud Builds",
-                "preview": "/1/asset/s/latest/public/assets/images/previews/build.png",
-                "description": "I'm not a big believer in “handing out” builds for you to try; instead I believe in understanding what makes a build effective and then allowing you to shape that knowledge into an experience that is fun and engaging for you. I'll break down making a build into smaller parts to consider and leave it to you to decide what to fit into those pieces."
             }
         },
         {
