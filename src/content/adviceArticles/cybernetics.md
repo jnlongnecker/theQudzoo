@@ -747,7 +747,7 @@ I'll take a moment and list out some of the less-obvious cases where you would b
 -   Conveyor Belts
 -   Force Bubble from another creature
 
-Additionally, Anchor Spikes will prevent you from being knocked prone which is a major plus for this cybernetic in all tiers of play, but especially for Golgotha as you won't have to worry about getting knocked prone in sludge and getting diseased or poisoned or having your gear rust away. The feet slot is very competitive, but if you wish to keep the option of anti-gravity boots, keep around Anchor Spikes especially if you're not going to be melee focused.
+Additionally, Anchor Spikes will prevent you from being knocked prone which is a major plus for this cybernetic in all tiers of play (even the galgal and Shield Slam knockdown), but especially for Golgotha as you won't have to worry about getting knocked prone in sludge and getting diseased or poisoned or having your gear rust away. The feet slot is very competitive, but if you wish to keep the option of anti-gravity boots, keep around Anchor Spikes especially if you're not going to be melee focused.
 
 ### Grounding Shunts
 
