@@ -80,32 +80,37 @@ class Combat {
     attacker;
     defender;
 
+    turns = [];
+
     constructor(attacker, target) {
         this.attacker = attacker;
         this.defender = target;
     }
 
     bumpAttack() {
-        let expectedDamage = this.getExpectedDamageFrom(this.attacker, this.defender, this.attacker.primary);
+        let attacks = this.getAttacks(this.attacker, this.attacker.primary);
         for (let i = 0; i < this.attacker.limbs.length; i++) {
             let limb = this.attacker.limbs[i];
             if (this.attacker.swfOn && limb.multiweaponAffected) continue;
             if (limb.offhand == 0) continue;
             if (!limb.item.isWeapon && limb.slot == "floating") continue;
-            console.log(`Offhand number ${i} rolling`)
-            expectedDamage += this.getExpectedDamageFrom(this.attacker, this.defender, i);
+
+            attacks.concat(this.getAttacks(this.attacker, i));
         }
 
-        return expectedDamage;
+        this.turns.push(new Turn(`Turn ${this.turns.length + 1}: Bump Attack`, attacks));
     }
 
-    getExpectedDamageFrom(attacker, defender, limb) {
+    getAttacks(attacker, limb) {
         let weapon = attacker.limbs[limb].item;
         if (!weapon.isWeapon) weapon = defaultWeapon;
         switch (weapon.type) {
             case "cudgel":
                 let attack = new CudgelAttack(attacker, limb);
-                return attack.getExpectedDamage(defender);
+                if (limb != attacker.primary) return [attack];
+
+                let backswing = new CudgelBackswing(attacker, limb);
+                return [attack, backswing];
             case "longBlade":
                 break;
             case "shortBlade":
@@ -115,39 +120,72 @@ class Combat {
             default:
         }
     }
+
+    getTurnExpectedDamage(turn, defender) {
+        let expectedDamage = 0;
+        for (let attack of turn.attacks) {
+            expectedDamage += attack.getExpectedDamage(defender);
+        }
+    }
+}
+
+class Turn {
+    attacks = [];
+    name;
+
+    constructor(name, attacks, ...args) {
+        this.name = name;
+        this.attacks = attacks;
+        this.attacks.concat(args);
+    }
+}
+
+class CudgelBackswing {
+    baseCudgelAttack;
+
+    backswingChance = 0;
+
+    constructor(attacker, limb, bonusPV = 0, bonusMaxPV = 0) {
+        this.baseCudgelAttack = new CudgelAttack(attacker, limb, bonusPV, bonusMaxPV);
+        for (let skill of attacker.skills) {
+            switch (skill) {
+                case 'Backswing':
+                    this.backswingChance = .25;
+                    break;
+            }
+        }
+    }
+
+    getExpectedDamage(defender) {
+        return this.baseCudgelAttack.getExpectedDamage(defender) * this.backswingChance;
+    }
 }
 
 class CudgelAttack {
     baseAttack;
 
     dazeChance = 0;
-    backswingChance = 0;
-    limbNum;
 
     constructor(attacker, limb, bonusPV = 0, bonusMaxPV = 0) {
-        this.limbNum = limb;
         this.baseAttack = new Attack(attacker, limb);
         this.dazeChance = this.baseAttack.criticalChance;
         for (let skill of attacker.skills) {
-            switch(skill) {
+            switch (skill) {
                 case 'Cudgel Proficiency':
                     this.baseAttack.hitBonus += 2;
                     break;
                 case 'Bludgeon':
                     this.dazeChance += .5;
                     break;
-                case 'Backswing':
-                    this.backswingChance = .25;
-                    break;
             }
         }
-        
+
         this.baseAttack.pvBonus += bonusPV;
         this.baseAttack.pvMaxBonus += bonusMaxPV;
     }
 
     getExpectedDamage(defender) {
-        let critAttack = new CudgelAttack(this.baseAttack.attacker, this.limbNum, 1, 1);
+        let critAttack = new CudgelAttack(this.baseAttack.attacker, this.baseAttack.limbNum, 1, 1);
         let critDamage = critAttack.baseAttack.getExpectedDamage(defender);
         let normalDamage = this.baseAttack.getExpectedDamage(defender);
         let hitChance = this.baseAttack.getHitChance(defender);
@@ -156,16 +194,7 @@ class CudgelAttack {
         // If the attack is not a critical hit, it can miss so modify by hit chance
         normalDamage = (1 - this.baseAttack.criticalChance) * normalDamage * hitChance;
 
-        // Handle backswing
-        let backswingDamage = 0;
-        if (this.backswingChance > 0) {
-            let backswingAttack = new CudgelAttack(this.baseAttack.attacker, this.limbNum);
-            backswingAttack.backswingChance = 0;
-            // Calling this method factors in critical hits and misses already
-            backswingDamage = backswingAttack.getExpectedDamage(defender);
-            backswingDamage = backswingDamage * this.backswingChance;
-        }
-        return normalDamage + critDamage + backswingDamage;
+        return normalDamage + critDamage;
     }
 }
 
@@ -181,7 +210,9 @@ class Attack {
     electric = 0;
     heat = 0;
     cold = 0;
+
     limb;
+    limbNum;
     isPrimary = false;
     weapon;
     attacker;
@@ -190,6 +221,7 @@ class Attack {
         this.attacker = attacker;
         this.isPrimary = this.attacker.primary == limb;
         this.limb = this.attacker.limbs[limb];
+        this.limbNum = limb;
         let weapon = this.limb.item;
         if (!weapon.isWeapon)
             weapon = defaultWeapon;
