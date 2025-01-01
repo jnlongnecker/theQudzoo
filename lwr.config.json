@@ -352,17 +352,6 @@
             }
         },
         {
-            "id": "Advanced-Mechanics",
-            "path": "/advice/advanced",
-            "contentTemplate": "$contentDir/adviceArticles/advanced.md",
-            "layoutTemplate": "$layoutsDir/advice_layout.njk",
-            "properties": {
-                "title": "Advanced Mechanics",
-                "preview": "/1/asset/s/latest/public/assets/images/previews/reputation.png",
-                "description": "This mechanic is what separates the zeros from the heroes. Understanding reputation and factions is one of the easiest and most impactful things you can do in order to improve your game."
-            }
-        },
-        {
             "id": "Advice-Home",
             "path": "/advice",
             "contentTemplate": "$contentDir/adviceHome.md",
