@@ -1,29 +1,30 @@
 {
-  "name": "qudzoo",
-  "version": "0.0.1",
-  "license": "MIT",
-  "private": true,
-  "type": "module",
-  "main": "src/server/startServer.cjs",
-  "scripts": {
-    "clean": "rm -rf __lwr_cache__",
-    "dev": "nodenv src/server/startServer.cjs -f",
-    "start": "node src/server/startServer.cjs prod",
-    "start:compat": "lwr serve --mode compat",
-    "start:prod-compat": "lwr serve --mode prod-compat"
-  },
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "connect-mongo": "^4.6.0",
-    "express-session": "^1.17.3",
-    "lwc": "2.5.8",
-    "lwr": "0.6.5",
-    "mongoose": "^6.10.0"
-  },
-  "engines": {
-    "node": ">=14.15.4 <17"
-  },
-  "devDependencies": {
-    "node-env-run": "^4.0.2"
-  }
+    "name": "qudzoo",
+    "version": "3.0.1",
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "main": "src/server/startServer.cjs",
+    "scripts": {
+        "clean": "rm -rf __lwr_cache__",
+        "dev": "nodenv src/server/startServer.cjs -f",
+        "start": "node src/server/startServer.cjs prod",
+        "start:compat": "lwr serve --mode compat",
+        "start:prod-compat": "lwr serve --mode prod-compat"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "connect-mongo": "^4.6.0",
+        "d3": "^7.9.0",
+        "express-session": "^1.17.3",
+        "lwc": "2.5.8",
+        "lwr": "0.6.5",
+        "mongoose": "^6.10.0"
+    },
+    "engines": {
+        "node": ">=14.15.4 <17"
+    },
+    "devDependencies": {
+        "node-env-run": "^4.0.2"
+    }
 }

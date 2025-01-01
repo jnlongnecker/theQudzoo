@@ -789,6 +789,8 @@ Light Manipulation is the only somewhat reliable mental mutation in terms of dam
 
 If you use Light Manipulation as a supporting ranged option, then it does its job quite well. Relying on it for light is a tricky balance since as you use it, you can see less and less so you’ll probably still want a light source anyways even if you have a high level Light Manipulation. It won’t scale to the very most powerful enemies in the game, but will get the job done reliably with virtually any normal enemy as long as you keep putting points into it.
 
+Here's a cute little trick you can do with Light Manipulation though: get high quickness and a high rank Two-Headed to reduce your mental action cost, then stab a creature with a skulk injector. You now do double damage to them and can send off a massive volley of beams. Have fun.
+
 ### Mass Mind
 
 <div class="section-info">
