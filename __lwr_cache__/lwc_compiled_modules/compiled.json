@@ -2426,7 +2426,7 @@
   [
     "c/sugarInjector@3.0.1",
     {
-      "ownHash": "615aa79cda11cb17c58a2bcdb30fa385",
+      "ownHash": "41cf4d2450f6a14fbecdde41526ae619",
       "module": "./cache/c_sugarInjector_3_0_1.js",
       "moduleMeta": "./cache/c_sugarInjector_3_0_1.meta.json"
     }

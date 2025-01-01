@@ -101,12 +101,9 @@ app.post("/db/likebuild", async (req, res) => {
     }
     let response = await dbs.toggleLike(req, res);
     res.json(response);
-})
-let mode = "dev";
+});
 
-if (process.argv.length >= 3) {
-    mode = process.argv[2];
-}
+let mode = process.env.MODE ? process.env.MODE : 'prod';
 
 lwrServer.config.serverMode = mode;
 

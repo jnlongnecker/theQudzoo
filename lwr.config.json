@@ -352,6 +352,17 @@
             }
         },
         {
+            "id": "Advanced-Mechanics",
+            "path": "/advice/advanced",
+            "contentTemplate": "$contentDir/adviceArticles/advanced.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Advanced Mechanics",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/advanced.png",
+                "description": "The wiki does a decent job at explaining these mechanics, but doesn't get everything completely right leading to some confusion I've seen several times before. Most of this is not at all important to know, but if you're a big curious nerd like me then let's get deep into the weeds on the most complex Qud mechanics."
+            }
+        },
+        {
             "id": "Advice-Home",
             "path": "/advice",
             "contentTemplate": "$contentDir/adviceHome.md",

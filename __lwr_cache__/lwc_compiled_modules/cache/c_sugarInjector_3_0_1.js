@@ -49,8 +49,8 @@ class SugarInjector extends LightningElement {
     for (let paragraph of allParagraphs) {
       let text = paragraph.innerHTML;
       if (text.indexOf("<img") !== -1) continue;
-      text = this.highlightText(text);
-      paragraph.innerHTML = text;
+      let newText = this.highlightText(text);
+      if (newText != text) paragraph.innerHTML = newText;
     }
   }
   highlightText(text) {
