@@ -1,0 +1,6 @@
+function stylesheet(useActualHostSelector, token) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  return [(useActualHostSelector ? ":host {--color: var(--text-color);}" : [hostSelector, " {--color: var(--text-color);}"].join('')), "input", shadowSelector, " {background-color: rgba(0, 0, 0, 0);border: 0;border-bottom: 2px solid var(--color);color: var(--color);font-size: 1rem;border-top-left-radius: 5px;border-top-right-radius: 5px;padding: 0.4rem;max-width: 5ch;}input:hover", shadowSelector, " {background-color: var(--hover-darken);}input:focus", shadowSelector, " {outline: 0;background-color: var(--hover-darken);}.mutant", shadowSelector, " {--color: var(--mutation-color);}.true-kin", shadowSelector, " {--color: var(--cybernetic-color);}.skill", shadowSelector, " {--color: var(--skills-color);}.stat", shadowSelector, " {--color: var(--stat-color);}.strength", shadowSelector, " {--color: var(--strength-color);}.agility", shadowSelector, " {--color: var(--agility-color);}.toughness", shadowSelector, " {--color: var(--toughness-color);}.willpower", shadowSelector, " {--color: var(--willpower-color);}.intelligence", shadowSelector, " {--color: var(--intelligence-color);}.ego", shadowSelector, " {--color: var(--ego-color);}"].join('');
+}
+export default [stylesheet];

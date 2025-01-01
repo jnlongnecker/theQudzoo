@@ -1,0 +1,6 @@
+function stylesheet(useActualHostSelector, token) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  return ["section", shadowSelector, " {font-family: var(--qud-font);display: flex;flex-direction: column;justify-content: center;align-items: center;border-top: 3px solid var(--hover-darken);padding: 0 var(--desktop-margin-size) 1rem;gap: 1rem;}div", shadowSelector, " {width: 100%;}h2", shadowSelector, " {text-align: center;}h2", shadowSelector, " a", shadowSelector, " {color: var(--h2-color);font-weight: normal;font-size: 3rem;margin-bottom: 0;text-decoration: none;}h2", shadowSelector, " a:hover", shadowSelector, " {text-decoration: underline;}p", shadowSelector, " {max-width: 55vw;font-size: 1.5rem;text-align: center;}button", shadowSelector, " {width: 20ch;color: var(--text-color-faded);background-color: transparent;border: 1px solid var(--text-color-faded);padding: 0.25rem 0.5rem;font-size: 1.25rem;margin-bottom: 1rem;}button:hover", shadowSelector, " {cursor: pointer;background-color: var(--hover-darken);color: var(--text-color);border-color: var(--text-color);}.name", shadowSelector, " {white-space: nowrap;}@media only screen and (max-width: 900px) {section", shadowSelector, " {padding: 0 var(--mobile-margin-size);}}"].join('');
+}
+export default [stylesheet];

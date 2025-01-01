@@ -108,9 +108,11 @@ Gives a single skill that costs from 51-150 skill points. Definitely better than
 
 </div>
 
-This cybernetic will give you +40 quickness for 10 rounds then -10 quickness for 10 rounds. This then goes on cooldown for 100 turns. Let's analyze more specifically what that means:
+This cybernetic will give you +40 quickness for 10 rounds then -10 quickness for 10 rounds. This then goes on cooldown for 100 turns (before Willpower reduction). Let's analyze more specifically what that means:
 
 With +40 quickness, you will get an extra round of actions after the 3rd, 5th, 8th, and 10th rounds. You then lose an action on the 20th round. If our combat goes for 20 rounds, this results in 3 net extra turns and 4 net extra turns if our combat goes less than 20 rounds. This can be quite good; even moreso if you happen to have good compute power as the bonus and the duration both scale with enhanced compute power. It's not permanent, so as long as you use this carefully and not haphazardly, it may be that special sauce you need to take down a more powerful creature. However, if your build doesn't have very impressive damage or already has good ways of dealing with lone powerful threats, 3-4 extra turns may not be worth very much in the grand scheme of things. In these instances, you'll want something with more tangible effects.
+
+I would be remiss to leave things there, as this benefits from compute power in a major way. It increases _both_ the quickness boost and the duration, meaning at higher tiers you can keep it on pretty much indefinitely. This is one cybernetic that can be built around, and does a pretty good job at being built around at the cost of not being obvious that you can do so.
 
 ### Nocturnal Apex
 
@@ -254,6 +256,8 @@ This cybernetic is in a strange place. You get all the skills from a particular 
 
 If you happen to pick this up before you get something that can go in your face slot, it's only 1 license point for +1 Ego. Not too bad, but since true kin aren't using any mental mutations, 1 Ego is not really impactful. Swap it out once you get something better.
 
+Something to note is that in the late game, many true kin acquire mutations via gamma moths or brain brine. Mental mutations will benefit from Ego and thus this becomes more useful, but if you're capable of this and trying to gain mental mutation ranks, you're just as capable to farm for eater's nectar and using a better cybernetic.
+
 ### Optical Bioscanner
 
 <div class="section-info">
@@ -266,7 +270,7 @@ If you happen to pick this up before you get something that can go in your face 
 
 </div>
 
-This gives you precise knowledge of the durability of your target; as long as it's biological. This is a cybernetic that becomes less and less useful the more experience you have with the game. It can be handy while you're still learning the game to notify you of a creature out of your league or when a creature is near death, but once you get a few games under your belt you'll be able to know this information without the cybernetic as the health description becomes plenty for you. This cybernetic can also be replicated by the bioscanning bracelet, so if you get one of those this becomes pretty obsolete as it takes up our face cybernetic.
+This gives you precise knowledge of the durability of your target; as long as it's biological. This is a cybernetic that becomes less and less useful the more experience you have with the game. It can be handy while you're still learning the game to notify you of a creature out of your league or when a creature is near death, but once you get a few games under your belt you'll be able to know this information without the cybernetic as the health description becomes plenty for you. It has its niche especially with creatures with lots of HP to know if you just need one more attack or should heal, but by that point in the game there are better options you'll likely have to do the same. This cybernetic can also be replicated by the bioscanning bracelet, so if you get one of those this becomes pretty obsolete as it takes up our face cybernetic.
 
 ### Optical Technoscanner
 
@@ -368,7 +372,7 @@ This combines both the bioscanner and technoscanner in one with some added benef
 
 </div>
 
-We've got +2 Toughness, which will give us bonus hitpoints equal to 2 x Level and since cybernetics boost your base level of stat, this can be used for any skill requirements. If you want that, it can be nice for the skills but body cybernetics are very competitive, and this one just doesn't meet the standards set by more powerful cybernetics.
+We've got +2 Toughness, which will give us bonus hitpoints equal to 2 x Level and since cybernetics boost your base level of stat, this can be used for any skill requirements. If you want that, it can be nice for the skills or for giving a temporary HP buff to get through a scary part of the game for a low HP build but body cybernetics are very competitive, and this one just doesn't meet the standards set by more powerful cybernetics for your more permanent build.
 
 ### Bionic Liver
 
@@ -382,7 +386,7 @@ We've got +2 Toughness, which will give us bonus hitpoints equal to 2 x Level an
 
 </div>
 
-It doesn't prevent fungal infections, and the only real place you're going to be getting diseases (if you get any at all) is going to be at Golgotha. It'll also give you immunity to poison, but poison is a very uncommon damage type that just gets less and less common as the game goes on. If you find this pre-Golgotha, it's going to be one of the only cybernetics that you'll even be able to install, but it will likely be worth it for that dungeon. Other than that, body cybernetics are just far too competitive.
+It doesn't prevent fungal infections, and the only real place you're going to be getting diseases (if you get any at all) is going to be at Golgotha. It'll also give you immunity to poison, but poison is a very uncommon damage type that just gets less and less common as the game goes on. If you find this pre-Golgotha, it's going to be one of the only cybernetics that you'll even be able to install, but it will likely be worth it for that dungeon. Additionally, the Irisdual Beam of Nephilim is 1 part poison damage, so if you want to try and take as little damage as possible from that then slot this in (there are other ways to negate poison damage without this though). Other than that, body cybernetics are just far too competitive.
 
 ### Equipment Rack
 
@@ -444,7 +448,7 @@ For quite a large portion of the game, this is just not very useful in general. 
 
 This cybernetic will save you from death or from 50% damage once and then be permanently destroyed. This means that you are making yourself weaker for you to eventually be saved from a single hit. The problem is that if you're taking 50% of your HP in a single hit or you're taking lethal damage, saving yourself from that only 1 time likely is **not** enough. This also will not prevent instant death from sources that ignore HP, like coming into phase in a wall or by drinking neutron flux.
 
-The only legitimate scenario where this will save you is if you are nuked by the alchemist throwing neutron flux at you, by a literal hand-e-nuke, or by some other high-damage explosive. These are very rare to begin with, so give this one a pass.
+The only legitimate scenario where this will save you is if you are nuked by the alchemist throwing neutron flux at you, by a literal hand-e-nuke, or by some other high-damage explosive. These are very rare to begin with, so give this one a pass. There is a niche this cybernetic has with extreme DV builds where it can actually come in handy in saving you from an errant crit, but if your build is that full of holes already you probably have bigger problems than what body slot cybernetic to use.
 
 ### Biodynamic Power Plant
 
@@ -506,7 +510,7 @@ This cybernetic does have the capability to hit creatures in any phase, which do
 
 </div>
 
-The Gun Rack gives you access to two more ranged weapon slots, which will result typically in you being able to equip 1 more rifle or 2 more pistols, essentially doubling your ranged DPS. You can also synergize this with Giant Hands in order to be capable of wielding **_4_** rifles at the same time, and you can increase this further by magnetizing your guns and wielding them in your Floating Nearby slots. This comes at the cost of your back equipment slot, but this cybernetic is practically the entire reason why true kin excel in ranged combat builds and you can get some truly terrifying amounts of damage.
+The Gun Rack gives you access to two more ranged weapon slots, which will result typically in you being able to equip 1 more rifle or 2 more pistols, essentially doubling your ranged DPS. You can also synergize this with Giant Hands in order to be capable of wielding **_4_** rifles at the same time, and you can increase this further by magnetizing your guns and wielding them in your floating nearby slots. You start to run into diminishing returns when you use up those floating nearby slots, so I'd recommend saving those equipment. This cybernetic comes at the cost of your back equipment slot, but this cybernetic is practically the entire reason why true kin excel in ranged combat builds and you can get some truly terrifying amounts of damage.
 
 ### Cathedra
 
@@ -542,7 +546,9 @@ Unfortunately for the cathedra, not only are they unbelievably rare, but they ar
 
 </div>
 
-You can throw 2 tiles farther and if you're targeting a square in your throw range, you always hit it. The problem is that the Deft Throwing skill costs 50 skill points and is pretty much the culmination of all you'll ever need for throwing stuff. I'll level with you all, I've genuinely tried and made a powerful effort to make throwing "work". I've gotten the throwing axes and every single time I get frustrated from their jank before I even get through Bethesda Susa. So in reality, you're just going to use these for grenades and if that's what you're doing, it's an explosive you don't have to be perfectly accurate. If you've got nothing to go into an arm slot, go ahead; it's cheap and you've got 2 arm slots. Otherwise, give it a miss.
+You can throw 2 tiles farther and if you're targeting a square in your throw range, you always hit it. The problem is that the Deft Throwing skill costs 50 skill points and is pretty much the culmination of all you'll ever need for throwing stuff. I'll level with you all, I've genuinely tried and made a powerful effort to make throwing "work". I've gotten the throwing axes and every single time I get frustrated from their jank before I even get through Bethesda Susa. If you're using geomagnetic disks then you never miss anyway so this becomes obsolete.
+
+So in reality, you're just going to use these for grenades and if that's what you're doing, it's an explosive you don't have to be perfectly accurate. There are niche scenarios where precise grenade throwing is handy to have like tossing grenades past enemies to hit multiple or targeting a specific enemy with a stasis grenade or something. If you've got nothing to go into an arm slot, go ahead; it's cheap and you've got 2 arm slots. Otherwise, give it a miss.
 
 ### Stabilizer Arm Locks
 

@@ -1,4 +1,4 @@
-let creatures = require("../../../api/data/creatures.json");
+// let creatures = require("../../../api/data/creatures.json");
 
 /* ========================== Testing Data ============================ */
 
@@ -12,6 +12,32 @@ const defaultWeapon = {
     "tier": 1,
     "isWeapon": true
 };
+
+function rollPenetrations(target, uncappedPV, cappedPV) {
+    let penetrations = 0;
+    let successes = 3;
+    while (successes == 3) {
+        successes = 0;
+        for (let i = 0; i < 3; i++) {
+            let diceRoll = random(1, 10) - 2;
+            let totalModifier = 0;
+            while (diceRoll == 8) {
+                totalModifier += 8;
+                diceRoll = random(1, 10) - 2;
+            }
+            totalModifier += diceRoll;
+            let penRoll = totalModifier + Math.Min(uncappedPV, cappedPV);
+            if (penRoll > target) {
+                successes++;
+            }
+        }
+        if (successes >= 1) {
+            penetrations++;
+        }
+        uncappedPV -= 2;
+    }
+    return penetrations;
+}
 
 function random(min, max) {
     let range = max - min;
@@ -41,13 +67,13 @@ function chanceToSucceed(neededRoll) {
     let startingNumber = -1;
     let interval = 8;
 
-    if (neededRoll < startingNumber) return 1;
+    if (neededRoll <= startingNumber) return 1;
 
-    let adjustedRoll = neededRoll - startingNumber;
-    let numIntervals = Math.floor(adjustedRoll / interval);
-    let withinInterval = adjustedRoll % interval;
+    let normalizedRoll = neededRoll;
+    let numIntervals = Math.floor(normalizedRoll / interval);
+    let withinInterval = normalizedRoll % interval;
 
-    let intervalChance = 0;
+    let intervalChance = .1;
     if (numIntervals > 0) {
         let strChance = '0.';
         for (let i = 0; i < numIntervals; i++) {
@@ -421,5 +447,6 @@ class Roll {
 const electrifiedTierDamage = [1, 1, 2.5, 3.5, 5, 6, 7.5, 8.5, 10];
 const heatAndColdTierDamage = [1, 1, 2, 3, 4, 5, 6, 7, 8];
 
-let testCombat = new Combat(creatures[1], creatures[0]);
-console.log(testCombat.bumpAttack());
+/* ========================== Exports ============================ */
+
+export { expectedPenetrations };
