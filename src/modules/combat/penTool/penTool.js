@@ -21,8 +21,8 @@ export default class PenTool extends LightningElement {
     }
 
     calculateExpectedPenetrations() {
-        if (!this.av) return;
-        if (!this.pv) return;
+        if (!this.av && this.av !== 0) return;
+        if (!this.pv && this.pv !== 0) return;
 
         this.result = expectedPenetrations(this.av, this.pv - 4, this.pv - 4);
         this.pastResults.push(this.result);
