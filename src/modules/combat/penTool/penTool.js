@@ -11,7 +11,7 @@ export default class PenTool extends LightningElement {
     pastResults = [];
 
     updateAV(evt) {
-        this.av = Math.max(0, evt.detail);
+        this.av = evt.detail;
         this.calculateExpectedPenetrations();
     }
 
