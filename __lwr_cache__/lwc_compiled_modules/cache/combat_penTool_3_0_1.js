@@ -10,7 +10,7 @@ class PenTool extends LightningElement {
     this.pastResults = [];
   }
   updateAV(evt) {
-    this.av = Math.max(0, evt.detail);
+    this.av = evt.detail;
     this.calculateExpectedPenetrations();
   }
   updatePV(evt) {
@@ -18,8 +18,8 @@ class PenTool extends LightningElement {
     this.calculateExpectedPenetrations();
   }
   calculateExpectedPenetrations() {
-    if (!this.av) return;
-    if (!this.pv) return;
+    if (!this.av && this.av !== 0) return;
+    if (!this.pv && this.pv !== 0) return;
     this.result = expectedPenetrations(this.av, this.pv - 4, this.pv - 4);
     this.pastResults.push(this.result);
   }

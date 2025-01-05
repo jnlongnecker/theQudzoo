@@ -43,12 +43,16 @@ function random(min, max) {
   return min + Math.round(Math.random() * range);
 }
 function expectedPenetrations(av, bonus, maxBonus) {
+  av = Number(av);
+  bonus = Number(bonus);
+  maxBonus = Number(maxBonus);
   let chanceFor = [1];
   let currChanceFor = 1;
   let chanceToContinue = 1;
   while (currChanceFor > .00001) {
     let effectiveBonus = Math.min(bonus, maxBonus);
     let neededRoll = av + 1 - effectiveBonus;
+    console.log(`Bonus: ${bonus}, AV: ${av}, Capped Bonus: ${effectiveBonus}, Roll Needed: ${neededRoll}`);
     currChanceFor = chanceForOneSuccess(neededRoll) * chanceToContinue;
     chanceToContinue *= chanceForThreeSuccess(neededRoll);
     chanceFor.push(currChanceFor);

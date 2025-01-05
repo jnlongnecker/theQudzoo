@@ -2402,7 +2402,7 @@
   [
     "combat/penTool@3.0.1",
     {
-      "ownHash": "04f19b5e24ff7e4ba1288165658bcdbd",
+      "ownHash": "5a1b8ad5febd2be73ecc008f9715f968",
       "module": "./cache/combat_penTool_3_0_1.js",
       "moduleMeta": "./cache/combat_penTool_3_0_1.meta.json"
     }
@@ -2642,7 +2642,7 @@
   [
     "combat/calculator@3.0.1",
     {
-      "ownHash": "3178e757fee6e955d9a915bbc2ebafb3",
+      "ownHash": "468fc0f5c173bbc7206b2cab8196de46",
       "module": "./cache/combat_calculator_3_0_1.js",
       "moduleMeta": "./cache/combat_calculator_3_0_1.meta.json"
     }
