@@ -62,6 +62,8 @@ exports.processRequest = async (res, req) => {
                 return response;
             case "mutations":
             case "skills":
+            case "creatures":
+            case "items":
             case "attributes":
             case "stats":
             case "callings":

@@ -1,7 +1,7 @@
 [
     {
         "name": "test",
-        "hp": 0,
+        "hp": 1,
         "av": 0,
         "dv": 0,
         "ma": 0,
@@ -13,12 +13,12 @@
             "heat": 0.0
         },
         "attributes": {
-            "strength": 0,
-            "agility": 0,
-            "toughness": 0,
-            "willpower": 0,
-            "intelligence": 0,
-            "ego": 0
+            "strength": 1,
+            "agility": 1,
+            "toughness": 1,
+            "willpower": 1,
+            "intelligence": 1,
+            "ego": 1
         },
         "mutations": [],
         "swfOn": false,
@@ -27,7 +27,8 @@
         "effects": [],
         "primary": 0,
         "mentalShield": false,
-        "nephilim": false
+        "nephilim": false,
+        "equipmentTable": false
     },
     {
         "name": "Test Player",
@@ -52,7 +53,14 @@
         },
         "mutations": [],
         "swfOn": true,
-        "skills": ["Cudgel Proficiency", "Bludgeon", "Backswing", "Opportune Strikes", "Weapon Mastery", "Penetrating Strikes"],
+        "skills": [
+            "Cudgel Proficiency",
+            "Bludgeon",
+            "Backswing",
+            "Opportune Strikes",
+            "Weapon Mastery",
+            "Penetrating Strikes"
+        ],
         "limbs": [
             {
                 "name": "Head",
@@ -83,28 +91,28 @@
                 "multiweaponAffected": false
             },
             {
-                "name": "Hand",
+                "name": "Left Hand",
                 "slot": "hand",
                 "offhand": 0.15,
                 "item": {},
                 "multiweaponAffected": true
             },
             {
-                "name": "Hand",
+                "name": "Right Hand",
                 "slot": "hand",
                 "offhand": 0.15,
                 "item": {},
                 "multiweaponAffected": true
             },
             {
-                "name": "Arm",
+                "name": "Left Arm",
                 "slot": "armgear",
                 "offhand": 0,
                 "item": {},
                 "multiweaponAffected": false
             },
             {
-                "name": "Arm",
+                "name": "Right Arm",
                 "slot": "armgear",
                 "offhand": 0,
                 "item": {},
@@ -121,6 +129,7 @@
         "effects": [],
         "primary": 4,
         "mentalShield": false,
-        "nephilim": false
+        "nephilim": false,
+        "equipmentTable": false
     }
 ]

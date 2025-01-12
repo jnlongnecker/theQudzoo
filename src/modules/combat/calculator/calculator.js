@@ -54,7 +54,6 @@ function expectedPenetrations(av, bonus, maxBonus) {
     while (currChanceFor > .00001) {
         let effectiveBonus = Math.min(bonus, maxBonus);
         let neededRoll = av + 1 - effectiveBonus;
-        console.log(`Bonus: ${bonus}, AV: ${av}, Capped Bonus: ${effectiveBonus}, Roll Needed: ${neededRoll}`);
         currChanceFor = chanceForOneSuccess(neededRoll) * chanceToContinue;
         chanceToContinue *= chanceForThreeSuccess(neededRoll);
         chanceFor.push(currChanceFor);
@@ -337,6 +336,8 @@ class Attack {
         dmg += (this.heat - this.heat * defender.resistances.heat);
         return dmg + (this.cold - this.cold * defender.resistances.cold);
     }
+
+
 }
 
 class DiceRoll {

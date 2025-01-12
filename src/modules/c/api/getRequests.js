@@ -52,6 +52,14 @@ async function getBuilds(filters) {
     return await response.json();
 }
 
+async function getCreatures() {
+    return await getMiddleware("/api/creatures");
+}
+
+async function getItems() {
+    return await getMiddleware("api/items");
+}
+
 async function getMutations() {
     return await getMiddleware("/api/mutations");
 }
