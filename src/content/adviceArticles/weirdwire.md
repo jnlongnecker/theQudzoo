@@ -10,8 +10,8 @@ Make your way to the Rust Wells to collect 200 feet of wire for Argyve. Live and
 
 ---
 
-| Level | Abilities | Stats                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ----- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Level | Abilities | Stats         |
+| ----- | --------- | ------------- |
 | 7     | Flight    | 6 AV or 13 DV |
 
 </div>
@@ -26,7 +26,7 @@ For those of us unlucky souls, we will have to travel down the well. Before we d
 
 ![Player Nomad to the south of an open rust well]($assetsDir/images/quests/weirdwire-well.png)
 
-In this screenshot, we can see all of these as promised. Our strong enemy is a slumberling; which is handy because it won’t bother us unless provoked. Be sure to check this ahead of time; if you get something particularly nasty like a slugsnout, you may want to just choose a different well. Keep in mind that you don’t have to go down to the bottom, you can go to a different rust well after the first 2 strata.
+In this screenshot, we can see all of these as promised. In your case, it's more likely that all of the loot will be directly in the center, so make sure to search under the chest if there is one for the wire. Our strong enemy is a slumberling; which is handy because it won’t bother us unless provoked. Be sure to check this ahead of time; if you get something particularly nasty like a slugsnout, you may want to just choose a different well. Keep in mind that you don’t have to go down to the bottom, you can go to a different rust well after the first 2 strata.
 
 The enemies you find here will be well within your capabilities at the recommended levels, especially if you don’t go all the way down to the bottom. Don’t underestimate the strong enemy at the bottom though; even at the recommended levels, it can still kill you if you lack experience with combat!
 
