@@ -69,6 +69,7 @@ One of the best atzmus was as I just mentioned: one of your own limbs. This is c
 -   Temporal Fugue 14 or Teleportation 1 from Cyclopean Gibbon
 -   Random 4 level 9-12 physical mutations from Glow-wight Apotheote
 -   Two-Headed from Two-headed Boars and Two-headed Slugsnouts
+-   Plasma Gas Generation from Plasma Jelly
 
 To me, Carapace in particular is quite interesting as the AV increase makes our overwhelming death machine even harder to damage, but we unfortunately don't get high level Carapace guaranteed from any creature. The highest level guaranteed Carapace is found from the Great Saltback, and that's only level 5 Carapace. Two-Headed is also one that should be heavily considered; it's a fantastic mutation to combat Qon specifically so if you don't have a good way of killing her it may be a good idea to take that mutation for your Golem just in case.
 
