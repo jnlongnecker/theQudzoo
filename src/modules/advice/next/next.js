@@ -15,6 +15,10 @@ export default class Next extends LightningElement {
             getPath = "/api/quests";
         }
 
+        if (path.indexOf("novice/") > 0) {
+            getPath = "/api/novice"
+        }
+
         fetch(getPath)
             .then(result => {
                 result.json()
