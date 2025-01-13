@@ -12,7 +12,7 @@ From <span class="hostile">-599</span> to <span class="hostile">-250</span> repu
 
 Anything beyond <span class="hostile">-600</span> reputation and you are <span class="hostile">despised</span> by that faction. Everything from that faction will attack you on sight. There is very little functional difference between being <span class="hostile">despised</span> and <span class="hostile">disliked</span>, so if you are not planning on becoming at least <span class="neutral">neutral</span> with that faction at some point, just let your reputation here drop as much as you like.
 
-From <span class="loved">250</span> to <span class="loved">599</span> reputation, you are <span class="loved">favored</span> by that faction. All creatures from that faction will not attack you unless provoked. In most cases, going to this point is just unnecessary as it isn’t functionally different from being <span class="neutral">neutral</span> but for factions like Flowers and Winged Mammals, this level of investment is necessary as the standout members are aggressive. Being at this level also allows you to enter holy sites of that faction without provoking them, but only Apes, Baboons, Mechanimists and Cult factions actually have holy sites to begin with.
+From <span class="loved">250</span> to <span class="loved">599</span> reputation, you are <span class="loved">favored</span> by that faction. All creatures from that faction will not attack you unless provoked. In most cases, going to this point is just unnecessary as it isn’t functionally different from being <span class="neutral">neutral</span> but for factions like Flowers and Winged Mammals, this level of investment is necessary as the standout members are aggressive. Being at this level also allows you to enter holy sites of that faction without provoking them, but only Apes, Baboons, Mechanimists, Gyre Wights and Cult factions actually have holy sites to begin with.
 
 Anything beyond <span class="loved">600</span> reputation and you are <span class="loved">revered</span> by that faction. Members will actively attack creatures that attack you and will not immediately turn hostile if you attack an ally of theirs. This is quite the difficult level to attain and is usually not worth the investment. For most factions, there isn’t anything worth noting besides the above. However, it’s worth a mention that if you’re <span class="loved">revered</span> by the Consortium of Phyta, you can just command Asphodel to lease control of the Spindle instead of suffering any reputation penalties from that quest.
 
@@ -43,10 +43,6 @@ Dogs
 Equines
 
 Farmers’ Guild
-
-Girsh
-
-Glow-Wights
 
 Highly Entropic Beings
 
@@ -84,7 +80,11 @@ Cragmensh
 
 Frogs
 
+Girsh
+
 Goatfolk
+
+Gyre Wights
 
 Hindren of Bey Lah
 
@@ -274,9 +274,9 @@ In an ideal world, you’ll want your reputation with these factions to be at _l
 
 <span class="neutral">Fungi: -249</span>
 
-<span class="neutral">Girsh: -249</span>
+<span class="neutral">Girsh: 200</span>
 
-<span class="neutral">Glow-Wights: -249</span>
+<span class="neutral">Gyre Wights: 200</span>
 
 <span class="neutral">Goatfolk: -249</span>
 
@@ -292,7 +292,7 @@ In an ideal world, you’ll want your reputation with these factions to be at _l
 
 <span class="neutral">Issachari Tribe: -249</span>
 
-<span class="loved">Mechanimists: 250</span>
+<span class="loved">Mechanimists: 300</span>
 
 <span class="loved">Merchants’ Guild: 600</span>
 
