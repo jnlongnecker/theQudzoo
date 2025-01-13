@@ -10,9 +10,9 @@ The Golem created successfully, it is time to ascend the Spindle with Barathrum.
 
 ---
 
-| Level | Abilities                                                                                                                                                                                                                                              | Stats |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
-| 35    | Corrosive Gas Generation, 110 Quickness & 125 Move Speed, the Golem, Penetrating Strikes/Ceremonial Vibrokhopesh, High (60+) elemental resistances, Poison Tolerance, Freeze Grenades Mk III, EMP Grenades Mk III, Perfect Flight, Disarm capabilities | 18 AV |
+| Level | Abilities                                                                                                                                                                                                                                                                         | Stats |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| 35    | Corrosive Gas Generation, 110 Quickness & 125 Move Speed, the Golem, Penetrating Strikes/Ceremonial Vibrokhopesh, High (60+) elemental resistances, Poison Tolerance, Freeze Grenades Mk III, EMP Grenades Mk III, Flashbang Grenades Mk III, Perfect Flight, Disarm capabilities | 18 AV |
 
 </div>
 
@@ -119,7 +119,7 @@ Shug'ruith is associated with burrowing girshlings, which spawn wall tiles as th
 
 ### Utilizing the Golem
 
-Since Barathrum will be inside the Golem with you, it is very important that the Golem stays alive, especially during this fight. _If you are not piloting the Golem, it will **very likely** be destroyed_. The damage of the Irisdual Beam is so great that it will easily tear through the Golem. If you plan on using the Golem against the Nephilim, pilot it for the best chance of both your survival and the Golem's. Otherwise, command it to stay behind so Barathrum survives. If Barathrum dies, you are **not locked out of completing the game**, you will only lose out on a lore dump from Barathrum as you ascend the spindle.
+Since Barathrum will be inside the Golem with you, it is very important that the Golem stays alive, especially during this fight. _If you are not piloting the Golem, it will **very likely** be destroyed_. The damage of the Irisdual Beam is so great that it will easily tear through the Golem. If you plan on using the Golem against the Nephilim, pilot it for the best chance of both your survival and the Golem's. Otherwise, command it to stay behind so Barathrum survives. If Barathrum dies, you are **not locked out of completing the game**, you will only lose out on a lore dump from Barathrum as you ascend the Spindle.
 
 ## Starformed Ehalcodon
 
