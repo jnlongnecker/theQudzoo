@@ -264,6 +264,17 @@
             }
         },
         {
+            "id": "We-Are-Starfreight",
+            "path": "/advice/quests/starfreight",
+            "contentTemplate": "$contentDir/adviceArticles/starfreight.md",
+            "layoutTemplate": "$layoutsDir/advice_layout.njk",
+            "properties": {
+                "title": "Quests - We Are Starfreight!",
+                "preview": "/1/asset/s/latest/public/assets/images/previews/starfreight.png",
+                "description": "The Templar have been vanquished, the Nephilim scattered. The final task is to ascend the Spindle and confront that which resides above. Live and drink, mevyn."
+            }
+        },
+        {
             "id": "Breaking-Down-a-Run",
             "path": "/advice/breakdown",
             "contentTemplate": "$contentDir/adviceArticles/breakdown.md",

@@ -2,7 +2,7 @@
 
 ---
 
-The ancient resting place of the legendary Sultans, the Tomb of the Eaters holds some of the most closely guarded secrets in Qud. We were told that inside, the gateway to Brightsheol lies. We must find this place and disable the magnetic field around the spindle. Live and drink, disciple.
+The ancient resting place of the legendary Sultans, the Tomb of the Eaters holds some of the most closely guarded secrets in Qud. We were told that inside, the gateway to Brightsheol lies. We must find this place and disable the magnetic field around the Spindle. Live and drink, disciple.
 
 <div class="section-info">
 

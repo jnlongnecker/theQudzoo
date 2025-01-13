@@ -155,7 +155,7 @@ As you do this, if you find the cradle of Rermadon or chuppah of Qas and Qon, yo
     <source src="/1/asset/s/latest/public/assets/images/reclamation/combing.mp4" type="video/mp4">
 </video>
 
-### Shug'ruith
+### Shug'ruith the Burrower
 
 Shug'ruith is by far and away the most difficult to stumble upon. Their cradle has 2 secrets devoted to it: the mouth and the cradle itself. The cradle is in a random zone _underground_, so the chances you stumble upon the cradle itself are practically zero. The mouth is in a random zone on the surface; again basically a zero chance you stumble upon it randomly but more likely. Since you can find all other Nephilim cradles manually, it's suggested that you find those first and hope you stumble upon a secret telling you where the mouth or cradle for Shug'ruith is in the process.
 
