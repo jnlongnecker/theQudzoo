@@ -20,7 +20,7 @@ Skills are the unsung hero of Caves of Qud. In fact, I’d argue that your skill
 
 </div>
 
-Swift Reflexes is one of those must-have skills and is the intro skill to the Acrobatics tree. +5 to your DV against ranged weapons is incredibly useful to have and while it won’t save you if you just dump DV, this skill makes it so you can perfectly avoid all projectiles at 25 DV or more, which is a reliable DV to have by end game. Of course, it’s useful before that since we’re bound to be shot quite a bit on our journey to the end game, so avoiding those projectiles means you’ll get there more often.
+Swift Reflexes is one of those must-have skills and is the intro skill to the Acrobatics tree. The description of the skill is actually a bit misleading; you see it doesn't actually give you 5 DV. Instead, _not_ having it reduces your DV by 5 against missile weapons. While it won’t save you if you just dump DV, this skill makes it so you can perfectly avoid all projectiles from non-legendary creatures at 25 DV or more, which is a reliable DV to have by end game. Of course, it’s useful before that since we’re bound to be shot quite a bit on our journey to the end game, so avoiding those projectiles means you’ll get there more often.
 
 ### Spry
 
