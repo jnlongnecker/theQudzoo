@@ -1,0 +1,12 @@
+<template>
+    <div class="container">
+        <input type="text" value={value} placeholder={placeholder} name={name} onkeydown={updateFilter}
+            onfocus={handleFocus} onblur={handleBlur} autocomplete="off">
+        <div class="options" if:true={optionsAvailable}>
+            <template iterator:it={filteredOptions}>
+                <input-typeahead-option key={it.value.id} value={it.value.item}
+                    onselected={handleSelection}></input-typeahead-option>
+            </template>
+        </div>
+    </div>
+</template>

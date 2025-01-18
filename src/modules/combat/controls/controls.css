@@ -1,0 +1,34 @@
+.container {
+    height: 100%;
+}
+
+.tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tab {
+    background-color: rgba(25, 25, 25, 0.5);
+    color: var(--text-color-dark);
+    text-align: center;
+    font-size: 1.25rem;
+    border-radius: 0;
+    border: none;
+    padding: 1rem;
+}
+
+.selected {
+    background: none;
+    color: white;
+}
+
+.tab:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(25, 25, 25, 0.25);
+}
+
+.selected:hover {
+    cursor: default;
+    background: none;
+}

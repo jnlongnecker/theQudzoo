@@ -12,6 +12,9 @@ class Header extends LightningElement {
     }, {
       label: "Build Maker",
       link: "/builds"
+    }, {
+      label: "Combat",
+      link: "/combat"
     }];
     this.mobileSized = false;
   }

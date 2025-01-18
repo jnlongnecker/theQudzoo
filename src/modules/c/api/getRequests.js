@@ -90,5 +90,5 @@ async function getStats() {
 
 export {
     getBuilds, getAuthenticatedUser, isLoggedIn, getMutations, getCybernetics,
-    getCastes, getCallings, getAttributes, getSkills, getStats
+    getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems
 };

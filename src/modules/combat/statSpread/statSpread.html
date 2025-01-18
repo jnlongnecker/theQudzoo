@@ -1,0 +1,58 @@
+<template>
+    <div class="container">
+        <div class="left">
+            <div class="top-section">
+                <img src={creature.token}>
+                <div class="combat-stat-container">
+                    <template iterator:it={stats}>
+                        <div class={it.value.class} key={it.value.id}>
+                            <span class="value">{it.value.total}</span>
+                            <hr class="stat-hr">
+                            <span class="name">{it.value.name}</span>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            <div class="level-hp-info">
+                <span>Level {creature.level}</span>
+                <div class="dot-divider"></div>
+                <span>
+                    <img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/hitpoints.png">
+                    {creature.hp}
+                </span>
+            </div>
+            <hr class="section-hr">
+            <div class="resistances">
+                <div class="attribute-container willpower">
+                    <span class="value">{creature.resistances.acid}</span>
+                    <hr class="stat-hr">
+                    <span class="name">acid res</span>
+                </div>
+                <div class="attribute-container agility">
+                    <span class="value">{creature.resistances.electric}</span>
+                    <hr class="stat-hr">
+                    <span class="name">elec res</span>
+                </div>
+                <div class="attribute-container toughness">
+                    <span class="value">{creature.resistances.heat}</span>
+                    <hr class="stat-hr">
+                    <span class="name">heat res</span>
+                </div>
+                <div class="attribute-container intelligence">
+                    <span class="value">{creature.resistances.cold}</span>
+                    <hr class="stat-hr">
+                    <span class="name">cold res</span>
+                </div>
+            </div>
+        </div>
+        <div class="attributes">
+            <template iterator:it={attributes}>
+                <div class={it.value.class} key={it.value.id}>
+                    <span class="value">{it.value.total}</span>
+                    <hr class="stat-hr">
+                    <span class="name">{it.value.name}</span>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

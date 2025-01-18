@@ -3,20 +3,36 @@
         "name": "base",
         "pvBonus": 0,
         "pvCap": 0,
+        "hitBonus": 0,
         "damage": "",
         "type": "cudgel",
         "mods": [0, 0, 0],
         "tier": 1,
-        "isWeapon": true
+        "isWeapon": true,
+        "hands": 1
+    },
+    {
+        "name": "Fist",
+        "pvBonus": 0,
+        "pvCap": 999,
+        "hitBonus": 0,
+        "damage": "",
+        "type": "cudgel",
+        "mods": [0, 0, 0],
+        "tier": 1,
+        "isWeapon": true,
+        "hands": 1
     },
     {
         "name": "Zetachrome Dagger",
         "pvBonus": 0,
         "pvCap": 9,
+        "hitBonus": 0,
         "damage": "1d12 + 2",
         "type": "shortBlade",
         "mods": [0, 0, 0],
         "tier": 8,
-        "isWeapon": true
+        "isWeapon": true,
+        "hands": 1
     }
 ]

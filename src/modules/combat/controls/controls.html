@@ -1,0 +1,17 @@
+<template>
+    <div class="container">
+        <div class="tabs" onclick={changeTab}>
+            <button class="tab selected">Attributes</button>
+            <button class="tab">Equipment</button>
+            <button class="tab">Skills</button>
+            <button class="tab">Combat</button>
+        </div>
+        <div class="panel">
+            <combat-attribute-controls if:true={showAttributes} creature={creature}
+                onattributeschosen={updateAttributes}></combat-attribute-controls>
+            <combat-equipment-controls if:true={showEquipment}></combat-equipment-controls>
+            <combat-skill-controls if:true={showSkills}></combat-skill-controls>
+            <combat-combat-controls if:true={showCombat}></combat-combat-controls>
+        </div>
+    </div>
+</template>

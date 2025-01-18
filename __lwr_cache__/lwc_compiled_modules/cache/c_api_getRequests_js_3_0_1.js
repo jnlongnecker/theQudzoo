@@ -41,6 +41,12 @@ async function getBuilds(filters) {
   let response = await fetch("/db/builds/" + encodeURIComponent(JSON.stringify(filters)), reqOptions);
   return await response.json();
 }
+async function getCreatures() {
+  return await getMiddleware("/api/creatures");
+}
+async function getItems() {
+  return await getMiddleware("api/items");
+}
 async function getMutations() {
   return await getMiddleware("/api/mutations");
 }
@@ -62,4 +68,4 @@ async function getSkills() {
 async function getStats() {
   return await getMiddleware("/api/stats");
 }
-export { getBuilds, getAuthenticatedUser, isLoggedIn, getMutations, getCybernetics, getCastes, getCallings, getAttributes, getSkills, getStats };
+export { getBuilds, getAuthenticatedUser, isLoggedIn, getMutations, getCybernetics, getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems };

@@ -1,1 +1,5 @@
-<template></template>
+<template>
+    <div class="container" if:true={character}>
+        <combat-stat-spread is-player="true" creature={character}></combat-stat-spread>
+    </div>
+</template>

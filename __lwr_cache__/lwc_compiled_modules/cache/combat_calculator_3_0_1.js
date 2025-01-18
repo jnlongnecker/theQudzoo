@@ -1,8 +1,5 @@
-import { registerDecorators as _registerDecorators7, registerDecorators as _registerDecorators6, registerDecorators as _registerDecorators5, registerDecorators as _registerDecorators4, registerDecorators as _registerDecorators3, registerDecorators as _registerDecorators2, registerDecorators as _registerDecorators } from "lwc";
-// let creatures = require("../../../api/data/creatures.json");
-
-/* ========================== Testing Data ============================ */
-
+import { registerDecorators as _registerDecorators4, registerDecorators as _registerDecorators3, registerDecorators as _registerDecorators2, registerDecorators as _registerDecorators } from "lwc";
+import { DiceRoll, Roll, getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random } from "./rolls.js";
 const defaultWeapon = {
   "name": "base",
   "pvBonus": 0,
@@ -13,122 +10,62 @@ const defaultWeapon = {
   "tier": 1,
   "isWeapon": true
 };
-function rollPenetrations(target, uncappedPV, cappedPV) {
-  let penetrations = 0;
-  let successes = 3;
-  while (successes == 3) {
-    successes = 0;
-    for (let i = 0; i < 3; i++) {
-      let diceRoll = random(1, 10) - 2;
-      let totalModifier = 0;
-      while (diceRoll == 8) {
-        totalModifier += 8;
-        diceRoll = random(1, 10) - 2;
-      }
-      totalModifier += diceRoll;
-      let penRoll = totalModifier + Math.Min(uncappedPV, cappedPV);
-      if (penRoll > target) {
-        successes++;
-      }
-    }
-    if (successes >= 1) {
-      penetrations++;
-    }
-    uncappedPV -= 2;
-  }
-  return penetrations;
-}
-function random(min, max) {
-  let range = max - min;
-  return min + Math.round(Math.random() * range);
-}
-function expectedPenetrations(av, bonus, maxBonus) {
-  av = Number(av);
-  bonus = Number(bonus);
-  maxBonus = Number(maxBonus);
-  let chanceFor = [1];
-  let currChanceFor = 1;
-  let chanceToContinue = 1;
-  while (currChanceFor > .00001) {
-    let effectiveBonus = Math.min(bonus, maxBonus);
-    let neededRoll = av + 1 - effectiveBonus;
-    console.log(`Bonus: ${bonus}, AV: ${av}, Capped Bonus: ${effectiveBonus}, Roll Needed: ${neededRoll}`);
-    currChanceFor = chanceForOneSuccess(neededRoll) * chanceToContinue;
-    chanceToContinue *= chanceForThreeSuccess(neededRoll);
-    chanceFor.push(currChanceFor);
-    bonus -= 2;
-  }
-  let expectedPenetrations = 0;
-  for (let i = 1; i < chanceFor.length; i++) {
-    expectedPenetrations += chanceFor[i];
-  }
-  return expectedPenetrations.toPrecision(4);
-}
-function chanceToSucceed(neededRoll) {
-  let startingNumber = -1;
-  let interval = 8;
-  if (neededRoll <= startingNumber) return 1;
-  let normalizedRoll = neededRoll;
-  let numIntervals = Math.floor(normalizedRoll / interval);
-  let withinInterval = normalizedRoll % interval;
-  let intervalChance = .1;
-  if (numIntervals > 0) {
-    let strChance = '0.';
-    for (let i = 0; i < numIntervals; i++) {
-      strChance += '9';
-    }
-    strChance += '1';
-    intervalChance = Number(strChance);
-  }
-  let withinChance = withinInterval / Math.pow(10, numIntervals + 1);
-  return 1 - (intervalChance + withinChance);
-}
-function chanceForOneSuccess(neededRoll) {
-  let failChance = 1 - chanceToSucceed(neededRoll);
-  return 1 - failChance * failChance * failChance;
-}
-function chanceForThreeSuccess(neededRoll) {
-  let passChance = chanceToSucceed(neededRoll);
-  return passChance * passChance * passChance;
-}
-function getModifier(attribute) {
-  return Math.floor((attribute - 16) / 2);
-}
 class Combat {
   constructor(attacker, target) {
     this.attacker = void 0;
     this.defender = void 0;
-    this.turns = [];
+    this.rounds = [];
     this.attacker = attacker;
     this.defender = target;
   }
   bumpAttack() {
-    let attacks = this.getAttacks(this.attacker, this.attacker.primary);
+    let attackSets = [];
+    attackSets.push(this.getAttacks(this.attacker, this.attacker.primary));
     for (let i = 0; i < this.attacker.limbs.length; i++) {
       let limb = this.attacker.limbs[i];
       if (this.attacker.swfOn && limb.multiweaponAffected) continue;
       if (limb.offhand == 0) continue;
       if (!limb.item.isWeapon && limb.slot == "floating") continue;
-      attacks.concat(this.getAttacks(this.attacker, i));
+      attackSets.push(this.getAttacks(this.attacker, i));
     }
-    this.turns.push(new Turn(`Turn ${this.turns.length + 1}: Bump Attack`, attacks));
+    let weapon = this.attacker.limbs[this.attacker.primary].item;
+    let energyCost = weapon.type == 'shortBlade' && this.attacker.skills['Short Blade Expertise'] ? 750 : 1000;
+    this.rounds.push(new Round(`Round ${this.rounds.length + 1}: Bump Attack`, attackSets, energyCost));
   }
   getAttacks(attacker, limb) {
     let weapon = attacker.limbs[limb].item;
     if (!weapon.isWeapon) weapon = defaultWeapon;
+
+    // Determine how likely a second attack is
+    let secondAttackChance = 0;
+    if (limb == attacker.primary && attacker.swfOn) {
+      if (attacker.skills['Weapon Master']) secondAttackChance = 1;
+      if (attacker.skills['Weapon Expertise']) secondAttackChance = 0.5;
+    } else if (limb != attacker.primary && weapon.type == 'shortBlade') {
+      if (attacker.skills['Jab']) secondAttackChance = 1;
+    }
+
+    // Build attacks
+    let attackTitle = limb == attacker.primary ? 'Primary ' : 'Offhand ';
+    let attack1 = new Attack(attacker, limb, `Initial ${attackTitle} Attack (${limb.name}) - ${weapon.name}`);
+    let attack2 = new Attack(attacker, limb, `Follow-Up ${attackTitle} Attack (${limb.name}) - ${weapon.name}`);
+    attack2.activationChance = secondAttackChance;
+
+    // Next actions depend on weapon type
     switch (weapon.type) {
-      case "cudgel":
-        let attack = new CudgelAttack(attacker, limb);
-        if (limb != attacker.primary) return [attack];
-        let backswing = new CudgelBackswing(attacker, limb);
-        return [attack, backswing];
-      case "longBlade":
-        break;
       case "shortBlade":
-        break;
       case "axe":
-        break;
+      case "longBlade":
+        return [attack1, attack2];
+      // Cudgels need backswing handled
+      case "cudgel":
       default:
+        if (limb != attacker.primary || !attacker.skills['Backswing']) return [attack1, attack2];
+        let backswing1 = new Attack(attacker, limb, `Initial Backswing Attack (${limb.name}) - ${weapon.name}`);
+        let backswing2 = new Attack(attacker, limb, `Follow-Up Backswing Attack (${limb.name}) - ${weapon.name}`);
+        backswing1.activationChance = 0.25;
+        backswing2.activationChance = secondAttackChance;
+        return [attack1, [backswing1, backswing2], attack2];
     }
   }
   getTurnExpectedDamage(turn, defender) {
@@ -139,92 +76,60 @@ class Combat {
   }
 }
 _registerDecorators(Combat, {
-  fields: ["attacker", "defender", "turns"]
+  fields: ["attacker", "defender", "rounds"]
 });
-class Turn {
-  constructor(name, attacks, ...args) {
-    this.attacks = [];
+class Round {
+  constructor(name, attackSets, energyCost) {
+    this.attackSets = [];
+    this.energyCost = void 0;
     this.name = void 0;
     this.name = name;
-    this.attacks = attacks;
-    this.attacks.concat(args);
+    this.attackSets = attackSets;
+    this.energyCost = energyCost;
   }
-}
-_registerDecorators2(Turn, {
-  fields: ["attacks", "name"]
-});
-class CudgelBackswing {
-  constructor(attacker, limb, bonusPV = 0, bonusMaxPV = 0) {
-    this.baseCudgelAttack = void 0;
-    this.backswingChance = 0;
-    this.baseCudgelAttack = new CudgelAttack(attacker, limb, bonusPV, bonusMaxPV);
-    for (let skill of attacker.skills) {
-      switch (skill) {
-        case 'Backswing':
-          this.backswingChance = .25;
-          break;
-      }
+  expectedRoundDamage(defender) {
+    let setResults = [];
+    for (let attackSet of this.attackSets) {
+      setResults.push(this.runAttackSet(attackSet, defender));
     }
+    console.log(setResults);
   }
-  getExpectedDamage(defender) {
-    return this.baseCudgelAttack.getExpectedDamage(defender) * this.backswingChance;
-  }
-}
-_registerDecorators3(CudgelBackswing, {
-  fields: ["baseCudgelAttack", "backswingChance"]
-});
-class CudgelAttack {
-  constructor(attacker, limb, bonusPV = 0, bonusMaxPV = 0) {
-    this.baseAttack = void 0;
-    this.dazeChance = 0;
-    this.baseAttack = new Attack(attacker, limb);
-    this.dazeChance = this.baseAttack.criticalChance;
-    for (let skill of attacker.skills) {
-      switch (skill) {
-        case 'Cudgel Proficiency':
-          this.baseAttack.hitBonus += 2;
-          break;
-        case 'Bludgeon':
-          this.dazeChance += .5;
-          break;
+  runAttackSet(attackSet, defender, expected = false) {
+    let attackData = [];
+    for (let attack of attackSet) {
+      if (Array.isArray(attack)) {
+        attackData.concat(this.runAttackSet(attack, defender, expected));
+        continue;
       }
+      let result = expected ? getExpectedDamage(attack, defender) : rollAttack(attack, defender);
+      attackData.push(result);
     }
-    this.baseAttack.pvBonus += bonusPV;
-    this.baseAttack.pvMaxBonus += bonusMaxPV;
-  }
-  getExpectedDamage(defender) {
-    let critAttack = new CudgelAttack(this.baseAttack.attacker, this.baseAttack.limbNum, 1, 1);
-    let critDamage = critAttack.baseAttack.getExpectedDamage(defender);
-    let normalDamage = this.baseAttack.getExpectedDamage(defender);
-    let hitChance = this.baseAttack.getHitChance(defender);
-    // Critical hits always hit, so do not modify by hit chance
-    critDamage = critDamage * this.baseAttack.criticalChance;
-    // If the attack is not a critical hit, it can miss so modify by hit chance
-    normalDamage = (1 - this.baseAttack.criticalChance) * normalDamage * hitChance;
-    return normalDamage + critDamage;
+    return attackData;
   }
 }
-_registerDecorators4(CudgelAttack, {
-  fields: ["baseAttack", "dazeChance"]
+_registerDecorators2(Round, {
+  fields: ["attackSets", "energyCost", "name"]
 });
 class Attack {
-  constructor(attacker, limb) {
-    this.offhandModifier = 0;
-    this.offhandFactor = 1;
-    this.hits = 1;
+  constructor(attacker, limb, name) {
+    this.activationChance = 0;
     this.bonusPenetrations = 0;
     this.pvBonus = 0;
     this.pvMaxBonus = 0;
     this.hitBonus = 0;
     this.criticalChance = .05;
-    this.electric = 0;
-    this.heat = 0;
-    this.cold = 0;
+    this.cleaveChance = 0;
+    this.bleedChance = 0;
+    this.dazeChance = 0;
+    this.dismemberChance = 0;
+    this.elementalDamage = new ElementalDamage();
+    this.isPrimary = false;
     this.limb = void 0;
     this.limbNum = void 0;
-    this.isPrimary = false;
     this.weapon = void 0;
     this.attacker = void 0;
+    this.name = void 0;
+    this.name = name;
     this.attacker = attacker;
     this.isPrimary = this.attacker.primary == limb;
     this.limb = this.attacker.limbs[limb];
@@ -232,48 +137,139 @@ class Attack {
     let weapon = this.limb.item;
     if (!weapon.isWeapon) weapon = defaultWeapon;
     this.weapon = weapon;
-    for (let skill of attacker.skills) {
-      if (this.attacker.swfOn) {
-        this.offhandFactor = 0;
-        switch (skill) {
-          case 'Weapon Mastery':
-            this.hits = 2;
-            break;
-          case 'Weapon Expertise':
-            this.hits = Math.max(this.hits, 1.5);
-            break;
-          case 'Penetrating Strikes':
-            this.bonusPenetrations = 1;
-            break;
-          default:
-            break;
-        }
-      } else if (this.limb.multiweaponAffected) {
-        switch (skill) {
-          case 'Multiweapon Mastery':
-            this.offhandModifier = .50;
-            break;
-          case 'Multiweapon Expertise':
-            this.offhandModifier = Math.max(this.offhandModifier, .35);
-            break;
-          case 'Multiweapon Proficiency':
-            this.offhandModifier = Math.max(this.offhandModifier, .2);
-            break;
-          default:
-            break;
-        }
-      }
+    if (this.isPrimary) this.activationChance = 1;
+
+    // Set up data based off of skills
+    if (this.attacker.swfOn) {
+      this.applySingleWeaponFightingSkills();
+    } else if (this.limb.multiweaponAffected && !this.isPrimary) {
+      this.applyMultiweaponFightingSkills();
     }
+    switch (this.weapon.type) {
+      case 'shortBlade':
+        this.applyShortBladeSkills();
+        break;
+      case 'axe':
+        this.applyAxeSkills();
+        break;
+      case 'longBlade':
+        this.applyLongBladeSkills();
+        break;
+      case 'cudgel':
+      default:
+        this.applyCudgelSkills();
+        break;
+    }
+
+    // Set up data based off of mods
+    this.applyMods(this.weapon);
+
+    // Add weapon based hit bonus
+    this.hitBonus += weapon.hitBonus;
+  }
+  getCritPvBonus() {
+    let weapon = this.weapon;
+    let bonus = 0;
+    switch (weapon.type) {
+      case 'longBlade':
+        bonus += 2;
+      case 'cudgel':
+      case 'shortBlade':
+      case 'axe':
+        bonus += 1;
+        break;
+      default:
+        return 1;
+    }
+    return bonus;
+  }
+  run(defender) {
+    let metrics = [];
+    let weapon = this.weapon;
+    if (this.offhandFactor > 0 && this.offhandModifier) {}
+    for (let i = 0; i < this.hits; i++) {
+      let data = {
+        roll: 0,
+        crit: false,
+        hit: false,
+        penetrations: 0,
+        damage: 0
+      };
+      data.roll = random(1, 20);
+      let minCrit = 21 - Math.floor(20 * this.criticalChance);
+      data.crit = data.roll >= minCrit;
+      data.hit = this.hitBonus + getModifier(this.attacker.attributes.agility);
+      if (!data.hit && !data.crit) {
+        metrics.push(data);
+        continue;
+      }
+      let critPvBonus = data.crit ? this.getCritPvBonus() : 0;
+      let pv = this.pvBonus + getModifier(this.attacker.attributes.strength) + weapon.pvBonus;
+      let pvMax = this.pvMaxBonus + weapon.pvCap;
+      data.penetrations = rollPenetrations(defender.av, pv + critPvBonus, pvMax + critPvBonus);
+      if (data.crit) data.penetrations++;
+      data.penetrations += this.bonusPenetrations;
+      let roller = new Roll(weapon.damage);
+      for (let p = 0; p < data.penetrations; p++) {
+        data.damage += roller.roll();
+      }
+      metrics.push(data);
+    }
+    return metrics;
+  }
+  applySingleWeaponFightingSkills() {
+    if (this.attacker.skills['Penetrating Strikes']) {
+      this.bonusPenetrations = 1;
+    }
+  }
+  applyMultiweaponFightingSkills() {
+    if (this.attacker.skills['Multiweapon Master']) {
+      this.activationChance = .50 + this.limb.offhand;
+    } else if (this.attacker.skills['Multiweapon Expertise']) {
+      this.activationChance = .35 + this.limb.offhand;
+    } else if (this.attacker.skills['Multiweapon Proficiency']) {
+      this.activationChance = .20 + this.limb.offhand;
+    }
+  }
+  applyAxeSkills() {
+    if (this.attacker.skills['Axe Proficiency']) {
+      this.hitBonus += 2;
+    }
+    if (this.attacker.skills['Cleave']) {
+      this.cleaveChance = .75;
+    }
+    if (this.attacker.skills['Dismember']) {
+      this.dismemberChance = this.weapon.hands === 1 ? 0.03 : 0.06;
+    }
+  }
+  applyCudgelSkills() {
+    if (this.attacker.skills['Cudgel Proficiency']) {
+      this.hitBonus += 2;
+    }
+    if (this.attacker.skills['Bludgeon']) {
+      this.dazeChance = 0.5;
+    }
+  }
+  applyShortBladeSkills() {
+    if (this.attacker.skills['Short Blade Expertise']) {
+      this.hitBonus += 1;
+    }
+    if (this.attacker.skills['Bloodletter']) {
+      this.bleedChance = 0.75;
+    }
+  }
+  applyLongBladeSkills() {}
+  applyMods(weapon) {
     for (let mod of weapon.mods) {
       switch (mod) {
         case "Electrified":
-          this.electric += electrifiedTierDamage[weapon.tier];
+          this.elementalDamage.addElectric(weapon.tier);
           break;
         case "Flaming":
-          this.heat += heatAndColdTierDamage[weapon.tier];
+          this.elementalDamage.addHeat(weapon.tier);
           break;
         case "Freezing":
-          this.cold += heatAndColdTierDamage[weapon.tier];
+          this.elementalDamage.addCold(weapon.tier);
           break;
         case "Sharp":
           this.pvBonus += 1;
@@ -282,145 +278,158 @@ class Attack {
       }
     }
   }
-  getHitChance(defender) {
-    let totalHitBonus = this.hitBonus + getModifier(this.attacker.attributes.agility);
-    let dv = defender.dv;
-    let rollNecessary = dv - totalHitBonus - 1;
-    return 1 - Math.max(rollNecessary * 0.5, 0);
+}
+_registerDecorators3(Attack, {
+  fields: ["activationChance", "bonusPenetrations", "pvBonus", "pvMaxBonus", "hitBonus", "criticalChance", "cleaveChance", "bleedChance", "dazeChance", "dismemberChance", "elementalDamage", "isPrimary", "limb", "limbNum", "weapon", "attacker", "name"]
+});
+const electrifiedTierDamage = ['1', '1', '1 + 1d2', '2 + 1d2', '3 + 1d3', '4 + 1d3', '5 + 1d4', '6 + 1d4', '7 + 1d5'];
+const heatAndColdTierDamage = ['1', '1', '2', '1 + 1d3', '2 + 1d3', '3 + 1d3', '4 + 1d3', '5 + 1d3', '5 + 1d5'];
+class ElementalDamage {
+  constructor() {
+    this.electric = new Roll('0');
+    this.heat = new Roll('0');
+    this.cold = new Roll('0');
   }
-  getExpectedDamage(defender) {
-    let weapon = this.weapon;
-    let pv = this.pvBonus + getModifier(this.attacker.attributes.strength) + weapon.pvBonus;
-    let pvMax = this.pvMaxBonus + weapon.pvCap;
-    let av = defender.av;
-    let damageRoll = new Roll(weapon.damage).getAverage();
-    let pens = expectedPenetrations(av, pv, pvMax) + this.bonusPenetrations;
-    if (this.isPrimary) {
-      return this.hits * (pens * damageRoll + this.getElementalDamage(defender));
-    }
-    let limbData = this.limb;
-    let offhandScalar = (this.offhandModifier + limbData.offhand) * this.offhandFactor;
-    return this.hits * (pens * damageRoll + this.getElementalDamage(defender)) * offhandScalar;
+  addElectric(tier) {
+    this.electric = new Roll(electrifiedTierDamage[tier]);
   }
-  getElementalDamage(defender) {
-    let dmg = 0;
-    dmg += this.electric - this.electric * defender.resistances.electric;
-    dmg += this.heat - this.heat * defender.resistances.heat;
-    return dmg + (this.cold - this.cold * defender.resistances.cold);
+  addHeat(tier) {
+    this.heat = new Roll(heatAndColdTierDamage[tier]);
+  }
+  addCold(tier) {
+    this.cold = new Roll(heatAndColdTierDamage[tier]);
+  }
+  getAverage(defender) {
+    let coldRes = defender.resistances.cold;
+    let heatRes = defender.resistances.heat;
+    let elecRes = defender.resistances.electric;
+    let heatDamage = Math.floor(this.heat.getAverage() / (100 - heatRes));
+    let coldDamage = Math.floor(this.cold.getAverage() / (100 - coldRes));
+    let electricDamage = Math.floor(this.electric.getAverage() / (100 - elecRes));
+    return {
+      heatDamage,
+      coldDamage,
+      electricDamage
+    };
+  }
+  getDamage(defender) {
+    let coldRes = defender.resistances.cold;
+    let heatRes = defender.resistances.heat;
+    let elecRes = defender.resistances.electric;
+    let heatDamage = Math.floor(this.heat.roll() / (100 - heatRes));
+    let coldDamage = Math.floor(this.cold.roll() / (100 - coldRes));
+    let electricDamage = Math.floor(this.electric.roll() / (100 - elecRes));
+    return {
+      heatDamage,
+      coldDamage,
+      electricDamage
+    };
   }
 }
-_registerDecorators5(Attack, {
-  fields: ["offhandModifier", "offhandFactor", "hits", "bonusPenetrations", "pvBonus", "pvMaxBonus", "hitBonus", "criticalChance", "electric", "heat", "cold", "limb", "limbNum", "isPrimary", "weapon", "attacker"]
+_registerDecorators4(ElementalDamage, {
+  fields: ["electric", "heat", "cold"]
 });
-class DiceRoll {
-  constructor(diceString) {
-    this.averageRoll = 0;
-    this.diceNum = void 0;
-    this.diceCount = void 0;
-    let parts = diceString.split('d');
-    this.diceNum = Number(parts[1]);
-    this.diceCount = Math.max(1, Number(parts[0]));
-    this.averageRoll = (this.diceNum / 2 + 0.5) * this.diceCount;
-  }
-  roll() {
-    let result = 0;
-    for (let i = 0; i < this.diceCount; i++) {
-      result += random(1, this.diceNum);
-    }
-    return result;
-  }
+function getHitChance(attack, defender) {
+  let totalHitBonus = attack.hitBonus + getModifier(attack.attacker.attributes.agility);
+  let dv = defender.dv;
+  let rollNecessary = dv - totalHitBonus - 1;
+  return 1 - Math.max(rollNecessary * 0.05, 0);
 }
-_registerDecorators6(DiceRoll, {
-  fields: ["averageRoll", "diceNum", "diceCount"]
-});
-class Roll {
-  constructor(string) {
-    this.tokens = [];
-    this.averageRoll = void 0;
-    this.tokenize(string);
-  }
-  roll() {
-    let storedOperation = '+';
-    let total = 0;
-    for (let token of this.tokens) {
-      switch (typeof token) {
-        case "string":
-          storedOperation = token;
-          break;
-        case "number":
-          total = storedOperation == '+' ? total + token : total - token;
-          break;
-        case "object":
-          let roll = token.roll();
-          total = storedOperation == '+' ? total + roll : total - roll;
-          break;
-      }
-    }
-    return total;
-  }
-  getAverage() {
-    if (this.averageRoll != undefined) return this.averageRoll;
-    let storedOperation = '+';
-    let total = 0;
-    for (let token of this.tokens) {
-      switch (typeof token) {
-        case "string":
-          storedOperation = token;
-          break;
-        case "number":
-          total = storedOperation == '+' ? total + token : total - token;
-          break;
-        case "object":
-          let avg = token.averageRoll;
-          total = storedOperation == '+' ? total + avg : total - avg;
-          break;
-      }
-    }
-    this.averageRoll = total;
-    return total;
-  }
-  tokenize(rollString) {
-    this.tokens = [];
-    let currToken = '';
-    for (let char of rollString) {
-      switch (char) {
-        case ' ':
-          if (currToken != '') this.addToken(currToken);
-          currToken = '';
-          break;
-        case '+':
-        case '-':
-          if (currToken != '') {
-            this.addToken(currToken);
-            currToken = '';
-          }
-          this.addToken(char);
-          break;
-        default:
-          currToken += char;
-      }
-    }
-    if (currToken != '') this.addToken(currToken);
-  }
-  addToken(token) {
-    let isDice = token.includes('d');
-    let isModifier = !isNaN(token);
-    if (isDice) {
-      let roll = new DiceRoll(token);
-      this.tokens.push(roll);
-    } else if (isModifier) {
-      this.tokens.push(Number(token));
-    } else {
-      this.tokens.push(token);
-    }
-  }
-}
-_registerDecorators7(Roll, {
-  fields: ["tokens", "averageRoll"]
-});
-const electrifiedTierDamage = [1, 1, 2.5, 3.5, 5, 6, 7.5, 8.5, 10];
-const heatAndColdTierDamage = [1, 1, 2, 3, 4, 5, 6, 7, 8];
+function getExpectedNonCritDamage(attack, defender) {
+  let weapon = attack.weapon;
+  let pv = attack.pvBonus + getModifier(attack.attacker.attributes.strength) + weapon.pvBonus;
+  let pvMax = attack.pvMaxBonus + weapon.pvCap;
+  let av = defender.av;
 
-/* ========================== Exports ============================ */
+  // Gather necessary data points
+  let damageRoll = new Roll(weapon.damage).getAverage();
+  let pens = expectedPenetrations(av, pv, pvMax) + attack.bonusPenetrations;
+  let elementalDamage = attack.elementalDamage;
+  let hitChance = getHitChance(attack, defender);
 
-export { expectedPenetrations };
+  // Weight damage by activation and hit chance
+  return {
+    penetrations: pens * attack.activationChance * hitChance,
+    damage: damageRoll * pens * attack.activationChance * hitChance,
+    elementalDamage: elementalDamage.getAverage(defender) * attack.activationChance * hitChance
+  };
+}
+function getExpectedCritDamage(attack, defender) {
+  let weapon = attack.weapon;
+  let pv = attack.pvBonus + getModifier(attack.attacker.attributes.strength) + weapon.pvBonus;
+  let pvMax = attack.pvMaxBonus + weapon.pvCap;
+  let av = defender.av;
+  let pvBonus = attack.getCritPvBonus();
+
+  // Gather up necessary data points
+  let damageRoll = new Roll(weapon.damage).getAverage();
+  let elementalDamage = attack.elementalDamage;
+  let hitChance = getHitChance(attack, defender);
+  let pens = expectedPenetrations(av, pv + pvBonus, pvMax + pvBonus) + attack.bonusPenetrations + 1;
+
+  // Weight damage by activation and hit chance
+  return {
+    penetrations: pens * attack.activationChance * hitChance,
+    damage: damageRoll * pens * attack.activationChance * hitChance,
+    elementalDamage: elementalDamage.getAverage(defender) * attack.activationChance * hitChance
+  };
+}
+function getExpectedDamage(attack, defender) {
+  let critChance = attack.critChance;
+  let normalChance = 1 - critChance;
+  let normalDamage = getExpectedNonCritDamage(attack, defender);
+  let critDamage = getExpectedCritDamage(attack, defender);
+  let hitChance = getHitChance(attack, defender);
+
+  // Expected damage is the sum of the weighted crit damage and weighted normal damage
+  return {
+    penetrations: normalDamage.penetrations * normalChance + critDamage.penetrations * critChance,
+    damage: normalDamage.damage * normalChance + critDamage.damage * critChance,
+    elementalDamage: normalDamage.elementalDamage * normalDamage + critDamage.elementalDamage * critChance,
+    activationChance: hitChance * attack.activationChance
+  };
+}
+function rollAttack(attack, defender) {
+  let rollData = {
+    crit: false,
+    hit: false,
+    hitTotal: 0,
+    penetrations: 0,
+    damage: 0,
+    elementalDamage: {}
+  };
+
+  // If attack did not activate, there should be no data returned
+  if (attack.activationChance < Math.random()) return undefined;
+
+  // Roll hit to see if it connects or crits
+  let weapon = attack.weapon;
+  let hitRoll = random(1, 20);
+  let critThreshold = 21 - Math.floor(20 * attack.critChance);
+  rollData.hitTotal = hitRoll + getModifier(attack.attacker.attributes.agility) + attack.hitBonus;
+  rollData.crit = hitRoll >= critThreshold;
+  rollData.hit = rollData.hitTotal >= defender.dv;
+
+  // If it did not hit and did not crit, return the partial roll data
+  if (!(rollData.hit || rollData.crit)) return rollData;
+
+  // Calculate penetrations
+  let critPvBonus = rollData.crit ? attack.getCritPvBonus() : 0;
+  let pv = attack.pvBonus + getModifier(attack.attacker.attributes.strength) + weapon.pvBonus + critPvBonus;
+  let pvMax = attack.pvMaxBonus + weapon.pvCap + critPvBonus;
+  let av = defender.av;
+  let pens = rollPenetrations(av, pv, pvMax) + attack.bonusPenetrations;
+  if (rollData.crit) pens++;
+
+  // Calculate damage
+  let elementalDamage = attack.elementalDamage;
+  let damageRoll = new Roll(weapon.damage);
+  for (let i = 0; i < pens; i++) {
+    rollData.damage += damageRoll.roll();
+  }
+  rollData.elementalDamage = elementalDamage.getDamage(defender);
+
+  // Return roll data
+  return rollData;
+}
+export { Combat, Round, DiceRoll, Roll, getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random };

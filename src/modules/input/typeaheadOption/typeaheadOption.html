@@ -1,0 +1,11 @@
+<template>
+    <div class="container" onclick={handleClick}>
+        <div class="text">
+            <p class="primary">{value.primary}</p>
+            <p class="secondary">{value.secondary}</p>
+        </div>
+        <div class="image" if:true={imageSrc}>
+            <img src={imageSrc}>
+        </div>
+    </div>
+</template>

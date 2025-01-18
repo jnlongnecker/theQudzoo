@@ -370,6 +370,15 @@
             "properties": {
                 "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
             }
+        },
+        {
+            "id": "Combat-Calculator",
+            "path": "/combat",
+            "contentTemplate": "$contentDir/combatInfo.md",
+            "layoutTemplate": "$layoutsDir/combat_layout.njk",
+            "properties": {
+                "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
+            }
         }
     ]
 }

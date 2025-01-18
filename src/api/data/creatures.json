@@ -1,11 +1,14 @@
 [
     {
-        "name": "test",
+        "name": "base",
+        "token": "/1/asset/s/latest/public/assets/images/callingImages/nomad.png",
+        "faction": "Player",
         "hp": 1,
         "av": 0,
         "dv": 0,
         "ma": 0,
         "qn": 100,
+        "level": 1,
         "resistances": {
             "acid": 0.0,
             "electric": 0.0,
@@ -22,21 +25,27 @@
         },
         "mutations": [],
         "swfOn": false,
-        "skills": [],
+        "skills": {},
+        "anatomy": "humanoid",
         "limbs": [],
         "effects": [],
         "primary": 0,
         "mentalShield": false,
         "nephilim": false,
-        "equipmentTable": false
+        "equipmentTable": false,
+        "isKin": false,
+        "hidden": true
     },
     {
-        "name": "Test Player",
+        "name": "Test",
+        "token": "/1/asset/s/latest/public/assets/images/callingImages/nomad.png",
+        "faction": "Player",
         "hp": 100,
         "av": 10,
         "dv": 10,
         "ma": 6,
         "qn": 100,
+        "level": 1,
         "resistances": {
             "acid": 0.0,
             "electric": 0.0,
@@ -53,14 +62,15 @@
         },
         "mutations": [],
         "swfOn": true,
-        "skills": [
-            "Cudgel Proficiency",
-            "Bludgeon",
-            "Backswing",
-            "Opportune Strikes",
-            "Weapon Mastery",
-            "Penetrating Strikes"
-        ],
+        "skills": {
+            "Cudgel Proficiency": true,
+            "Bludgeon": true,
+            "Backswing": true,
+            "Opportune Strikes": true,
+            "Weapon Mastery": true,
+            "Penetrating Strikes": true
+        },
+        "anatomy": "humanoid",
         "limbs": [
             {
                 "name": "Head",
@@ -94,14 +104,36 @@
                 "name": "Left Hand",
                 "slot": "hand",
                 "offhand": 0.15,
-                "item": {},
+                "item": {
+                    "name": "Fist",
+                    "pvBonus": 0,
+                    "pvCap": 999,
+                    "hitBonus": 0,
+                    "damage": "",
+                    "type": "cudgel",
+                    "mods": [0, 0, 0],
+                    "tier": 1,
+                    "isWeapon": true,
+                    "hands": 1
+                },
                 "multiweaponAffected": true
             },
             {
                 "name": "Right Hand",
                 "slot": "hand",
                 "offhand": 0.15,
-                "item": {},
+                "item": {
+                    "name": "Fist",
+                    "pvBonus": 0,
+                    "pvCap": 999,
+                    "hitBonus": 0,
+                    "damage": "",
+                    "type": "cudgel",
+                    "mods": [0, 0, 0],
+                    "tier": 1,
+                    "isWeapon": true,
+                    "hands": 1
+                },
                 "multiweaponAffected": true
             },
             {
@@ -130,6 +162,291 @@
         "primary": 4,
         "mentalShield": false,
         "nephilim": false,
-        "equipmentTable": false
+        "equipmentTable": false,
+        "isKin": false,
+        "hidden": true
+    },
+    {
+        "name": "Mutant Player",
+        "token": "/1/asset/s/latest/public/assets/images/callingImages/nomad.png",
+        "faction": "Player",
+        "hp": 1,
+        "av": 0,
+        "dv": 3,
+        "ma": 1,
+        "qn": 100,
+        "level": 1,
+        "resistances": {
+            "acid": 0.0,
+            "electric": 0.0,
+            "cold": 0.0,
+            "heat": 0.0
+        },
+        "attributes": {
+            "strength": 10,
+            "agility": 10,
+            "toughness": 10,
+            "willpower": 10,
+            "intelligence": 10,
+            "ego": 10
+        },
+        "mutations": [],
+        "swfOn": false,
+        "skills": {},
+        "anatomy": "humanoid",
+        "limbs": [
+            {
+                "name": "Head",
+                "slot": "headgear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Body",
+                "slot": "body",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Feet",
+                "slot": "footwear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Hands",
+                "slot": "handwear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Left Hand",
+                "slot": "hand",
+                "offhand": 0.15,
+                "item": {
+                    "name": "Fist",
+                    "pvBonus": 0,
+                    "pvCap": 999,
+                    "hitBonus": 0,
+                    "damage": "",
+                    "type": "cudgel",
+                    "mods": [0, 0, 0],
+                    "tier": 1,
+                    "isWeapon": true,
+                    "hands": 1
+                },
+                "multiweaponAffected": true
+            },
+            {
+                "name": "Right Hand",
+                "slot": "hand",
+                "offhand": 0.15,
+                "item": {
+                    "name": "Fist",
+                    "pvBonus": 0,
+                    "pvCap": 999,
+                    "hitBonus": 0,
+                    "damage": "",
+                    "type": "cudgel",
+                    "mods": [0, 0, 0],
+                    "tier": 1,
+                    "isWeapon": true,
+                    "hands": 1
+                },
+                "multiweaponAffected": true
+            },
+            {
+                "name": "Left Arm",
+                "slot": "armgear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Right Arm",
+                "slot": "armgear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Back",
+                "slot": "backwear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            }
+        ],
+        "effects": [],
+        "primary": 4,
+        "mentalShield": false,
+        "nephilim": false,
+        "equipmentTable": false,
+        "isKin": false,
+        "hidden": true
+    },
+    {
+        "name": "True Kin Player",
+        "token": "/1/asset/s/latest/public/assets/images/casteImages/artifex.png",
+        "faction": "Player",
+        "hp": 1,
+        "av": 0,
+        "dv": 3,
+        "ma": 1,
+        "qn": 100,
+        "level": 1,
+        "resistances": {
+            "acid": 0.0,
+            "electric": 0.0,
+            "cold": 0.0,
+            "heat": 0.0
+        },
+        "attributes": {
+            "strength": 10,
+            "agility": 10,
+            "toughness": 10,
+            "willpower": 10,
+            "intelligence": 10,
+            "ego": 10
+        },
+        "mutations": [],
+        "swfOn": false,
+        "skills": {},
+        "anatomy": "humanoid",
+        "limbs": [
+            {
+                "name": "Head",
+                "slot": "headgear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Body",
+                "slot": "body",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Feet",
+                "slot": "footwear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Hands",
+                "slot": "handwear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Left Hand",
+                "slot": "hand",
+                "offhand": 0.15,
+                "item": {
+                    "name": "Fist",
+                    "pvBonus": 0,
+                    "pvCap": 999,
+                    "hitBonus": 0,
+                    "damage": "",
+                    "type": "cudgel",
+                    "mods": [0, 0, 0],
+                    "tier": 1,
+                    "isWeapon": true,
+                    "hands": 1
+                },
+                "multiweaponAffected": true
+            },
+            {
+                "name": "Right Hand",
+                "slot": "hand",
+                "offhand": 0.15,
+                "item": {
+                    "name": "Fist",
+                    "pvBonus": 0,
+                    "pvCap": 999,
+                    "hitBonus": 0,
+                    "damage": "",
+                    "type": "cudgel",
+                    "mods": [0, 0, 0],
+                    "tier": 1,
+                    "isWeapon": true,
+                    "hands": 1
+                },
+                "multiweaponAffected": true
+            },
+            {
+                "name": "Left Arm",
+                "slot": "armgear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Right Arm",
+                "slot": "armgear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            },
+            {
+                "name": "Back",
+                "slot": "backwear",
+                "offhand": 0,
+                "item": {},
+                "multiweaponAffected": false
+            }
+        ],
+        "effects": [],
+        "primary": 4,
+        "mentalShield": false,
+        "nephilim": false,
+        "equipmentTable": false,
+        "isKin": true,
+        "hidden": true
+    },
+    {
+        "name": "Snapjaw Scavenger",
+        "token": "/1/asset/s/latest/public/assets/images/creatureImages/Snapjaw_scavenger.png",
+        "faction": "Snapjaws",
+        "hp": 3,
+        "av": 0,
+        "dv": 6,
+        "ma": 4,
+        "qn": 100,
+        "level": 1,
+        "resistances": {
+            "acid": 0.0,
+            "electric": 0.0,
+            "cold": 0.0,
+            "heat": 0.0
+        },
+        "attributes": {
+            "strength": 17,
+            "agility": 17,
+            "toughness": 17,
+            "willpower": 17,
+            "intelligence": 17,
+            "ego": 17
+        },
+        "mutations": [],
+        "swfOn": false,
+        "skills": {},
+        "anatomy": "humanoid",
+        "limbs": [],
+        "effects": [],
+        "primary": 0,
+        "mentalShield": false,
+        "nephilim": false,
+        "equipmentTable": true,
+        "isKin": false,
+        "hidden": false
     }
 ]

@@ -1,0 +1,39 @@
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.25rem;
+}
+
+.container:hover {
+    cursor: pointer;
+    background-color: rgba(25, 25, 25, 0.25);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1.5rem;
+}
+
+.primary {
+    font-size: 1.25rem;
+}
+
+.secondary {
+    font-size: 0.875rem;
+}

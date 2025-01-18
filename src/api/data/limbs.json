@@ -10,7 +10,7 @@
         {
             "name": "Horns",
             "slot": "horns",
-            "offhand": 0.20,
+            "offhand": 0.2,
             "item": {},
             "multiweaponAffected": false
         },
@@ -68,7 +68,7 @@
             "slot": "hand",
             "offhand": 0.08,
             "item": {},
-            "multiweaponAffected": false
+            "multiweaponAffected": true
         },
         {
             "name": "Stinger",
