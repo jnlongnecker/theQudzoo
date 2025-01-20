@@ -10,7 +10,7 @@ Perhaps you've figured out how to start this quest already from a prior run that
 
 > This is the habit you get into when exploring new zones; especially if you think there might be something important in the zone. Autoexplore, then [<span class="attribute agility">backspace</span>] and move from there!
 
-For Joppa, this will primarily be the main interesting NPCs; we're interested in speaking with Mehmet, so select Mehmet on the menu and you will automatically walk to him. Press the [<span class="attribute agility">spacebar</span>] key to interact and you'll start up a conversation with Mehmet. We're interested in getting a job from him, so move through that dialogue to get the quest. Once you have the quest, you can press [<span class="attribute agility">q</span>] to open up your quest log and view what you need to do in order to complete the quest.
+For Joppa, this will primarily be the main interesting NPCs; we're interested in speaking with Mehmet, so select Mehmet on the menu and you will automatically walk to him. Press the [<span class="attribute agility">spacebar</span>] key to interact and you'll start up a conversation with Mehmet. We're interested in getting a job from him, so move through that dialogue to get the quest. Once you have the quest, you can press [<span class="attribute agility">q</span>] to open up your [<span class="attribute agility">q</span>]uest log and view what you need to do in order to complete the quest.
 
 ### Water Ritual
 
