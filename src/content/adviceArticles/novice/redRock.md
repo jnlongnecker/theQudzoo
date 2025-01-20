@@ -22,7 +22,7 @@ The concept of factions and reputation is a huge topic, and massively complex. I
 
 At level 1 and especially as new players, tackling the Red Rock dungeon would be very dangerous and probably result in your death. We are still going to head in that direction, but we won't be entering it right away. First, go to the zone north of Joppa by walking to the edge of the screen and transitioning. Autoexplore that zone, and there will be a statue that tells you about a historic site. This is always here, and while we won't be covering its exploration you should try giving it a go once you finish up with this quest. Now, let's get to the dungeon.
 
-![World map view]($assetsDir/images/practical/worldMap.png)
+![World map view]($assetsDir/images/practical/redRockMap.png)
 
 Press [<span class="attribute agility">-</span>] to move to the world map, and move 1 parasang north of Joppa to the parasang pictured. We're 1 parasang south of Red Rock at this point, and you might be curious why we're not moving directly on to that parasang and entering from there. The reason is that there are often packs of bloodthirsty baboons around Red Rock and if we entered from the world map, we would be in the _center_ zone. This means we could potentially be surrounded on _all sides_ by baboons! In order to make sure we have somewhere to retreat to, we're going to approach from the parasang south of Red Rock.
 
