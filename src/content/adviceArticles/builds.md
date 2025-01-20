@@ -124,15 +124,15 @@ This part of your strategy is solely there for when your gimmick simply doesn’
 
 When you’re in the run itself, you will organically start to choose skills as you find necessary to deal with the challenges of the build. These should not be planned rigidly and instead flex to integrate the kinds of equipment you find and the enemies you’re fighting. Even though there usually is not a rigidly defined sequence of skills to pick up, there is a loose hierarchy to order which skills to pick up first.
 
-### Priority 1 : Offense
+### Priority 1 - Offense
 
 As the old saying goes, the best defense is a good offense and this holds true in Qud as well. If the enemy is dead, they can’t kill you. The skills you want are going to be shaped from the style of build you’re going for, but early on they will almost always focus on the first few melee weapon skills. Melee builds should also go for Charge.
 
-### Priority 2 : Survivability
+### Priority 2 - Survivability
 
 Once you have your basic weapon skills and you get to the point where you need to start saving up skill points for the next buy or don’t meet the prerequisites is when you should start branching out into survivability skills. These are skills like Mind’s Compass, Shake It Off, Weathered and Swift Reflexes.
 
-### Priority 3 : Accessories
+### Priority 3 - Accessories
 
 If your build is flowing well; you’re survivable and your combat feels good, start branching off to accessory skills like the Tinkering tree and secondary weapons. These are designed to let your build “win more” as opposed to getting it online, so be sure that your build is online in some capacity before looking here. Note that your build doesn’t have to be _complete_, just functional.
 
