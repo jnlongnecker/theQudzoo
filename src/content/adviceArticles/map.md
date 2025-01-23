@@ -171,7 +171,7 @@ The loot from these places is simply unparalleled; if you can handle galgal then
 
 ![Moon stair]($assetsDir/images/fundamentals/moon.png)
 
-**Recommended Level**: 40
+**Recommended Level**: 35
 
 The Moon Stair is awful and everything wants to kill you. The terrain itself is out to get you; between the dilute warm static giving you any effect possible and the hexagonal crystals spawning Evil Twins of you on destruction it becomes difficult to even move around. Then you have the zero jells that can easily roll into some incredibly crippling effect, the n-dimensional starshells teleporting you 30 strata underground, and the leering stalkers spamming their stun cannon making everything more annoying than it needs to be. Luckily with the starshells you start neutral to them, and can avoid them targeting you with their Space-Time Vortex by wearing an ontological anchor.
 

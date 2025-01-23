@@ -130,7 +130,7 @@ As the old saying goes, the best defense is a good offense and this holds true i
 
 ### Priority 2 : Survivability
 
-Once you have your basic weapon skills and you get to the point where you need to start saving up skill points for the next buy or don’t meet the prerequisites is when you should start branching out into survivability skills. These are skills like Mind’s Compass, Shake It Off, Weathered and Swift Reflexes.
+Once you have your basic weapon skills and you get to the point where you need to start saving up skill points for the next buy or don’t meet the prerequisites is when you should start branching out into survivability skills. These are skills like Mind's Compass, Shake It Off, Weathered and Swift Reflexes.
 
 ### Priority 3 : Accessories
 

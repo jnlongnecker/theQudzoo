@@ -18,24 +18,24 @@ The first section of the game revolves around the legendary quest to Red Rock. T
 
 #### Must-Have
 
-- Equipment for every gear slot
-- Steel or above weaponry
-- Mechanical Wings
+-   Equipment for every gear slot
+-   Steel or above weaponry
+-   Mechanical Wings
 
 #### Nice-to-Have
 
-- Sphere of Negative Weight
-- Pickaxe
-- Miner’s Helmet
+-   Sphere of Negative Weight
+-   Pickaxe
+-   Miner’s Helmet
 
 ### Skill Wishlist - Red Rock
 
-- Swift Reflexes
-- Acrobatics
-- Hurdle
-- Charge
-- Mind’s Compass
-- Basic weapon skills
+-   Swift Reflexes
+-   Acrobatics
+-   Hurdle
+-   Charge
+-   Mind's Compass
+-   Basic weapon skills
 
 ## Grit Gate (Level 10-18)
 
@@ -59,29 +59,29 @@ The second section involves the quests just up to Decoding the Signal, all revol
 
 #### Must-Have
 
-- Sparbine
-- Carbide or above weaponry
-- Steel tier or above equipment for every slot
-- Glowsphere/Floating Glowsphere (if no Night Vision)
+-   Sparbine
+-   Carbide or above weaponry
+-   Steel tier or above equipment for every slot
+-   Glowsphere/Floating Glowsphere (if no Night Vision)
 
 #### Nice-to-Have
 
-- Hologram Bracelet
-- Elemental damage option
-- Sower Seeds x30
-- Stopsvalin
+-   Hologram Bracelet
+-   Elemental damage option
+-   Sower Seeds x30
+-   Stopsvalin
 
 ### Skill Wishlist - Grit Gate
 
-- Tinker I
-- Disassemble
-- Dual Wield
-- Ambidexterity
-- Shake It Off
-- Meal Preparation
-- Mid-Level Weapon Skills
-- Block
-- Juke
+-   Tinker I
+-   Disassemble
+-   Dual Wield
+-   Ambidexterity
+-   Shake It Off
+-   Meal Preparation
+-   Mid-Level Weapon Skills
+-   Block
+-   Juke
 
 ## Bethesda Susa (Level 18-26)
 
@@ -117,30 +117,30 @@ At the third section of the game, I’m ready to rock through Bethesda Susa and 
 
 #### Must-Have
 
-- Fullerite and above weaponry
-- Piecemeal fullerite-tier equipment
+-   Fullerite and above weaponry
+-   Piecemeal fullerite-tier equipment
 
 #### Nice-to-Have
 
-- Portable Walls
-- Schrodinger Pages
-- Metamorphic Polygel
-- Freeze Ray/Flamethrower
-- Ceremonial Vibrokhopesh
+-   Portable Walls
+-   Schrodinger Pages
+-   Metamorphic Polygel
+-   Freeze Ray/Flamethrower
+-   Ceremonial Vibrokhopesh
 
 ### Skill Wishlist - Bethesda Susa
 
-- Calloused
-- Weathered
-- Tinker II
-- Two-weapon Fighting
-- Tumble
-- Jump
-- Snake Oiler
-- Meditate
-- Bow and Rifle
-- Basic Pistol skills
-- Deft Blocking
+-   Calloused
+-   Weathered
+-   Tinker II
+-   Two-weapon Fighting
+-   Tumble
+-   Jump
+-   Snake Oiler
+-   Meditate
+-   Bow and Rifle
+-   Basic Pistol skills
+-   Deft Blocking
 
 ## Endgame (Level 26-35)
 
@@ -188,18 +188,18 @@ Very suddenly, at this section of the game we gain access to extremely powerful 
 
 #### Must-Have
 
-- Flawless Crysteel weaponry
-- Full Flawless Crysteel tier gear
-- 25 DV with some armor/weapon configuration
-- Geomagnetic Disc
-- Light Rail/High-Voltage Arc Winder x2/Hand Rail x2
+-   Flawless Crysteel weaponry
+-   Full Flawless Crysteel tier gear
+-   25 DV with some armor/weapon configuration
+-   Geomagnetic Disc
+-   Light Rail/High-Voltage Arc Winder x2/Hand Rail x2
 
 #### Nice-to-Have
 
-- Anti-Gravity Boots
-- 3D Cobblers
-- Psychic Meridian
-- Tri-Hologram Bracelet
+-   Anti-Gravity Boots
+-   3D Cobblers
+-   Psychic Meridian
+-   Tri-Hologram Bracelet
 
 ### Skill Wishlist - Endgame
 

@@ -12,7 +12,7 @@ The plan to the Spindle has gone slightly awry and now instead of the lifter, th
 
 | Level | Abilities                                                                                                            | Stats                                           |
 | ----- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| 33    | Phasing, Teleportation, Perfect Flight, Nulling gear/Ontological Anchor, Dismembering method, Beguiling, Proselytize | 15 AV and some armor configuration giving 25 DV |
+| 35    | Phasing, Teleportation, Perfect Flight, Nulling gear/Ontological Anchor, Dismembering method, Beguiling, Proselytize | 15 AV and some armor configuration giving 25 DV |
 
 </div>
 
