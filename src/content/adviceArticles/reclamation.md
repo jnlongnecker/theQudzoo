@@ -12,7 +12,7 @@ The Golem created successfully, it is time to ascend the Spindle with Barathrum.
 
 | Level | Abilities                                                                                                                                                                                                                                                                         | Stats |
 | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
-| 40    | Corrosive Gas Generation, 110 Quickness & 125 Move Speed, the Golem, Penetrating Strikes/Ceremonial Vibrokhopesh, High (60+) elemental resistances, Poison Tolerance, Freeze Grenades Mk III, EMP Grenades Mk III, Flashbang Grenades Mk III, Perfect Flight, Disarm capabilities | 18 AV |
+| 37    | Corrosive Gas Generation, 110 Quickness & 125 Move Speed, the Golem, Penetrating Strikes/Ceremonial Vibrokhopesh, High (60+) elemental resistances, Poison Tolerance, Freeze Grenades Mk III, EMP Grenades Mk III, Flashbang Grenades Mk III, Perfect Flight, Disarm capabilities | 18 AV |
 
 </div>
 

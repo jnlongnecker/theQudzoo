@@ -12,7 +12,7 @@ The Templar have been vanquished, the Nephilim scattered. The final task is to a
 
 | Level | Abilities                                             | Stats |
 | ----- | ----------------------------------------------------- | ----- |
-| 40    | Dismembering method + Decapitate, EMP Grenades Mk III | 20 AV |
+| 37    | Dismembering method + Decapitate, EMP Grenades Mk III | 20 AV |
 
 </div>
 
