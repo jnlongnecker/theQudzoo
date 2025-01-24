@@ -34,6 +34,10 @@ If you paid attention to Barathrum's dialogue, he tells you that there is a ship
 
 If interstellar travel isn't your thing, you can instead investigate the seraph that Barathrum mentioned. Make your way to the Northern Ark, the northmost stop on the mover rail. From there, continue north and eventually you will find a room with 2 hexacherubim next to a large container. On the opposite side of the room from the cherubim will be 3 switches, activate all 3 and you will be able to speak to the seraph Resheph. There's a lot that he has to say, but at the end of all of it you have a choice to either join in Resheph's plan or forsake it. Both end the game.
 
+### A New Covenant
+
+If you learned from Barathrum about the covenant he entered with Resheph, you will have the opportunity to strike a new covenant with him if Barathrum is dead. The way things work out, this means you must kill Barathrum yourself after ascending the Spindle in order to get this ending.
+
 ### Destroy Resheph
 
 There is a hidden third option in the Northern Ark, and that is to destroy Resheph. In order to do so, you'll need to kill the two hexacherubim. They are cherubim with higher HP and stats, as well as 6 special effects instead of 1. They can be very dangerous, but by this point in the game you should have more than enough ways of destroying them. They are vulnerable to Decapitate as well, so they can potentially be one-shot with an Axe build.
