@@ -36,7 +36,7 @@ If interstellar travel isn't your thing, you can instead investigate the seraph 
 
 ### A New Covenant
 
-If you learned from Barathrum about the covenant he entered with Resheph, you will have the opportunity to strike a new covenant with him if Barathrum is dead. The way things work out, this means you must kill Barathrum yourself after ascending the Spindle in order to get this ending.
+If you learned from Barathrum about the covenant he entered with Resheph, you will have the opportunity to strike a new covenant with him if Barathrum is dead. The way things work out, this means you must either kill Barathrum yourself after ascending the Spindle or allow him to leave on Exodus in order to get this ending. He'll have to be gone-gone on Exodus for this to count, so make sure to see for yourself before returning to Resheph if you don't want to kill him.
 
 ### Destroy Resheph
 
