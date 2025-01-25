@@ -2,7 +2,7 @@
 
 ---
 
-There are far more items and enemies than I care to cover in this article, so instead of a comprehensive list of my opinions on all items and all enemies, instead I will share my thoughts on the way I break down a run in my mind and a glimpse into my internal checklist for the part of the game I’m currently on. This will include general thoughts and how I move through the section as well as enemies that I look to have a solution for as well as what that solution is. I'll also include any equipment I look to have by this point and if they're a must-have or a nice-to-have and any skills I prefer to have. Note that these are skills I look to have, not that I must have and not all are possible or even desirable depending on the build.
+There are far more items and enemies than I care to cover in this article, so instead of a comprehensive list of my opinions on all items and all enemies, instead I will share my thoughts on the way I break down a run in my mind and a glimpse into my internal checklist for the part of the game I'm currently on. This will include general thoughts and how I move through the section as well as enemies that I look to have a solution for as well as what that solution is. I'll also include any equipment I look to have by this point and if they're a must-have or a nice-to-have and any skills I prefer to have. Note that these are skills I look to have, not that I must have and not all are possible or even desirable depending on the build.
 
 ## Red Rock (Level 1-10)
 
@@ -30,7 +30,7 @@ Slugsnouts aren't actually that threatening if you know how to deal with them. T
 
 -   Sphere of Negative Weight
 -   Pickaxe
--   Miner’s Helmet
+-   Miner's Helmet
 
 ### Skill Wishlist - Red Rock
 
@@ -45,7 +45,7 @@ Slugsnouts aren't actually that threatening if you know how to deal with them. T
 
 ## Grit Gate (Level 10-18)
 
-The second section involves the quests just up to Decoding the Signal, all revolving around gaining access to the Barathrumite compound at Grit Gate. In this section, I spend most of my time preparing for Bethesda Susa as I’m already prepared for Golgotha from the previous section. In fact, there are some times that I’ve already gained access to Grit Gate in its entirety by this level. Regardless, after gaining access to Grit Gate I will go through the first Historic Site that can always be found from the statue in the zone north of Joppa, and then start leveling up through the jungle. Goatfolk and their villages are great places to find good loot in preparation for Bethesda Susa, and I’ll also start investigating the Six Day Stilt for Schrodinger pages and Eater’s Nectar in particular.
+The second section involves the quests just up to Decoding the Signal, all revolving around gaining access to the Barathrumite compound at Grit Gate. In this section, I spend most of my time preparing for Bethesda Susa as I'm already prepared for Golgotha from the previous section. In fact, there are some times that I've already gained access to Grit Gate in its entirety by this level. Regardless, after gaining access to Grit Gate I will go through the first Historic Site that can always be found from the statue in the zone north of Joppa, and then start leveling up through the jungle. Goatfolk and their villages are great places to find good loot in preparation for Bethesda Susa, and I'll also start investigating the Six Day Stilt for Schrodinger pages and Eater's Nectar in particular.
 
 In this tier I start to leverage more reputation. Warden rep should be stacked pretty high by this point, and the Raising Indrix side quest can help a lot in both boosting reputation and gaining a strong weapon for Bethesda Susa. I gain Tinkering for reputation from the Barathrumites and Meal Preparation from Mayor Nuntu at Kyakukya.
 
@@ -114,7 +114,7 @@ If you're set on killing Slog, make sure you've got good gear. As outlined above
 
 ## Bethesda Susa (Level 18-26)
 
-At the third section of the game, I’m ready to rock through Bethesda Susa and enter the make-or-break point of my runs. Success in this section typically results in the success of the run. By this point I’m very in tune with my build and how powerful it feels. Weaker builds will result in me taking things slower and prolonging this section, while particularly powerful builds will result in me pushing the boundaries here and accessing parts of the map early. Once I’ve completed the prior section, this section starts off with completion of Decoding the Signal and gutting Bethesda Susa of all XP possible. From there, I will spend the rest of my time leveling up and preparing for A Call to Arms, typically in the 3 days of waiting during The Earl of Omonporch. I’ll explore any Historic Site below Deep Jungle tier sites, but it’s important here not to get too overconfident. Ooze sites in particular are extremely dangerous at this tier and should likely be avoided.
+At the third section of the game, I'm ready to rock through Bethesda Susa and enter the make-or-break point of my runs. Success in this section typically results in the success of the run. By this point I'm very in tune with my build and how powerful it feels. Weaker builds will result in me taking things slower and prolonging this section, while particularly powerful builds will result in me pushing the boundaries here and accessing parts of the map early. Once I've completed the prior section, this section starts off with completion of Decoding the Signal and gutting Bethesda Susa of all XP possible. From there, I will spend the rest of my time leveling up and preparing for A Call to Arms, typically in the 3 days of waiting during The Earl of Omonporch. I'll explore any Historic Site below Deep Jungle tier sites, but it's important here not to get too overconfident. Ooze sites in particular are extremely dangerous at this tier and should likely be avoided.
 
 Also included in that waiting period during The Earl of Omonporch is a trip to the Yd Freehold to get the recoiler and check the inventory of Tillifergaewicz and my favorite character Bep. The outskirts of Yd also have palladium struts that you can search through for sunslag, so don't forget to autoexplore them for that goodness potential. Additionally, I like to try and find a couple goatfolk haunts in the Deep Jungle since the qlippoths are actually not very difficult to kill post Bethesda Susa and have crysteel tier gear. You'll also often find step sowers here which are very useful for A Call to Arms.
 
@@ -197,7 +197,7 @@ If you happen to have it, an ontological anchor dropped to the floor is a cute s
 
 ## Tomb of the Eaters (Level 26-35)
 
-Very suddenly, at this section of the game we gain access to extremely powerful weapons and equipment. This section starts out slow looking to avoid dangerous enemies and then quickly powers up to become capable of destroying any enemy in the game. The way I play my runs, I don’t like to end them until I’ve crossed off powerful enemies off of my kill checklist; usually this gets completed by the time I hit 35 even though I become capable of doing so typically around level 32-33. This section contains the completion of the Tomb of the Eaters quest and putting the bow on any primary build that I have going on, and may even start to see alternative backup builds beginning to bud and I really flesh out the stability of the character to take on any enemy in the game.
+Very suddenly, at this section of the game we gain access to extremely powerful weapons and equipment. This section starts out slow looking to avoid dangerous enemies and then quickly powers up to become capable of destroying any enemy in the game. The way I play my runs, I don't like to end them until I've crossed off powerful enemies off of my kill checklist; usually this gets completed by the time I hit 35 even though I become capable of doing so typically around level 32-33. This section contains the completion of the Tomb of the Eaters quest and putting the bow on any primary build that I have going on, and may even start to see alternative backup builds beginning to bud and I really flesh out the stability of the character to take on any enemy in the game.
 
 ### Notable Enemies - Tomb of the Eaters
 
@@ -331,7 +331,7 @@ Barring that, you can also lock them down with stun capabilities; Cudgels perfor
 
 ### Skill Wishlist - Tomb of the Eaters
 
-Any final skills to complete my build; by now I tend to be looking for random things to improve my character’s overall power or start to branch into other weapons.
+Any final skills to complete my build; by now I tend to be looking for random things to improve my character's overall power or start to branch into other weapons.
 
 > <br>
 > < !---- Spoilers ahead ----! >
