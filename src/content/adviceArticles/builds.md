@@ -136,6 +136,32 @@ Once you have your basic weapon skills and you get to the point where you need t
 
 If your build is flowing well; you're survivable and your combat feels good, start branching off to accessory skills like the Tinkering tree and secondary weapons. These are designed to let your build “win more” as opposed to getting it online, so be sure that your build is online in some capacity before looking here. Note that your build doesn't have to be _complete_, just functional.
 
+## Tier 4 - Point Spread
+
+During your run, you will have a number of points to use to improve your character. For true kin, this is solely attribute points as cybernetics by their nature are flexible and dynamic. Cybernetics should be adopted as part or support of of the strategy of the build. For mutants, the point spread is both attribute points and mutation points.
+
+### Attribute Points
+
+All attribute points are useful and important, but some to a lesser degree than others. Based off of your builds weapon choices, you will have a primary and secondary attribute: melee ties to Strength, ranged ties to Agility and Esper ties to Ego. Melee also uniquely has a secondary attribute of Agility, but often times melee builds will secondary into ranged and are covered there. If you are a melee build with a secondary Esper, you then have two secondary attributes in Agility and Ego which may tighten your attribute spread.
+
+Identifying your primary and secondary attributes are important as you'll want to keep them high. Typically, this means your primary attribute sits 2+ points above your secondary, which sits 1+ points above your next highest attribute. This third tier of attribute is typically where Toughness sits as all builds benefit from it, but may flex to fourth depending on the attribute needs and skill of the player.
+
+Intelligence and Willpower typically sit relative to one another unless the build calls for one to be higher for part of the strategy, typically beneath or equal to Toughness. For non-Esper builds, Ego sits at the bottom.
+
+These are loose guidelines and meant to be bent to fit the build. However, the bending of the guidelines should come when you have experience and know what thresholds are important for your build and why. So until then, sticking within these ranges should help with consistency.
+
+### Mutation Points
+
+If you are a mutant, you have the additional task of managing the mutation points you gain on each level up. You spend these mutation points to rank up your mutations OR you may spend 4 to gain a new mutation. Typically, it is more effective for your build to spend those 4 mutation points on your existing mutations than to gain another mutation.
+
+Additionally, when making your build you should be careful about choosing too many mutations that hunger for ranks in order to be effective. 3 rank-hungry mutations is the sweet spot, 4 will stretch you just a bit and anything more will start to dilute your power relative to other more focused builds.
+
+Due to the above reason, gaining a new mutation with 4 mutation points not only uses those points _not_ to improve your existing mutations, but also potentially _adds_ another mutation that needs ranks which can really start to stretch you thin. Chimera builds should plan with this in mind and be careful about taking even 3 mutations that hunger for ranks as you'll want to gain as many mutations as possible to grow limbs.
+
+As far as actually spending mutation points goes, rank up your mutations that get your build online first and once they're strong or can't rank up anymore, your supporting mutations can then get ranks. Rapid advancements should be placed in mutations that gain real benefit from going past 10; which is typically going to be your core mutation that your build centers around.
+
+For example, I may have a build that combines the tankiness of Carapace with the damage of Corrosive Gas Generation with the safety and utility of Wings. I would rapidly advance Carapace and Corrosive Gas Generation since these hunger for ranks more and really benefit from going past 10, while Wings can sit at 6. I might rank Wings to 6 first though because it needs to hit that threshold to meet its role in the build, and then evenly distribute mutation points between Carapace and Corrosive Gas Generation.
+
 ## Armor Value and Dodge Value
 
 While any build can use pretty much any equipment in the game and by extension get any AV or DV they want, some builds are better equipped going a particular route. Even further than that, whether you choose to focus on AV or DV largely comes down to your playstyle and how you prefer to play the game. I'll be breaking down each of these and explaining what exactly they do and the idea behind increasing one or the other.
