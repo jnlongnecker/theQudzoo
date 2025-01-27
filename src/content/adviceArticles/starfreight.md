@@ -36,11 +36,13 @@ If interstellar travel isn't your thing, you can instead investigate the seraph 
 
 ### A New Covenant
 
-If you learned from Barathrum about the covenant he entered with Resheph, you will have the opportunity to strike a new covenant with him if Barathrum is dead. The way things work out, this means you must either kill Barathrum yourself after ascending the Spindle or allow him to leave on Exodus in order to get this ending. He'll have to be gone-gone on Exodus for this to count, so make sure to see for yourself before returning to Resheph if you don't want to kill him.
+If you learned from Barathrum about the covenant he entered with Resheph, you will have the opportunity to strike a new covenant with him if Barathrum is gone. The way things work out, this means you must either kill Barathrum yourself after ascending the Spindle or allow him to leave on Exodus in order to get this ending. He'll have to be gone-gone on Exodus for this to count, so make sure to see for yourself before returning to Resheph if you don't want to kill him.
+
+If you speak to Resheph and learn what the Gemara Sophia is, you can additionally request that the knowledge of the Gemara Sophia be shared with you or your bear pals at Grit Gate.
 
 ### Destroy Resheph
 
-There is a hidden third option in the Northern Ark, and that is to destroy Resheph. In order to do so, you'll need to kill the two hexacherubim. They are cherubim with higher HP and stats, as well as 6 special effects instead of 1. They can be very dangerous, but by this point in the game you should have more than enough ways of destroying them. They are vulnerable to Decapitate as well, so they can potentially be one-shot with an Axe build.
+There is a hidden fourth option in the Northern Ark, and that is to destroy Resheph. In order to do so, you'll need to kill the two hexacherubim. They are cherubim with higher HP and stats, as well as 6 special effects instead of 1. They can be very dangerous, but by this point in the game you should have more than enough ways of destroying them. They are vulnerable to Decapitate as well, so they can potentially be one-shot with an Axe build.
 
 If you're really having trouble or just don't care to fight them at this point but still want to destroy Resheph, go to the Starfarer's Quay before coming here. There is a second ship docked in the zone north of Exodus called vqvtl 3, and in the northwestern most cabinet of this ship is a pistol called the from shunter. When this pistol hits a target, it will randomize what that target is while maintaining its general type. For example, walls will shuffle to other walls and creatures will shuffle to other creatures. Return to the hexacherubim, toss an EMP to remove their reflective shield and shoot them with the from shunter.
 
