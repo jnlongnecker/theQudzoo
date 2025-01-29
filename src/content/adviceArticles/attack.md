@@ -71,4 +71,18 @@ The flamethrower and freeze ray work exceptionally well here, as if you can cons
 
 If you don't happen to have those weapons, disarm in particular works wonders here; especially if you can get the templar to trickle in one at a time. Being creatures that rely on weaponry, they are extremely vulnerable when that weaponry is taken from them. Additionally, having good resistance against being knocked prone (asphalt cooking effects, fitted with cleats mod, motorized treads, etc) will be quite handy as the leader of the group likes to spam Shield Slam.
 
+### Knight Commander of the Holy Temple
+
+Speaking of the leader of the group, they are consistently the largest problem. Let's go over the abilities of this creature.
+
+First off, they will be legendary which means a significant attribute increase from normal creatures of its type. Next, the conventional weapon skills. It has Weapon Expertise and Penetrating Strikes, so AV will help but not give you immunity. It supplements this with Deft Blocking to heighten its own AV and Staggering Block combined with its enhanced Strength from legendary status makes attacking it tricky as it will often stun you. Shield Slam is then used to continue to lock you down if you aren't stunned from being Blocked.
+
+It supplements these abilities with Berate to make you easier to hit and slow you down and Menacing Stare to cause you to lose your positioning and fail to counterattack. With all of these factors combined it becomes very easy for yourself to get locked down and killed before you can mount a proper defense.
+
+The best solution for this is to of course do the locking down first or to fight from a range. Range is not necessarily recommended since that opens you up heavily to being attacked from the plethora of grenades and missile weapons from the backup team. The Anchor Spikes and Reactive Cranial Plating cybernetics give extreme resistance to the normal lockdown methods of the Commander, and you can potentially cook with dried lah petals and another ingredient to give a triggered effect that grants immunity to fear to avoid Menacing Stare.
+
+Otherwise, skills like Lionheart and Shake It Off can be utilized to resist their respective effects, or if you have the Two-Headed mutation that takes care of everything except being knocked prone. Disarm is also incredibly effective if you happen to be capable of it.
+
+---
+
 Despite your best efforts, sometimes you'll just get a bad configuration or the templar will strangely drop far beyond the indicator circle or Shem -1 will just inexplicably be dead even though you never saw it the entire time. The goal with these strategies is to merely mitigate the damage in the most consistent way. Unfortunately, this is the one mission that has eluded perfect consistency for me, but has been the only time I have finished this mission without any Barathrumites dying.

@@ -10,7 +10,7 @@ Skills are the unsung hero of Caves of Qud. In fact, I'd argue that your skills 
 
 <div class="section-info">
 
-**Cost:** 75
+**Requirements:** 75sp; 17 Agility
 
 **Obtain By:** Early Game
 
@@ -26,7 +26,7 @@ Swift Reflexes is one of those must-have skills and is the intro skill to the Ac
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 17 Agility
 
 **Obtain By:** Early Game
 
@@ -42,7 +42,7 @@ Free +2 DV, this is an incredible skill. Take this always, literally always.
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 17 Strength
 
 **Obtain By:** Mid-Late Game
 
@@ -60,7 +60,7 @@ This skill also synergizes with Wings as they greatly increase the distance you 
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 23 Agility; Juke
 
 **Obtain By:** Mid Game
 
@@ -78,7 +78,7 @@ This skill just buffs Juke and gives 1 DV, and we're really taking this for the 
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 0 Strength
 
 **Obtain By:** Early Game
 
@@ -94,7 +94,7 @@ A permanent +2 to hit is quite good actually, and is one of the more noticeable 
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 19 Strength; Cleave; Charge
 
 **Obtain By:** Early Game
 
@@ -110,7 +110,7 @@ Charge is arguably the best melee skill in the game and skills that synergize di
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 19 Strength
 
 **Obtain By:** Early Game
 
@@ -126,7 +126,7 @@ This skill really incentivises you to use as many hands as possible with Axes an
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 21 Strength
 
 **Obtain By:** Early Game
 
@@ -142,7 +142,7 @@ Cleave a few times then hit Dismember to permanently cripple your enemy. If you 
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 23 Strength
 
 **Obtain By:** Early Game
 
@@ -154,13 +154,13 @@ Cleave a few times then hit Dismember to permanently cripple your enemy. If you 
 
 Hook and Drag is pretty underrated; but it is one skill I'm willing to sacrifice if I need the skill points elsewhere. You essentially have up to 9 rounds of guaranteed hits on an enemy, which can be very powerful on enemies that have high DV. If you have decent Agility, then this becomes redundant since you just hit all the time anyways so then it's really just used to attack an enemy as you bring them somewhere which isn't usually any functionally different than just moving there and then picking up combat where you left off.
 
-This changes when you have significantly enhanced movement speed, as now Hook and Drag lets you attack as fast as you can move which synergizes very well with Multiple Legs. So unless you have Multiple Legs or very poor Agility, you can probably give this a miss for your build.
+This changes when you have significantly enhanced movement speed, as now Hook and Drag lets you attack as fast as you can move which synergizes very well with Multiple Legs, Cathedras and Motorized Treads. So unless you have one of those or very poor Agility, you can probably give this a miss for your build.
 
 ### Decapitate
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 25 Strength; Dismember
 
 **Obtain By:** Mid Game
 
@@ -176,7 +176,7 @@ A low chance to just win the fight immediately (on most enemies). It's not relia
 
 <div class="section-info">
 
-**Cost:** 300
+**Requirements:** 300sp; 29 Strength; Dismember
 
 **Obtain By:** Mid-Late Game
 
@@ -196,7 +196,7 @@ The duration on it is very bad, but 5 rounds is really all you need for most ene
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 19 Agility
 
 **Obtain By:** Early-Mid Game
 
@@ -212,7 +212,7 @@ You get both of these at the same time, so I'll analyze them together. Steady Ha
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 19 Agility; Draw a Bead
 
 **Obtain By:** Early-Mid Game
 
@@ -228,7 +228,7 @@ By spamming this you can lock an enemy down indefinitely. The shot does have to 
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 19 Agility; Draw a Bead
 
 **Obtain By:** Late Game
 
@@ -244,7 +244,7 @@ You lose your mark to fire 1 (one!) shot that is guaranteed to hit. Most rifles 
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 19 Agility; Draw a Bead
 
 **Obtain By:** Late Game
 
@@ -260,7 +260,7 @@ You cause a bleed for each penetration you do and lose your mark. You're probabl
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 25 Agility; Draw a Bead; Wounding Fire
 
 **Obtain By:** Late Game
 
@@ -276,7 +276,7 @@ Even if the effect from this skill was worth the cost (200 skill points with 250
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 25 Agility; Draw a Bead; Sure Fire
 
 **Obtain By:** Late Game
 
@@ -292,7 +292,7 @@ You need to ignite your enemy for this to work, which can be done if you're will
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 25 Agility; Draw a Bead; Suppressive Fire
 
 **Obtain By:** Late Game
 
@@ -302,13 +302,13 @@ You need to ignite your enemy for this to work, which can be done if you're will
 
 </div>
 
-The effect of this is insanely good, in fact it's one of the best skill effects in the game. It not only locks them in place, but also knocks them prone and disarms them. So why is it not worth it? Well, in order to gain this benefit the enemy must have 6 walls surrounding them. In case you can't visualize what that means, it means they must be in a 1 tile wide corridor in order for this to work. If you want to meticulously construct corridors for yourself and lure enemies in there to use this skill, go ahead. Otherwise, most of the time you won't even be able to use this.
+The effect of this is insanely good, in fact it's one of the best skill effects in the game. It not only locks them in place, but also knocks them prone and disarms them. So why is it not worth it? Well, in order to gain this benefit the enemy must have 6 walls surrounding them. In case you can't visualize what that means, it means they must be in a 1 tile wide corridor in order for this to work. If you have Force Wall then you can reliably do this. Otherwise, if you want to meticulously construct corridors for yourself and lure enemies in there to use this skill, go ahead. Simply put, most of the time you won't even be able to use this.
 
 ### Ultra Fire
 
 <div class="section-info">
 
-**Cost:** 300
+**Requirements:** 300sp; 29 Agility; Draw a Bead
 
 **Obtain By:** Late Game
 
@@ -326,7 +326,7 @@ If there was more than 1 fire ability that was worth it, this would be an insane
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 15 Intelligence
 
 **Obtain By:** Early Game
 
@@ -336,15 +336,17 @@ If there was more than 1 fire ability that was worth it, this would be an insane
 
 </div>
 
-Being able to gain cooking effects is run changing and very important for any successful run. Cooking is not my preferred way to play as managing ingredients and rerolling when I get an effect I don't want is annoying and tedious for me, so instead I usually just use ingredients that have 1 or 2 effects in order for me to more reliably get the one I want. So unless I'm using an ingredient like Spine Jam or Phase Silk I usually just go for jerky for HP effects.
+Being able to gain cooking effects is run changing and very important for any successful run. Cooking is not my preferred way to play as managing ingredients and rerolling when I get an effect I don't want is annoying and tedious for me, so instead I usually just use ingredients that have 1 or 2 effects in order for me to more reliably get the one I want. So unless I'm using an ingredient like Spine Fruit Jam or Phase Silk I usually just go for jerky for HP effects.
 
 This is an admittedly simplistic approach to cooking and you can get some very strong effects, but I won't pretend to have extensive knowledge over that. Even if you just follow my approach of spamming HP increase cooking effects, this is still a very good skill you should have in every run.
+
+A word of caution though is that you should definitely just get it for reputation from Mayor Nuntu at Kyakukya. It's not so good that you need it ASAP, and it's pretty safe to just travel to Kyakukya around the time you're going to Grit Gate to save yourself the 100sp.
 
 ### Harvestry
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 15 Intelligence
 
 **Obtain By:** Early Game
 
@@ -356,11 +358,13 @@ This is an admittedly simplistic approach to cooking and you can get some very s
 
 If you're planning on doing a lot of cooking, Harvestry is going to be one of your primary ways of getting good ingredients. Even if you're not planning on doing much cooking, Harvestry is still useful in getting monetarily valuable ingredients and the coveted Yondercane for an escape tool. In the very early game it's also quite good for getting you some extra Witchwood Bark in case you get put in one too many dangerous scenarios.
 
+Again, it's so reliable to get Joppa reputation if you take the Joppa start, so just ask Mehmet or Irudad to teach you rather than spend the 50sp.
+
 ### Butchery
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 15 Intelligence
 
 **Obtain By:** Early Game
 
@@ -372,11 +376,13 @@ If you're planning on doing a lot of cooking, Harvestry is going to be one of yo
 
 Butchery is the second main way of getting your ingredients. Not only can you get valuable ingredients from Butchering corpses, the ingredients you get here are typically much more expensive than ones you get from Harvestry at the cost of being heavier. Further still, you can butcher certain types of corpses for valuable items (ogre apes, kaleidoslugs, quartz baboons, etc). Don't bother wasting time grinding Cannibal rep for this, just spend the 50 skill points. Be careful with this if you don't have Meal Preparation, since many Butchered ingredients can be quite heavy when unprocessed.
 
+If you take the Hills village start, your village will teach Butchery in which case definitely get it for rep.
+
 ### Spicer
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 17 Intelligence
 
 **Obtain By:** Mid-Late Game
 
@@ -392,7 +398,7 @@ Since I don't really use many cooking effects in general, I've got even less exp
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 17 Intelligence
 
 **Obtain By:** Mid-Late Game
 
@@ -410,7 +416,7 @@ Using this, you're actually able to control what cooking effects you get. If you
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 0 Strength
 
 **Obtain By:** Early Game
 
@@ -426,7 +432,7 @@ Using this, you're actually able to control what cooking effects you get. If you
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 17 Strength
 
 **Obtain By:** Early Game
 
@@ -442,7 +448,7 @@ This skill is the single thing that makes Cudgels good. Daze and Stun are both s
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 19 Strength; Bludgeon; Charge
 
 **Obtain By:** Early Game
 
@@ -452,13 +458,13 @@ This skill is the single thing that makes Cudgels good. Daze and Stun are both s
 
 </div>
 
-Start off the fight with a free daze? Potentially even a stun? Incredible, very good skill. Charge remains a critical part of every melee build, super worth it.
+Start off the fight with a free daze? Potentially even a stun? Incredible, very good skill. Charge remains a critical part of every melee build, super worth it. Something to note is that this is actually the same skill as the Axe version; if you have this skill then you have that skill as well and vice-versa.
 
 ### Conk
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 21 Strength; Bludgeon
 
 **Obtain By:** Early Game
 
@@ -474,7 +480,7 @@ It's an activated skill, but the cooldown is incredibly short and gives you a fr
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 23 Strength
 
 **Obtain By:** Early Game
 
@@ -484,13 +490,13 @@ It's an activated skill, but the cooldown is incredibly short and gives you a fr
 
 </div>
 
-Not only does this just flat out increase your DPS by 25%, but it also gives you more chances to daze and stun since you're attacking more times with a Cudgel. Great skill to have, seriously improves your fighting abilities.
+Not only does this just flat out increase your DPS by 25%, but it also gives you more chances to daze and stun since you're attacking more times with a Cudgel. Great skill to have, seriously improves your fighting abilities. If you are using Single Weapon Fighting, the Weapon Expertise and Weapon Mastery skills _do affect_ your Backswing strikes as well.
 
 ### Slam
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 25 Strength
 
 **Obtain By:** Mid Game
 
@@ -506,7 +512,7 @@ This is the first Cudgel skill that I will often skip out on. It's not that it's
 
 <div class="section-info">
 
-**Cost:** 300
+**Requirements:** 300sp; 29 Strength; Slam
 
 **Obtain By:** Late Game
 
@@ -516,7 +522,9 @@ This is the first Cudgel skill that I will often skip out on. It's not that it's
 
 </div>
 
-I'm mixed on Demolish, but by the time you can get it you're probably not needing the 100% daze chance because you're either already near permanently stunning everything or you have Precision Nanon Fingers and already have a 150% chance to daze anyways. The fact that you need Slam to get it as well means you need to spend the skill points on Slam which is only arguably worth it to begin with, and having no cooldown on Slam is pretty tough to make full use out of since Demolish only lasts 5 turns and the whole point of Slam is that you push away the enemy. Can it be good? Yea, it can. Is it really a vital part of a Cudgel build? Not at all.
+I'm mixed on Demolish, but by the time you can get it you're probably not needing the 100% daze chance because you're either already near permanently stunning everything or you have Precision Nanon Fingers and already have a 150% chance to daze anyways. The fact that you need Slam to get it as well means you need to spend the skill points on Slam which is only arguably worth it to begin with, and having no cooldown on Slam is pretty tough to make full use out of since Demolish only lasts 5 turns and the whole point of Slam is that you push away the enemy.
+
+If you have Force Wall, then wrapping your enemy in a forcefield is quite a good combination now. Instead of pushing your opponent away, they're locked in (unless your Strength is obscenely high, in which case they're probably 1 shot anyway) and can highly benefit from Backswing and Weapon Mastery/Weapon Expertise for the whole 5 turns. Can it be good? Yea, it can. Is it really a vital part of a Cudgel build? Not at all.
 
 ## Customs and Folklore
 
@@ -524,7 +532,7 @@ I'm mixed on Demolish, but by the time you can get it you're probably not needin
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 19 Intelligence
 
 **Obtain By:** Mid Game
 
@@ -540,7 +548,7 @@ While you shouldn't really ever purchase this with skill points, it's always wor
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 21 Intelligence
 
 **Obtain By:** Mid Game
 
@@ -558,7 +566,7 @@ Another one you'll probably only want to get through reputation rather than buy 
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 17 Agility or 17 Strength
 
 **Obtain By:** Mid Game
 
@@ -570,7 +578,9 @@ Another one you'll probably only want to get through reputation rather than buy 
 
 In order to be taught these skills, you need to ensure Eskhind becomes the Hindriarch which is not even a guarantee in every playthrough. If the stars align for you and you for some reason don't have Flurry/Multiweapon Proficiency yet, then it's worth the rep.
 
-Flurry makes a strike with every limb, which is actually quite good to guarantee the hits and combines well with Jab if you have Short Blades in your offhand (which you should). Multiweapon Proficiency brings our offhand strike chance from 15% to 35%; a considerable increase but still not that great. While Multiweapon Fighting, you should almost always have an offhand Short Blade with Jab; anything else and you're missing out on DPS. One handy thing about Flurry is that it does have an Agility prerequisite, meaning its cooldown can be nullified with Triple-jointed.
+Flurry makes a strike with every limb, which is actually quite good to guarantee the hits. It doesn't pair with Jab, however, so it's not quite as good as it could be. Multiweapon Proficiency brings our offhand strike chance from 15% to 35%; a considerable increase but still not that great. While Multiweapon Fighting, you should almost always have an offhand Short Blade with Jab; anything else and you're missing out on DPS. One handy thing about Flurry is that it does have an Agility prerequisite, meaning its cooldown can be nullified with Triple-jointed.
+
+Something not immediately obvious is that Flurry actually pairs very well with Single Weapon Fighting. When Flurry says it makes an attack with every limb, it really means _every limb_, and the fact that these strikes are _not_ offhand strikes means that each attack will apply the Single Weapon Fighting benefits (Penetrating Strikes and Weapon Mastery alike).
 
 Something to note is that all Multiweapon Fighting skills affect natural arms, mutated arms (including those from Multiple Arms), _and_ robotic arms (from helping hands). They **do not** affect special limbs that have natural weaponry like the head with the Horns mutation or Stinger. Something to keep in mind about robotic arms during my analysis of these skills is that they do not benefit from Jab, only from these Multiweapon Fighting skills.
 
@@ -580,7 +590,7 @@ Before the introduction of Single Weapon Fighting, this tree was the clear best 
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 23 Agility or 23 Strength; Multiweapon Proficiency
 
 **Obtain By:** Mid Game
 
@@ -596,7 +606,7 @@ Multiweapon Expertise brings us up to a 50% offhand strike chance. Combine this 
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 27 Agility or 27 Strength; Multiweapon Expertise
 
 **Obtain By:** Mid-Late Game
 
@@ -606,7 +616,7 @@ Multiweapon Expertise brings us up to a 50% offhand strike chance. Combine this 
 
 </div>
 
-If you're lucky enough to find this being taught by a random village, this is one of the most expensive skill in the game to get and it confers all of its benefits even if you get it without any of its prerequisites so it's very worth it. Multiweapon Mastery brings our offhand strike chance to 65%. We've made it all the way to the end here, but to get the most out of this tree we want to staple as many limbs and Short Blades as possible to our body. Pop in those girshling dentures, strap a wristblade to all 4 of your arms (you picked Multiple Arms, didn't you?) and just go to town. Bonus points if you have Double Muscled for the stun chance.
+If you're lucky enough to find this being taught by a random village, it confers all of its benefits even if you get it without any of its prerequisites so it's very worth it. Multiweapon Mastery brings our offhand strike chance to 65%. We've made it all the way to the end here, but to get the most out of this tree we want to staple as many limbs and Short Blades as possible to our body. Pop in those girshling dentures, strap a wristblade to all 4 of your arms (you picked Multiple Arms, didn't you?) and just go to town. Bonus points if you have Double-muscled for the stun chance.
 
 ## Endurance
 
@@ -614,7 +624,7 @@ If you're lucky enough to find this being taught by a random village, this is on
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 0 Toughness
 
 **Obtain By:** Early Game
 
@@ -630,7 +640,7 @@ Shake It Off is not a skill you'll notice particularly often in terms of the “
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 15 Toughness
 
 **Obtain By:** Mid-Late Game
 
@@ -646,7 +656,7 @@ Very, very few enemies have this skill, so not having it simply puts you on par 
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 19 Toughness
 
 **Obtain By:** Early Game
 
@@ -662,7 +672,7 @@ If you're particularly worried about Slog and Scorpioks, then taking this skill 
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 21 Toughness
 
 **Obtain By:** Early-Mid Game
 
@@ -678,7 +688,7 @@ Weathered is a must-have skill as sources of fire and cold damage are everywhere
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 23 Toughness
 
 **Obtain By:** Mid-Late Game
 
@@ -688,13 +698,13 @@ Weathered is a must-have skill as sources of fire and cold damage are everywhere
 
 </div>
 
-I'm admittedly biased here, but I'm not a huge user of tonics in general. Being able to ingest 2 has rarely ever been something I have wanted to do but if you play a style where everything revolves around constantly injecting tonics that you craft or something like that then I can see this being a little more useful. Some powerful combinations are skulk + hulk honey, hulk honey + salve, blaze + hulk honey, blaze + salve and salve + skulk. Get other skills first and maybe take another look at this one if you're a menace for those tonics.
+I'm admittedly biased here, but I'm not a huge user of tonics (other than salves and loves) in general. Being able to ingest 2 has rarely ever been something I have wanted to do but if you play a style where everything revolves around constantly injecting tonics that you craft or something like that then I can see this being a little more useful. Some powerful combinations are skulk + hulk honey, hulk honey + salve, blaze + hulk honey, blaze + salve and salve + skulk. Get other skills first and maybe take another look at this one if you're a menace for those tonics.
 
 ### Calloused
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 23 Toughness
 
 **Obtain By:** Early-Mid Game
 
@@ -710,7 +720,7 @@ This is another must-have skill. Get this always right as soon as you have 23 To
 
 <div class="section-info">
 
-**Cost:** 250
+**Requirements:** 250sp; 25 Toughness
 
 **Obtain By:** Late Game
 
@@ -728,7 +738,7 @@ I usually find that I can Sprint for longer than I need to with nothing boosting
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 19 Strength
 
 **Obtain By:** Mid Game
 
@@ -744,7 +754,7 @@ If you are using Heavy Weapons, this skill is an obvious take if you value your 
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 23 Strength
 
 **Obtain By:** Mid Game
 
@@ -760,7 +770,7 @@ Again assuming you are actually using Heavy Weapons, this is a great skill to ha
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 27 Strength
 
 **Obtain By:** Mid-Late Game
 
@@ -778,7 +788,7 @@ It's a steep cost for a skill that's just not that great on the high-tier Heavy 
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 0 Strength
 
 **Obtain By:** Early Game
 
@@ -800,7 +810,7 @@ Most of the time, you'll end up using Defensive Stance as Aggressive Stance is q
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 17 Agility
 
 **Obtain By:** Early-Mid Game
 
@@ -822,7 +832,7 @@ While in Dueling Stance, Lunge is guaranteed to hit and penetrate at least once,
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 17 Intelligence
 
 **Obtain By:** Mid Game
 
@@ -838,7 +848,7 @@ Dueling Stance alone just gives the +2 to hit that most other weapons enjoy pass
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 17 Strength
 
 **Obtain By:** Mid Game
 
@@ -848,7 +858,7 @@ Dueling Stance alone just gives the +2 to hit that most other weapons enjoy pass
 
 </div>
 
-In Aggressive Stance, you make an attack against everything in melee with you except allies, which means you attack all enemies and walls/furniture around you. Now, if you're hitting more than 1 enemy with this you have more important problems to worry about than trying to hit them with a single attack. If you're not hitting more than 1 enemy with this, it's occasionally even worse than just bump attacking them since you have no chance of attacking with your offhand. Don't use this with Aggressive Stance.
+In Aggressive Stance, you make an attack against everything in melee with you except allies, which means you attack all enemies and walls/furniture around you. Now, if you're hitting more than 1 enemy with this you have more important problems to worry about than trying to hit them with a single attack. If you're not hitting more than 1 enemy with this, if you're Multiweapon Fighting then it can be inferior to bump attacking because your offhand strikes will not proc. However, if you're Single Weapon Fighting then by all means.
 
 In Defensive Stance, you push all creatures in melee with you back 1 space and try to trip the enemies. This synergizes extremely well with Lunge in Aggressive Stance and can be used to give yourself some space for ranged attacks or for positioning adjustments. Another great defensive tool for ranged builds.
 
@@ -858,7 +868,7 @@ In Dueling Stance, you have the crown jewel of Long Blade effects: a highly effe
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 21 Intelligence
 
 **Obtain By:** Mid-Late Game
 
@@ -874,7 +884,7 @@ Bumps our +2 to a +3. This is a snoozer since we're probably only using Dueling 
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 23 Agility
 
 **Obtain By:** Early-Mid Game
 
@@ -890,7 +900,7 @@ Bumps our +2 to a +3. This is a snoozer since we're probably only using Dueling 
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 23 Strength
 
 **Obtain By:** Mid-Late Game
 
@@ -900,13 +910,13 @@ Bumps our +2 to a +3. This is a snoozer since we're probably only using Dueling 
 
 </div>
 
-We get +1 PV at the cost of -1 to hit, which by mid game or late game is very worth it with specifically vibro weapons; Improved Aggressive Stance goes nuts with vibro weapons which we're fairly likely to have by the time we pick this skill up. Vibro weapons are the key to unlocking the full potential of Long Blades as a backup weapon to ranged builds or even as a main build with low Strength. They're also one of the only ways of killing powerful endgame enemies with unbelievable amounts of AV, and the PV bonus of Aggressive Stance is added after the PV of the vibro weapon is set to the enemies AV meaning our PV will always be 2 higher than the enemies' AV. If you have terrible Agility however, don't pick this up though since you'll just never hit anything with it.
+We get +1 PV at the cost of -1 to hit, which by mid game or late game is very worth it with specifically vibro weapons; Improved Aggressive Stance goes nuts with vibro weapons which we're fairly likely to have by the time we pick this skill up. Vibro weapons are the key to unlocking the full potential of Long Blades as a backup weapon to ranged builds or even as a main build with low Strength. They're also one of the best ways of killing powerful endgame enemies with unbelievable amounts of AV, and the PV bonus of Aggressive Stance is added after the PV of the vibro weapon is set to the enemies AV meaning our PV will always be 2 higher than the enemies' AV. If you have terrible Agility however, don't pick this up though since you'll just never hit anything with it.
 
 ### En Garde!
 
 <div class="section-info">
 
-**Cost:** 300
+**Requirements:** 300sp; 29 Strength + 23 Agility or 23 Strength + 29 Agility
 
 **Obtain By:** Late Game
 
@@ -924,7 +934,7 @@ The attribute prerequisites are pretty high, so you won't even be capable of get
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 17 Ego
 
 **Obtain By:** Early Game
 
@@ -940,7 +950,7 @@ Let's be clear here, is there never a reason to take this skill? No, this can be
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 17 Ego
 
 **Obtain By:** Early Game
 
@@ -956,7 +966,7 @@ In the rare scenario you find yourself surrounded, this can be effective. But th
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 19 Ego
 
 **Obtain By:** Early-Mid Game
 
@@ -972,7 +982,7 @@ The great thing about this skill is it always works and has a pretty long durati
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 19 Ego
 
 **Obtain By:** Early-Mid Game
 
@@ -988,7 +998,7 @@ This skill is incredible because it will essentially nullify the downside of a l
 
 <div class="section-info">
 
-**Cost:** 300
+**Requirements:** 300sp; 23 Ego
 
 **Obtain By:** Mid Game
 
@@ -1004,7 +1014,7 @@ This skill has a very hefty skill point cost, and since Mechanimist reputation i
 
 <div class="section-info">
 
-**Cost:** 250
+**Requirements:** 250sp; 25 Ego
 
 **Obtain By:** Late Game
 
@@ -1022,11 +1032,11 @@ Your followers get a miniscule amount of HP (4 \* Ego mod). Even if you stack Eg
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 0 Intelligence
 
 **Obtain By:** Mid-Late Game
 
-**Faction:** Cult of the Coiled Lamb (Not Worth It)
+**Faction:** Cult of the Coiled Lamb (Worth It)
 
 **Worth:** Yes
 
@@ -1038,7 +1048,7 @@ Bleeding typically is not a big problem, but there are a couple late-game source
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 21 Intelligence
 
 **Obtain By:** Early-Mid Game
 
@@ -1062,7 +1072,7 @@ By the time you have the Intelligence necessary for this skill, you're likely al
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 23 Intelligence
 
 **Obtain By:** Late Game
 
@@ -1078,13 +1088,13 @@ Does what it says on the tin, chop off a part for you or your friends. There are
 2. Chop off your face and wear it for an Ego bonus (and the achievement I guess).
 3. Chop off a limb to use as an atzmus for the Golem.
 
-If you really want to wear your face and have the **23 Intelligence** required for this, go ahead I guess.
+To make this worse, your companions won't let you go randomly chopping off their limbs so it's not even that effective at #3 either. If you really want to wear your face and have the **23 Intelligence** required for this, go ahead I guess.
 
 ### Apothecary
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 25 Intelligence
 
 **Obtain By:** Late Game
 
@@ -1102,7 +1112,7 @@ This causes salve and ubernostrum injectors to last one more round, which means 
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 0 Agility
 
 **Obtain By:** Early-Mid Game
 
@@ -1118,7 +1128,7 @@ Extra accuracy, which works out to be quite important on Pistols because of thei
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 17 Agility
 
 **Obtain By:** Early-Mid Game
 
@@ -1134,7 +1144,7 @@ I'll be honest, the only legendary Mysterious Stranger I've ever found is a lege
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 19 Agility
 
 **Obtain By:** Early-Mid Game
 
@@ -1150,7 +1160,7 @@ Higher crit chance for 150 skill points? This is an obvious pick, great skill fo
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 21 Agility
 
 **Obtain By:** Mid Game
 
@@ -1166,7 +1176,7 @@ I mean you're probably not using Sprint much and if you are, you're probably not
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 23 Agility
 
 **Obtain By:** Mid Game
 
@@ -1182,7 +1192,7 @@ The disarm here isn't as reliable as the disarm from Long Blades, but with high 
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 25 Agility
 
 **Obtain By:** Mid Game
 
@@ -1198,7 +1208,7 @@ We already have a skill to increase our crit hit chance, and now we can double t
 
 <div class="section-info">
 
-**Cost:** 300
+**Requirements:** 300sp; 27 Agility
 
 **Obtain By:** Mid-Late Game
 
@@ -1214,7 +1224,7 @@ If you're heavily relying on your Pistols in order to deal damage, this is an in
 
 <div class="section-info">
 
-**Cost:** 400
+**Requirements:** 400sp; 29 Agility
 
 **Obtain By:** Late Game
 
@@ -1232,7 +1242,7 @@ The cost of this one is steep, and I mean steep. This is the most expensive skil
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 0 Willpower
 
 **Obtain By:** Early-Mid Game
 
@@ -1248,7 +1258,7 @@ This one is unusual because it's not that it does something that is particularly
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 17 Willpower
 
 **Obtain By:** Mid Game
 
@@ -1258,45 +1268,51 @@ This one is unusual because it's not that it does something that is particularly
 
 </div>
 
-It's 50 skill points, why not? You'll use less water and your metabolizing effects will last longer. Don't take it before you get your build up and running, but otherwise it's convenient. If you use the Amphibious defect, then this is a good offset to that as well.
+It's 50 skill points, why not? You'll use less water and your metabolizing effects will last longer. Don't take it before you get your build up and running, but otherwise it's convenient. If you use the Amphibious defect, then this is a good offset to that as well and if you have Photosynthetic Skin (or just cook a lot) then your buffs last longer.
 
 ### Lionheart
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 21 Willpower
 
-**Obtain By:** Never
+**Obtain By:** Maybe Mid Game
 
 **Faction:** N/A
 
-**Worth:** No
+**Worth:** Maybe
 
 </div>
 
-Basically the only thing that will ever actually fear you are dreadroot. Unless you are worried about plants that never move and die in 1 hit to literally anything, don't take this.
+There are 3 creatures that are default hostile to you that will cause the terrified effect:
+
+-   Dreadroot
+-   Feral Lah
+-   Knight Commander of the Holy Temple
+
+The first 2 are trash, ignore them. You probably won't even have the Willpower needed for this by the time they're of concern. The Knight Commander however makes this more interesting. Typically, these will be legendary creatures in charge of Templar war bands, giving them very high Ego. This means they will reliably cause terrified form a distance with their Menacing Stare skill, and this can be a positional nightmare. Not only will it break your position but also give the Knight Commander more opportunities to lock you down, supplementing this with Shield Slam. Consider this skill by A Call to Arms if you don't have Two-Headed, otherwise give it a miss.
 
 ### Iron Mind
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 21 Willpower
 
-**Obtain By:** Mid-Late Game
+**Obtain By:** Late Game
 
 **Faction:** Robots (Worth It)
 
-**Worth:** No
+**Worth:** Yes
 
 </div>
 
-Very few things in the game confuse you, so unless you are an Esper with high amounts of glimmer this will rarely be used. The Seekers that use this are very rarely found anyways, so essentially your only real source of Confusion are Enigma Snails and Esper hunters. The chance to shake it off isn't great either, so unless you've got points burning a hole in your inventory there's no point in this one.
+Very few things in the game confuse you, so unless you are an Esper with high amounts of glimmer this will rarely be used. The Seekers that use this are very rarely found anyways, so essentially your only real source of Confusion are Enigma Snails and Esper hunters. Despite this, you will want it if you are planning on taking on the most difficult challenges in Qud (without any spoilers). By the time you'll need it, you should be swimming in skill points so don't bother taking it early.
 
 ### Conatus
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 23 Willpower
 
 **Obtain By:** Late Game
 
@@ -1312,7 +1328,7 @@ If you're really interested in increasing your Sprint duration, this is the one 
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 29 Willpower
 
 **Obtain By:** Late Game
 
@@ -1322,7 +1338,7 @@ If you're really interested in increasing your Sprint duration, this is the one 
 
 </div>
 
-Fasting Way is already enough in case you're being bothered by eating often, this takes that to the extreme. Again if you've got nothing to spend points on, this can be convenient but 150 skill points is not negligible and you can definitely get better skills for that cost.
+Fasting Way is already enough in case you're being bothered by eating often, this takes that to the extreme. Again if you've got nothing to spend points on, this can be convenient but 150 skill points is not negligible and you can definitely get better skills for that cost. Something not noted in the description of the skill is that it will also allow you to eat food marked as "gross" like corpses without being famished, which is kinda neat.
 
 ## Shield
 
@@ -1330,7 +1346,7 @@ Fasting Way is already enough in case you're being bothered by eating often, thi
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 0 Strength
 
 **Obtain By:** Early Game
 
@@ -1350,7 +1366,7 @@ This means that since many enemies only attack with one limb (or only with an oc
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 17 Strength
 
 **Obtain By:** Early Game
 
@@ -1366,7 +1382,7 @@ This skill is very powerful, and especially so if you have high Strength and a p
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 19 Agility
 
 **Obtain By:** Mid Game
 
@@ -1382,7 +1398,7 @@ Since we've already established that enemies will rarely attack more than once, 
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 19 Agility
 
 **Obtain By:** Early Game
 
@@ -1398,23 +1414,23 @@ We now have a 75% chance to block, this is an easy take. A Shield can't benefit 
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 21 Strength
 
-**Obtain By:** Mid-Late Game
+**Obtain By:** Late Game
 
 **Faction:** N/A
 
-**Worth:** No
+**Worth:** Yes
 
 </div>
 
-This skill is by no means reliable in any way. With very high Strength, it can become somewhat common but will never be anything but a little sugar on top. A stun for 1-2 rounds is a little low for how uncommon it is to get the stun since you not only have to roll the % chance, but you also have to have blocked the attack in the first place which we can have a maximum 75% chance to do (without relics). Can this skill save you? Absolutely. But there's certainly better, more reliable ways to save yourself or get advantages for the cost.
+This skill is by no means reliable in any way. With very high Strength, it can become somewhat common but will never be anything but a little sugar on top. A stun for 1-2 rounds is a little low for how uncommon it is to get the stun since you not only have to roll the % chance, but you also have to have blocked the attack in the first place which we can have a maximum 75% chance to do (without relics). Can this skill save you? Absolutely. But there's certainly better, more reliable ways to save yourself or get advantages for the cost so don't go for it until you've filled out the rest of your build.
 
 ### Shield Wall
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 25 Willpower
 
 **Obtain By:** Late Game
 
@@ -1426,7 +1442,7 @@ This skill is by no means reliable in any way. With very high Strength, it can b
 
 Shield Wall is like other stance skills, it has zero activation cost. Unlike other stance skills, it has much more attainable costs and the benefits are equally huge. Unfortunately, it does only last 3 turns which isn't much, but can be the difference between life and death if you get yourself caught with enemies on all sides since it literally does block every attack for those 3 turns, regardless of your other Shield skills and regardless of just how many attacks are made against you. You could have 9 Oboroquoru using Flurry for a total of 54 attacks in one turn, Shield Wall will block them all. Note that blocking means that you get the benefit of your Shield; which for the non-bucklers that you can use this with means you get a significant increase but doesn't make you invincible.
 
-The real thing that puts this stance over others despite its short duration is that it also has a fairly short cooldown as well; meaning that at high Willpower you can essentially just spam this for massive AV benefit. While high AV won't make you invincible to everything, it will make you exceptionally difficult to kill for the vast majority of creatures.
+The real thing that puts this stance over others despite its short duration is that it also has a fairly short cooldown as well; meaning that at high Willpower you can essentially just spam this for massive AV benefit. While high AV won't make you invincible to everything, it will make you exceptionally difficult to kill for the vast majority of creatures. However, the big caveat is that relic shields that gain a bonus to block will let you reach a natural 100% block chance. If you have one of those, this is unnecessary.
 
 ## Short Blades
 
@@ -1434,7 +1450,7 @@ The real thing that puts this stance over others despite its short duration is t
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 0 Agility
 
 **Obtain By:** Early Game
 
@@ -1450,7 +1466,7 @@ The +1 to hit is marginal here, but because it makes our main hand Short Blade a
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 17 Agility
 
 **Obtain By:** Early Game
 
@@ -1462,17 +1478,17 @@ The +1 to hit is marginal here, but because it makes our main hand Short Blade a
 
 Jab got a sneaky nerf that seems to have largely flown under the radar, but it went from doubling your offhand Short Blade strike chance to making it so that when you strike with your offhand Short Blade, you strike with it twice. While this may seem like the same thing on first glance, it's not. Instead of ensuring you reliably attack with all your offhand Short Blades (by raising your hit chance above 100%), you are now vulnerable to probability bringing you into a damage lull when you _really need that damage_. Of course, it just as likely has the chance to give you more damage than possible with the old version of Jab and over a long enough period of time, it will _almost_ be just as good.
 
-The other part of the nerf is that bringing your hit chance above 100% will occasionally allow a second attack in addition the guaranteed attack. Since you cannot get an offhand strike chance above 100% now, you cannot benefit from this property of offhand strikes anymore and thus the damage is marginally worse in the aggregate.
+The other part of the nerf is that bringing your hit chance above 100% will occasionally allow a second attack in addition the guaranteed attack. Since you cannot get an offhand strike chance above 100% without Multiple Arms, you cannot otherwise benefit from this property of offhand strikes anymore and thus the damage is marginally worse in the aggregate.
 
 Jab is still extremely good, but even though it's not the silver bullet it used to be it definitely still makes Short Blades the best choice when it comes to offhand attacks. If you're not investing in Multiweapon Fighting then of course it won't be any good for you, but if you are then this skill is a must-have.
 
-Something to note is that Jab does _not_ affect robotic arms from helping hands, so if you are using helping hands making the swap to Short Blades is actually not worth it for Multiweapon Fighting purposes.
+Something to note is that Jab does _not_ affect robotic arms from helping hands, so if you are using helping hands you should make sure that your primary limb is one of your robo-hands.
 
 ### Bloodletter
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 17 Agility
 
 **Obtain By:** Early Game
 
@@ -1488,7 +1504,7 @@ This makes your Short Blade attacks do just a bit more damage. It eventually syn
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 21 Agility
 
 **Obtain By:** Mid Game
 
@@ -1504,7 +1520,7 @@ A hobbled enemy is quite easy to get away from and this will give you a guarante
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 23 Agility; Juke
 
 **Obtain By:** Mid Game
 
@@ -1520,7 +1536,7 @@ I'm giving this a really big caveat: If you specifically are stacking Triple-joi
 
 <div class="section-info">
 
-**Cost:** 250
+**Requirements:** 250sp; 25 Agility
 
 **Obtain By:** Mid Game
 
@@ -1532,11 +1548,13 @@ I'm giving this a really big caveat: If you specifically are stacking Triple-joi
 
 If you have high DV, then this is just a no-brainer take as it'll give you a straight upgrade to your DPS. This can be used regardless of how many times you're attacked at once, so the increase can be quite significant and potentially even allow you to kill weaker support enemies while you focus on a bigger threat. If you have terrible DV then this won't do anything for you, but otherwise is a great addition.
 
+Something to note is that if you have Horns, you can Rejoinder with them. You can do this even if you have Single Weapon Fighting on, and it will still benefit from all the things Single Weapon Fighting gives.
+
 ### Shank
 
 <div class="section-info">
 
-**Cost:** 250
+**Requirements:** 250sp; 27 Agility
 
 **Obtain By:** Mid-Late Game
 
@@ -1548,13 +1566,15 @@ If you have high DV, then this is just a no-brainer take as it'll give you a str
 
 While this seems like just free damage from an activated ability, in Multiweapon Fighting builds this is typically not worth it since you only get a single attack instead of your multiple attacks from your multiple equipped weapons. If you can get multiple bleeds stacked on your target, this can potentially hit for massive damage. While you probably won't be using this to punch through crazy AV, it can be used to nuke high HP targets especially if you have ways of applying status effects outside of bleed and have a powerful Short Blade. Triple-jointed builds can also make use of the Agility prerequisite to potentially spam this attack.
 
+If you have Weapon Mastery/Weapon Expertise, this will cause your Shank to hit twice/potentially twice; _both_ with the enhanced PV. In these instances, you can pump out some pretty crazy damage if you're able to stack negative effects on your target.
+
 ## Single Weapon Fighting
 
 ### Opportune Attacks
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 17 Agility or 17 Strength
 
 **Obtain By:** Early Game
 
@@ -1564,7 +1584,7 @@ While this seems like just free damage from an activated ability, in Multiweapon
 
 </div>
 
-The way this tree is designed is you either take it or you take Multiweapon Fighting (or neither, if you hate yourself I guess). If you are a truekin or a mutant without the Multiple Arms mutation, you should be taking this tree. Even if you do have Multiple Arms, you'd probably be best with this tree, but at least now there's more of an argument for Multiweapon Fighting. I'm not doing a lot of talking about this skill in particular because it's pretty mid, but necessary for the rest of the tree. Let's switch gears and discuss the actual skill.
+The way this tree is designed is you either take it or you take Multiweapon Fighting (or neither, if you hate yourself I guess). If you are a truekin or a mutant without the Multiple Arms mutation, you should be taking this tree. Multiweapon Fighting with 4+ limbs is superior in terms of damage with full support, but Single Weapon Fighting is a lot more flexible in playstyle. I'm not doing a lot of talking about this skill in particular because it's pretty mid, but necessary for the rest of the tree. Let's switch gears and discuss the actual skill.
 
 You're very likely to get this skill very early on because you just have to for the actually good skills, and when you get it you'll probably not notice its impact at all. Critical hits are uncommon enough that refreshing weapon or shield cooldowns won't do a whole lot (and you probably don't have many to begin with). However, in the mid-late game this skill goes absolutely insane with long cooldown stance skills like En Garde! and Berserk!, especially because by then you're likely to have Weapon Expertise or Weapon Mastery and you're striking more often meaning more crits or have masterwork gear/precision nanon fingers to boost your crit chances further. It becomes fairly likely for you to crit and then refresh those powerful, long cooldowns and go on an absolute tear, so don't forget you have this as you gain those powerful cooldown skills!
 
@@ -1572,7 +1592,7 @@ You're very likely to get this skill very early on because you just have to for 
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 21 Agility or 21 Strength
 
 **Obtain By:** Early Game
 
@@ -1582,13 +1602,13 @@ You're very likely to get this skill very early on because you just have to for 
 
 </div>
 
-50% chance to strike again, but the crazy thing about this chance is that it can proc from _any_ attack while you're single-weapon fighting. This _includes_ the extra attack from Backswing, meaning cudgels can get a large amount of attacks while still benefitting from all of the powerful Single Weapon Fighting skills. There's not much more to say; it's a powerful passive, if you're not Multiweapon Fighting then get this skill.
+50% chance to strike again, but the crazy thing about this chance is that it can proc from _any_ attack while you're Single Weapon Fighting. This _includes_ the extra attack from Backswing, meaning Cudgels can get a large amount of attacks while still benefitting from all of the powerful Single Weapon Fighting skills. There's not much more to say; it's a powerful passive, if you're not Multiweapon Fighting then get this skill.
 
 ### Penetrating Strikes
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 23 Agility or 23 Strength
 
 **Obtain By:** Early-Mid Game
 
@@ -1598,7 +1618,7 @@ You're very likely to get this skill very early on because you just have to for 
 
 </div>
 
-And here it is, the whole reason you take this skill tree. The way this works is that the game will roll its penetrations normally. It will then add 1 to that number. This means that if you hit, _your attack will always penetrate_. No matter the enemy AV, you will always penetrate at least once. Combine this with the naturally high PV of two-handed weapons or the extremely reliable ceremonial vibrokhopesh and you will absolutely rip through enemies. With the vibrokhopesh and this skill, you can turn any build into a melee threat, regardless of their attribute spread.
+And here it is, the crown jewel of this skill tree. The way this works is that the game will roll its penetrations normally. It will then add 1 to that number. This means that if you hit, _your attack will always penetrate_. No matter the enemy AV, you will always penetrate at least once. Combine this with the naturally high PV of two-handed weapons or the extremely reliable ceremonial vibrokhopesh and you will absolutely rip through enemies. With the vibrokhopesh and this skill, you can turn any build into a melee threat, regardless of their attribute spread.
 
 This also means it pairs extremely well with Axes, as in order to Dismember you must penetrate the enemies' AV. This means as long as you make contact with a Dismember strike, it will always Dismember. Combine this with Berserk! and Opportune Strikes and limbs will go flying. Any creature not immune to decapitation is on a serious timer with this brutal combination.
 
@@ -1606,7 +1626,7 @@ This also means it pairs extremely well with Axes, as in order to Dismember you 
 
 <div class="section-info">
 
-**Cost:** 300
+**Requirements:** 300sp; 29 Agility or 29 Strength; Weapon Expertise
 
 **Obtain By:** Mid Game
 
@@ -1624,7 +1644,7 @@ There isn't a lot to say about this skill; it's Weapon Expertise but better. Eve
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 0 Agility
 
 **Obtain By:** Early Game
 
@@ -1642,7 +1662,7 @@ If you happen to not have Sprint (like through permanent Domination), you can ga
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 10 Agility
 
 **Obtain By:** Mid Game
 
@@ -1658,7 +1678,7 @@ Most of my runs will just ignore this one since I don't throw things very often 
 
 <div class="section-info">
 
-**Cost:** 150
+**Requirements:** 150sp; 17 Strength
 
 **Obtain By:** Early Game
 
@@ -1678,7 +1698,7 @@ The second thing to add to the mix is that Axes, Cudgels and Shields have a dedi
 
 The third thing to add is that if you have a Stinger or Horns, you will automatically make strikes with them when you Charge. This means that with these mutations you can make your initiations that much more powerful to potentially kill or disable an enemy on the Charge itself.
 
-The fourth thing to add is that you can improve your range significantly whether you're a true kin or a mutant. Mutants can get a level based increase with Wings and true kin can use the pentaceps cybernetic. This means that both your escape and initiation range increase significantly.
+The fourth thing to add is that you can improve your range significantly whether you're a true kin or a mutant. Mutants can get a level based increase with Wings and true kin can use the Pentaceps cybernetic. This means that both your escape and initiation range increase significantly.
 
 The fifth thing to add is that Charge synergizes naturally with many other skills like Jump, Juke, Swipe and Slam as they all move yourself or the enemy which allow you to get another Charge in the middle of an extended combat. Charge has a low cooldown which with middling levels of Willpower can easily allow it to come off cooldown in the middle of many mid-late game fights.
 
@@ -1688,7 +1708,7 @@ All in all, there's no reason to not get Charge in any run; even runs that you d
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 19 Strength
 
 **Obtain By:** Early-Mid Game
 
@@ -1704,7 +1724,7 @@ If you use guns as your primary weapon, this is actually quite good as it'll giv
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 21 Agility
 
 **Obtain By:** Early-Mid Game
 
@@ -1724,13 +1744,13 @@ In addition to being a great tool for the purposes of moving that one tricky til
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 15 Intelligence
 
 **Obtain By:** Early Game
 
 **Faction:** Barathrumites (Worth It)
 
-**Worth:** No
+**Worth:** Yes
 
 </div>
 
@@ -1744,7 +1764,7 @@ In my experience, you should always save the skill points here and get this skil
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 15 Intelligence
 
 **Obtain By:** Early Game
 
@@ -1760,7 +1780,7 @@ This is your only way of getting bits, so if you're planning on doing literally 
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 15 Intelligence
 
 **Obtain By:** Early Game
 
@@ -1776,7 +1796,7 @@ If you're planning on doing insane amounts of Tinkering right from the start, th
 
 <div class="section-info">
 
-**Cost:** 50
+**Requirements:** 50sp; 17 Intelligence
 
 **Obtain By:** Late Game
 
@@ -1794,7 +1814,7 @@ While mines are mostly useless, bombs are more useful since these work on a time
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 17 Intelligence
 
 **Obtain By:** Mid Game
 
@@ -1810,7 +1830,7 @@ Another skill that while definitely has its uses is far better off being purchas
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 17 Intelligence
 
 **Obtain By:** Mid Game
 
@@ -1822,11 +1842,13 @@ Another skill that while definitely has its uses is far better off being purchas
 
 Deploy Turret is an interesting skill because it has a lot of potential, but needs a considerable amount of setup and support. If you have high Strength (to carry weapons/ammo/cells) and the Long Blades disarm (to get those guns back), this can be quite strong with the right setup. The downside is it leads to an (in my opinion) very boring playstyle where you secure a location, set up your killbox and then lure in enemies to be obliterated by your turrets. You can also use flamethrower/freeze ray turrets in order to disable your opponents. If you don't mind playing extremely slow and have the right setup for this skill, it can be pretty good. If you're not planning on playing around this skill, then you probably will find little to no use from it.
 
+Something to note is that if you have the ability to disarm and Electrical Generation or a biodynamic power plant, the guns you disarm from this skill will be jacked and this can be an easy way to get the mod without knowing the recipe.
+
 ### Tinker I
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 19 Intelligence
 
 **Obtain By:** Early-Mid Game
 
@@ -1842,7 +1864,7 @@ Tinker I is conveniently for us the best of the 3 Tinker X skills. With it, we g
 
 <div class="section-info">
 
-**Cost:** 200
+**Requirements:** 200sp; 23 Intelligence; Tinker I
 
 **Obtain By:** Mid-Late Game
 
@@ -1858,7 +1880,7 @@ Tinker II is very notable for the powerful artifacts you're able to craft with i
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 25 Intelligence; Disassemble
 
 **Obtain By:** Mid-Late Game
 
@@ -1881,7 +1903,7 @@ It's that second one that makes the difference here. 25 Intelligence is a fairly
 
 <div class="section-info">
 
-**Cost:** 300
+**Requirements:** 300sp; 29 Intelligence; Tinker II
 
 **Obtain By:** Late Game
 
@@ -1899,7 +1921,7 @@ Don't get me wrong, you can build some pretty insane gear with Tinker III and as
 
 <div class="section-info">
 
-**Cost:** 100
+**Requirements:** 100sp; 15 Intelligence
 
 **Obtain By:** Early Game
 
@@ -1915,7 +1937,11 @@ The obvious use of this skill is to save your sanity by making overworld travel 
 
 <div class="section-info">
 
-**Cost:** 25 (Flower Fields Lore), 50
+**Requirements:** 25sp (Flower Fields Lore), 50sp; <br>
+15 Intelligence (Flower Fields, Marshes),<br>
+17 Intelligence (Canyons, Hills and Mountains),<br>
+19 Intelligence (Salt Dunes, Rivers and Lakes, Jungles),<br>
+21 Intelligence (Ruins)<br>
 
 **Obtain By:** Mid-Late Game
 
