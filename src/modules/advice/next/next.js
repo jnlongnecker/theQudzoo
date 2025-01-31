@@ -10,18 +10,20 @@ export default class Next extends LightningElement {
         let path = window.location.pathname;
 
         let getPath = "/api/articles";
-        let objectName = "articles";
 
         if (path.indexOf("quests/") > 0) {
             getPath = "/api/quests";
-            objectName = "quests"
+        }
+
+        if (path.indexOf("novice/") > 0) {
+            getPath = "/api/novice"
         }
 
         fetch(getPath)
             .then(result => {
                 result.json()
                     .then(payload => {
-                        let articleList = payload[objectName];
+                        let articleList = payload.articles;
                         for (let index = 0; index < articleList.length; index++) {
                             let item = articleList[index];
                             if (item.link === path) {

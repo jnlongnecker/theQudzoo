@@ -35,18 +35,13 @@ export default class TableOfContents extends LightningElement {
         for (let heading of allHeadings) {
             let sectionObject = {
                 name: heading.textContent,
-                id: this.sectionNameToId(heading.textContent),
+                id: `#${heading.id}`,
                 class: heading.tagName === "H2" ? "" : "indented",
                 element: heading,
                 scrollHeight: heading.getBoundingClientRect().y
             }
             this.sections.push(sectionObject);
         }
-    }
-
-    sectionNameToId(sectionName) {
-        sectionName = "#" + sectionName.toLowerCase();
-        return sectionName.replace(" ", "-");
     }
 
     sectionClicked(event) {

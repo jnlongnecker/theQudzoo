@@ -110,6 +110,10 @@ details p {
     padding-left: 2rem;
 }
 
+video {
+    max-width: 100%;
+}
+
 .home-container {
     padding: 0 var(--desktop-margin-size);
     margin: auto;

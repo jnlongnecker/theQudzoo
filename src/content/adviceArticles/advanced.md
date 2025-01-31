@@ -22,6 +22,8 @@ References
 
 ---
 
+> If you have no idea what AV and PV are or what they do, try reading my explanation [here](</advice/build-making#armor-value-(av)>) before trying to wrap your head around the content in this article.
+
 First off, let's get something straight: the game lies to you. When it comes time to display PV to you, you don't _actually_ have the PV it says you do. Instead, you have 4 less. If I were to guess the reason this is, if you saw 6 PV vs 10 AV and had a cursory understanding of these mechanics you might assume (incorrectly) that you'd very rarely get a penetration. This "4" is a magic number chosen by the devs to try and more accurately convey to you, the player, what AV you have a reasonable chance of penetrating.
 
 Now that we have that straight, let's get to how these numbers are calculated. The simple one is AV: it's the sum of the bonuses provided by your equipment (averaged across limb type), plus the permanent AV bonuses from neutron flux, plus 1 if you have Calloused, plus temporary bonuses like when your Shield blocks or you tighten your Carapace, minus any AV penalties (like Cleave stacks). Cleave cannot bring AV lower than 0, but other types of armor to roll other types of penetration against (like MA) have more effects that _can_ reduce it below 0.
