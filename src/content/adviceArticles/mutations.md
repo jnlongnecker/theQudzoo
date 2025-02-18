@@ -156,7 +156,9 @@ The gas is very difficult to control as it will spread in unpredictable ways. Yo
 
 </div>
 
-Even without any investment, a +2 to Strength is already pretty worth it. With investment, we can get even higher Strength which allows us to focus our attribute points elsewhere while keeping the highest penetration value possible for our weapons. We can combine this with weapons that have no penetration cap, like Horns and Burrowing Claws to devastating effect. Where Double-muscled propels itself ahead of most mutations is its capability to stun on melee attacks as well. Combine this with a build that makes as many attacks as possible and you can easily stun enemies near permanently. This mutation is a staple in most of my builds; you become far more effective in melee with it and a before and after comparison between having it and not having it is quite noticeable.
+Even without any investment, a +2 to Strength is already pretty worth it. With investment, we can get even higher Strength which allows us to focus our attribute points elsewhere while keeping the highest penetration value possible for our weapons. We can combine this with weapons that have no penetration cap, like Horns and Burrowing Claws to devastating effect. Where Double-muscled propels itself ahead of most mutations is its capability to stun on melee attacks that penetrate as well. Combine this with a build that makes as many attacks as possible and you can easily stun enemies near permanently. This mutation is a staple in most of my builds; you become far more effective in melee with it and a before and after comparison between having it and not having it is quite noticeable.
+
+Something relevant to note is that the daze chance from Double-muscled is a bit of a special case. It is completely separate from other daze chances, like Bludgeon, and can proc in the same attack as another daze chance (resulting in an immediate stun). Additionally, this chance is _not_ affected by precision nanon fingers.
 
 ### Electrical Generation
 
