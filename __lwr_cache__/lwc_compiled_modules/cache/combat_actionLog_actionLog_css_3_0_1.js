@@ -1,0 +1,6 @@
+function stylesheet(useActualHostSelector, token) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  return [shadowSelector, "::-webkit-scrollbar {width: 0.5rem;}", shadowSelector, "::-webkit-scrollbar-track {box-shadow: 0;background: var(--bg-color);}", shadowSelector, "::-webkit-scrollbar-track-piece {outline: 1px solid var(--text-color-faded);outline-offset: -0.25rem;}", shadowSelector, "::-webkit-scrollbar-thumb {background: var(--text-color);}::-webkit-scrollbar-thumb:hover", shadowSelector, " {background: var(--text-color-dark);}", shadowSelector, "::-webkit-scrollbar-button {height: 3px;background: var(--text-color);}.chatbox", shadowSelector, " {height: 24rem;overflow-y: auto;box-sizing: border-box;padding: 1rem;width: 70vw;border: 1px solid var(--text-color-faded);display: flex;flex-direction: column;gap: 1rem;}.line", shadowSelector, " {margin: 0;display: flex;gap: 1rem;min-height: 1.75rem;}.line", shadowSelector, " input-button", shadowSelector, " {display: none;}.line:hover", shadowSelector, " input-button", shadowSelector, " {display: initial;}.deactivated", shadowSelector, " {opacity: 66%;}"].join('');
+}
+export default [stylesheet];

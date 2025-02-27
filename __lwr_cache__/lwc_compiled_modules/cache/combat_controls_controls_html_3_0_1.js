@@ -9,7 +9,7 @@ import _combatCombatControls from "combat/combatControls";
 import {registerTemplate} from "lwc";
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, t: api_text, h: api_element, c: api_custom_element} = $api;
-  const {_m0, _m1} = $ctx;
+  const {_m0} = $ctx;
   return [api_element("div", {
     classMap: {
       "container": true
@@ -53,10 +53,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "creature": $cmp.creature
     },
-    key: 7,
-    on: {
-      "attributeschosen": _m1 || ($ctx._m1 = api_bind($cmp.updateAttributes))
-    }
+    key: 7
   }, []) : null, $cmp.showEquipment ? api_custom_element("combat-equipment-controls", _combatEquipmentControls, {
     key: 8
   }, []) : null, $cmp.showSkills ? api_custom_element("combat-skill-controls", _combatSkillControls, {

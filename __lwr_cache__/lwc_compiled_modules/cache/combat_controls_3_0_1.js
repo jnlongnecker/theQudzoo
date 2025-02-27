@@ -20,20 +20,6 @@ class Controls extends LightningElement {
     this.showAttributes = target.innerHTML == 'Attributes';
     this.showCombat = target.innerHTML == 'Combat';
   }
-  updateAttributes(event) {
-    let attr = event.detail.attributes;
-    let newCreature = JSON.parse(JSON.stringify(this.creature));
-    newCreature.attributes.strength = attr.Strength;
-    newCreature.attributes.agility = attr.Agility;
-    newCreature.attributes.toughness = attr.Toughness;
-    newCreature.attributes.intelligence = attr.Intelligence;
-    newCreature.attributes.willpower = attr.Willpower;
-    newCreature.attributes.ego = attr.Ego;
-    this.creature = newCreature;
-    this.dispatchEvent(new CustomEvent('charchange', {
-      detail: this.creature
-    }));
-  }
 }
 _registerDecorators(Controls, {
   publicProps: {

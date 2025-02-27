@@ -16,14 +16,14 @@ class StatSpread extends LightningElement {
     this._creature = this.isPlayer ? this.calculateAppliedStats(value) : value;
     this.attributes = [{
       id: 1,
-      name: 'AGI',
-      class: 'agility attribute-container',
-      total: this._creature.attributes.agility
-    }, {
-      id: 2,
       name: 'STR',
       class: 'strength attribute-container',
       total: this._creature.attributes.strength
+    }, {
+      id: 2,
+      name: 'AGI',
+      class: 'agility attribute-container',
+      total: this._creature.attributes.agility
     }, {
       id: 3,
       name: 'TOU',

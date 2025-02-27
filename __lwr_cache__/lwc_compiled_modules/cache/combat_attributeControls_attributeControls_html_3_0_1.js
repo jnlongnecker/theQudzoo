@@ -70,9 +70,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "options": true
     },
     key: 12
-  }, [api_element("span", {
+  }, [!$cmp.isFreeMode ? api_element("span", {
     key: 13
-  }, [api_text("Points Remaining: " + api_dynamic_text($cmp.points))]), api_element("span", {
+  }, [api_text("Points Remaining: " + api_dynamic_text($cmp.points))]) : null, !$cmp.isFreeMode ? api_element("span", {
     key: 14
   }, [api_custom_element("input-button", _inputButton, {
     props: {
@@ -83,7 +83,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     on: {
       "click": _m1 || ($ctx._m1 = api_bind($cmp.randomizeChanges))
     }
-  }, [api_text("Randomize")])]), api_element("span", {
+  }, [api_text("Randomize")])]) : null, api_element("span", {
     key: 16
   }, [api_custom_element("input-button", _inputButton, {
     props: {

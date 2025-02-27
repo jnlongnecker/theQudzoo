@@ -1,6 +1,6 @@
 function stylesheet(useActualHostSelector, token) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
-  return [".app-container", shadowSelector, " {display: grid;grid-template-columns: 1fr 3fr 1fr;gap: 0.5rem;margin: 1rem 0;}"].join('');
+  return [".container", shadowSelector, " {display: grid;grid-template-rows: 1fr 1fr;border-bottom: 1px solid white;}.creatures", shadowSelector, " {display: flex;flex-direction: column;gap: 1rem;}.app-container", shadowSelector, " {display: grid;grid-template-columns: 1fr 3fr 1fr;gap: 0.5rem;width: 90vw;box-sizing: border-box;padding: 1rem 0;}.log-container", shadowSelector, " {display: flex;justify-content: center;}"].join('');
 }
 export default [stylesheet];

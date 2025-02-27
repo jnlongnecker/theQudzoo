@@ -20,8 +20,9 @@
         </div>
     </div>
     <div class="options">
-        <span>Points Remaining: {points}</span>
-        <span><input-button onclick={randomizeChanges} variant="stat" size="thin">Randomize</input-button></span>
+        <span if:false={isFreeMode}>Points Remaining: {points}</span>
+        <span if:false={isFreeMode}><input-button onclick={randomizeChanges} variant="stat"
+                size="thin">Randomize</input-button></span>
         <span><input-button onclick={resetChanges} variant="stat" size="thin">Reset</input-button></span>
     </div>
 </template>

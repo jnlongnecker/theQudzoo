@@ -1,6 +1,15 @@
 import { LightningElement, api, track } from "lwc";
+import { AttributeChangeAction } from "combat/actions";
 
 export default class AttributeControls extends LightningElement {
+
+    @api mode = 'level';
+
+    level = 1;
+
+    get isFreeMode() {
+        return this.mode !== 'level';
+    }
 
     @api
     get creature() { }
@@ -18,7 +27,12 @@ export default class AttributeControls extends LightningElement {
             };
             return item;
         });
-        this.calculatePoints(value.isKin);
+        this.level = Math.max(1, value.level);
+        let leveledPointsAvailable = value.attributeExpenditure.leveledPoints - value.attributeExpenditure.leveledPointsUsed;
+        let freePointsAvailable = value.attributeExpenditure.freePoints - value.attributeExpenditure.freePointsUsed;
+        this.points = this.level > 1 ? leveledPointsAvailable : freePointsAvailable;
+        this.maxPoints = this.level > 1 ? value.attributeExpenditure.leveledPoints : value.attributeExpenditure.freePoints;
+        this.min = value.attributeExpenditure.minTotal;
         this.recalculateDisplayTotals();
     }
 
@@ -93,30 +107,6 @@ export default class AttributeControls extends LightningElement {
         }
     ]
 
-    calculatePoints(isKin) {
-        if (isKin) {
-            this.points = 38;
-            this.maxPoints = 38;
-            this.min = 12;
-
-            for (let attr of this.attributes) {
-                let add = attr.total > 10 ? attr.total - 10 : 0;
-                attr.total = 12 + add;
-            }
-        } else {
-            this.maxPoints = 44;
-            this.min = 10;
-        }
-
-        let pointsSpent = 0;
-        for (let attr of this.attributes) {
-            for (let i = this.min; i < attr.total; i++) {
-                pointsSpent += i >= 18 ? 2 : 1;
-            }
-        }
-        this.points = this.maxPoints - pointsSpent;
-    }
-
     handleClick(event) {
         let target = event.target;
         if (target.innerText !== "+" && target.innerText !== "-") return;
@@ -130,24 +120,33 @@ export default class AttributeControls extends LightningElement {
 
     incrementAttribute(attrIndex) {
         let attribute = this.attributes[attrIndex];
-        if (this.points < attribute.cost) return;
-        if (attribute.total == 24) return;
+        let leveledPoint = this.level > 1;
+        let cost = leveledPoint ? 1 : attribute.cost;
 
-        attribute.total = attribute.total + 1;
-        this.points -= attribute.cost;
-        this.recalculateDisplayTotals();
-        this.fireChanges();
+        if (this.points < cost) return;
+        if (this.level == 1 && attribute.total == 24 && !this.isFreeMode)
+            return;
+
+
+        let action = new AttributeChangeAction(attribute.name.toLowerCase(), cost, 1, leveledPoint);
+
+        let evt = new CustomEvent("actionattributechange", { detail: action, bubbles: true, composed: true });
+        this.dispatchEvent(evt);
     }
 
     decrementAttribute(attrIndex) {
         let attribute = this.attributes[attrIndex];
+        let leveledPoint = this.level > 1;
+        let cost = leveledPoint ? 1 : attribute.total >= 19 ? 2 : 1;
+
         if (this.points == this.maxPoints) return;
         if (attribute.total == this.min) return;
 
-        attribute.total = attribute.total - 1;
-        this.recalculateDisplayTotals();
-        this.points += attribute.cost;
-        this.fireChanges();
+
+        let action = new AttributeChangeAction(attribute.name.toLowerCase(), -cost, -1, leveledPoint);
+
+        let evt = new CustomEvent("actionattributechange", { detail: action, bubbles: true, composed: true });
+        this.dispatchEvent(evt);
     }
 
     recalculateDisplayTotals() {
@@ -175,6 +174,8 @@ export default class AttributeControls extends LightningElement {
             }
             attribute.displayTotal = attribute.total + modifier;
             attribute.cost = attribute.total >= 18 ? 2 : 1;
+            if (this.level > 1) attribute.cost = 1;
+            if (this.isFreeMode) attribute.cost = 0;
             attribute.modifier = Math.floor((attribute.displayTotal - 16) / 2);
         }
     }

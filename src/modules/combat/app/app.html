@@ -1,7 +1,13 @@
 <template>
-    <section class="app-container">
-        <combat-character-builder oncharchange={updateCreature} character={creature}></combat-character-builder>
-        <combat-controls creature={creature} oncharchange={updateCreature}></combat-controls>
-        <combat-creature-picker></combat-creature-picker>
-    </section>
+    <div class="container">
+        <section class="app-container">
+            <combat-character-builder oncharchange={updateCreature} character={creature}></combat-character-builder>
+            <combat-controls creature={creature}
+                onactionattributechange={handleActionAttributeChange}></combat-controls>
+            <combat-creature-picker></combat-creature-picker>
+        </section>
+        <section class="log-container">
+            <combat-action-log onundoaction={handleUndoAction} onredoaction={handleRedoAction}></combat-action-log>
+        </section>
+    </div>
 </template>
