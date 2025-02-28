@@ -27,6 +27,9 @@ class CreaturePicker extends LightningElement {
   handleSelection(event) {
     let idx = event.detail.id;
     this.currentCreature = this.creatures[idx];
+    this.dispatchEvent(new CustomEvent('charchange', {
+      detail: this.currentCreature
+    }));
   }
 }
 _registerDecorators(CreaturePicker, {

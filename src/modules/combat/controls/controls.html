@@ -11,7 +11,7 @@
                 mode={mode}></combat-attribute-controls>
             <combat-equipment-controls if:true={showEquipment}></combat-equipment-controls>
             <combat-skill-controls if:true={showSkills}></combat-skill-controls>
-            <combat-combat-controls if:true={showCombat}></combat-combat-controls>
+            <combat-combat-controls if:true={showCombat} character={creature} enemy={enemy}></combat-combat-controls>
         </div>
     </div>
 </template>

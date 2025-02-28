@@ -9,6 +9,7 @@ export default class Controls extends LightningElement {
 
     @api mode;
     @api creature;
+    @api enemy;
 
     changeTab(event) {
         let target = event.target;

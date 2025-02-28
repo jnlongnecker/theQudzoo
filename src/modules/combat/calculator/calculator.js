@@ -2,6 +2,10 @@ import {
     DiceRoll, Roll,
     getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random
 } from "./rolls.js";
+import {
+    AttackEvent, AttackCountEvent, SpecialEffectEvent
+} from "./events.js";
+import { SkillManager } from "./skillParts.js";
 
 const defaultWeapon = {
     "name": "base",
@@ -27,61 +31,14 @@ class Combat {
     }
 
     bumpAttack() {
-        let attackSets = [];
-        attackSets.push(this.getAttacks(this.attacker, this.attacker.primary));
-        for (let i = 0; i < this.attacker.limbs.length; i++) {
-            let limb = this.attacker.limbs[i];
-            if (this.attacker.swfOn && limb.multiweaponAffected) continue;
-            if (limb.offhand == 0) continue;
-            if (!limb.item.isWeapon && limb.slot == "floating") continue;
-
-            attackSets.push(this.getAttacks(this.attacker, i));
-        }
-
         let weapon = this.attacker.limbs[this.attacker.primary].item;
+        let attacks = new AttackBuilder(this.attacker).buildAttackAction();
+
         let energyCost = weapon.type == 'shortBlade' && this.attacker.skills['Short Blade Expertise'] ? 750 : 1000;
-        this.rounds.push(new Round(`Round ${this.rounds.length + 1}: Bump Attack`, attackSets, energyCost));
+        this.rounds.push(new Round(`Round ${this.rounds.length + 1}: Bump Attack`, attacks, energyCost));
     }
 
-    getAttacks(attacker, limb) {
-        let weapon = attacker.limbs[limb].item;
-        if (!weapon.isWeapon) weapon = defaultWeapon;
-
-        // Determine how likely a second attack is
-        let secondAttackChance = 0;
-        if (limb == attacker.primary && attacker.swfOn) {
-            if (attacker.skills['Weapon Master']) secondAttackChance = 1;
-            if (attacker.skills['Weapon Expertise']) secondAttackChance = 0.5;
-        } else if (limb != attacker.primary && weapon.type == 'shortBlade') {
-            if (attacker.skills['Jab']) secondAttackChance = 1;
-        }
-
-        // Build attacks
-        let attackTitle = limb == attacker.primary ? 'Primary ' : 'Offhand ';
-        let attack1 = new Attack(attacker, limb, `Initial ${attackTitle} Attack (${limb.name}) - ${weapon.name}`);
-        let attack2 = new Attack(attacker, limb, `Follow-Up ${attackTitle} Attack (${limb.name}) - ${weapon.name}`);
-        attack2.activationChance = secondAttackChance;
-
-        // Next actions depend on weapon type
-        switch (weapon.type) {
-            case "shortBlade":
-            case "axe":
-            case "longBlade":
-                return [attack1, attack2];
-            // Cudgels need backswing handled
-            case "cudgel":
-            default:
-                if (limb != attacker.primary || !attacker.skills['Backswing']) return [attack1, attack2];
-
-                let backswing1 = new Attack(attacker, limb, `Initial Backswing Attack (${limb.name}) - ${weapon.name}`);
-                let backswing2 = new Attack(attacker, limb, `Follow-Up Backswing Attack (${limb.name}) - ${weapon.name}`);
-                backswing1.activationChance = 0.25;
-                backswing2.activationChance = secondAttackChance;
-
-                return [attack1, [backswing1, backswing2], attack2];
-        }
-    }
-
+    /* WIP */
     getTurnExpectedDamage(turn, defender) {
         let expectedDamage = 0;
         for (let attack of turn.attacks) {
@@ -90,37 +47,81 @@ class Combat {
     }
 }
 
+class AttackBuilder {
+
+    attacker;
+    limb;
+
+    constructor(attacker) {
+        this.attacker = attacker;
+        this.limb = attacker.limbs[attacker.primary];
+    }
+
+    buildAttackAction(pvBonus = 0, applyToAll = false) {
+        let attacks = [];
+
+        let weapon = this.limb.item;
+        let primary = new Attack(this.attacker, this.attacker.primary, `Primary Hand Attack (${this.limb.name}) - ${weapon.name}`);
+        primary.pvBonus += pvBonus;
+        primary.pvMaxBonus += pvBonus;
+        let attackCountEvent = new AttackCountEvent();
+        attackCountEvent.attacks.push(primary);
+        attackCountEvent.isPrimary = true;
+        attackCountEvent.fire();
+
+        for (let attack of attackCountEvent.attacks) {
+            if (attack.activationChance > 0) attacks.push(attack);
+        }
+
+        for (let i = 0; i < this.attacker.limbs.length; i++) {
+            if (i == this.attacker.primary) continue;
+
+            let limb = this.attacker.limbs[i];
+            let weapon = limb.item;
+            if (!weapon.isWeapon && limb.slot == "floating") continue;
+
+            let offhand = new Attack(this.attacker, i, `Offhand Attack (${limb.name}) - ${weapon.name}`);
+            offhand.pvBonus += applyToAll ? pvBonus : 0;
+            offhand.pvMaxBonus += applyToAll ? pvBonus : 0;
+            let offhandEvent = new AttackCountEvent();
+            offhandEvent.attacks.push(offhand);
+            offhandEvent.fire();
+
+            for (let attack of offhandEvent.attacks) {
+                if (attack.activationChance > 0) attacks.push(attack);
+            }
+        }
+
+        for (let attack of attacks) {
+            let attackEvent = new AttackEvent();
+            attackEvent.attack = attack;
+            attackEvent.fire();
+            console.log(attackEvent.attack);
+        }
+
+        return attacks;
+    }
+}
+
 class Round {
-    attackSets = [];
+    attacks = [];
     energyCost;
     name;
 
-    constructor(name, attackSets, energyCost) {
+    constructor(name, attacks, energyCost) {
         this.name = name;
-        this.attackSets = attackSets;
+        this.attacks = attacks;
         this.energyCost = energyCost;
     }
 
     expectedRoundDamage(defender) {
         let setResults = [];
-        for (let attackSet of this.attackSets) {
-            setResults.push(this.runAttackSet(attackSet, defender));
+        for (let attack of this.attacks) {
+            setResults.push(getExpectedDamage(attack, defender));
         }
         console.log(setResults);
     }
 
-    runAttackSet(attackSet, defender, expected = false) {
-        let attackData = [];
-        for (let attack of attackSet) {
-            if (Array.isArray(attack)) {
-                attackData.concat(this.runAttackSet(attack, defender, expected));
-                continue;
-            }
-            let result = expected ? getExpectedDamage(attack, defender) : rollAttack(attack, defender);
-            attackData.push(result);
-        }
-        return attackData;
-    }
 }
 
 class Attack {
@@ -129,24 +130,19 @@ class Attack {
     pvBonus = 0;
     pvMaxBonus = 0;
     hitBonus = 0;
-    criticalChance = .05;
-    cleaveChance = 0;
-    bleedChance = 0;
-    dazeChance = 0;
-    dismemberChance = 0;
-    elementalDamage = new ElementalDamage();
+    attempts = 1;
 
-    isPrimary = false;
     limb;
     limbNum;
     weapon;
     attacker;
     name;
 
+    effects = [];
+
     constructor(attacker, limb, name) {
         this.name = name;
         this.attacker = attacker;
-        this.isPrimary = this.attacker.primary == limb;
         this.limb = this.attacker.limbs[limb];
         this.limbNum = limb;
 
@@ -155,36 +151,11 @@ class Attack {
             weapon = defaultWeapon;
 
         this.weapon = weapon;
-        if (this.isPrimary)
-            this.activationChance = 1;
-
-        // Set up data based off of skills
-        if (this.attacker.swfOn) {
-            this.applySingleWeaponFightingSkills();
-        } else if (this.limb.multiweaponAffected && !this.isPrimary) {
-            this.applyMultiweaponFightingSkills();
-        }
-        switch (this.weapon.type) {
-            case 'shortBlade':
-                this.applyShortBladeSkills();
-                break;
-            case 'axe':
-                this.applyAxeSkills();
-                break;
-            case 'longBlade':
-                this.applyLongBladeSkills();
-                break;
-            case 'cudgel':
-            default:
-                this.applyCudgelSkills();
-                break;
-        }
-
-        // Set up data based off of mods
-        this.applyMods(this.weapon);
 
         // Add weapon based hit bonus
         this.hitBonus += weapon.hitBonus;
+
+        this.activationChance = limb == attacker.primary ? 1 : this.limb.offhand;
     }
 
     getCritPvBonus() {
@@ -205,19 +176,21 @@ class Attack {
     }
 
     run(defender) {
-        let metrics = [];
         let weapon = this.weapon;
+        let metrics = [];
 
-        if (this.offhandFactor > 0 && this.offhandModifier) {
-        }
-
-        for (let i = 0; i < this.hits; i++) {
+        for (let i = 0; i < this.attempts; i++) {
             let data = {
-                roll: 0, crit: false, hit: false, penetrations: 0, damage: 0
+                roll: 0, crit: false, hit: false, penetrations: 0, damage: {
+                    physical: 0, heat: 0, cold: 0, electric: 0, acid: 0, umbral: 0, cosmic: 0, poison: 0
+                }
             };
+            let critChance = new SpecialEffectEvent();
+            critChance.chance = .05;
+            critChance.fire();
 
             data.roll = random(1, 20);
-            let minCrit = 21 - Math.floor(20 * this.criticalChance);
+            let minCrit = 21 - Math.floor(20 * critChance.chance);
             data.crit = data.roll >= minCrit;
             data.hit = this.hitBonus + getModifier(this.attacker.attributes.agility);
             if (!data.hit && !data.crit) { metrics.push(data); continue; }
@@ -231,79 +204,30 @@ class Attack {
 
             let roller = new Roll(weapon.damage);
             for (let p = 0; p < data.penetrations; p++) {
-                data.damage += roller.roll();
+                data.damage.physical += roller.roll();
             }
             metrics.push(data);
         }
-        return metrics;
+
+        return metrics
     }
+}
 
-    applySingleWeaponFightingSkills() {
-        if (this.attacker.skills['Penetrating Strikes']) {
-            this.bonusPenetrations = 1;
-        }
-    }
+class ProjectedAttackMetrics {
 
-    applyMultiweaponFightingSkills() {
-        if (this.attacker.skills['Multiweapon Master']) {
-            this.activationChance = .50 + this.limb.offhand;
-        } else if (this.attacker.skills['Multiweapon Expertise']) {
-            this.activationChance = .35 + this.limb.offhand;
-        } else if (this.attacker.skills['Multiweapon Proficiency']) {
-            this.activationChance = .20 + this.limb.offhand;
-        }
-    }
+    activationChance = 0;
+    hitChance = 0;
+    penetrations = 0;
+    damage = {
+        physical: 0, heat: 0, cold: 0, electric: 0, acid: 0, umbral: 0, cosmic: 0, poison: 0
+    };
+    effects = [];
+}
 
-    applyAxeSkills() {
-        if (this.attacker.skills['Axe Proficiency']) {
-            this.hitBonus += 2;
-        }
-        if (this.attacker.skills['Cleave']) {
-            this.cleaveChance = .75;
-        }
-        if (this.attacker.skills['Dismember']) {
-            this.dismemberChance = this.weapon.hands === 1 ? 0.03 : 0.06;
-        }
-    }
-
-    applyCudgelSkills() {
-        if (this.attacker.skills['Cudgel Proficiency']) {
-            this.hitBonus += 2;
-        }
-        if (this.attacker.skills['Bludgeon']) {
-            this.dazeChance = 0.5;
-        }
-    }
-
-    applyShortBladeSkills() {
-        if (this.attacker.skills['Short Blade Expertise']) {
-            this.hitBonus += 1;
-        }
-        if (this.attacker.skills['Bloodletter']) {
-            this.bleedChance = 0.75;
-        }
-    }
-
-    applyLongBladeSkills() { }
-
-    applyMods(weapon) {
-        for (let mod of weapon.mods) {
-            switch (mod) {
-                case "Electrified":
-                    this.elementalDamage.addElectric(weapon.tier);
-                    break;
-                case "Flaming":
-                    this.elementalDamage.addHeat(weapon.tier);
-                    break;
-                case "Freezing":
-                    this.elementalDamage.addCold(weapon.tier);
-                    break;
-                case "Sharp":
-                    this.pvBonus += 1;
-                    this.pvMaxBonus += 1;
-                    break;
-            }
-        }
+function mergeDamage(base, toAdd) {
+    for (let damageType in toAdd) {
+        if (!base[damageType]) base[damageType] = 0;
+        base[damageType] += toAdd[damageType];
     }
 }
 
@@ -457,8 +381,21 @@ function rollAttack(attack, defender) {
     return rollData;
 }
 
+function test() {
+    let part = {
+        callback: function (evt) {
+            console.log('Hello world');
+            console.log(evt);
+        }
+    };
+    AttackEvent.register(part.callback);
+    new AttackEvent().fire();
+}
+
 export {
     Combat, Round,
 
-    DiceRoll, Roll, getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random
+    DiceRoll, Roll, getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random,
+
+    test, SkillManager
 };

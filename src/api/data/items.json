@@ -16,7 +16,7 @@
         "pvBonus": 0,
         "pvCap": 999,
         "hitBonus": 0,
-        "damage": "",
+        "damage": "1",
         "type": "cudgel",
         "mods": [0, 0, 0],
         "tier": 1,

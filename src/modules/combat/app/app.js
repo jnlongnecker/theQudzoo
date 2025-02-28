@@ -2,12 +2,17 @@ import { LightningElement, track } from "lwc";
 
 export default class App extends LightningElement {
     creature;
+    enemy;
 
     actionLog;
     mode = 'level';
 
     updateCreature(event) {
         this.creature = this.populateDefaults(JSON.parse(JSON.stringify(event.detail)));
+    }
+
+    updateEnemy(event) {
+        this.enemy = JSON.parse(JSON.stringify(event.detail));
     }
 
     populateDefaults(draftCreature) {

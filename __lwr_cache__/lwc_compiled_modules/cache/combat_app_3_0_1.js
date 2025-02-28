@@ -4,11 +4,15 @@ class App extends LightningElement {
   constructor(...args) {
     super(...args);
     this.creature = void 0;
+    this.enemy = void 0;
     this.actionLog = void 0;
     this.mode = 'level';
   }
   updateCreature(event) {
     this.creature = this.populateDefaults(JSON.parse(JSON.stringify(event.detail)));
+  }
+  updateEnemy(event) {
+    this.enemy = JSON.parse(JSON.stringify(event.detail));
   }
   populateDefaults(draftCreature) {
     draftCreature.attributeExpenditure = this.defaultAttributeData(draftCreature);
@@ -84,7 +88,7 @@ class App extends LightningElement {
   }
 }
 _registerDecorators(App, {
-  fields: ["creature", "actionLog", "mode"]
+  fields: ["creature", "enemy", "actionLog", "mode"]
 });
 export default _registerComponent(App, {
   tmpl: _tmpl

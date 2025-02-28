@@ -4,10 +4,10 @@
             <combat-character-builder oncharchange={updateCreature} onmodechange={handleModeChange}
                 onactionlevelup={handleActionGeneral} onactionlevelreset={handleActionLevelReset}
                 character={creature}></combat-character-builder>
-            <combat-controls creature={creature} onactionattributechange={handleActionGeneral}
+            <combat-controls creature={creature} enemy={enemy} onactionattributechange={handleActionGeneral}
                 onactionattributerandomize={handleActionGeneral} onactionattributereset={handleActionGeneral}
                 mode={mode}></combat-controls>
-            <combat-creature-picker></combat-creature-picker>
+            <combat-creature-picker oncharchange={updateEnemy}></combat-creature-picker>
         </section>
         <section class="log-container">
             <combat-action-log onundoaction={handleUndoAction} onredoaction={handleRedoAction}></combat-action-log>

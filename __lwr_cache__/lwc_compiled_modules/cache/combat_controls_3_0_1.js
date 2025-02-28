@@ -9,6 +9,7 @@ class Controls extends LightningElement {
     this.showAttributes = true;
     this.mode = void 0;
     this.creature = void 0;
+    this.enemy = void 0;
   }
   changeTab(event) {
     let target = event.target;
@@ -28,6 +29,9 @@ _registerDecorators(Controls, {
       config: 0
     },
     creature: {
+      config: 0
+    },
+    enemy: {
       config: 0
     }
   },

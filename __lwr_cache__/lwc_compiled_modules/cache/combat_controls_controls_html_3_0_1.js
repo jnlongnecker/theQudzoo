@@ -60,6 +60,10 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   }, []) : null, $cmp.showSkills ? api_custom_element("combat-skill-controls", _combatSkillControls, {
     key: 9
   }, []) : null, $cmp.showCombat ? api_custom_element("combat-combat-controls", _combatCombatControls, {
+    props: {
+      "character": $cmp.creature,
+      "enemy": $cmp.enemy
+    },
     key: 10
   }, []) : null])])];
 }

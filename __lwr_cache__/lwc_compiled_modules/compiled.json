@@ -2642,7 +2642,7 @@
   [
     "combat/calculator@3.0.1",
     {
-      "ownHash": "117b27fd549d61c8c3cc0638c1934ded",
+      "ownHash": "ece5c192b1ae0bdf3c2bfef41b4548dd",
       "module": "./cache/combat_calculator_3_0_1.js",
       "moduleMeta": "./cache/combat_calculator_3_0_1.meta.json"
     }
@@ -3266,7 +3266,7 @@
   [
     "combat/app@3.0.1",
     {
-      "ownHash": "792c3831e9851e5b050d03eda95712a2",
+      "ownHash": "53d91db713c38f24522c78eb0ce07b03",
       "module": "./cache/combat_app_3_0_1.js",
       "moduleMeta": "./cache/combat_app_3_0_1.meta.json"
     }
@@ -3274,7 +3274,7 @@
   [
     "combat/app#app.html@3.0.1",
     {
-      "ownHash": "2125654479c95999650ca07af4956743",
+      "ownHash": "6b2c671e7692bc01da59c40d90672545",
       "module": "./cache/combat_app_app_html_3_0_1.js",
       "moduleMeta": "./cache/combat_app_app_html_3_0_1.meta.json"
     }
@@ -3306,7 +3306,7 @@
   [
     "combat/controls@3.0.1",
     {
-      "ownHash": "21a3307a3abab8a9311f79b651eac7ae",
+      "ownHash": "38649daa3ce8e8e1f60e9f68de0bd73a",
       "module": "./cache/combat_controls_3_0_1.js",
       "moduleMeta": "./cache/combat_controls_3_0_1.meta.json"
     }
@@ -3314,7 +3314,7 @@
   [
     "combat/creaturePicker@3.0.1",
     {
-      "ownHash": "80cfbba1adeba5e1ef788ebbce890785",
+      "ownHash": "e20c631b2be307f641a32e95a99c19d1",
       "module": "./cache/combat_creaturePicker_3_0_1.js",
       "moduleMeta": "./cache/combat_creaturePicker_3_0_1.meta.json"
     }
@@ -3330,7 +3330,7 @@
   [
     "combat/controls#controls.html@3.0.1",
     {
-      "ownHash": "c3a8c679e90d6a08e00578c5f68beb0d",
+      "ownHash": "a350da687bc6e281f4b65dfd70608027",
       "module": "./cache/combat_controls_controls_html_3_0_1.js",
       "moduleMeta": "./cache/combat_controls_controls_html_3_0_1.meta.json"
     }
@@ -3386,7 +3386,7 @@
   [
     "combat/combatControls@3.0.1",
     {
-      "ownHash": "ec8a32bd1c0fe50c0f96c235cfd5afd4",
+      "ownHash": "bf03db8331e03f96849f831cfd905db0",
       "module": "./cache/combat_combatControls_3_0_1.js",
       "moduleMeta": "./cache/combat_combatControls_3_0_1.meta.json"
     }
@@ -3458,7 +3458,7 @@
   [
     "combat/combatControls#combatControls.html@3.0.1",
     {
-      "ownHash": "f420990315751370e1237e86b4043332",
+      "ownHash": "e7337a6dc92b3ed33523839794d3e1f9",
       "module": "./cache/combat_combatControls_combatControls_html_3_0_1.js",
       "moduleMeta": "./cache/combat_combatControls_combatControls_html_3_0_1.meta.json"
     }
@@ -3669,6 +3669,54 @@
       "ownHash": "1acd88859b95c56370239826acf975ac",
       "module": "./cache/c_utilities_3_0_1.js",
       "moduleMeta": "./cache/c_utilities_3_0_1.meta.json"
+    }
+  ],
+  [
+    "combat/calculator#events.js@3.0.1",
+    {
+      "ownHash": "93f0cfdc1469457fa3de14de9040a164",
+      "module": "./cache/combat_calculator_events_js_3_0_1.js",
+      "moduleMeta": "./cache/combat_calculator_events_js_3_0_1.meta.json"
+    }
+  ],
+  [
+    "combat/calculator#skillParts.js@3.0.1",
+    {
+      "ownHash": "ca52ef1cecca478b49c6f342c3cc345e",
+      "module": "./cache/combat_calculator_skillParts_js_3_0_1.js",
+      "moduleMeta": "./cache/combat_calculator_skillParts_js_3_0_1.meta.json"
+    }
+  ],
+  [
+    "combat/calculator#weaponEffects@3.0.1",
+    {
+      "ownHash": "42e9960e68121799b2f765c72882563c",
+      "module": "./cache/combat_calculator_weaponEffects_3_0_1.js",
+      "moduleMeta": "./cache/combat_calculator_weaponEffects_3_0_1.meta.json"
+    }
+  ],
+  [
+    "combat/calculator#events@3.0.1",
+    {
+      "ownHash": "94403c3f2a6da32f4a8e9234733235ae",
+      "module": "./cache/combat_calculator_events_3_0_1.js",
+      "moduleMeta": "./cache/combat_calculator_events_3_0_1.meta.json"
+    }
+  ],
+  [
+    "combat/calculator#rolls@3.0.1",
+    {
+      "ownHash": "a499b0bb12de8597b538d282987d8399",
+      "module": "./cache/combat_calculator_rolls_3_0_1.js",
+      "moduleMeta": "./cache/combat_calculator_rolls_3_0_1.meta.json"
+    }
+  ],
+  [
+    "combat/calculator#weaponEffects.js@3.0.1",
+    {
+      "ownHash": "42e9960e68121799b2f765c72882563c",
+      "module": "./cache/combat_calculator_weaponEffects_js_3_0_1.js",
+      "moduleMeta": "./cache/combat_calculator_weaponEffects_js_3_0_1.meta.json"
     }
   ]
 ]
