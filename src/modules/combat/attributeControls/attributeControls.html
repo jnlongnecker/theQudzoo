@@ -10,8 +10,8 @@
                             <p class="modifier">[{attribute.modifier}]</p>
                         </div>
                         <div class="buttons">
-                            <button>+</button>
-                            <button>-</button>
+                            <button if:true={showIncrease}>+</button>
+                            <button if:true={showDecrease}>-</button>
                         </div>
                     </div>
                     <p class="point-cost" key={attribute.name}>[{attribute.cost}pts]</p>
@@ -21,8 +21,10 @@
     </div>
     <div class="options">
         <span if:false={isFreeMode}>Points Remaining: {points}</span>
-        <span if:false={isFreeMode}><input-button onclick={randomizeChanges} variant="stat"
-                size="thin">Randomize</input-button></span>
-        <span><input-button onclick={resetChanges} variant="stat" size="thin">Reset</input-button></span>
+        <template if:true={showButtons}>
+            <span if:false={isFreeMode}><input-button onclick={randomizeChanges} variant="stat"
+                    size="thin">Randomize</input-button></span>
+            <span><input-button onclick={resetChanges} variant="stat" size="thin">Reset</input-button></span>
+        </template>
     </div>
 </template>

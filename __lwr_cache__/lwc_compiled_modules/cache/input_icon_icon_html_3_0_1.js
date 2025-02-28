@@ -22,14 +22,14 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "fill-rule": "evenodd",
       "stroke-linejoin": "round",
       "stroke-miterlimit": "2",
-      "viewBox": "0 0 24 24",
+      "viewBox": $cmp.icon.viewBox,
       "xmlns": "http://www.w3.org/2000/svg"
     },
     key: 1,
     svg: true
   }, [api_element("path", {
     attrs: {
-      "d": $cmp.pathToUse
+      "d": $cmp.icon.path
     },
     key: 2,
     svg: true

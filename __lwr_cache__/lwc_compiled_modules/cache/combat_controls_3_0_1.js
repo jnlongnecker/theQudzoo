@@ -7,6 +7,7 @@ class Controls extends LightningElement {
     this.showSkills = void 0;
     this.showCombat = void 0;
     this.showAttributes = true;
+    this.mode = void 0;
     this.creature = void 0;
   }
   changeTab(event) {
@@ -23,6 +24,9 @@ class Controls extends LightningElement {
 }
 _registerDecorators(Controls, {
   publicProps: {
+    mode: {
+      config: 0
+    },
     creature: {
       config: 0
     }

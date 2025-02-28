@@ -72,7 +72,7 @@ class StatSpread extends LightningElement {
     let toughMod = getModifier(value.attributes.toughness);
     let agilMod = getModifier(value.attributes.agility);
     let temp = JSON.parse(JSON.stringify(value));
-    temp.hp = value.attributes.toughness + (value.level - 1) * (toughMod * 2);
+    temp.hp = value.attributes.toughness + (value.level - 1) * Math.max(toughMod + 2, 0);
     temp.ma = 4 + willMod;
     temp.dv = 6 + agilMod;
     return temp;

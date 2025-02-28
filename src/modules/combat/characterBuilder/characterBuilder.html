@@ -1,5 +1,26 @@
 <template>
     <div class="container" if:true={character}>
         <combat-stat-spread is-player="true" creature={character}></combat-stat-spread>
+        <div class="buttons">
+            <div class="button-collection">
+                <label>Mode</label>
+                <input-switch left="Leveled" right="Free" uncheckcolor="agility" checkcolor="ego"
+                    onswitch={toggleMode}></input-switch>
+            </div>
+            <div class="button-collection">
+                <input-button size="small" variant="thin willpower" onclick={sendActionLevelUp}>
+                    <span class="button-details">
+                        <input-icon variant="up" size="normal"></input-icon>
+                        Level Up
+                    </span>
+                </input-button>
+                <input-button size="small" variant="thin toughness" onclick={sendActionLevelReset}>
+                    <span class="button-details">
+                        <input-icon variant="refresh" size="normal"></input-icon>
+                        Reset Level
+                    </span>
+                </input-button>
+            </div>
+        </div>
     </div>
 </template>

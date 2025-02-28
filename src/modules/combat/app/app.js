@@ -4,6 +4,7 @@ export default class App extends LightningElement {
     creature;
 
     actionLog;
+    mode = 'level';
 
     updateCreature(event) {
         this.creature = this.populateDefaults(JSON.parse(JSON.stringify(event.detail)));
@@ -26,6 +27,10 @@ export default class App extends LightningElement {
         };
     }
 
+    handleModeChange(event) {
+        this.mode = event.detail;
+    }
+
     sendActionToLog(action) {
         if (!this.actionLog) {
             this.actionLog = this.template.querySelector('combat-action-log');
@@ -43,27 +48,45 @@ export default class App extends LightningElement {
     handleUndoAction(event) {
         let action = event.detail;
         let newCreature = JSON.parse(JSON.stringify(this.creature));
-        let error = action.reverse(newCreature);
-        if (error) {
-            this.sendMessageToLog(error);
+        try {
+            action.reverse(newCreature);
+        } catch (e) {
+            this.sendMessageToLog(e);
             return;
         }
         this.creature = newCreature;
+        this.actionLog.updateActionMessage(action.id);
     }
 
     handleRedoAction(event) {
         let action = event.detail;
         let newCreature = JSON.parse(JSON.stringify(this.creature));
-        action.apply(newCreature);
+        try {
+            action.apply(newCreature);
+        } catch (e) {
+            this.sendMessageToLog(e);
+            return;
+        }
+        this.creature = newCreature;
+        this.actionLog.updateActionMessage(action.id);
+    }
+
+    handleActionGeneral(event) {
+        let action = event.detail;
+        let newCreature = JSON.parse(JSON.stringify(this.creature));
+        try {
+            action.apply(newCreature);
+        } catch (e) {
+            this.sendMessageToLog(e);
+            return;
+        }
+        this.sendActionToLog(action);
         this.creature = newCreature;
     }
 
-    handleActionAttributeChange(event) {
-        let action = event.detail;
-        this.sendActionToLog(action);
-        let newCreature = JSON.parse(JSON.stringify(this.creature));
-
-        action.apply(newCreature);
-        this.creature = newCreature;
+    handleActionLevelReset() {
+        if (this.creature.level === 1) return;
+        this.actionLog.applyLevelReset();
+        this.sendMessageToLog('Reset to level 1.');
     }
 }

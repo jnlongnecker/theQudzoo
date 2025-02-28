@@ -51,7 +51,8 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 6
   }, [$cmp.showAttributes ? api_custom_element("combat-attribute-controls", _combatAttributeControls, {
     props: {
-      "creature": $cmp.creature
+      "creature": $cmp.creature,
+      "mode": $cmp.mode
     },
     key: 7
   }, []) : null, $cmp.showEquipment ? api_custom_element("combat-equipment-controls", _combatEquipmentControls, {

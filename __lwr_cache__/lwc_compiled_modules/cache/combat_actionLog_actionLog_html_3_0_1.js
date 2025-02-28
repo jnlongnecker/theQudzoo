@@ -24,9 +24,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
         "line": true
       },
       key: api_key(1, it.value.id)
-    }, [it.value.activated ? api_element("span", {
+    }, [it.value.action ? it.value.activated ? api_element("span", {
       key: 2
-    }, [api_text(api_dynamic_text(it.value.message))]) : null, it.value.activated ? it.value.action.reversible ? api_custom_element("input-button", _inputButton, {
+    }, [api_text(api_dynamic_text(it.value.message))]) : null : null, it.value.action ? it.value.activated ? it.value.action.reversible ? api_custom_element("input-button", _inputButton, {
       classMap: {
         "inline-action": true
       },
@@ -41,12 +41,12 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       on: {
         "click": _m0 || ($ctx._m0 = api_bind($cmp.undoAction))
       }
-    }, [api_text("Undo")]) : null : null, !it.value.activated ? api_element("span", {
+    }, [api_text("Undo")]) : null : null : null, it.value.action ? !it.value.activated ? api_element("span", {
       classMap: {
         "deactivated": true
       },
       key: 4
-    }, [api_text(api_dynamic_text(it.value.message))]) : null, !it.value.activated ? api_custom_element("input-button", _inputButton, {
+    }, [api_text(api_dynamic_text(it.value.message))]) : null : null, it.value.action ? !it.value.activated ? api_custom_element("input-button", _inputButton, {
       classMap: {
         "inline-action": true
       },
@@ -61,7 +61,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       on: {
         "click": _m1 || ($ctx._m1 = api_bind($cmp.redoAction))
       }
-    }, [api_text("Redo")]) : null]);
+    }, [api_text("Redo")]) : null : null, !it.value.action ? api_element("span", {
+      key: 6
+    }, [api_text(api_dynamic_text(it.value.message))]) : null]);
   }))];
 }
 export default registerTemplate(tmpl);

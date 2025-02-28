@@ -55,11 +55,11 @@ function tmpl($api, $cmp, $slotset, $ctx) {
         "buttons": true
       },
       key: 8
-    }, [api_element("button", {
+    }, [$cmp.showIncrease ? api_element("button", {
       key: 9
-    }, [api_text("+")]), api_element("button", {
+    }, [api_text("+")]) : null, $cmp.showDecrease ? api_element("button", {
       key: 10
-    }, [api_text("-")])])]), api_element("p", {
+    }, [api_text("-")]) : null])]), api_element("p", {
       classMap: {
         "point-cost": true
       },
@@ -72,7 +72,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 12
   }, [!$cmp.isFreeMode ? api_element("span", {
     key: 13
-  }, [api_text("Points Remaining: " + api_dynamic_text($cmp.points))]) : null, !$cmp.isFreeMode ? api_element("span", {
+  }, [api_text("Points Remaining: " + api_dynamic_text($cmp.points))]) : null, $cmp.showButtons ? !$cmp.isFreeMode ? api_element("span", {
     key: 14
   }, [api_custom_element("input-button", _inputButton, {
     props: {
@@ -83,7 +83,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     on: {
       "click": _m1 || ($ctx._m1 = api_bind($cmp.randomizeChanges))
     }
-  }, [api_text("Randomize")])]) : null, api_element("span", {
+  }, [api_text("Randomize")])]) : null : null, $cmp.showButtons ? api_element("span", {
     key: 16
   }, [api_custom_element("input-button", _inputButton, {
     props: {
@@ -94,7 +94,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     on: {
       "click": _m2 || ($ctx._m2 = api_bind($cmp.resetChanges))
     }
-  }, [api_text("Reset")])])])];
+  }, [api_text("Reset")])]) : null])];
 }
 export default registerTemplate(tmpl);
 tmpl.stylesheets = [];

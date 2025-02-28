@@ -32,12 +32,14 @@ button {
     background-color: transparent;
     font-family: var(--qud-font);
     color: var(--text-color-normal);
+    fill: var(--text-color-normal);
 }
 
 button:hover {
     background-color: var(--hover-darken);
     border-color: var(--border-color-hover);
     color: var(--text-color-hover);
+    fill: var(--text-color-hover);
     cursor: pointer;
 }
 

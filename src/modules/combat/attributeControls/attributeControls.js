@@ -1,14 +1,32 @@
 import { LightningElement, api, track } from "lwc";
-import { AttributeChangeAction } from "combat/actions";
+import { AttributeChangeAction, RandomizeAttributesAction, ResetAttributesAction } from "combat/actions";
 
 export default class AttributeControls extends LightningElement {
 
-    @api mode = 'level';
+    _mode = 'level';
+
+    @api get mode() { return this._mode; }
+    set mode(val) {
+        this._mode = val;
+        this.recalculateDisplayTotals();
+    }
 
     level = 1;
 
     get isFreeMode() {
         return this.mode !== 'level';
+    }
+
+    get showDecrease() {
+        return this.isFreeMode || this.level == 1;
+    }
+
+    get showIncrease() {
+        return this.isFreeMode || this.points > 0;
+    }
+
+    get showButtons() {
+        return this.level == 1;
     }
 
     @api
@@ -123,12 +141,12 @@ export default class AttributeControls extends LightningElement {
         let leveledPoint = this.level > 1;
         let cost = leveledPoint ? 1 : attribute.cost;
 
-        if (this.points < cost) return;
+        if (this.points < cost && !this.isFreeMode) return;
         if (this.level == 1 && attribute.total == 24 && !this.isFreeMode)
             return;
 
 
-        let action = new AttributeChangeAction(attribute.name.toLowerCase(), cost, 1, leveledPoint);
+        let action = new AttributeChangeAction(attribute.name.toLowerCase(), cost, 1, leveledPoint, this.mode);
 
         let evt = new CustomEvent("actionattributechange", { detail: action, bubbles: true, composed: true });
         this.dispatchEvent(evt);
@@ -139,11 +157,11 @@ export default class AttributeControls extends LightningElement {
         let leveledPoint = this.level > 1;
         let cost = leveledPoint ? 1 : attribute.total >= 19 ? 2 : 1;
 
-        if (this.points == this.maxPoints) return;
-        if (attribute.total == this.min) return;
+        if (this.points == this.maxPoints && !this.isFreeMode) return;
+        if (attribute.total == this.min && !this.isFreeMode) return;
 
 
-        let action = new AttributeChangeAction(attribute.name.toLowerCase(), -cost, -1, leveledPoint);
+        let action = new AttributeChangeAction(attribute.name.toLowerCase(), -cost, -1, leveledPoint, this.mode);
 
         let evt = new CustomEvent("actionattributechange", { detail: action, bubbles: true, composed: true });
         this.dispatchEvent(evt);
@@ -180,46 +198,13 @@ export default class AttributeControls extends LightningElement {
         }
     }
 
-    resetChanges(fireChanges) {
-        for (let attribute of this.attributes) {
-            attribute.total = this.min;
-        }
-        this.recalculateDisplayTotals();
-        this.points = this.maxPoints;
-
-        if (fireChanges) this.fireChanges();
+    resetChanges() {
+        let action = new ResetAttributesAction();
+        this.dispatchEvent(new CustomEvent("actionattributereset", { detail: action, bubbles: true, composed: true }));
     }
 
     randomizeChanges() {
-        this.resetChanges(false);
-        while (this.points > 0) {
-            let attributeSelection = Math.floor(Math.random() * 6);
-            let attribute = this.attributes[attributeSelection];
-            if (attribute.total > 23) continue;
-            if (this.points < attribute.cost) continue;
-
-            attribute.total++;
-            this.points -= attribute.cost;
-            this.recalculateDisplayTotals();
-        }
-
-        this.fireChanges();
-    }
-
-    fireChanges() {
-        let payload = {
-            apSpent: this.maxPoints - this.points,
-            attributes: {
-                Agility: this.attributes[1].total,
-                Ego: this.attributes[5].total,
-                Intelligence: this.attributes[3].total,
-                Strength: this.attributes[0].total,
-                Toughness: this.attributes[2].total,
-                Willpower: this.attributes[4].total
-            }
-        };
-
-        let evt = new CustomEvent("attributeschosen", { detail: payload });
-        this.dispatchEvent(evt);
+        let action = new RandomizeAttributesAction();
+        this.dispatchEvent(new CustomEvent("actionattributerandomize", { detail: action, bubbles: true, composed: true }));
     }
 }

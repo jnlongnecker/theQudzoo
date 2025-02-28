@@ -1,9 +1,12 @@
 <template>
     <div class="container">
         <section class="app-container">
-            <combat-character-builder oncharchange={updateCreature} character={creature}></combat-character-builder>
-            <combat-controls creature={creature}
-                onactionattributechange={handleActionAttributeChange}></combat-controls>
+            <combat-character-builder oncharchange={updateCreature} onmodechange={handleModeChange}
+                onactionlevelup={handleActionGeneral} onactionlevelreset={handleActionLevelReset}
+                character={creature}></combat-character-builder>
+            <combat-controls creature={creature} onactionattributechange={handleActionGeneral}
+                onactionattributerandomize={handleActionGeneral} onactionattributereset={handleActionGeneral}
+                mode={mode}></combat-controls>
             <combat-creature-picker></combat-creature-picker>
         </section>
         <section class="log-container">

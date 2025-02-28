@@ -1,7 +1,8 @@
 .container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid white;
+    padding-bottom: 1rem;
 }
 
 .creatures {

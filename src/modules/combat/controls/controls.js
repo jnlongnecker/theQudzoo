@@ -7,6 +7,7 @@ export default class Controls extends LightningElement {
     showCombat;
     showAttributes = true;
 
+    @api mode;
     @api creature;
 
     changeTab(event) {
