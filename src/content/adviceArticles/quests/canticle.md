@@ -34,7 +34,7 @@ This is how most people decide to approach the quest, but we can do better. Thes
 
 Back in the salt marshes, there is a single center zone that spawns an oddly-hued glowpad. This is actually a merchant that will sell a variety of items at random tiers. Conveniently for us, it will also always sell a Grit Gate recoiler and a Joppa recoiler. Since we should already have a Joppa recoiler at this point, we can figure out what item is the Grit Gate recoiler by purchasing the blue named “small stone” artifact.
 
-![The oddly-hued glowpad's inventory screen, hovering on a "small stone" artifact costing $357.14 drams]($assetsDir/images/quests/canticle-glowpad.png)
+<span>![The oddly-hued glowpad's inventory screen, hovering on a "small stone" artifact costing $357.14 drams]($assetsDir/images/quests/canticle-glowpad.png)</span>
 
 It will be an expensive purchase, but don't sell the mechanical wings if you have them! If you have extras or have the Wings mutation, of course, go ahead, but you'll still want those flappers soon. Additionally, if you know 2 merchant secrets or 1 merchant and have the Tactful skill, you can water ritual and share the secrets with the glowpad to get the Snake Oiler skill, which will help the price.
 

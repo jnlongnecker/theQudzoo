@@ -56,19 +56,19 @@ While conventional wisdom has you running for your life, my wisdom says somethin
 
 The reason for this is that enemies will follow you down the chutes. Running all the way to the bottom prolongs the problem until you get there, it doesn't completely solve it. While there will be enemies that you lose during the process, there is no guarantee that you'll drop somewhere safe. The last thing you want is to drop in danger at the bottom and then have 4 oozes drop on your head because you didn't kill them earlier.
 
-![Player Nomad at the Golgotha cloaca surrounded by a Glow Wight, Black Gel, Green Gel, Brown Gel, Agolmaggot, and Spark Tick]($assetsDir/images/quests/golgotha-pickle.png)
+<span>![Player Nomad at the Golgotha cloaca surrounded by a Glow Wight, Black Gel, Green Gel, Brown Gel, Agolmaggot, and Spark Tick]($assetsDir/images/quests/golgotha-pickle.png)</span>
 
 This is a far more damning position to be in than taking the chute slowly and killing everything that moves on stable ground. Not only will we be weakened from tanking attacks, but we will also have likely taken a good bit of damage from hazards as well. Our only option for survival is to keep running, and if we encounter enemies like Slog or the Agolfly we may just be as good as dead.
 
 ---
 
-![Player Nomad on solid ground next to the Golgotha conveyor belts with two Green Gels, a Brown Gel and a Quillipede nearby]($assetsDir/images/quests/golgotha-scenario1.png)
+<span>![Player Nomad on solid ground next to the Golgotha conveyor belts with two Green Gels, a Brown Gel and a Quillipede nearby]($assetsDir/images/quests/golgotha-scenario1.png)</span>
 
 While we may encounter extremely deadly scenarios like the one here, we can position ourselves with more control on stable ground to better take on the enemies. While we may need to expend healing resources like salves or witchwood bark, we have the luxury of being able to heal up after and take our time on the conveyor belts, which means we don't take hazard damage.
 
 ---
 
-![Player Nomad on solid ground next to the Golgotha conveyor by a wall with a Green Gel and Quillipede in melee and a Brown Gel one tile to the southwest]($assetsDir/images/quests/golgotha-scenario2.png)
+<span>![Player Nomad on solid ground next to the Golgotha conveyor by a wall with a Green Gel and Quillipede in melee and a Brown Gel one tile to the southwest]($assetsDir/images/quests/golgotha-scenario2.png)</span>
 
 ---
 
@@ -102,7 +102,7 @@ _Level_
 
 ---
 
-| 12 and Below                                                                                | 13 - 18                                                               | 19 and Above      |
+| 12 and Below                                                                                | 13 - 18                                                               | 19+               |
 | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------------- |
 | Hologram Bracelet and choice of Masterwork Scoped Carbine or Masterwork Scoped Chain Pistol | Choice of Masterwork Scoped Carbine or Masterwork Scoped Chain Pistol | 3 random grenades |
 
