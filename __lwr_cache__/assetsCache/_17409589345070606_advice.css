@@ -120,8 +120,8 @@ video {
     max-width: 100%;
 }
 
-.injected img:hover {
-    cursor: text;
+.injected img {
+    cursor: default;
 }
 
 .home-container {
@@ -224,7 +224,6 @@ video {
 
     #mobile-contents {
         display: inline;
-        margin-bottom: 1rem;
     }
 
     #desktop-contents {

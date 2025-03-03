@@ -7,7 +7,7 @@ export default class InspectImage extends LightningElement {
     activated = false;
 
     connectedCallback() {
-        let contentImages = document.querySelectorAll("img");
+        let contentImages = document.querySelectorAll("*:not(.injected) img");
 
         for (let image of contentImages) {
             image.addEventListener("click", (event) => {

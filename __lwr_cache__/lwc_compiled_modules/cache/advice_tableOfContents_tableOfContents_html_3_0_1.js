@@ -26,6 +26,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   }, api_iterator($cmp.sections, function (section) {
     return api_element("p", {
       className: section.class,
+      attrs: {
+        "data-id": section.id
+      },
       key: api_key(4, section.id),
       on: {
         "click": _m1 || ($ctx._m1 = api_bind($cmp.sectionClicked))

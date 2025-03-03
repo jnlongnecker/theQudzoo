@@ -78,7 +78,7 @@ p > img {
     float: right;
     margin: 0 0 1rem 1rem;
     position: relative;
-    top: 0.5rem;
+    top: 2px;
 }
 
 p > img:hover,
@@ -118,10 +118,6 @@ details p {
 
 video {
     max-width: 100%;
-}
-
-.injected img:hover {
-    cursor: text;
 }
 
 .home-container {
@@ -224,7 +220,6 @@ video {
 
     #mobile-contents {
         display: inline;
-        margin-bottom: 1rem;
     }
 
     #desktop-contents {

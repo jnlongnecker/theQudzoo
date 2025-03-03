@@ -9,9 +9,7 @@ p {
     line-height: 1.75rem;
 }
 
-p,
-li,
-input {
+p, li, input {
     color: var(--text-color-light);
 }
 
@@ -77,12 +75,9 @@ p > img {
     max-width: 100%;
     float: right;
     margin: 0 0 1rem 1rem;
-    position: relative;
-    top: 0.5rem;
 }
 
-p > img:hover,
-p > span img:hover {
+p > img:hover, p > span img:hover {
     cursor: zoom-in;
 }
 
@@ -118,10 +113,6 @@ details p {
 
 video {
     max-width: 100%;
-}
-
-.injected img:hover {
-    cursor: text;
 }
 
 .home-container {
@@ -224,7 +215,6 @@ video {
 
     #mobile-contents {
         display: inline;
-        margin-bottom: 1rem;
     }
 
     #desktop-contents {

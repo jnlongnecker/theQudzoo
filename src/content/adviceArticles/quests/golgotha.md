@@ -60,17 +60,11 @@ The reason for this is that enemies will follow you down the chutes. Running all
 
 This is a far more damning position to be in than taking the chute slowly and killing everything that moves on stable ground. Not only will we be weakened from tanking attacks, but we will also have likely taken a good bit of damage from hazards as well. Our only option for survival is to keep running, and if we encounter enemies like Slog or the Agolfly we may just be as good as dead.
 
----
-
 <span>![Player Nomad on solid ground next to the Golgotha conveyor belts with two Green Gels, a Brown Gel and a Quillipede nearby]($assetsDir/images/quests/golgotha-scenario1.png)</span>
 
 While we may encounter extremely deadly scenarios like the one here, we can position ourselves with more control on stable ground to better take on the enemies. While we may need to expend healing resources like salves or witchwood bark, we have the luxury of being able to heal up after and take our time on the conveyor belts, which means we don't take hazard damage.
 
----
-
 <span>![Player Nomad on solid ground next to the Golgotha conveyor by a wall with a Green Gel and Quillipede in melee and a Brown Gel one tile to the southwest]($assetsDir/images/quests/golgotha-scenario2.png)</span>
-
----
 
 By positioning here, we limit the number of enemies (and more importantly, oozes) that can hit us at once. The green ooze to the northwest is busy running on the treadmill and can't make it to us. The quillipede will hit the other enemies with quill fling, so we can focus on the ooze that will stun us. We're also just out of range of the flaming vent, but the quillipede is not so while we focus on the ooze, the quillipede is being roasted. Another great position is further east, next to the conveyor belt. Since the belt is going away from us, it will constantly be pulling enemies away from us, giving us the opportunity to shoot them for free. Enemies that can stay in melee with us end up being roasted by the flaming vent to the north as well.
 
