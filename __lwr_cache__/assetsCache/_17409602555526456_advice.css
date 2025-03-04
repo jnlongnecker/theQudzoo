@@ -91,11 +91,6 @@ p > span img {
     text-align: center;
     margin: auto;
     display: block;
-    max-width: 100%;
-}
-
-label {
-    color: var(--text-color-light);
 }
 
 table {

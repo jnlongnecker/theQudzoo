@@ -94,10 +94,6 @@ p > span img {
     max-width: 100%;
 }
 
-label {
-    color: var(--text-color-light);
-}
-
 table {
     width: 100%;
 }
