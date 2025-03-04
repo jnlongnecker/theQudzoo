@@ -9,8 +9,6 @@ export function isVersionOutdated(version) {
     try {
         let parts = version.split('.');
         let currParts = currVersion.split('.');
-        console.log(parts);
-        console.log(currParts);
 
         for (let i = 0; i < parts.length - 1; i++) {
             let part = Number(parts[i]);
@@ -142,8 +140,6 @@ const baseKin = {
 
 const go = async function () {
     let json = await fetchJsonForBuildCode(testCode);
-
-    console.log(json);
 }
 
 const stringifyForEncoding = function (json) {

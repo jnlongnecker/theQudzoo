@@ -6,8 +6,6 @@ export function isVersionOutdated(version) {
   try {
     let parts = version.split('.');
     let currParts = currVersion.split('.');
-    console.log(parts);
-    console.log(currParts);
     for (let i = 0; i < parts.length - 1; i++) {
       let part = Number(parts[i]);
       let curr = Number(currParts[i]);
@@ -23,29 +21,29 @@ const baseMutant = {
   "gameversion": currVersion,
   "buildversion": "1.0.0",
   "modules": [{
-    "moduleType": "XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
+    "moduleType": `XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudGenotypeModuleData, Assembly-CSharp",
       "Genotype": "Mutated Human",
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
+    "moduleType": `XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudSubtypeModuleData, Assembly-CSharp",
       "Subtype": "Apostle",
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudMutationsModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
+    "moduleType": `XRL.CharacterBuilds.Qud.QudMutationsModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudMutationsModuleData, Assembly-CSharp",
       "mp": 12,
       "selections": [],
-      "version": "1.1.0"
+      "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
+    "moduleType": `XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudAttributesModuleData, Assembly-CSharp",
       "PointsPurchased": {
@@ -62,7 +60,7 @@ const baseMutant = {
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
+    "moduleType": `XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModuleData, Assembly-CSharp",
       "StartingLocation": "Joppa",
@@ -74,21 +72,21 @@ const baseKin = {
   "gameversion": currVersion,
   "buildversion": "1.0.0",
   "modules": [{
-    "moduleType": "XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
+    "moduleType": `XRL.CharacterBuilds.Qud.QudGenotypeModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudGenotypeModuleData, Assembly-CSharp",
       "Genotype": "True Kin",
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
+    "moduleType": `XRL.CharacterBuilds.Qud.QudSubtypeModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudSubtypeModuleData, Assembly-CSharp",
       "Subtype": "Horticulturist",
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
+    "moduleType": `XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudAttributesModuleData, Assembly-CSharp",
       "PointsPurchased": {
@@ -105,7 +103,7 @@ const baseKin = {
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudCyberneticsModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
+    "moduleType": `XRL.CharacterBuilds.Qud.QudCyberneticsModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudCyberneticsModuleData, Assembly-CSharp",
       "lp": -1,
@@ -113,7 +111,7 @@ const baseKin = {
       "version": "1.0.0"
     }
   }, {
-    "moduleType": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=2.0.209.35, Culture=neutral, PublicKeyToken=null",
+    "moduleType": `XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,
     "data": {
       "$type": "XRL.CharacterBuilds.Qud.QudChooseStartingLocationModuleData, Assembly-CSharp",
       "StartingLocation": "Joppa",
@@ -123,7 +121,6 @@ const baseKin = {
 };
 const go = async function () {
   let json = await fetchJsonForBuildCode(testCode);
-  console.log(json);
 };
 const stringifyForEncoding = function (json) {
   let ret = JSON.stringify(json, null, 2);

@@ -1,0 +1,6 @@
+function stylesheet(useActualHostSelector, token) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  return [".container", shadowSelector, " {display: flex;background-color: var(--hover-darken);border-radius: 5px;padding: 0 0.5rem;fill: var(--cybernetic-color);}.x-icon", shadowSelector, " {padding: 0.5rem;display: flex;justify-content: center;align-items: center;}.wrapper", shadowSelector, " {display: flex;justify-content: center;align-items: center;padding: 0.25rem;background-color: transparent;border-radius: 50%;fill: var(--cybernetic-color);stroke: var(--cybernetic-color);stroke-width: 1px;}.wrapper:hover", shadowSelector, " {cursor: pointer;background-color: var(--cybernetic-color);fill: rgb(25, 25, 25);stroke: rgb(25, 25, 25);stroke-width: 1px;}input", shadowSelector, " {border: 0;font-size: 1rem;margin: 0;color: var(--text-color-light);background-color: transparent;}input:focus", shadowSelector, " {outline: 0;}"].join('');
+}
+export default [stylesheet];

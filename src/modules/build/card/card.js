@@ -57,18 +57,11 @@ export default class BuildCard extends LightningElement {
 
     subtypeBonuses;
 
-    connectedCallback() {
-        window.addEventListener('keydown', () => {
-            console.log(this.buildJson);
-        })
-    }
-
     get isOutdated() {
         if (!this.buildJson) return false;
 
         let version = this.buildJson.gameversion;
         let result = isVersionOutdated(version);
-        console.log(result);
         return isVersionOutdated(version);
     }
 

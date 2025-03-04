@@ -230,9 +230,10 @@ export default class MutationChooser extends LightningElement {
             let mutObj = {
                 Mutation: mut.name,
                 Count: mut.numSelected,
-                Variant: mut.variantIndex,
+                Variant: mut.variantIndex ? mut.variantTrueName[mut.variantIndex] : null,
                 variantName: mut.variant
             }
+            console.log(mutObj);
             this.mutationPayload.mutations.push(mutObj);
         }
         this.mutationPayload.mpRemaining = this.points;
