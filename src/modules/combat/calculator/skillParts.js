@@ -5,9 +5,16 @@ class SkillManager {
 
     skills = {};
 
+    constructor(skillList) {
+        for (let skill in skillList) {
+            if (skillList[skill])
+                this.addSkill(skill);
+        }
+    }
+
     addSkill(skillName) {
         switch (skillName) {
-            case 'bludgeon':
+            case 'Bludgeon':
                 this.skills[skillName] = new Cudgel_Bludgeon();
                 this.skills[skillName].onAttach();
                 break;

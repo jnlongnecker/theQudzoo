@@ -24,8 +24,7 @@ export default class CombatControls extends LightningElement {
     }
 
     runTest() {
-        this.skillManager = new SkillManager();
-        this.skillManager.addSkill('bludgeon');
+        this.practicalCharacter.skills['Bludgeon'] = true;
         let combat = new Combat(this.practicalCharacter, this.practicalEnemy);
         combat.bumpAttack();
         console.log(combat);

@@ -23,11 +23,13 @@ class Combat {
     attacker;
     defender;
 
+    skillManager;
     rounds = [];
 
     constructor(attacker, target) {
         this.attacker = attacker;
         this.defender = target;
+        this.skillManager = new SkillManager(attacker.skills);
     }
 
     bumpAttack() {
