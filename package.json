@@ -10,7 +10,8 @@
         "dev": "nodenv src/server/startServer.cjs -f",
         "start": "node src/server/startServer.cjs prod",
         "start:compat": "lwr serve --mode compat",
-        "start:prod-compat": "lwr serve --mode prod-compat"
+        "start:prod-compat": "lwr serve --mode prod-compat",
+        "dbscript": "node ./src/scripts/dbConfig.cjs"
     },
     "dependencies": {
         "body-parser": "^1.20.2",

@@ -52,6 +52,7 @@ export default class BuildLibrary extends LightningElement {
 
     set filters(newFilters) {
         this.filterStore = JSON.parse(JSON.stringify(newFilters));
+        console.log(this.filterStore);
         this.fetchBuilds();
     }
 
@@ -108,6 +109,8 @@ export default class BuildLibrary extends LightningElement {
         this.filterStore['sort'] = { ascending: this.ascending, sortBy: this.sortBy }
         this.filterStore['page'] = this.page;
         this.filterStore['tags'] = this.chosenTags.length > 0 ? this.chosenTags : undefined;
+
+        console.log(this.filterStore);
     }
 
     async fetchBuilds() {

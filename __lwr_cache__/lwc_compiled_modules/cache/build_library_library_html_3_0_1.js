@@ -165,35 +165,21 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "notification": true
     },
     key: 26
-  }, [api_custom_element("input-icon", _inputIcon, {
-    props: {
-      "variant": "warning",
-      "size": "big"
-    },
-    key: 27
-  }, []), api_element("span", {
-    key: 28
-  }, [api_text("Build makers, re-save your build to bring it into the modern version. If you are a build consumer, beware that many outdated builds cannot be imported.")]), api_custom_element("input-icon", _inputIcon, {
-    props: {
-      "variant": "warning",
-      "size": "big"
-    },
-    key: 29
-  }, [])]), api_element("section", {
+  }, []), api_element("section", {
     classMap: {
       "container": true
     },
-    key: 30
+    key: 27
   }, api_flatten([api_element("div", {
     classMap: {
       "mobile-help-button": true
     },
-    key: 31
+    key: 28
   }, [api_element("a", {
     attrs: {
       "href": "/build-code"
     },
-    key: 32
+    key: 29
   }, [api_element("button", {
     classMap: {
       "setting-button": true
@@ -201,12 +187,12 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     attrs: {
       "tabindex": "-1"
     },
-    key: 33
+    key: 30
   }, [api_element("p", {
     classMap: {
       "help-text": true
     },
-    key: 34
+    key: 31
   }, [api_text("How Do I Add A Build Code?")])])])]), api_iterator($cmp.builds, function (build) {
     return api_custom_element("build-card", _buildCard, {
       props: {
@@ -214,14 +200,14 @@ function tmpl($api, $cmp, $slotset, $ctx) {
         "build": build,
         "contextid": $cmp.contextUserId
       },
-      key: api_key(35, build._id),
+      key: api_key(32, build._id),
       on: {
         "deletedbuild": _m6 || ($ctx._m6 = api_bind($cmp.fetchBuilds))
       }
     }, []);
   }), api_iterator($cmp.ghostBuilds, function (ghost) {
     return $cmp.working ? api_custom_element("build-ghost-box", _buildGhostBox, {
-      key: api_key(36, ghost)
+      key: api_key(33, ghost)
     }, []) : null;
   })]))];
 }

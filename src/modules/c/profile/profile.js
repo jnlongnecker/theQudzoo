@@ -20,7 +20,10 @@ export default class Profile extends LightningElement {
 
     get libraryFilters() {
         return {
-            "owner.username": this.user.username
+            "$or": [
+                { "owner.username": this.user.username },
+                { "owner._id": this.user.id }
+            ]
         }
     }
 

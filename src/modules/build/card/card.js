@@ -60,9 +60,8 @@ export default class BuildCard extends LightningElement {
     get isOutdated() {
         if (!this.buildJson) return false;
 
-        let version = this.buildJson.gameversion;
-        let result = isVersionOutdated(version);
-        return isVersionOutdated(version);
+        let result = isVersionOutdated(this.buildJson);
+        return result;
     }
 
     get deletable() {

@@ -1,20 +1,33 @@
+import { getMutations } from "c/api";
+let cachedMutations;
+getMutations().then(value => {
+  cachedMutations = value.mutations;
+});
 const testCode = "H4sIAAAAAAAACs1W32vbMBB+L/R/EGaPjkm67ifkIXPH6NpBVoduMPog24ctJktGOm14Jf/7Tk6a2HG3rIOWGIzt++5On747Sb49PmIsKHgFP8BYoVXwlgUn0Tg6GZ9GL94EYYunTsi84zAhh/Eaq3TuJFgyf/PfjN2uHhto0dTgg75eXUZxyQ3PEMw7n9FGn13u7w+gNJLbpzYgZDNroUplM4oTCqhDdr0ae7plFrLYSXQGpgocGi5DNnepFNkFNAv9HdRUOSlXHFsyOUdONDbsyPQMH0rtjJIM6G0HoZx3/j7twjhgF0L1HAYy3mHL1csy/G8ZE5ceqIo9ZvtFXLv7pLFW1smnUnCGaETqEOwBirhLbr+Ocy0U2rkzWckt5P0xCZ8VQgpsyP4q7AHvC03G077xXCFIKQpQmaf6so8maEAVWA6RhXZFqcDaIfRFSFnrn2A8hS2y7E6C10kNCslj9Px1H7iCigslVEHguAulNN1ZTdZ+xCN2TtykYBSgyA6xdQbs9veO9PKNJl2TBQkZ0gw6u/3q6rUV86vWtRWbhLvAhohnfAam4vLcr3Du8wa77tfcCN5m8jp0weX24+apSuws6kr8gg1+iJX+A8n9BVf0E7AWumuuAe+x0iaQt6t24G60ouIn90Y9ZnFKrS0kyA3SfnCps7ahDrFAfyH6DyfjTpwf7KOua/6wE9I/bo6Plr8BJxu4zf8JAAA=";
 const testCode2 = "H4sIAAAAAAAACs1U72vbMBD9Xuj/IMI+Oibp2tIO8iHLSll/QNqEbjD6QbYPW0yRjHTaMMX/e09xWlsxLOtgJYHg+N67u3dPFz0dHjA2yPkKfoGxQqvBJzY4ikfx0eg4PjkfRGs8cUJmHcKYCKMNttKZk2Ap/MO/M/bUPF6hZVWCT/p+fxPPCm54imA++4o2vnOZ/16C0ki023VCxKbWwiqR1XC2oIQyYg9N70mrLGIzJ9EZmChwaLiM2NwlUqTXUC31T1AT5aRsNK7FZBw5yXhVR6EP+FZpX6hIT17bhGq+8H3ZpXHAroUKCD0bX7C6+VFH/2zjwiV76mKgbLeJG7ovOjccUBvB383FKaIRiUOwe2jktrjdXs61UGjnzqQFt5CFPb3XaEDlWBBwGgXINBdSYEXASQgstcsLBdb2c74qBClFDiqFPvpNSFnq32AIOguhi1z7Rm2s7g7By0UJCokx/HgWAvew4kIJlRM46kIJjTstKRpm/MfNmVUJGAUo0n1cnZ663bsjvX3DcTdkQUKKNEHnxm8+wVoRs+1HTD9CtE3Qbn2k423ggfv/O27SumDdvjy+16EWWltYIDdIS3ajU+6n38fz/YPQv7hyt/J8sytdlvxt165/PB4e1M+X/8VzWAgAAA==";
 const mutantAp = 44;
 const truekinAp = 38;
-export function isVersionOutdated(version) {
-  try {
-    let parts = version.split('.');
-    let currParts = currVersion.split('.');
-    for (let i = 0; i < parts.length - 1; i++) {
-      let part = Number(parts[i]);
-      let curr = Number(currParts[i]);
-      if (part != curr) return true;
-    }
-    return false;
-  } catch (e) {
-    return true;
+export function isVersionOutdated(build) {
+  let genotypeModule = build.modules.find(module => module.moduleType.includes("XRL.CharacterBuilds.Qud.QudGenotypeModule"));
+  if (genotypeModule.data.Genotype !== 'Mutated Human') {
+    return !validModernTrueKin(build);
   }
+  return !validModernMutant(build);
+}
+function validModernMutant(build) {
+  let mutationsList = cachedMutations;
+  let mutationModule = build.modules.find(module => module.moduleType.includes("XRL.CharacterBuilds.Qud.QudMutationsModule"));
+  let mp = 12;
+  for (let mutation of mutationModule.data.selections) {
+    let mutationDetails = mutationsList.find(mut => mut.name === mutation.Mutation);
+    if (mutation.Count > mutationDetails.max) return false;
+    let cost = mutationDetails.cost * mutation.Count;
+    mp -= cost;
+  }
+  return mp >= 0;
+}
+function validModernTrueKin(build) {
+  return true;
 }
 const currVersion = '2.0.209.35';
 const baseMutant = {
@@ -40,7 +53,7 @@ const baseMutant = {
       "$type": "XRL.CharacterBuilds.Qud.QudMutationsModuleData, Assembly-CSharp",
       "mp": 12,
       "selections": [],
-      "version": "1.0.0"
+      "version": "1.1.0"
     }
   }, {
     "moduleType": `XRL.CharacterBuilds.Qud.QudAttributesModule, Assembly-CSharp, Version=${currVersion}, Culture=neutral, PublicKeyToken=null`,

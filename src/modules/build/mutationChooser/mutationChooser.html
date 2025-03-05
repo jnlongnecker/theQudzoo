@@ -43,7 +43,7 @@
                                 {mut.displayName}
                             </div>
                             <div class="multi-btn">
-                                <div if:true={mut.variant} class="variations">
+                                <div if:true={mut.hasVariants} class="variations">
                                     <button onclick={chooseVariant} name={mut.name} class="v-button">Variant</button>
                                 </div>
                                 <div class="info-btn">

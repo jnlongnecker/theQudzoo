@@ -243,6 +243,37 @@ exports.getBuilds = async function (req, res) {
     }
 }
 
+exports.getAllBuilds = async function (req, res) {
+    let allBuilds;
+
+    let results = buildFiltersFromQuery(req.params.info);
+    let filters = results.filters;
+    let sort = results.sort;
+    let page = results.page;
+
+    try {
+        allBuilds = await Build.find(filters,
+            "name code owner.displayName public likes tags genotype created updated description");
+    }
+    catch (e) {
+        res.status(400);
+        return {
+            error: true,
+            message: e.message
+        }
+    }
+    let maxBuilds = allBuilds.length;
+
+    allBuilds = sortBuilds(allBuilds, sort.sortBy, sort.ascending);
+
+    res.status(200);
+    return {
+        error: false,
+        builds: allBuilds,
+        maxBuilds: maxBuilds,
+    }
+}
+
 /*
     Sorts a list of builds by a field and in an order
 */

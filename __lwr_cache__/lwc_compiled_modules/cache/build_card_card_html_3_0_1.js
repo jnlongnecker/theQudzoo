@@ -205,7 +205,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     key: 28
   }, []), api_element("span", {
     key: 29
-  }, [api_text("This build is from an outdated version. It may not be compatible with the current version of the game, and the build code may be invalid.")]), api_custom_element("input-icon", _inputIcon, {
+  }, [api_text("This build seems to be invalid. It likely won't work in-game.")]), api_custom_element("input-icon", _inputIcon, {
     props: {
       "variant": "warning",
       "size": "big"

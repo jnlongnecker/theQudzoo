@@ -139,7 +139,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
         "multi-btn": true
       },
       key: 25
-    }, [mut.variant ? api_element("div", {
+    }, [mut.hasVariants ? api_element("div", {
       classMap: {
         "variations": true
       },

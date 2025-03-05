@@ -55,10 +55,7 @@
                     </div>
                     <div class="outdated-section" if:true={isOutdated}>
                         <input-icon variant="warning" size="big"></input-icon>
-                        <span>This build is from an outdated version. It
-                            may not be
-                            compatible with the current version of the game, and the build code may be invalid.
-                        </span>
+                        <span>This build seems to be invalid. It likely won't work in-game.</span>
                         <input-icon variant="warning" size="big"></input-icon>
                     </div>
                     <h1>{buildName}<span if:true={hasOwner}> by <span class="name">{displayName}</span></span></h1>
