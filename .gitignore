@@ -3,3 +3,4 @@ node_modules
 scripts
 *.env
 usage.md
+__lwr_cache__

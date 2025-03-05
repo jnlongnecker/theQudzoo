@@ -11,7 +11,6 @@ class BuildLibrary extends LightningElement {
   }
   set filters(newFilters) {
     this.filterStore = JSON.parse(JSON.stringify(newFilters));
-    console.log(this.filterStore);
     this.fetchBuilds();
   }
   get showAuthor() {
@@ -52,13 +51,12 @@ class BuildLibrary extends LightningElement {
     this.headerText = '';
     this.hideFilters = true;
     this.chosenTags = [];
-    this.getContextUser();
-    setTimeout(() => {
+    this.getContextUser().then(() => {
       if (!this.builds.length && !this.filters) {
         this.filterStore = {};
         this.fetchBuilds();
       }
-    }, 50);
+    });
     window.addEventListener('scroll', event => this.checkPosition(event));
   }
   toggleFilters() {

@@ -52,7 +52,6 @@ export default class BuildLibrary extends LightningElement {
 
     set filters(newFilters) {
         this.filterStore = JSON.parse(JSON.stringify(newFilters));
-        console.log(this.filterStore);
         this.fetchBuilds();
     }
 
@@ -82,13 +81,12 @@ export default class BuildLibrary extends LightningElement {
 
     constructor() {
         super();
-        this.getContextUser();
-        setTimeout(() => {
+        this.getContextUser().then(() => {
             if (!this.builds.length && !this.filters) {
                 this.filterStore = {};
                 this.fetchBuilds();
             }
-        }, 50);
+        });
         window.addEventListener('scroll', (event) => this.checkPosition(event));
     }
 
