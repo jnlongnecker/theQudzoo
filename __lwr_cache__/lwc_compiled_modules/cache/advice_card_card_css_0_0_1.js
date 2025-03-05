@@ -1,6 +1,0 @@
-function stylesheet(useActualHostSelector, token) {
-  var shadowSelector = token ? ("[" + token + "]") : "";
-  var hostSelector = token ? ("[" + token + "-host]") : "";
-  return ["img", shadowSelector, " {position: relative;top: -9rem;z-index: -1;}.card", shadowSelector, " {overflow-y: hidden;height: 9rem;width: 16rem;display: flex;flex-flow: column;justify-content: flex-start;gap: 0;border-radius: 5px;text-decoration: none;}.overlay-container", shadowSelector, " {background-color: var(--hover-darken);}.spacing-container", shadowSelector, " {height: 5rem;transition: .5s;margin: 0;}.card-label", shadowSelector, " {font-family: var(--qud-font);color: var(--text-color);height: 2rem;margin: 0;padding: .5rem 0 1.5rem;background-color: rgba(0,0,0,.8);text-align: center;transition: .5s;}.card:hover", shadowSelector, " {cursor: pointer;}.card:hover", shadowSelector, " .spacing-container", shadowSelector, " {height: 3rem;transition: .5s;}.card:hover", shadowSelector, " .card-label", shadowSelector, " {height: 4rem;font-size: 1.5rem;transition: .5s;}"].join('');
-}
-export default [stylesheet];
