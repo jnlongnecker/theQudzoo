@@ -6,7 +6,7 @@
     --qud-font: "Source Code Pro", "Open Sans", "Segoe UI", "Consolas",
         "Lucida Console", "Courier New", "Courier";
     --bg-color: radial-gradient(rgba(5, 41, 41, 0.902), rgba(8, 14, 14, 0.902));
-    --bg-color-dark: #052929;
+    --bg-color-dark: #0f3b3a;
     --hover-darken: rgba(8, 14, 14, 0.3);
     --text-color: white;
     --text-color-inverted: black;
@@ -21,7 +21,7 @@
     --h4-color: #b6d7a8;
     --qudzoo-color: #a64a2e;
     --skills-color: #77bfcf;
-    --strength-color: rgba(192, 66, 66, 0.852);
+    --strength-color: #f15f22;
     --toughness-color: #d74200;
     --intelligence-color: #0096ff;
     --agility-color: #cfc041;

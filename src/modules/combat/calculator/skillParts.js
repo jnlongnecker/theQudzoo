@@ -1,6 +1,10 @@
 import { AttackEvent } from "./events.js";
 import { BludgeonDaze } from "./weaponEffects.js";
 
+const classConstructors = {
+    'Cudgel_Bludgeon': Cudgel_Bludgeon.new,
+}
+
 class SkillManager {
 
     skills = {};
@@ -13,14 +17,14 @@ class SkillManager {
     }
 
     addSkill(skillName) {
-        switch (skillName) {
-            case 'Bludgeon':
-                this.skills[skillName] = new Cudgel_Bludgeon();
-                this.skills[skillName].onAttach();
-                break;
-            default:
-                console.log(`Unknown skill: ${skillName}`);
+        let skillConstructor = classConstructors[skillName];
+        if (!skillConstructor) {
+            console.error(`Unknown skill: ${skillName}`);
+            return;
         }
+
+        this.skills[skillName] = new skillConstructor();
+        this.skills[skillName].onAttach();
     }
 }
 
