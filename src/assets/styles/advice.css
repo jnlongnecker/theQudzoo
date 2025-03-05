@@ -6,6 +6,12 @@ main {
 }
 
 p {
+    line-height: 1.75rem;
+}
+
+p,
+li,
+input {
     color: var(--text-color-light);
 }
 
@@ -55,7 +61,7 @@ hr {
 
 blockquote {
     margin: 1rem 0;
-    padding: 0.25rem 0.5rem;
+    padding: 0.75rem 0.5rem;
     border-left: 5px solid var(--qudzoo-color);
     font-family: var(--qud-font);
     background-color: var(--hover-darken);
@@ -67,24 +73,29 @@ blockquote p {
     margin: 0;
 }
 
-img {
-    float: left;
+p > img {
     max-width: 100%;
-    margin: 0 1rem 1rem 0;
+    float: right;
+    margin: 0 0 1rem 1rem;
+    position: relative;
+    top: 0.5rem;
 }
 
-p > img:hover {
+p > img:hover,
+p > span img:hover {
     cursor: zoom-in;
 }
 
-p:nth-child(even) img {
-    float: right;
-    margin: 0 0 1rem 1rem;
+p > span img {
+    float: none;
+    text-align: center;
+    margin: auto;
+    display: block;
+    max-width: 100%;
 }
 
-p:nth-child(even) span img {
-    float: none;
-    margin: 0;
+label {
+    color: var(--text-color-light);
 }
 
 table {
@@ -112,6 +123,10 @@ details p {
 
 video {
     max-width: 100%;
+}
+
+.injected img:hover {
+    cursor: text;
 }
 
 .home-container {
@@ -164,6 +179,7 @@ video {
 }
 
 .section-info td {
+    vertical-align: top;
     padding-top: 1rem;
 }
 
@@ -219,6 +235,7 @@ video {
 
     #mobile-contents {
         display: inline;
+        margin-bottom: 1rem;
     }
 
     #desktop-contents {

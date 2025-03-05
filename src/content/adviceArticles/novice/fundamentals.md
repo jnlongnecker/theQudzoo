@@ -30,7 +30,7 @@ While this panel has very dense information, while starting out it's probably no
     -   This means that the creature will not only not attack you, but will attack things that attack you. If you accidentally hit them, they will give you some grace to a point before retaliating. A creature can be Friendly, Neutral, or Hostile. A neutral creature will only attack if attacked first (or one of their allies), while a hostile creature will actively try to kill you.
 -   <span class="misc">Average</span>
     -   This means that the creatures level compared to yours is similar. There are 6 levels to this rating: `Trivial` > `Easy` > `Average` > `Tough` > `Very Tough` > `Impossible`. Generally speaking, avoid fights with anything `Very Tough` or harder. Even `Tough` fights should be treated with extreme caution, but anything more and you should probably flee.
--   Perfect
+-   `Perfect`
     -   This is the health condition of the creature, and Perfect means it is at full HP. There are 5 stages to this description: `Badly Wounded` > `Wounded` > `Injured` > `Fine` > `Perfect`. This description can also be found at the bottom of the screen in your current target information, so be sure to check it to see how close you are to victory.
 
 When you [<span class="attribute agility">l</span>]ook, by default it only shows the entity at the top of the tile. However, there can be multiple things stacked on top of each other on a tile. If you want to navigate up and down the pile, you can use [<span class="attribute agility">+</span>] and [<span class="attribute agility">-</span>] to do so.

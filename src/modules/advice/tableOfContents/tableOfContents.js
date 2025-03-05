@@ -3,6 +3,7 @@ import { LightningElement, api, track } from "lwc";
 export default class TableOfContents extends LightningElement {
     titleElement;
     containerElement;
+    pageTitle;
 
     @track
     sections;
@@ -21,9 +22,10 @@ export default class TableOfContents extends LightningElement {
 
     connectedCallback() {
         this.containerElement = this.template.querySelector(".sections");
+        this.titleElement = document.querySelector("h1");
 
-        let remText = getComputedStyle(document.documentElement).getPropertyValue('--heading-height');
-        this.newSectionMarginPixels = this.convertRemToPixels(remText.substring(0, remText.indexOf("rem"))) + 10;
+        this.newSectionMarginPixels = window.innerHeight * 0.4;
+        this.pageTitle = document.title;
 
         this.gatherPageSections();
         window.addEventListener("scroll", (event) => this.handleScroll(event));
@@ -38,7 +40,8 @@ export default class TableOfContents extends LightningElement {
                 id: `#${heading.id}`,
                 class: heading.tagName === "H2" ? "" : "indented",
                 element: heading,
-                scrollHeight: heading.getBoundingClientRect().y
+                scrollHeight: heading.getBoundingClientRect().y,
+                contentsElement: undefined
             }
             this.sections.push(sectionObject);
         }
@@ -58,6 +61,8 @@ export default class TableOfContents extends LightningElement {
     }
 
     scrollToTop(event) {
+        if (!this.titleElement)
+            this.titleElement = document.querySelector("h1");
         this.titleElement.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
         history.pushState(undefined, undefined, "");
     }
@@ -94,8 +99,12 @@ export default class TableOfContents extends LightningElement {
         if (newHighlightedSectionIndex !== -1) {
             newSection = this.sections[newHighlightedSectionIndex];
             newSection.class += " selected";
-
-            //this.containerElement.scrollTop = (this.convertRemToPixels(2.25)) * (newHighlightedSectionIndex);
+            if (!newSection.sectionElement) {
+                newSection.sectionElement = this.template.querySelector(`p[data-id="${newSection.id}"]`)
+            }
+            if (!this.isVisibleInViewport(newSection.sectionElement.getBoundingClientRect())) {
+                this.containerElement.scrollTop = newSection.sectionElement.getBoundingClientRect().top + this.containerElement.scrollTop;
+            }
         }
 
         if (this.lastHighlightedSectionIndex === -1) {
@@ -110,7 +119,14 @@ export default class TableOfContents extends LightningElement {
 
     }
 
-    convertRemToPixels(rem) {
-        return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    isVisibleInViewport(rect) {
+        let containerRect = this.containerElement.getBoundingClientRect();
+        let containerTop = containerRect.top;
+        let containerBottom = containerRect.bottom;
+
+        return (
+            rect.top >= containerTop &&
+            rect.bottom <= containerBottom
+        );
     }
 }

@@ -20,14 +20,14 @@ Let's start out by explaining what exactly it is we're trying to do. We've got a
 
 <div class="section-info">
 
-<input type="checkbox" /> 20 drams of Primordial Soup<br/>
-<input type="checkbox" /> Body (level 30+ follower)<br/>
-<input type="checkbox" /> Catalyst (3 pure drams of a liquid)<br/>
-<input type="checkbox" /> Atzmus (Severed body part of a creature)<br/>
-<input type="checkbox" /> Armament (Any zetachrome weapon)<br/>
-<input type="checkbox" /> Incantation (Journal event)<br/>
-<input type="checkbox" /> Hamsa (Any item)<br/>
-<input type="checkbox" /> Power Source (Chavvah or 3 drams of Neutron Flux)<br/>
+<input type="checkbox" /> <label>20 drams of Primordial Soup</label><br/>
+<input type="checkbox" /> <label>Body (level 30+ follower)</label><br/>
+<input type="checkbox" /> <label>Catalyst (3 pure drams of a liquid)</label><br/>
+<input type="checkbox" /> <label>Atzmus (Severed body part of a creature)</label><br/>
+<input type="checkbox" /> <label>Armament (Any zetachrome weapon)</label><br/>
+<input type="checkbox" /> <label>Incantation (Journal event)</label><br/>
+<input type="checkbox" /> <label>Hamsa (Any item)</label><br/>
+<input type="checkbox" /> <label>Power Source (Chavvah or 3 drams of Neutron Flux)</label><br/>
 
 </div>
 
@@ -168,8 +168,6 @@ Not only do pools of this liquid appear after the death of a zero jell, there ar
 #### Chrome Pyramid
 
 ![Player Nomad next to a chrome pyramid in the Moon Stair]($assetsDir/images/quests/golem-chrome.png)
-
----
 
 Our final threat, and easily the most dangerous: the infamous chrome pyramid. If you are somehow unacquainted, here is what you can look forward to:
 

@@ -43,17 +43,10 @@ class BuildCard extends LightningElement {
     this.deleting = false;
     this.subtypeBonuses = void 0;
   }
-  connectedCallback() {
-    window.addEventListener('keydown', () => {
-      console.log(this.buildJson);
-    });
-  }
   get isOutdated() {
     if (!this.buildJson) return false;
-    let version = this.buildJson.gameversion;
-    let result = isVersionOutdated(version);
-    console.log(result);
-    return isVersionOutdated(version);
+    let result = isVersionOutdated(this.buildJson);
+    return result;
   }
   get deletable() {
     return this.mode == "delete";

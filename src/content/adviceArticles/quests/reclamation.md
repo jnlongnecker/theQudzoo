@@ -32,7 +32,7 @@ I won't make a mention of it in the individual combat sections, but keep in mind
 
 ### The Knight Commanders
 
-The two knight commanders are the same type of creature that led the raid in [A Call To Arms](./a-call-to-arms), and are hopefully much less dangerous to you at this point. To recap on their abilities, they will use Menacing Stare to fear you and have you lose control of your positioning and will try and lock you down with Shield Slam. Disarm via Dueling Stance + Lunge or Disarming Shot are extremely effective here and they can remove both the primary weapon of the knight commander _and_ the shield, removing the ability to Shield Slam.
+The two knight commanders are the same type of creature that led the raid in [A Call To Arms](./a-call-to-arms#knight-commander-of-the-holy-temple), and are hopefully much less dangerous to you at this point. To recap on their abilities, they will use Menacing Stare to fear you and have you lose control of your positioning and will try and lock you down with Shield Slam. Disarm via Dueling Stance + Lunge or Disarming Shot are extremely effective here and they can remove both the primary weapon of the knight commander _and_ the shield, removing the ability to Shield Slam.
 
 Knight commanders are often accompanied by temple mechas mk I, of which the mk Ia is the more threatening. The mk Ia is the melee variant and is extremely mobile and will use that mobility. Utilize the Golem to quickly focus and destroy any mk Ia mechas that appear. By this point in the game, you're likely to have extremely high DV and if not, your AV will be plenty to withstand the weaponry of the mk Ib mecha.
 

@@ -54,6 +54,13 @@
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/beak.png",
             "code": "cd",
             "variants": ["Beak", "Bill", "Rostrum", "Frill", "Proboscis"],
+            "variantTrueName": [
+                "Beak",
+                "Beak Bill",
+                "Beak Rostrum",
+                "Beak Frill",
+                "Beak Proboscis"
+            ],
             "excludes": ["Esper"],
             "description": "Your face bears a sightly beak.",
             "levelText": "+1 Ego\nYou occasionally peck at your opponents.\n+200 reputation with birds"
@@ -138,6 +145,11 @@
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/flamingRay.png",
             "code": "bh",
             "variants": ["Hands", "Face", "Feet"],
+            "variantTrueName": [
+                "Ghostly Flames",
+                "Ghostly Flames Face",
+                "Ghostly Flames Feet"
+            ],
             "excludes": ["Esper", "Freezing Ray"],
             "description": "You emit a ray of flame.",
             "levelText": "Emits a 9-square ray of flame in the direction of your choice.\nDamage: 1d4+1\nCooldown: 10 rounds\nMelee attacks heat opponents by 2d8 degrees"
@@ -150,6 +162,11 @@
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/freezingRay.png",
             "code": "bi",
             "variants": ["Hands", "Face", "Feet"],
+            "variantTrueName": [
+                "Icy Vapor",
+                "Icy Vapor Face",
+                "Icy Vapor Feet"
+            ],
             "excludes": ["Esper", "Flaming Ray"],
             "description": "You emit a ray of frost.",
             "levelText": "Emits a 9-square ray of frost in the direction of your choice.\nDamage: 1d3+1\nCooldown: 20 rounds\nMelee attacks cool opponents by -1d4 degrees"
@@ -185,7 +202,14 @@
             "max": 1,
             "src": "/1/asset/s/latest/public/assets/images/mutationImages/horns.png",
             "code": "bl",
-            "variants": ["horns", "horn", "antlers", "casque"],
+            "variants": ["Horns", "Horn", "Antlers", "Casque", "Spiral Horn"],
+            "variantTrueName": [
+                "Horns",
+                "Horns Single",
+                "Horns Casque",
+                "Horns Antlers",
+                "Horns Spiral"
+            ],
             "excludes": ["Esper", "Psionic Migraines"],
             "description": "Horns jut out of your head.",
             "levelText": "20% chance on melee attack to gore your opponent\nDamage increment: 2d3\nGoring attacks may cause bleeding\nHorns are a short-blade class natural weapon.\n+1 AV\nCannot wear helmets\n+100 reputation with antelopes and goatfolk"

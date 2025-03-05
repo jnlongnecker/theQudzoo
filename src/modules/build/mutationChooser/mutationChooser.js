@@ -89,8 +89,9 @@ export default class MutationChooser extends LightningElement {
             item.class = "selectable";
             item.hover = true;
             item.marker = " ";
-            item.variant = item.variants[0];
-            item.variantIndex = 0;
+            item.variant = null;
+            item.hasVariants = item.variants.length > 0;
+            item.variantGameName = undefined;
             item.displayName = this.getDisplayName(item);
             item.numSelected = 0;
         });
@@ -132,8 +133,8 @@ export default class MutationChooser extends LightningElement {
         for (let rawMut of muts) {
             let mut = this.mutations.find(mut => mut.name == rawMut.Mutation);
             mut.numSelected = rawMut.Count;
-            mut.variant = mut.variants[rawMut.Variant];
-            mut.variantIndex = rawMut.Variant;
+            mut.variant = rawMut.variantName;
+            mut.variantGameName = rawMut.Variant;
             mut.displayName = this.getDisplayName(mut);
 
             if (mut.max > 1) {
@@ -230,10 +231,11 @@ export default class MutationChooser extends LightningElement {
             let mutObj = {
                 Mutation: mut.name,
                 Count: mut.numSelected,
-                Variant: mut.variantIndex,
+                Variant: mut.variantGameName,
                 variantName: mut.variant
             }
             this.mutationPayload.mutations.push(mutObj);
+            console.log(mutObj)
         }
         this.mutationPayload.mpRemaining = this.points;
 
@@ -286,7 +288,7 @@ export default class MutationChooser extends LightningElement {
     variantChosen(event) {
         let variantChoice = event.target.innerText;
         this.mutationInLimbo.variant = variantChoice;
-        this.mutationInLimbo.variantIndex = event.target.getAttribute("i");
+        this.mutationInLimbo.variantGameName = this.mutationInLimbo.variantTrueName[event.target.getAttribute("i")];
         this.mutationInLimbo.displayName = this.getDisplayName(this.mutationInLimbo);
         this.selectedMutation = this.mutationInLimbo.displayName;
 
@@ -301,13 +303,13 @@ export default class MutationChooser extends LightningElement {
 
     getDisplayName(mut) {
         let name = mut.name;
-        if (!mut.variants.length) return name;
+        if (!mut.variant) return name;
 
         if (mut.name.includes("Ray")) {
             return `${name} (${mut.variant})`;
         }
 
-        return mut.variant[0].toUpperCase() + mut.variant.substring(1);
+        return mut.variant;
     }
 
     showInfo(event) {

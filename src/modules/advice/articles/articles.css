@@ -25,11 +25,11 @@ h1 {
 }
 
 a:not(.selected):hover {
-    color: var(--willpower-color);
+    color: var(--h3-color);
 }
 
 .selected {
-    color: var(--star-filled-color);
+    color: var(--h4-color);
 }
 
 .selected:hover {

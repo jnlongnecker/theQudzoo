@@ -48,9 +48,7 @@ Once the baboon is out of rocks, they will try to attack in melee. This is where
 
 If there are a lot of baboons attacking us at once, instead of letting them throw rocks at us and then all attack at the same time, we should instead drag them to us in a more favorable fight. Consider the following scenario:
 
-![Many baboons closing in]($assetsDir/images/practical/manyBaboon1.png)
-
----
+<span>![Many baboons closing in]($assetsDir/images/practical/manyBaboon1.png)</span>
 
 We are on the edge of the map (as you should be, it's one of the safest places to be on the overworld) and we have 3 dangerous looking baboons closing in (and more on the horizon not pictured). They will throw many rocks and then melee us with numbers if we do nothing, so instead we're going to move back to the prior zone and take 1 step away from the edge. At the risk of information overload, Caves of Qud will continue to simulate a zone that you've just come from (to a certain extent). This means that the baboons will follow us across the zone transition, but they won't actually be able to throw their stones until they are on the same screen as us. You **CAN** be melee attacked from something that is not on screen, but you cannot be ranged attacked by something not on screen. This is why we are going to back up a tile, like so:
 

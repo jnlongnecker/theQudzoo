@@ -24,7 +24,7 @@ Weirdwire Conduit involves you making your way to the rust wells, which are 3 un
 
 For those of us unlucky souls, we will have to travel down the well. Before we do, we need to pick a well to go down since as mentioned we have 3 to choose from. You should look in the middle, as you can actually see what is at the very bottom. At the center of every rust well, there is a single enemy that is stronger than the rest, as well as 100ft of wire and (usually) a chest/good piece of loot.
 
-![Player Nomad to the south of an open rust well]($assetsDir/images/quests/weirdwire-well.png)
+<span>![Player Nomad to the south of an open rust well]($assetsDir/images/quests/weirdwire-well.png)</span>
 
 In this screenshot, we can see all of these as promised. In your case, it's more likely that all of the loot will be directly in the center, so make sure to search under the chest if there is one for the wire. Our strong enemy is a slumberling; which is handy because it won't bother us unless provoked. Be sure to check this ahead of time; if you get something particularly nasty like a slugsnout, you may want to just choose a different well. Keep in mind that you don't have to go down to the bottom, you can go to a different rust well after the first 2 strata.
 
@@ -44,7 +44,7 @@ Making our way back to the rust wells, we can now reach the bottom quickly and, 
 
 ---
 
-![Animated gif of the Player Nomad flying up the Rust Well, moving 1 tile south at a time and staying over the ledge]($assetsDir/images/quests/weirdwire-flying.gif)
+<span>![Animated gif of the Player Nomad flying up the Rust Well, moving 1 tile south at a time and staying over the ledge]($assetsDir/images/quests/weirdwire-flying.gif)</span>
 
 Don't fly at this point, there's no need and we can fall, which as Argyve's former apprentice demonstrated for us is not comfortable. Walking over the edge will only drop us 1 stratum at a time, which deals no damage. By doing this, we can go right to the bottom taking no damage. From here, we loot the wire (and the chest if there is one and you can) and fly out. While flying out, make sure you always have ground beneath you, like in gif.
 
