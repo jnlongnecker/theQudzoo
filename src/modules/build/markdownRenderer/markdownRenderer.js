@@ -12,6 +12,7 @@ export default class MarkdownRenderer extends LightningElement {
     }
 
     set rawText(value) {
+        if (!value) value = '';
         if (value.includes('<script')) {
             value = 'Looks like this description tried to inject a script. Not allowed >:('
         }
