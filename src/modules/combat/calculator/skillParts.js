@@ -8,10 +8,12 @@ const classConstructors = {
 class SkillManager {
 
     skills = {};
+    hostCreature;
 
-    constructor(skillList) {
-        for (let skill in skillList) {
-            if (skillList[skill])
+    constructor(hostCreature) {
+        this.hostCreature = hostCreature;
+        for (let skill in hostCreature.skills) {
+            if (hostCreature.skills[skill])
                 this.addSkill(skill);
         }
     }
@@ -24,17 +26,23 @@ class SkillManager {
         }
 
         this.skills[skillName] = new skillConstructor();
-        this.skills[skillName].onAttach();
+        this.skills[skillName].onAttach(this.hostCreature);
     }
 }
 
 class Part {
-    onAttach() { console.error('On attach not overwritten'); }
+    host
+
+    onAttach(host) {
+        if (!host) console.error('No host supplied.');
+        this.host = host;
+    }
 }
 
 class Cudgel_Bludgeon extends Part {
 
-    onAttach() {
+    onAttach(host) {
+        super(host);
         AttackEvent.register((event) => this.handleAttackEvent(event));
     }
 
