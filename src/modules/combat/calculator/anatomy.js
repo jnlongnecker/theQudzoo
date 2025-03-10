@@ -10,20 +10,6 @@ const SLOTS = {
     TAIL: 8
 };
 
-const ANATOMIES = {
-    HUMANOID: [
-        Limb.head(),
-        Limb.face(),
-        Limb.body(),
-        Limb.back(),
-        Limb.arm('Right Arm'),
-        Limb.arm('Left Arm'),
-        Limb.hand('Right Hand'),
-        Limb.hand('Left Hand'),
-        Limb.hands(),
-        Limb.feet()
-    ]
-};
 
 class Limb {
     name;
@@ -52,5 +38,20 @@ class Limb {
     static stinger = (name = 'Stinger') => new Limb(name, SLOTS.TAIL, 0.2, null, false);
     static roboHand = (name = 'Robo-Hand') => new Limb(name, SLOTS.HAND, 0.08, null, false);
 }
+
+const ANATOMIES = {
+    HUMANOID: [
+        Limb.head(),
+        Limb.face(),
+        Limb.body(),
+        Limb.back(),
+        Limb.arm('Right Arm'),
+        Limb.arm('Left Arm'),
+        Limb.hand('Right Hand'),
+        Limb.hand('Left Hand'),
+        Limb.hands(),
+        Limb.feet()
+    ]
+};
 
 export { ANATOMIES };

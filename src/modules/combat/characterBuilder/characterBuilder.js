@@ -12,8 +12,8 @@ export default class CharacterBuilder extends LightningElement {
     }
 
     set character(value) {
-        if (!value) return;
-        this._character = value;
+        if (!value || !value.creature) return;
+        this._character = value.creature;
     }
 
     constructor() {
@@ -25,7 +25,7 @@ export default class CharacterBuilder extends LightningElement {
     async pullCreatures() {
         let creatures = await getCreatures();
 
-        this.character = creatures.filter(creatureData => creatureData.name.includes('Player'))[0];
+        this._character = creatures.filter(creatureData => creatureData.name.includes('Player'))[0];
         this.dispatchEvent(new CustomEvent('charchange', { detail: this.character }));
     }
 

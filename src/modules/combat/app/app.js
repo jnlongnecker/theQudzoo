@@ -1,35 +1,27 @@
 import { LightningElement, track } from "lwc";
+import { Creature } from "combat/calculator";
 
 export default class App extends LightningElement {
-    creature;
-    enemy;
+    @track creatureWrapper = { creature: undefined, count: 0 };
+    @track enemy;
 
     actionLog;
     mode = 'level';
 
     updateCreature(event) {
-        this.creature = this.populateDefaults(JSON.parse(JSON.stringify(event.detail)));
+        this.forceRerenderCreature(Creature.fromObject(JSON.parse(JSON.stringify(event.detail))));
     }
 
     updateEnemy(event) {
-        this.enemy = JSON.parse(JSON.stringify(event.detail));
+        this.enemy = Creature.fromObject(JSON.parse(JSON.stringify(event.detail)));
     }
 
-    populateDefaults(draftCreature) {
-        draftCreature.attributeExpenditure = this.defaultAttributeData(draftCreature);
-
-        return draftCreature;
-    }
-
-    defaultAttributeData(draftCreature) {
-        let leveledPoints = 0;
-        let freePoints = draftCreature.isKin ? 38 : 44;
-        let minTotal = draftCreature.isKin ? 12 : 10;
-        return {
-            leveledPoints, freePoints, minTotal,
-            freePointsUsed: 0,
-            leveledPointsUsed: 0,
+    forceRerenderCreature(newCreature) {
+        let newWrapper = {
+            creature: newCreature,
+            count: this.creatureWrapper.count + 1,
         };
+        this.creatureWrapper = newWrapper;
     }
 
     handleModeChange(event) {
@@ -52,41 +44,41 @@ export default class App extends LightningElement {
 
     handleUndoAction(event) {
         let action = event.detail;
-        let newCreature = JSON.parse(JSON.stringify(this.creature));
+        let creature = this.creatureWrapper.creature;
         try {
-            action.reverse(newCreature);
+            action.reverse(creature);
         } catch (e) {
             this.sendMessageToLog(e);
             return;
         }
-        this.creature = newCreature;
         this.actionLog.updateActionMessage(action.id);
+        this.forceRerenderCreature(creature);
     }
 
     handleRedoAction(event) {
         let action = event.detail;
-        let newCreature = JSON.parse(JSON.stringify(this.creature));
+        let creature = this.creatureWrapper.creature;
         try {
-            action.apply(newCreature);
+            action.apply(creature);
         } catch (e) {
             this.sendMessageToLog(e);
             return;
         }
-        this.creature = newCreature;
         this.actionLog.updateActionMessage(action.id);
+        this.forceRerenderCreature(creature);
     }
 
     handleActionGeneral(event) {
         let action = event.detail;
-        let newCreature = JSON.parse(JSON.stringify(this.creature));
+        let creature = this.creatureWrapper.creature;
         try {
-            action.apply(newCreature);
+            action.apply(creature);
         } catch (e) {
             this.sendMessageToLog(e);
             return;
         }
         this.sendActionToLog(action);
-        this.creature = newCreature;
+        this.forceRerenderCreature(creature);
     }
 
     handleActionLevelReset() {

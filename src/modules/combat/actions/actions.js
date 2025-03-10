@@ -22,7 +22,7 @@ class AttributeChangeAction {
 
     validateApply(character) {
         if (this.mode !== 'level') {
-            if (character.attributes[this.attribute] + this.shift < 0)
+            if (character.stats.getRaw(this.attribute) + this.shift < 0)
                 throw `Cannot reduce attribute below 0.`;
             return;
         }
@@ -36,29 +36,21 @@ class AttributeChangeAction {
         } else {
             if (character.attributeExpenditure.freePointsUsed + this.cost > character.attributeExpenditure.freePoints)
                 throw `Not enough points for this change.`;
-            if (character.attributes[this.attribute] >= 24 && this.cost > 0)
+            if (character.stats.getRaw(this.attribute) >= 24 && this.cost > 0)
                 throw `Attribute at max value for initial attribute expenditure.`;
-            if (character.attributes[this.attribute] <= character.attributeExpenditure.minTotal && this.cost < 0)
+            if (character.stats.getRaw(this.attribute) <= character.attributeExpenditure.minTotal && this.cost < 0)
                 throw `Attribute at minimum value for initial attribute expenditure.`;
         }
     }
 
     apply(character) {
         this.validateApply(character);
-        character.attributes[this.attribute] += this.shift;
-        if (!character.attributeExpenditure) {
-            character.attributeExpenditure = {};
-        }
-        if (this.leveledPoint) {
-            character.attributeExpenditure.leveledPointsUsed += this.cost;
-        } else {
-            character.attributeExpenditure.freePointsUsed += this.cost;
-        }
+        character.spendPoints(this.cost, this.attribute, this.shift);
     }
 
     validateReverse(character) {
         if (this.mode !== 'level') {
-            if (character.attributes[this.attribute] - this.shift < 0)
+            if (character.stats.getRaw(this.attribute) - this.shift < 0)
                 throw `Cannot reduce attribute below 0.`;
             return;
         }
@@ -68,21 +60,16 @@ class AttributeChangeAction {
         } else {
             if (character.attributeExpenditure.freePointsUsed - this.cost > character.attributeExpenditure.freePoints)
                 throw `Not enough points for this change.`;
-            if (character.attributes[this.attribute] >= 24 && this.cost < 0)
+            if (character.stats.getRaw(this.attribute) >= 24 && this.cost < 0)
                 throw `Attribute at max value for initial attribute expenditure.`;
-            if (character.attributes[this.attribute] <= character.attributeExpenditure.minTotal && this.cost > 0)
+            if (character.stats.getRaw(this.attribute) <= character.attributeExpenditure.minTotal && this.cost > 0)
                 throw `Attribute at minimum value for initial attribute expenditure.`;
         }
     }
 
     reverse(character) {
         this.validateReverse(character);
-        character.attributes[this.attribute] -= this.shift;
-        if (this.leveledPoint) {
-            character.attributeExpenditure.leveledPointsUsed -= this.cost;
-        } else {
-            character.attributeExpenditure.freePointsUsed -= this.cost;
-        }
+        character.refundPoints(this.cost, this.attribute, this.shift);
     }
 
     print() {
@@ -156,33 +143,11 @@ class LevelUpAction {
     undoOnLevelReset = true;
 
     apply(character) {
-        character.level += 1;
-        let allUp = character.level % 6 == 0;
-        let point = (character.level + 3) % 6 == 0;
-
-        if (allUp) {
-            for (let attribute in character.attributes) {
-                character.attributes[attribute] += 1;
-            }
-        }
-        if (point) {
-            character.attributeExpenditure.leveledPoints += 1;
-        }
+        character.levelUp();
     }
 
     reverse(character) {
-        character.level -= 1;
-        let allDown = character.level & 6 == 0;
-        let pointDown = (character.level + 3) % 6 == 0;
-
-        if (allDown) {
-            for (let attribute in character.attributes) {
-                character.attribute[attribute] -= 1;
-            }
-        }
-        if (pointDown) {
-            character.attributeExpenditure.leveledPoints -= 1;
-        }
+        character.levelDown();
     }
 
     print() {

@@ -6,6 +6,7 @@ import {
     AttackEvent, AttackCountEvent, SpecialEffectEvent
 } from "./events.js";
 import { SkillManager } from "./skillParts.js";
+import { Creature } from "./creature.js";
 
 const defaultWeapon = {
     "name": "base",
@@ -399,5 +400,5 @@ export {
 
     DiceRoll, Roll, getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random,
 
-    test, SkillManager
+    test, SkillManager, Creature
 };

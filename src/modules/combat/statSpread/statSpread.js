@@ -6,6 +6,7 @@ export default class StatSpread extends LightningElement {
     _creature;
     attributes = [];
     stats = [];
+    _statObj;
     @api isPlayer = false;
 
     @api
@@ -14,38 +15,39 @@ export default class StatSpread extends LightningElement {
     }
 
     set creature(value) {
-        this._creature = this.isPlayer ? this.calculateAppliedStats(value) : value;
+        this._creature = value;
+        this._statObj = value.stats;
         this.attributes = [
             {
                 id: 1,
                 name: 'STR',
                 class: 'strength attribute-container',
-                total: this._creature.attributes.strength,
+                total: value.stats.Strength.total,
             }, {
                 id: 2,
                 name: 'AGI',
                 class: 'agility attribute-container',
-                total: this._creature.attributes.agility,
+                total: value.stats.Agility.total,
             }, {
                 id: 3,
                 name: 'TOU',
                 class: 'toughness attribute-container',
-                total: this._creature.attributes.toughness,
+                total: value.stats.Toughness.total,
             }, {
                 id: 4,
                 name: 'INT',
                 class: 'intelligence attribute-container',
-                total: this._creature.attributes.intelligence,
+                total: value.stats.Intelligence.total,
             }, {
                 id: 5,
                 name: 'WIL',
                 class: 'willpower attribute-container',
-                total: this._creature.attributes.willpower,
+                total: value.stats.Willpower.total,
             }, {
                 id: 6,
                 name: 'EGO',
                 class: 'ego attribute-container',
-                total: this._creature.attributes.ego,
+                total: value.stats.Ego.total,
             },
         ];
         this.stats = [
@@ -53,25 +55,25 @@ export default class StatSpread extends LightningElement {
                 id: 2,
                 name: 'DV',
                 class: 'attribute-container',
-                total: this._creature.dv
+                total: value.stats.DV.value
             },
             {
                 id: 3,
                 name: 'AV',
                 class: 'attribute-container',
-                total: this._creature.av
+                total: value.stats.AV.value
             },
             {
                 id: 1,
                 name: 'QN',
                 class: 'attribute-container',
-                total: this._creature.qn
+                total: value.stats.Quickness.value
             },
             {
                 id: 4,
                 name: 'MA',
                 class: 'attribute-container',
-                total: this._creature.ma
+                total: value.stats.MA.value
             },
         ];
     }

@@ -1,9 +1,6 @@
 import { AttackEvent } from "./events.js";
 import { BludgeonDaze } from "./weaponEffects.js";
 
-const classConstructors = {
-    'Cudgel_Bludgeon': Cudgel_Bludgeon.new,
-}
 
 class SkillManager {
 
@@ -42,7 +39,7 @@ class Part {
 class Cudgel_Bludgeon extends Part {
 
     onAttach(host) {
-        super(host);
+        super.onAttach(host);
         AttackEvent.register((event) => this.handleAttackEvent(event));
     }
 
@@ -53,6 +50,10 @@ class Cudgel_Bludgeon extends Part {
 
         attack.effects.push(new BludgeonDaze());
     }
+}
+
+const classConstructors = {
+    'Cudgel_Bludgeon': Cudgel_Bludgeon.new,
 }
 
 export { SkillManager };

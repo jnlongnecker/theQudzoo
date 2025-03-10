@@ -36,12 +36,30 @@ export default class AttributeControls extends LightningElement {
         if (value == undefined) return;
         this.attributes = this.attributes.map(item => {
             switch (item.name) {
-                case 'Strength': item.total = value.attributes.strength; break;
-                case 'Agility': item.total = value.attributes.agility; break;
-                case 'Toughness': item.total = value.attributes.toughness; break;
-                case 'Intelligence': item.total = value.attributes.intelligence; break;
-                case 'Willpower': item.total = value.attributes.willpower; break;
-                case 'Ego': item.total = value.attributes.ego; break;
+                case 'Strength':
+                    item.total = value.stats.Strength.value;
+                    item.displayTotal = value.stats.Strength.total;
+                    break;
+                case 'Agility':
+                    item.total = value.stats.Agility.value;
+                    item.displayTotal = value.stats.Agility.total;
+                    break;
+                case 'Toughness':
+                    item.total = value.stats.Toughness.value;
+                    item.displayTotal = value.stats.Toughness.total;
+                    break;
+                case 'Intelligence':
+                    item.total = value.stats.Intelligence.value;
+                    item.displayTotal = value.stats.Intelligence.total;
+                    break;
+                case 'Willpower':
+                    item.total = value.stats.Willpower.value;
+                    item.displayTotal = value.stats.Willpower.total;
+                    break;
+                case 'Ego':
+                    item.total = value.stats.Ego.value;
+                    item.displayTotal = value.stats.Ego.total;
+                    break;
             };
             return item;
         });

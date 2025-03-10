@@ -9,7 +9,8 @@
                 mode={mode}></combat-controls>
             <combat-creature-picker oncharchange={updateEnemy}></combat-creature-picker>
         </section>
-        <section class="log-container">
+        <section class="log-container" data-updates={changes}>
+            <template if:true={creature}>{creature.changes}</template>
             <combat-action-log onundoaction={handleUndoAction} onredoaction={handleRedoAction}></combat-action-log>
         </section>
     </div>
