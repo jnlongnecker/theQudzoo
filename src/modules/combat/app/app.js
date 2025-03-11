@@ -16,6 +16,11 @@ export default class App extends LightningElement {
         this.enemy = Creature.fromObject(JSON.parse(JSON.stringify(event.detail)));
     }
 
+    /**
+     * Hack to get the Lighting Component Framework to properly detect a mutation
+     * to the creature object.
+     * @param {Object} newCreature The updated creature to broadcast mutations to
+     */
     forceRerenderCreature(newCreature) {
         let newWrapper = {
             creature: newCreature,
