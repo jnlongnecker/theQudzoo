@@ -162,7 +162,7 @@ class Stats {
         let tou = this.Toughness;
         this.hp = tou.total;
         for (let i = 2; i <= level; i++) {
-            this.hp += hpFromLevelUp[i] + tou.modifier;
+            this.hp += Math.max(hpFromLevelUp[i] + tou.modifier, 0);
         }
     }
 
@@ -258,10 +258,9 @@ class Creature {
 
     levelDown() {
         if (this.level <= this.minLevel) return false;
-        this.level--;
-
         let allDown = this.level % 6 == 0;
         let pointDown = (this.level + 3) % 6 == 0;
+        this.level--;
 
         if (allDown) this.stats.attributeAllDown();
         if (pointDown) this.attributeExpenditure.leveledPoints--;
@@ -272,18 +271,18 @@ class Creature {
 
     spendPoints(points, attribute, shift) {
         if (this.level > 1) {
-            this.attributeExpenditure.leveledPoints -= points;
+            this.attributeExpenditure.leveledPointsUsed += points;
         } else {
-            this.attributeExpenditure.freePoints -= points;
+            this.attributeExpenditure.freePointsUsed += points;
         }
         this.stats.attributeUp(attribute, shift);
     }
 
     refundPoints(points, attribute, shift) {
         if (this.level > 1) {
-            this.attributeExpenditure.leveledPoints += points;
+            this.attributeExpenditure.leveledPointsUsed -= points;
         } else {
-            this.attributeExpenditure.freePoints += points;
+            this.attributeExpenditure.freePointsUsed -= points;
         }
         this.stats.attributeUp(attribute, -shift);
     }

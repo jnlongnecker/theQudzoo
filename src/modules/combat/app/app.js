@@ -82,7 +82,7 @@ export default class App extends LightningElement {
     }
 
     handleActionLevelReset() {
-        if (this.creature.level === 1) return;
+        if (this.creatureWrapper.creature.level === 1) return;
         this.actionLog.applyLevelReset();
         this.sendMessageToLog('Reset to level 1.');
     }

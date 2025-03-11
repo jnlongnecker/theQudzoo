@@ -6,7 +6,6 @@ export default class StatSpread extends LightningElement {
     _creature;
     attributes = [];
     stats = [];
-    _statObj;
     @api isPlayer = false;
 
     @api
@@ -15,39 +14,39 @@ export default class StatSpread extends LightningElement {
     }
 
     set creature(value) {
-        this._creature = value;
-        this._statObj = value.stats;
+        this._creature = value.creature;
+        let statObj = value.creature.stats;
         this.attributes = [
             {
                 id: 1,
                 name: 'STR',
                 class: 'strength attribute-container',
-                total: value.stats.Strength.total,
+                total: statObj.Strength.total,
             }, {
                 id: 2,
                 name: 'AGI',
                 class: 'agility attribute-container',
-                total: value.stats.Agility.total,
+                total: statObj.Agility.total,
             }, {
                 id: 3,
                 name: 'TOU',
                 class: 'toughness attribute-container',
-                total: value.stats.Toughness.total,
+                total: statObj.Toughness.total,
             }, {
                 id: 4,
                 name: 'INT',
                 class: 'intelligence attribute-container',
-                total: value.stats.Intelligence.total,
+                total: statObj.Intelligence.total,
             }, {
                 id: 5,
                 name: 'WIL',
                 class: 'willpower attribute-container',
-                total: value.stats.Willpower.total,
+                total: statObj.Willpower.total,
             }, {
                 id: 6,
                 name: 'EGO',
                 class: 'ego attribute-container',
-                total: value.stats.Ego.total,
+                total: statObj.Ego.total,
             },
         ];
         this.stats = [
@@ -55,25 +54,25 @@ export default class StatSpread extends LightningElement {
                 id: 2,
                 name: 'DV',
                 class: 'attribute-container',
-                total: value.stats.DV.value
+                total: statObj.DV.value
             },
             {
                 id: 3,
                 name: 'AV',
                 class: 'attribute-container',
-                total: value.stats.AV.value
+                total: statObj.AV.value
             },
             {
                 id: 1,
                 name: 'QN',
                 class: 'attribute-container',
-                total: value.stats.Quickness.value
+                total: statObj.Quickness.value
             },
             {
                 id: 4,
                 name: 'MA',
                 class: 'attribute-container',
-                total: value.stats.MA.value
+                total: statObj.MA.value
             },
         ];
     }

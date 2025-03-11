@@ -3,8 +3,8 @@
         <section class="app-container">
             <combat-character-builder oncharchange={updateCreature} onmodechange={handleModeChange}
                 onactionlevelup={handleActionGeneral} onactionlevelreset={handleActionLevelReset}
-                character={creature}></combat-character-builder>
-            <combat-controls creature={creature} enemy={enemy} onactionattributechange={handleActionGeneral}
+                character={creatureWrapper}></combat-character-builder>
+            <combat-controls creature={creatureWrapper} enemy={enemy} onactionattributechange={handleActionGeneral}
                 onactionattributerandomize={handleActionGeneral} onactionattributereset={handleActionGeneral}
                 mode={mode}></combat-controls>
             <combat-creature-picker oncharchange={updateEnemy}></combat-creature-picker>

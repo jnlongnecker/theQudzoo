@@ -13,7 +13,11 @@ export default class CharacterBuilder extends LightningElement {
 
     set character(value) {
         if (!value || !value.creature) return;
-        this._character = value.creature;
+        let newWrapper = {
+            creature: value.creature,
+            count: value.count + 1
+        };
+        this._character = newWrapper;
     }
 
     constructor() {
@@ -26,6 +30,7 @@ export default class CharacterBuilder extends LightningElement {
         let creatures = await getCreatures();
 
         this._character = creatures.filter(creatureData => creatureData.name.includes('Player'))[0];
+        console.log('Sending char change event');
         this.dispatchEvent(new CustomEvent('charchange', { detail: this.character }));
     }
 

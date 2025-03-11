@@ -7,9 +7,22 @@ export default class Controls extends LightningElement {
     showCombat;
     showAttributes = true;
 
+    _creature;
     @api mode;
-    @api creature;
     @api enemy;
+
+    @api get creature() {
+        return this._creature;
+    }
+
+    set creature(value) {
+        if (!value || !value.creature) return;
+        let newCreature = {
+            creature: value.creature,
+            count: value.count + 1,
+        };
+        this._creature = newCreature;
+    }
 
     changeTab(event) {
         let target = event.target;

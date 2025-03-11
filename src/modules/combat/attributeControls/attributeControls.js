@@ -34,41 +34,44 @@ export default class AttributeControls extends LightningElement {
 
     set creature(value) {
         if (value == undefined) return;
+        console.log('setting attributes');
+        let creature = value.creature;
+        let stats = creature.stats;
         this.attributes = this.attributes.map(item => {
             switch (item.name) {
                 case 'Strength':
-                    item.total = value.stats.Strength.value;
-                    item.displayTotal = value.stats.Strength.total;
+                    item.total = stats.Strength.value;
+                    item.displayTotal = stats.Strength.total;
                     break;
                 case 'Agility':
-                    item.total = value.stats.Agility.value;
-                    item.displayTotal = value.stats.Agility.total;
+                    item.total = stats.Agility.value;
+                    item.displayTotal = stats.Agility.total;
                     break;
                 case 'Toughness':
-                    item.total = value.stats.Toughness.value;
-                    item.displayTotal = value.stats.Toughness.total;
+                    item.total = stats.Toughness.value;
+                    item.displayTotal = stats.Toughness.total;
                     break;
                 case 'Intelligence':
-                    item.total = value.stats.Intelligence.value;
-                    item.displayTotal = value.stats.Intelligence.total;
+                    item.total = stats.Intelligence.value;
+                    item.displayTotal = stats.Intelligence.total;
                     break;
                 case 'Willpower':
-                    item.total = value.stats.Willpower.value;
-                    item.displayTotal = value.stats.Willpower.total;
+                    item.total = stats.Willpower.value;
+                    item.displayTotal = stats.Willpower.total;
                     break;
                 case 'Ego':
-                    item.total = value.stats.Ego.value;
-                    item.displayTotal = value.stats.Ego.total;
+                    item.total = stats.Ego.value;
+                    item.displayTotal = stats.Ego.total;
                     break;
             };
             return item;
         });
-        this.level = Math.max(1, value.level);
-        let leveledPointsAvailable = value.attributeExpenditure.leveledPoints - value.attributeExpenditure.leveledPointsUsed;
-        let freePointsAvailable = value.attributeExpenditure.freePoints - value.attributeExpenditure.freePointsUsed;
+        this.level = Math.max(1, creature.level);
+        let leveledPointsAvailable = creature.attributeExpenditure.leveledPoints - creature.attributeExpenditure.leveledPointsUsed;
+        let freePointsAvailable = creature.attributeExpenditure.freePoints - creature.attributeExpenditure.freePointsUsed;
         this.points = this.level > 1 ? leveledPointsAvailable : freePointsAvailable;
-        this.maxPoints = this.level > 1 ? value.attributeExpenditure.leveledPoints : value.attributeExpenditure.freePoints;
-        this.min = value.attributeExpenditure.minTotal;
+        this.maxPoints = this.level > 1 ? creature.attributeExpenditure.leveledPoints : creature.attributeExpenditure.freePoints;
+        this.min = creature.attributeExpenditure.minTotal;
         this.recalculateDisplayTotals();
     }
 
@@ -175,8 +178,8 @@ export default class AttributeControls extends LightningElement {
         let leveledPoint = this.level > 1;
         let cost = leveledPoint ? 1 : attribute.total >= 19 ? 2 : 1;
 
-        if (this.points == this.maxPoints && !this.isFreeMode) return;
-        if (attribute.total == this.min && !this.isFreeMode) return;
+        if (this.points == this.maxPoints && !this.isFreeMode) { console.log("At max points"); return;}
+        if (attribute.total == this.min && !this.isFreeMode) { console.log("Can't go lower"); return;}
 
 
         let action = new AttributeChangeAction(attribute.name.toLowerCase(), -cost, -1, leveledPoint, this.mode);
