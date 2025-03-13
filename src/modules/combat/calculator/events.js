@@ -3,10 +3,12 @@ class EventManager {
     creatureRegistry = {};
 
     registerCreature(creature) {
-        this.creatureRegistry[creature.id] = {};
+        let registry = this.creatureRegistry[creature.id];
+        if (!registry) this.creatureRegistry[creature.id] = {};
     }
 
     register(creature, eventName, callback, priority) {
+        this.registerCreature(creature);
         let registry = this.creatureRegistry[creature.id];
         if (!registry[eventName]) {
             registry[eventName] = [[], [], [], [], []];
@@ -48,29 +50,34 @@ class BaseEvent {
     }
 }
 
-class AttackCountEvent extends BaseEvent {
+export class AttackCountEvent extends BaseEvent {
     attacks = [];
     isPrimary = false;
 
     constructor() { super(); this.name = 'AttackCountEvent'; }
 }
 
-class AttackEvent extends BaseEvent {
+export class AttackEvent extends BaseEvent {
     attack;
 
     constructor(attack) { super(); this.name = 'AttackEvent'; this.attack = attack; }
 }
 
-class SpecialEffectEvent extends BaseEvent {
+export class SpecialEffectEvent extends BaseEvent {
     chance = 0;
 
     constructor(chance = 0) { super(); this.name = 'SpecialEffectEvent'; this.chance = chance; }
 }
 
-class SkillAddedEvent extends BaseEvent {
+export class SkillAddedEvent extends BaseEvent {
     skillName;
 
-    constructor(skillName) { super(); this.name = 'SkillAddedEvent'; this.skillName = skillName }
+    constructor(skillName) { super(); this.name = 'SkillAddedEvent'; this.skillName = skillName; }
 }
 
-export { AttackCountEvent, AttackEvent, SpecialEffectEvent, SkillAddedEvent };
+export class ActivatedActionEvent extends BaseEvent {
+    actionId;
+    details;
+
+    constructor(actionId, details) { super(); this.actionId = actionId; this.details = details; }
+}

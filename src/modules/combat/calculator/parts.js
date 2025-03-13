@@ -1,5 +1,6 @@
+import { ActivatedActionEvent } from "./events";
 
-class Part {
+export class Part {
     host
 
     onAttach(host) {
@@ -8,5 +9,15 @@ class Part {
     }
 }
 
+export class AttackerPart extends Part {
 
-export { Part };
+    onAttach(host) {
+        super.onAttach(host);
+
+        ActivatedActionEvent.register(this.host, (event) => this.handleActivatedAction(event));
+    }
+
+    handleActivatedAction(event) {
+        if (event.actionId !== 'Bump_Attack') return;
+    }
+}

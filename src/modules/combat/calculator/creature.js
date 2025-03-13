@@ -1,6 +1,7 @@
 import { ANATOMIES } from "./anatomy.js";
 import { SkillAddedEvent } from "./events.js";
 import { random } from "./rolls.js";
+import { SkillerPart } from "./skillParts/skillParts.js";
 
 class Stats {
     av;
@@ -239,6 +240,7 @@ class Creature {
     attributeExpenditure;
     parts = [];
     skills = {};
+    actions = [];
 
     hpFromLevelUpRolls = [0, 0];
     minLevel;
@@ -271,13 +273,17 @@ class Creature {
         creature.setDefaultExpenditure();
         creature.minLevel = obj.level;
         for (let i = 1; i <= obj.level; i++) { creature.hpFromLevelUpRolls.push(0); }
-        for (let skill in obj.skills) { creature.addSkill(skill); }
+        if (obj.skills) {
+            creature.attachPart(new SkillerPart());
+            for (let skill in obj.skills) { creature.addSkill(skill); }
+        }
 
         return creature;
     }
 
     fire(event) {
         event.handle(this);
+        return event;
     }
 
     addSkill(skillName) {
@@ -286,6 +292,7 @@ class Creature {
     }
 
     attachPart(part) {
+        console.log(part);
         this.parts.push[part];
         part.onAttach(this);
     }
