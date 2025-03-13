@@ -34,7 +34,6 @@ export default class AttributeControls extends LightningElement {
 
     set creature(value) {
         if (value == undefined) return;
-        console.log('setting attributes');
         let creature = value.creature;
         let stats = creature.stats;
         this.attributes = this.attributes.map(item => {
@@ -178,8 +177,8 @@ export default class AttributeControls extends LightningElement {
         let leveledPoint = this.level > 1;
         let cost = leveledPoint ? 1 : attribute.total >= 19 ? 2 : 1;
 
-        if (this.points == this.maxPoints && !this.isFreeMode) { console.log("At max points"); return;}
-        if (attribute.total == this.min && !this.isFreeMode) { console.log("Can't go lower"); return;}
+        if (this.points == this.maxPoints && !this.isFreeMode) { console.log("At max points"); return; }
+        if (attribute.total == this.min && !this.isFreeMode) { console.log("Can't go lower"); return; }
 
 
         let action = new AttributeChangeAction(attribute.name.toLowerCase(), -cost, -1, leveledPoint, this.mode);

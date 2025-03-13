@@ -1,5 +1,5 @@
 import { api, LightningElement } from "lwc";
-import { test, Combat, SkillManager } from "combat/calculator";
+import { Combat } from "combat/calculator";
 
 export default class CombatControls extends LightningElement {
 
@@ -12,7 +12,7 @@ export default class CombatControls extends LightningElement {
     }
     set character(val) {
         if (!val) return;
-        this.practicalCharacter = JSON.parse(JSON.stringify(val));
+        this.practicalCharacter = val.creature;
     }
 
     @api get enemy() {
@@ -20,11 +20,11 @@ export default class CombatControls extends LightningElement {
     }
     set enemy(val) {
         if (!val) return;
-        this.practicalEnemy = JSON.parse(JSON.stringify(val));
+        this.practicalEnemy = val.creature;
     }
 
     runTest() {
-        this.practicalCharacter.skills['Cudgel_Bludgeon'] = true;
+        this.practicalCharacter.addSkill('Cudgel_Bludgeon');
         let combat = new Combat(this.practicalCharacter, this.practicalEnemy);
         combat.bumpAttack();
         console.log(combat);

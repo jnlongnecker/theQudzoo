@@ -1,46 +1,12 @@
-import { AttackEvent } from "./events.js";
+import { AttackEvent, SkillAddedEvent } from "./events.js";
 import { BludgeonDaze } from "./weaponEffects.js";
-
-
-class SkillManager {
-
-    skills = {};
-    hostCreature;
-
-    constructor(hostCreature) {
-        this.hostCreature = hostCreature;
-        for (let skill in hostCreature.skills) {
-            if (hostCreature.skills[skill])
-                this.addSkill(skill);
-        }
-    }
-
-    addSkill(skillName) {
-        let skillConstructor = classConstructors[skillName];
-        if (!skillConstructor) {
-            console.error(`Unknown skill: ${skillName}`);
-            return;
-        }
-
-        this.skills[skillName] = new skillConstructor();
-        this.skills[skillName].onAttach(this.hostCreature);
-    }
-}
-
-class Part {
-    host
-
-    onAttach(host) {
-        if (!host) console.error('No host supplied.');
-        this.host = host;
-    }
-}
+import { Part } from "./parts.js";
 
 class Cudgel_Bludgeon extends Part {
 
     onAttach(host) {
         super.onAttach(host);
-        AttackEvent.register((event) => this.handleAttackEvent(event));
+        AttackEvent.register(host, (event) => this.handleAttackEvent(event));
     }
 
     handleAttackEvent(evt) {
@@ -52,8 +18,23 @@ class Cudgel_Bludgeon extends Part {
     }
 }
 
-const classConstructors = {
+const skillPartConstructors = {
     'Cudgel_Bludgeon': Cudgel_Bludgeon.new,
 }
 
-export { SkillManager };
+class SkillerPart {
+
+    onAttach(host) {
+        super.onAttach(host);
+        SkillAddedEvent.register(host, this.handleSkillAdd);
+    }
+
+    handleSkillAdd(skillEvent) {
+        let skillConstructor = skillPartConstructors[skillEvent.skillName];
+        if (!skillConstructor) return;
+
+        this.host.attachPart(new skillConstructor());
+    }
+}
+
+export { SkillerPart };

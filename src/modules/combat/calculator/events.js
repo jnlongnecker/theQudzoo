@@ -1,16 +1,24 @@
 class EventManager {
 
-    registry = {};
+    creatureRegistry = {};
 
-    register(eventName, callback, priority) {
-        if (!this.registry[eventName]) {
-            this.registry[eventName] = [[], [], [], [], []];
-        }
-        this.registry[eventName][priority - 1].push(callback);
+    registerCreature(creature) {
+        this.creatureRegistry[creature.id] = {};
     }
 
-    handle(event) {
-        let callbacks = this.registry[event.name];
+    register(creature, eventName, callback, priority) {
+        let registry = this.creatureRegistry[creature.id];
+        if (!registry[eventName]) {
+            registry[eventName] = [[], [], [], [], []];
+            this.creatureRegistry[creature.id] = registry;
+        }
+        registry[eventName][priority - 1].push(callback);
+    }
+
+    handle(creature, event) {
+        let registry = this.creatureRegistry[creature.id]
+        if (!registry) return;
+        let callbacks = registry[event.name];
         if (!Array.isArray(callbacks)) return;
 
         for (let callbackPriorityList of callbacks)
@@ -29,14 +37,14 @@ class BaseEvent {
         this.priority = priority;
     }
 
-    fire() {
-        eventManager.handle(this);
-    }
-
-    static register(callback, priority = 3) {
+    static register(host, callback, priority = 3) {
         if (!priority || priority <= 0 || priority > 5) priority = 3;
         console.log('registering for ' + this.name);
-        eventManager.register(this.name, callback, priority);
+        eventManager.register(host, this.name, callback, priority);
+    }
+
+    handle(creature) {
+        eventManager.handle(creature, this);
     }
 }
 
@@ -50,13 +58,19 @@ class AttackCountEvent extends BaseEvent {
 class AttackEvent extends BaseEvent {
     attack;
 
-    constructor() { super(); this.name = 'AttackEvent'; }
+    constructor(attack) { super(); this.name = 'AttackEvent'; this.attack = attack; }
 }
 
 class SpecialEffectEvent extends BaseEvent {
     chance = 0;
 
-    constructor() { super(); this.name = 'SpecialEffectEvent'; }
+    constructor(chance = 0) { super(); this.name = 'SpecialEffectEvent'; this.chance = chance; }
 }
 
-export { AttackCountEvent, AttackEvent, SpecialEffectEvent };
+class SkillAddedEvent extends BaseEvent {
+    skillName;
+
+    constructor(skillName) { super(); this.name = 'SkillAddedEvent'; this.skillName = skillName }
+}
+
+export { AttackCountEvent, AttackEvent, SpecialEffectEvent, SkillAddedEvent };

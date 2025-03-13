@@ -1,4 +1,5 @@
 import { ANATOMIES } from "./anatomy.js";
+import { SkillAddedEvent } from "./events.js";
 import { random } from "./rolls.js";
 
 class Stats {
@@ -125,6 +126,10 @@ class Stats {
         return shifter;
     }
 
+    removeShifter(shifter) {
+        this.statShifters = this.statShifters.filter(item => item !== shifter);
+    }
+
     addHp(amount) {
         this.hp += amount + this.Toughness.modifier;
     }
@@ -178,9 +183,28 @@ class Stats {
     }
 
     getShift(stat) {
-        return this.statShifters.reduce((total, shifter) => {
-            return total + shifter.stat === stat ? shifter.shift : 0;
-        }, 0);
+        if (stat !== 'av') {
+            return this.statShifters.reduce((total, shifter) => {
+                return total + shifter.stat === stat ? shifter.shift : 0;
+            }, 0);
+        }
+
+        let slots = [
+            { count: 0, shift: 0 }, { count: 0, shift: 0 }, { count: 0, shift: 0 }, { count: 0, shift: 0 },
+            { count: 0, shift: 0 }, { count: 0, shift: 0 }, { count: 0, shift: 0 }, { count: 0, shift: 0 }, { count: 0, shift: 0 }];
+        let shift = 0;
+        for (let shifter in this.statShifters) {
+            if (shifter.stat !== stat) continue;
+            if (shifter.slot < 0) shift += shifter.shift
+            else {
+                slots[shifter.slot].count++;
+                slots[shifter.slot].shift += shifter.shift;
+            }
+        }
+        return slots.reduce((total, data) => {
+            if (data.count == 0) return total;
+            return total + Math.floor(data.shift / data.count);
+        }, shift)
     }
 
 }
@@ -188,12 +212,12 @@ class Stats {
 class StatShifter {
     stat;
     shift;
-    temporary;
+    slot;
 
-    constructor(stat, shift, temporary = false) {
+    constructor(stat, shift, slot = -1) {
         this.stat = stat;
         this.shift = shift;
-        this.temporary = temporary;
+        this.slot = slot;
     }
 }
 
@@ -212,14 +236,20 @@ class Creature {
     effects;
     primary;
     isKin;
-    partManager;
-    skillManager;
     attributeExpenditure;
+    parts = [];
+    skills = {};
 
     hpFromLevelUpRolls = [0, 0];
     minLevel;
 
     changes = 0;
+
+    id;
+
+    constructor() {
+        this.id = crypto.randomUUID();
+    }
 
     static fromObject(obj) {
         let creature = new Creature();
@@ -235,13 +265,34 @@ class Creature {
         creature.anatomy = obj.anatomy;
         creature.isKin = obj.isKin;
         creature.limbs = ANATOMIES[creature.anatomy.toUpperCase()];
+        creature.setDefaultLimb();
         creature.resistances = obj.resistances
 
         creature.setDefaultExpenditure();
         creature.minLevel = obj.level;
         for (let i = 1; i <= obj.level; i++) { creature.hpFromLevelUpRolls.push(0); }
+        for (let skill in obj.skills) { creature.addSkill(skill); }
 
         return creature;
+    }
+
+    fire(event) {
+        event.handle(this);
+    }
+
+    addSkill(skillName) {
+        this.skills[skillName] = true;
+        this.fire(new SkillAddedEvent(skillName));
+    }
+
+    attachPart(part) {
+        this.parts.push[part];
+        part.onAttach(this);
+    }
+
+    detachPart(part) {
+        this.parts = this.parts.filter(item => item !== part);
+        part.onDetach(this);
     }
 
     levelUp() {
@@ -304,6 +355,18 @@ class Creature {
             freePointsUsed: 0,
             leveledPointsUsed: 0,
         };
+    }
+
+    setDefaultLimb() {
+        let hands = [];
+        let fallback = 0;
+        for (let i = 0; i < this.limbs.length; i++) {
+            let limb = this.limbs[i];
+            if (limb.slot === 4) hands.push(i);
+            if (limb.slot === 1) fallback = i;
+        }
+        if (hands.length === 0) this.primary = fallback;
+        else this.primary = hands[random(0, hands.length - 1)];
     }
 }
 

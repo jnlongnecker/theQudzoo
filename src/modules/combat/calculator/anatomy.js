@@ -1,3 +1,5 @@
+import { Item } from "./items.js";
+
 const SLOTS = {
     HEADGEAR: 0,
     BODY: 1,
@@ -22,8 +24,8 @@ class Limb {
         this.name = name;
         this.slot = slot;
         this.offhand = offhand;
-        this.item = item;
         this.multiweaponAffected = multiweaponAffected;
+        this.item = item ? item : new Item();
     }
 
     static head = (name = 'Head') => new Limb(name, SLOTS.HEADGEAR, 0.0, null, false);
@@ -31,7 +33,7 @@ class Limb {
     static body = (name = 'Body') => new Limb(name, SLOTS.BODY, 0.0, null, false);
     static back = (name = 'Back') => new Limb(name, SLOTS.BACKWEAR, 0.0, null, false);
     static arm = (name = 'Arm') => new Limb(name, SLOTS.ARMGEAR, 0.0, null, true);
-    static hand = (name = 'Hand') => new Limb(name, SLOTS.HAND, 0.15, null, true);
+    static hand = (name = 'Hand') => new Limb(name, SLOTS.HAND, 0.15, Item.fist(), true);
     static hands = (name = 'Hands') => new Limb(name, SLOTS.HANDWEAR, 0.0, null, false);
     static feet = (name = 'Feet') => new Limb(name, SLOTS.FOOTWEAR, 0.0, null, false);
     static horn = (name = 'Horn') => new Limb(name, SLOTS.HEADGEAR, 0.2, null, false);
@@ -51,7 +53,7 @@ const ANATOMIES = {
         Limb.hand('Left Hand'),
         Limb.hands(),
         Limb.feet()
-    ]
+    ],
 };
 
 export { ANATOMIES };

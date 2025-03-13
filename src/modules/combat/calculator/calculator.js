@@ -5,7 +5,6 @@ import {
 import {
     AttackEvent, AttackCountEvent, SpecialEffectEvent
 } from "./events.js";
-import { SkillManager } from "./skillParts.js";
 import { Creature } from "./creature.js";
 
 const defaultWeapon = {
@@ -24,13 +23,11 @@ class Combat {
     attacker;
     defender;
 
-    skillManager;
     rounds = [];
 
     constructor(attacker, target) {
         this.attacker = attacker;
         this.defender = target;
-        this.skillManager = new SkillManager(attacker.skills);
     }
 
     bumpAttack() {
@@ -70,7 +67,7 @@ class AttackBuilder {
         let attackCountEvent = new AttackCountEvent();
         attackCountEvent.attacks.push(primary);
         attackCountEvent.isPrimary = true;
-        attackCountEvent.fire();
+        this.attacker.fire(attackCountEvent);
 
         for (let attack of attackCountEvent.attacks) {
             if (attack.activationChance > 0) attacks.push(attack);
@@ -88,7 +85,7 @@ class AttackBuilder {
             offhand.pvMaxBonus += applyToAll ? pvBonus : 0;
             let offhandEvent = new AttackCountEvent();
             offhandEvent.attacks.push(offhand);
-            offhandEvent.fire();
+            this.attacker.fire(offhandEvent);
 
             for (let attack of offhandEvent.attacks) {
                 if (attack.activationChance > 0) attacks.push(attack);
@@ -98,7 +95,7 @@ class AttackBuilder {
         for (let attack of attacks) {
             let attackEvent = new AttackEvent();
             attackEvent.attack = attack;
-            attackEvent.fire();
+            this.attacker.fire(attackEvent);
             console.log(attackEvent.attack);
         }
 
@@ -400,5 +397,5 @@ export {
 
     DiceRoll, Roll, getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random,
 
-    test, SkillManager, Creature
+    test, Creature
 };
