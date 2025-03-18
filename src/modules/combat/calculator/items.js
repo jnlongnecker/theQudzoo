@@ -1,6 +1,7 @@
 import { Part } from "./parts";
 import { SLOTS } from "./anatomy";
 import { GameObject } from "./gameObject";
+import { part } from "./metadata";
 
 class Item extends GameObject {
     name;
@@ -74,5 +75,6 @@ class Armor extends Part {
         this.hitBonus = hitBonus; this.quicknessMod = quicknessMod;
     }
 }
+part(MeleeWeapon, Armor);
 
 export { Item };

@@ -1,10 +1,8 @@
 import { SkillAddedEvent } from "../events";
-import { Cudgel_Bludgeon } from "./cudgelParts";
 import { Part } from "../parts";
-
-const skillPartConstructors = {
-    'Cudgel_Bludgeon': Cudgel_Bludgeon,
-}
+import { skillPartModule, skillPartRegistry } from "../metadata";
+import * as cudgel from "./cudgelParts";
+skillPartModule(cudgel);
 
 class SkillerPart extends Part {
 
@@ -14,7 +12,7 @@ class SkillerPart extends Part {
     }
 
     handleSkillAdd(skillEvent) {
-        let skillConstructor = skillPartConstructors[skillEvent.skillName];
+        let skillConstructor = skillPartRegistry.getConstructorFor(skillEvent.skillName);
         if (!skillConstructor) return;
 
         this.host.attachPart(new skillConstructor());

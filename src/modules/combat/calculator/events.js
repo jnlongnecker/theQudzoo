@@ -52,8 +52,6 @@ class BaseEvent {
 export class AttackCountEvent extends BaseEvent {
     attacks = [];
 
-    constructor() { super(); }
-
     handle(creature) {
         super.handle(creature);
         this.attacks.sort((a, b) => {

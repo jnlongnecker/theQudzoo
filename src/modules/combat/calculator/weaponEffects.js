@@ -14,11 +14,9 @@ class BludgeonDaze extends WeaponEffect {
     chance = 50;
 
     onHit(attack, defender) {
-        let chanceEvent = new SpecialEffectEvent();
-        chanceEvent.chance = this.chance;
-        chanceEvent.fire();
+        let chance = attack.weapon.fire(new SpecialEffectEvent(this.chance)).chance;
 
-        if (random(1, 100) >= this.chance) return super.onHit();
+        if (random(1, 100) >= chance) return super.onHit();
 
         this.activated = true;
         let daze = defender.effects.findIndex(effect => effect.name === 'daze');

@@ -3,6 +3,7 @@ import { Part } from "./parts";
 import { AttackCountEvent, OffhandChanceEvent } from "./events";
 import { Attack, AttackerPart } from "./attacks";
 import { random } from "./rolls";
+import { part } from "./metadata";
 
 export const SLOTS = {
     HEADGEAR: 0,
@@ -102,6 +103,7 @@ class BodyPart extends Part {
     static hand = (name = 'Hand') => new BodyPart(name, SLOTS.HAND, 0.15, Item.fist(), true);
     static float = (name = 'Floating Nearby') => new BodyPart(name, SLOTS.FLOATING, 0.15, null, true);
 }
+part(BodyPart);
 
 export class Anatomy {
     body;

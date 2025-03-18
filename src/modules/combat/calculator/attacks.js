@@ -1,4 +1,5 @@
 import { ActivatedActionEvent, AttackCountEvent, AttackEvent } from "./events";
+import { part } from "./metadata";
 import { Part } from "./parts";
 
 export class AttackerPart extends Part {
@@ -19,6 +20,7 @@ export class AttackerPart extends Part {
         event.details.attacks = attacks;
     }
 }
+part(AttackerPart);
 
 export class Attack {
     activationChance = 0;
