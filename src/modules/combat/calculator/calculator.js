@@ -1,9 +1,9 @@
 import {
     DiceRoll, Roll,
     getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random
-} from "./rolls.js";
-import { ActivatedActionEvent } from "./events.js";
-import { Creature } from "./creature.js";
+} from "./rolls";
+import { ActivatedActionEvent } from "./events";
+import { Creature } from "./creature";
 
 
 class Combat {
@@ -26,21 +26,6 @@ class Combat {
         }
 
         this.actions.push(action);
-    }
-
-    /* WIP */
-    getTurnExpectedDamage(turn, defender) {
-        let expectedDamage = 0;
-        for (let attack of turn.attacks) {
-            expectedDamage += attack.getExpectedDamage(defender);
-        }
-    }
-}
-
-function mergeDamage(base, toAdd) {
-    for (let damageType in toAdd) {
-        if (!base[damageType]) base[damageType] = 0;
-        base[damageType] += toAdd[damageType];
     }
 }
 

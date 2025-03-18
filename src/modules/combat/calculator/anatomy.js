@@ -1,10 +1,10 @@
-import { Item } from "./items.js";
-import { Part } from "./parts.js";
-import { AttackCountEvent, OffhandChanceEvent } from "./events.js";
-import { Attack, AttackerPart } from "./attacks.js";
-import { random } from "./rolls.js";
+import { Item } from "./items";
+import { Part } from "./parts";
+import { AttackCountEvent, OffhandChanceEvent } from "./events";
+import { Attack, AttackerPart } from "./attacks";
+import { random } from "./rolls";
 
-const SLOTS = {
+export const SLOTS = {
     HEADGEAR: 0,
     BODY: 1,
     FOOTWEAR: 2,
@@ -48,11 +48,15 @@ class BodyPart extends Part {
         this.item = item ? item : new Item();
     }
 
-    getValidPrimaryCandidates(candidates = []) {
+    getValidPrimaryCandidates(candidates = [], slot) {
+        if (slot === undefined) {
+            let primaryTag = this.host.getTag('PrimaryLimbType');
+            slot = primaryTag ? primaryTag.value : SLOTS.BODY;
+        }
         for (let part of this.dependentParts) {
             part.getValidPrimaryCandidates(candidates);
         }
-        if (this.offhand > 0 && this.item && this.item.isWeapon) {
+        if (this.slot === slot) {
             candidates.push(this);
         }
         return candidates;
@@ -70,15 +74,14 @@ class BodyPart extends Part {
     }
 
     handleAttackCountAction(event) {
-        if (this.slot === SLOTS.FLOATING && (!this.item || !this.item.isWeapon)) return;
+        if (this.slot === SLOTS.FLOATING && (!this.item || !this.item.getPart('MeleeWeapon'))) return;
         let chance = this.isPrimary ? 1 : this.host.fire(new OffhandChanceEvent(this.offhand)).chance;
         if (chance === 0) return;
-        let attack = new Attack(this.host, this, this.attackName());
+        let attack = new Attack(this.host, this.item.getPart('MeleeWeapon'), this.attackName());
         attack.swfEnabled = this.isPrimary || !this.multiweaponAffected;
         attack.activationChance = chance;
 
         event.attacks.push(attack);
-
     }
 
     attackName() {

@@ -1,41 +1,77 @@
+import { Part } from "./parts";
+import { SLOTS } from "./anatomy";
+import { GameObject } from "./gameObject";
 
-const defaultWeapon = {
-    "name": "base",
-    "pvBonus": 0,
-    "pvCap": 0,
-    "damage": "1d2",
-    "type": "cudgel",
-    "mods": [0, 0, 0],
-    "tier": 1,
-    "isWeapon": true
-};
-
-class Item {
+class Item extends GameObject {
     name;
-    pvBonus;
-    pvCap;
-    hitBonus;
-    damage;
-    type;
-    mods;
-    tier;
-    isWeapon;
-    hands;
+    token;
 
-    constructor(name = '', isWeapon = false, pvBonus = 0, pvCap = 0, hitBonus = 0, damage = '1d2', type = 'cudgel', tier = 1, hands = 1) {
+    constructor(name, token) {
+        super();
         this.name = name;
-        this.pvBonus = pvBonus;
-        this.pvCap = pvCap;
-        this.hitBonus = hitBonus;
-        this.damage = damage;
-        this.type = type;
-        this.tier = tier;
-        this.isWeapon = isWeapon;
-        this.hands = hands;
+        this.token = token;
     }
 
     static fist() {
-        return new Item('Fist', true, 0, 999);
+        let item = new Item('Fist', '');
+        item.attachPart(new MeleeWeapon({ pvCap: 1000 }));
+        return item;
+    }
+}
+
+class MeleeWeapon extends Part {
+    slot;
+    pvBonus;
+    pvCap;
+    damage;
+    stat;
+    type;
+    hitBonus;
+
+    constructor({
+        pvBonus = 0, pvCap = 0, damage = '1d2-1', hitBonus = 0,
+        slot = SLOTS.HAND,
+        stat = 'Strength', type = 'cudgel'
+    } = {}) {
+        super();
+        this.pvBonus = pvBonus; this.pvCap = pvCap;
+        this.damage = damage; this.hitBonus = hitBonus;
+        this.slot = slot; this.stat = stat; this.type = type;
+    }
+}
+
+class Armor extends Part {
+    slot;
+    av;
+    dv;
+    ma;
+    heatRes;
+    coldRes;
+    acidRes;
+    elecRes;
+    poisRes;
+    strength;
+    agility;
+    toughness;
+    intelligence;
+    willpower;
+    ego;
+    hitBonus;
+    quicknessMod;
+
+    constructor({
+        slot = SLOTS.BODY, av = 0, dv = 0,
+        heatRes = 0, coldRes = 0, acidRes = 0, elecRes = 0, poisRes = 0,
+        strength = 0, agility = 0, toughness = 0, intelligence = 0, willpower = 0, ego = 0,
+        hitBonus = 0, quicknessMod = 0
+    } = {}) {
+        super();
+        this.slot = slot; this.av = av; this.dv = 0;
+        this.heatRes = heatRes; this.coldRes = coldRes; this.acidRes = acidRes;
+        this.elecRes = elecRes; this.poisRes = poisRes;
+        this.strength = strength; this.agility = agility; this.toughness = toughness;
+        this.intelligence = intelligence; this.willpower = willpower; this.ego = ego;
+        this.hitBonus = hitBonus; this.quicknessMod = quicknessMod;
     }
 }
 

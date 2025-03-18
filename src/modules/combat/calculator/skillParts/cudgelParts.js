@@ -1,6 +1,6 @@
-import { Part } from "../parts.js";
-import { BludgeonDaze } from "../weaponEffects.js";
-import { AttackEvent } from "../events.js";
+import { Part } from "../parts";
+import { BludgeonDaze } from "../weaponEffects";
+import { AttackEvent } from "../events";
 
 export class Cudgel_Bludgeon extends Part {
 

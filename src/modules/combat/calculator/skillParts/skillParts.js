@@ -1,6 +1,6 @@
-import { SkillAddedEvent } from "../events.js";
-import { Cudgel_Bludgeon } from "./cudgelParts.js";
-import { Part } from "../parts.js";
+import { SkillAddedEvent } from "../events";
+import { Cudgel_Bludgeon } from "./cudgelParts";
+import { Part } from "../parts";
 
 const skillPartConstructors = {
     'Cudgel_Bludgeon': Cudgel_Bludgeon,

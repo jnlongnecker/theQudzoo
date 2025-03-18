@@ -1,7 +1,8 @@
-import { ANATOMIES } from "./anatomy.js";
-import { SkillAddedEvent } from "./events.js";
-import { random } from "./rolls.js";
-import { SkillerPart } from "./skillParts/skillParts.js";
+import { ANATOMIES } from "./anatomy";
+import { SkillAddedEvent } from "./events";
+import { random } from "./rolls";
+import { SkillerPart } from "./skillParts/skillParts";
+import { GameObject } from "./gameObject";
 
 class Stats {
     av;
@@ -222,7 +223,7 @@ class StatShifter {
     }
 }
 
-class Creature {
+class Creature extends GameObject {
 
     name;
     token;
@@ -245,12 +246,6 @@ class Creature {
 
     changes = 0;
 
-    id;
-
-    constructor() {
-        this.id = crypto.randomUUID();
-    }
-
     static fromObject(obj) {
         let creature = new Creature();
         creature.name = obj.name;
@@ -263,7 +258,9 @@ class Creature {
         );
         creature.stats.recalculateHp(0, obj.level);
         creature.isKin = obj.isKin;
+        creature.addTag({ name: 'PrimaryLimbType', value: 4 });
         creature.anatomy = ANATOMIES[obj.anatomy.toUpperCase()];
+        creature.anatomy.attach(creature);
         creature.anatomy.setDefaultPrimaryLimb();
         creature.resistances = obj.resistances
 
@@ -274,29 +271,13 @@ class Creature {
             creature.attachPart(new SkillerPart());
             for (let skill in obj.skills) { creature.addSkill(skill); }
         }
-        creature.anatomy.attach(creature);
 
         return creature;
-    }
-
-    fire(event) {
-        event.handle(this);
-        return event;
     }
 
     addSkill(skillName) {
         this.skills[skillName] = true;
         this.fire(new SkillAddedEvent(skillName));
-    }
-
-    attachPart(part) {
-        this.parts.push[part];
-        part.onAttach(this);
-    }
-
-    detachPart(part) {
-        this.parts = this.parts.filter(item => item !== part);
-        part.onDetach(this);
     }
 
     levelUp() {

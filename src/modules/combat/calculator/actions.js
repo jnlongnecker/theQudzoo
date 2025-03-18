@@ -1,4 +1,4 @@
-import { ActivatedActionEvent } from "./events.js";
+import { ActivatedActionEvent } from "./events";
 
 export class ActivatedAction {
     name;

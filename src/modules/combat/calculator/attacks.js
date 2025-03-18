@@ -1,5 +1,5 @@
-import { ActivatedActionEvent, AttackCountEvent, AttackEvent } from "./events.js";
-import { Part } from "./parts.js";
+import { ActivatedActionEvent, AttackCountEvent, AttackEvent } from "./events";
+import { Part } from "./parts";
 
 export class AttackerPart extends Part {
 
@@ -36,12 +36,9 @@ export class Attack {
 
     effects = [];
 
-    constructor(attacker, bodyPart, name) {
+    constructor(attacker, weapon, name) {
         this.name = name;
         this.attacker = attacker;
-        this.part = bodyPart;
-
-        let weapon = this.part.item;
 
         this.weapon = weapon;
 
