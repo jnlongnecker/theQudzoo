@@ -233,9 +233,7 @@ class Creature {
     mutations;
     cybernetics;
     anatomy;
-    limbs;
     effects;
-    primary;
     isKin;
     attributeExpenditure;
     parts = [];
@@ -264,10 +262,9 @@ class Creature {
             obj.attributes.intelligence, obj.attributes.willpower, obj.attributes.ego,
         );
         creature.stats.recalculateHp(0, obj.level);
-        creature.anatomy = obj.anatomy;
         creature.isKin = obj.isKin;
-        creature.limbs = ANATOMIES[creature.anatomy.toUpperCase()];
-        creature.setDefaultLimb();
+        creature.anatomy = ANATOMIES[obj.anatomy.toUpperCase()];
+        creature.anatomy.setDefaultPrimaryLimb();
         creature.resistances = obj.resistances
 
         creature.setDefaultExpenditure();
@@ -277,6 +274,7 @@ class Creature {
             creature.attachPart(new SkillerPart());
             for (let skill in obj.skills) { creature.addSkill(skill); }
         }
+        creature.anatomy.attach(creature);
 
         return creature;
     }
@@ -292,7 +290,6 @@ class Creature {
     }
 
     attachPart(part) {
-        console.log(part);
         this.parts.push[part];
         part.onAttach(this);
     }
@@ -362,18 +359,6 @@ class Creature {
             freePointsUsed: 0,
             leveledPointsUsed: 0,
         };
-    }
-
-    setDefaultLimb() {
-        let hands = [];
-        let fallback = 0;
-        for (let i = 0; i < this.limbs.length; i++) {
-            let limb = this.limbs[i];
-            if (limb.slot === 4) hands.push(i);
-            if (limb.slot === 1) fallback = i;
-        }
-        if (hands.length === 0) this.primary = fallback;
-        else this.primary = hands[random(0, hands.length - 1)];
     }
 }
 

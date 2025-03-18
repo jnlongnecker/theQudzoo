@@ -20,7 +20,7 @@ class EventManager {
     handle(creature, event) {
         let registry = this.creatureRegistry[creature.id]
         if (!registry) return;
-        let callbacks = registry[event.name];
+        let callbacks = registry[event.constructor.name];
         if (!Array.isArray(callbacks)) return;
 
         for (let callbackPriorityList of callbacks)
@@ -32,7 +32,7 @@ class EventManager {
 const eventManager = new EventManager();
 
 class BaseEvent {
-    name;
+    priority;
 
     constructor(priority) {
         if (!priority) priority = 3;
@@ -41,7 +41,6 @@ class BaseEvent {
 
     static register(host, callback, priority = 3) {
         if (!priority || priority <= 0 || priority > 5) priority = 3;
-        console.log('registering for ' + this.name);
         eventManager.register(host, this.name, callback, priority);
     }
 
@@ -52,27 +51,33 @@ class BaseEvent {
 
 export class AttackCountEvent extends BaseEvent {
     attacks = [];
-    isPrimary = false;
 
-    constructor() { super(); this.name = 'AttackCountEvent'; }
+    constructor() { super(); }
+
+    handle(creature) {
+        super.handle(creature);
+        this.attacks.sort((a, b) => {
+            return a.swfEnabled ? -1 : b.swfEnabled ? 1 : 0;
+        });
+    }
 }
 
 export class AttackEvent extends BaseEvent {
     attack;
 
-    constructor(attack) { super(); this.name = 'AttackEvent'; this.attack = attack; }
+    constructor(attack) { super(); this.attack = attack; }
 }
 
 export class SpecialEffectEvent extends BaseEvent {
     chance = 0;
 
-    constructor(chance = 0) { super(); this.name = 'SpecialEffectEvent'; this.chance = chance; }
+    constructor(chance = 0) { super(); this.chance = chance; }
 }
 
 export class SkillAddedEvent extends BaseEvent {
     skillName;
 
-    constructor(skillName) { super(); this.name = 'SkillAddedEvent'; this.skillName = skillName; }
+    constructor(skillName) { super(); this.skillName = skillName; }
 }
 
 export class ActivatedActionEvent extends BaseEvent {
@@ -80,4 +85,10 @@ export class ActivatedActionEvent extends BaseEvent {
     details;
 
     constructor(actionId, details) { super(); this.actionId = actionId; this.details = details; }
+}
+
+export class OffhandChanceEvent extends BaseEvent {
+    chance;
+
+    constructor(chance) { super(); this.chance = chance; }
 }

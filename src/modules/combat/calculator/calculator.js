@@ -2,28 +2,16 @@ import {
     DiceRoll, Roll,
     getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random
 } from "./rolls.js";
-import {
-    AttackEvent, AttackCountEvent, SpecialEffectEvent
-} from "./events.js";
+import { ActivatedActionEvent } from "./events.js";
 import { Creature } from "./creature.js";
 
-const defaultWeapon = {
-    "name": "base",
-    "pvBonus": 0,
-    "pvCap": 0,
-    "damage": "1d2",
-    "type": "cudgel",
-    "mods": [0, 0, 0],
-    "tier": 1,
-    "isWeapon": true
-};
 
 class Combat {
 
     attacker;
     defender;
 
-    rounds = [];
+    actions = [];
 
     constructor(attacker, target) {
         this.attacker = attacker;
@@ -31,11 +19,13 @@ class Combat {
     }
 
     bumpAttack() {
-        let weapon = this.attacker.limbs[this.attacker.primary].item;
-        let attacks = new AttackBuilder(this.attacker).buildAttackAction();
+        let action = this.attacker.fire(new ActivatedActionEvent('Bump_Attack', { cost: 1000 })).details;
+        console.log(action);
+        for (let attack of action.attacks) {
+            console.log(attack);
+        }
 
-        let energyCost = weapon.type == 'shortBlade' && this.attacker.skills['Short Blade Expertise'] ? 750 : 1000;
-        this.rounds.push(new Round(`Round ${this.rounds.length + 1}: Bump Attack`, attacks, energyCost));
+        this.actions.push(action);
     }
 
     /* WIP */
@@ -45,183 +35,6 @@ class Combat {
             expectedDamage += attack.getExpectedDamage(defender);
         }
     }
-}
-
-class AttackBuilder {
-
-    attacker;
-    limb;
-
-    constructor(attacker) {
-        this.attacker = attacker;
-        this.limb = attacker.limbs[attacker.primary];
-    }
-
-    buildAttackAction(pvBonus = 0, applyToAll = false) {
-        let attacks = [];
-
-        let weapon = this.limb.item;
-        let primary = new Attack(this.attacker, this.attacker.primary, `Primary Hand Attack (${this.limb.name}) - ${weapon.name}`);
-        primary.pvBonus += pvBonus;
-        primary.pvMaxBonus += pvBonus;
-        let attackCountEvent = new AttackCountEvent();
-        attackCountEvent.attacks.push(primary);
-        attackCountEvent.isPrimary = true;
-        this.attacker.fire(attackCountEvent);
-
-        for (let attack of attackCountEvent.attacks) {
-            if (attack.activationChance > 0) attacks.push(attack);
-        }
-
-        for (let i = 0; i < this.attacker.limbs.length; i++) {
-            if (i == this.attacker.primary) continue;
-
-            let limb = this.attacker.limbs[i];
-            let weapon = limb.item;
-            if (!weapon.isWeapon && limb.slot == "floating") continue;
-
-            let offhand = new Attack(this.attacker, i, `Offhand Attack (${limb.name}) - ${weapon.name}`);
-            offhand.pvBonus += applyToAll ? pvBonus : 0;
-            offhand.pvMaxBonus += applyToAll ? pvBonus : 0;
-            let offhandEvent = new AttackCountEvent();
-            offhandEvent.attacks.push(offhand);
-            this.attacker.fire(offhandEvent);
-
-            for (let attack of offhandEvent.attacks) {
-                if (attack.activationChance > 0) attacks.push(attack);
-            }
-        }
-
-        for (let attack of attacks) {
-            let attackEvent = new AttackEvent();
-            attackEvent.attack = attack;
-            this.attacker.fire(attackEvent);
-            console.log(attackEvent.attack);
-        }
-
-        return attacks;
-    }
-}
-
-class Round {
-    attacks = [];
-    energyCost;
-    name;
-
-    constructor(name, attacks, energyCost) {
-        this.name = name;
-        this.attacks = attacks;
-        this.energyCost = energyCost;
-    }
-
-    expectedRoundDamage(defender) {
-        let setResults = [];
-        for (let attack of this.attacks) {
-            setResults.push(getExpectedDamage(attack, defender));
-        }
-        console.log(setResults);
-    }
-
-}
-
-class Attack {
-    activationChance = 0;
-    bonusPenetrations = 0;
-    pvBonus = 0;
-    pvMaxBonus = 0;
-    hitBonus = 0;
-    attempts = 1;
-
-    limb;
-    limbNum;
-    weapon;
-    attacker;
-    name;
-
-    effects = [];
-
-    constructor(attacker, limb, name) {
-        this.name = name;
-        this.attacker = attacker;
-        this.limb = this.attacker.limbs[limb];
-        this.limbNum = limb;
-
-        let weapon = this.limb.item;
-        if (!weapon.isWeapon)
-            weapon = defaultWeapon;
-
-        this.weapon = weapon;
-
-        // Add weapon based hit bonus
-        this.hitBonus += weapon.hitBonus;
-
-        this.activationChance = limb == attacker.primary ? 1 : this.limb.offhand;
-    }
-
-    getCritPvBonus() {
-        let weapon = this.weapon;
-        let bonus = 0;
-        switch (weapon.type) {
-            case 'longBlade':
-                bonus += 2;
-            case 'cudgel':
-            case 'shortBlade':
-            case 'axe':
-                bonus += 1;
-                break;
-            default:
-                return 1;
-        }
-        return bonus;
-    }
-
-    run(defender) {
-        let weapon = this.weapon;
-        let metrics = [];
-
-        for (let i = 0; i < this.attempts; i++) {
-            let data = {
-                roll: 0, crit: false, hit: false, penetrations: 0, damage: {
-                    physical: 0, heat: 0, cold: 0, electric: 0, acid: 0, umbral: 0, cosmic: 0, poison: 0
-                }
-            };
-            let critChance = new SpecialEffectEvent();
-            critChance.chance = .05;
-            critChance.fire();
-
-            data.roll = random(1, 20);
-            let minCrit = 21 - Math.floor(20 * critChance.chance);
-            data.crit = data.roll >= minCrit;
-            data.hit = this.hitBonus + getModifier(this.attacker.attributes.agility);
-            if (!data.hit && !data.crit) { metrics.push(data); continue; }
-
-            let critPvBonus = data.crit ? this.getCritPvBonus() : 0;
-            let pv = this.pvBonus + getModifier(this.attacker.attributes.strength) + weapon.pvBonus;
-            let pvMax = this.pvMaxBonus + weapon.pvCap;
-            data.penetrations = rollPenetrations(defender.av, pv + critPvBonus, pvMax + critPvBonus);
-            if (data.crit) data.penetrations++;
-            data.penetrations += this.bonusPenetrations;
-
-            let roller = new Roll(weapon.damage);
-            for (let p = 0; p < data.penetrations; p++) {
-                data.damage.physical += roller.roll();
-            }
-            metrics.push(data);
-        }
-
-        return metrics
-    }
-}
-
-class ProjectedAttackMetrics {
-
-    activationChance = 0;
-    hitChance = 0;
-    penetrations = 0;
-    damage = {
-        physical: 0, heat: 0, cold: 0, electric: 0, acid: 0, umbral: 0, cosmic: 0, poison: 0
-    };
-    effects = [];
 }
 
 function mergeDamage(base, toAdd) {
@@ -381,21 +194,10 @@ function rollAttack(attack, defender) {
     return rollData;
 }
 
-function test() {
-    let part = {
-        callback: function (evt) {
-            console.log('Hello world');
-            console.log(evt);
-        }
-    };
-    AttackEvent.register(part.callback);
-    new AttackEvent().fire();
-}
-
 export {
-    Combat, Round,
+    Combat,
 
     DiceRoll, Roll, getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random,
 
-    test, Creature
+    Creature
 };
