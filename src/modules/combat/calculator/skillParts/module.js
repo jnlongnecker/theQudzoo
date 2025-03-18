@@ -1,10 +1,10 @@
 import { SkillAddedEvent } from "../events";
 import { Part } from "../parts";
-import { skillPartModule, skillPartRegistry } from "../metadata";
+import { part, skillPartModule, skillPartRegistry } from "../metadata";
 import * as cudgel from "./cudgelParts";
 skillPartModule(cudgel);
 
-class SkillerPart extends Part {
+export class Skills extends Part {
 
     onAttach(host) {
         super.onAttach(host);
@@ -18,5 +18,4 @@ class SkillerPart extends Part {
         this.host.attachPart(new skillConstructor());
     }
 }
-
-export { SkillerPart };
+part(Skills);

@@ -1,7 +1,7 @@
 import { ANATOMIES } from "./anatomy";
 import { SkillAddedEvent } from "./events";
 import { random } from "./rolls";
-import { SkillerPart } from "./skillParts/skillParts";
+import { Skills } from "./skillParts/module";
 import { GameObject } from "./gameObject";
 
 class Stats {
@@ -268,7 +268,7 @@ class Creature extends GameObject {
         creature.minLevel = obj.level;
         for (let i = 1; i <= obj.level; i++) { creature.hpFromLevelUpRolls.push(0); }
         if (obj.skills) {
-            creature.attachPart(new SkillerPart());
+            creature.attachPart(new Skills());
             for (let skill in obj.skills) { creature.addSkill(skill); }
         }
 
