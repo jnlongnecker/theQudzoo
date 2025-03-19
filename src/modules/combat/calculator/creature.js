@@ -119,11 +119,11 @@ class Stats {
         this.willpower = willpower;
         this.ego = ego;
         this.statShifters = [];
-        this.addShifter('hp', hp, false);
+        this.addShifter('hp', hp);
     }
 
-    addShifter(stat, shift, temporary) {
-        let shifter = new StatShifter(stat, shift, temporary);
+    addShifter(stat, shift) {
+        let shifter = new StatShifter(stat, shift);
         this.statShifters.push(shifter);
         return shifter;
     }
@@ -185,28 +185,9 @@ class Stats {
     }
 
     getShift(stat) {
-        if (stat !== 'av') {
-            return this.statShifters.reduce((total, shifter) => {
-                return total + shifter.stat === stat ? shifter.shift : 0;
-            }, 0);
-        }
-
-        let slots = [
-            { count: 0, shift: 0 }, { count: 0, shift: 0 }, { count: 0, shift: 0 }, { count: 0, shift: 0 },
-            { count: 0, shift: 0 }, { count: 0, shift: 0 }, { count: 0, shift: 0 }, { count: 0, shift: 0 }, { count: 0, shift: 0 }];
-        let shift = 0;
-        for (let shifter in this.statShifters) {
-            if (shifter.stat !== stat) continue;
-            if (shifter.slot < 0) shift += shifter.shift
-            else {
-                slots[shifter.slot].count++;
-                slots[shifter.slot].shift += shifter.shift;
-            }
-        }
-        return slots.reduce((total, data) => {
-            if (data.count == 0) return total;
-            return total + Math.floor(data.shift / data.count);
-        }, shift)
+        return this.statShifters.reduce((total, shifter) => {
+            return total + (shifter.stat === stat ? shifter.shift : 0);
+        }, 0);
     }
 
 }
@@ -246,7 +227,7 @@ class Creature extends GameObject {
 
     changes = 0;
 
-    static fromObject(obj) {
+    static fromObject(obj, isPlayer = false) {
         let creature = new Creature();
         creature.name = obj.name;
         creature.token = obj.token;
@@ -256,7 +237,7 @@ class Creature extends GameObject {
             obj.attributes.strength, obj.attributes.agility, obj.attributes.toughness,
             obj.attributes.intelligence, obj.attributes.willpower, obj.attributes.ego,
         );
-        creature.stats.recalculateHp(0, obj.level);
+        if (isPlayer) creature.stats.recalculateHp(0, obj.level);
         creature.isKin = obj.isKin;
         creature.addTag({ name: 'PrimaryLimbType', value: 4 });
         creature.anatomy = ANATOMIES[obj.anatomy.toUpperCase()];

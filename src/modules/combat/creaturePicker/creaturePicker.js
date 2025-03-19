@@ -1,11 +1,25 @@
-import { LightningElement } from "lwc";
+import { LightningElement, api } from "lwc";
 import { getCreatures } from "c/api";
 
 export default class CreaturePicker extends LightningElement {
 
     creatures;
-    currentCreature;
+    selectedCreature;
     creatureOptions = [];
+
+    @api
+    get creature() {
+        return this.selectedCreature;
+    }
+
+    set creature(value) {
+        if (!value || !value.creature) return;
+        let newWrapper = {
+            creature: value.creature,
+            count: value.count + 1
+        };
+        this.selectedCreature = newWrapper;
+    }
 
     constructor() {
         super();
@@ -31,7 +45,6 @@ export default class CreaturePicker extends LightningElement {
 
     handleSelection(event) {
         let idx = event.detail.id;
-        this.currentCreature = this.creatures[idx];
-        this.dispatchEvent(new CustomEvent('charchange', { detail: this.currentCreature }));
+        this.dispatchEvent(new CustomEvent('charchange', { detail: this.creatures[idx] }));
     }
 }

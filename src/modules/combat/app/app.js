@@ -3,17 +3,18 @@ import { Creature } from "combat/calculator";
 
 export default class App extends LightningElement {
     @track creatureWrapper = { creature: undefined, count: 0 };
-    @track enemy;
+    @track enemyWrapper = { creature: undefined, count: 0 };
 
     actionLog;
     mode = 'level';
+    count = 0;
 
     updateCreature(event) {
-        this.forceRerenderCreature(Creature.fromObject(JSON.parse(JSON.stringify(event.detail))));
+        this.creatureWrapper = this.forceRerenderWrapper(Creature.fromObject(JSON.parse(JSON.stringify(event.detail)), true));
     }
 
     updateEnemy(event) {
-        this.enemy = Creature.fromObject(JSON.parse(JSON.stringify(event.detail)));
+        this.enemyWrapper = this.forceRerenderWrapper(Creature.fromObject(JSON.parse(JSON.stringify(event.detail))));
     }
 
     /**
@@ -21,12 +22,12 @@ export default class App extends LightningElement {
      * to the creature object.
      * @param {Object} newCreature The updated creature to broadcast mutations to
      */
-    forceRerenderCreature(newCreature) {
+    forceRerenderWrapper(newCreature) {
         let newWrapper = {
             creature: newCreature,
-            count: this.creatureWrapper.count + 1,
+            count: this.count + 1,
         };
-        this.creatureWrapper = newWrapper;
+        return newWrapper;
     }
 
     handleModeChange(event) {

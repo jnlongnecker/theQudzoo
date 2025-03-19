@@ -4,10 +4,10 @@
             <combat-character-builder oncharchange={updateCreature} onmodechange={handleModeChange}
                 onactionlevelup={handleActionGeneral} onactionlevelreset={handleActionLevelReset}
                 character={creatureWrapper}></combat-character-builder>
-            <combat-controls creature={creatureWrapper} enemy={enemy} onactionattributechange={handleActionGeneral}
-                onactionattributerandomize={handleActionGeneral} onactionattributereset={handleActionGeneral}
-                mode={mode}></combat-controls>
-            <combat-creature-picker oncharchange={updateEnemy}></combat-creature-picker>
+            <combat-controls creature={creatureWrapper} enemy={enemyWrapper}
+                onactionattributechange={handleActionGeneral} onactionattributerandomize={handleActionGeneral}
+                onactionattributereset={handleActionGeneral} mode={mode}></combat-controls>
+            <combat-creature-picker creature={enemyWrapper} oncharchange={updateEnemy}></combat-creature-picker>
         </section>
         <section class="log-container" data-updates={changes}>
             <template if:true={creature}>{creature.changes}</template>

@@ -4,17 +4,18 @@
 
 .tabs {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .tab {
     background-color: rgba(25, 25, 25, 0.5);
     color: var(--text-color-dark);
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     border-radius: 0;
     border: none;
     padding: 1rem;
+    font-family: var(--qud-font);
 }
 
 .selected {

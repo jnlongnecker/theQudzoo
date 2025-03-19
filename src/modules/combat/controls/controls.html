@@ -4,6 +4,7 @@
             <button class="tab selected">Attributes</button>
             <button class="tab">Equipment</button>
             <button class="tab">Skills</button>
+            <button class="tab">Mutations</button>
             <button class="tab">Combat</button>
         </div>
         <div class="panel">
@@ -11,6 +12,7 @@
                 mode={mode}></combat-attribute-controls>
             <combat-equipment-controls if:true={showEquipment}></combat-equipment-controls>
             <combat-skill-controls if:true={showSkills}></combat-skill-controls>
+            <combat-mutation-controls if:true={showMutations}></combat-mutation-controls>
             <combat-combat-controls if:true={showCombat} character={creature} enemy={enemy}></combat-combat-controls>
         </div>
     </div>

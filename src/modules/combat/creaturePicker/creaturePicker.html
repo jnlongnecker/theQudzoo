@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <div class="creature-container" if:true={currentCreature}>
-            <combat-stat-spread creature={currentCreature}></combat-stat-spread>
+        <div class="creature-container" if:true={creature}>
+            <combat-stat-spread creature={creature}></combat-stat-spread>
         </div>
         <input-typeahead placeholder="Search for a creature" name="creature-picker" options={creatureOptions}
             onselected={handleSelection}>

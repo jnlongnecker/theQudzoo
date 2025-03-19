@@ -5,6 +5,8 @@ export default class Controls extends LightningElement {
     showEquipment;
     showSkills;
     showCombat;
+    showMutations;
+    showCybernetics;
     showAttributes = true;
 
     _creature;
@@ -34,5 +36,7 @@ export default class Controls extends LightningElement {
         this.showSkills = target.innerHTML == 'Skills';
         this.showAttributes = target.innerHTML == 'Attributes';
         this.showCombat = target.innerHTML == 'Combat';
+        this.showMutations = target.innerHTML == 'Mutations';
+        this.showCybernetics = target.innerHTML == 'Cybernetics';
     }
 }
