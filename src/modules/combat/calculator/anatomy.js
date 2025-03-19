@@ -90,18 +90,24 @@ class BodyPart extends Part {
         return `${prefix} Attack (${this.item.name}) - ${this.name}`;
     }
 
-    static body = (name = 'Body') => new BodyPart(name, SLOTS.BODY, 0.0, null, false);
-    static back = (name = 'Back') => new BodyPart(name, SLOTS.BACKWEAR, 0.0, null, false);
-    static hands = (name = 'Hands') => new BodyPart(name, SLOTS.HANDWEAR, 0.0, null, false);
-    static feet = (name = 'Feet') => new BodyPart(name, SLOTS.FOOTWEAR, 0.0, null, false);
-    static horn = (name = 'Horn') => new BodyPart(name, SLOTS.HEADGEAR, 0.2, null, false);
-    static stinger = (name = 'Stinger') => new BodyPart(name, SLOTS.TAIL, 0.2, null, false);
-    static roboHand = (name = 'Robo-Hand') => new BodyPart(name, SLOTS.HAND, 0.08, null, false);
-    static head = (name = 'Head') => new BodyPart(name, SLOTS.HEADGEAR, 0.0, null, false);
-    static face = (name = 'Face') => new BodyPart(name, SLOTS.FACE, 0.0, null, true);
-    static arm = (name = 'Arm') => new BodyPart(name, SLOTS.ARMGEAR, 0.0, null, true);
+    // Standard human limbs
+    static body = (name = 'Body') => new BodyPart(name, SLOTS.BODY, 0.0, null, false, CYBERNETIC_SLOT.BODY);
+    static back = (name = 'Back') => new BodyPart(name, SLOTS.BACKWEAR, 0.0, null, false, CYBERNETIC_SLOT.BACK);
+    static hands = (name = 'Hands') => new BodyPart(name, SLOTS.HANDWEAR, 0.0, null, false, CYBERNETIC_SLOT.HANDS);
+    static feet = (name = 'Feet') => new BodyPart(name, SLOTS.FOOTWEAR, 0.0, null, false, CYBERNETIC_SLOT.FEET);
+    static head = (name = 'Head') => new BodyPart(name, SLOTS.HEADGEAR, 0.0, null, false, CYBERNETIC_SLOT.HEAD);
+    static face = (name = 'Face') => new BodyPart(name, SLOTS.FACE, 0.0, null, true, CYBERNETIC_SLOT.FACE);
+    static arm = (name = 'Arm') => new BodyPart(name, SLOTS.ARMGEAR, 0.0, null, true, CYBERNETIC_SLOT.ARM);
     static hand = (name = 'Hand') => new BodyPart(name, SLOTS.HAND, 0.15, Item.fist(), true);
     static float = (name = 'Floating Nearby') => new BodyPart(name, SLOTS.FLOATING, 0.15, null, true);
+
+    // Mutation limbs
+    static horn = (name = 'Horn') => new BodyPart(name, SLOTS.HEADGEAR, 0.2, null, false);
+    static stinger = (name = 'Stinger') => new BodyPart(name, SLOTS.TAIL, 0.2, null, false);
+
+    // Equipment limbs
+    static roboArm = (name = 'Robo-Arm') => new BodyPart(name, SLOTS.ARMGEAR, 0.0, null, true);
+    static roboHand = (name = 'Robo-Hand') => new BodyPart(name, SLOTS.HAND, 0.08, null, true);
 }
 part(BodyPart);
 
