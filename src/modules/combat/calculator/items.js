@@ -20,7 +20,7 @@ class Item extends GameObject {
     }
 }
 
-class MeleeWeapon extends Part {
+export class MeleeWeapon extends Part {
     slot;
     pvBonus;
     pvCap;
@@ -29,8 +29,13 @@ class MeleeWeapon extends Part {
     type;
     hitBonus;
 
+    static default() {
+        let defaultMelee = new MeleeWeapon();
+        return defaultMelee;
+    }
+
     constructor({
-        pvBonus = 0, pvCap = 0, damage = '1d2-1', hitBonus = 0,
+        pvBonus = 0, pvCap = 0, damage = '1d2', hitBonus = 0,
         slot = SLOTS.HAND,
         stat = 'Strength', type = 'cudgel'
     } = {}) {

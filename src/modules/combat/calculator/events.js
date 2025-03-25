@@ -49,13 +49,13 @@ class BaseEvent {
     }
 }
 
-export class AttackCountEvent extends BaseEvent {
+export class GetAttacksEvent extends BaseEvent {
     attacks = [];
 
     handle(creature) {
         super.handle(creature);
         this.attacks.sort((a, b) => {
-            return a.swfEnabled ? -1 : b.swfEnabled ? 1 : 0;
+            return a.part.isPrimary ? -1 : b.part.isPrimary ? 1 : 0;
         });
     }
 }
@@ -87,6 +87,22 @@ export class ActivatedActionEvent extends BaseEvent {
 
 export class OffhandChanceEvent extends BaseEvent {
     chance;
+    multiplier = 1;
+    finalChance = -1;
 
-    constructor(chance) { super(); this.chance = chance; }
+    constructor(chance = 0) { super(); this.chance = 15 + chance; }
+
+    handle(event) {
+        super.handle(event);
+        this.chance *= this.multiplier;
+        this.chance = this.finalChance > 0 ? this.finalChance : this.chance;
+    }
+}
+
+export class GetAttackCountEvent extends BaseEvent {
+    attack;
+    isPrimary;
+    attacks = [];
+
+    constructor(attack, isPrimary = false) { super(); this.attack = attack; this.isPrimary = isPrimary; this.attacks.push(attack); }
 }

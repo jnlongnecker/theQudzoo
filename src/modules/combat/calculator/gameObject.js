@@ -20,10 +20,6 @@ export class GameObject {
     }
 
     fire(event) {
-        for (let child of this.children) {
-            child.fire(event);
-        }
-
         event.handle(this);
 
         if (this.parent) {

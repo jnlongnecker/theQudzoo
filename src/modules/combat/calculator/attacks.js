@@ -1,4 +1,4 @@
-import { ActivatedActionEvent, AttackCountEvent, AttackEvent } from "./events";
+import { ActivatedActionEvent, GetAttacksEvent, AttackEvent } from "./events";
 import { part } from "./metadata";
 import { Part } from "./parts";
 
@@ -13,7 +13,7 @@ export class AttackerPart extends Part {
     handleActivatedAction(event) {
         if (event.actionId !== 'Bump_Attack') return;
 
-        let attacks = this.host.fire(new AttackCountEvent()).attacks;
+        let attacks = this.host.fire(new GetAttacksEvent()).attacks;
         for (let attack of attacks) {
             this.host.fire(new AttackEvent(attack));
         }
@@ -33,16 +33,16 @@ export class Attack {
     part;
     weapon;
     attacker;
-    swfEnabled;
     name;
 
     effects = [];
 
-    constructor(attacker, weapon, name) {
+    constructor(attacker, weapon, part, name) {
         this.name = name;
         this.attacker = attacker;
 
         this.weapon = weapon;
+        this.part = part;
 
         // Add weapon based hit bonus
         this.hitBonus += weapon.hitBonus;
