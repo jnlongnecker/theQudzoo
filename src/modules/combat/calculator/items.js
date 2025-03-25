@@ -15,7 +15,7 @@ class Item extends GameObject {
 
     static fist() {
         let item = new Item('Fist', '');
-        item.attachPart(new MeleeWeapon({ pvCap: 1000 }));
+        item.attachPart(new MeleeWeapon({ pvCap: 1000, damage: '1d2-1' }));
         return item;
     }
 }
@@ -28,6 +28,11 @@ export class MeleeWeapon extends Part {
     stat;
     type;
     hitBonus;
+
+    get name() {
+        if (this.host) return this.host.name;
+        return 'Default Melee Weapon';
+    }
 
     static default() {
         let defaultMelee = new MeleeWeapon();

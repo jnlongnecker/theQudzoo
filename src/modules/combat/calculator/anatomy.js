@@ -76,7 +76,7 @@ class BodyPart extends Part {
     }
 
     doesAttack() {
-        return this.getMeleeWeapon() !== null;
+        return this.getMeleeWeapon() !== null && !this.dismembered;
     }
 
     getMeleeWeapon() {
@@ -123,9 +123,11 @@ class BodyPart extends Part {
         return true;
     }
 
-    getOffhandChance() {
-        if (!this.item) return this.host.fire(new OffhandChanceEvent()).chance;
-        return this.item.fire(new OffhandChanceEvent()).chance;
+    getOffhandChance(actualPart = null) {
+        if (actualPart === null) return this.getOffhandChance(this.host.anatomy.getPartForOffhandChance(this));
+
+        if (!actualPart.item) return actualPart.host.fire(new OffhandChanceEvent()).chance;
+        return actualPart.item.fire(new OffhandChanceEvent()).chance;
     }
 
     handleGetAttacksEvent(event) {
@@ -141,9 +143,10 @@ class BodyPart extends Part {
         event.attacks = event.attacks.concat(attacks);
     }
 
-    attackName() {
+    attackName(modifier = '') {
         let prefix = this.isPrimary ? 'Primary Hand ' : 'Offhand ';
-        return `${prefix} Attack (${this.item.name}) - ${this.name}`;
+        let itemName = this.item !== null ? this.item.name : this.defaultBehavior.name;
+        return `${prefix}${modifier} Attack (${itemName}) - ${this.name}`;
     }
 
     // Standard human limbs
@@ -163,7 +166,7 @@ class BodyPart extends Part {
 
     // Equipment limbs
     static roboArm = (name = 'Robo-Arm') => new BodyPart(name, SLOTS.ARMGEAR, null);
-    static roboHand = (name = 'Robo-Hand') => new BodyPart(name, SLOTS.HAND, null, null, 0.5);
+    static roboHand = (name = 'Robo-Hand') => new BodyPart(name, SLOTS.HAND, null, null);
 }
 part(BodyPart);
 
@@ -182,6 +185,14 @@ export class Anatomy {
         host.attachPart(new AttackerPart());
     }
 
+    getLimbArray(currLimb, array = []) {
+        array.push(currLimb);
+        for (let part of currLimb.dependentParts) {
+            this.getLimbArray(part, array);
+        }
+        return array;
+    }
+
     setDefaultPrimaryLimb() {
         let candidates = this.body.getValidPrimaryCandidates();
         if (candidates.length == 0) {
@@ -191,6 +202,20 @@ export class Anatomy {
         let choice = random(0, candidates.length - 1);
         for (let candidate of candidates) candidate.isPrimary = false;
         candidates[choice].isPrimary = true;
+    }
+
+    getPartForOffhandChance(part) {
+        if (part.isPrimary) return part;
+        if (this.equipmentList.length <= 1 || this.equipmentList[0] !== part) return part;
+        return this.equipmentList.find(item => item.isPrimary);
+    }
+
+    setPrimaryLimb(primaryLimb) {
+        let limbArray = this.getLimbArray(this.body);
+        for (let limb of limbArray) {
+            limb.isPrimary = false;
+        }
+        primaryLimb.isPrimary = true;
     }
 
     recheckEquipmentList(part) {
