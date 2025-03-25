@@ -1,0 +1,534 @@
+{
+    "name": "objects",
+    "children": [
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "NoBiomes" },
+                        { "name": "Value", "value": "1" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "NoRivers" },
+                        { "name": "Value", "value": "1" }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TerrainJoppaTutorial" },
+                { "name": "Inherits", "value": "TerrainSaltmarsh" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialDagger" },
+                { "name": "Inherits", "value": "Dagger" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "BaseModChance" },
+                        { "name": "Value", "value": "-999" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialTorch" },
+                { "name": "Inherits", "value": "Torch" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "inventoryobject",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Blueprint", "value": "TutorialTorch" }
+                    ]
+                },
+                {
+                    "name": "inventoryobject",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Blueprint", "value": "TutorialDagger" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialChest1" },
+                { "name": "Inherits", "value": "Chest" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "part",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "TutorialSnapjaw" }
+                    ]
+                },
+                {
+                    "name": "intproperty",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "StartNotHibernatingChanceIn100"
+                        },
+                        { "name": "Value", "value": "100" }
+                    ]
+                },
+                {
+                    "name": "part",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "Corpse" },
+                        { "name": "CorpseChance", "value": "0" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialSnapjaw" },
+                { "name": "Inherits", "value": "Snapjaw Scavenger" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "part",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "TutorialBear" }]
+                },
+                {
+                    "name": "part",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "Corpse" },
+                        { "name": "CorpseChance", "value": "0" }
+                    ]
+                },
+                {
+                    "name": "intproperty",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "StartNotHibernatingChanceIn100"
+                        },
+                        { "name": "Value", "value": "0" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialBear" },
+                { "name": "Inherits", "value": "Bear" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "BaseModChance" },
+                        { "name": "Value", "value": "-999" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialLeatherArmor" },
+                { "name": "Inherits", "value": "Leather Armor" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "BaseModChance" },
+                        { "name": "Value", "value": "-999" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialChemCell" },
+                { "name": "Inherits", "value": "Chem Cell" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "BaseModChance" },
+                        { "name": "Value", "value": "-999" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialBattleAxe" },
+                { "name": "Inherits", "value": "Battle Axe2" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "BaseModChance" },
+                        { "name": "Value", "value": "-999" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialAphorisms" },
+                { "name": "Inherits", "value": "AphorismsAboutBirds" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "BaseModChance" },
+                        { "name": "Value", "value": "-999" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialMarkovBook" },
+                { "name": "Inherits", "value": "StandaloneMarkovBook" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "part",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "LiquidVolume" },
+                        {
+                            "name": "InitialLiquid",
+                            "value": "water-800,salt-200"
+                        }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "BaseModChance" },
+                        { "name": "Value", "value": "-999" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialFusionPumpingStation" },
+                { "name": "Inherits", "value": "Fusion Pumping Station" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialHalfFullWaterskin" },
+                { "name": "Inherits", "value": "HalfFullWaterskin" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "part",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "ModPiping" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Breakable" }]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "ShaleWithPiping" },
+                { "name": "Inherits", "value": "Shale" }
+            ]
+        },
+        {
+            "name": "object",
+            "children": [
+                {
+                    "name": "part",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "Render" },
+                        {
+                            "name": "DisplayName",
+                            "value": "clockwork beetle and pariah to its people"
+                        }
+                    ]
+                },
+                {
+                    "name": "part",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Name", "value": "Brain" },
+                        { "name": "Factions", "value": "Pariahs-100" },
+                        { "name": "Wanders", "value": "false" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [
+                        {
+                            "name": "Name",
+                            "value": "ExcludeFromDynamicEncounters"
+                        }
+                    ]
+                },
+                {
+                    "name": "inventoryobject",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Blueprint", "value": "Witchwood Bark" },
+                        { "name": "Number", "value": "3" }
+                    ]
+                },
+                {
+                    "name": "inventoryobject",
+                    "children": [],
+                    "attributes": [
+                        { "name": "Blueprint", "value": "Vinewafer Sheaf" },
+                        { "name": "Number", "value": "4" }
+                    ]
+                },
+                {
+                    "name": "tag",
+                    "children": [],
+                    "attributes": [{ "name": "Name", "value": "Tutorial" }]
+                }
+            ],
+            "attributes": [
+                { "name": "Name", "value": "TutorialClockworkBeetlePariah" },
+                { "name": "Inherits", "value": "ClockworkBeetle" }
+            ]
+        }
+    ],
+    "attributes": []
+}

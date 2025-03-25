@@ -4,3 +4,4 @@ scripts
 *.env
 usage.md
 __lwr_cache__
+gameData
