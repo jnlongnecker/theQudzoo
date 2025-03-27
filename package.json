@@ -26,6 +26,7 @@
         "node": ">=14.15.4 <17"
     },
     "devDependencies": {
+        "jimp": "^1.6.0",
         "node-env-run": "^4.0.2"
     }
 }
