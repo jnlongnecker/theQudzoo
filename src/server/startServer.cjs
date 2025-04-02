@@ -1,5 +1,6 @@
 const lwr = require("lwr");
 const session = require("express-session");
+const cors = require("cors");
 const MongoStore = require("connect-mongo");
 const bodyParser = require("body-parser");
 const api = require("./api.cjs");
@@ -116,7 +117,7 @@ app.post("/sugar/compile", async (req, res) => {
     }
 });
 
-app.post("/sugar/shaders", async (req, res) => {
+app.post("/sugar/shaders", cors(), async (req, res) => {
     if (!req.body.content) {
         res.json({ compiled: '' });
         return;
