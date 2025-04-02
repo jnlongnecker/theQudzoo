@@ -1866,56 +1866,56 @@
         "displayName": "Wilderness Lore: Flower Fields",
         "prefix": "<span class=\"injected\"><span class=\"icon-container\"><img class=\"inline-icon\" src=\"!!!!\" /></span><span class=\"skill\">",
         "suffix": "</span></span>",
-        "src": "Abilities/Wilderness Lore: Flower Fields.png"
+        "src": "Abilities/Wilderness Lore Flower Fields.png"
     },
     {
         "name": "Wilderness Lore: Marshes",
         "displayName": "Wilderness Lore: Marshes",
         "prefix": "<span class=\"injected\"><span class=\"icon-container\"><img class=\"inline-icon\" src=\"!!!!\" /></span><span class=\"skill\">",
         "suffix": "</span></span>",
-        "src": "Abilities/Wilderness Lore: Marshes.png"
+        "src": "Abilities/Wilderness Lore Marshes.png"
     },
     {
         "name": "Wilderness Lore: Hills and Mountains",
         "displayName": "Wilderness Lore: Hills and Mountains",
         "prefix": "<span class=\"injected\"><span class=\"icon-container\"><img class=\"inline-icon\" src=\"!!!!\" /></span><span class=\"skill\">",
         "suffix": "</span></span>",
-        "src": "Abilities/Wilderness Lore: Hills and Mountains.png"
+        "src": "Abilities/Wilderness Lore Hills and Mountains.png"
     },
     {
         "name": "Wilderness Lore: Canyons",
         "displayName": "Wilderness Lore: Canyons",
         "prefix": "<span class=\"injected\"><span class=\"icon-container\"><img class=\"inline-icon\" src=\"!!!!\" /></span><span class=\"skill\">",
         "suffix": "</span></span>",
-        "src": "Abilities/Wilderness Lore: Canyons.png"
+        "src": "Abilities/Wilderness Lore Canyons.png"
     },
     {
         "name": "Wilderness Lore: Salt Dunes",
         "displayName": "Wilderness Lore: Salt Dunes",
         "prefix": "<span class=\"injected\"><span class=\"icon-container\"><img class=\"inline-icon\" src=\"!!!!\" /></span><span class=\"skill\">",
         "suffix": "</span></span>",
-        "src": "Abilities/Wilderness Lore: Salt Dunes.png"
+        "src": "Abilities/Wilderness Lore Salt Dunes.png"
     },
     {
         "name": "Wilderness Lore: Jungles",
         "displayName": "Wilderness Lore: Jungles",
         "prefix": "<span class=\"injected\"><span class=\"icon-container\"><img class=\"inline-icon\" src=\"!!!!\" /></span><span class=\"skill\">",
         "suffix": "</span></span>",
-        "src": "Abilities/Wilderness Lore: Jungles.png"
+        "src": "Abilities/Wilderness Lore Jungles.png"
     },
     {
         "name": "Wilderness Lore: Rivers and Lakes",
         "displayName": "Wilderness Lore: Rivers and Lakes",
         "prefix": "<span class=\"injected\"><span class=\"icon-container\"><img class=\"inline-icon\" src=\"!!!!\" /></span><span class=\"skill\">",
         "suffix": "</span></span>",
-        "src": "Abilities/Wilderness Lore: Rivers and Lakes.png"
+        "src": "Abilities/Wilderness Lore Rivers and Lakes.png"
     },
     {
         "name": "Wilderness Lore: Ruins",
         "displayName": "Wilderness Lore: Ruins",
         "prefix": "<span class=\"injected\"><span class=\"icon-container\"><img class=\"inline-icon\" src=\"!!!!\" /></span><span class=\"skill\">",
         "suffix": "</span></span>",
-        "src": "Abilities/Wilderness Lore: Ruins.png"
+        "src": "Abilities/Wilderness Lore Ruins.png"
     },
     {
         "name": "Nonlinearity",

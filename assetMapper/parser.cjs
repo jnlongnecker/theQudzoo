@@ -276,7 +276,7 @@ function mergeTags(childTags, parentTags) {
 }
 
 let assetDir = projDir + '\\src\\assets\\Textures\\';
-let correctedDir = projDir + '\\src\\assets\\corrected\\Textures\\';
+let correctedDir = projDir + '\\src\\assets\\images\\Textures\\';
 
 /**
  * Links the new image link to the renderer part and generates the colored image
@@ -362,6 +362,7 @@ function qudDirToQudzooDir(qudDir, item) {
     let name = item.Name ? item.Name : item.Command;
     name = name.replaceAll('/', '');
     name = name.replaceAll("'", '&#x27;');
+    name = name.replaceAll(':', '');
     let formattedDir = formatDirectory(qudDir);
     return formattedDir.substring(0, formattedDir.indexOf('\\') + 1) + `${name}.png`;
 }

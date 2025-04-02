@@ -30,6 +30,12 @@ class ColorShader {
     apply(characters) {
         if (this.colors === '!') return characters;
         let ret = ['<span class="injected">'];
+        if (this.colors.length === 1) {
+            ret.push(`<span class="${this.colors[0]}">${characters.join('')}</span>`);
+            ret.push('</span>');
+            return ret;
+        }
+
         for (let i = 0; i < characters.length; i++) {
             let char = characters[i];
             let bordered = i === 0 || i === characters.length - 1;

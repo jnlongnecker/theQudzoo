@@ -53,7 +53,7 @@ These are the most helpful and most-used keybinds for you to be familiar with.
 -   Avoid <span class="attribute strength">Very Tough</span> or harder creatures
 -   Don't be afraid to run away
 -   Always keep a ranged weapon equipped
--   Keep a <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Blank Recoiler.png" /></span><span class="object"><span class="injected"><span class="Y">r</span><span class="Y">e</span><span class="Y">c</span><span class="Y">o</span><span class="Y">i</span><span class="Y">l</span><span class="Y">e</span><span class="Y">r</span></span></span></span> on you
+-   Keep a <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Blank Recoiler.png" /></span><span class="object"><span class="injected"><span class="Y">recoiler</span></span></span></span> on you
 -   Health ranges: `Badly Wounded` > `Wounded` > `Injured` > `Fine` > `Perfect`
 -   Selling for 4x an items weight is "weight efficient"
 

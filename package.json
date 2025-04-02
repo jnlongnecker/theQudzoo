@@ -6,8 +6,8 @@
     "type": "module",
     "main": "src/server/startServer.cjs",
     "scripts": {
-        "clean": "rm -rf __lwr_cache__",
-        "clean:compiled": "rm -rf src/assets/content/compileCache",
+        "clean": "rm -r src/content/compileCache/*",
+        "clean:cache": "rm -rf __lwr_cache__",
         "dev": "nodenv src/server/startServer.cjs -f",
         "start": "node src/server/startServer.cjs prod",
         "start:compat": "lwr serve --mode compat",
