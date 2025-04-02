@@ -215,7 +215,7 @@ export default class BuildCard extends LightningElement {
     get characterName() {
         if (!this.buildJson) return;
         let name = this.buildJson.modules[4].data.name;
-        if (name.length > 20) name = name.substring(0, 20) + '...';
+        if (name && name.length > 20) name = name.substring(0, 20) + '...';
         return name;
     }
 

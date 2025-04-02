@@ -100,6 +100,7 @@ export default class BuildLibrary extends LightningElement {
     }
 
     constructBuildFilters() {
+        if (!this.filterStore) this.filterStore = {};
         this.filterStore['owner.displayName'] = this.ownerFilter;
         this.filterStore['name'] = this.buildNameFilter;
         this.filterStore['genotype'] = this.genotypeFilter == 'Any' ? '' : this.genotypeFilter;
