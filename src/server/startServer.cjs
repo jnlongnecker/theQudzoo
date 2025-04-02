@@ -116,6 +116,19 @@ app.post("/sugar/compile", async (req, res) => {
     }
 });
 
+app.post("/sugar/shaders", async (req, res) => {
+    if (!req.body.content) {
+        res.json({ compiled: '' });
+        return;
+    }
+    try {
+        let md = sugarManager.applyShaders(0, req.body.content);
+        res.json({ compiled: md });
+    } catch (e) {
+        res.json({ compiled: req.body.content });
+    }
+});
+
 let mode = process.env.MODE ? process.env.MODE : 'prod';
 
 lwrServer.config.serverMode = mode;

@@ -1,5 +1,5 @@
 import { LightningElement, api } from "lwc";
-import { compileSugar } from "c/api";
+import { compileSugar, compileShaders } from "c/api";
 
 export default class MarkdownRenderer extends LightningElement {
 
@@ -21,20 +21,28 @@ export default class MarkdownRenderer extends LightningElement {
             value = 'Looks like this description tried to inject a script. Not allowed >:('
         }
         this._rawText = value;
-        compileSugar(value).then(result => {
-            if (!this.converter) {
-                this.converter = new window['showdown'].Converter()
-            }
 
-            let text = result.compiled;
-            if (this.singleLine) {
+        if (this.singleLine) {
+            compileShaders(value).then(result => {
+                if (!this.converter) {
+                    this.converter = new window['showdown'].Converter()
+                }
+
+                let text = result.compiled;
                 this.containerRef.innerHTML = text;
-                return;
-            }
-            text = text.replace(/\n\g/, '<br />');
-            this.markdownHtml = this.converter.makeHtml(text);
-            this.containerRef.innerHTML = this.markdownHtml;
-        });
+            });
+        } else {
+            compileSugar(value).then(result => {
+                if (!this.converter) {
+                    this.converter = new window['showdown'].Converter()
+                }
+
+                let text = result.compiled;
+                text = text.replace(/\n\g/, '<br />');
+                this.markdownHtml = this.converter.makeHtml(text);
+                this.containerRef.innerHTML = this.markdownHtml;
+            });
+        }
     }
 
     renderedCallback() {

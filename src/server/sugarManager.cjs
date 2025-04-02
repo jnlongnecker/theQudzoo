@@ -307,6 +307,8 @@ function skipIgnoredMarkdown(index, markdown) {
     }
 }
 
+exports.applyShaders = formatAll;
+
 function formatAll(index, markdown) {
     let retParts = [];
     while (index < markdown.length) {
