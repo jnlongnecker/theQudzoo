@@ -65,7 +65,10 @@ class ArticleMetadata {
         let config = app.config;
         for (let route of config.routes) {
             if (!route.contentTemplate) continue;
-            let filename = route.contentTemplate.substring(route.contentTemplate.lastIndexOf('\\') + 1);
+            let index = route.contentTemplate.lastIndexOf('\\');
+            if (index < 0) index = route.contentTemplate.lastIndexOf('/');
+            let filename = route.contentTemplate.substring(index + 1);
+
             let compiledPath = cacheDir + filename;
             let sourceStats = fs.statSync(route.contentTemplate);
 
