@@ -26,7 +26,7 @@ References
 
 First off, let's get something straight: the game lies to you. When it comes time to display PV to you, you don't _actually_ have the PV it says you do. Instead, you have 4 less. If I were to guess the reason this is, if you saw 6 PV vs 10 AV and had a cursory understanding of these mechanics you might assume (incorrectly) that you'd very rarely get a penetration. This "4" is a magic number chosen by the devs to try and more accurately convey to you, the player, what AV you have a reasonable chance of penetrating.
 
-Now that we have that straight, let's get to how these numbers are calculated. The simple one is AV: it's the sum of the bonuses provided by your equipment (averaged across limb type), plus the permanent AV bonuses from neutron flux, plus 1 if you have Calloused, plus temporary bonuses like when your Shield blocks or you tighten your Carapace, minus any AV penalties (like Cleave stacks). Cleave cannot bring AV lower than 0, but other types of armor to roll other types of penetration against (like MA) have more effects that _can_ reduce it below 0.
+Now that we have that straight, let's get to how these numbers are calculated. The simple one is AV: it's the sum of the bonuses provided by your equipment (averaged across limb type), plus the permanent AV bonuses from {{neutronic|neutron flux}}, plus 1 if you have Calloused, plus temporary bonuses like when your Shield blocks or you tighten your Carapace, minus any AV penalties (like Cleave stacks). Cleave cannot bring AV lower than 0, but other types of armor to roll other types of penetration against (like MA) have more effects that _can_ reduce it below 0.
 
 PV can be considered with three values: effective PV, maximum PV and actual PV. Your maximum PV is determined by your weapon; each weapon has a "strength bonus cap" that you can find when you look at the weapon. This value is pretty well-named but isn't the whole picture, as we'll come to find out. Without any circumstantial bonuses, your effective PV is your Strength modifier, capped at maximum PV. When displayed to you, both effective PV and maximum PV are raised by 4 like mentioned above. Your actual PV is what your PV would be without any caps and is never displayed to you.
 
@@ -69,7 +69,7 @@ There are a few insights to be gathered from this information:
 
 That last one deserves a bit of explanation since it may not be immediately obvious. If our displayed PV is 6 greater than the enemies' AV, that means our effective PV is 2 greater. The minimum roll (-1) still brings us over the enemies' AV, so it's guaranteed that we succeed all 3 times on the penetration rolls. If our actual PV is greater than our maximum PV by at least 2, when we reduce our actual PV by 2 and cap it; our effective PV _hasn't changed_ so we are guaranteed another penetration.
 
-Let's run some numbers through the algorithm using our carbide weapon: actual PV 12, maximum PV 6, target AV 4 (example: girshling)
+Let's run some numbers through the algorithm using our carbide weapon: actual PV 12, maximum PV 6, target AV 4 (example: defanged girshling)
 
 **Roll 1 - Actual PV: 12, Maximum PV 6, Target AV: 4**
 
@@ -216,7 +216,7 @@ For example, if you have 110 `quickness`, over the course of a `tick` you will g
 
 ### Insights and Consequences
 
-So in other words, quickness doesn't improve the efficiency of your `actions` it just gives you more `energy` to work with. In the majority of cases this is the same thing in practicality, but not all cases. You see, there _are_ things that do reduce the `energy` that certain `actions` cost; in fact we just looked at one in move speed. Every skill that mentions `action` cost being reduced do indeed lower the `energy` that those `actions` cost: Empty the Clips, Fastest Gun in the Rust, and Short Blade Expertise. Cybernetics like Rapid release finger flexors and mutations like Two-Headed and Telepathy also reduce certain `action` costs.
+So in other words, quickness doesn't improve the efficiency of your `actions` it just gives you more `energy` to work with. In the majority of cases this is the same thing in practicality, but not all cases. You see, there _are_ things that do reduce the `energy` that certain `actions` cost; in fact we just looked at one in move speed. Every skill that mentions `action` cost being reduced do indeed lower the `energy` that those `actions` cost: Empty the Clips, Fastest Gun in the Rust, and Short Blade Expertise. Cybernetics like rapid release finger flexors and mutations like Two-headed and Telepathy also reduce certain `action` costs.
 
 Why would this information be relevant, you might ask? Well, it's the interaction between `rounds` and `actions`. You see, a `round` only occurs when an `action` brings the amount of `energy` a creature has below 1,000. This means if you are able to reduce the cost of your `action` below the `energy` you gain from quickness, you can potentially get multiple `actions` within a single `round`, extending the duration of beneficial effects. I'm sure you can be more creative than me with coming up with some synergies there.
 

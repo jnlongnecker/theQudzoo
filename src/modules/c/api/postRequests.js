@@ -88,4 +88,24 @@ async function likeBuild(build) {
     return await response.json();
 }
 
-export { attemptLogin, attemptRegister, logout, saveBuild, likeBuild };
+async function compileSugar(markdown) {
+    let headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    let rawBody = JSON.stringify({ content: markdown });
+
+    let reqOptions = {
+        method: "POST",
+        headers: headers,
+        body: rawBody,
+    }
+
+    let response = await fetch("/sugar/compile", reqOptions);
+
+    if (!response.ok) {
+        console.log(await response.text());
+    }
+
+    return await response.json();
+}
+
+export { attemptLogin, attemptRegister, logout, saveBuild, likeBuild, compileSugar };

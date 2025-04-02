@@ -14,10 +14,10 @@ export default class Header extends LightningElement {
             label: "Build Maker",
             link: "/builds"
         },
-        {
-            label: "Combat",
-            link: "/combat"
-        }
+        // {
+        //     label: "Combat",
+        //     link: "/combat"
+        // }
     ]
 
     mobileSized = false;

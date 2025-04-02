@@ -10,9 +10,9 @@ The Templar have been vanquished, the Nephilim scattered. The final task is to a
 
 ---
 
-| Level | Abilities                                             | Stats |
-| ----- | ----------------------------------------------------- | ----- |
-| 37    | Dismembering method + Decapitate, EMP Grenades Mk III | 20 AV |
+| Level | Abilities                                            | Stats |
+| ----- | ---------------------------------------------------- | ----- |
+| 37    | Dismembering method + Decapitate, EMP grenade mk III | 20 AV |
 
 </div>
 
@@ -40,7 +40,7 @@ If interstellar travel isn't your thing, you can instead investigate the seraph 
 
 If you learned from Barathrum about the covenant he entered with Resheph, you will have the opportunity to strike a new covenant with him if Barathrum is gone. The way things work out, this means you must either kill Barathrum yourself after ascending the Spindle or allow him to leave on Exodus in order to get this ending. He'll have to be gone-gone on Exodus for this to count, so make sure to see for yourself before returning to Resheph if you don't want to kill him.
 
-If you speak to Resheph and learn what the Gemara Sophia is, you can additionally request that the knowledge of the Gemara Sophia be shared with you or your bear pals at Grit Gate.
+If you speak to Resheph and learn what the Gemara Sophia is, you can additionally request that the knowledge of the Gemara Sophia be shared with you or your {{!|bear}} pals at Grit Gate.
 
 ### Destroy Resheph
 

@@ -1,0 +1,212 @@
+.injected img:hover {
+    cursor: text;
+}
+
+.injected {
+    white-space: nowrap;
+    font-family: var(--qud-font);
+    font-weight: 700;
+}
+
+.injected:hover {
+    background-color: var(--bg-color-dark);
+    outline: solid 4px var(--bg-color-dark);
+    border-radius: 5px;
+}
+
+.misc {
+    font-family: var(--qud-font);
+    color: var(--misc-color);
+}
+
+.skill {
+    font-family: var(--qud-font);
+    color: var(--skills-color);
+}
+
+.attribute {
+    font-family: var(--qud-font);
+}
+
+.strength {
+    color: var(--strength-color);
+}
+
+.agility {
+    color: var(--agility-color);
+}
+
+.toughness {
+    color: var(--toughness-color);
+}
+
+.willpower {
+    color: var(--willpower-color);
+}
+
+.intelligence {
+    color: var(--intelligence-color);
+}
+
+.ego {
+    color: var(--ego-color);
+}
+
+.stat {
+    font: var(--qud-font);
+    color: var(--stat-color);
+    /* font-weight: 700; */
+}
+
+.mutation {
+    font-family: var(--qud-font);
+    color: var(--mutation-color);
+}
+
+.defect {
+    color: var(--qudzoo-color);
+}
+
+.pv::before {
+    content: "→";
+    color: #77bfcf;
+    margin-right: 2px;
+}
+
+.object {
+    font-weight: 700;
+}
+
+.stat-container {
+    min-height: 20px;
+}
+
+.icon-container {
+    display: inline-block;
+    min-width: 16px;
+    height: 1rem;
+    position: relative;
+    margin-right: 2px;
+}
+
+.inline-icon {
+    max-height: 2rem;
+    float: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    display: inline;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    min-width: 16px;
+    min-height: 24px;
+}
+
+.stat-container > .inline-icon {
+    position: relative;
+    top: 3px;
+    height: 1rem;
+    min-height: 0;
+    min-width: 0px;
+    margin-right: 2px;
+}
+
+.inline-img > img {
+    height: 2rem;
+    float: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    display: inline;
+    position: relative;
+    top: 2px;
+    min-width: 13px;
+}
+
+.thumb-up {
+    fill: var(--willpower-color);
+    top: 2px;
+}
+
+.thumb-down {
+    fill: var(--qudzoo-color);
+    top: 2px;
+}
+
+.r,
+.R,
+.g,
+.G,
+.b,
+.B,
+.c,
+.C,
+.m,
+.M,
+.y,
+.Y,
+.w,
+.W,
+.k,
+.K,
+.o,
+.O {
+    font-family: var(--qud-font);
+    font-weight: 700;
+}
+
+.r {
+    color: #a64a2e;
+}
+.R {
+    color: #d74200;
+}
+.g {
+    color: #009403;
+}
+.G {
+    color: #00c420;
+}
+.b {
+    color: #0048bd;
+}
+.B {
+    color: #0096ff;
+}
+.c {
+    color: #40a4b9;
+}
+.C {
+    color: #77bfcf;
+}
+.m {
+    color: #b154cf;
+}
+.M {
+    color: #da5bd6;
+}
+.w {
+    color: #98875f;
+}
+.W {
+    color: #cfc041;
+}
+.k {
+    color: #0f3b3a;
+}
+.K {
+    color: #155352;
+}
+.y {
+    color: #b1c9c3;
+}
+.Y {
+    color: #ffffff;
+}
+.o {
+    color: #f15f22;
+}
+.O {
+    color: #e99f10;
+}

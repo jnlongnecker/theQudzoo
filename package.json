@@ -7,11 +7,14 @@
     "main": "src/server/startServer.cjs",
     "scripts": {
         "clean": "rm -rf __lwr_cache__",
+        "clean:compiled": "rm -rf src/assets/content/compileCache",
         "dev": "nodenv src/server/startServer.cjs -f",
         "start": "node src/server/startServer.cjs prod",
         "start:compat": "lwr serve --mode compat",
         "start:prod-compat": "lwr serve --mode prod-compat",
-        "dbscript": "node ./src/scripts/dbConfig.cjs"
+        "dbscript": "node ./src/scripts/dbConfig.cjs",
+        "debug": "node ./src/scripts/debug.cjs",
+        "mapper": "node ./assetMapper/mapper.cjs"
     },
     "dependencies": {
         "body-parser": "^1.20.2",

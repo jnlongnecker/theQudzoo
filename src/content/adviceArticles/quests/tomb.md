@@ -12,7 +12,7 @@ The ancient resting place of the legendary Sultans, the Tomb of the Eaters holds
 
 | Level | Abilities                                                                                                                          | Stats                   |
 | ----- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 30    | Perfect Flight, 70+ Heat resistance, Tattoo gun, Bounding boots, Phasing, Maintenance Security Card or better, 130+ movement speed | 8 AV and 20 DV or 15 AV |
+| 30    | Perfect Flight, 70+ heat resistance, tattoo gun, bounding boots, Phasing, maintenance security card or better, 130+ movement speed | 8 AV and 20 DV or 15 AV |
 
 </div>
 
@@ -22,7 +22,7 @@ The Tomb of the Eaters is quite the gauntlet of diverse challenges. Each section
 
 Immediately upon entering the Tomb proper, you are greeted with its primary gimmick: The Bell of Rest. Every 300 turns, the Bell of Rest will ring, teleporting all creatures that have the Mark of Death (that's you) to a random tomb-tethered location (marked with a checkerboard pattern on the ground). If you don't want this to happen to you, you can either:
 
-1. Dismember the body part that bears the Mark of Death (don't do this).
+1. Dismember the body part that {{!|bears}} the Mark of Death (don't do this).
 2. Be standing in a tomb-tethered location when the Bell of Rest tolls.
 
 We need the Mark of Death later, so we'll have to take option 2. Getting jumped around all over the place is extremely annoying and disorienting, and you can easily get lost in this way. Your best chance at a quick traversal of the Tomb is to always make sure you're tomb-tethered every 300 turns. This mechanic does not go away, so while I won't mention it for later floors, just know it still applies.
@@ -43,7 +43,7 @@ The Crematorium is split into a northern side and a southern side, each with the
 
 ![Player Nomad surrounded by jets of fire from 3 steaming vents]($assetsDir/images/quests/tomb-fire.png)
 
-These are the big brothers to the vents in Golgotha. They fire more often, they do more damage, they burn hotter, and they have a longer range. They can exist in configurations that are quite difficult to dodge, so be sure to take your time and take as few bursts of flame as possible. If you have 100 heat resistance (blaze injector, wooly mod, Carapace, ogre ape fur, thermo cask, etc), just walk through unharmed.
+These are the big brothers to the vents in Golgotha. They fire more often, they do more damage, they burn hotter, and they have a longer range. They can exist in configurations that are quite difficult to dodge, so be sure to take your time and take as few bursts of flame as possible. If you have 100 heat resistance (blaze injector, wooly mod, Carapace, {{!|ogre ape}} fur, thermo cask, etc), just walk through unharmed.
 
 ### Machine Press
 
@@ -57,7 +57,7 @@ These hazards will, as you may imagine, press together every few turns, dealing 
 
 These are not particularly dangerous on their own, and the power source on the side of them can be deactivated with a maintenance security card or better. Alternatively, you can use the path behind them to walk past. Most of the time, these can be ignored unless they cause issues in being pushed into hazards or especially when pushed into holes in the floor.
 
-Notable here is that the Anchor spikes cybernetic will render you immune to being pushed by these fans. This is also true for the push by the conveyor belt, which makes this cybernetic a fairly good choice for this particular quest.
+Notable here is that the anchor spikes cybernetic will render you immune to being pushed by these fans. This is also true for the push by the conveyor belt, which makes this cybernetic a fairly good choice for this particular quest.
 
 ### Rotating Machine Arm
 
@@ -67,20 +67,24 @@ To be honest with you, I have never been impacted by these. But, apparently they
 
 ---
 
-These 2 zones are lined with machine wall, which will drop lava when destroyed. Normally, this would make finding a different path other than the hazardous conveyor belt path difficult, but with perfect flight we can not only defend against being dropped down the hole and any melee fighters found here, but we can also fly over the lava. Yes, this is the first dungeon we've been in that goes up instead of down, and we can indeed fly here (once we're out of the Folk Catacombs). Alternatively, we can once again use Phasing to navigate more easily here, at the cost of relying on a cooldown. Once we've passed the hazards and are in safety, pass through the fake wall at the end of the only corridor to the left and find your way to the next floor.
+These 2 zones are lined with machine wall, which will drop lava when destroyed. Normally, this would make finding a different path other than the hazardous conveyor belt path difficult, but with perfect Flight we can not only defend against being dropped down the hole and any melee fighters found here, but we can also fly over the lava. Yes, this is the first dungeon we've been in that goes up instead of down, and we can indeed fly here (once we're out of the Folk Catacombs). Alternatively, we can once again use Phasing to navigate more easily here, at the cost of relying on a cooldown. Once we've passed the hazards and are in safety, pass through the fake wall at the end of the only corridor to the left and find your way to the next floor.
+
+### Cheesy Shortcuts
+
+We can also make use of that pickaxe to skip by all the hazards. If you go to the source of the conveyor belts, you'll find a sort of control room. This has a chest with some cybernetics credit wedges, but more importantly there are no hazards here. The walls are not machine walls at the back and you can simply start digging through them here since there are no creatures here. If the Bell of Rest pulls you back, just walk back over to your hole and keep digging. Make sure you dodge the hole in the center, but keep digging until you get to the other side and walk up the stairs.
 
 ## The Crypts
 
 The Crypts span the last 2 dangerous floors of the Tomb, and they can be quite frustrating to move through. There are 8 zones to explore here and lots of loot to get, so if you're interested in any of that then be prepared for the patience to wade through hordes of enemies. This advice will be for if you are trying to get through in the best way possible.
 
-We're guaranteed to be in the middle-left zone of the Tomb parsang when we come to the lower crypts. The stairway upwards tends to be in one of the corners, and inconveniently enough it also tends to be in the trees on the edge of the zone. This can make it quite difficult to find, so night-sight interpolators are recommended for their vision past obstructions. Alternatively, any of the true kin implants that perform similarly or reveal exits are also advised for these floors in particular. Knowing where we are when we navigate to the Upper Crypts is important, because this stairway to the Sultan Chambers always spawns in the lower-left zone of the parsang. Alternatively, we could just explore around and take the first teleporter to the stairway we find.
+We're guaranteed to be in the middle-left zone of the Tomb parsang when we come to the lower crypts. The stairway upwards tends to be in one of the corners, and inconveniently enough it also tends to be in the trees on the edge of the zone. This can make it quite difficult to find, so night-sight interpolators are recommended for their vision past obstructions. Alternatively, any of the true kin implants that perform similarly or reveal exits are also advised for these floors in particular. Knowing where we are when we navigate to the Upper Crypts is important, because the stairway to the Sultan Chambers always spawns in the lower-left zone of the parsang. Alternatively, we could just explore around and take the first teleporter to the stairway we find.
 
-The enemies here are more of the same, but there is a higher concentration of death pilgrims and a new enemy: crypt ferrets. The crypt ferrets are extremely annoying critters that will steal from the crypts, teleport around, and be very difficult to hit. To make them even more annoying, they can and will lock you in place with a difficult save to break free. It is because of these enemies entirely that perfect flight is highly recommended for the Tomb. With perfect flight, we can instead simply fly over everything and find the stairway unbothered.
+The enemies here are more of the same, but there is a higher concentration of death pilgrims and a new enemy: crypt ferrets. The crypt ferrets are extremely annoying critters that will steal from the crypts, teleport around, and be very difficult to hit. To make them even more annoying, they can and will lock you in place with a difficult save to break free. It is because of these enemies entirely that perfect Flight is highly recommended for the Tomb. With perfect Flight, we can instead simply fly over everything and find the stairway unbothered.
 
-If you don't have perfect flight, your first line of defense is to try and avoid the crypt ferrets. They tend not to go after you unless the Bell of Rest is about to toll, so as long as you avoid getting too close (easier said than done), they'll mostly leave you alone. They have extremely high DV (23), so if you don't have flight then you should instead bring some solution to hit such an enemy, such as Hook and Drag or explosives. Juke is also an extremely valuable tool to break the hold of the crypt ferrets.
+If you don't have perfect Flight, your first line of defense is to try and avoid the crypt ferrets. They tend not to go after you unless the Bell of Rest is about to toll, so as long as you avoid getting too close (easier said than done), they'll mostly leave you alone. They have extremely high DV (23), so if you don't have Flight then you should instead bring some solution to hit such an enemy, such as Hook and Drag or explosives. Juke is also an extremely valuable tool to break the hold of the crypt ferrets if you swap places with them.
 
 ## The Sultan Chambers
 
-Once you're past the Upper Crypts, you're home free for this quest. Go to the top chamber, convince Herododicus to entomb you, and hop in. The cherubs in the other chambers will not bother you as long as you bear the Mark of Death and don't attack them first. The game will try and fake you out and give you the death screen, but you're fine just continue past it. Ask Rainwater Shomer to send you back to Qud at the end and you can continue your run with a new Floating Nearby slot. Crossing into Brightsheol is a lesser victory and will end your run, so be careful of that.
+Once you're past the Upper Crypts, you're home free for this quest. Go to the top chamber, convince Herododicus to entomb you, and hop in. The cherubs in the other chambers will not bother you as long as you {{!|bear}} the Mark of Death and don't attack them first. The game will try and fake you out and give you the death screen, but you're fine just continue past it. Ask Rainwater Shomer to send you back to Qud at the end and you can continue your run with a new Floating Nearby slot. Crossing into Brightsheol is a lesser victory and will end your run, so be careful of that.
 
 Once you gather your stuff back from the recoming nook, head back to Grit Gate to complete the quest. You'll land in Lake Hinom, which can be dangerous but at this point you should be fine. Just be sure to equip your gear first (you should strap on your anti-gravity boots and start flying first thing), since a surprise visit from a sultan croc with your pants down can be a very rage-inducing way to end the run.

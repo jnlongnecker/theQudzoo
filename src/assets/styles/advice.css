@@ -13,6 +13,7 @@ p,
 li,
 input {
     color: var(--text-color-light);
+    line-height: 1.75rem;
 }
 
 h1 {
@@ -123,10 +124,6 @@ details p {
 
 video {
     max-width: 100%;
-}
-
-.injected img:hover {
-    cursor: text;
 }
 
 .home-container {

@@ -219,9 +219,9 @@ export default class BuildCard extends LightningElement {
         if (!this.buildJson) return;
         let subName = this.camelCaseSubtype();
         if (this.genotype == "True Kin") {
-            return `/1/asset/s/latest/public/assets/images/casteImages/${subName}.png`;
+            return `/assets/images/casteImages/${subName}.png`;
         }
-        return `/1/asset/s/latest/public/assets/images/callingImages/${subName}.png`;
+        return `/assets/images/callingImages/${subName}.png`;
     }
 
     get editorLink() {
@@ -367,5 +367,4 @@ export default class BuildCard extends LightningElement {
         let result = await likeBuild(this.buildInfo);
         this.buildInfo = JSON.parse(result.build);
     }
-
 }

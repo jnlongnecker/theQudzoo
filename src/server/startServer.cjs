@@ -4,6 +4,7 @@ const MongoStore = require("connect-mongo");
 const bodyParser = require("body-parser");
 const api = require("./api.cjs");
 const dbs = require("./dbs.cjs");
+const sugarManager = require("./sugarManager.cjs");
 
 const lwrServer = lwr.createServer();
 const longCache = 60 * 60;
@@ -102,6 +103,18 @@ app.post("/db/likebuild", async (req, res) => {
     let response = await dbs.toggleLike(req, res);
     res.json(response);
 });
+app.post("/sugar/compile", async (req, res) => {
+    if (!req.body.content) {
+        res.json({ compiled: '' });
+        return;
+    }
+    try {
+        let md = sugarManager.runCompilation(req.body.content);
+        res.json({ compiled: md });
+    } catch (e) {
+        res.json({ compiled: req.body.content });
+    }
+});
 
 let mode = process.env.MODE ? process.env.MODE : 'prod';
 
@@ -110,6 +123,7 @@ lwrServer.config.serverMode = mode;
 lwrServer.listen(({ port, serverMode }) => {
     console.log(`App listening on port ${port} in ${serverMode} mode\n`);
     api.setApp(lwrServer);
+    sugarManager.buildArticleCacheMetadata(lwrServer);
 }).catch((err) => {
     console.error(err);
     process.exit(1);

@@ -6,7 +6,7 @@
             "castes": [
                 {
                     "name": "Horticulturist",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/horticulturist.png",
+                    "src": "/assets/images/casteImages/horticulturist.png",
                     "starters": [
                         "+3 Intelligence",
                         "+2 to saves vs. bleeding",
@@ -28,7 +28,7 @@
                 },
                 {
                     "name": "Priest of All Suns",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/priestOfAllSuns.png",
+                    "src": "/assets/images/casteImages/priestOfAllSuns.png",
                     "starters": [
                         "+3 Ego",
                         "+2 to saves vs. bleeding",
@@ -52,7 +52,7 @@
                 },
                 {
                     "name": "Priest of All Moons",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/priestOfAllMoons.png",
+                    "src": "/assets/images/casteImages/priestOfAllMoons.png",
                     "starters": [
                         "+2 Toughness",
                         "+2 Willpower",
@@ -75,7 +75,7 @@
                 },
                 {
                     "name": "Syzygyrior",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/syzygyrior.png",
+                    "src": "/assets/images/casteImages/syzygyrior.png",
                     "starters": [
                         "+3 Agility",
                         "+2 to saves vs. bleeding",
@@ -101,7 +101,7 @@
             "castes": [
                 {
                     "name": "Artifex",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/artifex.png",
+                    "src": "/assets/images/casteImages/artifex.png",
                     "starters": [
                         "+3 Intelligence",
                         "+15 cold resistance",
@@ -124,7 +124,7 @@
                 },
                 {
                     "name": "Consul",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/consul.png",
+                    "src": "/assets/images/casteImages/consul.png",
                     "starters": [
                         "+3 Ego",
                         "+15 cold resistance",
@@ -143,7 +143,7 @@
                 },
                 {
                     "name": "Praetorian",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/praetorian.png",
+                    "src": "/assets/images/casteImages/praetorian.png",
                     "starters": [
                         "+2 Strength",
                         "+1 Toughness",
@@ -166,7 +166,7 @@
                 },
                 {
                     "name": "Eunuch",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/eunuch.png",
+                    "src": "/assets/images/casteImages/eunuch.png",
                     "starters": [
                         "+2 Agility",
                         "+2 Intelligence",
@@ -197,7 +197,7 @@
             "castes": [
                 {
                     "name": "Child of the Hearth",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/childOfTheHearth.png",
+                    "src": "/assets/images/casteImages/childOfTheHearth.png",
                     "starters": [
                         "+3 Strength",
                         "+15 heat resistance",
@@ -218,7 +218,7 @@
                 },
                 {
                     "name": "Child of the Wheel",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/childOfTheWheel.png",
+                    "src": "/assets/images/casteImages/childOfTheWheel.png",
                     "starters": [
                         "+1 Strength",
                         "+2 Agility",
@@ -242,7 +242,7 @@
                 },
                 {
                     "name": "Child of the Deep",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/childOfTheDeep.png",
+                    "src": "/assets/images/casteImages/childOfTheDeep.png",
                     "starters": [
                         "+3 Toughness",
                         "+15 heat resistance",
@@ -264,7 +264,7 @@
                 },
                 {
                     "name": "Fuming God-Child",
-                    "src": "/1/asset/s/latest/public/assets/images/casteImages/fumingGodChild.png",
+                    "src": "/assets/images/casteImages/fumingGodChild.png",
                     "starters": [
                         "+4 Willpower",
                         "+15 heat resistance",

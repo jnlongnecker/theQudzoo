@@ -2,7 +2,7 @@
     "callings": [
         {
             "name": "Apostle",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/apostle.png",
+            "src": "/assets/images/callingImages/apostle.png",
             "starters": [
                 "+2 Ego",
                 "Customs and Folklore",
@@ -20,7 +20,7 @@
         },
         {
             "name": "Arconaut",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/arconaut.png",
+            "src": "/assets/images/callingImages/arconaut.png",
             "starters": [
                 "+2 Agility",
                 "Short Blade",
@@ -41,7 +41,7 @@
         },
         {
             "name": "Greybeard",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/greybeard.png",
+            "src": "/assets/images/callingImages/greybeard.png",
             "starters": [
                 "-1 Strength",
                 "+3 Willpower",
@@ -61,7 +61,7 @@
         },
         {
             "name": "Gunslinger",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/gunslinger.png",
+            "src": "/assets/images/callingImages/gunslinger.png",
             "starters": [
                 "+2 Agility",
                 "Pistol",
@@ -79,7 +79,7 @@
         },
         {
             "name": "Marauder",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/marauder.png",
+            "src": "/assets/images/callingImages/marauder.png",
             "starters": [
                 "+2 Strength",
                 "Axe",
@@ -98,7 +98,7 @@
         },
         {
             "name": "Pilgrim",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/pilgrim.png",
+            "src": "/assets/images/callingImages/pilgrim.png",
             "starters": [
                 "+2 Willpower",
                 "Self-discipline",
@@ -117,7 +117,7 @@
         },
         {
             "name": "Nomad",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/nomad.png",
+            "src": "/assets/images/callingImages/nomad.png",
             "starters": [
                 "+2 Toughness",
                 "Wayfaring",
@@ -138,7 +138,7 @@
         },
         {
             "name": "Scholar",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/scholar.png",
+            "src": "/assets/images/callingImages/scholar.png",
             "starters": [
                 "+2 Intelligence",
                 "Tinkering",
@@ -161,7 +161,7 @@
         },
         {
             "name": "Tinker",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/tinker.png",
+            "src": "/assets/images/callingImages/tinker.png",
             "starters": [
                 "+2 Intelligence",
                 "Tinkering",
@@ -183,7 +183,7 @@
         },
         {
             "name": "Warden",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/warden.png",
+            "src": "/assets/images/callingImages/warden.png",
             "starters": [
                 "+2 Strength",
                 "Long Blade",
@@ -204,7 +204,7 @@
         },
         {
             "name": "Water Merchant",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/waterMerchant.png",
+            "src": "/assets/images/callingImages/waterMerchant.png",
             "starters": [
                 "+2 Ego",
                 "Short Blade",
@@ -224,7 +224,7 @@
         },
         {
             "name": "Watervine Farmer",
-            "src": "/1/asset/s/latest/public/assets/images/callingImages/watervineFarmer.png",
+            "src": "/assets/images/callingImages/watervineFarmer.png",
             "starters": [
                 "+2 Toughness",
                 "Cooking and Gathering",

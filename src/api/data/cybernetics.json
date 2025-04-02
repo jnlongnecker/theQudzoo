@@ -3,7 +3,7 @@
         {
             "name": "Optical bioscanner",
             "id": "BiologicalIndexer",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/opticalBioscanner.png",
+            "src": "/assets/images/cyberneticImages/opticalBioscanner.png",
             "slots": ["Face"],
             "cost": 0,
             "removable": true,
@@ -16,7 +16,7 @@
         {
             "name": "Optical technoscanner",
             "id": "TechnologicalIndexer",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/opticalTechnoscanner.png",
+            "src": "/assets/images/cyberneticImages/opticalTechnoscanner.png",
             "slots": ["Face"],
             "cost": 0,
             "removable": true,
@@ -29,7 +29,7 @@
         {
             "name": "Dermal insulation",
             "id": "DermalInsulation",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/dermalInsulation.png",
+            "src": "/assets/images/cyberneticImages/dermalInsulation.png",
             "slots": ["Body", "Head", "Back"],
             "cost": 0,
             "removable": true,
@@ -42,7 +42,7 @@
         {
             "name": "Night vision",
             "id": "NightVision",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/nightVision.png",
+            "src": "/assets/images/cyberneticImages/nightVision.png",
             "slots": ["Face"],
             "cost": 0,
             "removable": true,
@@ -55,7 +55,7 @@
         {
             "name": "Hyper-elastic ankle tendons",
             "id": "HyperElasticAnkleTendons",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/hyperElasticAnkleTendons.png",
+            "src": "/assets/images/cyberneticImages/hyperElasticAnkleTendons.png",
             "slots": ["Feet"],
             "cost": 0,
             "removable": true,
@@ -68,7 +68,7 @@
         {
             "name": "Parabolic muscular subroutine",
             "id": "ParabolicMuscularSubroutine",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/parabolicMuscularSubroutine.png",
+            "src": "/assets/images/cyberneticImages/parabolicMuscularSubroutine.png",
             "slots": ["Arm"],
             "cost": 0,
             "removable": true,
@@ -81,7 +81,7 @@
         {
             "name": "Translucent skin",
             "id": "TranslucentSkin",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/translucentSkin.png",
+            "src": "/assets/images/cyberneticImages/translucentSkin.png",
             "slots": ["Body", "Back"],
             "cost": 0,
             "removable": true,
@@ -94,7 +94,7 @@
         {
             "name": "Stabilizer arm locks",
             "id": "StabilizerArmLocks",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/stabilizerArmLocks.png",
+            "src": "/assets/images/cyberneticImages/stabilizerArmLocks.png",
             "slots": ["Arm"],
             "cost": 0,
             "removable": true,
@@ -107,7 +107,7 @@
         {
             "name": "Rapid release finger flexors",
             "id": "RapidReleaseFingerFlexors",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/rapidReleaseFingerFlexors.png",
+            "src": "/assets/images/cyberneticImages/rapidReleaseFingerFlexors.png",
             "slots": ["Hands"],
             "cost": 0,
             "removable": true,
@@ -120,7 +120,7 @@
         {
             "name": "Carbide hand bones",
             "id": "CarbideHandBones",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/carbideHandBones.png",
+            "src": "/assets/images/cyberneticImages/carbideHandBones.png",
             "slots": ["Hands"],
             "cost": 0,
             "removable": true,
@@ -133,7 +133,7 @@
         {
             "name": "Pentaceps",
             "id": "Pentaceps",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/pentaceps.png",
+            "src": "/assets/images/cyberneticImages/pentaceps.png",
             "slots": ["Feet"],
             "cost": 0,
             "removable": true,
@@ -146,7 +146,7 @@
         {
             "name": "Inflatable axons",
             "id": "InflatableAxons",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/inflatableAxons.png",
+            "src": "/assets/images/cyberneticImages/inflatableAxons.png",
             "slots": ["Head"],
             "cost": 0,
             "removable": true,
@@ -159,7 +159,7 @@
         {
             "name": "Air current microsensor",
             "id": "AirCurrentMicrosensor",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/airCurrentMicrosensor.png",
+            "src": "/assets/images/cyberneticImages/airCurrentMicrosensor.png",
             "slots": ["Body", "Head"],
             "cost": 0,
             "removable": true,
@@ -172,7 +172,7 @@
         {
             "name": "Cherubic visage",
             "id": "CherubicVisage",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/cherubicVisage.png",
+            "src": "/assets/images/cyberneticImages/cherubicVisage.png",
             "slots": ["Face"],
             "cost": 0,
             "removable": true,
@@ -185,7 +185,7 @@
         {
             "name": "Nocturnal apex",
             "id": "NocturnalApex",
-            "src": "/1/asset/s/latest/public/assets/images/cyberneticImages/nocturnalApex.png",
+            "src": "/assets/images/cyberneticImages/nocturnalApex.png",
             "slots": ["Head"],
             "cost": 0,
             "removable": true,

@@ -1,4 +1,5 @@
 @import "styles/syntax";
+@import "styles/injection";
 
 main {
     display: flex;
@@ -7,16 +8,15 @@ main {
     gap: var(--desktop-margin-size);
 }
 
-a {
-    color: var(--anchor-unvisited-color);
-}
-
-a:visited {
-    color: var(--anchor-visited-color);
-}
-
 p {
+    line-height: 1.75rem;
+}
+
+p,
+li,
+input {
     color: var(--text-color-light);
+    line-height: 1.75rem;
 }
 
 h1 {
@@ -48,7 +48,7 @@ h4 {
 }
 
 br {
-    display: none;
+    clear: both;
 }
 
 h1 + hr {
@@ -63,9 +63,26 @@ hr {
     border: 0;
 }
 
+a {
+    color: var(--anchor-unvisited-color);
+}
+
+a:visited {
+    color: var(--anchor-visited-color);
+}
+
+strong {
+    font-weight: 700;
+}
+
+code {
+    font-family: var(--qud-font);
+    color: white;
+}
+
 blockquote {
     margin: 1rem 0;
-    padding: 0.25rem 0.5rem;
+    padding: 0.75rem 0.5rem;
     border-left: 5px solid var(--qudzoo-color);
     font-family: var(--qud-font);
     background-color: var(--hover-darken);
@@ -77,24 +94,29 @@ blockquote p {
     margin: 0;
 }
 
-img {
-    float: left;
+p > img {
     max-width: 100%;
-    margin: 0 1rem 1rem 0;
+    float: right;
+    margin: 0 0 1rem 1rem;
+    position: relative;
+    top: 0.5rem;
 }
 
-p > img:hover {
+p > img:hover,
+p > span img:hover {
     cursor: zoom-in;
 }
 
-p:nth-child(even) img {
-    float: right;
-    margin: 0 0 1rem 1rem;
+p > span img {
+    float: none;
+    text-align: center;
+    margin: auto;
+    display: block;
+    max-width: 100%;
 }
 
-p:nth-child(even) span img {
-    float: none;
-    margin: 0;
+label {
+    color: var(--text-color-light);
 }
 
 table {
@@ -114,6 +136,14 @@ th {
 
 td {
     padding: 0.5rem;
+}
+
+details p {
+    padding-left: 2rem;
+}
+
+video {
+    max-width: 100%;
 }
 
 .home-container {
@@ -166,6 +196,7 @@ td {
 }
 
 .section-info td {
+    vertical-align: top;
     padding-top: 1rem;
 }
 
@@ -195,10 +226,13 @@ td {
     color: var(--h4-color);
 }
 
-@media only screen and (max-width: 1300px) {
-    .content {
-        padding-right: var(--desktop-margin-size);
-    }
+.code-reference {
+    font-family: var(--qud-font);
+    color: var(--qudzoo-color);
+    background-color: rgba(20, 20, 20, 0.6);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    padding: 2px 5px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -214,6 +248,10 @@ td {
     strong:has(+ .star-filled)::after {
         content: "";
         display: block;
+    }
+
+    details p {
+        padding-left: 5px;
     }
 
     .home-container {

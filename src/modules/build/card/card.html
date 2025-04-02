@@ -77,7 +77,9 @@
                     <div class="char-info">
                         <img src={subtypeImg} />
                         <p>{subtypeName}</p>
-                        <p class="char-name">{characterName}</p>
+                        <p class="char-name">
+                            <build-markdown-renderer raw-text={characterName} single-line></build-markdown-renderer>
+                        </p>
                     </div>
                     <div class="mutations">
                         <fieldset>

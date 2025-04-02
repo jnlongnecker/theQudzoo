@@ -2,7 +2,7 @@
 
 ---
 
-I'm not a big believer in “handing out” builds for you to try; instead I believe in understanding what makes a build effective and then allowing you to shape that knowledge into an experience that is fun and engaging for you (I know, ironic coming from the guy who made a website to share Qud builds). I'll break down making a build into smaller parts to consider and leave it to you to decide what to fit into those pieces.
+I'm not a big believer in "handing out" builds for you to try; instead I believe in understanding what makes a build effective and then allowing you to shape that knowledge into an experience that is fun and engaging for you (I know, ironic coming from the guy who made a website to share Qud builds). I'll break down making a build into smaller parts to consider and leave it to you to decide what to fit into those pieces.
 
 ## Tier 0 - Concept
 
@@ -10,7 +10,7 @@ Before your run even begins, you should have a general plan of what type of buil
 
 ### Melee (Agility & Strength)
 
-Primary melee builds are very common and very powerful due to their reliability. The only “condition” to their power is whether or not they are next to the enemy, so it should be no surprise that once the choice of weapon is settled, you have a strategy for how this build is going to close the gap. Mutations and cybernetics should be focused on increasing your melee damage and increasing your options to get into the fight and stay there.
+Primary melee builds are very common and very powerful due to their reliability. The only "condition" to their power is whether or not they are next to the enemy, so it should be no surprise that once the choice of weapon is settled, you have a strategy for how this build is going to close the gap. Mutations and cybernetics should be focused on increasing your melee damage and increasing your options to get into the fight and stay there.
 
 Secondary melee builds are not going to be worried about how to close the gap and instead focused on how to increase the gap. This leaves Long Blades as the clear choice of weapon as you will get those utility tools to give your primary weapon the space it needs to go to work.
 
@@ -18,7 +18,7 @@ Secondary melee builds are not going to be worried about how to close the gap an
 
 Primary ranged builds have a very slow start until the arrival at Grit Gate since you will be heavily limited by ammunition. Because of this, builds usually transition _into_ being primarily ranged instead of starting there. However, that doesn't mean you should design your character around your secondary style, it just means you'll be a bit weaker until your build can come online. Pistols in particular excel as primary ranged weapons because of the plethora of fantastic skills they get. These builds should focus on what to do when the enemy closes the gap, because eventually one will. High quickness or movement speed and force fields are fantastic ways to maintain or grow the gap to give your weapons space to work.
 
-Secondary ranged builds are interested in one thing: clearing out the trash. You're likely not specialized enough here to fight powerful enemies solely from a distance, so instead your goal is accurate, long-ranged weapons that can reliably clear out weaker enemies. This leaves rifles as a fantastic choice not only because they are long ranged and accurate, but also because they require very little skill investment.
+Secondary ranged builds are interested in one thing: clearing out the {{!|trash}}. You're likely not specialized enough here to fight powerful enemies solely from a distance, so instead your goal is accurate, long-ranged weapons that can reliably clear out weaker enemies. This leaves rifles as a fantastic choice not only because they are long ranged and accurate, but also because they require very little skill investment.
 
 ### Esper (Ego)
 
@@ -26,7 +26,7 @@ Primary Esper builds are certainly not recommended because of the general unreli
 
 Secondary Esper builds are fantastic because they allow you to focus on your primary style entirely. The downside is that while they don't require any skill investment, they do require attribute investment. This leaves secondary Esper builds to pair extremely well with primary ranged builds since ranged combat only involves 1 attribute and many Esper attacks are ranged as well.
 
-Something to note with Esper builds is that you should still be wielding a gun and melee weapon, but the point is that the other parts of your build do not need to concern themselves with these. For example, if you are a ranged/Esper build, you should not consider a mutation like Stinger in order to improve your Axe Charges even if you are planning on wielding an Axe.
+Something to note with Esper builds is that you should still be wielding a gun and melee weapon, but the point is that the other parts of your build do not need to concern themselves with these. For example, if you are a ranged / Esper build, you should not consider a mutation like Stinger in order to improve your Axe Charges even if you are planning on wielding an Axe.
 
 ## Tier 1 - Weapons
 
@@ -64,13 +64,13 @@ Once you've decided the type of build you're going for, you need to narrow down 
 | -------------------------------- | ------------------------------------------------------------- |
 | High damage as an offhand        | Low damage as a primary weapon                                |
 | Benefits from Long Blade stances | Struggles against high AV                                     |
-| Allows for hit-and-run Tactics   | Requires high Agility for skills and high Strength for damage |
+| Allows for hit-and-run tactics   | Requires high Agility for skills and high Strength for damage |
 
 With melee weapons, you also need to consider whether you are Multiweapon Fighting or Single Weapon Fighting. I'll break it down like this:
 
 If you are Multiweapon Fighting, your offhand should always be a Short Blade. The only exception is when you are Multiweapon Fighting Cudgels to try and get more chances for a stun, but even here using an offhand Short Blade and investing in Short Blades would be preferable.
 
-If you are using a Shield, you should use anything except a Short Blade. Cudgels and Long Blades are particularly effective with a Shield. You're probably best off Single Weapon Fighting with the ceremonial vibrokhopesh in the long-term with a Shield, but Multiweapon Fighting builds work well with Shields as well. If you are using Helping Hands, ensure your Shield is in one of your robo-hands.
+If you are using a Shield, you should use anything except a Short Blade. Cudgels and Long Blades are particularly effective with a Shield. You're probably best off Single Weapon Fighting with the ceremonial vibrokhopesh in the long-term with a Shield, but Multiweapon Fighting builds work well with Shields as well. If you are using helping hands, ensure your Shield is in one of your robo-hands.
 
 If you are not Multiweapon Fighting or using a Shield, you should be using a two-handed weapon with Single Weapon Fighting. Even those who are making a Multiweapon Fighting build, until your build comes online (Jab + Multiweapon Expertise) you should be using a two-handed weapon. Only use Shields if you are investing in them.
 
@@ -100,7 +100,7 @@ If you are not Multiweapon Fighting or using a Shield, you should be using a two
 | Requires little skill investment | Usually inaccurate               |
 |                                  | Heavy                            |
 
-As primary weapons, you'll probably swap between using Bows and Rifles early to using Pistols mid/late game. The earliest Pistols you can acquire are very underpowered in comparison to the rifles you can get and these rifles will stay better until you get sufficiently skilled and geared with Pistols. A similar story also applies to Heavy Weapons, only Heavy Weapons are extremely hard to find and the most common Heavy Weapons use ammunition like grenades and missiles which are also rare and heavy.
+As primary weapons, you'll probably swap between using Bow and Rifles early to using Pistols mid/late game. The earliest Pistols you can acquire are very underpowered in comparison to the rifles you can get and these rifles will stay better until you get sufficiently skilled and geared with Pistols. A similar story also applies to Heavy Weapons, only Heavy Weapons are extremely hard to find and the most common Heavy Weapons use ammunition like grenades and missiles which are also rare and heavy.
 
 Rifles can be used to great effectiveness without any skills at all - literally none. Of course, if you find yourself using rifles often you'll want to get the basic skills inside and especially if you are primarily using ranged weapons. If you are capable of disarming weapons and you have an internal power source, jacked chain lasers can be reliably found in the mid-game and are extremely powerful weapons to use. There's a lot of options here, but by the late game the king of damage builds will be one that uses Pistols.
 
@@ -110,7 +110,7 @@ Once you know the weapons you'll use and how often you plan on using them, you s
 
 ### Gimmick
 
-This part of your strategy is at the core of your build. It focuses on a single idea and tries to do it as best as possible. It should not be extremely specific, but should not be so general as to reduce its effectiveness. If you're a ranged build, perhaps your gimmick is high movement speed to always be a step away from the enemy with Multiple Legs, or perhaps your gimmick is Phasing with gear modded to be phase-conjugate/harmonic. This doesn't necessarily need to be online right at the start, but should be usable in some lesser version at every point in the game. This will be your go-to plan whenever you find a noteworthy enemy.
+This part of your strategy is at the core of your build. It focuses on a single idea and tries to do it as best as possible. It should not be extremely specific, but should not be so general as to reduce its effectiveness. If you're a ranged build, perhaps your gimmick is high movement speed to always be a step away from the enemy with Multiple Legs, or perhaps your gimmick is Phasing with gear modded to be phase-conjugate / harmonic. This doesn't necessarily need to be online right at the start, but should be usable in some lesser version at every point in the game. This will be your go-to plan whenever you find a noteworthy enemy.
 
 ### Escape
 
@@ -118,7 +118,7 @@ This part of your strategy should be extremely reliable with as few conditions a
 
 ### Solutions
 
-This part of your strategy is solely there for when your gimmick simply doesn't work. With time comes a better understanding of what will counter your gimmick, but you need to have a solution in place for when that time comes. For example, your main gimmick may be to rely on Corrosive Gas Generation to deal heavy damage and support that with stuns from Cudgels to keep them in the gas. What do you do when an enemy resists your stuns or is immune to acid? These are the scenarios you need a solution for. If an enemy resists my stuns, perhaps I also have freeze grenades and high cold resistance. If an enemy is immune to acid, perhaps I fall back on my high-damage Rifle.
+This part of your strategy is solely there for when your gimmick simply doesn't work. With time comes a better understanding of what will counter your gimmick, but you need to have a solution in place for when that time comes. For example, your main gimmick may be to rely on Corrosive Gas Generation to deal heavy damage and support that with stuns from Cudgels to keep them in the gas. What do you do when an enemy resists your stuns or is immune to acid? These are the scenarios you need a solution for. If an enemy resists my stuns, perhaps I also have freeze grenades and high cold resistance. If an enemy is immune to acid, perhaps I fall back on my high-damage rifle.
 
 ## Tier 3 - Skills
 
@@ -134,7 +134,7 @@ Once you have your basic weapon skills and you get to the point where you need t
 
 ### Priority 3 - Accessories
 
-If your build is flowing well; you're survivable and your combat feels good, start branching off to accessory skills like the Tinkering tree and secondary weapons. These are designed to let your build “win more” as opposed to getting it online, so be sure that your build is online in some capacity before looking here. Note that your build doesn't have to be _complete_, just functional.
+If your build is flowing well; you're survivable and your combat feels good, start branching off to accessory skills like the Tinkering tree and secondary weapons. These are designed to let your build "win more" as opposed to getting it online, so be sure that your build is online in some capacity before looking here. Note that your build doesn't have to be _complete_, just functional.
 
 ## Tier 4 - Point Spread
 
@@ -178,19 +178,11 @@ While having high AV can potentially net you invulnerability to _conventional_ a
 
 #### Counters to AV
 
-<div class="section-info">
-
-Elemental damage (oozes)
-
-Explosions (robots)
-
-Vibro weapons (saw hander, ickslugs)
-
-On-Hit effects (stun)
-
-Penetrating Strikes
-
-</div>
+-   Elemental damage (oozes)
+-   Explosions (robots)
+-   Vibro weapons (saw-hander, ickslugs)
+-   On-Hit effects (stun)
+-   Penetrating Strikes
 
 ### Dodge Value (DV)
 
@@ -208,24 +200,15 @@ Critical hits are the obvious bane for a DV build. However, it's not the only on
 
 #### Counters to DV
 
-<div class="section-info">
-
-Abilities that always hit (sting, Hook and Drag)
-
-Explosions (robots)
-
-Breath weapons (unshelled reptiles)
-
-Status conditions (stunned, stuck, frozen, etc)
-
-Critical hits
-
-High to-hit bonuses (cherubim, chrome pyramid)
-
-</div>
+-   Abilities that always hit (sting, Hook and Drag)
+-   Explosions (robots)
+-   Breath weapons (unshelled reptiles)
+-   Status conditions (stunned, stuck, frozen, etc)
+-   Critical hits
+-   High to-hit bonuses (cherubim, chrome pyramid)
 
 ## Build Conclusions
 
-Any build can be effective in the game, this is something that I've spent many hours trying to verify myself. After raising every preset mutant to be capable of running the Cherubim gauntlet and beating the game without using any equipment at all, I truly am satisfied that the conclusion is that any build can be successful.
+Any build can be effective in the game, this is something that I've spent many hours trying to verify myself. After raising every preset mutant to be capable of running the cherubim gauntlet and beating the game without using any equipment at all, I truly am satisfied that the conclusion is that any build can be successful.
 
 Certain builds will of course be more powerful than others, but determining which build is the **most** powerful is not going to help you improve. The best build to beat the game with is one that you understand how to use and understand the limitations of. Keep it simple at the start and as you learn more about the game you can branch to more and more specialized builds.

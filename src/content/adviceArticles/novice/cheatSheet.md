@@ -13,7 +13,7 @@ These are the most helpful and most-used keybinds for you to be familiar with.
 -   [<span class="attribute agility">Numpad 0</span>] : Autoexplore
 -   [<span class="attribute agility">backspace</span>] : Points of Interest
 -   [<span class="attribute agility">shift + w</span>] : Wait menu
--   [<span class="attribute agility">`</span>] : Heal to full
+-   [<span class="attribute agility">\`</span>] : Heal to full
 -   [<span class="attribute agility">shift + Numenter</span>] : Move to screen edge
 
 ### Combat

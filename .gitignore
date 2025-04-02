@@ -6,4 +6,6 @@ usage.md
 __lwr_cache__
 gameData
 src/assets/Textures
-src/assets/corrected
+src/content/compileCache
+assetMapper/output
+assetMapper/logs

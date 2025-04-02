@@ -1,4 +1,4 @@
-# Grave Thoughts/A Call to Arms/The Assessment
+# Grave Thoughts / A Call to Arms / The Assessment
 
 ---
 
@@ -10,15 +10,15 @@ Having returned from Omonporch, we didn't come alone. A strange rumbling around 
 
 ---
 
-| Level | Abilities                                                                                                           | Stats                   |
-| ----- | ------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 30    | Tinker II or 4+ Portable Walls, Freeze Ray/Flamethrower, Phasing, EMP/Stasis/Sleep/Stun, 5+ Salve Injectors, Disarm | 8 AV and 20 DV or 15 AV |
+| Level | Abilities                                                                                                                   | Stats                   |
+| ----- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| 30    | Tinker II or 4+ portable walls, freeze ray / flamethrower, Phasing, EMP / Stasis / Sleep / Stun, 5+ salve injectors, Disarm | 8 AV and 20 DV or 15 AV |
 
 </div>
 
 ## Baked Defenses
 
-We have a considerable number of turns to prepare for the attack after we feel the rumbling. Whether or not we go to Erishkigel doesn't matter, the templars will come in regardless. The force will consist of 2 groups, typically with 1 having a larger drop radius than the other. The 2 groups also are not guaranteed to drop at the same time either. We have quite a few ways of preparing our defenses offered to us, which we'll cover now.
+We have a considerable number of turns to prepare for the attack after we feel the rumbling. Whether or not we go to Ereshkigel doesn't matter, the templars will come in regardless. The force will consist of 2 groups, typically with 1 having a larger drop radius than the other. The 2 groups also are not guaranteed to drop at the same time either. We have quite a few ways of preparing our defenses offered to us, which we'll cover now.
 
 ### Overclock Chromelings
 
@@ -79,9 +79,9 @@ First off, they will be legendary which means a significant attribute increase f
 
 It supplements these abilities with Berate to make you easier to hit and slow you down and Menacing Stare to cause you to lose your positioning and fail to counterattack. With all of these factors combined it becomes very easy for yourself to get locked down and killed before you can mount a proper defense.
 
-The best solution for this is to of course do the locking down first or to fight from a range. Range is not necessarily recommended since that opens you up heavily to being attacked from the plethora of grenades and missile weapons from the backup team. The Anchor Spikes and Reactive Cranial Plating cybernetics give extreme resistance to the normal lockdown methods of the Commander, and you can potentially cook with dried lah petals and another ingredient to give a triggered effect that grants immunity to fear to avoid Menacing Stare.
+The best solution for this is to of course do the locking down first or to fight from a range. Range is not necessarily recommended since that opens you up heavily to being attacked from the plethora of grenades and missile weapons from the backup team. The anchor spikes and reactive cranial plating cybernetics give extreme resistance to the normal lockdown methods of the Commander, and you can potentially cook with dried lah petals and another ingredient to give a triggered effect that grants immunity to fear to avoid Menacing Stare.
 
-Otherwise, skills like Lionheart and Shake It Off can be utilized to resist their respective effects, or if you have the Two-Headed mutation that takes care of everything except being knocked prone. Disarm is also incredibly effective if you happen to be capable of it.
+Otherwise, skills like Lionheart and Shake It Off can be utilized to resist their respective effects, or if you have the Two-headed mutation that takes care of everything except being knocked prone. Disarm is also incredibly effective if you happen to be capable of it.
 
 ---
 

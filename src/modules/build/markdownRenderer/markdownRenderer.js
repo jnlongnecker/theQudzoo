@@ -1,8 +1,12 @@
 import { LightningElement, api } from "lwc";
+import { compileSugar } from "c/api";
 
 export default class MarkdownRenderer extends LightningElement {
 
+    @api singleLine = false;
     converter = new window['showdown'].Converter();
+    markdownHtml;
+    containerRef;
 
     _rawText;
 
@@ -18,43 +22,21 @@ export default class MarkdownRenderer extends LightningElement {
         }
         this._rawText = value;
         this.markdownHtml = this.converter.makeHtml(value);
-        if (this.containerRef) {
-            let text = this.markdownHtml;
-            text = this.sugarInjector.highlightText(text);
-            text = text.replace(/\n/g, "<br />");
-            this.containerRef.innerHTML = text;
-        }
+        compileSugar(value).then(result => {
+            let text = result.compiled;
+            if (this.singleLine) {
+                this.containerRef.innerHTML = text;
+                return;
+            }
+            text = text.replace(/\n\g/, '<br />');
+            this.markdownHtml = this.converter.makeHtml(text);
+            this.containerRef.innerHTML = this.markdownHtml;
+        });
     }
-
-    markdownHtml;
-
-    containerRef;
 
     renderedCallback() {
         if (!this.containerRef) {
             this.containerRef = this.template.querySelector('div');
-            this.sugarInjector = this.template.querySelector('c-sugar-injector');
-
-            if (this.sugarInjector.infoReady === 4) {
-                let text = this.markdownHtml;
-                text = this.sugarInjector.highlightText(text);
-                text = text.replace(/\n/g, "<br />");
-                this.containerRef.innerHTML = text;
-            }
-            else {
-                this.highlightWhenReady();
-            }
         }
-    }
-
-    async highlightWhenReady() {
-        while (this.sugarInjector.infoReady !== 4) {
-            await new Promise(r => setTimeout(r, 100));
-        }
-
-        let text = this.markdownHtml;
-        text = this.sugarInjector.highlightText(text);
-        text = text.replace(/\n/g, "<br />");
-        this.containerRef.innerHTML = text;
     }
 }

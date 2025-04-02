@@ -2,7 +2,7 @@
 
 ---
 
-The Barathrumites are unconvinced that you will make a worthwhile addition. In order to prove your mettle, they have asked you to delve into the depths of Golgotha to retrieve and restore one of the Scrapped Waydroids that litter the cloaca. Unknown dangers writhe in the horrible depths. Live and drink, stranger.
+The Barathrumites are unconvinced that you will make a worthwhile addition. In order to prove your mettle, they have asked you to delve into the depths of Golgotha to retrieve and restore one of the scrapped waydroids that litter the cloaca. Unknown dangers writhe in the horrible depths. Live and drink, stranger.
 
 <div class="section-info">
 
@@ -18,7 +18,7 @@ The Barathrumites are unconvinced that you will make a worthwhile addition. In o
 
 ## Golgotha Hazards
 
-The infamous Golgotha quest, the destroyer of dreams and the crusher of runs. Indeed, if you play through this quest in the most obvious way, this is a difficult one to succeed. The quest involves you navigating to the bottom stratum of Golgotha, where you must quickly fight your way through its trash-compacting mechanisms and fairly dangerous enemies. There are themes to the kind of environmental hazards you'll face in the trash chutes, which will stay the same as long as you continue to follow the path the conveyor belt takes. Switching conveyor belts will switch hazards connected to them. Each hazard can be EMP'd or quickly destroyed with a source of corrosive gas, so if you have access to these it's worth using them.
+The infamous Golgotha quest, the destroyer of dreams and the crusher of runs. Indeed, if you play through this quest in the most obvious way, this is a difficult one to succeed. The quest involves you navigating to the bottom stratum of Golgotha, where you must quickly fight your way through its {{!|trash}}-compacting mechanisms and fairly dangerous enemies. There are themes to the kind of environmental hazards you'll face in the {{!|trash}} chutes, which will stay the same as long as you continue to follow the path the conveyor belt takes. Switching conveyor belts will switch hazards connected to them. Each hazard can be EMP'd or quickly destroyed with a source of corrosive gas, so if you have access to these it's worth using them.
 
 ### Chute Crabs
 
@@ -30,7 +30,7 @@ This hazard will spawn a (nearly) never-ending swarm of chute crabs every 3 turn
 
 ![Player Nomad on Golgotha conveyer belts with acid from vents evaporating into gas]($assetsDir/images/quests/golgotha-acid.png)
 
-This hazard will spawn a line of acid every 3 turns that will quickly evaporate into corrosive gas. As long as you're careful, you can easily evade the hazard this spews. The acid will travel along the conveyor belt, and the gas can be mitigated with an item with the “fitted with filters” mod. Since the acid can destroy your gear, try and only be hit by the gas if you're forced between getting hit by the acid or the gas.
+This hazard will spawn a line of acid every 3 turns that will quickly evaporate into corrosive gas. As long as you're careful, you can easily evade the hazard this spews. The acid will travel along the conveyor belt, and the gas can be mitigated with an item with the "fitted with filters" mod. Since the acid can destroy your gear, try and only be hit by the gas if you're forced between getting hit by the acid or the gas.
 
 ### Sparking Vents
 
@@ -58,7 +58,7 @@ The reason for this is that enemies will follow you down the chutes. Running all
 
 <span>![Player Nomad at the Golgotha cloaca surrounded by a Glow Wight, Black Gel, Green Gel, Brown Gel, Agolmaggot, and Spark Tick]($assetsDir/images/quests/golgotha-pickle.png)</span>
 
-This is a far more damning position to be in than taking the chute slowly and killing everything that moves on stable ground. Not only will we be weakened from tanking attacks, but we will also have likely taken a good bit of damage from hazards as well. Our only option for survival is to keep running, and if we encounter enemies like Slog or the Agolfly we may just be as good as dead.
+This is a far more damning position to be in than taking the chute slowly and killing everything that moves on stable ground. Not only will we be weakened from tanking attacks, but we will also have likely taken a good bit of damage from hazards as well. Our only option for survival is to keep running, and if we encounter enemies like Slog or the agolfly we may just be as good as dead.
 
 <span>![Player Nomad on solid ground next to the Golgotha conveyor belts with two Green Gels, a Brown Gel and a Quillipede nearby]($assetsDir/images/quests/golgotha-scenario1.png)</span>
 
@@ -70,19 +70,19 @@ By positioning here, we limit the number of enemies (and more importantly, oozes
 
 ## The Cloaca
 
-At the bottom of Golgotha, our mission is to retrieve a broken droid and get out. Once you find one and pick it up, use a recoiler to get out; don't spend any more time than necessary here. To have the best chance of success, make sure to have neutral reputation with the mollusk faction to neutralize Slog as he is a dangerous combatant that can come out of nowhere and crush your hopes and dreams. This is actually fairly easy, even at this point in the game. If you have the Two-Headed mutation, you can simply wear 2 electric snail shells. You can buy these from hatters or from snail ranchers at the stilt. If you don't, a single electric snail shell and a tiny mollusk reputation boost from water ritual or killing a legendary creature will be sufficient. Finally, if you can find a single snail-encrusted item, that will give you all the rep you need.
+At the bottom of Golgotha, our mission is to retrieve a broken droid and get out. Once you find one and pick it up, use a recoiler to get out; don't spend any more time than necessary here. To have the best chance of success, make sure to have neutral reputation with the mollusk faction to neutralize Slog as he is a dangerous combatant that can come out of nowhere and crush your hopes and dreams. This is actually fairly easy, even at this point in the game. If you have the Two-headed mutation, you can simply wear 2 electric snail shells. You can buy these from hatters or from snail farmers at the stilt. If you don't, a single electric snail shell and a tiny mollusk reputation boost from water ritual or killing a legendary creature will be sufficient. Finally, if you can find a single {{snail-encrusted|snail-encrusted}} item, that will give you all the rep you need.
 
 Additionally, you ideally have neutral reputation with the fish faction here as well. This can be achieved by water ritualing legendary glowfish in the salt marsh. If you can find 2 legendary glowfish, that's all the reputation you need. Not only is fish reputation great here, but it's also great at the end game too, so it's a very worthwhile investment. So what exactly is it useful for? The sewage eels that spawn from the liquid here are part of the fish faction! If they're neutral with you, they won't try and trip you, making walking through the liquids safe.
 
-If you don't have that neutral fish reputation, then avoid the liquids at all costs. Sometimes, there's no getting around it but avoid going in as much as you can. Getting tripped by the eels here results in some pretty nasty effects, like poison and glotrot. Asphalt cooking effects will boost your chance to save against the trip as well as items with the “fitted with cleats” mod and magnetized boots. If you have fire abilities or fire cooking effects, you can set the liquid ablaze and evaporate it (just don't walk in the vapor).
+If you don't have that neutral fish reputation, then avoid the liquids at all costs. Sometimes, there's no getting around it but avoid going in as much as you can. Getting tripped by the eels here results in some pretty nasty effects, like poison and glotrot. Asphalt cooking effects will boost your chance to save against the trip as well as items with the "fitted with cleats" mod and magnetized boots. True-kin can use the anchor spikes cybernetic to prevent tripping entirely. If you have heat abilities or heat cooking effects, you can set the liquid ablaze and evaporate it (just don't walk in the vapor).
 
 ## The Most Direct Path
 
-Here's the thing, going down the chutes is still quite dangerous and there is an alternative. Once again, we see that “flight” ability on the recommended list, and once again we know there's some cheese in our future. We have a straight shot to the bottom via the hole that the platform uses to take us back to the top, we only need the ability to go down it. The building to the north houses our hole, but unless you have a military key card or Psychometry, you'll need to break down or go through the wall. Going through it with Phasing is easily done; you can get access to the mutation temporarily by cooking with phase silk from the Stilt if you don't have it naturally. If that's not your jam, then you can claw away at a wall with weapons or execute refined demolition with a nanopneumatic jackhammer or a pickaxe. Once you're in, strap on your mechanical wings, take flight and go down.
+Here's the thing, going down the chutes is still quite dangerous and there is an alternative. Once again, we see that Flight ability on the recommended list, and once again we know there's some cheese in our future. We have a straight shot to the bottom via the hole that the platform uses to take us back to the top, we only need the ability to go down it. The building to the north houses our hole, but unless you have a military security card or Psychometry, you'll need to break down or go through the wall. Going through it with Phasing is easily done; you can get access to the mutation temporarily by cooking with phase silk from the Stilt if you don't have it naturally. If that's not your jam, then you can {{!|claw}} away at a wall with weapons or execute refined demolition with a nanopneumatic jackhammer or a pickaxe. Once you're in, strap on your mechanical wings, take flight and go down.
 
-If you have perfect flight (from anti-gravity boots or rank 6 Wings), this is perfectly safe to do. If you don't, this is actually not safe to do. With mechanical wings, there is a 5% chance every turn that you will be knocked prone. When this happens above a 5-strata hole, the result is easily about 200 damage. If you want to roll the 5%, by all means, go ahead; I sure have so I won't judge you for it (been killed by it too). There's inherent risk in doing this, but the chance is rather low (around 23% to fall at some point).
+If you have perfect Flight (from anti-gravity boots or rank 6 Wings), this is perfectly safe to do. If you don't, this is actually not safe to do. With mechanical wings, there is a 5% chance every turn that you will be knocked prone. When this happens above a 5-strata hole, the result is easily about 200 damage. If you want to roll the 5%, by all means, go ahead; I sure have so I won't judge you for it (been killed by it too). There's inherent risk in doing this, but the chance is rather low (around 23% to fall at some point).
 
-> 🗒️ Note: While it's not a strategy I recommend, it's common enough that I may as well mention it. By injecting yourself with a rubbergum injector, you can halve the damage you take from the fall if you're a mutant or quarter it if you're true kin. This still results in a lot of damage, and there's no guarantee that the landing zone is safe. The ideal is that you combine this with your flight if it's not perfect flight; if you fall then at least you'll survive!
+> 🗒️ Note: While it's not a strategy I recommend, it's common enough that I may as well mention it. By injecting yourself with a rubbergum injector, you can halve the damage you take from the fall if you're a mutant or quarter it if you're true kin. This still results in a lot of damage, and there's no guarantee that the landing zone is safe. The ideal is that you combine this with your Flight if it's not perfect Flight; if you fall then at least you'll survive!
 
 From here, your trek around the bottom is as it normally would be. The most dangerous part of Golgotha is certainly the chutes, so completely circumventing them makes this quest far more consistent and manageable. Add on mollusk and fish reputation and the only thing that can touch you are the normal enemies, which you certainly should be capable of killing by this point in some way.
 
@@ -96,9 +96,9 @@ _Level_
 
 ---
 
-| 12 and Below                                                                                | 13 - 18                                                               | 19+               |
-| ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------------- |
-| Hologram Bracelet and choice of Masterwork Scoped Carbine or Masterwork Scoped Chain Pistol | Choice of Masterwork Scoped Carbine or Masterwork Scoped Chain Pistol | 3 random grenades |
+| 12 and Below                                                                                  | 13 - 18                                                               | 19+               |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------------- |
+| A hologram bracelet and choice of masterwork scoped carbine or masterwork scoped chain pistol | Choice of masterwork scoped carbine or masterwork scoped chain pistol | 3 random grenades |
 
 </div>
 

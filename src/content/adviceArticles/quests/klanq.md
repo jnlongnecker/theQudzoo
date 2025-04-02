@@ -12,7 +12,7 @@ With Grit Gate secured, we finally meet the enigmatic leader of the Barathrumite
 
 | Level | Abilities                                                                                                           | Stats                   |
 | ----- | ------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 30    | Perfect Flight, -249+ Ooze reputation, -249+ fungus reputation or Love Injectors, 125 quickness, 200 movement speed | 8 AV and 20 DV or 15 AV |
+| 30    | Perfect Flight, -249+ Ooze reputation, -249+ fungus reputation or love injectors, 125 quickness, 200 movement speed | 8 AV and 20 DV or 15 AV |
 
 </div>
 
@@ -26,11 +26,11 @@ The first part of the quest is to go to the center of the Rainbow Wood. This is 
 
 ## The High Life
 
-Once you get to the center, you'll receive a popup telling you that you completed the quest step and you'll know you're in the right place. Here, you'll find elcatl plants that can be Harvested for Eater's Flesh. If you don't have the Harvest skill, you can find a corpse here with a kelp scroll, a credit wedge and some Eater's Flesh. You then need to eat the Eater's Flesh and follow the orange colored brick path that appears all the way to Pax Klanq's hut.
+Once you get to the center, you'll receive a popup telling you that you completed the quest step and you'll know you're in the right place. Here, you'll find elcatl plants that can be Harvested for Eater's Flesh. If you don't have the Harvestry skill, you can find a corpse here with a kelp scroll, a credit wedge and some Eater's Flesh. You then need to eat the Eater's Flesh and follow the orange colored brick path that appears all the way to Pax Klanq's hut.
 
-> 🗒️ Note: You cannot see Pax Klanq or his hut unless you are under the effects of the Eater's Flesh.
+> 🗒️ Note: You cannot see Pax Klanq or their hut unless you are under the effects of the Eater's Flesh.
 
-Once you arrive at the hut, break down the walls and talk to Klanq. Let him puff on you and turn in the quest to Barathrum. You'll of course still be infected with Klanq, but the requirements of his quest are rarely something difficult at this point in the game. Some will test your memory and/or your game knowledge in order to find, as they can be rather obscure.
+Once you arrive at the hut, break down the walls and talk to Pax Klanq. Let them puff on you and turn in the quest to Barathrum. You'll of course still be infected with Klanq, but the requirements of this quest are rarely something difficult at this point in the game. Some will test your memory and/or your game knowledge in order to find, as they can be rather obscure.
 
 ## Sludges
 
@@ -38,8 +38,8 @@ Now, we have not addressed the elephant in the room, which is the soupy sludge t
 
 Unfortunately, this solution is somewhat just down to chance. If you're unlucky in finding legendaries to ritual/kill for ooze rep, or can't find any applicable Schrodinger pages, we'll need another solution. As far as getting to the center goes, we'll be moving through the zones fast enough that we'll be on to the next before any soupy sludge can form. However, for every zone after we eat the Eater's Flesh, we will have a heavy hit to our quickness (-60). Monosludges will be incapable of catching up with us, so with a little boost to our quickness or move speed (or better yet, both), we'll be fairly safe in moving through the zones. The recommended levels are higher than you'll probably need, but offer enhanced safety.
 
-The second best solution, however, is perfect flight. This is attainable through either anti-gravity boots or level 6 Wings (or cathedrae, for an overpowered solution). The soupy sludge have no way to hit a flying target, so we can walk through on our own time. The only downside to this solution is that Pax Klanq himself will attempt to kill the sludges, so ideally you can pair this with some Phasing (ideally you can cook with phase silk just before eating the Eater's Flesh).
+The second best solution, however, is perfect Flight. This is attainable through either anti-gravity boots or level 6 Wings (or cathedrae, for an overpowered solution). The soupy sludge have no way to hit a flying target, so we can walk through on our own time. The only downside to this solution is that Pax Klanq themself will attempt to kill the sludges, so ideally you can pair this with some Phasing (ideally you can cook with phase silk just before eating the Eater's Flesh). If Pax Klanq ends up dying, just wait around for 500 turns or so for them to come back.
 
 The shimmering effect causes quite the debuff of -60 quickness, so if you don't have any of the solutions you can get by with either enhanced quickness or enhanced movespeed (especially with Multiple Legs). A monosludge doesn't have much quickness to speak of, but the more liquids it can consume the faster it will move so don't wait around for it to power up.
 
-The soupy sludge will nearly endlessly form, so it's not worth fighting any of them when encountered. Simply focus on the path ahead and ignore them until you can get to Klanq.
+The soupy sludge will nearly endlessly form, so it's not worth fighting any of them when encountered. Simply focus on the path ahead and ignore them until you can get to Pax Klanq.

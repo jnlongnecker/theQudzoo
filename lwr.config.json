@@ -1,6 +1,18 @@
 {
     "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
     "bundleConfig": { "exclude": ["lwc"] },
+    "assets": [
+        {
+            "alias": "iconDir",
+            "dir": "$rootDir/src/assets/images/Textures",
+            "urlPath": "/icons"
+        },
+        {
+            "alias": "assetsDir",
+            "dir": "$rootDir/src/assets",
+            "urlPath": "/assets"
+        }
+    ],
     "errorRoutes": [
         {
             "id": "not_found",
@@ -81,6 +93,7 @@
         {
             "id": "New-Player-Guide",
             "path": "/advice/novice",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/novice/intro.md",
             "layoutTemplate": "$layoutsDir/noob_home_layout.njk",
             "properties": {
@@ -91,6 +104,7 @@
         {
             "id": "Parsing-the-UI",
             "path": "/advice/novice/ui",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/novice/ui.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -102,6 +116,7 @@
         {
             "id": "Qud-Fundamentals",
             "path": "/advice/novice/fundamentals",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/novice/fundamentals.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -113,6 +128,7 @@
         {
             "id": "Combat-Positioning",
             "path": "/advice/novice/positioning",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/positioning.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -124,6 +140,7 @@
         {
             "id": "Practical-Application",
             "path": "/advice/novice/application",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/novice/redRock.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -135,6 +152,7 @@
         {
             "id": "Cheat-Sheet",
             "path": "/advice/novice/sheet",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/novice/cheatSheet.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -146,6 +164,7 @@
         {
             "id": "Story-Quests",
             "path": "/advice/quests",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/questsHome.md",
             "layoutTemplate": "$layoutsDir/quest_home_layout.njk",
             "properties": {
@@ -156,6 +175,7 @@
         {
             "id": "Weirdwire-Conduit",
             "path": "/advice/quests/weirdwire-conduit",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/weirdwire.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -167,6 +187,7 @@
         {
             "id": "A-Canticle-for-Barathrum",
             "path": "/advice/quests/a-canticle-for-barathrum",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/canticle.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -178,6 +199,7 @@
         {
             "id": "More-Than-a-Willing-Spirit",
             "path": "/advice/quests/more-than-a-willing-spirit",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/golgotha.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -189,6 +211,7 @@
         {
             "id": "Decoding-the-Signal",
             "path": "/advice/quests/decoding-the-signal",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/bethesda.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -200,6 +223,7 @@
         {
             "id": "The-Earl-of-Omonporch",
             "path": "/advice/quests/the-earl-of-omonporch",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/omonporch.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -211,6 +235,7 @@
         {
             "id": "A-Call-to-Arms",
             "path": "/advice/quests/a-call-to-arms",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/attack.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -222,6 +247,7 @@
         {
             "id": "Pax-Klanq,-I-Presume?",
             "path": "/advice/quests/pax-klanq",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/klanq.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -233,6 +259,7 @@
         {
             "id": "Tomb-of-the-Eaters",
             "path": "/advice/quests/tomb-of-the-eaters",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/tomb.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -244,6 +271,7 @@
         {
             "id": "The Golem",
             "path": "/advice/quests/the-golem",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/golem.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -255,6 +283,7 @@
         {
             "id": "Reclamation",
             "path": "/advice/quests/reclamation",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/reclamation.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -266,6 +295,7 @@
         {
             "id": "We-Are-Starfreight",
             "path": "/advice/quests/starfreight",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/quests/starfreight.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -277,6 +307,7 @@
         {
             "id": "Breaking-Down-a-Run",
             "path": "/advice/breakdown",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/breakdown.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -288,6 +319,7 @@
         {
             "id": "How-to-Make-a-Build",
             "path": "/advice/build-making",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/builds.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -299,6 +331,7 @@
         {
             "id": "Map-Breakdown",
             "path": "/advice/map-breakdown",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/map.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -310,6 +343,7 @@
         {
             "id": "Mutations",
             "path": "/advice/mutations",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/mutations.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -321,6 +355,7 @@
         {
             "id": "Cybernetics",
             "path": "/advice/cybernetics",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/cybernetics.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -332,6 +367,7 @@
         {
             "id": "Tinkering",
             "path": "/advice/tinkering",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/tinkering.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -343,6 +379,7 @@
         {
             "id": "Skills",
             "path": "/advice/skills",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/skills.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -354,6 +391,7 @@
         {
             "id": "Reputation",
             "path": "/advice/reputation",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/reputation.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -365,6 +403,7 @@
         {
             "id": "Advanced-Mechanics",
             "path": "/advice/advanced",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceArticles/advanced.md",
             "layoutTemplate": "$layoutsDir/advice_layout.njk",
             "properties": {
@@ -376,17 +415,9 @@
         {
             "id": "Advice-Home",
             "path": "/advice",
+            "routeHandler": "$rootDir/src/server/adviceRouter.cjs",
             "contentTemplate": "$contentDir/adviceHome.md",
             "layoutTemplate": "$layoutsDir/advice_home_layout.njk",
-            "properties": {
-                "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
-            }
-        },
-        {
-            "id": "Combat-Calculator",
-            "path": "/combat",
-            "contentTemplate": "$contentDir/combatInfo.md",
-            "layoutTemplate": "$layoutsDir/combat_layout.njk",
             "properties": {
                 "preview": "/1/asset/s/latest/public/assets/images/pyramids.png"
             }

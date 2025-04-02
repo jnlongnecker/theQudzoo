@@ -103,7 +103,8 @@ export default class TableOfContents extends LightningElement {
                 newSection.sectionElement = this.template.querySelector(`p[data-id="${newSection.id}"]`)
             }
             if (!this.isVisibleInViewport(newSection.sectionElement.getBoundingClientRect())) {
-                this.containerElement.scrollTop = newSection.sectionElement.getBoundingClientRect().top + this.containerElement.scrollTop;
+                let yOffset = this.containerElement.getBoundingClientRect().top;
+                this.containerElement.scrollTop = newSection.sectionElement.getBoundingClientRect().top + this.containerElement.scrollTop - yOffset;
             }
         }
 
