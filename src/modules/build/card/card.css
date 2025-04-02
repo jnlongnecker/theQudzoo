@@ -1,5 +1,4 @@
 @import "styles/syntax";
-@import "styles/injection";
 
 :host {
     --code-color: var(--mutant-color);

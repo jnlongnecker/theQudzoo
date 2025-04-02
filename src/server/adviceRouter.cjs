@@ -20,7 +20,7 @@ module.exports = async function (viewRequest, handlerContext) {
         if (index < 0) index = route.contentTemplate.lastIndexOf('/');
         let filename = route.contentTemplate.substring(index + 1);
         const rootDir = __dirname.substring(0, __dirname.indexOf("src") - 1);
-        compiledRoute = rootDir + 'src/content/compileCache/' + filename;
+        compiledRoute = rootDir + '/src/content/compileCache/' + filename;
     }
 
     return {
