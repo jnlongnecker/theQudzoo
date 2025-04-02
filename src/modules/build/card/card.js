@@ -120,7 +120,9 @@ export default class BuildCard extends LightningElement {
     }
 
     get buildName() {
-        return this.buildInfo.name ? this.buildInfo.name : "Unnamed Build"
+        let name = this.buildInfo.name ? this.buildInfo.name : "Unnamed Build";
+        if (name.length > 30) name = name.substring(0, 30) + '...';
+        return name;
     }
 
     get displayName() {
@@ -212,7 +214,9 @@ export default class BuildCard extends LightningElement {
 
     get characterName() {
         if (!this.buildJson) return;
-        return this.buildJson.modules[4].data.name;
+        let name = this.buildJson.modules[4].data.name;
+        if (name.length > 20) name = name.substring(0, 20) + '...';
+        return name;
     }
 
     get subtypeImg() {
