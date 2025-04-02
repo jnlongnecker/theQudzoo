@@ -123,7 +123,7 @@ lwrServer.config.serverMode = mode;
 lwrServer.listen(({ port, serverMode }) => {
     console.log(`App listening on port ${port} in ${serverMode} mode\n`);
     api.setApp(lwrServer);
-    sugarManager.buildArticleCacheMetadata(lwrServer);
+    if (mode !== 'prod') sugarManager.buildArticleCacheMetadata(lwrServer);
 }).catch((err) => {
     console.error(err);
     process.exit(1);

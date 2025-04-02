@@ -12,7 +12,16 @@ const sugarManager = require('./sugarManager.cjs');
 module.exports = async function (viewRequest, handlerContext) {
     const route = handlerContext.route || {};
 
-    let compiledRoute = sugarManager.compileArticle(route);
+    let compiledRoute;
+    if (process.env.MODE !== 'prod') {
+        compiledRoute = sugarManager.compileArticle(route);
+    } else {
+        let index = route.contentTemplate.lastIndexOf('\\');
+        if (index < 0) index = route.contentTemplate.lastIndexOf('/');
+        let filename = route.contentTemplate.substring(index + 1);
+        const rootDir = __dirname.substring(0, __dirname.indexOf("src") - 1);
+        compiledRoute = rootDir + 'src/content/compileCache/' + filename;
+    }
 
     return {
         view: {
