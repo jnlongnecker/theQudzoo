@@ -38,7 +38,7 @@ Knight Commander of the Holy Temple are often accompanied by temple mecha mk Is,
 
 ### The Grand Newfather
 
-Grand newfathers are amongst the most dangerous of the Templar forces as they will have 2-4 creature slaves under their command of tier 7-8. These could be anything from soupy sludges to star kraken, so be prepared for virtually anything the game can throw at you. With command of the Golem, you should be more than capable of handling any of these creatures. Be careful for any creatures capable of instant death or stunlocks; you'll want to disable them with freeze grenades, flashbang grenades, or other similar methods.
+Grand newfathers are amongst the most dangerous of the Templar forces as they will have 2-4 creature slaves under their command of tier 7-8. These could be anything from soupy sludges to star kraken, so be prepared for virtually anything the game can throw at you. With command of the Golem, you should be more than capable of handling any of these creatures. Be careful for any creatures capable of instant death or stun locks; you'll want to disable them with freeze grenades, flashbang grenades, or other similar methods.
 
 The grand newfather itself is much less of a threat, but still dangerous. They are melee combatants, so disarming them or keeping them at range handles them well, and if you are at the recommended AV they will struggle to do any damage at all.
 
