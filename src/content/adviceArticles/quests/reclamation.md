@@ -10,9 +10,9 @@ The Golem created successfully, it is time to ascend the Spindle with Barathrum.
 
 ---
 
-| Level | Abilities                                                                                                                                                                                                                                                                        | Stats |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
-| 37    | Corrosive Gas Generation, 110 Quickness & 125 Move Speed, the Golem, Penetrating Strikes / ceremonial vibrokhopesh, High (60+) elemental resistances, Poison Tolerance, freeze grenade mk III, EMP grenade mk III, flashbang grenade mk III, Perfect Flight, Disarm capabilities | 18 AV |
+| Level | Abilities                                                                                                                                                                                                                                                                           | Stats |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| 37    | Corrosive Gas Generation, 110 Quickness & 125 Move Speed, the Golem, Penetrating Strikes / ceremonial vibrokhopesh, High (60+) elemental resistances, Poison Tolerance, freeze grenade mk IIIs, EMP grenade mk IIIs, flashbang grenade mk IIIs, Perfect Flight, Disarm capabilities | 18 AV |
 
 </div>
 
@@ -34,7 +34,7 @@ I won't make a mention of it in the individual combat sections, but keep in mind
 
 The two Knight Commander of the Holy Temple are the same type of creature that led the raid in [A Call To Arms](./a-call-to-arms#knight-commander-of-the-holy-temple), and are hopefully much less dangerous to you at this point. To recap on their abilities, they will use Menacing Stare to fear you and have you lose control of your positioning and will try and lock you down with Shield Slam. Disarm via Dueling Stance + Lunge or Disarming Shot are extremely effective here and they can remove both the primary weapon of the knight commander _and_ the shield, removing the ability to Shield Slam.
 
-Knight Commander of the Holy Temple are often accompanied by temple mechas mk I, of which the temple mecha mk Ia is the more threatening. The mk Ia is the melee variant and is extremely mobile and will use that mobility. Utilize the Golem to quickly focus and destroy any mk Ia mechas that appear. By this point in the game, you're likely to have extremely high DV and if not, your AV will be plenty to withstand the weaponry of the temple mecha mk Ib.
+Knight Commander of the Holy Temple are often accompanied by temple mecha mk Is, of which the temple mecha mk Ia is the more threatening. The mk Ia is the melee variant and is extremely mobile and will use that mobility. Utilize the Golem to quickly focus and destroy any mk Ia mechas that appear. By this point in the game, you're likely to have extremely high DV and if not, your AV will be plenty to withstand the weaponry of the temple mecha mk Ib.
 
 ### The Grand Newfather
 
@@ -65,7 +65,7 @@ The 6 naturally occurring Nephilim are the following:
 -   Bethsaida
 -   Shug'ruith
 
-Each one has 4,000 HP, 60 in all resistances, and a special mutation called the Irisdual Beam, which is the primary gimmick of the Nephilim as a group. The Irisdual Beam is a special attack with a long cooldown that fires in 3 directions above 50% HP and 6 directions below 50% HP. There is 1 turn of windup for the beam before it fires, and at least 1 beam will target you directly. The beam does incredible damage if it connects and ignores DV and, to an extent, AV. The way the damage of the beam works is it has 7 damage types: Acid, Cold, Electric, Heat, Poison, Umbral and Cosmic. Umbral is the same damage type as Haggabah's hands, and Cosmic is the same damage type as a Chrome Pyramid's distortion field (melee attack). Umbral and Cosmic cannot be reduced in any way, but the other damage types absolutely can.
+Each one has 4,000 HP, 60 in all resistances, and a special mutation called the Irisdual Beam, which is the primary gimmick of the Nephilim as a group. The Irisdual Beam is a special attack with a long cooldown that fires in 3 directions above 50% HP and 6 directions below 50% HP. There is 1 turn of windup for the beam before it fires, and at least 1 beam will target you directly. The beam does incredible damage if it connects and ignores DV and, to an extent, AV. The way the damage of the beam works is it has 7 damage types: Acid, Cold, Electric, Heat, Poison, Umbral and Cosmic. Umbral is the same damage type as Haggabah's hands, and Cosmic is the same damage type as a chrome pyramid's distortion field (melee attack). Umbral and Cosmic cannot be reduced in any way, but the other damage types absolutely can.
 
 Each damage type can do 30 - 40 points of damage, and if you are hit by the beam you are hit by all 7 damage types simultaneously. If you have resistance to those damage types, you will take lower amounts of damage from the beam overall. However, as Umbral and Cosmic damage cannot be negated or reduced in any way, you will take damage from a minimum of 2 of the damage types. Poison damage can be negated only if you have Slog's annunclus, which can be obtained by Butchering the corpse of Slog. It can be reduced greatly by simply having Shake It Off and Poison Tolerance. If this wasn't bad enough, the beam projectile itself has a PV of 15 and can do 1d5 + 7 points of extra damage per penetration, so AV is very important in this fight.
 
