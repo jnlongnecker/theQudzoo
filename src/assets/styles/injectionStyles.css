@@ -3,9 +3,10 @@
 }
 
 .injected {
-    white-space: nowrap;
     font-family: var(--qud-font);
     font-weight: 700;
+    max-width: 100%;
+    display: inline-block;
 }
 
 .injected:hover {
