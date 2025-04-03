@@ -22,13 +22,13 @@ If you're {{Y|Sated}}, you don't need to eat. You can still eat up to 2 more tim
 
 All you need to do is make a campfire using the Make Camp skill and use that to cook. Many campfires already exist in the world as well as ovens, so you may alternatively use those to cook. You'll get a popup telling you that you're {{Y|Famished!}}, so don't worry about this mechanic too much. Eat when you need to. There are skills you can get to make more use out of the eating mechanic; with the skills meals now become temporary buffs as basically a sort of potion mechanic.
 
-For thirst, there are 5 levels: {{Y|Tumescent}} > {{Y|Quenched}} > {{Y|Thirsty}} > {{Y|Parched}} > {{Y|Dehydrated!}}.
+For thirst, there are 5 levels: {{Y|Tumescent}} > {{Y|Quenched}} > {{Y|Thirsty}} > {{Y|Parched}} > {{Y|Dehydrated!}}
 
 > If you are Amphibious, these levels are replaced by {{Y|Soaked}} > {{Y|Wet}} > {{Y|Moist}} > {{Y|Dry}} > {{Y|Dessicated!}}. Again, they are the same just differently named for flavor.
 
 Thirst is automatically taken care of for you as long as you have fresh water in your inventory. Depending on your settings, you will drink to maintain a certain threshold. If you fall below that threshold, you will drink to bring you above it. You can manually drink too, but there's no reason to do so. In fact, you can drink _too much_, in which case you will vomit. If you are {{Y|Dehydrated!}}, you will constantly take damage so make sure that you maintain some water in your inventory.
 
-> Some creatures are capable of changing your thirst levels, but the main one you will encounter are [Thirst Thistles](https://wiki.cavesofqud.com/wiki/Thirst_thistle).
+> Some creatures are capable of changing your thirst levels, but the main one you will encounter are [thirst thistles](https://wiki.cavesofqud.com/wiki/Thirst_thistle).
 
 Beside your hunger and thirst we have 3 numbers: {{Y|63/318#}} {{B|35$}}. The {{Y|63/318#}} ratio is the weight of all your items that are currently equipped or in your inventory to the total weight you can carry. In this case, our carry capacity is 318 pounds due to our Strength score and our items cumulatively weigh 63 pounds. If the weight of your items exceeds your capacity, you will no longer be able to move. You may still use certain abilities to move or teleport, but basic movement will be impossible until you can handle the weight.
 

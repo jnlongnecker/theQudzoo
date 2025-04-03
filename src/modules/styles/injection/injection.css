@@ -2,6 +2,10 @@
     cursor: text;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .injected {
     vertical-align: top;
     font-family: var(--qud-font);

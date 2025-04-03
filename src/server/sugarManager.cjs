@@ -74,6 +74,7 @@ class ArticleMetadata {
             let index = route.contentTemplate.lastIndexOf('\\');
             if (index < 0) index = route.contentTemplate.lastIndexOf('/');
             let filename = route.contentTemplate.substring(index + 1);
+            console.log(`Compiling ${filename}`);
 
             let compiledPath = cacheDir + filename;
             let sourceStats = fs.statSync(route.contentTemplate);
@@ -155,13 +156,11 @@ const runCompilation = function (markdown) {
                 pieces.push(markdown.substring(0, lastMatch.start));
                 pieces.push(lastMatch.injectionMarkup);
                 pieces.push(markdown.substring(lastMatch.end, result.start));
-                pieces.push(result.injectionMarkup);
-                markdown = markdown.substring(result.end);
             } else {
                 pieces.push(markdown.substring(0, result.start));
-                pieces.push(result.injectionMarkup);
-                markdown = markdown.substring(result.end);
             }
+            pieces.push(result.injectionMarkup);
+            markdown = markdown.substring(result.end);
             currToken = [];
             lastMatch = null;
             i = 0;
@@ -257,10 +256,12 @@ function checkMatches(currToken, markdown, i) {
         if (perfectMatch) continue;
 
         // If this was a perfect match, mark it as the match
-        if (index + wordModifier.length === currToken.length && index === sugarObj.name.length) {
+        if (index + wordModifier.length === tokenLen && index === sugarObj.name.length) {
+            let puncMods = calculatePunctuationModifiers(i, markdown, tokenLen);
             let resultObj = {
-                match: sugarObj, start: i - currToken.length, end: i,
-                injectionMarkup: buildInjectionMarkup(sugarObj, wordModifier, capitalize)
+                match: sugarObj,
+                start: i - tokenLen - puncMods.startOffset, end: i + puncMods.endOffset,
+                injectionMarkup: puncMods.prefix + buildInjectionMarkup(sugarObj, wordModifier, capitalize) + puncMods.suffix
             };
             perfectMatch = resultObj;
         }
@@ -268,6 +269,26 @@ function checkMatches(currToken, markdown, i) {
 
     return { matches, perfectMatch };
 }
+
+function calculatePunctuationModifiers(i, markdown, tokenLen) {
+    let prefix = '';
+    let suffix = '';
+    let startOffset = 0;
+    let endOffset = 0;
+    let startIdx = i - tokenLen - 1;
+    if (markdown[startIdx]?.trim() && !/[>\{\}]/.test(markdown[startIdx])) {
+        prefix = `<span class="nowrap">${markdown[startIdx]}`;
+        startOffset = 1;
+    }
+    if (markdown[i]?.trim() && !/[<\{\}]/.test(markdown[i])) {
+        suffix = `${markdown[i]}</span>`;
+        endOffset = 1;
+    }
+    if (prefix.length > 0 && suffix.length === 0) suffix = "</span>"
+    if (prefix.length === 0 && suffix.length > 0) prefix = '<span class="nowrap">';
+    return { prefix, suffix, startOffset, endOffset };
+}
+
 const correctedDir = '/icons/';
 
 function buildInjectionMarkup(sugarObj, wordModifier, capitalize) {
@@ -309,6 +330,11 @@ function skipIgnoredMarkdown(index, markdown) {
             if (markdown[index + 1] !== '[') return originalIndex;
             while (markdown[index] !== ')') index++;
             return index;
+        case '[':
+            while (index < markdown.length && markdown[index] !== ']') index++;
+            if (index + 1 >= markdown.length || markdown[index + 1] !== '(') return originalIndex;
+            while (index < markdown.length && markdown[index] !== ')') index++;
+            return index + 1;
         default: return index;
     }
 }
@@ -350,8 +376,14 @@ function formatString(index, markdown) {
         } else if (markdown[index] === '}' && markdown[index + 1] === '}') break;
     }
 
+    let puncResult = calculatePunctuationModifiers(index + 2, markdown, index + 2 - start);
     currToken = shader.apply(currToken);
-    return { didFormat: true, start, end: index + 2, injectionMarkup: currToken.join('') };
+    return {
+        didFormat: true,
+        start: start - puncResult.startOffset,
+        end: index + 2 + puncResult.endOffset,
+        injectionMarkup: puncResult.prefix + currToken.join('') + puncResult.suffix
+    };
 }
 
 function getWordModifier(token, objName, index) {

@@ -2,13 +2,17 @@
     cursor: text;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .injected {
-    vertical-align: top;
     font-family: var(--qud-font);
     font-weight: 700;
     max-width: 100%;
-    display: inline-block;
     position: relative;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .injected:hover::before {
