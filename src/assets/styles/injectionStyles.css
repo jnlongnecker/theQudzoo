@@ -8,9 +8,17 @@
     font-weight: 700;
     max-width: 100%;
     display: inline-block;
+    position: relative;
 }
 
-.injected:hover {
+.injected:hover::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background-color: var(--bg-color-dark);
     outline: solid 4px var(--bg-color-dark);
     border-radius: 5px;
