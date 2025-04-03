@@ -3,6 +3,7 @@
 }
 
 .injected {
+    vertical-align: top;
     font-family: var(--qud-font);
     font-weight: 700;
     max-width: 100%;
