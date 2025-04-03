@@ -276,14 +276,17 @@ function calculatePunctuationModifiers(i, markdown, tokenLen) {
     let startOffset = 0;
     let endOffset = 0;
     let startIdx = i - tokenLen - 1;
+    // Test if this term is preceeded by acceptable punctuation
     if (markdown[startIdx]?.trim() && !/[>\{\}]/.test(markdown[startIdx])) {
         prefix = `<span class="nowrap">${markdown[startIdx]}`;
         startOffset = 1;
     }
+    // Test if this term is succeeded by acceptable punctuation
     if (markdown[i]?.trim() && !/[<\{\}]/.test(markdown[i])) {
         suffix = `${markdown[i]}</span>`;
         endOffset = 1;
     }
+    // Cover bases if the term had punctuation on only one side to not drop any spans
     if (prefix.length > 0 && suffix.length === 0) suffix = "</span>"
     if (prefix.length === 0 && suffix.length > 0) prefix = '<span class="nowrap">';
     return { prefix, suffix, startOffset, endOffset };
@@ -295,6 +298,8 @@ function buildInjectionMarkup(sugarObj, wordModifier, capitalize) {
     let qudzooDir = correctedDir + sugarObj.src;
     sugarObj.prefix = sugarObj.prefix.replace('!!!!', qudzooDir);
     let name = sugarObj.displayName;
+
+    // If there's a modifier to the word, apply it
     if (wordModifier.length) {
         let bracketIndex = sugarObj.displayName.lastIndexOf('}');
         if (bracketIndex < 0 || bracketIndex !== sugarObj.displayName.length - 1) {
@@ -303,6 +308,7 @@ function buildInjectionMarkup(sugarObj, wordModifier, capitalize) {
             name = name.substring(0, bracketIndex - 1) + wordModifier + "}}";
         }
     }
+    // Capitalize the word if necessary
     if (capitalize) {
         let i = 0;
         if (name[i] === '{') { while (name[i] !== '|') i++; i++; }
@@ -316,21 +322,21 @@ function buildInjectionMarkup(sugarObj, wordModifier, capitalize) {
 function skipIgnoredMarkdown(index, markdown) {
     let originalIndex = index;
     switch (markdown[index]) {
-        case '`':
+        case '`': // Code blocks sound be skipped unless escaped
             if (markdown[index - 1] === '\\') return originalIndex + 1;
             index++;
             while (markdown[index] !== '`') index++;
             return index + 1;
-        case '#':
+        case '#': // Headers should be ignored for sugar as they contain section links
             while (markdown[index] === '#') index++;
             if (markdown[index] !== ' ') return originalIndex;
             while (markdown[index] !== '\n') index++;
             return index;
-        case '!':
+        case '!': // Images should be ignored to not break any links that contain sugar words
             if (markdown[index + 1] !== '[') return originalIndex;
             while (markdown[index] !== ')') index++;
             return index;
-        case '[':
+        case '[': // Links should be ignored for a similar reason as images
             while (index < markdown.length && markdown[index] !== ']') index++;
             if (index + 1 >= markdown.length || markdown[index + 1] !== '(') return originalIndex;
             while (index < markdown.length && markdown[index] !== ')') index++;
@@ -355,28 +361,35 @@ function formatAll(index, markdown) {
 
 function formatString(index, markdown) {
     let start = index;
+    // Detect if this is even a string in the proper markup format
     if (!(markdown[index] === '{' && markdown[index + 1] === '{')) return { didFormat: false };
 
     let currToken = [];
     while (markdown[index] === '{') index++;
     while (markdown[index] !== '|' && index < markdown.length) currToken.push(markdown[index++]);
-    if (index >= markdown.length) return { didFormat: false };
+    if (index >= markdown.length) return { didFormat: false }; // Final catch to check markup format
+
+    // Build the shader from the rule
     let rule = currToken.join('');
     let shader = ColorShader.fromRule(rule);
     index++;
 
+    // Get the text to apply the shader on
     currToken = [];
     while (true) {
         while (markdown[index] !== '}' && markdown[index] !== '{') currToken.push(markdown[index++]);
+        // If a potential sub-rule is detected, try and parse that
         if (markdown[index] === '{' && markdown[index + 1] === '{') {
             let subResult = formatString(index, markdown);
             if (!subResult.didFormat) continue;
             index = subResult.end;
             currToken.push(subResult.injectionMarkup);
-        } else if (markdown[index] === '}' && markdown[index + 1] === '}') break;
+        } else if (markdown[index] === '}' && markdown[index + 1] === '}') break; // Exit the loop at the end
     }
 
+    // Detect if punctuation surrounds this term and add nowrap if so
     let puncResult = calculatePunctuationModifiers(index + 2, markdown, index + 2 - start);
+    // Apply the shader
     currToken = shader.apply(currToken);
     return {
         didFormat: true,
