@@ -10,9 +10,9 @@ Argyve wishes to make contact with the legendary enclave of Tinkerers known as t
 
 ---
 
-| Level | Abilities                                                                                             | Stats         |
-| ----- | ----------------------------------------------------------------------------------------------------- | ------------- |
-| 10    | Acrobatics, Meal Preparation and Harvestry or Rank 3 Flaming Ray/Freezing Ray, Menacing Stare, Berate | 6 AV or 14 DV |
+| Level | Abilities                                                                                               | Stats         |
+| ----- | ------------------------------------------------------------------------------------------------------- | ------------- |
+| 10    | Acrobatics, Meal Preparation and Harvestry or Rank 3 Flaming Ray / Freezing Ray, Menacing Stare, Berate | 6 AV or 14 DV |
 
 </div>
 

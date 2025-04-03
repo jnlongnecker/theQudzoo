@@ -22,7 +22,7 @@ I'm skipping the artifact fetch quests, you can handle getting two artifacts on 
 
 Weirdwire Conduit involves you making your way to the rust wells, which are 3 unique map tiles to the east of Joppa, right before the closest mountain range. Your objective is to collect 200 feet of wire strand for Argyve. It may come as a surprise to you that you actually don't have to collect all 200 feet at a single rust well; in fact, it may be impossible depending on how unlucky you get. It's worth it to check out the surface of each rust well and see how much wire you can get. You might get lucky and not have to go down any of them.
 
-For those of us unlucky souls, we will have to travel down the well. Before we do, we need to pick a well to go down since as mentioned we have 3 to choose from. You should look in the middle, as you can actually see what is at the very bottom. At the center of every rust well, there is a single enemy that is stronger than the rest, as well as 100ft of wire strand and (usually) a chest/good piece of loot.
+For those of us unlucky souls, we will have to travel down the well. Before we do, we need to pick a well to go down since as mentioned we have 3 to choose from. You should look in the middle, as you can actually see what is at the very bottom. At the center of every rust well, there is a single enemy that is stronger than the rest, as well as 100ft of wire strand and (usually) a chest / good piece of loot.
 
 <span>![Player Nomad to the south of an open rust well]($assetsDir/images/quests/weirdwire-well.png)</span>
 
