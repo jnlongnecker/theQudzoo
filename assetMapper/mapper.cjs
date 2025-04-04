@@ -20,14 +20,24 @@ switch (func) {
     case 'preview': writeObjectPreviews(); break;
     case 'details':
     case 'detail': writeObjectDetails(); break;
+    case 'allobject':
+    case 'allobjects': writeObjectPreviews(); writeObjectDetails(); break;
 }
 
 function test() {
-    let objects = readToObject(...loadOrder);
+    let objects = readToObject('Factions.xml');
     fs.writeFileSync(`${outputDirectory}xmlObjectsItems.json`, JSON.stringify(objects, undefined, 4), { flag: 'w' });
 }
 
-function writeObjectPreviews() { }
+function writeObjectPreviews() {
+    let objects = readToObject(...loadOrder);
+    let factions = readToObject('Factions.xml');
+    let previews = parser.filterToPreviews(objects, factions);
+    fs.writeFileSync(`${outputDirectory}armorPreviews.json`, JSON.stringify(previews.armor, undefined, 4), { flag: 'w' });
+    fs.writeFileSync(`${outputDirectory}meleePreviews.json`, JSON.stringify(previews.meleeWeapons, undefined, 4), { flag: 'w' });
+    fs.writeFileSync(`${outputDirectory}creaturePreviews.json`, JSON.stringify(previews.creatures, undefined, 4), { flag: 'w' });
+}
+
 function writeObjectDetails() { }
 
 function writeColorMetadata() {

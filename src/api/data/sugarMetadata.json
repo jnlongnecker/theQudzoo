@@ -4276,8 +4276,8 @@
         "src": "Items/Gyrocopter Backpack.png"
     },
     {
-        "name": "&amp;Rh&amp;Yelping&amp;r &amp;Rh&amp;Yands",
-        "displayName": "&amp;Rh&amp;Yelping&amp;r &amp;Rh&amp;Yands",
+        "name": "helping hands",
+        "displayName": "{{R|h}}{{Y|elping}}{{r| }}{{R|h}}{{Y|ands}}",
         "prefix": "<span class=\"injected\"><span class=\"icon-container\"><img class=\"inline-icon\" src=\"!!!!\" /></span><span class=\"object\">",
         "suffix": "</span></span>",
         "src": "Items/Helping Hands.png"

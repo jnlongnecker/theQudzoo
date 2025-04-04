@@ -485,6 +485,7 @@ function buildCustomSugarObject(displayName, innerClass, src = undefined, object
 }
 
 function buildSugarObject(item, displayName, innerClass, src = undefined) {
+    displayName = oldMarkupToNewMarkup(displayName);
     let objectName = unformatDisplayName(displayName);
     if (src !== undefined) {
         // The directory listed in the game files is weird, so format it properly
@@ -496,6 +497,60 @@ function buildSugarObject(item, displayName, innerClass, src = undefined) {
         logger.log(`No tile for ${item ? item.Name : displayName}`);
     }
     return buildCustomSugarObject(displayName, innerClass, src, objectName);
+}
+
+function buildFullName(item) {
+    let renderPart = getPart(item, 'Render');
+    if (!renderPart) return null;
+    let baseName = renderPart.DisplayName;
+
+    // Apply epithets
+    let epithetPart = getPart(item, 'Epithets');
+    if (epithetPart) {
+        let epithet = epithetPart.Primary[0] === ',' ? epithetPart.Primary : ' ' + epithetPart.Primary;
+        baseName = `${baseName}${epithet}`;
+    }
+    // Apply honorifics
+    let honorificsPart = getPart(item, 'Honorifics');
+    if (honorificsPart) {
+        let honorific = honorificsPart.Primary ? honorificsPart.Primary : honorificsPart.Ordinary;
+        baseName = `${honorific} ${baseName}`;
+    }
+    // Apply faction adjectives
+    let adjectivePart = getPart(item, 'DisplayNameFactionAdjective');
+    baseName = adjectivePart ? `${adjectivePart.FactionAdjective} ${baseName}` : baseName;
+    return baseName;
+}
+
+function getTilePath(item) {
+    let renderPart = getPart(item, 'Render');
+    if (!renderPart) return null;
+
+    let src = renderPart.Tile;
+    let builder = item.other.find(node => node.Name === 'RandomTile');
+    if (builder) {
+        src = builder.Tiles.split(',')[0];
+    }
+    let dir = qudDirToQudzooDir(src, item).replaceAll('\\', '/');
+    return '/images/Textures/' + dir;
+}
+
+function oldMarkupToNewMarkup(displayName) {
+    displayName = displayName.replaceAll("&amp;", '&');
+    let i = 0;
+    let firstChange = true;
+    let newName = [];
+    while (i < displayName.length) {
+        while (displayName[i] !== '&' && i < displayName.length) newName.push(displayName[i++]);
+        if (i === displayName.length) break;
+        i++;
+        let prefix = firstChange ? '{{' : '}}{{';
+        newName.push(`${prefix}${displayName[i]}|`);
+        firstChange = false;
+        i++;
+    }
+    if (!firstChange) { newName.push('}}'); }
+    return newName.join('');
 }
 
 /**
@@ -524,4 +579,74 @@ function unformatDisplayName(displayName) {
         }
     }
     return nameParts.join('');
+}
+
+/* 
+
+    ============================== END SUGAR METADATA PROCESSING =============================
+
+
+    ============================== OBJECT PREVIEWS PROCESSING =============================
+    
+*/
+
+exports.filterToPreviews = function (objects, factions) {
+    let ret = { meleeWeapons: [], armor: [], creatures: [] };
+    for (let key in objects) {
+        let item = objects[key];
+
+        // We need the full part/tag list from the parent hierarchy, so pull that now
+        inheritFromParent(item, objects);
+        let isCreature = getPart(item, 'Brain');
+        let isArmor = getPart(item, 'Armor');
+        let isMeleeWeapon = getTag(item, 'MeleeWeapon')?.Value === '1';
+        if (getTag(item, 'BaseObject')) continue; // Skip if a base object
+        if (getTag(item, 'Projectile')) continue; // Skip if a projectile
+        if (getTag(item, 'NaturalGear')) continue; // Skip if natural gear
+        if (getTag(item, 'QuestItem')) continue; // Skip if quest item
+        if (!isCreature && !isArmor && !isMeleeWeapon) continue;
+
+        if (isArmor) { ret.armor.push(buildArmorPreview(item)) }
+        else if (isMeleeWeapon) { ret.meleeWeapons.push(buildMeleePreview(item)) }
+        else if (isCreature) { ret.creatures.push(buildCreaturePreview(item, factions)) }
+    }
+    return ret;
+}
+
+function buildArmorPreview(item) {
+    let src = getTilePath(item);
+    let fullName = buildFullName(item);
+    let cleanedName = unformatDisplayName(fullName);
+    let armorPart = getPart(item, 'Armor');
+    let tier = getTag(item, 'Tier')?.Value;
+    return {
+        src, cleanedName, tier, armorPart, name: item.Name
+    };
+}
+
+function buildMeleePreview(item) {
+    let src = getTilePath(item);
+    let fullName = buildFullName(item);
+    let cleanedName = unformatDisplayName(fullName);
+    let weaponPart = getPart(item, 'MeleeWeapon');
+    let tier = getTag(item, 'Tier')?.Value;
+    return {
+        src, cleanedName, tier, weaponPart, name: item.Name
+    };
+}
+
+function buildCreaturePreview(item, factions) {
+    let src = getTilePath(item);
+    let fullName = buildFullName(item);
+    let cleanedName = unformatDisplayName(fullName);
+    let brain = getPart(item, 'Brain');
+    let creatureFactions = brain.Factions.split(',').reduce((prev, item) => {
+        let factionName = item.split('-')[0];
+        prev.push(factions[factionName]?.DisplayName);
+        return prev;
+    }, []).join(', ');
+    let level = item.other.find(item => item.Name === 'Level')?.Value;
+    return {
+        src, cleanedName, factions: creatureFactions, level, name: item.Name
+    };
 }
