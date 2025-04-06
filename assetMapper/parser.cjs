@@ -360,9 +360,9 @@ function formatDirectory(qudDir) {
 
 function qudDirToQudzooDir(qudDir, item) {
     let name = item.Name ? item.Name : item.Command;
-    name = name.replaceAll('/', '');
-    name = name.replaceAll("'", '&#x27;');
-    name = name.replaceAll(':', '');
+    name = name.replace(/\//g, '');
+    name = name.replace(/'/g, '&#x27;');
+    name = name.replace(/:/g, '');
     let formattedDir = formatDirectory(qudDir);
     return formattedDir.substring(0, formattedDir.indexOf('\\') + 1) + `${name}.png`;
 }
@@ -531,12 +531,12 @@ function getTilePath(item) {
     if (builder) {
         src = builder.Tiles.split(',')[0];
     }
-    let dir = qudDirToQudzooDir(src, item).replaceAll('\\', '/');
+    let dir = qudDirToQudzooDir(src, item).replace(/\\/g, '/');
     return '/images/Textures/' + dir;
 }
 
 function oldMarkupToNewMarkup(displayName) {
-    displayName = displayName.replaceAll("&amp;", '&');
+    displayName = displayName.replace(/&amp;/g, '&');
     let i = 0;
     let firstChange = true;
     let newName = [];
@@ -604,11 +604,18 @@ exports.filterToPreviews = function (objects, factions) {
         if (getTag(item, 'Projectile')) continue; // Skip if a projectile
         if (getTag(item, 'NaturalGear')) continue; // Skip if natural gear
         if (getTag(item, 'QuestItem')) continue; // Skip if quest item
+        if (getTag(item, 'WeaponUnarmed')) continue; // Skip if unarmed weapon (cybernetic fist)
+        if (item.Name.includes('Chiliad')) continue; // Skip if chiliad creature
+        if (item.Name.includes('Golem')) continue; // Skip if golem
+        if (item.Name.includes('Clue_')) continue; // Skip if bey lah clue
         if (!isCreature && !isArmor && !isMeleeWeapon) continue;
 
         if (isArmor) { ret.armor.push(buildArmorPreview(item)) }
         else if (isMeleeWeapon) { ret.meleeWeapons.push(buildMeleePreview(item)) }
-        else if (isCreature) { ret.creatures.push(buildCreaturePreview(item, factions)) }
+        else if (isCreature) { 
+            let creature = buildCreaturePreview(item, factions);
+            if (creature) ret.creatures.push(creature);
+        }
     }
     return ret;
 }
@@ -616,6 +623,7 @@ exports.filterToPreviews = function (objects, factions) {
 function buildArmorPreview(item) {
     let src = getTilePath(item);
     let fullName = buildFullName(item);
+    fullName = oldMarkupToNewMarkup(fullName);
     let cleanedName = unformatDisplayName(fullName);
     let armorPart = getPart(item, 'Armor');
     let tier = getTag(item, 'Tier')?.Value;
@@ -627,6 +635,7 @@ function buildArmorPreview(item) {
 function buildMeleePreview(item) {
     let src = getTilePath(item);
     let fullName = buildFullName(item);
+    fullName = oldMarkupToNewMarkup(fullName);
     let cleanedName = unformatDisplayName(fullName);
     let weaponPart = getPart(item, 'MeleeWeapon');
     let tier = getTag(item, 'Tier')?.Value;
@@ -638,6 +647,8 @@ function buildMeleePreview(item) {
 function buildCreaturePreview(item, factions) {
     let src = getTilePath(item);
     let fullName = buildFullName(item);
+    if (fullName[0] === '[') return undefined;
+    fullName = oldMarkupToNewMarkup(fullName);
     let cleanedName = unformatDisplayName(fullName);
     let brain = getPart(item, 'Brain');
     let creatureFactions = brain.Factions.split(',').reduce((prev, item) => {
