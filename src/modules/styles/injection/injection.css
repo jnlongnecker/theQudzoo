@@ -7,6 +7,7 @@
 }
 
 .injected {
+    white-space: pre;
     vertical-align: top;
     font-family: var(--qud-font);
     font-weight: 700;

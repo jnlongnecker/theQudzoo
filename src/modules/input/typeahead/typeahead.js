@@ -30,13 +30,7 @@ export default class Typeahead extends LightningElement {
 
     updateFilter(event) {
         this.value = event.target.value;
-        let metaValue = this.value.toLowerCase();
-        this.filteredOptions = this.options.filter(option => {
-            let primaryHit = option.item.primary.includes(this.value);
-            let secondaryHit = option.item.secondary.includes(this.value);
-            let metaHit = option.item.metadata.includes(metaValue);
-            return primaryHit || secondaryHit || metaHit;
-        });
+        this.dispatchEvent(new CustomEvent('filterchange', { detail: this.value }));
     }
 
     handleSelection(event) {

@@ -1,6 +1,6 @@
 import {
     getAuthenticatedUser, getBuilds, isLoggedIn, getMutations,
-    getCybernetics, getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems
+    getCybernetics, getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems, getPreviews
 } from './getRequests.js';
 
 import { attemptLogin, attemptRegister, logout, saveBuild, likeBuild, compileSugar, compileShaders } from './postRequests.js';
@@ -9,7 +9,7 @@ import { deleteBuilds } from "./deleteRequests.js";
 
 export {
     getAuthenticatedUser, getBuilds, isLoggedIn, getMutations, getCybernetics, getCastes, getCallings,
-    getAttributes, getSkills, getStats, getCreatures, getItems,
+    getAttributes, getSkills, getStats, getCreatures, getItems, getPreviews,
 
     attemptLogin, attemptRegister, logout, saveBuild, likeBuild, compileSugar, compileShaders,
 

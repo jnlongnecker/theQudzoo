@@ -4,7 +4,7 @@
             <combat-stat-spread creature={creature}></combat-stat-spread>
         </div>
         <input-typeahead placeholder="Search for a creature" name="creature-picker" options={creatureOptions}
-            onselected={handleSelection}>
+            onselected={handleSelection} onfilterchange={handleFilterChange}>
         </input-typeahead>
     </div>
 </template>

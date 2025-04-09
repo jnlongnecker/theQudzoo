@@ -5,6 +5,7 @@
 */
 
 const fs = require("fs");
+const qudData = require("./qudData.cjs");
 const codeManager = require("./buildCodes.cjs");
 const rootDir = __dirname.substring(0, __dirname.indexOf("src") - 1);
 const subsets = ["quests", "novice"];
@@ -30,6 +31,33 @@ exports.processBuildRequest = async (res, req, method) => {
         }
         else if (method == "serialize") {
             response = codeManager.jsonToCode(decodeURIComponent(val));
+        }
+        return response;
+    }
+    catch (e) {
+        res.status(500);
+        console.log(e);
+        return { error: e };
+    }
+}
+
+exports.processPreviewRequest = async (res, req) => {
+    try {
+        let response;
+        let val = req.params.info;
+        switch (val) {
+            case 'creatures':
+                response = qudData.getCreaturePreviews(req, res);
+                break;
+            case 'melee':
+                response = qudData.getMeleePreviews(req, res);
+                break;
+            case 'armor':
+                response = qudData.getArmorPreviews(req, res);
+                break;
+            default:
+                res.status(400);
+                return { error: "Invalid parameters supplied." };
         }
         return response;
     }
@@ -72,6 +100,8 @@ exports.processRequest = async (res, req) => {
                 response = await getData(path);
                 res.status(200);
                 return response;
+            case "previews":
+                response = qudData.getCreaturePreviews
             default:
                 res.status(400);
                 return { error: "Invalid parameters supplied." };

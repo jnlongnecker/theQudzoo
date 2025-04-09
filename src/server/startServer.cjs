@@ -37,6 +37,10 @@ app.get("/api/codes/parse/:info", (req, res) => {
     res.set("Cache-control", `public, max-age=${longCache}`);
     api.processBuildRequest(res, req, 'parse').then(result => res.json(result));
 });
+app.get("/api/previews/:info", (req, res) => {
+    // res.set("Cache-control", `public, max-age=${longCache}`);
+    api.processPreviewRequest(res, req).then(result => res.json(result));
+});
 app.post("/db/login", (req, res) => {
     return dbs.validateLogin(req, res).then(result => {
         if (!result.success) { res.json(result); return; }
