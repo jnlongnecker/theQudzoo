@@ -17,29 +17,29 @@
                 <span>Level {creature.level}</span>
                 <div class="dot-divider"></div>
                 <span>
-                    <img class="inline-icon" src="/1/asset/s/latest/public/assets/images/statImages/hitpoints.png">
+                    <img class="inline-icon" src="/assets/images/Textures/Text/hitpoints.png">
                     {creature.stats.HP.value}
                 </span>
             </div>
             <hr class="section-hr">
             <div class="resistances">
                 <div class="attribute-container willpower">
-                    <span class="value">{creature.resistances.acid}</span>
+                    <span class="value">{creature.stats.acidRes}</span>
                     <hr class="stat-hr">
                     <span class="name">acid res</span>
                 </div>
                 <div class="attribute-container agility">
-                    <span class="value">{creature.resistances.electric}</span>
+                    <span class="value">{creature.stats.elecRes}</span>
                     <hr class="stat-hr">
                     <span class="name">elec res</span>
                 </div>
                 <div class="attribute-container toughness">
-                    <span class="value">{creature.resistances.heat}</span>
+                    <span class="value">{creature.stats.heatRes}</span>
                     <hr class="stat-hr">
                     <span class="name">heat res</span>
                 </div>
                 <div class="attribute-container intelligence">
-                    <span class="value">{creature.resistances.cold}</span>
+                    <span class="value">{creature.stats.coldRes}</span>
                     <hr class="stat-hr">
                     <span class="name">cold res</span>
                 </div>

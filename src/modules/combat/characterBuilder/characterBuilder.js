@@ -1,5 +1,5 @@
 import { api, LightningElement } from "lwc";
-import { getCreatures } from "c/api";
+import { getDetails } from "c/api";
 import { LevelUpAction } from "combat/actions";
 
 export default class CharacterBuilder extends LightningElement {
@@ -27,9 +27,9 @@ export default class CharacterBuilder extends LightningElement {
     }
 
     async pullCreatures() {
-        let creatures = await getCreatures();
+        let starts = await getDetails('', 'starts');
 
-        this._character = creatures.filter(creatureData => creatureData.name.includes('Player'))[0];
+        this._character = starts.BaseHumanoid;
         this.dispatchEvent(new CustomEvent('charchange', { detail: this.character }));
     }
 

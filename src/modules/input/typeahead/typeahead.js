@@ -16,7 +16,11 @@ export default class Typeahead extends LightningElement {
     }
 
     set options(value) {
-        this._options = value.map((item, idx) => {
+        if (!value || !value.length) {
+            this.filteredOptions = [];
+            return;
+        }
+        this.filteredOptions = value.map((item, idx) => {
             return {
                 id: idx,
                 item
@@ -30,13 +34,14 @@ export default class Typeahead extends LightningElement {
 
     updateFilter(event) {
         this.value = event.target.value;
-        this.dispatchEvent(new CustomEvent('filterchange', { detail: this.value }));
+        this.dispatchEvent(new CustomEvent('filterchange', { detail: event.target.value }));
     }
 
     handleSelection(event) {
         this.value = event.detail.primary;
         this.unfocused = true;
         this.dispatchEvent(new CustomEvent('selected', { detail: event.detail }));
+        this.dispatchEvent(new CustomEvent('filterchange', { detail: this.value }));
     }
 
     handleFocus() {

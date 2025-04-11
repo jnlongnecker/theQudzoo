@@ -42,6 +42,10 @@ async function getPreviews(params, data) {
     return await getMiddleware(`/api/previews/${data}?${params}`);
 }
 
+async function getDetails(params, data) {
+    return await getMiddleware(`/api/details/${data}?${params}`);
+}
+
 async function getBuilds(filters) {
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
@@ -94,5 +98,5 @@ async function getStats() {
 
 export {
     getBuilds, getAuthenticatedUser, isLoggedIn, getMutations, getCybernetics,
-    getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems, getPreviews
+    getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems, getPreviews, getDetails
 };

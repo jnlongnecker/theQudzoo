@@ -58,7 +58,7 @@ export default class App extends LightningElement {
             return;
         }
         this.actionLog.updateActionMessage(action.id);
-        this.forceRerenderCreature(creature);
+        this.creatureWrapper = this.forceRerenderWrapper(creature);
     }
 
     handleRedoAction(event) {
@@ -71,7 +71,7 @@ export default class App extends LightningElement {
             return;
         }
         this.actionLog.updateActionMessage(action.id);
-        this.forceRerenderCreature(creature);
+        this.creatureWrapper = this.forceRerenderWrapper(creature);
     }
 
     handleActionGeneral(event) {
@@ -84,7 +84,7 @@ export default class App extends LightningElement {
             return;
         }
         this.sendActionToLog(action);
-        this.forceRerenderCreature(creature);
+        this.creatureWrapper = this.forceRerenderWrapper(creature);
     }
 
     handleActionLevelReset() {

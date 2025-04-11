@@ -38,7 +38,16 @@ function writeObjectPreviews() {
     fs.writeFileSync(`${outputDirectory}creaturePreviews.json`, JSON.stringify(previews.creatures, undefined, 4), { flag: 'w' });
 }
 
-function writeObjectDetails() { }
+function writeObjectDetails() {
+    let objects = readToObject(...loadOrder);
+    let details = parser.filterToDetails(objects);
+    let starts = readToObject('StartingBodies.xml');
+    let startsDetails = parser.filterToDetails(starts);
+    fs.writeFileSync(`${outputDirectory}armorDetails.json`, JSON.stringify(details.armor, undefined, 4), { flag: 'w' });
+    fs.writeFileSync(`${outputDirectory}meleeDetails.json`, JSON.stringify(details.meleeWeapons, undefined, 4), { flag: 'w' });
+    fs.writeFileSync(`${outputDirectory}creatureDetails.json`, JSON.stringify(details.creatures, undefined, 4), { flag: 'w' });
+    fs.writeFileSync(`${outputDirectory}startsDetails.json`, JSON.stringify(startsDetails.creatures, undefined, 4), { flag: 'w' });
+}
 
 function writeColorMetadata() {
     let colorShaders = readToObject('Colors.xml');

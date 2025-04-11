@@ -3,7 +3,7 @@
         <div class="creature-container" if:true={creature}>
             <combat-stat-spread creature={creature}></combat-stat-spread>
         </div>
-        <input-typeahead placeholder="Search for a creature" name="creature-picker" options={creatureOptions}
+        <input-typeahead placeholder="Search for a creature" name="creature-picker" options={creatures}
             onselected={handleSelection} onfilterchange={handleFilterChange}>
         </input-typeahead>
     </div>

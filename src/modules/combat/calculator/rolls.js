@@ -96,7 +96,7 @@ class DiceRoll {
     diceCount;
     constructor(diceString) {
         let parts = diceString.split('d');
-        this.diceNum = Number(parts[1]);
+        this.diceNum = Number.parseInt(parts[1]);
         this.diceCount = Math.max(1, Number(parts[0]));
         this.averageRoll = ((this.diceNum / 2) + 0.5) * this.diceCount;
     }
@@ -162,15 +162,26 @@ class Roll {
 
     tokenize(rollString) {
         this.tokens = [];
+        let parenStack = [];
         let currToken = '';
-        for (let char of rollString) {
+        for (let i = 0; i < rollString.length; i++) {
+            let char = rollString[i];
             switch (char) {
+                case '(':
+                    parenStack.push(i);
+                    break;
+                case ')':
+                    let idx = parenStack.shift();
+                    currToken += this.evaluate(rollString.substring(idx + 1, i));
+                    break;
                 case ' ':
+                    if (parenStack.length > 0) continue;
                     if (currToken != '') this.addToken(currToken);
                     currToken = '';
                     break;
                 case '+':
                 case '-':
+                    if (parenStack.length > 0) continue;
                     if (currToken != '') {
                         this.addToken(currToken);
                         currToken = '';
@@ -178,6 +189,7 @@ class Roll {
                     this.addToken(char);
                     break;
                 default:
+                    if (parenStack.length > 0) continue;
                     currToken += char;
             }
         }
@@ -195,6 +207,39 @@ class Roll {
         } else {
             this.tokens.push(token);
         }
+    }
+
+    evaluate(diceNumPart) {
+        let num = 0;
+        let numStr = '';
+        let op = '+';
+        let i = 0;
+        while (i < diceNumPart.length) {
+            if (diceNumPart[i] === ' ') { i++; continue; }
+            if (!isNaN(diceNumPart[i])) { numStr += diceNumPart[i++]; continue; }
+            switch (diceNumPart[i]) {
+                case '+':
+                case '-':
+                case '*':
+                case '/':
+                    switch (op) {
+                        case '+': num += Number.parseInt(numStr); break;
+                        case '-': num -= Number.parseInt(numStr); break;
+                        case '*': num *= Number.parseInt(numStr); break;
+                        case '/': num /= Number.parseInt(numStr); break;
+                    }
+                    op = diceNumPart[i++];
+                    numStr = '';
+                    break;
+            }
+        }
+        switch (op) {
+            case '+': num += Number.parseInt(numStr); break;
+            case '-': num -= Number.parseInt(numStr); break;
+            case '*': num *= Number.parseInt(numStr); break;
+            case '/': num /= Number.parseInt(numStr); break;
+        }
+        return num;
     }
 }
 

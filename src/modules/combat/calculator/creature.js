@@ -1,6 +1,6 @@
-import { ANATOMIES } from "./anatomy";
+import { Anatomy } from "./anatomy";
 import { SkillAddedEvent } from "./events";
-import { random } from "./rolls";
+import { random, Roll } from "./rolls";
 import { Skills } from "./skillParts/module";
 import { GameObject } from "./gameObject";
 
@@ -16,7 +16,14 @@ class Stats {
     intelligence;
     willpower;
     ego;
+    heatRes;
+    coldRes;
+    acidRes;
+    elecRes;
+    poisonRes;
+
     statShifters;
+    sValues = {};
 
     get Strength() {
         let shift = this.getShift('strength');
@@ -105,7 +112,8 @@ class Stats {
 
     constructor(
         av = 0, dv = 0, hp = 0, qn = 100, ma = 0,
-        strength = 16, agility = 16, toughness = 16, intelligence = 16, willpower = 16, ego = 16) {
+        strength = 16, agility = 16, toughness = 16, intelligence = 16, willpower = 16, ego = 16,
+        heatRes = 0, coldRes = 0, acidRes = 0, elecRes = 0, poisonRes = 0) {
 
         this.hp = 0;
         this.ma = ma;
@@ -118,8 +126,101 @@ class Stats {
         this.intelligence = intelligence;
         this.willpower = willpower;
         this.ego = ego;
+        this.heatRes = heatRes;
+        this.coldRes = coldRes;
+        this.acidRes = acidRes;
+        this.elecRes = elecRes;
+        this.poisonRes = poisonRes;
         this.statShifters = [];
         this.addShifter('hp', hp);
+    }
+
+    static fromObject(obj) {
+        let sValues = {};
+        let av, dv, hp, qn, ma, strength, agility, toughness, intelligence, willpower, ego, heatRes, coldRes, acidRes, elecRes;
+        let statArr = obj.stats;
+        for (let tag of statArr) {
+            switch (tag.Name) {
+                case 'Hitpoints':
+                    hp = Number.parseInt(tag.Value);
+                    sValues.hp = tag.sValue;
+                    break;
+                case 'Strength':
+                    strength = Number.parseInt(tag.Value);
+                    sValues.strength = tag.sValue;
+                    break;
+                case 'Agility':
+                    agility = Number.parseInt(tag.Value);
+                    sValues.agility = tag.sValue;
+                    break;
+                case 'Toughness':
+                    toughness = Number.parseInt(tag.Value);
+                    sValues.toughness = tag.sValue;
+                    break;
+                case 'Willpower':
+                    willpower = Number.parseInt(tag.Value);
+                    sValues.willpower = tag.sValue;
+                    break;
+                case 'Intelligence':
+                    intelligence = Number.parseInt(tag.Value);
+                    sValues.intelligence = tag.sValue;
+                    break;
+                case 'Ego':
+                    ego = Number.parseInt(tag.Value);
+                    sValues.ego = tag.sValue;
+                    break;
+                case 'Speed':
+                    qn = Number.parseInt(tag.Value);
+                    sValues.qn = tag.sValue;
+                    break;
+                case 'AV':
+                    av = Number.parseInt(tag.Value);
+                    sValues.av = tag.sValue;
+                    break;
+                case 'DV':
+                    dv = Number.parseInt(tag.Value);
+                    sValues.dv = tag.sValue;
+                    break;
+                case 'MA':
+                    ma = Number.parseInt(tag.Value);
+                    sValues.ma = tag.sValue;
+                    break;
+                case 'HeatResistance':
+                    heatRes = Number.parseInt(tag.Value);
+                    break;
+                case 'ColdResistance':
+                    coldRes = Number.parseInt(tag.Value);
+                    break;
+                case 'ElectricResistance':
+                    elecRes = Number.parseInt(tag.Value);
+                    break;
+                case 'AcidResistance':
+                    acidRes = Number.parseInt(tag.Value);
+                    break;
+            }
+        }
+        let stats = new Stats(av, dv, hp, qn, ma, strength, agility, toughness, intelligence, willpower, ego, heatRes, coldRes, acidRes, elecRes, 0);
+        stats.sValues = sValues;
+        return stats;
+    }
+
+    levelTier(level) {
+        return Math.floor(level / 5) + 1
+    }
+
+    rollSValue(stat, level) {
+        let levelTier = this.levelTier(level);
+        let sValue = this.sValues[stat];
+        if (!sValue) return;
+
+        let rolls = sValue.split(',');
+        let rollString = '';
+        for (let roll of rolls) {
+            roll = roll.replace(/t/, levelTier);
+            rollString += rollString.length ? `+${roll}` : roll;
+        }
+        let roll = new Roll(rollString);
+        this.setAttribute(stat, Math.floor(roll.getAverage()));
     }
 
     addShifter(stat, shift) {
@@ -144,6 +245,17 @@ class Stats {
             case 'intelligence': this.intelligence += amount; break;
             case 'willpower': this.willpower += amount; break;
             case 'ego': this.ego += amount; break;
+        }
+    }
+
+    setAttribute(attributeName, value) {
+        switch (attributeName) {
+            case 'strength': this.strength = value; break;
+            case 'agility': this.agility = value; break;
+            case 'toughness': this.toughness = value; break;
+            case 'intelligence': this.intelligence = value; break;
+            case 'willpower': this.willpower = value; break;
+            case 'ego': this.ego = value; break;
         }
     }
 
@@ -208,9 +320,7 @@ class Creature extends GameObject {
 
     name;
     token;
-    faction;
     level;
-    resistances;
     stats;
     mutations;
     cybernetics;
@@ -229,25 +339,23 @@ class Creature extends GameObject {
 
     static fromObject(obj, isPlayer = false) {
         let creature = new Creature();
-        creature.name = obj.name;
-        creature.token = obj.token;
-        creature.faction = obj.faction;
-        creature.level = obj.level;
-        creature.stats = new Stats(obj.av, obj.dv, obj.hp, obj.qn, obj.ma,
-            obj.attributes.strength, obj.attributes.agility, obj.attributes.toughness,
-            obj.attributes.intelligence, obj.attributes.willpower, obj.attributes.ego,
-        );
-        if (isPlayer) creature.stats.recalculateHp(0, obj.level);
-        creature.isKin = obj.isKin;
-        creature.addTag({ name: 'PrimaryLimbType', value: 4 });
-        creature.anatomy = ANATOMIES[obj.anatomy.toUpperCase()];
+        creature.name = obj.cleanedName;
+        creature.token = obj.src;
+        creature.level = obj.stats.find(tag => tag.Name === 'Level')?.Value;
+        creature.stats = Stats.fromObject(obj);
+        if (isPlayer) creature.stats.recalculateHp(0, creature.level);
+        else creature.rollStats();
+        creature.isKin = undefined !== obj.stats.find(tag => tag.Name === 'Genotype' && tag.Value === 'True Kin');
+        for (let tag of obj.tags) {
+            creature.addTag(tag);
+        }
+        creature.anatomy = Anatomy.fromPart(obj.parts.find(part => part.Name === 'Body'));
         creature.anatomy.attach(creature);
         creature.anatomy.setDefaultPrimaryLimb();
-        creature.resistances = obj.resistances
 
         creature.setDefaultExpenditure();
-        creature.minLevel = obj.level;
-        for (let i = 1; i <= obj.level; i++) { creature.hpFromLevelUpRolls.push(0); }
+        creature.minLevel = creature.level;
+        for (let i = 1; i <= creature.level; i++) { creature.hpFromLevelUpRolls.push(0); }
         if (obj.skills) {
             creature.attachPart(new Skills());
             for (let skill in obj.skills) { creature.addSkill(skill); }
@@ -256,9 +364,15 @@ class Creature extends GameObject {
         return creature;
     }
 
-    addSkill(skillName) {
-        this.skills[skillName] = true;
-        this.fire(new SkillAddedEvent(skillName));
+    addSkill(skillObj) {
+        this.skills[skillObj.Name] = true;
+        this.fire(new SkillAddedEvent(skillObj.Name));
+    }
+
+    rollStats() {
+        for (let key in this.stats.sValues) {
+            this.stats.rollSValue(key, this.level);
+        }
     }
 
     levelUp() {
@@ -294,6 +408,7 @@ class Creature extends GameObject {
         }
         this.stats.attributeUp(attribute, shift);
         this.stats.recalculateHp(this.hpFromLevelUpRolls, this.level);
+        console.log('points spent');
     }
 
     refundPoints(points, attribute, shift) {

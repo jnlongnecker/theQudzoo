@@ -6,6 +6,7 @@
 
 const fs = require("fs");
 const qudData = require("./qudData.cjs");
+const startsDetails = require("../api/data/details/startsDetails.json");
 const codeManager = require("./buildCodes.cjs");
 const rootDir = __dirname.substring(0, __dirname.indexOf("src") - 1);
 const subsets = ["quests", "novice"];
@@ -54,6 +55,36 @@ exports.processPreviewRequest = async (res, req) => {
                 break;
             case 'armor':
                 response = qudData.getArmorPreviews(req, res);
+                break;
+            default:
+                res.status(400);
+                return { error: "Invalid parameters supplied." };
+        }
+        return response;
+    }
+    catch (e) {
+        res.status(500);
+        console.log(e);
+        return { error: e };
+    }
+}
+
+exports.processDetailsRequest = async (res, req) => {
+    try {
+        let response;
+        let val = req.params.info;
+        switch (val) {
+            case 'creatures':
+                response = qudData.getCreatureDetails(req, res);
+                break;
+            case 'melee':
+                response = qudData.getMeleeDetails(req, res);
+                break;
+            case 'armor':
+                response = qudData.getArmorDetails(req, res);
+                break;
+            case 'starts':
+                response = startsDetails;
                 break;
             default:
                 res.status(400);

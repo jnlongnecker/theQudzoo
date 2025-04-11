@@ -1,9 +1,9 @@
 import { LightningElement, api } from "lwc";
-import { getPreviews } from "c/api";
+import { getPreviews, getDetails } from "c/api";
 
 export default class CreaturePicker extends LightningElement {
 
-    creatures;
+    creatures = [];
     selectedCreature;
     creatureOptions = [];
 
@@ -26,20 +26,24 @@ export default class CreaturePicker extends LightningElement {
     }
 
     async pullCreatures(term) {
-        if (!term || term.length < 3) this.creatures = [];
+        if (!term || term.length < 3) { this.creatures = []; return; }
         let query = `term=${term}`;
         this.creatures = (await getPreviews(query, 'creatures')).result.map(result => {
             return {
                 primary: result.item.cleanedName,
                 secondary: result.item.factions,
-                src: result.item.src
+                src: result.item.src,
+                name: result.item.name,
             }
         });
     }
 
-    handleSelection(event) {
-        let idx = event.detail.id;
-        this.dispatchEvent(new CustomEvent('charchange', { detail: this.creatures[idx] }));
+    async handleSelection(event) {
+        let creatureName = event.detail.name;
+        let query = `name=${creatureName}`;
+        let creatureDetails = (await getDetails(query, 'creatures')).result;
+        console.log(creatureDetails);
+        this.dispatchEvent(new CustomEvent('charchange', { detail: creatureDetails }));
     }
 
     handleFilterChange(event) {

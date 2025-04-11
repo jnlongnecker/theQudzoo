@@ -180,6 +180,11 @@ export class Anatomy {
     body;
     equipmentList = [];
 
+    static fromPart(part) {
+        let anatomyType = part.Anatomy;
+        return Anatomy.humanoid();
+    }
+
     attach(host) {
         this.body.attachTo(host);
         host.attachPart(new AttackerPart());

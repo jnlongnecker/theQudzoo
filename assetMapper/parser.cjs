@@ -109,6 +109,9 @@ function stripQuotes(text) {
 exports.objectFromXMLObject = function (xmlObject) {
     let parts = [];
     let tags = [];
+    let skills = [];
+    let stats = [];
+    let mutations = [];
     let other = [];
 
     // For each child, put it in its appropriate place
@@ -116,16 +119,19 @@ exports.objectFromXMLObject = function (xmlObject) {
         let obj = toObject(childTag);
         if (childTag.name === 'part') parts.push(obj);
         else if (childTag.name === 'tag') tags.push(obj);
+        else if (childTag.name === 'stat') stats.push(obj);
+        else if (childTag.name === 'skill') skills.push(obj);
+        else if (childTag.name === 'mutation') mutations.push(obj);
         else {
             obj.tagName = childTag.name;
             other.push(obj);
         }
     }
-    return toObject(xmlObject, parts, tags, other);
+    return toObject(xmlObject, parts, tags, stats, skills, mutations, other);
 }
 
-function toObject(xmlTagObject, parts, tags, other) {
-    let obj = { parts, tags, other };
+function toObject(xmlTagObject, parts, tags, stats, skills, mutations, other) {
+    let obj = { parts, tags, stats, skills, mutations, other };
 
     // It's odd for an XML tag to have no attributes in the files
     // This typically only happens to plain text, but log it just in case
@@ -234,6 +240,9 @@ function inheritFromParent(item, allObjects) {
         mergeParts(item.parts, parent.parts);
         mergeTags(item.tags, parent.tags);
         mergeParts(item.other, parent.other);
+        mergeParts(item.stats, parent.stats);
+        mergeParts(item.skills, parent.skills);
+        mergeParts(item.mutations, parent.mutations);
     }
     item.clean = true;
 }
@@ -532,7 +541,7 @@ function getTilePath(item) {
         src = builder.Tiles.split(',')[0];
     }
     let dir = qudDirToQudzooDir(src, item).replace(/\\/g, '/');
-    return '/images/Textures/' + dir;
+    return '/assets/images/Textures/' + dir;
 }
 
 function oldMarkupToNewMarkup(displayName) {
@@ -612,7 +621,7 @@ exports.filterToPreviews = function (objects, factions) {
 
         if (isArmor) { ret.armor.push(buildArmorPreview(item)) }
         else if (isMeleeWeapon) { ret.meleeWeapons.push(buildMeleePreview(item)) }
-        else if (isCreature) { 
+        else if (isCreature) {
             let creature = buildCreaturePreview(item, factions);
             if (creature) ret.creatures.push(creature);
         }
@@ -660,4 +669,41 @@ function buildCreaturePreview(item, factions) {
     return {
         src, cleanedName, factions: creatureFactions, level, name: item.Name
     };
+}
+
+/* 
+
+    ============================== END OBJECT PREVIEWS PROCESSING =============================
+
+
+    ============================== OBJECT DETAILS PROCESSING =============================
+    
+*/
+
+exports.filterToDetails = function (objects) {
+    let ret = { meleeWeapons: {}, armor: {}, creatures: {} };
+    for (let key in objects) {
+        let item = objects[key];
+
+        // We need the full part/tag list from the parent hierarchy, so pull that now
+        inheritFromParent(item, objects);
+        let isCreature = getPart(item, 'Brain');
+        let isArmor = getPart(item, 'Armor');
+        let isMeleeWeapon = getTag(item, 'MeleeWeapon')?.Value === '1';
+        let renderPart = getPart(item, 'Render');
+        if (getTag(item, 'BaseObject')) continue; // Skip if a base object
+        if (!renderPart || !renderPart.Tile) continue; // Skip if it has no tile
+        if (!isCreature && !isArmor && !isMeleeWeapon) continue;
+        let src = getTilePath(item);
+        let fullName = buildFullName(item);
+        fullName = oldMarkupToNewMarkup(fullName);
+        let cleanedName = unformatDisplayName(fullName);
+        item.src = src;
+        item.cleanedName = cleanedName;
+
+        if (isArmor) { ret.armor[item.Name] = item; }
+        else if (isMeleeWeapon) { ret.meleeWeapons[item.Name] = item; }
+        else if (isCreature) { ret.creatures[item.Name] = item; }
+    }
+    return ret;
 }

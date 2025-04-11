@@ -1,0 +1,587 @@
+{
+    "BaseHumanoid": {
+        "parts": [
+            {
+                "Name": "Render",
+                "DisplayName": "Mutant",
+                "RenderString": "h",
+                "DetailColor": "w",
+                "Tile": "Assets_Content_Textures_Creatures_sw_farmer.bmp",
+                "RenderLayer": "10",
+                "RenderIfDark": "false"
+            },
+            {
+                "Name": "Body",
+                "Anatomy": "Humanoid"
+            },
+            {
+                "Name": "Physics",
+                "Organic": "true",
+                "Takeable": "false",
+                "Solid": "false",
+                "Weight": "201",
+                "Category": "Creatures",
+                "IsReal": "true"
+            },
+            {
+                "Name": "Brain",
+                "Factions": "Humanoids-100"
+            },
+            {
+                "Name": "Combat"
+            },
+            {
+                "Name": "Experience"
+            },
+            {
+                "Name": "Inventory"
+            },
+            {
+                "Name": "Mutations"
+            },
+            {
+                "Name": "Skills"
+            },
+            {
+                "Name": "ActivatedAbilities"
+            },
+            {
+                "Name": "Leveler"
+            },
+            {
+                "Name": "MeleeWeapon",
+                "BaseDamage": "1d2",
+                "Stat": "Strength",
+                "Skill": "Cudgel"
+            },
+            {
+                "Name": "Commerce",
+                "Value": "0.01"
+            },
+            {
+                "Name": "Description",
+                "Short": "A hideous specimen."
+            },
+            {
+                "Name": "BurnToAshesIfOrganic"
+            }
+        ],
+        "tags": [
+            {
+                "Name": "Humanoid"
+            },
+            {
+                "Name": "PrimaryLimbType",
+                "Value": "Hand"
+            },
+            {
+                "Name": "BodyDisplayName",
+                "Value": "Humanoid"
+            },
+            {
+                "Name": "OverlayColor",
+                "Value": "&amp;G^k"
+            },
+            {
+                "Name": "Role",
+                "Value": "Unspecified"
+            },
+            {
+                "Name": "NeverStack"
+            },
+            {
+                "Name": "Creature"
+            },
+            {
+                "Name": "Category",
+                "Value": "object"
+            }
+        ],
+        "stats": [
+            {
+                "Name": "Strength",
+                "Value": "10",
+                "ShortName": "ST",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Agility",
+                "Value": "10",
+                "ShortName": "AG",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Toughness",
+                "Value": "10",
+                "ShortName": "TO",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Intelligence",
+                "Value": "10",
+                "ShortName": "IN",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Willpower",
+                "Value": "10",
+                "ShortName": "WI",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Ego",
+                "Value": "10",
+                "ShortName": "EG",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Hitpoints",
+                "ShortName": "HP",
+                "Min": "0",
+                "Max": "64000",
+                "Value": "16"
+            },
+            {
+                "Name": "Energy",
+                "ShortName": "EN",
+                "Min": "-100000",
+                "Max": "100000",
+                "Value": "0"
+            },
+            {
+                "Name": "Speed",
+                "ShortName": "SP",
+                "Min": "1",
+                "Max": "10000",
+                "Value": "100"
+            },
+            {
+                "Name": "MoveSpeed",
+                "ShortName": "MS",
+                "Min": "-1800",
+                "Max": "195",
+                "Value": "100"
+            },
+            {
+                "Name": "AV",
+                "ShortName": "AV",
+                "Min": "0",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "DV",
+                "ShortName": "DV",
+                "Min": "-100",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "XP",
+                "ShortName": "XP",
+                "Min": "0",
+                "Max": "2147483647",
+                "Value": "0"
+            },
+            {
+                "Name": "XPValue",
+                "ShortName": "XPValue",
+                "sValue": "*XP",
+                "Min": "0",
+                "Max": "2147483647"
+            },
+            {
+                "Name": "SP",
+                "ShortName": "SP",
+                "Min": "0",
+                "Max": "2147483647",
+                "Value": "0"
+            },
+            {
+                "Name": "MP",
+                "ShortName": "MP",
+                "Min": "0",
+                "Max": "2147483647",
+                "Value": "0"
+            },
+            {
+                "Name": "AP",
+                "ShortName": "AP",
+                "Min": "0",
+                "Max": "2147483647",
+                "Value": "0"
+            },
+            {
+                "Name": "MA",
+                "ShortName": "MA",
+                "Min": "-100",
+                "Max": "2147483647",
+                "Value": "0"
+            },
+            {
+                "Name": "HeatResistance",
+                "ShortName": "HeatResistance",
+                "Min": "-100",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "ColdResistance",
+                "ShortName": "ColdResistance",
+                "Min": "-100",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "ElectricResistance",
+                "ShortName": "ElectricResistance",
+                "Min": "-100",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "AcidResistance",
+                "ShortName": "AcidResistance",
+                "Min": "-100",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "Level",
+                "ShortName": "LV",
+                "Min": "1",
+                "Max": "10000",
+                "Value": "1"
+            }
+        ],
+        "skills": [],
+        "mutations": [],
+        "other": [
+            {
+                "Name": "Bleeds",
+                "Value": "1",
+                "tagName": "intproperty"
+            },
+            {
+                "Name": "Humanoid",
+                "Value": "1",
+                "tagName": "intproperty"
+            },
+            {
+                "Name": "BurnToAshesIfOrganic",
+                "tagName": "removepart"
+            }
+        ],
+        "Name": "BaseHumanoid",
+        "Inherits": "Humanoid",
+        "clean": true,
+        "src": "/assets/images/Textures/Creatures/Apostle.png",
+        "cleanedName": "Mutant"
+    },
+    "BaseTrueKin": {
+        "parts": [
+            {
+                "Name": "Render",
+                "DisplayName": "True Kin",
+                "RenderString": "h",
+                "DetailColor": "w",
+                "Tile": "Assets_Content_Textures_Creatures_sw_farmer.bmp",
+                "RenderLayer": "10",
+                "RenderIfDark": "false"
+            },
+            {
+                "Name": "Body",
+                "Anatomy": "Humanoid"
+            },
+            {
+                "Name": "Physics",
+                "Organic": "true",
+                "Takeable": "false",
+                "Solid": "false",
+                "Weight": "201",
+                "Category": "Creatures",
+                "IsReal": "true"
+            },
+            {
+                "Name": "Brain",
+                "Factions": "Humanoids-100"
+            },
+            {
+                "Name": "Combat"
+            },
+            {
+                "Name": "Experience"
+            },
+            {
+                "Name": "Inventory"
+            },
+            {
+                "Name": "Mutations"
+            },
+            {
+                "Name": "Skills"
+            },
+            {
+                "Name": "ActivatedAbilities"
+            },
+            {
+                "Name": "Leveler"
+            },
+            {
+                "Name": "MeleeWeapon",
+                "BaseDamage": "1d2",
+                "Stat": "Strength",
+                "Skill": "Cudgel"
+            },
+            {
+                "Name": "Commerce",
+                "Value": "0.01"
+            },
+            {
+                "Name": "Description",
+                "Short": "A hideous specimen."
+            },
+            {
+                "Name": "BurnToAshesIfOrganic"
+            }
+        ],
+        "tags": [
+            {
+                "Name": "NonMutant"
+            },
+            {
+                "Name": "Genotype",
+                "Value": "True Kin"
+            },
+            {
+                "Name": "HeroGenotype",
+                "Value": "True Kin"
+            },
+            {
+                "Name": "Humanoid"
+            },
+            {
+                "Name": "PrimaryLimbType",
+                "Value": "Hand"
+            },
+            {
+                "Name": "BodyDisplayName",
+                "Value": "Humanoid"
+            },
+            {
+                "Name": "OverlayColor",
+                "Value": "&amp;G^k"
+            },
+            {
+                "Name": "Role",
+                "Value": "Unspecified"
+            },
+            {
+                "Name": "NeverStack"
+            },
+            {
+                "Name": "Creature"
+            },
+            {
+                "Name": "Category",
+                "Value": "object"
+            }
+        ],
+        "stats": [
+            {
+                "Name": "Strength",
+                "Value": "12",
+                "ShortName": "ST",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Agility",
+                "Value": "12",
+                "ShortName": "AG",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Toughness",
+                "Value": "12",
+                "ShortName": "TO",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Intelligence",
+                "Value": "12",
+                "ShortName": "IN",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Willpower",
+                "Value": "12",
+                "ShortName": "WI",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Ego",
+                "Value": "12",
+                "ShortName": "EG",
+                "Min": "1",
+                "Max": "9000"
+            },
+            {
+                "Name": "Hitpoints",
+                "ShortName": "HP",
+                "Min": "0",
+                "Max": "64000",
+                "Value": "16"
+            },
+            {
+                "Name": "Energy",
+                "ShortName": "EN",
+                "Min": "-100000",
+                "Max": "100000",
+                "Value": "0"
+            },
+            {
+                "Name": "Speed",
+                "ShortName": "SP",
+                "Min": "1",
+                "Max": "10000",
+                "Value": "100"
+            },
+            {
+                "Name": "MoveSpeed",
+                "ShortName": "MS",
+                "Min": "-1800",
+                "Max": "195",
+                "Value": "100"
+            },
+            {
+                "Name": "AV",
+                "ShortName": "AV",
+                "Min": "0",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "DV",
+                "ShortName": "DV",
+                "Min": "-100",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "XP",
+                "ShortName": "XP",
+                "Min": "0",
+                "Max": "2147483647",
+                "Value": "0"
+            },
+            {
+                "Name": "XPValue",
+                "ShortName": "XPValue",
+                "sValue": "*XP",
+                "Min": "0",
+                "Max": "2147483647"
+            },
+            {
+                "Name": "SP",
+                "ShortName": "SP",
+                "Min": "0",
+                "Max": "2147483647",
+                "Value": "0"
+            },
+            {
+                "Name": "MP",
+                "ShortName": "MP",
+                "Min": "0",
+                "Max": "2147483647",
+                "Value": "0"
+            },
+            {
+                "Name": "AP",
+                "ShortName": "AP",
+                "Min": "0",
+                "Max": "2147483647",
+                "Value": "0"
+            },
+            {
+                "Name": "MA",
+                "ShortName": "MA",
+                "Min": "-100",
+                "Max": "2147483647",
+                "Value": "0"
+            },
+            {
+                "Name": "HeatResistance",
+                "ShortName": "HeatResistance",
+                "Min": "-100",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "ColdResistance",
+                "ShortName": "ColdResistance",
+                "Min": "-100",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "ElectricResistance",
+                "ShortName": "ElectricResistance",
+                "Min": "-100",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "AcidResistance",
+                "ShortName": "AcidResistance",
+                "Min": "-100",
+                "Max": "100",
+                "Value": "0"
+            },
+            {
+                "Name": "Level",
+                "ShortName": "LV",
+                "Min": "1",
+                "Max": "10000",
+                "Value": "1"
+            }
+        ],
+        "skills": [
+            {
+                "Name": "Persuasion_RebukeRobot"
+            }
+        ],
+        "mutations": [],
+        "other": [
+            {
+                "Name": "Bleeds",
+                "Value": "1",
+                "tagName": "intproperty"
+            },
+            {
+                "Name": "Humanoid",
+                "Value": "1",
+                "tagName": "intproperty"
+            },
+            {
+                "Name": "BurnToAshesIfOrganic",
+                "tagName": "removepart"
+            }
+        ],
+        "Name": "BaseTrueKin",
+        "Inherits": "BaseHumanoid",
+        "clean": true,
+        "src": "/assets/images/Textures/Creatures/Horticulturist.png",
+        "cleanedName": "True Kin"
+    }
+}

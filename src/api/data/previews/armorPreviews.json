@@ -1,6 +1,6 @@
 [
     {
-        "src": "/images/Textures/Items/Black Robes.png",
+        "src": "/assets/images/Textures/Items/Black Robes.png",
         "cleanedName": "black robes",
         "tier": "1",
         "armorPart": {
@@ -12,7 +12,7 @@
         "name": "Black Robes"
     },
     {
-        "src": "/images/Textures/Items/Ash-Stained Robes.png",
+        "src": "/assets/images/Textures/Items/Ash-Stained Robes.png",
         "cleanedName": "ash-stained robes",
         "tier": "1",
         "armorPart": {
@@ -24,7 +24,7 @@
         "name": "Ash-Stained Robes"
     },
     {
-        "src": "/images/Textures/Items/Furs.png",
+        "src": "/assets/images/Textures/Items/Furs.png",
         "cleanedName": "furs",
         "tier": "1",
         "armorPart": {
@@ -36,7 +36,7 @@
         "name": "Furs"
     },
     {
-        "src": "/images/Textures/Items/Woven Tunic.png",
+        "src": "/assets/images/Textures/Items/Woven Tunic.png",
         "cleanedName": "woven tunic",
         "tier": "1",
         "armorPart": {
@@ -48,7 +48,7 @@
         "name": "Woven Tunic"
     },
     {
-        "src": "/images/Textures/Items/Cloth Robe.png",
+        "src": "/assets/images/Textures/Items/Cloth Robe.png",
         "cleanedName": "cloth robe",
         "tier": "1",
         "armorPart": {
@@ -60,7 +60,7 @@
         "name": "Cloth Robe"
     },
     {
-        "src": "/images/Textures/Items/Wool Kilt.png",
+        "src": "/assets/images/Textures/Items/Wool Kilt.png",
         "cleanedName": "wool kilt",
         "tier": "1",
         "armorPart": {
@@ -72,7 +72,7 @@
         "name": "Wool Kilt"
     },
     {
-        "src": "/images/Textures/Items/Crude Toga.png",
+        "src": "/assets/images/Textures/Items/Crude Toga.png",
         "cleanedName": "crude toga",
         "tier": "1",
         "armorPart": {
@@ -84,7 +84,7 @@
         "name": "Crude Toga"
     },
     {
-        "src": "/images/Textures/Items/Filthy Toga.png",
+        "src": "/assets/images/Textures/Items/Filthy Toga.png",
         "cleanedName": "filthy toga",
         "tier": "1",
         "armorPart": {
@@ -96,7 +96,7 @@
         "name": "Filthy Toga"
     },
     {
-        "src": "/images/Textures/Items/Leather Apron.png",
+        "src": "/assets/images/Textures/Items/Leather Apron.png",
         "cleanedName": "leather apron",
         "tier": "1",
         "armorPart": {
@@ -109,7 +109,7 @@
         "name": "Leather Apron"
     },
     {
-        "src": "/images/Textures/Items/Cloth Overalls.png",
+        "src": "/assets/images/Textures/Items/Cloth Overalls.png",
         "cleanedName": "cloth overalls",
         "tier": "1",
         "armorPart": {
@@ -121,7 +121,7 @@
         "name": "Cloth Overalls"
     },
     {
-        "src": "/images/Textures/Items/Bark Armor.png",
+        "src": "/assets/images/Textures/Items/Bark Armor.png",
         "cleanedName": "bark armor",
         "tier": "1",
         "armorPart": {
@@ -133,7 +133,7 @@
         "name": "Bark Armor"
     },
     {
-        "src": "/images/Textures/Items/Leather Armor.png",
+        "src": "/assets/images/Textures/Items/Leather Armor.png",
         "cleanedName": "leather armor",
         "tier": "1",
         "armorPart": {
@@ -145,7 +145,7 @@
         "name": "Leather Armor"
     },
     {
-        "src": "/images/Textures/Items/Vine-Weave Tunic.png",
+        "src": "/assets/images/Textures/Items/Vine-Weave Tunic.png",
         "cleanedName": "vine-weave tunic",
         "tier": "2",
         "armorPart": {
@@ -157,7 +157,7 @@
         "name": "Vine-Weave Tunic"
     },
     {
-        "src": "/images/Textures/Items/Studded Leather Armor.png",
+        "src": "/assets/images/Textures/Items/Studded Leather Armor.png",
         "cleanedName": "studded leather armor",
         "tier": "1",
         "armorPart": {
@@ -169,7 +169,7 @@
         "name": "Studded Leather Armor"
     },
     {
-        "src": "/images/Textures/Items/Pocketed Vest.png",
+        "src": "/assets/images/Textures/Items/Pocketed Vest.png",
         "cleanedName": "pocketed vest",
         "tier": "1",
         "armorPart": {
@@ -182,7 +182,7 @@
         "name": "Pocketed Vest"
     },
     {
-        "src": "/images/Textures/Items/Sooty Smock.png",
+        "src": "/assets/images/Textures/Items/Sooty Smock.png",
         "cleanedName": "sooty smock",
         "tier": "1",
         "armorPart": {
@@ -194,7 +194,7 @@
         "name": "Sooty Smock"
     },
     {
-        "src": "/images/Textures/Items/Slate Frock.png",
+        "src": "/assets/images/Textures/Items/Slate Frock.png",
         "cleanedName": "slate frock",
         "tier": "2",
         "armorPart": {
@@ -206,7 +206,7 @@
         "name": "Slate Frock"
     },
     {
-        "src": "/images/Textures/Items/Umber Frock.png",
+        "src": "/assets/images/Textures/Items/Umber Frock.png",
         "cleanedName": "umber frock",
         "tier": "2",
         "armorPart": {
@@ -218,7 +218,7 @@
         "name": "Umber Frock"
     },
     {
-        "src": "/images/Textures/Items/Ring Mail.png",
+        "src": "/assets/images/Textures/Items/Ring Mail.png",
         "cleanedName": "ring mail",
         "tier": "2",
         "armorPart": {
@@ -230,7 +230,7 @@
         "name": "Ring Mail"
     },
     {
-        "src": "/images/Textures/Items/Chain Mail.png",
+        "src": "/assets/images/Textures/Items/Chain Mail.png",
         "cleanedName": "chain mail",
         "tier": "2",
         "armorPart": {
@@ -242,7 +242,7 @@
         "name": "Chain Mail"
     },
     {
-        "src": "/images/Textures/Items/Steel Plate Mail.png",
+        "src": "/assets/images/Textures/Items/Steel Plate Mail.png",
         "cleanedName": "steel plate mail",
         "tier": "3",
         "armorPart": {
@@ -254,7 +254,7 @@
         "name": "Steel Plate Mail"
     },
     {
-        "src": "/images/Textures/Items/Puma Chitin Vest.png",
+        "src": "/assets/images/Textures/Items/Puma Chitin Vest.png",
         "cleanedName": "puma chitin vest",
         "tier": "3",
         "armorPart": {
@@ -266,7 +266,7 @@
         "name": "Puma Chitin Vest"
     },
     {
-        "src": "/images/Textures/Items/Elastyne Skin Suit.png",
+        "src": "/assets/images/Textures/Items/Elastyne Skin Suit.png",
         "cleanedName": "elastyne skin suit",
         "tier": "3",
         "armorPart": {
@@ -278,7 +278,7 @@
         "name": "Elastyne Skin Suit"
     },
     {
-        "src": "/images/Textures/Items/Patchwork Coat.png",
+        "src": "/assets/images/Textures/Items/Patchwork Coat.png",
         "cleanedName": "patchwork coat",
         "tier": "3",
         "armorPart": {
@@ -291,7 +291,7 @@
         "name": "Patchwork Coat"
     },
     {
-        "src": "/images/Textures/Items/Carbide Plate Armor.png",
+        "src": "/assets/images/Textures/Items/Carbide Plate Armor.png",
         "cleanedName": "carbide plate armor",
         "tier": "4",
         "armorPart": {
@@ -303,7 +303,7 @@
         "name": "Carbide Plate Armor"
     },
     {
-        "src": "/images/Textures/Items/Slate Mantle.png",
+        "src": "/assets/images/Textures/Items/Slate Mantle.png",
         "cleanedName": "slate mantle",
         "tier": "4",
         "armorPart": {
@@ -315,7 +315,7 @@
         "name": "Slate Mantle"
     },
     {
-        "src": "/images/Textures/Items/Flexivest.png",
+        "src": "/assets/images/Textures/Items/Flexivest.png",
         "cleanedName": "flexivest",
         "tier": "4",
         "armorPart": {
@@ -327,7 +327,7 @@
         "name": "Flexivest"
     },
     {
-        "src": "/images/Textures/Items/Rubber Suit.png",
+        "src": "/assets/images/Textures/Items/Rubber Suit.png",
         "cleanedName": "rubber suit",
         "tier": "4",
         "armorPart": {
@@ -340,7 +340,7 @@
         "name": "Rubber Suit"
     },
     {
-        "src": "/images/Textures/Items/Plastifer Jerkin.png",
+        "src": "/assets/images/Textures/Items/Plastifer Jerkin.png",
         "cleanedName": "plastifer jerkin",
         "tier": "4",
         "armorPart": {
@@ -356,7 +356,7 @@
         "name": "Plastifer Jerkin"
     },
     {
-        "src": "/images/Textures/Items/Plastifer Chem Vest.png",
+        "src": "/assets/images/Textures/Items/Plastifer Chem Vest.png",
         "cleanedName": "plastifer chem vest",
         "tier": "4",
         "armorPart": {
@@ -372,7 +372,7 @@
         "name": "Plastifer Chem Vest"
     },
     {
-        "src": "/images/Textures/Items/Recycling Suit.png",
+        "src": "/assets/images/Textures/Items/Recycling Suit.png",
         "cleanedName": "recycling suit",
         "tier": "4",
         "armorPart": {
@@ -384,7 +384,7 @@
         "name": "Recycling Suit"
     },
     {
-        "src": "/images/Textures/Items/Leafy Vest.png",
+        "src": "/assets/images/Textures/Items/Leafy Vest.png",
         "cleanedName": "leafy vest",
         "tier": "4",
         "armorPart": {
@@ -396,7 +396,7 @@
         "name": "Leafy Vest"
     },
     {
-        "src": "/images/Textures/Items/Fullerite Plate Mail.png",
+        "src": "/assets/images/Textures/Items/Fullerite Plate Mail.png",
         "cleanedName": "fullerite plate mail",
         "tier": "5",
         "armorPart": {
@@ -408,7 +408,7 @@
         "name": "Fullerite Plate Mail"
     },
     {
-        "src": "/images/Textures/Items/Fullerite Flake Armor.png",
+        "src": "/assets/images/Textures/Items/Fullerite Flake Armor.png",
         "cleanedName": "fullerite flake armor",
         "tier": "5",
         "armorPart": {
@@ -424,7 +424,7 @@
         "name": "Fullerite Flake Armor"
     },
     {
-        "src": "/images/Textures/Items/Crysteel Shardmail.png",
+        "src": "/assets/images/Textures/Items/Crysteel Shardmail.png",
         "cleanedName": "crysteel shardmail",
         "tier": "6",
         "armorPart": {
@@ -440,7 +440,7 @@
         "name": "Crysteel Shardmail"
     },
     {
-        "src": "/images/Textures/Items/Nanoweave Vest.png",
+        "src": "/assets/images/Textures/Items/Nanoweave Vest.png",
         "cleanedName": "nanoweave vest",
         "tier": "6",
         "armorPart": {
@@ -452,7 +452,7 @@
         "name": "Nanoweave Vest"
     },
     {
-        "src": "/images/Textures/Items/Thermo Cask.png",
+        "src": "/assets/images/Textures/Items/Thermo Cask.png",
         "cleanedName": "thermo cask",
         "tier": "6",
         "armorPart": {
@@ -466,7 +466,7 @@
         "name": "Thermo Cask"
     },
     {
-        "src": "/images/Textures/Items/Gas Tumbler.png",
+        "src": "/assets/images/Textures/Items/Gas Tumbler.png",
         "cleanedName": "gas tumbler",
         "tier": "6",
         "armorPart": {
@@ -478,7 +478,7 @@
         "name": "Gas Tumbler"
     },
     {
-        "src": "/images/Textures/Items/Flawless Crysteel Shardmail.png",
+        "src": "/assets/images/Textures/Items/Flawless Crysteel Shardmail.png",
         "cleanedName": "flawless crysteel shardmail",
         "tier": "7",
         "armorPart": {
@@ -494,7 +494,7 @@
         "name": "Flawless Crysteel Shardmail"
     },
     {
-        "src": "/images/Textures/Items/High-Energy Thermo Cask.png",
+        "src": "/assets/images/Textures/Items/High-Energy Thermo Cask.png",
         "cleanedName": "high-energy thermo cask",
         "tier": "7",
         "armorPart": {
@@ -508,7 +508,7 @@
         "name": "High-Energy Thermo Cask"
     },
     {
-        "src": "/images/Textures/Items/Enigma Cone.png",
+        "src": "/assets/images/Textures/Items/Enigma Cone.png",
         "cleanedName": "enigma cone",
         "tier": "7",
         "armorPart": {
@@ -520,7 +520,7 @@
         "name": "Enigma Cone"
     },
     {
-        "src": "/images/Textures/Items/Zetachrome Lune.png",
+        "src": "/assets/images/Textures/Items/Zetachrome Lune.png",
         "cleanedName": "zetachrome lune",
         "tier": "8",
         "armorPart": {
@@ -536,7 +536,7 @@
         "name": "Zetachrome Lune"
     },
     {
-        "src": "/images/Textures/Items/Quilted Shawl.png",
+        "src": "/assets/images/Textures/Items/Quilted Shawl.png",
         "cleanedName": "quilted shawl",
         "tier": "1",
         "armorPart": {
@@ -549,7 +549,7 @@
         "name": "Quilted Shawl"
     },
     {
-        "src": "/images/Textures/Items/Worn Burnoose.png",
+        "src": "/assets/images/Textures/Items/Worn Burnoose.png",
         "cleanedName": "worn burnoose",
         "tier": "1",
         "armorPart": {
@@ -561,7 +561,7 @@
         "name": "Worn Burnoose"
     },
     {
-        "src": "/images/Textures/Items/Albino Monkey Braid.png",
+        "src": "/assets/images/Textures/Items/Albino Monkey Braid.png",
         "cleanedName": "albino monkey braid",
         "tier": "1",
         "armorPart": {
@@ -573,7 +573,7 @@
         "name": "Albino Monkey Braid"
     },
     {
-        "src": "/images/Textures/Items/Scarlet Shawl.png",
+        "src": "/assets/images/Textures/Items/Scarlet Shawl.png",
         "cleanedName": "scarlet shawl",
         "tier": "1",
         "armorPart": {
@@ -585,7 +585,7 @@
         "name": "Scarlet Shawl"
     },
     {
-        "src": "/images/Textures/Items/Leather Cloak.png",
+        "src": "/assets/images/Textures/Items/Leather Cloak.png",
         "cleanedName": "leather cloak",
         "tier": "2",
         "armorPart": {
@@ -597,7 +597,7 @@
         "name": "Leather Cloak"
     },
     {
-        "src": "/images/Textures/Items/Panther&#x27;s Cloak.png",
+        "src": "/assets/images/Textures/Items/Panther&#x27;s Cloak.png",
         "cleanedName": "panther's cloak",
         "tier": "2",
         "armorPart": {
@@ -609,7 +609,7 @@
         "name": "Panther's Cloak"
     },
     {
-        "src": "/images/Textures/Items/Issachari Banner.png",
+        "src": "/assets/images/Textures/Items/Issachari Banner.png",
         "cleanedName": "Issachari banner",
         "tier": "2",
         "armorPart": {
@@ -621,7 +621,7 @@
         "name": "Issachari Banner"
     },
     {
-        "src": "/images/Textures/Items/Mechanical Wings.png",
+        "src": "/assets/images/Textures/Items/Mechanical Wings.png",
         "cleanedName": "mechanical wings",
         "tier": "2",
         "armorPart": {
@@ -633,7 +633,7 @@
         "name": "Mechanical Wings"
     },
     {
-        "src": "/images/Textures/Items/Nylon Bodypack.png",
+        "src": "/assets/images/Textures/Items/Nylon Bodypack.png",
         "cleanedName": "nylon bodypack",
         "tier": "3",
         "armorPart": {
@@ -646,7 +646,7 @@
         "name": "Nylon Bodypack"
     },
     {
-        "src": "/images/Textures/Items/Grassy Yurtmat.png",
+        "src": "/assets/images/Textures/Items/Grassy Yurtmat.png",
         "cleanedName": "grassy yurtmat",
         "tier": "3",
         "armorPart": {
@@ -658,7 +658,7 @@
         "name": "Grassy Yurtmat"
     },
     {
-        "src": "/images/Textures/Items/Ape Fur Cloak.png",
+        "src": "/assets/images/Textures/Items/Ape Fur Cloak.png",
         "cleanedName": "ape fur cloak",
         "tier": "3",
         "armorPart": {
@@ -671,7 +671,7 @@
         "name": "Ape Fur Cloak"
     },
     {
-        "src": "/images/Textures/Items/Portable Beehive.png",
+        "src": "/assets/images/Textures/Items/Portable Beehive.png",
         "cleanedName": "portable beehive",
         "tier": "3",
         "armorPart": {
@@ -683,7 +683,7 @@
         "name": "Portable Beehive"
     },
     {
-        "src": "/images/Textures/Items/Chrome Mantle.png",
+        "src": "/assets/images/Textures/Items/Chrome Mantle.png",
         "cleanedName": "chrome mantle",
         "tier": "4",
         "armorPart": {
@@ -700,7 +700,7 @@
         "name": "Chrome Mantle"
     },
     {
-        "src": "/images/Textures/Items/Molly Netting.png",
+        "src": "/assets/images/Textures/Items/Molly Netting.png",
         "cleanedName": "molly netting",
         "tier": "4",
         "armorPart": {
@@ -713,7 +713,7 @@
         "name": "Molly Netting"
     },
     {
-        "src": "/images/Textures/Items/Ironweave Cloak.png",
+        "src": "/assets/images/Textures/Items/Ironweave Cloak.png",
         "cleanedName": "ironweave cloak",
         "tier": "4",
         "armorPart": {
@@ -725,7 +725,7 @@
         "name": "Ironweave Cloak"
     },
     {
-        "src": "/images/Textures/Items/Praetorian&#x27;s Cloak.png",
+        "src": "/assets/images/Textures/Items/Praetorian&#x27;s Cloak.png",
         "cleanedName": "Praetorian's cloak",
         "tier": "4",
         "armorPart": {
@@ -737,7 +737,7 @@
         "name": "Praetorian's Cloak"
     },
     {
-        "src": "/images/Textures/Items/Gyrocopter Backpack.png",
+        "src": "/assets/images/Textures/Items/Gyrocopter Backpack.png",
         "cleanedName": "gyrocopter backpack",
         "tier": "5",
         "armorPart": {
@@ -749,7 +749,7 @@
         "name": "Gyrocopter Backpack"
     },
     {
-        "src": "/images/Textures/Items/Helping Hands.png",
+        "src": "/assets/images/Textures/Items/Helping Hands.png",
         "cleanedName": "helping hands",
         "tier": "5",
         "armorPart": {
@@ -761,7 +761,7 @@
         "name": "Helping Hands"
     },
     {
-        "src": "/images/Textures/Items/Banner of the Holy Rhombus.png",
+        "src": "/assets/images/Textures/Items/Banner of the Holy Rhombus.png",
         "cleanedName": "banner of the Holy Rhombus",
         "tier": "5",
         "armorPart": {
@@ -773,7 +773,7 @@
         "name": "Banner of the Holy Rhombus"
     },
     {
-        "src": "/images/Textures/Items/Mercurial Cloak.png",
+        "src": "/assets/images/Textures/Items/Mercurial Cloak.png",
         "cleanedName": "mercurial cloak",
         "tier": "5",
         "armorPart": {
@@ -785,7 +785,7 @@
         "name": "Mercurial Cloak"
     },
     {
-        "src": "/images/Textures/Items/Quartzfur Cloak.png",
+        "src": "/assets/images/Textures/Items/Quartzfur Cloak.png",
         "cleanedName": "quartzfur cloak",
         "tier": "5",
         "armorPart": {
@@ -801,7 +801,7 @@
         "name": "Quartzfur Cloak"
     },
     {
-        "src": "/images/Textures/Items/Strength Exo.png",
+        "src": "/assets/images/Textures/Items/Strength Exo.png",
         "cleanedName": "powered exoskeleton",
         "tier": "6",
         "armorPart": {
@@ -813,7 +813,7 @@
         "name": "Strength Exo"
     },
     {
-        "src": "/images/Textures/Items/Rainboweave Cloak.png",
+        "src": "/assets/images/Textures/Items/Rainboweave Cloak.png",
         "cleanedName": "rainboweave cloak",
         "tier": "6",
         "armorPart": {
@@ -825,7 +825,7 @@
         "name": "Rainboweave Cloak"
     },
     {
-        "src": "/images/Textures/Items/Ogre Fur Cloak.png",
+        "src": "/assets/images/Textures/Items/Ogre Fur Cloak.png",
         "cleanedName": "ogre fur cloak",
         "tier": "6",
         "armorPart": {
@@ -840,7 +840,7 @@
         "name": "Ogre Fur Cloak"
     },
     {
-        "src": "/images/Textures/Items/Kaleidocera Cape.png",
+        "src": "/assets/images/Textures/Items/Kaleidocera Cape.png",
         "cleanedName": "kaleidocera cape",
         "tier": "7",
         "armorPart": {
@@ -857,7 +857,7 @@
         "name": "Kaleidocera Cape"
     },
     {
-        "src": "/images/Textures/Items/Palladium Mesh Tabard.png",
+        "src": "/assets/images/Textures/Items/Palladium Mesh Tabard.png",
         "cleanedName": "palladium mesh tabard",
         "tier": "7",
         "armorPart": {
@@ -870,7 +870,7 @@
         "name": "Palladium Mesh Tabard"
     },
     {
-        "src": "/images/Textures/Items/Gigantic Chassis Plate.png",
+        "src": "/assets/images/Textures/Items/Gigantic Chassis Plate.png",
         "cleanedName": "chassis plate",
         "tier": "8",
         "armorPart": {
@@ -884,7 +884,7 @@
         "name": "Gigantic Chassis Plate"
     },
     {
-        "src": "/images/Textures/Items/Witchwood Wreath.png",
+        "src": "/assets/images/Textures/Items/Witchwood Wreath.png",
         "cleanedName": "witchwood wreath",
         "tier": "1",
         "armorPart": {
@@ -896,7 +896,7 @@
         "name": "Witchwood Wreath"
     },
     {
-        "src": "/images/Textures/Items/Wide-brimmed Hat.png",
+        "src": "/assets/images/Textures/Items/Wide-brimmed Hat.png",
         "cleanedName": "wide-brimmed hat",
         "tier": "1",
         "armorPart": {
@@ -908,7 +908,7 @@
         "name": "Wide-brimmed Hat"
     },
     {
-        "src": "/images/Textures/Items/Gentling Collar.png",
+        "src": "/assets/images/Textures/Items/Gentling Collar.png",
         "cleanedName": "gentling cone",
         "tier": "1",
         "armorPart": {
@@ -921,7 +921,7 @@
         "name": "Gentling Collar"
     },
     {
-        "src": "/images/Textures/Items/Leather Cap.png",
+        "src": "/assets/images/Textures/Items/Leather Cap.png",
         "cleanedName": "leather cap",
         "tier": "1",
         "armorPart": {
@@ -933,7 +933,7 @@
         "name": "Leather Cap"
     },
     {
-        "src": "/images/Textures/Items/Crimson Hood.png",
+        "src": "/assets/images/Textures/Items/Crimson Hood.png",
         "cleanedName": "crimson hood",
         "tier": "1",
         "armorPart": {
@@ -945,7 +945,7 @@
         "name": "Crimson Hood"
     },
     {
-        "src": "/images/Textures/Items/Knollworm Skull.png",
+        "src": "/assets/images/Textures/Items/Knollworm Skull.png",
         "cleanedName": "knollworm skull",
         "tier": "2",
         "armorPart": {
@@ -958,7 +958,7 @@
         "name": "Knollworm Skull"
     },
     {
-        "src": "/images/Textures/Items/Steel Helmet.png",
+        "src": "/assets/images/Textures/Items/Steel Helmet.png",
         "cleanedName": "steel helmet",
         "tier": "3",
         "armorPart": {
@@ -970,7 +970,7 @@
         "name": "Steel Helmet"
     },
     {
-        "src": "/images/Textures/Items/Elastyne Skull Cap.png",
+        "src": "/assets/images/Textures/Items/Elastyne Skull Cap.png",
         "cleanedName": "elastyne skull cap",
         "tier": "3",
         "armorPart": {
@@ -983,7 +983,7 @@
         "name": "Elastyne Skull Cap"
     },
     {
-        "src": "/images/Textures/Items/Electric Snail Shell.png",
+        "src": "/assets/images/Textures/Items/Electric Snail Shell.png",
         "cleanedName": "electric snail shell",
         "tier": "3",
         "armorPart": {
@@ -996,7 +996,7 @@
         "name": "Electric Snail Shell"
     },
     {
-        "src": "/images/Textures/Items/Ape Fur Hat.png",
+        "src": "/assets/images/Textures/Items/Ape Fur Hat.png",
         "cleanedName": "ape fur hat",
         "tier": "3",
         "armorPart": {
@@ -1009,7 +1009,7 @@
         "name": "Ape Fur Hat"
     },
     {
-        "src": "/images/Textures/Items/Square Cap.png",
+        "src": "/assets/images/Textures/Items/Square Cap.png",
         "cleanedName": "square cap",
         "tier": "3",
         "armorPart": {
@@ -1023,7 +1023,7 @@
         "name": "Square Cap"
     },
     {
-        "src": "/images/Textures/Items/Chain Coif.png",
+        "src": "/assets/images/Textures/Items/Chain Coif.png",
         "cleanedName": "chain coif",
         "tier": "3",
         "armorPart": {
@@ -1035,7 +1035,7 @@
         "name": "Chain Coif"
     },
     {
-        "src": "/images/Textures/Items/Fork-Horned Helmet 3.png",
+        "src": "/assets/images/Textures/Items/Fork-Horned Helmet 3.png",
         "cleanedName": "fork-horned helm",
         "tier": "3",
         "armorPart": {
@@ -1047,7 +1047,7 @@
         "name": "Fork-Horned Helmet 3"
     },
     {
-        "src": "/images/Textures/Items/Fork-Horned Helmet 4.png",
+        "src": "/assets/images/Textures/Items/Fork-Horned Helmet 4.png",
         "cleanedName": "fork-horned helm",
         "tier": "3",
         "armorPart": {
@@ -1059,7 +1059,7 @@
         "name": "Fork-Horned Helmet 4"
     },
     {
-        "src": "/images/Textures/Items/Headlamp.png",
+        "src": "/assets/images/Textures/Items/Headlamp.png",
         "cleanedName": "headlamp",
         "tier": "3",
         "armorPart": {
@@ -1071,7 +1071,7 @@
         "name": "Headlamp"
     },
     {
-        "src": "/images/Textures/Items/Miner&#x27;s Helmet.png",
+        "src": "/assets/images/Textures/Items/Miner&#x27;s Helmet.png",
         "cleanedName": "miner's helmet",
         "tier": "3",
         "armorPart": {
@@ -1083,7 +1083,7 @@
         "name": "Miner's Helmet"
     },
     {
-        "src": "/images/Textures/Items/Plastifer Bonnet.png",
+        "src": "/assets/images/Textures/Items/Plastifer Bonnet.png",
         "cleanedName": "plastifer bonnet",
         "tier": "4",
         "armorPart": {
@@ -1099,7 +1099,7 @@
         "name": "Plastifer Bonnet"
     },
     {
-        "src": "/images/Textures/Items/Leafy Helm.png",
+        "src": "/assets/images/Textures/Items/Leafy Helm.png",
         "cleanedName": "leafy helm",
         "tier": "4",
         "armorPart": {
@@ -1111,7 +1111,7 @@
         "name": "Leafy Helm"
     },
     {
-        "src": "/images/Textures/Items/Ganglionic Teleprojector.png",
+        "src": "/assets/images/Textures/Items/Ganglionic Teleprojector.png",
         "cleanedName": "ganglionic teleprojector",
         "tier": "4",
         "armorPart": {
@@ -1123,7 +1123,7 @@
         "name": "Ganglionic Teleprojector"
     },
     {
-        "src": "/images/Textures/Items/Fullerite Armet.png",
+        "src": "/assets/images/Textures/Items/Fullerite Armet.png",
         "cleanedName": "fullerite armet",
         "tier": "5",
         "armorPart": {
@@ -1135,7 +1135,7 @@
         "name": "Fullerite Armet"
     },
     {
-        "src": "/images/Textures/Items/Quartzfur Hat.png",
+        "src": "/assets/images/Textures/Items/Quartzfur Hat.png",
         "cleanedName": "quartzfur hat",
         "tier": "5",
         "armorPart": {
@@ -1151,7 +1151,7 @@
         "name": "Quartzfur Hat"
     },
     {
-        "src": "/images/Textures/Items/Crysteel Coronet.png",
+        "src": "/assets/images/Textures/Items/Crysteel Coronet.png",
         "cleanedName": "crysteel coronet",
         "tier": "6",
         "armorPart": {
@@ -1167,7 +1167,7 @@
         "name": "Crysteel Coronet"
     },
     {
-        "src": "/images/Textures/Items/Ogre Fur Hat.png",
+        "src": "/assets/images/Textures/Items/Ogre Fur Hat.png",
         "cleanedName": "ogre fur hat",
         "tier": "6",
         "armorPart": {
@@ -1182,7 +1182,7 @@
         "name": "Ogre Fur Hat"
     },
     {
-        "src": "/images/Textures/Items/Flawless Crysteel Coronet.png",
+        "src": "/assets/images/Textures/Items/Flawless Crysteel Coronet.png",
         "cleanedName": "flawless crysteel coronet",
         "tier": "7",
         "armorPart": {
@@ -1198,7 +1198,7 @@
         "name": "Flawless Crysteel Coronet"
     },
     {
-        "src": "/images/Textures/Items/Psychic Meridian.png",
+        "src": "/assets/images/Textures/Items/Psychic Meridian.png",
         "cleanedName": "psychic meridian",
         "tier": "7",
         "armorPart": {
@@ -1211,7 +1211,7 @@
         "name": "Psychic Meridian"
     },
     {
-        "src": "/images/Textures/Items/Enigma Cap.png",
+        "src": "/assets/images/Textures/Items/Enigma Cap.png",
         "cleanedName": "enigma cap",
         "tier": "7",
         "armorPart": {
@@ -1223,7 +1223,7 @@
         "name": "Enigma Cap"
     },
     {
-        "src": "/images/Textures/Items/Zetachrome Apex.png",
+        "src": "/assets/images/Textures/Items/Zetachrome Apex.png",
         "cleanedName": "zetachrome apex",
         "tier": "8",
         "armorPart": {
@@ -1239,7 +1239,7 @@
         "name": "Zetachrome Apex"
     },
     {
-        "src": "/images/Textures/Items/Mental Aggregator.png",
+        "src": "/assets/images/Textures/Items/Mental Aggregator.png",
         "cleanedName": "mental aggregator",
         "tier": "8",
         "armorPart": {
@@ -1251,7 +1251,7 @@
         "name": "Mental Aggregator"
     },
     {
-        "src": "/images/Textures/Items/Psychodyne Helmet.png",
+        "src": "/assets/images/Textures/Items/Psychodyne Helmet.png",
         "cleanedName": "psychodyne helmet",
         "tier": "8",
         "armorPart": {
@@ -1263,7 +1263,7 @@
         "name": "Psychodyne Helmet"
     },
     {
-        "src": "/images/Textures/Items/Issachari Sun Veil.png",
+        "src": "/assets/images/Textures/Items/Issachari Sun Veil.png",
         "cleanedName": "Issachari sun veil",
         "tier": "1",
         "armorPart": {
@@ -1276,7 +1276,7 @@
         "name": "Issachari Sun Veil"
     },
     {
-        "src": "/images/Textures/Items/Smiling Sun Mask.png",
+        "src": "/assets/images/Textures/Items/Smiling Sun Mask.png",
         "cleanedName": "smiling sun mask",
         "tier": "1",
         "armorPart": {
@@ -1288,7 +1288,7 @@
         "name": "Smiling Sun Mask"
     },
     {
-        "src": "/images/Textures/Items/Frowning Moon Mask.png",
+        "src": "/assets/images/Textures/Items/Frowning Moon Mask.png",
         "cleanedName": "frowning moon mask",
         "tier": "1",
         "armorPart": {
@@ -1300,7 +1300,7 @@
         "name": "Frowning Moon Mask"
     },
     {
-        "src": "/images/Textures/Items/Sun and Moon Mask.png",
+        "src": "/assets/images/Textures/Items/Sun and Moon Mask.png",
         "cleanedName": "sun and moon mask",
         "tier": "1",
         "armorPart": {
@@ -1312,7 +1312,7 @@
         "name": "Sun and Moon Mask"
     },
     {
-        "src": "/images/Textures/Items/Gentling Mask.png",
+        "src": "/assets/images/Textures/Items/Gentling Mask.png",
         "cleanedName": "gentling mask",
         "tier": "1",
         "armorPart": {
@@ -1325,7 +1325,7 @@
         "name": "Gentling Mask"
     },
     {
-        "src": "/images/Textures/Items/Goggles.png",
+        "src": "/assets/images/Textures/Items/Goggles.png",
         "cleanedName": "goggles",
         "tier": "2",
         "armorPart": {
@@ -1337,7 +1337,7 @@
         "name": "Goggles"
     },
     {
-        "src": "/images/Textures/Items/Mirrorshades.png",
+        "src": "/assets/images/Textures/Items/Mirrorshades.png",
         "cleanedName": "mirrorshades",
         "tier": "3",
         "armorPart": {
@@ -1350,7 +1350,7 @@
         "name": "Mirrorshades"
     },
     {
-        "src": "/images/Textures/Items/Night-vision Goggles.png",
+        "src": "/assets/images/Textures/Items/Night-vision Goggles.png",
         "cleanedName": "night-vision goggles",
         "tier": "3",
         "armorPart": {
@@ -1362,7 +1362,7 @@
         "name": "Night-vision Goggles"
     },
     {
-        "src": "/images/Textures/Items/Vinewood Sap Mask.png",
+        "src": "/assets/images/Textures/Items/Vinewood Sap Mask.png",
         "cleanedName": "vinewood sap mask",
         "tier": "3",
         "armorPart": {
@@ -1374,7 +1374,7 @@
         "name": "Vinewood Sap Mask"
     },
     {
-        "src": "/images/Textures/Items/Gas Mask.png",
+        "src": "/assets/images/Textures/Items/Gas Mask.png",
         "cleanedName": "gas mask",
         "tier": "3",
         "armorPart": {
@@ -1386,7 +1386,7 @@
         "name": "Gas Mask"
     },
     {
-        "src": "/images/Textures/Items/Telescopic Monocle.png",
+        "src": "/assets/images/Textures/Items/Telescopic Monocle.png",
         "cleanedName": "telescopic monocle",
         "tier": "3",
         "armorPart": {
@@ -1398,7 +1398,7 @@
         "name": "Telescopic Monocle"
     },
     {
-        "src": "/images/Textures/Items/Spectacles.png",
+        "src": "/assets/images/Textures/Items/Spectacles.png",
         "cleanedName": "spectacles",
         "tier": "3",
         "armorPart": {
@@ -1410,7 +1410,7 @@
         "name": "Spectacles"
     },
     {
-        "src": "/images/Textures/Items/Polyhedral Rings.png",
+        "src": "/assets/images/Textures/Items/Polyhedral Rings.png",
         "cleanedName": "polyhedral rings",
         "tier": "3",
         "armorPart": {
@@ -1422,7 +1422,7 @@
         "name": "Polyhedral Rings"
     },
     {
-        "src": "/images/Textures/Items/Silver Rondure.png",
+        "src": "/assets/images/Textures/Items/Silver Rondure.png",
         "cleanedName": "silver rondure",
         "tier": "3",
         "armorPart": {
@@ -1434,7 +1434,7 @@
         "name": "Silver Rondure"
     },
     {
-        "src": "/images/Textures/Items/Telemetric Visor.png",
+        "src": "/assets/images/Textures/Items/Telemetric Visor.png",
         "cleanedName": "telemetric visor",
         "tier": "5",
         "armorPart": {
@@ -1446,7 +1446,7 @@
         "name": "Telemetric Visor"
     },
     {
-        "src": "/images/Textures/Items/VISAGE.png",
+        "src": "/assets/images/Textures/Items/VISAGE.png",
         "cleanedName": "VISAGE",
         "tier": "6",
         "armorPart": {
@@ -1458,7 +1458,7 @@
         "name": "VISAGE"
     },
     {
-        "src": "/images/Textures/Items/Night-Sight Interpolators.png",
+        "src": "/assets/images/Textures/Items/Night-Sight Interpolators.png",
         "cleanedName": "night-sight interpolators",
         "tier": "7",
         "armorPart": {
@@ -1470,7 +1470,7 @@
         "name": "Night-Sight Interpolators"
     },
     {
-        "src": "/images/Textures/Items/Dream Rondure.png",
+        "src": "/assets/images/Textures/Items/Dream Rondure.png",
         "cleanedName": "dream rondure",
         "tier": "8",
         "armorPart": {
@@ -1484,7 +1484,7 @@
         "name": "Dream Rondure"
     },
     {
-        "src": "/images/Textures/Items/Dazzle Cheek.png",
+        "src": "/assets/images/Textures/Items/Dazzle Cheek.png",
         "cleanedName": "dazzle cheek",
         "tier": "8",
         "armorPart": {
@@ -1496,7 +1496,7 @@
         "name": "Dazzle Cheek"
     },
     {
-        "src": "/images/Textures/Items/Bracelet1.png",
+        "src": "/assets/images/Textures/Items/Bracelet1.png",
         "cleanedName": "beaded bracelet",
         "tier": "1",
         "armorPart": {
@@ -1508,7 +1508,7 @@
         "name": "Bracelet1"
     },
     {
-        "src": "/images/Textures/Items/Bracelet2.png",
+        "src": "/assets/images/Textures/Items/Bracelet2.png",
         "cleanedName": "beaded bracelet",
         "tier": "1",
         "armorPart": {
@@ -1520,7 +1520,7 @@
         "name": "Bracelet2"
     },
     {
-        "src": "/images/Textures/Items/Bracelet3.png",
+        "src": "/assets/images/Textures/Items/Bracelet3.png",
         "cleanedName": "beaded bracelet",
         "tier": "1",
         "armorPart": {
@@ -1532,7 +1532,7 @@
         "name": "Bracelet3"
     },
     {
-        "src": "/images/Textures/Items/Blood-stained neck-ring.png",
+        "src": "/assets/images/Textures/Items/Blood-stained neck-ring.png",
         "cleanedName": "neck-ring",
         "tier": "1",
         "armorPart": {
@@ -1544,7 +1544,7 @@
         "name": "Blood-stained neck-ring"
     },
     {
-        "src": "/images/Textures/Items/Compass Bracelet.png",
+        "src": "/assets/images/Textures/Items/Compass Bracelet.png",
         "cleanedName": "compass bracelet",
         "tier": "2",
         "armorPart": {
@@ -1556,7 +1556,7 @@
         "name": "Compass Bracelet"
     },
     {
-        "src": "/images/Textures/Items/Wrist Fan.png",
+        "src": "/assets/images/Textures/Items/Wrist Fan.png",
         "cleanedName": "wrist fan",
         "tier": "3",
         "armorPart": {
@@ -1568,7 +1568,7 @@
         "name": "Wrist Fan"
     },
     {
-        "src": "/images/Textures/Items/Snakeskin Armlet.png",
+        "src": "/assets/images/Textures/Items/Snakeskin Armlet.png",
         "cleanedName": "snakeskin armlet",
         "tier": "3",
         "armorPart": {
@@ -1580,7 +1580,7 @@
         "name": "Snakeskin Armlet"
     },
     {
-        "src": "/images/Textures/Items/LeatherBracer.png",
+        "src": "/assets/images/Textures/Items/LeatherBracer.png",
         "cleanedName": "leather bracer",
         "tier": "3",
         "armorPart": {
@@ -1592,7 +1592,7 @@
         "name": "LeatherBracer"
     },
     {
-        "src": "/images/Textures/Items/Bio-Scanning Bracelet.png",
+        "src": "/assets/images/Textures/Items/Bio-Scanning Bracelet.png",
         "cleanedName": "bio-scanning bracelet",
         "tier": "4",
         "armorPart": {
@@ -1604,7 +1604,7 @@
         "name": "Bio-Scanning Bracelet"
     },
     {
-        "src": "/images/Textures/Items/Horticulturalist Bio-Scanning Bracelet.png",
+        "src": "/assets/images/Textures/Items/Horticulturalist Bio-Scanning Bracelet.png",
         "cleanedName": "bio-scanning bracelet",
         "tier": "4",
         "armorPart": {
@@ -1616,7 +1616,7 @@
         "name": "Horticulturalist Bio-Scanning Bracelet"
     },
     {
-        "src": "/images/Textures/Items/Structural Scanning Bracelet.png",
+        "src": "/assets/images/Textures/Items/Structural Scanning Bracelet.png",
         "cleanedName": "structural scanning bracelet",
         "tier": "4",
         "armorPart": {
@@ -1628,7 +1628,7 @@
         "name": "Structural Scanning Bracelet"
     },
     {
-        "src": "/images/Textures/Items/Child of the Deep Structural Scanning Bracelet.png",
+        "src": "/assets/images/Textures/Items/Child of the Deep Structural Scanning Bracelet.png",
         "cleanedName": "structural scanning bracelet",
         "tier": "4",
         "armorPart": {
@@ -1640,7 +1640,7 @@
         "name": "Child of the Deep Structural Scanning Bracelet"
     },
     {
-        "src": "/images/Textures/Items/Hologram Bracelet.png",
+        "src": "/assets/images/Textures/Items/Hologram Bracelet.png",
         "cleanedName": "hologram bracelet",
         "tier": "4",
         "armorPart": {
@@ -1652,7 +1652,7 @@
         "name": "Hologram Bracelet"
     },
     {
-        "src": "/images/Textures/Items/Force Bracelet.png",
+        "src": "/assets/images/Textures/Items/Force Bracelet.png",
         "cleanedName": "force bracelet",
         "tier": "4",
         "armorPart": {
@@ -1664,7 +1664,7 @@
         "name": "Force Bracelet"
     },
     {
-        "src": "/images/Textures/Items/Wristcalc.png",
+        "src": "/assets/images/Textures/Items/Wristcalc.png",
         "cleanedName": "wrist calc",
         "tier": "4",
         "armorPart": {
@@ -1676,7 +1676,7 @@
         "name": "Wristcalc"
     },
     {
-        "src": "/images/Textures/Items/Precinct Navigator.png",
+        "src": "/assets/images/Textures/Items/Precinct Navigator.png",
         "cleanedName": "precinct navigator",
         "tier": "4",
         "armorPart": {
@@ -1688,7 +1688,7 @@
         "name": "Precinct Navigator"
     },
     {
-        "src": "/images/Textures/Items/Homoelectric Wrist Warmer.png",
+        "src": "/assets/images/Textures/Items/Homoelectric Wrist Warmer.png",
         "cleanedName": "homoelectric wrist warmer",
         "tier": "4",
         "armorPart": {
@@ -1701,7 +1701,7 @@
         "name": "Homoelectric Wrist Warmer"
     },
     {
-        "src": "/images/Textures/Items/Slip Ring.png",
+        "src": "/assets/images/Textures/Items/Slip Ring.png",
         "cleanedName": "slip ring",
         "tier": "5",
         "armorPart": {
@@ -1713,7 +1713,7 @@
         "name": "Slip Ring"
     },
     {
-        "src": "/images/Textures/Items/Displacer Bracelet.png",
+        "src": "/assets/images/Textures/Items/Displacer Bracelet.png",
         "cleanedName": "displacer bracelet",
         "tier": "6",
         "armorPart": {
@@ -1725,7 +1725,7 @@
         "name": "Displacer Bracelet"
     },
     {
-        "src": "/images/Textures/Items/Ontological Anchor.png",
+        "src": "/assets/images/Textures/Items/Ontological Anchor.png",
         "cleanedName": "ontological anchor",
         "tier": "6",
         "armorPart": {
@@ -1737,7 +1737,7 @@
         "name": "Ontological Anchor"
     },
     {
-        "src": "/images/Textures/Items/Tri-Hologram Bracelet.png",
+        "src": "/assets/images/Textures/Items/Tri-Hologram Bracelet.png",
         "cleanedName": "tri-hologram bracelet",
         "tier": "7",
         "armorPart": {
@@ -1749,7 +1749,7 @@
         "name": "Tri-Hologram Bracelet"
     },
     {
-        "src": "/images/Textures/Items/Transkinetic Cuffs.png",
+        "src": "/assets/images/Textures/Items/Transkinetic Cuffs.png",
         "cleanedName": "transkinetic cuffs",
         "tier": "8",
         "armorPart": {
@@ -1761,7 +1761,7 @@
         "name": "Transkinetic Cuffs"
     },
     {
-        "src": "/images/Textures/Items/Boar-skin gloves.png",
+        "src": "/assets/images/Textures/Items/Boar-skin gloves.png",
         "cleanedName": "boar-skin gloves",
         "tier": "1",
         "armorPart": {
@@ -1773,7 +1773,7 @@
         "name": "Boar-skin gloves"
     },
     {
-        "src": "/images/Textures/Items/Leather Gloves.png",
+        "src": "/assets/images/Textures/Items/Leather Gloves.png",
         "cleanedName": "leather gloves",
         "tier": "1",
         "armorPart": {
@@ -1785,7 +1785,7 @@
         "name": "Leather Gloves"
     },
     {
-        "src": "/images/Textures/Items/Steel Gauntlets.png",
+        "src": "/assets/images/Textures/Items/Steel Gauntlets.png",
         "cleanedName": "steel gauntlets",
         "tier": "3",
         "armorPart": {
@@ -1797,7 +1797,7 @@
         "name": "Steel Gauntlets"
     },
     {
-        "src": "/images/Textures/Items/Spiked Gauntlets.png",
+        "src": "/assets/images/Textures/Items/Spiked Gauntlets.png",
         "cleanedName": "steel gauntlets",
         "tier": "3",
         "armorPart": {
@@ -1809,7 +1809,7 @@
         "name": "Spiked Gauntlets"
     },
     {
-        "src": "/images/Textures/Items/Ulnar Stimulators.png",
+        "src": "/assets/images/Textures/Items/Ulnar Stimulators.png",
         "cleanedName": "ulnar stimulators",
         "tier": "3",
         "armorPart": {
@@ -1821,7 +1821,7 @@
         "name": "Ulnar Stimulators"
     },
     {
-        "src": "/images/Textures/Items/Ape Fur Gloves.png",
+        "src": "/assets/images/Textures/Items/Ape Fur Gloves.png",
         "cleanedName": "ape fur gloves",
         "tier": "3",
         "armorPart": {
@@ -1835,7 +1835,7 @@
         "name": "Ape Fur Gloves"
     },
     {
-        "src": "/images/Textures/Items/Elastyne Gloves.png",
+        "src": "/assets/images/Textures/Items/Elastyne Gloves.png",
         "cleanedName": "elastyne gloves",
         "tier": "3",
         "armorPart": {
@@ -1848,7 +1848,7 @@
         "name": "Elastyne Gloves"
     },
     {
-        "src": "/images/Textures/Items/Chain Gauntlets.png",
+        "src": "/assets/images/Textures/Items/Chain Gauntlets.png",
         "cleanedName": "chain gauntlets",
         "tier": "3",
         "armorPart": {
@@ -1860,7 +1860,7 @@
         "name": "Chain Gauntlets"
     },
     {
-        "src": "/images/Textures/Items/Carbide Gauntlets.png",
+        "src": "/assets/images/Textures/Items/Carbide Gauntlets.png",
         "cleanedName": "carbide gauntlets",
         "tier": "4",
         "armorPart": {
@@ -1872,7 +1872,7 @@
         "name": "Carbide Gauntlets"
     },
     {
-        "src": "/images/Textures/Items/Plastifer Gloves.png",
+        "src": "/assets/images/Textures/Items/Plastifer Gloves.png",
         "cleanedName": "plastifer gloves",
         "tier": "4",
         "armorPart": {
@@ -1888,7 +1888,7 @@
         "name": "Plastifer Gloves"
     },
     {
-        "src": "/images/Textures/Items/Fullerite Gauntlets.png",
+        "src": "/assets/images/Textures/Items/Fullerite Gauntlets.png",
         "cleanedName": "fullerite gauntlets",
         "tier": "5",
         "armorPart": {
@@ -1900,7 +1900,7 @@
         "name": "Fullerite Gauntlets"
     },
     {
-        "src": "/images/Textures/Items/Quartzfur Gloves.png",
+        "src": "/assets/images/Textures/Items/Quartzfur Gloves.png",
         "cleanedName": "quartzfur gloves",
         "tier": "5",
         "armorPart": {
@@ -1916,7 +1916,7 @@
         "name": "Quartzfur Gloves"
     },
     {
-        "src": "/images/Textures/Items/Crysteel Gauntlets.png",
+        "src": "/assets/images/Textures/Items/Crysteel Gauntlets.png",
         "cleanedName": "crysteel gauntlets",
         "tier": "6",
         "armorPart": {
@@ -1932,7 +1932,7 @@
         "name": "Crysteel Gauntlets"
     },
     {
-        "src": "/images/Textures/Items/Ogre Fur Gloves.png",
+        "src": "/assets/images/Textures/Items/Ogre Fur Gloves.png",
         "cleanedName": "ogre fur gloves",
         "tier": "6",
         "armorPart": {
@@ -1947,7 +1947,7 @@
         "name": "Ogre Fur Gloves"
     },
     {
-        "src": "/images/Textures/Items/Flawless Crysteel Gauntlets.png",
+        "src": "/assets/images/Textures/Items/Flawless Crysteel Gauntlets.png",
         "cleanedName": "flawless crysteel gauntlets",
         "tier": "7",
         "armorPart": {
@@ -1963,7 +1963,7 @@
         "name": "Flawless Crysteel Gauntlets"
     },
     {
-        "src": "/images/Textures/Items/Kaleidocera Muffs.png",
+        "src": "/assets/images/Textures/Items/Kaleidocera Muffs.png",
         "cleanedName": "kaleidocera muffs",
         "tier": "7",
         "armorPart": {
@@ -1980,7 +1980,7 @@
         "name": "Kaleidocera Muffs"
     },
     {
-        "src": "/images/Textures/Items/Precision Nanon Fingers.png",
+        "src": "/assets/images/Textures/Items/Precision Nanon Fingers.png",
         "cleanedName": "precision nanon fingers",
         "tier": "7",
         "armorPart": {
@@ -1992,7 +1992,7 @@
         "name": "Precision Nanon Fingers"
     },
     {
-        "src": "/images/Textures/Items/Zetachrome Gloves.png",
+        "src": "/assets/images/Textures/Items/Zetachrome Gloves.png",
         "cleanedName": "zetachrome gloves",
         "tier": "8",
         "armorPart": {
@@ -2008,7 +2008,7 @@
         "name": "Zetachrome Gloves"
     },
     {
-        "src": "/images/Textures/Items/Leyline Puppeteers.png",
+        "src": "/assets/images/Textures/Items/Leyline Puppeteers.png",
         "cleanedName": "leyline puppeteers",
         "tier": "8",
         "armorPart": {
@@ -2020,7 +2020,7 @@
         "name": "Leyline Puppeteers"
     },
     {
-        "src": "/images/Textures/Items/Leather Moccasins.png",
+        "src": "/assets/images/Textures/Items/Leather Moccasins.png",
         "cleanedName": "leather moccasins",
         "tier": "1",
         "armorPart": {
@@ -2032,7 +2032,7 @@
         "name": "Leather Moccasins"
     },
     {
-        "src": "/images/Textures/Items/Sandals.png",
+        "src": "/assets/images/Textures/Items/Sandals.png",
         "cleanedName": "sandals",
         "tier": "1",
         "armorPart": {
@@ -2044,7 +2044,7 @@
         "name": "Sandals"
     },
     {
-        "src": "/images/Textures/Items/Croccasins.png",
+        "src": "/assets/images/Textures/Items/Croccasins.png",
         "cleanedName": "croccasins",
         "tier": "1",
         "armorPart": {
@@ -2056,7 +2056,7 @@
         "name": "Croccasins"
     },
     {
-        "src": "/images/Textures/Items/Leather Boots.png",
+        "src": "/assets/images/Textures/Items/Leather Boots.png",
         "cleanedName": "leather boots",
         "tier": "2",
         "armorPart": {
@@ -2068,7 +2068,7 @@
         "name": "Leather Boots"
     },
     {
-        "src": "/images/Textures/Items/Magnetized Boots.png",
+        "src": "/assets/images/Textures/Items/Magnetized Boots.png",
         "cleanedName": "magnetized boots",
         "tier": "2",
         "armorPart": {
@@ -2080,7 +2080,7 @@
         "name": "Magnetized Boots"
     },
     {
-        "src": "/images/Textures/Items/Sandals of the River-Wives.png",
+        "src": "/assets/images/Textures/Items/Sandals of the River-Wives.png",
         "cleanedName": "sandals of the river-wives",
         "tier": "2",
         "armorPart": {
@@ -2092,7 +2092,7 @@
         "name": "Sandals of the River-Wives"
     },
     {
-        "src": "/images/Textures/Items/Chain Boots.png",
+        "src": "/assets/images/Textures/Items/Chain Boots.png",
         "cleanedName": "chain boots",
         "tier": "3",
         "armorPart": {
@@ -2104,7 +2104,7 @@
         "name": "Chain Boots"
     },
     {
-        "src": "/images/Textures/Items/Steel Boots.png",
+        "src": "/assets/images/Textures/Items/Steel Boots.png",
         "cleanedName": "steel boots",
         "tier": "3",
         "armorPart": {
@@ -2116,7 +2116,7 @@
         "name": "Steel Boots"
     },
     {
-        "src": "/images/Textures/Items/Elastyne Slippers.png",
+        "src": "/assets/images/Textures/Items/Elastyne Slippers.png",
         "cleanedName": "elastyne slippers",
         "tier": "3",
         "armorPart": {
@@ -2128,7 +2128,7 @@
         "name": "Elastyne Slippers"
     },
     {
-        "src": "/images/Textures/Items/Carbide Boots.png",
+        "src": "/assets/images/Textures/Items/Carbide Boots.png",
         "cleanedName": "carbide boots",
         "tier": "4",
         "armorPart": {
@@ -2140,7 +2140,7 @@
         "name": "Carbide Boots"
     },
     {
-        "src": "/images/Textures/Items/Spring Boots.png",
+        "src": "/assets/images/Textures/Items/Spring Boots.png",
         "cleanedName": "bounding boots",
         "tier": "4",
         "armorPart": {
@@ -2152,7 +2152,7 @@
         "name": "Spring Boots"
     },
     {
-        "src": "/images/Textures/Items/Grease Boots.png",
+        "src": "/assets/images/Textures/Items/Grease Boots.png",
         "cleanedName": "greased steel boots",
         "tier": "4",
         "armorPart": {
@@ -2164,7 +2164,7 @@
         "name": "Grease Boots"
     },
     {
-        "src": "/images/Textures/Items/Plastifer Sneakers.png",
+        "src": "/assets/images/Textures/Items/Plastifer Sneakers.png",
         "cleanedName": "plastifer sneakers",
         "tier": "4",
         "armorPart": {
@@ -2180,7 +2180,7 @@
         "name": "Plastifer Sneakers"
     },
     {
-        "src": "/images/Textures/Items/Yeshyrskin Slippers.png",
+        "src": "/assets/images/Textures/Items/Yeshyrskin Slippers.png",
         "cleanedName": "yeshyrskin slippers",
         "tier": "4",
         "armorPart": {
@@ -2192,7 +2192,7 @@
         "name": "Yeshyrskin Slippers"
     },
     {
-        "src": "/images/Textures/Items/Fullerite Boots.png",
+        "src": "/assets/images/Textures/Items/Fullerite Boots.png",
         "cleanedName": "fullerite boots",
         "tier": "5",
         "armorPart": {
@@ -2204,7 +2204,7 @@
         "name": "Fullerite Boots"
     },
     {
-        "src": "/images/Textures/Items/Step Sowers.png",
+        "src": "/assets/images/Textures/Items/Step Sowers.png",
         "cleanedName": "step sowers",
         "tier": "5",
         "armorPart": {
@@ -2216,7 +2216,7 @@
         "name": "Step Sowers"
     },
     {
-        "src": "/images/Textures/Items/Rocket Skates.png",
+        "src": "/assets/images/Textures/Items/Rocket Skates.png",
         "cleanedName": "rocket skates",
         "tier": "5",
         "armorPart": {
@@ -2228,7 +2228,7 @@
         "name": "Rocket Skates"
     },
     {
-        "src": "/images/Textures/Items/Crysteel Boots.png",
+        "src": "/assets/images/Textures/Items/Crysteel Boots.png",
         "cleanedName": "crysteel boots",
         "tier": "6",
         "armorPart": {
@@ -2244,7 +2244,7 @@
         "name": "Crysteel Boots"
     },
     {
-        "src": "/images/Textures/Items/Ninefold Boots.png",
+        "src": "/assets/images/Textures/Items/Ninefold Boots.png",
         "cleanedName": "ninefold boots",
         "tier": "6",
         "armorPart": {
@@ -2256,7 +2256,7 @@
         "name": "Ninefold Boots"
     },
     {
-        "src": "/images/Textures/Items/Flawless Crysteel Boots.png",
+        "src": "/assets/images/Textures/Items/Flawless Crysteel Boots.png",
         "cleanedName": "flawless crysteel boots",
         "tier": "7",
         "armorPart": {
@@ -2272,7 +2272,7 @@
         "name": "Flawless Crysteel Boots"
     },
     {
-        "src": "/images/Textures/Items/3D Cobblers.png",
+        "src": "/assets/images/Textures/Items/3D Cobblers.png",
         "cleanedName": "3D cobblers",
         "tier": "7",
         "armorPart": {
@@ -2284,7 +2284,7 @@
         "name": "3D Cobblers"
     },
     {
-        "src": "/images/Textures/Items/Anti-Gravity Boots.png",
+        "src": "/assets/images/Textures/Items/Anti-Gravity Boots.png",
         "cleanedName": "anti-gravity boots",
         "tier": "7",
         "armorPart": {
@@ -2296,7 +2296,7 @@
         "name": "Anti-Gravity Boots"
     },
     {
-        "src": "/images/Textures/Items/Kaleidocera Krakows.png",
+        "src": "/assets/images/Textures/Items/Kaleidocera Krakows.png",
         "cleanedName": "kaleidocera krakows",
         "tier": "7",
         "armorPart": {
@@ -2313,7 +2313,7 @@
         "name": "Kaleidocera Krakows"
     },
     {
-        "src": "/images/Textures/Items/Zetachrome Pumps.png",
+        "src": "/assets/images/Textures/Items/Zetachrome Pumps.png",
         "cleanedName": "zetachrome pumps",
         "tier": "8",
         "armorPart": {
@@ -2329,7 +2329,7 @@
         "name": "Zetachrome Pumps"
     },
     {
-        "src": "/images/Textures/Items/Jeweled Sandals.png",
+        "src": "/assets/images/Textures/Items/Jeweled Sandals.png",
         "cleanedName": "jeweled sandals",
         "armorPart": {
             "Name": "Armor",
@@ -2340,7 +2340,7 @@
         "name": "Jeweled Sandals"
     },
     {
-        "src": "/images/Textures/Items/Light-Obfuscating Lens.png",
+        "src": "/assets/images/Textures/Items/Light-Obfuscating Lens.png",
         "cleanedName": "light-obfuscating lens",
         "tier": "3",
         "armorPart": {
@@ -2352,7 +2352,7 @@
         "name": "Light-Obfuscating Lens"
     },
     {
-        "src": "/images/Textures/Items/Symbiotic Firefly.png",
+        "src": "/assets/images/Textures/Items/Symbiotic Firefly.png",
         "cleanedName": "symbiotic firefly",
         "tier": "2",
         "armorPart": {
@@ -2364,7 +2364,7 @@
         "name": "Symbiotic Firefly"
     },
     {
-        "src": "/images/Textures/Items/Luminous Mote.png",
+        "src": "/assets/images/Textures/Items/Luminous Mote.png",
         "cleanedName": "luminous mote",
         "tier": "3",
         "armorPart": {
@@ -2376,7 +2376,7 @@
         "name": "Luminous Mote"
     },
     {
-        "src": "/images/Textures/Items/Floating Glowsphere.png",
+        "src": "/assets/images/Textures/Items/Floating Glowsphere.png",
         "cleanedName": "floating glowsphere",
         "tier": "4",
         "armorPart": {
@@ -2386,7 +2386,7 @@
         "name": "Floating Glowsphere"
     },
     {
-        "src": "/images/Textures/Items/Quantum Mote.png",
+        "src": "/assets/images/Textures/Items/Quantum Mote.png",
         "cleanedName": "quantum mote",
         "tier": "6",
         "armorPart": {
@@ -2402,7 +2402,7 @@
         "name": "Quantum Mote"
     },
     {
-        "src": "/images/Textures/Items/Point-Defense Drone.png",
+        "src": "/assets/images/Textures/Items/Point-Defense Drone.png",
         "cleanedName": "point-defense drone",
         "tier": "6",
         "armorPart": {
@@ -2414,7 +2414,7 @@
         "name": "Point-Defense Drone"
     },
     {
-        "src": "/images/Textures/Items/Chiral Rings.png",
+        "src": "/assets/images/Textures/Items/Chiral Rings.png",
         "cleanedName": "chiral rings",
         "tier": "7",
         "armorPart": {
@@ -2426,7 +2426,7 @@
         "name": "Chiral Rings"
     },
     {
-        "src": "/images/Textures/Items/Black Mote.png",
+        "src": "/assets/images/Textures/Items/Black Mote.png",
         "cleanedName": "black mote",
         "tier": "8",
         "armorPart": {
@@ -2438,7 +2438,7 @@
         "name": "Black Mote"
     },
     {
-        "src": "/images/Textures/Items/LightCircleAgolgot.png",
+        "src": "/assets/images/Textures/Items/LightCircleAgolgot.png",
         "cleanedName": "circle of light in the chord of Agolgot",
         "tier": "8",
         "armorPart": {
@@ -2451,7 +2451,7 @@
         "name": "LightCircleAgolgot"
     },
     {
-        "src": "/images/Textures/Items/LightCircleBethsaida.png",
+        "src": "/assets/images/Textures/Items/LightCircleBethsaida.png",
         "cleanedName": "circle of light in the chord of Bethsaida",
         "tier": "8",
         "armorPart": {
@@ -2464,7 +2464,7 @@
         "name": "LightCircleBethsaida"
     },
     {
-        "src": "/images/Textures/Items/LightCircleQas.png",
+        "src": "/assets/images/Textures/Items/LightCircleQas.png",
         "cleanedName": "circle of light in the chord of Qas",
         "tier": "8",
         "armorPart": {
@@ -2477,7 +2477,7 @@
         "name": "LightCircleQas"
     },
     {
-        "src": "/images/Textures/Items/LightCircleQon.png",
+        "src": "/assets/images/Textures/Items/LightCircleQon.png",
         "cleanedName": "circle of light in the chord of Qon",
         "tier": "8",
         "armorPart": {
@@ -2490,7 +2490,7 @@
         "name": "LightCircleQon"
     },
     {
-        "src": "/images/Textures/Items/LightCircleRermadon.png",
+        "src": "/assets/images/Textures/Items/LightCircleRermadon.png",
         "cleanedName": "circle of light in the chord of Rermadon",
         "tier": "8",
         "armorPart": {
@@ -2503,7 +2503,7 @@
         "name": "LightCircleRermadon"
     },
     {
-        "src": "/images/Textures/Items/LightCircleShugruith.png",
+        "src": "/assets/images/Textures/Items/LightCircleShugruith.png",
         "cleanedName": "circle of light in the chord of Shugruith",
         "tier": "8",
         "armorPart": {
@@ -2516,7 +2516,7 @@
         "name": "LightCircleShugruith"
     },
     {
-        "src": "/images/Textures/Items/Clay Pot.png",
+        "src": "/assets/images/Textures/Items/Clay Pot.png",
         "cleanedName": "clay pot",
         "tier": "0",
         "armorPart": {
@@ -2528,7 +2528,7 @@
         "name": "Clay Pot"
     },
     {
-        "src": "/images/Textures/Items/Tread Guard.png",
+        "src": "/assets/images/Textures/Items/Tread Guard.png",
         "cleanedName": "tread guard",
         "tier": "3",
         "armorPart": {
@@ -2540,7 +2540,7 @@
         "name": "Tread Guard"
     },
     {
-        "src": "/images/Textures/Items/Kindrish.png",
+        "src": "/assets/images/Textures/Items/Kindrish.png",
         "cleanedName": "Kindrish",
         "tier": "3",
         "armorPart": {
@@ -2552,7 +2552,7 @@
         "name": "Kindrish"
     },
     {
-        "src": "/images/Textures/Items/BarathrumiteSafetyBand.png",
+        "src": "/assets/images/Textures/Items/BarathrumiteSafetyBand.png",
         "cleanedName": "life loop",
         "tier": "6",
         "armorPart": {
@@ -2564,7 +2564,7 @@
         "name": "BarathrumiteSafetyBand"
     },
     {
-        "src": "/images/Textures/Items/SlogTrophy.png",
+        "src": "/assets/images/Textures/Items/SlogTrophy.png",
         "cleanedName": "Slog's annunclus",
         "armorPart": {
             "Name": "Armor",
@@ -2575,7 +2575,7 @@
         "name": "SlogTrophy"
     },
     {
-        "src": "/images/Textures/Items/SkybearJetpack.png",
+        "src": "/assets/images/Textures/Items/SkybearJetpack.png",
         "cleanedName": "Flume-Flier of the Sky-Bear",
         "tier": "6",
         "armorPart": {
@@ -2588,7 +2588,7 @@
         "name": "SkybearJetpack"
     },
     {
-        "src": "/images/Textures/Items/MurmurMask.png",
+        "src": "/assets/images/Textures/Items/MurmurMask.png",
         "cleanedName": "murmur mask",
         "tier": "7",
         "armorPart": {
@@ -2601,7 +2601,7 @@
         "name": "MurmurMask"
     },
     {
-        "src": "/images/Textures/Items/Cyclopean Prism.png",
+        "src": "/assets/images/Textures/Items/Cyclopean Prism.png",
         "cleanedName": "amaranthine prism",
         "tier": "7",
         "armorPart": {
@@ -2615,7 +2615,7 @@
         "name": "Cyclopean Prism"
     },
     {
-        "src": "/images/Textures/Terrain/TauChime.png",
+        "src": "/assets/images/Textures/Terrain/TauChime.png",
         "cleanedName": "still crystal chime",
         "armorPart": {
             "Name": "Armor",
@@ -2628,7 +2628,7 @@
         "name": "TauChime"
     },
     {
-        "src": "/images/Textures/Items/TauHeadpiece.png",
+        "src": "/assets/images/Textures/Items/TauHeadpiece.png",
         "cleanedName": "crystalline halo",
         "armorPart": {
             "Name": "Armor",
@@ -2640,7 +2640,7 @@
         "name": "TauHeadpiece"
     },
     {
-        "src": "/images/Textures/Items/Nacham&#x27;s Ribbon.png",
+        "src": "/assets/images/Textures/Items/Nacham&#x27;s Ribbon.png",
         "cleanedName": "Nacham's ribbon",
         "tier": "6",
         "armorPart": {
@@ -2652,7 +2652,7 @@
         "name": "Nacham's Ribbon"
     },
     {
-        "src": "/images/Textures/Items/Dagasha&#x27;s Spur.png",
+        "src": "/assets/images/Textures/Items/Dagasha&#x27;s Spur.png",
         "cleanedName": "Dagasha's spur",
         "tier": "6",
         "armorPart": {
@@ -2664,7 +2664,7 @@
         "name": "Dagasha's Spur"
     },
     {
-        "src": "/images/Textures/Items/Kah&#x27;s Loop.png",
+        "src": "/assets/images/Textures/Items/Kah&#x27;s Loop.png",
         "cleanedName": "Kah's loop",
         "tier": "6",
         "armorPart": {
@@ -2676,7 +2676,7 @@
         "name": "Kah's Loop"
     },
     {
-        "src": "/images/Textures/Items/The Kesil Face.png",
+        "src": "/assets/images/Textures/Items/The Kesil Face.png",
         "cleanedName": "Kesil Face",
         "tier": "8",
         "armorPart": {
@@ -2699,7 +2699,7 @@
         "name": "The Kesil Face"
     },
     {
-        "src": "/images/Textures/Items/The Shemesh Face.png",
+        "src": "/assets/images/Textures/Items/The Shemesh Face.png",
         "cleanedName": "Shemesh Face",
         "tier": "7",
         "armorPart": {
@@ -2722,7 +2722,7 @@
         "name": "The Shemesh Face"
     },
     {
-        "src": "/images/Textures/Items/The Earth Face.png",
+        "src": "/assets/images/Textures/Items/The Earth Face.png",
         "cleanedName": "Earth Face",
         "tier": "7",
         "armorPart": {
@@ -2744,7 +2744,7 @@
         "name": "The Earth Face"
     },
     {
-        "src": "/images/Textures/Items/The Levant Face.png",
+        "src": "/assets/images/Textures/Items/The Levant Face.png",
         "cleanedName": "Levant Face",
         "tier": "6",
         "armorPart": {
@@ -2762,7 +2762,7 @@
         "name": "The Levant Face"
     },
     {
-        "src": "/images/Textures/Items/The Olive Face.png",
+        "src": "/assets/images/Textures/Items/The Olive Face.png",
         "cleanedName": "Olive Face",
         "tier": "6",
         "armorPart": {
@@ -2777,7 +2777,7 @@
         "name": "The Olive Face"
     },
     {
-        "src": "/images/Textures/Items/The Nil Face.png",
+        "src": "/assets/images/Textures/Items/The Nil Face.png",
         "cleanedName": "Null Face",
         "tier": "6",
         "armorPart": {
@@ -2789,7 +2789,7 @@
         "name": "The Nil Face"
     },
     {
-        "src": "/images/Textures/Items/Otherpearl.png",
+        "src": "/assets/images/Textures/Items/Otherpearl.png",
         "cleanedName": "Otherpearl",
         "armorPart": {
             "Name": "Armor",
@@ -2801,7 +2801,7 @@
         "name": "Otherpearl"
     },
     {
-        "src": "/images/Textures/Items/Flange from the Great Machine.png",
+        "src": "/assets/images/Textures/Items/Flange from the Great Machine.png",
         "cleanedName": "flange from the Great Machine",
         "tier": "8",
         "armorPart": {
@@ -2819,7 +2819,7 @@
         "name": "Flange from the Great Machine"
     },
     {
-        "src": "/images/Textures/Items/Sail from the Great Machine.png",
+        "src": "/assets/images/Textures/Items/Sail from the Great Machine.png",
         "cleanedName": "sail from the Great Machine",
         "tier": "8",
         "armorPart": {
@@ -2837,7 +2837,7 @@
         "name": "Sail from the Great Machine"
     },
     {
-        "src": "/images/Textures/Items/Gauge from the Great Machine.png",
+        "src": "/assets/images/Textures/Items/Gauge from the Great Machine.png",
         "cleanedName": "gauge from the Great Machine",
         "tier": "8",
         "armorPart": {
@@ -2855,7 +2855,7 @@
         "name": "Gauge from the Great Machine"
     },
     {
-        "src": "/images/Textures/Items/Fidget Cell.png",
+        "src": "/assets/images/Textures/Items/Fidget Cell.png",
         "cleanedName": "fidget cell",
         "tier": "1",
         "armorPart": {
@@ -2865,7 +2865,7 @@
         "name": "Fidget Cell"
     },
     {
-        "src": "/images/Textures/Items/Hoversled.png",
+        "src": "/assets/images/Textures/Items/Hoversled.png",
         "cleanedName": "hoversled",
         "tier": "4",
         "armorPart": {
@@ -2875,7 +2875,7 @@
         "name": "Hoversled"
     },
     {
-        "src": "/images/Textures/Items/Camel Bladder.png",
+        "src": "/assets/images/Textures/Items/Camel Bladder.png",
         "cleanedName": "camel bladder",
         "armorPart": {
             "Name": "Armor",
@@ -2884,7 +2884,7 @@
         "name": "Camel Bladder"
     },
     {
-        "src": "/images/Textures/Items/StorageTank.png",
+        "src": "/assets/images/Textures/Items/StorageTank.png",
         "cleanedName": "storage tank",
         "armorPart": {
             "Name": "Armor",
@@ -2895,7 +2895,7 @@
         "name": "StorageTank"
     },
     {
-        "src": "/images/Textures/Items/Gourd.png",
+        "src": "/assets/images/Textures/Items/Gourd.png",
         "cleanedName": "gourd",
         "armorPart": {
             "Name": "Armor",
@@ -2906,7 +2906,7 @@
         "name": "Gourd"
     },
     {
-        "src": "/images/Textures/Items/LightCircleEhalcodon.png",
+        "src": "/assets/images/Textures/Items/LightCircleEhalcodon.png",
         "cleanedName": "circle of light in the chord of Ehalcodon",
         "tier": "8",
         "armorPart": {
@@ -2919,7 +2919,7 @@
         "name": "LightCircleEhalcodon"
     },
     {
-        "src": "/images/Textures/Items/Qorish Veil.png",
+        "src": "/assets/images/Textures/Items/Qorish Veil.png",
         "cleanedName": "Qorish sorceress veil",
         "armorPart": {
             "Name": "Armor",
@@ -2930,7 +2930,7 @@
         "name": "Qorish Veil"
     },
     {
-        "src": "/images/Textures/Items/Qorish Gown.png",
+        "src": "/assets/images/Textures/Items/Qorish Gown.png",
         "cleanedName": "Qorish sorceress gown",
         "armorPart": {
             "Name": "Armor",

@@ -3,7 +3,8 @@ span {
 }
 
 img {
-    max-height: 8rem;
+    height: 8rem;
+    image-rendering: pixelated;
 }
 
 .section-hr {
