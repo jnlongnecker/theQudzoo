@@ -166,7 +166,7 @@ export default class AttributeControls extends LightningElement {
             return;
 
 
-        let action = new AttributeChangeAction(attribute.name.toLowerCase(), cost, 1, leveledPoint, this.mode);
+        let action = new AttributeChangeAction(attribute.name, cost, 1, leveledPoint, this.mode);
 
         let evt = new CustomEvent("actionattributechange", { detail: action, bubbles: true, composed: true });
         this.dispatchEvent(evt);
@@ -181,7 +181,7 @@ export default class AttributeControls extends LightningElement {
         if (attribute.total == this.min && !this.isFreeMode) { console.log("Can't go lower"); return; }
 
 
-        let action = new AttributeChangeAction(attribute.name.toLowerCase(), -cost, -1, leveledPoint, this.mode);
+        let action = new AttributeChangeAction(attribute.name, -cost, -1, leveledPoint, this.mode);
 
         let evt = new CustomEvent("actionattributechange", { detail: action, bubbles: true, composed: true });
         this.dispatchEvent(evt);

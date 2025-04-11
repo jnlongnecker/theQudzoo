@@ -4,215 +4,43 @@ import { random, Roll } from "./rolls";
 import { Skills } from "./skillParts/module";
 import { GameObject } from "./gameObject";
 
-class Stats {
-    av;
-    dv;
-    hp;
-    qn;
-    ma;
-    strength;
-    agility;
-    toughness;
-    intelligence;
-    willpower;
-    ego;
-    heatRes;
-    coldRes;
-    acidRes;
-    elecRes;
-    poisonRes;
+class Stat {
+    _value;
+    sValue;
+    boost;
+    name;
+    shortName;
 
-    statShifters;
-    sValues = {};
-
-    get Strength() {
-        let shift = this.getShift('strength');
-        return {
-            value: this.strength,
-            total: this.strength + shift,
-            modifier: Math.floor((this.strength + shift - 16) * 0.5),
-            shift,
-        };
-    }
-
-    get Agility() {
-        let shift = this.getShift('agility');
-        return {
-            value: this.agility,
-            total: this.agility + shift,
-            modifier: Math.floor((this.agility + shift - 16) * 0.5),
-            shift,
-        };
-    }
-
-    get Toughness() {
-        let shift = this.getShift('toughness');
-        return {
-            value: this.toughness,
-            total: this.toughness + shift,
-            modifier: Math.floor((this.toughness + shift - 16) * 0.5),
-            shift,
-        };
-    }
-
-    get Intelligence() {
-        let shift = this.getShift('intelligence');
-        return {
-            value: this.intelligence,
-            total: this.intelligence + shift,
-            modifier: Math.floor((this.intelligence + shift - 16) * 0.5),
-            shift,
-        };
-    }
-
-    get Willpower() {
-        let shift = this.getShift('willpower');
-        return {
-            value: this.willpower,
-            total: this.willpower + shift,
-            modifier: Math.floor((this.willpower + shift - 16) * 0.5),
-            shift,
-        };
-    }
-
-    get Ego() {
-        let shift = this.getShift('ego');
-        return {
-            value: this.ego,
-            total: this.ego + shift,
-            modifier: Math.floor((this.ego + shift - 16) * 0.5),
-            shift,
-        };
-    }
-
-    get Quickness() {
-        let shift = this.getShift('qn');
-        return { value: this.qn + shift };
-    }
-
-    get AV() {
-        let shift = this.getShift('av');
-        return { value: this.av + shift };
-    }
-
-    get DV() {
-        let shift = this.getShift('dv');
-        return { value: this.dv + shift + this.Agility.modifier + 6 };
-    }
-
-    get HP() {
-        let shift = this.getShift('hp');
-        return { value: this.hp + shift };
-    }
-
-    get MA() {
-        let shift = this.getShift('ma');
-        return { value: this.ma + shift + this.Willpower.modifier + 4 };
-    }
-
-    constructor(
-        av = 0, dv = 0, hp = 0, qn = 100, ma = 0,
-        strength = 16, agility = 16, toughness = 16, intelligence = 16, willpower = 16, ego = 16,
-        heatRes = 0, coldRes = 0, acidRes = 0, elecRes = 0, poisonRes = 0) {
-
-        this.hp = 0;
-        this.ma = ma;
-        this.av = av;
-        this.dv = dv;
-        this.qn = qn;
-        this.strength = strength;
-        this.agility = agility;
-        this.toughness = toughness;
-        this.intelligence = intelligence;
-        this.willpower = willpower;
-        this.ego = ego;
-        this.heatRes = heatRes;
-        this.coldRes = coldRes;
-        this.acidRes = acidRes;
-        this.elecRes = elecRes;
-        this.poisonRes = poisonRes;
-        this.statShifters = [];
-        this.addShifter('hp', hp);
-    }
-
-    static fromObject(obj) {
-        let sValues = {};
-        let av, dv, hp, qn, ma, strength, agility, toughness, intelligence, willpower, ego, heatRes, coldRes, acidRes, elecRes;
-        let statArr = obj.stats;
-        for (let tag of statArr) {
-            switch (tag.Name) {
-                case 'Hitpoints':
-                    hp = Number.parseInt(tag.Value);
-                    sValues.hp = tag.sValue;
-                    break;
-                case 'Strength':
-                    strength = Number.parseInt(tag.Value);
-                    sValues.strength = tag.sValue;
-                    break;
-                case 'Agility':
-                    agility = Number.parseInt(tag.Value);
-                    sValues.agility = tag.sValue;
-                    break;
-                case 'Toughness':
-                    toughness = Number.parseInt(tag.Value);
-                    sValues.toughness = tag.sValue;
-                    break;
-                case 'Willpower':
-                    willpower = Number.parseInt(tag.Value);
-                    sValues.willpower = tag.sValue;
-                    break;
-                case 'Intelligence':
-                    intelligence = Number.parseInt(tag.Value);
-                    sValues.intelligence = tag.sValue;
-                    break;
-                case 'Ego':
-                    ego = Number.parseInt(tag.Value);
-                    sValues.ego = tag.sValue;
-                    break;
-                case 'Speed':
-                    qn = Number.parseInt(tag.Value);
-                    sValues.qn = tag.sValue;
-                    break;
-                case 'AV':
-                    av = Number.parseInt(tag.Value);
-                    sValues.av = tag.sValue;
-                    break;
-                case 'DV':
-                    dv = Number.parseInt(tag.Value);
-                    sValues.dv = tag.sValue;
-                    break;
-                case 'MA':
-                    ma = Number.parseInt(tag.Value);
-                    sValues.ma = tag.sValue;
-                    break;
-                case 'HeatResistance':
-                    heatRes = Number.parseInt(tag.Value);
-                    break;
-                case 'ColdResistance':
-                    coldRes = Number.parseInt(tag.Value);
-                    break;
-                case 'ElectricResistance':
-                    elecRes = Number.parseInt(tag.Value);
-                    break;
-                case 'AcidResistance':
-                    acidRes = Number.parseInt(tag.Value);
-                    break;
-            }
+    get value() {
+        if (this.boost > 0) {
+            return this._value + Math.ceil(this._value * 0.25 * this.boost);
+        } else if (this.boost < 0) {
+            return this._value + Math.ceil(this._value * 0.2 * this.boost);
         }
-        let stats = new Stats(av, dv, hp, qn, ma, strength, agility, toughness, intelligence, willpower, ego, heatRes, coldRes, acidRes, elecRes, 0);
-        stats.sValues = sValues;
-        return stats;
+        else return this._value;
+    }
+
+    set value(val) {
+        this._value = val;
+    }
+
+    constructor({ Value, sValue, Boost, Name, ShortName } = {}) {
+        this._value = Number.parseInt(Value);
+        this.sValue = sValue;
+        this.boost = Boost ? Number.parseInt(Boost) : 0;
+        this.name = Name;
+        this.shortName = ShortName;
     }
 
     levelTier(level) {
         return Math.floor(level / 5) + 1
     }
 
-    rollSValue(stat, level) {
-        let levelTier = this.levelTier(level);
-        let sValue = this.sValues[stat];
+    rollSValue(level) {
+        let sValue = this.sValue;
         if (!sValue) return;
 
+        let levelTier = this.levelTier(level);
         let rolls = sValue.split(',');
         let rollString = '';
         for (let roll of rolls) {
@@ -220,7 +48,152 @@ class Stats {
             rollString += rollString.length ? `+${roll}` : roll;
         }
         let roll = new Roll(rollString);
-        this.setAttribute(stat, Math.floor(roll.getAverage()));
+        this._value = Math.floor(roll.getAverage());
+    }
+}
+
+class Stats {
+    stats = {}
+
+    statShifters;
+
+    get Strength() {
+        let shift = this.getShift('Strength');
+        let value = this.getRaw('Strength');
+        return {
+            value: value,
+            total: value + shift,
+            modifier: Math.floor((value + shift - 16) * 0.5),
+            shift,
+        };
+    }
+
+    get Agility() {
+        let shift = this.getShift('Agility');
+        let value = this.getRaw('Agility');
+        return {
+            value: value,
+            total: value + shift,
+            modifier: Math.floor((value + shift - 16) * 0.5),
+            shift,
+        };
+    }
+
+    get Toughness() {
+        let shift = this.getShift('Toughness');
+        let value = this.getRaw('Toughness');
+        return {
+            value: value,
+            total: value + shift,
+            modifier: Math.floor((value + shift - 16) * 0.5),
+            shift,
+        };
+    }
+
+    get Intelligence() {
+        let shift = this.getShift('Intelligence');
+        let value = this.getRaw('Intelligence');
+        return {
+            value: value,
+            total: value + shift,
+            modifier: Math.floor((value + shift - 16) * 0.5),
+            shift,
+        };
+    }
+
+    get Willpower() {
+        let shift = this.getShift('Willpower');
+        let value = this.getRaw('Willpower');
+        return {
+            value: value,
+            total: value + shift,
+            modifier: Math.floor((value + shift - 16) * 0.5),
+            shift,
+        };
+    }
+
+    get Ego() {
+        let shift = this.getShift('Ego');
+        let value = this.getRaw('Ego');
+        return {
+            value: value,
+            total: value + shift,
+            modifier: Math.floor((value + shift - 16) * 0.5),
+            shift,
+        };
+    }
+
+    get Quickness() {
+        let shift = this.getShift('Speed');
+        let value = this.getRaw('Speed');
+        return { value: value + shift };
+    }
+
+    get AV() {
+        let shift = this.getShift('AV');
+        let value = this.getRaw('AV');
+        return { value: value + shift };
+    }
+
+    get DV() {
+        let shift = this.getShift('DV');
+        let value = this.getRaw('DV');
+        return { value: value + shift + this.Agility.modifier + 6 };
+    }
+
+    get HP() {
+        let shift = this.getShift('Hitpoints');
+        let value = this.getRaw('Hitpoints');
+        return { value: value + shift };
+    }
+
+    get MA() {
+        let shift = this.getShift('MA');
+        let value = this.getRaw('MA');
+        return { value: value + shift + this.Willpower.modifier + 4 };
+    }
+
+    get Resistances() {
+        let heatShift = this.getShift('HeatResistance');
+        let heatVal = this.getRaw('HeatResistance');
+        let coldShift = this.getShift('ColdResistance');
+        let coldVal = this.getRaw('ColdResistance');
+        let acidShift = this.getShift('AcidResistance');
+        let acidVal = this.getRaw('AcidResistance');
+        let electricShift = this.getShift('ElectricResistance');
+        let electricVal = this.getRaw('ElectricResistance');
+        return {
+            heat: heatShift + heatVal, cold: coldShift + coldVal,
+            acid: acidShift + acidVal, electric: electricShift + electricVal
+        };
+    }
+
+    constructor(stats) {
+        this.statShifters = [];
+        for (let stat of stats) {
+            if (stat.name === 'Hitpoints') {
+                this.addShifter('HP', stat.value);
+                stat.value = 0;
+            }
+            this.stats[stat.name] = stat;
+        }
+    }
+
+    static fromObject(obj) {
+        let statArr = obj.stats;
+        let statObjList = [];
+        for (let tag of statArr) {
+            let stat = new Stat(tag);
+            statObjList.push(stat);
+        }
+        let stats = new Stats(statObjList);
+        return stats;
+    }
+
+    rollStats(level) {
+        for (let attribute in this.stats) {
+            this.stats[attribute].rollSValue(level);
+        }
     }
 
     addShifter(stat, shift) {
@@ -234,66 +207,45 @@ class Stats {
     }
 
     addHp(amount) {
-        this.hp += amount + this.Toughness.modifier;
+        this.stats.Hitpoints.value += amount + this.Toughness.modifier;
     }
 
     attributeUp(attributeName, amount) {
-        switch (attributeName) {
-            case 'strength': this.strength += amount; break;
-            case 'agility': this.agility += amount; break;
-            case 'toughness': this.toughness += amount; break;
-            case 'intelligence': this.intelligence += amount; break;
-            case 'willpower': this.willpower += amount; break;
-            case 'ego': this.ego += amount; break;
-        }
+        this.stats[attributeName].value += amount;
     }
 
     setAttribute(attributeName, value) {
-        switch (attributeName) {
-            case 'strength': this.strength = value; break;
-            case 'agility': this.agility = value; break;
-            case 'toughness': this.toughness = value; break;
-            case 'intelligence': this.intelligence = value; break;
-            case 'willpower': this.willpower = value; break;
-            case 'ego': this.ego = value; break;
-        }
+        this.stats[attributeName].value = value;
     }
 
     attributeAllUp() {
-        this.strength++;
-        this.agility++;
-        this.toughness++;
-        this.intelligence++;
-        this.willpower++;
-        this.ego++;
+        this.stats.Strength.value++;
+        this.stats.Agility.value++;
+        this.stats.Toughness.value++;
+        this.stats.Intelligence.value++;
+        this.stats.Willpower.value++;
+        this.stats.Ego.value++;
     }
 
     attributeAllDown() {
-        this.strength--;
-        this.agility--;
-        this.toughness--;
-        this.intelligence--;
-        this.willpower--;
-        this.ego--;
+        this.stats.Strength.value--;
+        this.stats.Agility.value--;
+        this.stats.Toughness.value--;
+        this.stats.Intelligence.value--;
+        this.stats.Willpower.value--;
+        this.stats.Ego.value--;
     }
 
     recalculateHp(hpFromLevelUp, level) {
         let tou = this.Toughness;
-        this.hp = tou.total;
+        this.stats.Hitpoints.value = tou.total;
         for (let i = 2; i <= level; i++) {
-            this.hp += Math.max(hpFromLevelUp[i] + tou.modifier, 1);
+            this.stats.Hitpoints.value += Math.max(hpFromLevelUp[i] + tou.modifier, 1);
         }
     }
 
     getRaw(attributeName) {
-        switch (attributeName) {
-            case 'strength': return this.strength;
-            case 'agility': return this.agility;
-            case 'toughness': return this.toughness;
-            case 'intelligence': return this.intelligence;
-            case 'willpower': return this.willpower;
-            case 'ego': return this.ego;
-        }
+        return this.stats[attributeName].value;
     }
 
     getShift(stat) {
@@ -370,9 +322,7 @@ class Creature extends GameObject {
     }
 
     rollStats() {
-        for (let key in this.stats.sValues) {
-            this.stats.rollSValue(key, this.level);
-        }
+        this.stats.rollStats(this.level);
     }
 
     levelUp() {
@@ -408,7 +358,6 @@ class Creature extends GameObject {
         }
         this.stats.attributeUp(attribute, shift);
         this.stats.recalculateHp(this.hpFromLevelUpRolls, this.level);
-        console.log('points spent');
     }
 
     refundPoints(points, attribute, shift) {

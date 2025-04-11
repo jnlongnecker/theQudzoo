@@ -181,8 +181,8 @@ export class Anatomy {
     equipmentList = [];
 
     static fromPart(part) {
-        let anatomyType = part.Anatomy;
         return Anatomy.humanoid();
+        let anatomyType = part.Anatomy;
     }
 
     attach(host) {
