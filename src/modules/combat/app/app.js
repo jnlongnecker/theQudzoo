@@ -1,37 +1,29 @@
 import { LightningElement, track } from "lwc";
 import { Creature } from "combat/calculator";
+import { fire, register } from "c/componentEvents";
 
 export default class App extends LightningElement {
-    @track creatureWrapper = { creature: undefined, count: 0 };
-    @track enemyWrapper = { creature: undefined, count: 0 };
+    creature;
+    enemy;
 
     actionLog;
-    mode = 'level';
-    count = 0;
 
-    updateCreature(event) {
-        this.creatureWrapper = this.forceRerenderWrapper(Creature.fromObject(JSON.parse(JSON.stringify(event.detail)), true));
+    constructor() {
+        super();
+        register('actionevent', (event) => { this.handleActionGeneral(event) });
+        register('resetactionevent', (event) => { this.handleActionLevelReset(event) });
+        register('playerchangeevent', (event) => { this.updatePlayer(event) });
+        register('enemychangeevent', (event) => { this.updateEnemy(event) });
+    }
+
+    updatePlayer(event) {
+        this.creature = Creature.fromObject(JSON.parse(JSON.stringify(event.detail)), true);
+        fire('refreshplayerevent', { detail: this.creature });
     }
 
     updateEnemy(event) {
-        this.enemyWrapper = this.forceRerenderWrapper(Creature.fromObject(JSON.parse(JSON.stringify(event.detail))));
-    }
-
-    /**
-     * Hack to get the Lighting Component Framework to properly detect a mutation
-     * to the creature object.
-     * @param {Object} newCreature The updated creature to broadcast mutations to
-     */
-    forceRerenderWrapper(newCreature) {
-        let newWrapper = {
-            creature: newCreature,
-            count: this.count + 1,
-        };
-        return newWrapper;
-    }
-
-    handleModeChange(event) {
-        this.mode = event.detail;
+        this.enemy = Creature.fromObject(JSON.parse(JSON.stringify(event.detail)));
+        fire('refreshenemyevent', { detail: this.enemy });
     }
 
     sendActionToLog(action) {
@@ -50,7 +42,7 @@ export default class App extends LightningElement {
 
     handleUndoAction(event) {
         let action = event.detail;
-        let creature = this.creatureWrapper.creature;
+        let creature = this.creature;
         try {
             action.reverse(creature);
         } catch (e) {
@@ -58,12 +50,13 @@ export default class App extends LightningElement {
             return;
         }
         this.actionLog.updateActionMessage(action.id);
-        this.creatureWrapper = this.forceRerenderWrapper(creature);
+        this.creature = creature;
+        fire('refreshplayerevent', { detail: this.creature });
     }
 
     handleRedoAction(event) {
         let action = event.detail;
-        let creature = this.creatureWrapper.creature;
+        let creature = this.creature;
         try {
             action.apply(creature);
         } catch (e) {
@@ -71,12 +64,13 @@ export default class App extends LightningElement {
             return;
         }
         this.actionLog.updateActionMessage(action.id);
-        this.creatureWrapper = this.forceRerenderWrapper(creature);
+        this.creature = creature;
+        fire('refreshplayerevent', { detail: this.creature });
     }
 
     handleActionGeneral(event) {
         let action = event.detail;
-        let creature = this.creatureWrapper.creature;
+        let creature = this.creature;
         try {
             action.apply(creature);
         } catch (e) {
@@ -84,12 +78,13 @@ export default class App extends LightningElement {
             return;
         }
         this.sendActionToLog(action);
-        this.creatureWrapper = this.forceRerenderWrapper(creature);
+        this.creature = creature;
+        fire('refreshplayerevent', { detail: this.creature });
     }
 
     handleActionLevelReset() {
-        if (this.creatureWrapper.creature.level === 1) return;
+        if (this.creature.level === 1) return;
         this.actionLog.applyLevelReset();
-        this.sendMessageToLog('Reset to level 1.');
+        this.sendMessageToLog('{{Y|Reset to level 1.}}');
     }
 }

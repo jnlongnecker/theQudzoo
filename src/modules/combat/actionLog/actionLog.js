@@ -4,6 +4,7 @@ export default class ActionLog extends LightningElement {
 
     @track
     messages = [];
+    scroll = false;
 
     @api
     logAction(action) {
@@ -15,6 +16,7 @@ export default class ActionLog extends LightningElement {
             message: action.print(),
             action,
         });
+        this.scroll = true;
     }
 
     @api
@@ -24,6 +26,7 @@ export default class ActionLog extends LightningElement {
             id: this.messages.length,
             message: message
         });
+        this.scroll = true;
     }
 
     @api
@@ -40,6 +43,7 @@ export default class ActionLog extends LightningElement {
                 this.dispatchEvent(new CustomEvent('undoaction', { detail: message.action }));
             }
         }
+        this.scroll = true;
     }
 
     renderedCallback() {
@@ -61,6 +65,9 @@ export default class ActionLog extends LightningElement {
     scrollContainer() {
         if (!this.container)
             this.container = this.template.querySelector('.chatbox');
-        this.container.scrollTop = this.container.scrollHeight;
+        if (this.scroll) {
+            this.container.scrollTop = this.container.scrollHeight;
+            this.scroll = false;
+        }
     }
 }

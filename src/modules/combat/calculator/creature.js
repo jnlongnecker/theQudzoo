@@ -172,7 +172,7 @@ class Stats {
         this.statShifters = [];
         for (let stat of stats) {
             if (stat.name === 'Hitpoints') {
-                this.addShifter('HP', stat.value);
+                this.addShifter('Hitpoints', stat.value);
                 stat.value = 0;
             }
             this.stats[stat.name] = stat;
@@ -313,6 +313,7 @@ class Creature extends GameObject {
             for (let skill in obj.skills) { creature.addSkill(skill); }
         }
 
+        console.log(creature);
         return creature;
     }
 

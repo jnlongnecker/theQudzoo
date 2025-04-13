@@ -53,7 +53,7 @@ class BodyPart extends Part {
     getValidPrimaryCandidates(candidates = [], slot) {
         if (slot === undefined) {
             let primaryTag = this.host.getTag('PrimaryLimbType');
-            slot = primaryTag ? primaryTag.value : SLOTS.BODY;
+            slot = primaryTag ? primaryTag.value : 'Body';
         }
         for (let part of this.dependentParts) {
             part.getValidPrimaryCandidates(candidates);
@@ -76,7 +76,11 @@ class BodyPart extends Part {
     }
 
     doesAttack() {
-        return this.getMeleeWeapon() !== null && !this.dismembered;
+        if (this.dismembered) return false;
+        if (this.item) {
+            return this.item.hasTag('MeleeWeapon') && this.getMeleeWeapon() !== null;
+        }
+        return this.getMeleeWeapon() !== null;
     }
 
     getMeleeWeapon() {
@@ -87,7 +91,7 @@ class BodyPart extends Part {
     cacheMeleeWeapon() {
         this._cachedWeapon.dirty = false;
         let projectedWeapon = null;
-        if (this.item) {
+        if (this.item && this.item.getTag('MeleeWeapon').value) {
             projectedWeapon = this.item.getPart('MeleeWeapon');
         }
         else if (this.defaultBehavior) {
@@ -150,23 +154,23 @@ class BodyPart extends Part {
     }
 
     // Standard human limbs
-    static body = (name = 'Body') => new BodyPart(name, SLOTS.BODY, null, CYBERNETIC_SLOT.BODY);
-    static back = (name = 'Back') => new BodyPart(name, SLOTS.BACKWEAR, null, CYBERNETIC_SLOT.BACK);
-    static hands = (name = 'Hands') => new BodyPart(name, SLOTS.HANDWEAR, null, CYBERNETIC_SLOT.HANDS);
-    static feet = (name = 'Feet') => new BodyPart(name, SLOTS.FOOTWEAR, null, CYBERNETIC_SLOT.FEET);
-    static head = (name = 'Head') => new BodyPart(name, SLOTS.HEADGEAR, null, CYBERNETIC_SLOT.HEAD);
-    static face = (name = 'Face') => new BodyPart(name, SLOTS.FACE, null, CYBERNETIC_SLOT.FACE);
-    static arm = (name = 'Arm') => new BodyPart(name, SLOTS.ARMGEAR, null, CYBERNETIC_SLOT.ARM);
-    static hand = (name = 'Hand') => new BodyPart(name, SLOTS.HAND, Item.fist());
-    static float = (name = 'Floating Nearby') => new BodyPart(name, SLOTS.FLOATING, null);
+    static body = (name = 'Body') => new BodyPart(name, 'Body', null, CYBERNETIC_SLOT.BODY);
+    static back = (name = 'Back') => new BodyPart(name, 'Back', null, CYBERNETIC_SLOT.BACK);
+    static hands = (name = 'Hands') => new BodyPart(name, 'Hands', null, CYBERNETIC_SLOT.HANDS);
+    static feet = (name = 'Feet') => new BodyPart(name, 'Feet', null, CYBERNETIC_SLOT.FEET);
+    static head = (name = 'Head') => new BodyPart(name, 'Head', null, CYBERNETIC_SLOT.HEAD);
+    static face = (name = 'Face') => new BodyPart(name, 'Face', null, CYBERNETIC_SLOT.FACE);
+    static arm = (name = 'Arm') => new BodyPart(name, 'Arm', null, CYBERNETIC_SLOT.ARM);
+    static hand = (name = 'Hand') => new BodyPart(name, 'Hand', Item.fist());
+    static float = (name = 'Floating Nearby') => new BodyPart(name, 'Floating Nearby', null);
 
     // Mutation limbs
     static horn = (name = 'Horn') => new BodyPart(name, SLOTS.HEADGEAR, null);
     static stinger = (name = 'Stinger') => new BodyPart(name, SLOTS.TAIL, null);
 
     // Equipment limbs
-    static roboArm = (name = 'Robo-Arm') => new BodyPart(name, SLOTS.ARMGEAR, null);
-    static roboHand = (name = 'Robo-Hand') => new BodyPart(name, SLOTS.HAND, null, null);
+    static roboArm = (name = 'Robo-Arm') => new BodyPart(name, 'Arm', null);
+    static roboHand = (name = 'Robo-Hand') => new BodyPart(name, 'Hand', null, null);
 }
 part(BodyPart);
 

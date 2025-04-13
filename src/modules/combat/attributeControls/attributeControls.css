@@ -13,7 +13,7 @@ h2 {
 
 h3 {
     color: var(--text-color-faded);
-    margin: 0.5rem 0;
+    margin: 0;
 }
 
 span {
@@ -38,15 +38,17 @@ span {
 }
 
 .stat-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     border: 1px solid var(--text-color-faded);
     color: var(--text-color-faded);
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     min-width: 5ch;
 }
 
 .point-cost {
-    min-width: calc(4rem + 5ch);
+    min-width: calc(2rem + 5ch);
     color: var(--text-color-faded);
     text-align: center;
     align-self: flex-start;
@@ -176,11 +178,12 @@ span {
 
 .modifier {
     color: var(--qudzoo-color);
+    margin: 0;
 }
 
 @media only screen and (max-width: 1200px) {
     .attribute-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(6, minmax(0, 1fr));
     }
 }
 

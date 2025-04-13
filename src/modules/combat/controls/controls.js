@@ -1,13 +1,10 @@
 import { LightningElement, api } from "lwc";
+import { register } from "c/componentEvents";
 
 export default class Controls extends LightningElement {
 
-    showEquipment;
-    showSkills;
     showCombat;
-    showMutations;
-    showCybernetics;
-    showAttributes = true;
+    showBuilder = true;
 
     _creature;
     @api mode;
@@ -18,12 +15,15 @@ export default class Controls extends LightningElement {
     }
 
     set creature(value) {
-        if (!value || !value.creature) return;
-        let newCreature = {
-            creature: value.creature,
-            count: value.count + 1,
-        };
-        this._creature = newCreature;
+        if (!value) return;
+        this._creature = value;
+    }
+
+    constructor() {
+        super();
+
+        register('refreshplayerevent', (e) => { this.creature = e.detail });
+        register('refreshenemyevent', (e) => { this.enemy = e.detail });
     }
 
     changeTab(event) {
@@ -32,11 +32,7 @@ export default class Controls extends LightningElement {
             child.classList.remove('selected');
         }
         target.classList.add('selected');
-        this.showEquipment = target.innerHTML == 'Equipment';
-        this.showSkills = target.innerHTML == 'Skills';
-        this.showAttributes = target.innerHTML == 'Attributes';
-        this.showCombat = target.innerHTML == 'Combat';
-        this.showMutations = target.innerHTML == 'Mutations';
-        this.showCybernetics = target.innerHTML == 'Cybernetics';
+        this.showBuilder = target.innerHTML == 'Character Builder';
+        this.showCombat = target.innerHTML == 'Combat Builder';
     }
 }

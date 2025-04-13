@@ -81,7 +81,7 @@ class AttributeChangeAction {
     }
 }
 
-const numToAttribute = ['strength', 'dexterity', 'toughness', 'intelligence', 'willpower', 'ego'];
+const numToAttribute = ['Strength', 'Agility', 'Toughness', 'Intelligence', 'Willpower', 'Ego'];
 class RandomizeAttributesAction {
 
     reversible = false;
@@ -93,20 +93,24 @@ class RandomizeAttributesAction {
 
     apply(character) {
         this.validateApply(character);
-        for (let attribute in character.attributes) {
-            character.attributes[attribute] = character.attributeExpenditure.minTotal
-        }
+        character.stats.setAttribute('Strength', character.attributeExpenditure.minTotal);
+        character.stats.setAttribute('Agility', character.attributeExpenditure.minTotal);
+        character.stats.setAttribute('Toughness', character.attributeExpenditure.minTotal);
+        character.stats.setAttribute('Intelligence', character.attributeExpenditure.minTotal);
+        character.stats.setAttribute('Willpower', character.attributeExpenditure.minTotal);
+        character.stats.setAttribute('Ego', character.attributeExpenditure.minTotal);
 
         character.attributeExpenditure.freePointsUsed = 0;
         while (character.attributeExpenditure.freePointsUsed < character.attributeExpenditure.freePoints) {
             let attributeSelection = Math.floor(Math.random() * 6);
             let attribute = numToAttribute[attributeSelection];
-            let cost = character.attributes[attribute] >= 18 ? 2 : 1;
+            let currValue = character.stats.getRaw(attribute)
+            let cost = currValue >= 18 ? 2 : 1;
 
-            if (character.attributes[attribute] > 23) continue;
+            if (currValue > 23) continue;
             if (character.attributeExpenditure.freePointsUsed + cost > character.attributeExpenditure.freePoints) continue;
 
-            character.attributes[attribute]++;
+            character.stats.setAttribute(attribute, currValue + 1);
             character.attributeExpenditure.freePointsUsed += cost;
         }
     }
@@ -126,9 +130,12 @@ class ResetAttributesAction {
 
     apply(character) {
         this.validateApply(character);
-        for (let attribute in character.attributes) {
-            character.attributes[attribute] = character.attributeExpenditure.minTotal
-        }
+        character.stats.setAttribute('Strength', character.attributeExpenditure.minTotal);
+        character.stats.setAttribute('Agility', character.attributeExpenditure.minTotal);
+        character.stats.setAttribute('Toughness', character.attributeExpenditure.minTotal);
+        character.stats.setAttribute('Intelligence', character.attributeExpenditure.minTotal);
+        character.stats.setAttribute('Willpower', character.attributeExpenditure.minTotal);
+        character.stats.setAttribute('Ego', character.attributeExpenditure.minTotal);
 
         character.attributeExpenditure.freePointsUsed = 0;
     }

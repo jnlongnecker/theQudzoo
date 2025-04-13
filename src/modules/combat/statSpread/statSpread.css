@@ -40,9 +40,13 @@ img {
     grid-template-columns: 1fr 1fr;
 }
 
+.combat-stat-container .value {
+    font-size: 1.75rem;
+}
+
 .resistances {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .combat-stat-container .name {
@@ -50,7 +54,7 @@ img {
 }
 
 .value {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 }
 
 .name {
@@ -59,7 +63,7 @@ img {
 
 .attributes {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
 

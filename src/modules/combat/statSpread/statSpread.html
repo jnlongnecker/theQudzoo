@@ -22,37 +22,37 @@
                 </span>
             </div>
             <hr class="section-hr">
-            <div class="resistances">
-                <div class="attribute-container willpower">
-                    <span class="value">{creature.stats.Resistances.acid}</span>
-                    <hr class="stat-hr">
-                    <span class="name">acid res</span>
-                </div>
-                <div class="attribute-container agility">
-                    <span class="value">{creature.stats.Resistances.electric}</span>
-                    <hr class="stat-hr">
-                    <span class="name">elec res</span>
-                </div>
-                <div class="attribute-container toughness">
-                    <span class="value">{creature.stats.Resistances.heat}</span>
-                    <hr class="stat-hr">
-                    <span class="name">heat res</span>
-                </div>
-                <div class="attribute-container intelligence">
-                    <span class="value">{creature.stats.Resistances.cold}</span>
-                    <hr class="stat-hr">
-                    <span class="name">cold res</span>
-                </div>
+            <div class="attributes">
+                <template iterator:it={attributes}>
+                    <div class={it.value.class} key={it.value.id}>
+                        <span class="value">{it.value.total}</span>
+                        <hr class="stat-hr">
+                        <span class="name">{it.value.name}</span>
+                    </div>
+                </template>
             </div>
         </div>
-        <div class="attributes">
-            <template iterator:it={attributes}>
-                <div class={it.value.class} key={it.value.id}>
-                    <span class="value">{it.value.total}</span>
-                    <hr class="stat-hr">
-                    <span class="name">{it.value.name}</span>
-                </div>
-            </template>
+        <div class="resistances">
+            <div class="attribute-container toughness">
+                <span class="value">{creature.stats.Resistances.heat}</span>
+                <hr class="stat-hr">
+                <span class="name">heat res</span>
+            </div>
+            <div class="attribute-container intelligence">
+                <span class="value">{creature.stats.Resistances.cold}</span>
+                <hr class="stat-hr">
+                <span class="name">cold res</span>
+            </div>
+            <div class="attribute-container agility">
+                <span class="value">{creature.stats.Resistances.electric}</span>
+                <hr class="stat-hr">
+                <span class="name">elec res</span>
+            </div>
+            <div class="attribute-container willpower">
+                <span class="value">{creature.stats.Resistances.acid}</span>
+                <hr class="stat-hr">
+                <span class="name">acid res</span>
+            </div>
         </div>
     </div>
 </template>

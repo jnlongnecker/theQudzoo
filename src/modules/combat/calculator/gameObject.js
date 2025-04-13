@@ -2,9 +2,9 @@ export class Tag {
     name;
     value;
 
-    constructor({ name = '', value = '' } = {}) {
-        this.name = name;
-        this.value = value;
+    constructor({ Name = '', Value = '' } = {}) {
+        this.name = Name;
+        this.value = Value;
     }
 }
 
@@ -67,6 +67,7 @@ export class GameObject {
     }
 
     addTag(tag) {
+        tag = new Tag(tag);
         if (this.getTag(tag)) return;
         this.tags.push(tag);
     }

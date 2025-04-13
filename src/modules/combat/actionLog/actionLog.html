@@ -4,18 +4,22 @@
             <p class="line" key={it.value.id}>
                 <template if:true={it.value.action}>
                     <template if:true={it.value.activated}>
-                        <span>{it.value.message}</span>
+                        <span>:: <build-markdown-renderer modes="collapse-line all-qud-font bolded inline no-highlight"
+                                raw-text={it.value.message}></build-markdown-renderer></span>
                         <input-button if:true={it.value.action.reversible} class="inline-action" size="small"
                             variant="thin" data-index={it.value.id} onclick={undoAction}>Undo</input-button>
                     </template>
                     <template if:false={it.value.activated}>
-                        <span class="deactivated">{it.value.message}</span>
+                        <span>:: <build-markdown-renderer
+                                modes="collapse-line all-qud-font bolded inline no-highlight deactivated"
+                                raw-text={it.value.message}></build-markdown-renderer></span>
                         <input-button class="inline-action" size="small" variant="thin" data-index={it.value.id}
                             onclick={redoAction}>Redo</input-button>
                     </template>
                 </template>
                 <template if:false={it.value.action}>
-                    <span>{it.value.message}</span>
+                    <span>:: <build-markdown-renderer modes="collapse-line all-qud-font bolded inline no-highlight"
+                            raw-text={it.value.message}></build-markdown-renderer></span>
                 </template>
             </p>
         </template>

@@ -77,7 +77,7 @@ class Armor extends Part {
         hitBonus = 0, quicknessMod = 0
     } = {}) {
         super();
-        this.slot = slot; this.av = av; this.dv = 0;
+        this.slot = slot; this.av = av; this.dv = dv;
         this.heatRes = heatRes; this.coldRes = coldRes; this.acidRes = acidRes;
         this.elecRes = elecRes; this.poisRes = poisRes;
         this.strength = strength; this.agility = agility; this.toughness = toughness;

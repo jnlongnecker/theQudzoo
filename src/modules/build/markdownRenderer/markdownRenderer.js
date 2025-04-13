@@ -4,7 +4,8 @@ import { compileSugar, compileShaders } from "c/api";
 export default class MarkdownRenderer extends LightningElement {
 
     @api singleLine = false;
-    converter;
+    @api modes = '';
+    static converter;
     markdownHtml;
     containerRef;
 
@@ -24,8 +25,8 @@ export default class MarkdownRenderer extends LightningElement {
 
         if (this.singleLine) {
             compileShaders(value).then(result => {
-                if (!this.converter) {
-                    this.converter = new window['showdown'].Converter()
+                if (!MarkdownRenderer.converter) {
+                    MarkdownRenderer.converter = new window['showdown'].Converter();
                 }
 
                 let text = result.compiled;
@@ -33,13 +34,13 @@ export default class MarkdownRenderer extends LightningElement {
             });
         } else {
             compileSugar(value).then(result => {
-                if (!this.converter) {
-                    this.converter = new window['showdown'].Converter()
+                if (!MarkdownRenderer.converter) {
+                    MarkdownRenderer.converter = new window['showdown'].Converter();
                 }
 
                 let text = result.compiled;
                 text = text.replace(/\n\g/, '<br />');
-                this.markdownHtml = this.converter.makeHtml(text);
+                this.markdownHtml = MarkdownRenderer.converter.makeHtml(text);
                 this.containerRef.innerHTML = this.markdownHtml;
             });
         }
@@ -48,8 +49,9 @@ export default class MarkdownRenderer extends LightningElement {
     renderedCallback() {
         if (!this.containerRef) {
             this.containerRef = this.template.querySelector('div');
-            if (window['showdown'])
-                this.converter = new window['showdown'].Converter()
+        }
+        if (window['showdown'] && !MarkdownRenderer.converter) {
+            MarkdownRenderer.converter = new window['showdown'].Converter();
         }
     }
 }

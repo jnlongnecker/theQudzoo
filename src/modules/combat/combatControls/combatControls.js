@@ -12,7 +12,7 @@ export default class CombatControls extends LightningElement {
     }
     set character(val) {
         if (!val) return;
-        this.practicalCharacter = val.creature;
+        this.practicalCharacter = val;
     }
 
     @api get enemy() {
@@ -20,7 +20,7 @@ export default class CombatControls extends LightningElement {
     }
     set enemy(val) {
         if (!val) return;
-        this.practicalEnemy = val.creature;
+        this.practicalEnemy = val;
     }
 
     runTest() {

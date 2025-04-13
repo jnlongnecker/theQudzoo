@@ -14,8 +14,8 @@ export default class StatSpread extends LightningElement {
     }
 
     set creature(value) {
-        this._creature = value.creature;
-        let statObj = value.creature.stats;
+        this._creature = value;
+        let statObj = value.stats;
         this.attributes = [
             {
                 id: 1,
@@ -75,6 +75,10 @@ export default class StatSpread extends LightningElement {
                 total: statObj.MA.value
             },
         ];
+    }
+
+    @api refresh(newCreature) {
+        this.creature = newCreature;
     }
 
     calculateAppliedStats(value) {

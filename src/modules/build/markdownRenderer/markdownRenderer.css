@@ -1,5 +1,32 @@
 @import "styles/injection";
 
+/* ========= MODES ======== */
+
+.collapse-line p {
+    margin: 0;
+}
+
+.deactivated {
+    filter: grayscale();
+}
+
+.all-qud-font {
+    font-family: var(--qud-font);
+}
+
+.bolded {
+    font-weight: 700;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.no-highlight .injected:hover::before {
+    background-color: transparent;
+    outline: 0;
+}
+
 main {
     display: flex;
     justify-content: space-between;

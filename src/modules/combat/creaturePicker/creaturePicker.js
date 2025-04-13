@@ -1,11 +1,13 @@
 import { LightningElement, api } from "lwc";
 import { getPreviews, getDetails } from "c/api";
+import { fire, register } from "c/componentEvents";
 
 export default class CreaturePicker extends LightningElement {
 
     creatures = [];
     selectedCreature;
     creatureOptions = [];
+    statSpread;
 
     @api
     get creature() {
@@ -13,16 +15,18 @@ export default class CreaturePicker extends LightningElement {
     }
 
     set creature(value) {
-        if (!value || !value.creature) return;
-        let newWrapper = {
-            creature: value.creature,
-            count: value.count + 1
-        };
-        this.selectedCreature = newWrapper;
+        if (!value) return;
+        this.selectedCreature = value;
     }
 
     constructor() {
         super();
+
+        register('refreshenemyevent', (event) => { this.creature = event.detail; this.statSpread?.refresh(this.creature); });
+    }
+
+    renderedCallback() {
+        if (!this.statSpread) this.statSpread = this.template.querySelector('combat-stat-spread');
     }
 
     async pullCreatures(term) {
@@ -42,8 +46,7 @@ export default class CreaturePicker extends LightningElement {
         let creatureName = event.detail.name;
         let query = `name=${creatureName}`;
         let creatureDetails = (await getDetails(query, 'creatures')).result;
-        console.log(creatureDetails);
-        this.dispatchEvent(new CustomEvent('charchange', { detail: creatureDetails }));
+        fire('enemychangeevent', { detail: creatureDetails });
     }
 
     handleFilterChange(event) {

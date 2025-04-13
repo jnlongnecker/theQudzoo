@@ -1,5 +1,6 @@
 import { LightningElement, api, track } from "lwc";
 import { AttributeChangeAction, RandomizeAttributesAction, ResetAttributesAction } from "combat/actions";
+import { fire, register } from "c/componentEvents";
 
 export default class AttributeControls extends LightningElement {
 
@@ -27,51 +28,6 @@ export default class AttributeControls extends LightningElement {
 
     get showButtons() {
         return this.level == 1;
-    }
-
-    @api
-    get creature() { }
-
-    set creature(value) {
-        if (value == undefined) return;
-        let creature = value.creature;
-        let stats = creature.stats;
-        this.attributes = this.attributes.map(item => {
-            switch (item.name) {
-                case 'Strength':
-                    item.total = stats.Strength.value;
-                    item.displayTotal = stats.Strength.total;
-                    break;
-                case 'Agility':
-                    item.total = stats.Agility.value;
-                    item.displayTotal = stats.Agility.total;
-                    break;
-                case 'Toughness':
-                    item.total = stats.Toughness.value;
-                    item.displayTotal = stats.Toughness.total;
-                    break;
-                case 'Intelligence':
-                    item.total = stats.Intelligence.value;
-                    item.displayTotal = stats.Intelligence.total;
-                    break;
-                case 'Willpower':
-                    item.total = stats.Willpower.value;
-                    item.displayTotal = stats.Willpower.total;
-                    break;
-                case 'Ego':
-                    item.total = stats.Ego.value;
-                    item.displayTotal = stats.Ego.total;
-                    break;
-            };
-            return item;
-        });
-        this.level = Math.max(1, creature.level);
-        let leveledPointsAvailable = creature.attributeExpenditure.leveledPoints - creature.attributeExpenditure.leveledPointsUsed;
-        let freePointsAvailable = creature.attributeExpenditure.freePoints - creature.attributeExpenditure.freePointsUsed;
-        this.points = this.level > 1 ? leveledPointsAvailable : freePointsAvailable;
-        this.maxPoints = this.level > 1 ? creature.attributeExpenditure.leveledPoints : creature.attributeExpenditure.freePoints;
-        this.min = creature.attributeExpenditure.minTotal;
-        this.recalculateDisplayTotals();
     }
 
     @track
@@ -145,6 +101,54 @@ export default class AttributeControls extends LightningElement {
         }
     ]
 
+    constructor() {
+        super();
+
+        register('refreshplayerevent', (e) => this.handleCreatureRefresh(e));
+    }
+
+    handleCreatureRefresh(event) {
+        let creature = event.detail;
+        if (creature == undefined) return;
+        let stats = creature.stats;
+        this.attributes = this.attributes.map(item => {
+            switch (item.name) {
+                case 'Strength':
+                    item.total = stats.Strength.value;
+                    item.displayTotal = stats.Strength.total;
+                    break;
+                case 'Agility':
+                    item.total = stats.Agility.value;
+                    item.displayTotal = stats.Agility.total;
+                    break;
+                case 'Toughness':
+                    item.total = stats.Toughness.value;
+                    item.displayTotal = stats.Toughness.total;
+                    break;
+                case 'Intelligence':
+                    item.total = stats.Intelligence.value;
+                    item.displayTotal = stats.Intelligence.total;
+                    break;
+                case 'Willpower':
+                    item.total = stats.Willpower.value;
+                    item.displayTotal = stats.Willpower.total;
+                    break;
+                case 'Ego':
+                    item.total = stats.Ego.value;
+                    item.displayTotal = stats.Ego.total;
+                    break;
+            };
+            return item;
+        });
+        this.level = Math.max(1, creature.level);
+        let leveledPointsAvailable = creature.attributeExpenditure.leveledPoints - creature.attributeExpenditure.leveledPointsUsed;
+        let freePointsAvailable = creature.attributeExpenditure.freePoints - creature.attributeExpenditure.freePointsUsed;
+        this.points = this.level > 1 ? leveledPointsAvailable : freePointsAvailable;
+        this.maxPoints = this.level > 1 ? creature.attributeExpenditure.leveledPoints : creature.attributeExpenditure.freePoints;
+        this.min = creature.attributeExpenditure.minTotal;
+        this.recalculateDisplayTotals();
+    }
+
     handleClick(event) {
         let target = event.target;
         if (target.innerText !== "+" && target.innerText !== "-") return;
@@ -168,8 +172,9 @@ export default class AttributeControls extends LightningElement {
 
         let action = new AttributeChangeAction(attribute.name, cost, 1, leveledPoint, this.mode);
 
-        let evt = new CustomEvent("actionattributechange", { detail: action, bubbles: true, composed: true });
-        this.dispatchEvent(evt);
+        fire('actionevent', { detail: action });
+        // let evt = new CustomEvent("actionattributechange", { detail: action, bubbles: true, composed: true });
+        // this.dispatchEvent(evt);
     }
 
     decrementAttribute(attrIndex) {
@@ -183,8 +188,9 @@ export default class AttributeControls extends LightningElement {
 
         let action = new AttributeChangeAction(attribute.name, -cost, -1, leveledPoint, this.mode);
 
-        let evt = new CustomEvent("actionattributechange", { detail: action, bubbles: true, composed: true });
-        this.dispatchEvent(evt);
+        fire('actionevent', { detail: action });
+        // let evt = new CustomEvent("actionattributechange", { detail: action, bubbles: true, composed: true });
+        // this.dispatchEvent(evt);
     }
 
     recalculateDisplayTotals() {
@@ -220,11 +226,13 @@ export default class AttributeControls extends LightningElement {
 
     resetChanges() {
         let action = new ResetAttributesAction();
-        this.dispatchEvent(new CustomEvent("actionattributereset", { detail: action, bubbles: true, composed: true }));
+        fire('actionevent', { detail: action });
+        // this.dispatchEvent(new CustomEvent("actionattributereset", { detail: action, bubbles: true, composed: true }));
     }
 
     randomizeChanges() {
         let action = new RandomizeAttributesAction();
-        this.dispatchEvent(new CustomEvent("actionattributerandomize", { detail: action, bubbles: true, composed: true }));
+        fire('actionevent', { detail: action });
+        // this.dispatchEvent(new CustomEvent("actionattributerandomize", { detail: action, bubbles: true, composed: true }));
     }
 }
