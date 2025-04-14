@@ -19,6 +19,27 @@ export class GameObject {
         this.id = crypto.randomUUID();
     }
 
+    get slots() {
+        let slotTag = this.getTag('UsesSlots');
+        let baseSlots = slotTag ? slotTag.value.split(',').length : 1;
+        let physics = this.getPart('Physics');
+        return (physics?.UsesTwoSlots ? 2 : 1) * baseSlots;
+    }
+
+    get usesSlots() {
+        let slot = 'Hand';
+        let wep = this.getPart('MeleeWeapon');
+        let armor = this.getPart('Armor');
+        let slotTag = this.getTag('UsesSlots');
+        if (slotTag) slot = slotTag.value;
+        else if (armor) slot = armor.WornOn;
+        else if (wep && wep.Slot) slot = wep.Slot;
+
+        let physics = this.getPart('Physics');
+
+        return (physics?.UsesTwoSlots ? `${slot},${slot}` : slot);
+    }
+
     fire(event) {
         event.handle(this);
 
@@ -78,5 +99,13 @@ export class GameObject {
 
     getTag(tag) {
         return this.tags.find(item => item.name === tag)
+    }
+
+    hasTag(tag) {
+        return this.getTag(tag) !== undefined;
+    }
+
+    hasPart(part) {
+        return this.getPart(part) !== undefined;
     }
 }

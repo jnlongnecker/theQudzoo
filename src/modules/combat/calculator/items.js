@@ -16,6 +16,7 @@ class Item extends GameObject {
     static fist() {
         let item = new Item('Fist', '');
         item.attachPart(new MeleeWeapon({ pvCap: 1000, damage: '1d2-1' }));
+        item.addTag({ Name: 'NaturalGear', Value: '' });
         return item;
     }
 }

@@ -35,19 +35,21 @@ class BodyPart extends Part {
     cyberneticSlot;
     item;
     defaultBehavior;
+    isExtrinsic;
     dismembered = false;
     dependentParts = [];
     isPrimary = false;
 
     _cachedWeapon = { dirty: true, weapon: false };
 
-    constructor(name, slot, item, cyberneticSlot, defaultBehavior = null) {
+    constructor(name, slot, item, cyberneticSlot, defaultBehavior = null, isExtrinsic = false) {
         super();
         this.name = name;
         this.slot = slot;
         this.cyberneticSlot = cyberneticSlot;
         this.defaultBehavior = defaultBehavior;
         this.item = item;
+        this.isExtrinsic = isExtrinsic;
     }
 
     getValidPrimaryCandidates(candidates = [], slot) {
@@ -76,10 +78,8 @@ class BodyPart extends Part {
     }
 
     doesAttack() {
+        if (this.isPrimary) return true;
         if (this.dismembered) return false;
-        if (this.item) {
-            return this.item.hasTag('MeleeWeapon') && this.getMeleeWeapon() !== null;
-        }
         return this.getMeleeWeapon() !== null;
     }
 
@@ -91,7 +91,7 @@ class BodyPart extends Part {
     cacheMeleeWeapon() {
         this._cachedWeapon.dirty = false;
         let projectedWeapon = null;
-        if (this.item && this.item.getTag('MeleeWeapon').value) {
+        if (this.item && this.item.hasTag('MeleeWeapon')) {
             projectedWeapon = this.item.getPart('MeleeWeapon');
         }
         else if (this.defaultBehavior) {
@@ -109,13 +109,38 @@ class BodyPart extends Part {
     }
 
     equip(item) {
-        if (!this.unequip()) return false;
+        if (!this.canUnequip()) return false;
         this._cachedWeapon.dirty = true;
         if (this.shouldEquipAsDefaultBehavior(item)) {
             this.defaultBehavior = item;
         }
-        this.item = item;
+        let slots = item.usesSlots.split(',');
+        let candidates = this.host.anatomy.getEquipCandidates(item, this);
+        let equippers = [];
+        let addedThis = false;
+        for (let slot of slots) {
+            if (slot === this.slot && !addedThis) { equippers.push(this); addedThis = true; continue; }
+            let bestMatch;
+            for (let candidate of candidates) {
+                if (candidate.slot === slot && candidate.item === null) { bestMatch = candidate; break; }
+                else if (candidate.slot === slot && candidate.canUnequip()) { bestMatch = candidate; }
+            }
+            if (!bestMatch) {
+                throw `Missing slot ${slot} to equip ${item.name}.`;
+            }
+            equippers.push(bestMatch);
+        }
+        for (let equipper of equippers) {
+            equipper.item = item;
+        }
+
         this.host.anatomy.recheckEquipmentList(this);
+        return true;
+    }
+
+    canUnequip() {
+        if (this.item === null) return true;
+        if (this.item.hasTag('NaturalGear')) return false;
         return true;
     }
 
@@ -130,11 +155,13 @@ class BodyPart extends Part {
     getOffhandChance(actualPart = null) {
         if (actualPart === null) return this.getOffhandChance(this.host.anatomy.getPartForOffhandChance(this));
 
-        if (!actualPart.item) return actualPart.host.fire(new OffhandChanceEvent()).chance;
-        return actualPart.item.fire(new OffhandChanceEvent()).chance;
+        let evt = new OffhandChanceEvent(actualPart.isExtrinsic ? -7 : 0);
+        if (!actualPart.item) return actualPart.host.fire(evt).chance;
+        return actualPart.item.fire(evt).chance;
     }
 
     handleGetAttacksEvent(event) {
+        if (!this.host.anatomy.amFirstEquipped(this)) return;
         let weapon = this.getMeleeWeapon();
         if (weapon === null && !this.isPrimary) return;
 
@@ -149,7 +176,7 @@ class BodyPart extends Part {
 
     attackName(modifier = '') {
         let prefix = this.isPrimary ? 'Primary Hand ' : 'Offhand ';
-        let itemName = this.item !== null ? this.item.name : this.defaultBehavior.name;
+        let itemName = this.item !== null ? this.item.name : this.defaultBehavior ? this.defaultBehavior.name : this.name;
         return `${prefix}${modifier} Attack (${itemName}) - ${this.name}`;
     }
 
@@ -161,7 +188,7 @@ class BodyPart extends Part {
     static head = (name = 'Head') => new BodyPart(name, 'Head', null, CYBERNETIC_SLOT.HEAD);
     static face = (name = 'Face') => new BodyPart(name, 'Face', null, CYBERNETIC_SLOT.FACE);
     static arm = (name = 'Arm') => new BodyPart(name, 'Arm', null, CYBERNETIC_SLOT.ARM);
-    static hand = (name = 'Hand') => new BodyPart(name, 'Hand', Item.fist());
+    static hand = (name = 'Hand') => new BodyPart(name, 'Hand', null);
     static float = (name = 'Floating Nearby') => new BodyPart(name, 'Floating Nearby', null);
 
     // Mutation limbs
@@ -174,12 +201,7 @@ class BodyPart extends Part {
 }
 part(BodyPart);
 
-/*
-    WIP Build out equipment list, and make sure that
-    when an offhand strike is being chosen, the first weapon
-    in the equipment list that isn't the primary uses the offhand
-    strike chance of the primary
-*/
+
 export class Anatomy {
     body;
     equipmentList = [];
@@ -227,6 +249,26 @@ export class Anatomy {
         primaryLimb.isPrimary = true;
     }
 
+    amFirstEquipped(limb) {
+        if (limb.isPrimary) return true;
+        if (!limb.item) return true;
+        let item = limb.item;
+        if (item.slots < 2) return true;
+        let limbsEquipping = this.getLimbsEquipping(item);
+        if (limbsEquipping.length < 2) return true;
+        if (limbsEquipping[0] !== limb || limbsEquipping[1].isPrimary) return false;
+    }
+
+    getLimbsEquipping(item) {
+        let limbs = this.getLimbArray(this.body);
+        return limbs.filter(limb => limb.item === item);
+    }
+
+    getEquipCandidates(item, primaryLimb) {
+        let limbArray = this.getLimbArray(this.body);
+        return limbArray.filter(limb => limb.id !== primaryLimb.id && item.usesSlots.includes(limb.slot));
+    }
+
     recheckEquipmentList(part) {
         let isEquipment = part.doesAttack();
         let newList = [];
@@ -260,6 +302,8 @@ export class Anatomy {
         anat.equipmentList.push(rightHand);
 
         anat.body.dependentParts.push(head, back, armLeft, armRight, hands, feet, float);
+        rightHand.defaultBehavior = Item.fist();
+        leftHand.defaultBehavior = Item.fist();
         return anat;
     }
 }
