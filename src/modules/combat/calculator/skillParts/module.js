@@ -8,7 +8,7 @@ export class Skills extends Part {
 
     onAttach(host) {
         super.onAttach(host);
-        SkillAddedEvent.register(host, (event) => this.handleSkillAdd(event));
+        SkillAddedEvent.register(host, (event) => this.handleSkillAdd(event), this.id);
     }
 
     handleSkillAdd(skillEvent) {

@@ -1,21 +1,22 @@
-const meleePreviews = require('../api/data/previews/meleePreviews.json');
-const armorPreviews = require('../api/data/previews/armorPreviews.json');
+const itemPreviews = require('../api/data/previews/itemPreviews.json');
 const creaturePreviews = require('../api/data/previews/creaturePreviews.json');
-const meleeDetails = require('../api/data/details/meleeDetails.json');
-const armorDetails = require('../api/data/details/armorDetails.json');
+const itemDetails = require('../api/data/details/itemDetails.json');
 const creatureDetails = require('../api/data/details/creatureDetails.json');
 
-exports.getMeleePreviews = function (req, res) {
+exports.getItemPreviews = function (req, res) {
     let params = req.query;
     let neededSlot = params.slot;
     let neededTerm = params.term.toLowerCase();
     let termParts = neededTerm.split(';');
 
-    let filteredMelee = meleePreviews.filter(item => {
-        let slot = item.weaponPart.Slot ? item.weaponPart.Slot : 'Hand';
-        return slot === neededSlot;
+    let filteredItems = itemPreviews.filter(item => {
+        let slots = item.slots.split(',');
+        for (let slot of slots) {
+            if (slot === neededSlot) return true;
+        }
+        return false;
     });
-    let result = searchAndSort(filteredMelee, termParts, searchResultMelee);
+    let result = searchAndSort(filteredItems, termParts, searchResultItem);
 
     res.status(200);
     return { result };
@@ -31,18 +32,6 @@ exports.getCreaturePreviews = function (req, res) {
     return { result };
 }
 
-exports.getArmorPreviews = function (req, res) {
-    let params = req.query;
-    let neededSlot = params.slot;
-    let neededTerm = params.term.toLowerCase();
-    let termParts = neededTerm.split(';');
-    let filteredArmor = armorPreviews.filter(item => item.armorPart.Slot === neededSlot);
-    let result = searchAndSort(filteredArmor, termParts, searchResultArmor);
-
-    res.status(200);
-    return { result };
-}
-
 function searchAndSort(array, terms, searchFunction) {
     let finalArr = [];
     for (let item of array) {
@@ -51,22 +40,6 @@ function searchAndSort(array, terms, searchFunction) {
     }
     finalArr.sort((a, b) => b.quality - a.quality);
     return finalArr;
-}
-
-function searchResultMelee(meleeItem, terms) {
-    let quality = 0;
-    for (let term of terms) {
-        let displayHit = meleeItem.cleanedName.toLowerCase().indexOf(term);
-        let nameHit = meleeItem.name.toLowerCase().indexOf(term);
-        let skillHit = meleeItem.weaponPart.Skill.toLowerCase().indexOf(term);
-        if (displayHit >= 0)
-            quality += meleeItem.cleanedName.length - displayHit;// - (meleeItem.cleanedName.length - term.length);
-        if (nameHit >= 0)
-            quality += meleeItem.name.length - nameHit;// - (meleeItem.name.length - term.length);
-        if (skillHit >= 0)
-            quality += meleeItem.weaponPart.Skill.length - skillHit;// - (meleeItem.weaponPart.Skill.length - term.length);
-    }
-    return { quality };
 }
 
 function searchResultCreature(creature, terms) {
@@ -85,7 +58,7 @@ function searchResultCreature(creature, terms) {
     return { quality };
 }
 
-function searchResultArmor(item, terms) {
+function searchResultItem(item, terms) {
     let quality = 0;
     for (let term of terms) {
         let displayHit = item.cleanedName.toLowerCase().indexOf(term);
@@ -112,28 +85,14 @@ exports.getCreatureDetails = function (req, res) {
     return { result };
 }
 
-exports.getArmorDetails = function (req, res) {
+exports.getItemDetails = function (req, res) {
     let params = req.query;
-    let armorName = params.name;
+    let itemName = params.name;
 
-    let result = armorDetails[armorName];
+    let result = itemDetails[itemName];
     if (!result) {
         res.status(404);
-        return { error: `Could not find armor: ${armorName}` };
-    }
-
-    res.status(200);
-    return { result };
-}
-
-exports.getMeleeDetails = function (req, res) {
-    let params = req.query;
-    let meleeName = params.name;
-
-    let result = meleeDetails[meleeName];
-    if (!result) {
-        res.status(404);
-        return { error: `Could not find melee weapon: ${meleeName}` };
+        return { error: `Could not find item: ${itemName}` };
     }
 
     res.status(200);

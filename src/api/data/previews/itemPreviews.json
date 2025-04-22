@@ -1,0 +1,6311 @@
+[
+    {
+        "src": "/assets/images/Textures/Items/Club.png",
+        "cleanedName": "club",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Club"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Wrench.png",
+        "cleanedName": "wrench",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Wrench"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Pestle.png",
+        "cleanedName": "pestle",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d2-1",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Pestle"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Staff.png",
+        "cleanedName": "staff",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Staff"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Walking Stick.png",
+        "cleanedName": "walking stick",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Walking Stick"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Mace2.png",
+        "cleanedName": "bronze mace",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Mace2"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Warhammer2.png",
+        "cleanedName": "iron mace",
+        "tier": "1",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "2",
+            "BaseDamage": "2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Warhammer2"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel War Hammer.png",
+        "cleanedName": "steel war hammer",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "2d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel War Hammer"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel War Hammerth.png",
+        "cleanedName": "two-handed steel war hammer",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "2d4",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel War Hammerth"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Hammer.png",
+        "cleanedName": "steel mace",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "2d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Hammer"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Shillelagh.png",
+        "cleanedName": "shillelagh",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Shillelagh"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Billowing Conch of the Aji.png",
+        "cleanedName": "billowing conch of the Aji",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "2d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Billowing Conch of the Aji"
+    },
+    {
+        "src": "/assets/images/Textures/Creatures/Grandfather Horn.png",
+        "cleanedName": "grandfather horn",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "2d2+1",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Grandfather Horn"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Amber-Tipped Staff.png",
+        "cleanedName": "amber-tipped staff",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "HitBonus": "1",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "3d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Amber-Tipped Staff"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel3.png",
+        "cleanedName": "carbide hammer",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "2d3",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel3"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel3th.png",
+        "cleanedName": "two-handed carbide hammer",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "2d4+1",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel3th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel4.png",
+        "cleanedName": "carbide folding hammer",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "2d4",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel4"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel4th.png",
+        "cleanedName": "two-handed carbide folding hammer",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "2d6",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel4th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel5.png",
+        "cleanedName": "fullerite maul",
+        "tier": "5",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "6",
+            "BaseDamage": "2d4+1",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel5"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel5th.png",
+        "cleanedName": "two-handed fullerite maul",
+        "tier": "5",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "6",
+            "BaseDamage": "3d4",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel5th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel6.png",
+        "cleanedName": "crysteel mace",
+        "tier": "6",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "7",
+            "BaseDamage": "2d6",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel6"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel6th.png",
+        "cleanedName": "crysteel warhammer",
+        "tier": "6",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "7",
+            "BaseDamage": "3d4+1",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel6th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel7.png",
+        "cleanedName": "flawless crysteel mace",
+        "tier": "7",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "8",
+            "BaseDamage": "3d4",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel7"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel7th.png",
+        "cleanedName": "flawless crysteel warhammer",
+        "tier": "7",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "8",
+            "BaseDamage": "3d6",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel7th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel8.png",
+        "cleanedName": "zetachrome hammer",
+        "tier": "8",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "9",
+            "BaseDamage": "3d4+1",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel8"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cudgel8th.png",
+        "cleanedName": "zetachrome warhammer",
+        "tier": "8",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "9",
+            "BaseDamage": "4d6",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Cudgel8th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Maghammer.png",
+        "cleanedName": "maghammer",
+        "tier": "5",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "6d2",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "6",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Maghammer"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Rhinox-Skull Maul.png",
+        "cleanedName": "rhinox-skull maul",
+        "tier": "6",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "7",
+            "BaseDamage": "3d4+1",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Rhinox-Skull Maul"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Stun Rod.png",
+        "cleanedName": "stun rod",
+        "tier": "1",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "2",
+            "BaseDamage": "1d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Stun Rod"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Prayer Rod.png",
+        "cleanedName": "prayer rod",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "2",
+            "BaseDamage": "1d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Prayer Rod"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Syphon Baton.png",
+        "cleanedName": "syphon baton",
+        "tier": "5",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "2",
+            "BaseDamage": "1d3",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Syphon Baton"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dagger.png",
+        "cleanedName": "bronze dagger",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d2",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Dagger"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Desert Kris.png",
+        "cleanedName": "desert kris",
+        "tier": "1",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "2",
+            "BaseDamage": "1d3",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Desert Kris"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dagger2.png",
+        "cleanedName": "iron dagger",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "2",
+            "BaseDamage": "1d3",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Dagger2"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Kukri.png",
+        "cleanedName": "steel kukri",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d4",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Kukri"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Dagger.png",
+        "cleanedName": "steel dagger",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d4",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Dagger"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Utility Knife.png",
+        "cleanedName": "steel utility knife",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d4",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Utility Knife"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Potters Knife.png",
+        "cleanedName": "steel potter's knife",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d4+1",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Potter's Knife"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Butcher Knife.png",
+        "cleanedName": "steel butcher knife",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d4",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Butcher Knife"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dagger3.png",
+        "cleanedName": "carbide dagger",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "1d6",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Dagger3"
+    },
+    {
+        "src": "/assets/images/Textures/Items/BloodyDagger3.png",
+        "cleanedName": "carbide dagger",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "1d6",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "BloodyDagger3"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Obsidian Kris.png",
+        "cleanedName": "obsidian kris",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d8",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Obsidian Kris"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dagger4.png",
+        "cleanedName": "folded carbide dagger",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d8",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Dagger4"
+    },
+    {
+        "src": "/assets/images/Textures/Items/ArmDagger4.png",
+        "cleanedName": "folded carbide wristblade",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d8",
+            "Slot": "Arm",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Arm",
+        "name": "ArmDagger4"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dagger5.png",
+        "cleanedName": "fullerite dagger",
+        "tier": "5",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "6",
+            "BaseDamage": "1d10",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Dagger5"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dagger6.png",
+        "cleanedName": "crysteel dagger",
+        "tier": "6",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "7",
+            "BaseDamage": "1d12",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Dagger6"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dagger7.png",
+        "cleanedName": "flawless crysteel dagger",
+        "tier": "7",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "8",
+            "BaseDamage": "1d12+1",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Dagger7"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dagger8.png",
+        "cleanedName": "zetachrome dagger",
+        "tier": "8",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "9",
+            "BaseDamage": "1d12+2",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Dagger8"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Vibro Dagger.png",
+        "cleanedName": "vibro dagger",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "0",
+            "BaseDamage": "1d4",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Vibro Dagger"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gaslight Dagger.png",
+        "cleanedName": "gaslight kris",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "0",
+            "BaseDamage": "1d4",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Gaslight Dagger"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gaslight Sword.png",
+        "cleanedName": "gaslight flyssa",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "0",
+            "BaseDamage": "1d6",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Gaslight Sword"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gaslight Chisel.png",
+        "cleanedName": "gaslight chisel",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "0",
+            "BaseDamage": "1d4",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Gaslight Chisel"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe.png",
+        "cleanedName": "bronze battle axe",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d2",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Hand Axe.png",
+        "cleanedName": "hand axe",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d2",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Hand Axe"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Iron Vinereaper.png",
+        "cleanedName": "iron vinereaper",
+        "tier": "1",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "2",
+            "BaseDamage": "1d3",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Iron Vinereaper"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe2.png",
+        "cleanedName": "iron battle axe",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "2",
+            "BaseDamage": "1d2+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe2"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Battle Axe.png",
+        "cleanedName": "steel battle axe",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d3+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Battle Axe"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Battle Axeth.png",
+        "cleanedName": "two-handed steel battle axe",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d6+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Battle Axeth"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Hand Axe.png",
+        "cleanedName": "steel hand axe",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d3+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Hand Axe"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Opal-Pommeled Steel Axe.png",
+        "cleanedName": "opal-pommeled steel battle axe",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "HitBonus": "1",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d3+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Opal-Pommeled Steel Axe"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Vinereaper.png",
+        "cleanedName": "steel vinereaper",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d3+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Vinereaper"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe3.png",
+        "cleanedName": "carbide battle axe",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "1d4+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe3"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe3th.png",
+        "cleanedName": "two-handed carbide battle axe",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "1d8+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe3th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe4.png",
+        "cleanedName": "folded carbide battle axe",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d6+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe4"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe4th.png",
+        "cleanedName": "two-handed folded carbide battle axe",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d8+2",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe4th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe5.png",
+        "cleanedName": "fullerite battle axe",
+        "tier": "5",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "6",
+            "BaseDamage": "1d8+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe5"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe5th.png",
+        "cleanedName": "fullerite two-handed axe",
+        "tier": "5",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "6",
+            "BaseDamage": "1d8+3",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe5th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe6.png",
+        "cleanedName": "crysteel battle axe",
+        "tier": "6",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "7",
+            "BaseDamage": "1d8+2",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe6"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe6th.png",
+        "cleanedName": "crysteel halberd",
+        "tier": "6",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "7",
+            "BaseDamage": "1d8+4",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe6th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe7.png",
+        "cleanedName": "flawless crysteel battle axe",
+        "tier": "7",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "8",
+            "BaseDamage": "1d8+3",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe7"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe7th.png",
+        "cleanedName": "flawless crysteel halberd",
+        "tier": "7",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "8",
+            "BaseDamage": "1d8+5",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe7th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe8.png",
+        "cleanedName": "zetachrome battle axe",
+        "tier": "8",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "9",
+            "BaseDamage": "1d8+4",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe8"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Battle Axe8th.png",
+        "cleanedName": "zetachrome halberd",
+        "tier": "8",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "9",
+            "BaseDamage": "1d8+6",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Battle Axe8th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Stun Whip.png",
+        "cleanedName": "stun whip",
+        "tier": "1",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1",
+            "Skill": "Chain",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Stun Whip"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leather Whip.png",
+        "cleanedName": "leather whip",
+        "tier": "1",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "1d4",
+            "Skill": "Whip",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Leather Whip"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword.png",
+        "cleanedName": "bronze long sword",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d3",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Two-Handed Sword.png",
+        "cleanedName": "bronze two-handed sword",
+        "tier": "0",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d6",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Two-Handed Sword"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword2.png",
+        "cleanedName": "iron long sword",
+        "tier": "1",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "2",
+            "BaseDamage": "1d4",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword2"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword2th.png",
+        "cleanedName": "two-handed iron long sword",
+        "tier": "1",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "2",
+            "BaseDamage": "1d8",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword2th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Long Sword.png",
+        "cleanedName": "steel long sword",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d6",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Long Sword"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Long Swordth.png",
+        "cleanedName": "two-handed steel long sword",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "1d10",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Steel Long Swordth"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword3.png",
+        "cleanedName": "carbide long sword",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "1d8",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword3"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword3th.png",
+        "cleanedName": "two-handed carbide long sword",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "1d12",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword3th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword4.png",
+        "cleanedName": "folded carbide long sword",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d10",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword4"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword4th.png",
+        "cleanedName": "two-handed folded carbide long sword",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "2d6",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword4th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword5.png",
+        "cleanedName": "fullerite long sword",
+        "tier": "5",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "6",
+            "BaseDamage": "1d12",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword5"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword5th.png",
+        "cleanedName": "two-handed fullerite long sword",
+        "tier": "5",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "6",
+            "BaseDamage": "2d6+1",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword5th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword6.png",
+        "cleanedName": "crysteel long sword",
+        "tier": "6",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "7",
+            "BaseDamage": "2d6",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword6"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword6th.png",
+        "cleanedName": "crysteel great sword",
+        "tier": "6",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "7",
+            "BaseDamage": "2d8",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword6th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword7.png",
+        "cleanedName": "flawless crysteel long sword",
+        "tier": "7",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "8",
+            "BaseDamage": "2d6+1",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword7"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword7th.png",
+        "cleanedName": "flawless crysteel great sword",
+        "tier": "7",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "8",
+            "BaseDamage": "2d10",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword7th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Sharpened Polyp.png",
+        "cleanedName": "sharpened polyp",
+        "tier": "7",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "8",
+            "BaseDamage": "2d6+1",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Sharpened Polyp"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ceremonial Khopesh.png",
+        "cleanedName": "ceremonial vibrokhopesh",
+        "tier": "7",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "0",
+            "BaseDamage": "1d10+2",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Ceremonial Khopesh"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword8.png",
+        "cleanedName": "zetachrome long sword",
+        "tier": "8",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "9",
+            "BaseDamage": "2d8",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword8"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Long Sword8th.png",
+        "cleanedName": "two-handed zetachrome long sword",
+        "tier": "8",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "9",
+            "BaseDamage": "2d12",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Long Sword8th"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Vibro Blade.png",
+        "cleanedName": "vibro blade",
+        "tier": "5",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "0",
+            "BaseDamage": "1d10",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Vibro Blade"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Shayna.png",
+        "cleanedName": "Shayna",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d6+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Shayna"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ari.png",
+        "cleanedName": "Ari",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d6+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Ari"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Yal.png",
+        "cleanedName": "Yal",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d6+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Yal"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Caslainard.png",
+        "cleanedName": "Caslainard",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d10",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Caslainard"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Polluxus.png",
+        "cleanedName": "Polluxus",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d10",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Polluxus"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Difucila.png",
+        "cleanedName": "etched cleaver",
+        "tier": "4",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d8",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Difucila"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Fist of the Ape God.png",
+        "cleanedName": "Fist of the Ape God",
+        "tier": "8",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "HitBonus": "3",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "9999",
+            "Ego": "4",
+            "BaseDamage": "6d2",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Fist of the Ape God"
+    },
+    {
+        "src": "/assets/images/Textures/Items/La Jeunesse.png",
+        "cleanedName": "La Jeunesse",
+        "tier": "6",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "7",
+            "BaseDamage": "2d8",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "La Jeunesse"
+    },
+    {
+        "src": "/assets/images/Textures/Items/AoygDagger.png",
+        "cleanedName": "zetachrome dagger",
+        "tier": "8",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "9",
+            "BaseDamage": "1d12+2",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "AoygDagger"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Black Robes.png",
+        "cleanedName": "black robes",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Black Robes"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ash-Stained Robes.png",
+        "cleanedName": "ash-stained robes",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "1",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Ash-Stained Robes"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Furs.png",
+        "cleanedName": "furs",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-1",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Furs"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Woven Tunic.png",
+        "cleanedName": "woven tunic",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "2",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Woven Tunic"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cloth Robe.png",
+        "cleanedName": "cloth robe",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Cloth Robe"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Wool Kilt.png",
+        "cleanedName": "wool kilt",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Wool Kilt"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Crude Toga.png",
+        "cleanedName": "crude toga",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Crude Toga"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Filthy Toga.png",
+        "cleanedName": "filthy toga",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Filthy Toga"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leather Apron.png",
+        "cleanedName": "leather apron",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "Heat": "12",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Leather Apron"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cloth Overalls.png",
+        "cleanedName": "cloth overalls",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "2",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Cloth Overalls"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Bark Armor.png",
+        "cleanedName": "bark armor",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-1",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Bark Armor"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leather Armor.png",
+        "cleanedName": "leather armor",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "0",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Leather Armor"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Vine-Weave Tunic.png",
+        "cleanedName": "vine-weave tunic",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "2",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Vine-Weave Tunic"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Studded Leather Armor.png",
+        "cleanedName": "studded leather armor",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-2",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Studded Leather Armor"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Pocketed Vest.png",
+        "cleanedName": "pocketed vest",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Body",
+            "AV": "0",
+            "DV": "1",
+            "CarryBonus": "5"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Pocketed Vest"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Sooty Smock.png",
+        "cleanedName": "sooty smock",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Sooty Smock"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Slate Frock.png",
+        "cleanedName": "slate frock",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Slate Frock"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Umber Frock.png",
+        "cleanedName": "umber frock",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Umber Frock"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ring Mail.png",
+        "cleanedName": "ring mail",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-2",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Ring Mail"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Chain Mail.png",
+        "cleanedName": "chain mail",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-1",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Chain Mail"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Plate Mail.png",
+        "cleanedName": "steel plate mail",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "-4",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Steel Plate Mail"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Puma Chitin Vest.png",
+        "cleanedName": "puma chitin vest",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "0",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Puma Chitin Vest"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Elastyne Skin Suit.png",
+        "cleanedName": "elastyne skin suit",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "3",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Elastyne Skin Suit"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Patchwork Coat.png",
+        "cleanedName": "patchwork coat",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "1",
+            "Cold": "10",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Patchwork Coat"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Carbide Plate Armor.png",
+        "cleanedName": "carbide plate armor",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "5",
+            "DV": "-5",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Carbide Plate Armor"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Slate Mantle.png",
+        "cleanedName": "slate mantle",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "3",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Slate Mantle"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Flexivest.png",
+        "cleanedName": "flexivest",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "3",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Flexivest"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Rubber Suit.png",
+        "cleanedName": "rubber suit",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "1",
+            "Elec": "30",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Rubber Suit"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Plastifer Jerkin.png",
+        "cleanedName": "plastifer jerkin",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-3",
+            "Elec": "8",
+            "Cold": "8",
+            "Heat": "8",
+            "Acid": "8",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Plastifer Jerkin"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Plastifer Chem Vest.png",
+        "cleanedName": "plastifer chem vest",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-3",
+            "Elec": "8",
+            "Cold": "8",
+            "Heat": "8",
+            "Acid": "8",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Plastifer Chem Vest"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Recycling Suit.png",
+        "cleanedName": "recycling suit",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "0",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Recycling Suit"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leafy Vest.png",
+        "cleanedName": "leafy vest",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Leafy Vest"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Fullerite Plate Mail.png",
+        "cleanedName": "fullerite plate mail",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "6",
+            "DV": "-6",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Fullerite Plate Mail"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Fullerite Flake Armor.png",
+        "cleanedName": "fullerite flake armor",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "-3",
+            "Heat": "12",
+            "Cold": "12",
+            "Elec": "3",
+            "Acid": "3",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Fullerite Flake Armor"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Crysteel Shardmail.png",
+        "cleanedName": "crysteel shardmail",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "6",
+            "DV": "-3",
+            "Heat": "9",
+            "Cold": "9",
+            "Acid": "9",
+            "Elec": "9",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Crysteel Shardmail"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Nanoweave Vest.png",
+        "cleanedName": "nanoweave vest",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "2",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Nanoweave Vest"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Thermo Cask.png",
+        "cleanedName": "thermo cask",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "-4",
+            "Heat": "25",
+            "Cold": "25",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Thermo Cask"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gas Tumbler.png",
+        "cleanedName": "gas tumbler",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Gas Tumbler"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Flawless Crysteel Shardmail.png",
+        "cleanedName": "flawless crysteel shardmail",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "7",
+            "DV": "-3",
+            "Heat": "9",
+            "Cold": "9",
+            "Acid": "9",
+            "Elec": "9",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Flawless Crysteel Shardmail"
+    },
+    {
+        "src": "/assets/images/Textures/Items/High-Energy Thermo Cask.png",
+        "cleanedName": "high-energy thermo cask",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "-4",
+            "Heat": "50",
+            "Cold": "50",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "High-Energy Thermo Cask"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Enigma Cone.png",
+        "cleanedName": "enigma cone",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "-4",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Enigma Cone"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Zetachrome Lune.png",
+        "cleanedName": "zetachrome lune",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "8",
+            "DV": "-2",
+            "Heat": "11",
+            "Cold": "11",
+            "Acid": "11",
+            "Elec": "11",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Zetachrome Lune"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Quilted Shawl.png",
+        "cleanedName": "quilted shawl",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "-1",
+            "Cold": "10",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Quilted Shawl"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Worn Burnoose.png",
+        "cleanedName": "worn burnoose",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Worn Burnoose"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Albino Monkey Braid.png",
+        "cleanedName": "albino monkey braid",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Albino Monkey Braid"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Scarlet Shawl.png",
+        "cleanedName": "scarlet shawl",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Scarlet Shawl"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leather Cloak.png",
+        "cleanedName": "leather cloak",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Leather Cloak"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Panthers Cloak.png",
+        "cleanedName": "panther's cloak",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Panther's Cloak"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Issachari Banner.png",
+        "cleanedName": "Issachari banner",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Issachari Banner"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Mechanical Wings.png",
+        "cleanedName": "mechanical wings",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Mechanical Wings"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Nylon Bodypack.png",
+        "cleanedName": "nylon bodypack",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Back",
+            "AV": "0",
+            "CarryBonus": "20",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Nylon Bodypack"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Grassy Yurtmat.png",
+        "cleanedName": "grassy yurtmat",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Grassy Yurtmat"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ape Fur Cloak.png",
+        "cleanedName": "ape fur cloak",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "Cold": "15",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Ape Fur Cloak"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Portable Beehive.png",
+        "cleanedName": "portable beehive",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back,Floating Nearby",
+        "name": "Portable Beehive"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Chrome Mantle.png",
+        "cleanedName": "chrome mantle",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "Ego": "1",
+            "AV": "0",
+            "DV": "2",
+            "Elec": "8",
+            "Cold": "8",
+            "Heat": "8",
+            "Acid": "8",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Chrome Mantle"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Molly Netting.png",
+        "cleanedName": "molly netting",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Back",
+            "AV": "0",
+            "DV": "1",
+            "CarryBonus": "16"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Molly Netting"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ironweave Cloak.png",
+        "cleanedName": "ironweave cloak",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Ironweave Cloak"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Praetorians Cloak.png",
+        "cleanedName": "Praetorian's cloak",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Praetorian's Cloak"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gyrocopter Backpack.png",
+        "cleanedName": "gyrocopter backpack",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Gyrocopter Backpack"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Helping Hands.png",
+        "cleanedName": "helping hands",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Helping Hands"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Banner of the Holy Rhombus.png",
+        "cleanedName": "banner of the Holy Rhombus",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back,Hand",
+        "name": "Banner of the Holy Rhombus"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Mercurial Cloak.png",
+        "cleanedName": "mercurial cloak",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Mercurial Cloak"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Quartzfur Cloak.png",
+        "cleanedName": "quartzfur cloak",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "-1",
+            "Elec": "6",
+            "Cold": "6",
+            "Heat": "6",
+            "Acid": "6",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Quartzfur Cloak"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Strength Exo.png",
+        "cleanedName": "powered exoskeleton",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "-2",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Strength Exo"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Rainboweave Cloak.png",
+        "cleanedName": "rainboweave cloak",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Rainboweave Cloak"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ogre Fur Cloak.png",
+        "cleanedName": "ogre fur cloak",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "Toughness": "1",
+            "Cold": "10",
+            "Heat": "10",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Ogre Fur Cloak"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Kaleidocera Cape.png",
+        "cleanedName": "kaleidocera cape",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "Ego": "1",
+            "AV": "1",
+            "DV": "1",
+            "Elec": "20",
+            "Cold": "20",
+            "Heat": "20",
+            "Acid": "20",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Kaleidocera Cape"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Palladium Mesh Tabard.png",
+        "cleanedName": "palladium mesh tabard",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "1",
+            "MA": "1",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Palladium Mesh Tabard"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gigantic Chassis Plate.png",
+        "cleanedName": "chassis plate",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "6",
+            "DV": "-2",
+            "Cold": "20",
+            "Heat": "20",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Gigantic Chassis Plate"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Witchwood Wreath.png",
+        "cleanedName": "witchwood wreath",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "WornOn": "Head",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Witchwood Wreath"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Wide-brimmed Hat.png",
+        "cleanedName": "wide-brimmed hat",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Wide-brimmed Hat"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gentling Collar.png",
+        "cleanedName": "gentling cone",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "Ego": "-1",
+            "DV": "0",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Gentling Collar"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leather Cap.png",
+        "cleanedName": "leather cap",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Leather Cap"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Crimson Hood.png",
+        "cleanedName": "crimson hood",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Crimson Hood"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Knollworm Skull.png",
+        "cleanedName": "knollworm skull",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "Ego": "1",
+            "DV": "0",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Knollworm Skull"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Helmet.png",
+        "cleanedName": "steel helmet",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-3",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Steel Helmet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Elastyne Skull Cap.png",
+        "cleanedName": "elastyne skull cap",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "Cold": "5",
+            "AV": "1",
+            "DV": "1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Elastyne Skull Cap"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Electric Snail Shell.png",
+        "cleanedName": "electric snail shell",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-1",
+            "ToHit": "-1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Electric Snail Shell"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ape Fur Hat.png",
+        "cleanedName": "ape fur hat",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "Cold": "10",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Ape Fur Hat"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Square Cap.png",
+        "cleanedName": "square cap",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "Intelligence": "1",
+            "Ego": "1",
+            "DV": "0",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Square Cap"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Chain Coif.png",
+        "cleanedName": "chain coif",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Chain Coif"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Fork-Horned Helmet 3.png",
+        "cleanedName": "fork-horned helm",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "Slot": "Head",
+            "BaseDamage": "2",
+            "Stat": "Strength",
+            "Skill": "ShortBlades"
+        },
+        "slots": "Head",
+        "name": "Fork-Horned Helmet 3"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Fork-Horned Helmet 4.png",
+        "cleanedName": "fork-horned helm",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "Slot": "Head",
+            "BaseDamage": "2",
+            "Stat": "Strength",
+            "Skill": "ShortBlades"
+        },
+        "slots": "Head",
+        "name": "Fork-Horned Helmet 4"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Headlamp.png",
+        "cleanedName": "headlamp",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Headlamp"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Miners Helmet.png",
+        "cleanedName": "miner's helmet",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Miner's Helmet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Plastifer Bonnet.png",
+        "cleanedName": "plastifer bonnet",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "1",
+            "Elec": "5",
+            "Cold": "5",
+            "Heat": "5",
+            "Acid": "5",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Plastifer Bonnet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leafy Helm.png",
+        "cleanedName": "leafy helm",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Leafy Helm"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ganglionic Teleprojector.png",
+        "cleanedName": "ganglionic teleprojector",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "-1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Ganglionic Teleprojector"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Fullerite Armet.png",
+        "cleanedName": "fullerite armet",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-4",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Fullerite Armet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Quartzfur Hat.png",
+        "cleanedName": "quartzfur hat",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-1",
+            "Elec": "6",
+            "Cold": "6",
+            "Heat": "6",
+            "Acid": "6",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Quartzfur Hat"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Crysteel Coronet.png",
+        "cleanedName": "crysteel coronet",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-1",
+            "Heat": "5",
+            "Cold": "5",
+            "Acid": "5",
+            "Elec": "5",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Crysteel Coronet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ogre Fur Hat.png",
+        "cleanedName": "ogre fur hat",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-3",
+            "Toughness": "1",
+            "Cold": "10",
+            "Heat": "10",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Ogre Fur Hat"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Flawless Crysteel Coronet.png",
+        "cleanedName": "flawless crysteel coronet",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "-1",
+            "Heat": "5",
+            "Cold": "5",
+            "Acid": "5",
+            "Elec": "5",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Flawless Crysteel Coronet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Psychic Meridian.png",
+        "cleanedName": "psychic meridian",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "MA": "4",
+            "DV": "1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Psychic Meridian"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Enigma Cap.png",
+        "cleanedName": "enigma cap",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-3",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Enigma Cap"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Zetachrome Apex.png",
+        "cleanedName": "zetachrome apex",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "0",
+            "Heat": "6",
+            "Cold": "6",
+            "Acid": "6",
+            "Elec": "6",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Zetachrome Apex"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Mental Aggregator.png",
+        "cleanedName": "mental aggregator",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Mental Aggregator"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Psychodyne Helmet.png",
+        "cleanedName": "psychodyne helmet",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Psychodyne Helmet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Issachari Sun Veil.png",
+        "cleanedName": "Issachari sun veil",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "Heat": "10",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Issachari Sun Veil"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Smiling Sun Mask.png",
+        "cleanedName": "smiling sun mask",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Smiling Sun Mask"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Frowning Moon Mask.png",
+        "cleanedName": "frowning moon mask",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Frowning Moon Mask"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Sun and Moon Mask.png",
+        "cleanedName": "sun and moon mask",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Sun and Moon Mask"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gentling Mask.png",
+        "cleanedName": "gentling mask",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "Ego": "-1",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Gentling Mask"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Goggles.png",
+        "cleanedName": "goggles",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Goggles"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Mirrorshades.png",
+        "cleanedName": "mirrorshades",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "Ego": "1",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Mirrorshades"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Night-vision Goggles.png",
+        "cleanedName": "night-vision goggles",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Night-vision Goggles"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Vinewood Sap Mask.png",
+        "cleanedName": "vinewood sap mask",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Vinewood Sap Mask"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gas Mask.png",
+        "cleanedName": "gas mask",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Gas Mask"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Telescopic Monocle.png",
+        "cleanedName": "telescopic monocle",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Telescopic Monocle"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Spectacles.png",
+        "cleanedName": "spectacles",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Spectacles"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Polyhedral Rings.png",
+        "cleanedName": "polyhedral rings",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Face",
+            "AV": "1",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Polyhedral Rings"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Silver Rondure.png",
+        "cleanedName": "silver rondure",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Face",
+            "AV": "1",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Silver Rondure"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Telemetric Visor.png",
+        "cleanedName": "telemetric visor",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Telemetric Visor"
+    },
+    {
+        "src": "/assets/images/Textures/Items/VISAGE.png",
+        "cleanedName": "VISAGE",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face,Arm",
+        "name": "VISAGE"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Night-Sight Interpolators.png",
+        "cleanedName": "night-sight interpolators",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Night-Sight Interpolators"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dream Rondure.png",
+        "cleanedName": "dream rondure",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "Elec": "13",
+            "Willpower": "2",
+            "WornOn": "Face",
+            "AV": "1",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Dream Rondure"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dazzle Cheek.png",
+        "cleanedName": "dazzle cheek",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Dazzle Cheek"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Bracelet1.png",
+        "cleanedName": "beaded bracelet",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Bracelet1"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Bracelet2.png",
+        "cleanedName": "beaded bracelet",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Bracelet2"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Bracelet3.png",
+        "cleanedName": "beaded bracelet",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Bracelet3"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Blood-stained neck-ring.png",
+        "cleanedName": "neck-ring",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Blood-stained neck-ring"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Compass Bracelet.png",
+        "cleanedName": "compass bracelet",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Compass Bracelet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Wrist Fan.png",
+        "cleanedName": "wrist fan",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Wrist Fan"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Snakeskin Armlet.png",
+        "cleanedName": "snakeskin armlet",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Snakeskin Armlet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/LeatherBracer.png",
+        "cleanedName": "leather bracer",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "LeatherBracer"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Bio-Scanning Bracelet.png",
+        "cleanedName": "bio-scanning bracelet",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Bio-Scanning Bracelet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Horticulturalist Bio-Scanning Bracelet.png",
+        "cleanedName": "bio-scanning bracelet",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Horticulturalist Bio-Scanning Bracelet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Structural Scanning Bracelet.png",
+        "cleanedName": "structural scanning bracelet",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Structural Scanning Bracelet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Child of the Deep Structural Scanning Bracelet.png",
+        "cleanedName": "structural scanning bracelet",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Child of the Deep Structural Scanning Bracelet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Hologram Bracelet.png",
+        "cleanedName": "hologram bracelet",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Hologram Bracelet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Force Bracelet.png",
+        "cleanedName": "force bracelet",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Force Bracelet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Wristcalc.png",
+        "cleanedName": "wrist calc",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Wristcalc"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Precinct Navigator.png",
+        "cleanedName": "precinct navigator",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Precinct Navigator"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Homoelectric Wrist Warmer.png",
+        "cleanedName": "homoelectric wrist warmer",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "Cold": "8",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Homoelectric Wrist Warmer"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Slip Ring.png",
+        "cleanedName": "slip ring",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Slip Ring"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Displacer Bracelet.png",
+        "cleanedName": "displacer bracelet",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Displacer Bracelet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ontological Anchor.png",
+        "cleanedName": "ontological anchor",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Ontological Anchor"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Tri-Hologram Bracelet.png",
+        "cleanedName": "tri-hologram bracelet",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Tri-Hologram Bracelet"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Transkinetic Cuffs.png",
+        "cleanedName": "transkinetic cuffs",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Transkinetic Cuffs"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Boar-skin gloves.png",
+        "cleanedName": "boar-skin gloves",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Boar-skin gloves"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leather Gloves.png",
+        "cleanedName": "leather gloves",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Leather Gloves"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Gauntlets.png",
+        "cleanedName": "steel gauntlets",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-3",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Steel Gauntlets"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Spiked Gauntlets.png",
+        "cleanedName": "steel gauntlets",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-3",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Spiked Gauntlets"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ulnar Stimulators.png",
+        "cleanedName": "ulnar stimulators",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Ulnar Stimulators"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ape Fur Gloves.png",
+        "cleanedName": "ape fur gloves",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "Cold": "10",
+            "Agility": "0",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Ape Fur Gloves"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Elastyne Gloves.png",
+        "cleanedName": "elastyne gloves",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "Agility": "1",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Elastyne Gloves"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Chain Gauntlets.png",
+        "cleanedName": "chain gauntlets",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-3",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Chain Gauntlets"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Carbide Gauntlets.png",
+        "cleanedName": "carbide gauntlets",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-5",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Carbide Gauntlets"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Plastifer Gloves.png",
+        "cleanedName": "plastifer gloves",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "1",
+            "Elec": "5",
+            "Cold": "5",
+            "Heat": "5",
+            "Acid": "5",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Plastifer Gloves"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Fullerite Gauntlets.png",
+        "cleanedName": "fullerite gauntlets",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-3",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Fullerite Gauntlets"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Quartzfur Gloves.png",
+        "cleanedName": "quartzfur gloves",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-1",
+            "Elec": "6",
+            "Cold": "6",
+            "Heat": "6",
+            "Acid": "6",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Quartzfur Gloves"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Crysteel Gauntlets.png",
+        "cleanedName": "crysteel gauntlets",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-2",
+            "Heat": "5",
+            "Cold": "5",
+            "Acid": "5",
+            "Elec": "5",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Crysteel Gauntlets"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ogre Fur Gloves.png",
+        "cleanedName": "ogre fur gloves",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "Cold": "10",
+            "Heat": "10",
+            "Toughness": "1",
+            "AV": "3",
+            "DV": "-3",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Ogre Fur Gloves"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Flawless Crysteel Gauntlets.png",
+        "cleanedName": "flawless crysteel gauntlets",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "-2",
+            "Heat": "5",
+            "Cold": "5",
+            "Acid": "5",
+            "Elec": "5",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Flawless Crysteel Gauntlets"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Kaleidocera Muffs.png",
+        "cleanedName": "kaleidocera muffs",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "Ego": "1",
+            "AV": "1",
+            "DV": "1",
+            "Elec": "20",
+            "Cold": "20",
+            "Heat": "20",
+            "Acid": "20",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Kaleidocera Muffs"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Precision Nanon Fingers.png",
+        "cleanedName": "precision nanon fingers",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "1",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Precision Nanon Fingers"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Zetachrome Gloves.png",
+        "cleanedName": "zetachrome gloves",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "0",
+            "Heat": "6",
+            "Cold": "6",
+            "Acid": "6",
+            "Elec": "6",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands",
+        "name": "Zetachrome Gloves"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leyline Puppeteers.png",
+        "cleanedName": "leyline puppeteers",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "2",
+            "WornOn": "Hands"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hands,Floating Nearby",
+        "name": "Leyline Puppeteers"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leather Moccasins.png",
+        "cleanedName": "leather moccasins",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Leather Moccasins"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Sandals.png",
+        "cleanedName": "sandals",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Sandals"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Croccasins.png",
+        "cleanedName": "croccasins",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Croccasins"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Leather Boots.png",
+        "cleanedName": "leather boots",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Leather Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Magnetized Boots.png",
+        "cleanedName": "magnetized boots",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Magnetized Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Sandals of the River-Wives.png",
+        "cleanedName": "sandals of the river-wives",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Sandals of the River-Wives"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Chain Boots.png",
+        "cleanedName": "chain boots",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-3",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Chain Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Steel Boots.png",
+        "cleanedName": "steel boots",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-3",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Steel Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Elastyne Slippers.png",
+        "cleanedName": "elastyne slippers",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Elastyne Slippers"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Carbide Boots.png",
+        "cleanedName": "carbide boots",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-5",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Carbide Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Spring Boots.png",
+        "cleanedName": "bounding boots",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Spring Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Grease Boots.png",
+        "cleanedName": "greased steel boots",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "-3",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Grease Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Plastifer Sneakers.png",
+        "cleanedName": "plastifer sneakers",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "1",
+            "Acid": "5",
+            "Elec": "5",
+            "Cold": "5",
+            "Heat": "5",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Plastifer Sneakers"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Yeshyrskin Slippers.png",
+        "cleanedName": "yeshyrskin slippers",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Yeshyrskin Slippers"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Fullerite Boots.png",
+        "cleanedName": "fullerite boots",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-4",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Fullerite Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Step Sowers.png",
+        "cleanedName": "step sowers",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "-1",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Step Sowers"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Rocket Skates.png",
+        "cleanedName": "rocket skates",
+        "tier": "5",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Rocket Skates"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Crysteel Boots.png",
+        "cleanedName": "crysteel boots",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-2",
+            "Heat": "5",
+            "Cold": "5",
+            "Acid": "5",
+            "Elec": "5",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Crysteel Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Ninefold Boots.png",
+        "cleanedName": "ninefold boots",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "-1",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Ninefold Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Flawless Crysteel Boots.png",
+        "cleanedName": "flawless crysteel boots",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "-2",
+            "Heat": "5",
+            "Cold": "5",
+            "Acid": "5",
+            "Elec": "5",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Flawless Crysteel Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/3D Cobblers.png",
+        "cleanedName": "3D cobblers",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "-1",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "3D Cobblers"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Anti-Gravity Boots.png",
+        "cleanedName": "anti-gravity boots",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "1",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Anti-Gravity Boots"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Kaleidocera Krakows.png",
+        "cleanedName": "kaleidocera krakows",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "Ego": "1",
+            "AV": "1",
+            "DV": "1",
+            "Elec": "20",
+            "Cold": "20",
+            "Heat": "20",
+            "Acid": "20",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Kaleidocera Krakows"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Zetachrome Pumps.png",
+        "cleanedName": "zetachrome pumps",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "4",
+            "DV": "0",
+            "Heat": "6",
+            "Cold": "6",
+            "Acid": "6",
+            "Elec": "6",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Zetachrome Pumps"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Jeweled Sandals.png",
+        "cleanedName": "jeweled sandals",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Feet"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Feet",
+        "name": "Jeweled Sandals"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Light-Obfuscating Lens.png",
+        "cleanedName": "light-obfuscating lens",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Floating Nearby"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "Light-Obfuscating Lens"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Symbiotic Firefly.png",
+        "cleanedName": "symbiotic firefly",
+        "tier": "2",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Floating Nearby"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "Symbiotic Firefly"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Luminous Mote.png",
+        "cleanedName": "luminous mote",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Floating Nearby"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "Luminous Mote"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Floating Glowsphere.png",
+        "cleanedName": "floating glowsphere",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Floating Nearby"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "Floating Glowsphere"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Quantum Mote.png",
+        "cleanedName": "quantum mote",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "1",
+            "Elec": "6",
+            "Cold": "6",
+            "Heat": "6",
+            "Acid": "6",
+            "WornOn": "Floating Nearby"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "Quantum Mote"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Point-Defense Drone.png",
+        "cleanedName": "point-defense drone",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Floating Nearby"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "Point-Defense Drone"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Chiral Rings.png",
+        "cleanedName": "chiral rings",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "2",
+            "WornOn": "Floating Nearby"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby,Floating Nearby,Floating Nearby",
+        "name": "Chiral Rings"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Black Mote.png",
+        "cleanedName": "black mote",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Floating Nearby"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "Black Mote"
+    },
+    {
+        "src": "/assets/images/Textures/Items/LightCircleAgolgot.png",
+        "cleanedName": "circle of light in the chord of Agolgot",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Floating Nearby",
+            "AV": "0",
+            "Describe": "false",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "LightCircleAgolgot"
+    },
+    {
+        "src": "/assets/images/Textures/Items/LightCircleBethsaida.png",
+        "cleanedName": "circle of light in the chord of Bethsaida",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Floating Nearby",
+            "AV": "0",
+            "Describe": "false",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "LightCircleBethsaida"
+    },
+    {
+        "src": "/assets/images/Textures/Items/LightCircleQas.png",
+        "cleanedName": "circle of light in the chord of Qas",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Floating Nearby",
+            "AV": "0",
+            "Describe": "false",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "LightCircleQas"
+    },
+    {
+        "src": "/assets/images/Textures/Items/LightCircleQon.png",
+        "cleanedName": "circle of light in the chord of Qon",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Floating Nearby",
+            "AV": "0",
+            "Describe": "false",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "LightCircleQon"
+    },
+    {
+        "src": "/assets/images/Textures/Items/LightCircleRermadon.png",
+        "cleanedName": "circle of light in the chord of Rermadon",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Floating Nearby",
+            "AV": "0",
+            "Describe": "false",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "LightCircleRermadon"
+    },
+    {
+        "src": "/assets/images/Textures/Items/LightCircleShugruith.png",
+        "cleanedName": "circle of light in the chord of Shugruith",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Floating Nearby",
+            "AV": "0",
+            "Describe": "false",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "LightCircleShugruith"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Clay Pot.png",
+        "cleanedName": "clay pot",
+        "tier": "0",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "0",
+            "WornOn": "Roots"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Roots",
+        "name": "Clay Pot"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Tread Guard.png",
+        "cleanedName": "tread guard",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "0",
+            "WornOn": "Tread"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Tread",
+        "name": "Tread Guard"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Kindrish.png",
+        "cleanedName": "Kindrish",
+        "tier": "3",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Kindrish"
+    },
+    {
+        "src": "/assets/images/Textures/Items/BarathrumiteSafetyBand.png",
+        "cleanedName": "life loop",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "BarathrumiteSafetyBand"
+    },
+    {
+        "src": "/assets/images/Textures/Items/SlogTrophy.png",
+        "cleanedName": "Slog's annunclus",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "SlogTrophy"
+    },
+    {
+        "src": "/assets/images/Textures/Items/SkybearJetpack.png",
+        "cleanedName": "Flume-Flier of the Sky-Bear",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "Ego": "1",
+            "DV": "2",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "SkybearJetpack"
+    },
+    {
+        "src": "/assets/images/Textures/Items/MurmurMask.png",
+        "cleanedName": "murmur mask",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "1",
+            "DV": "0",
+            "Ego": "-1",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "MurmurMask"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Cyclopean Prism.png",
+        "cleanedName": "amaranthine prism",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "Ego": "+8",
+            "Willpower": "-8",
+            "WornOn": "Floating Nearby"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "Cyclopean Prism"
+    },
+    {
+        "src": "/assets/images/Textures/Terrain/TauChime.png",
+        "cleanedName": "still crystal chime",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "7",
+            "DV": "-4",
+            "Ego": "1",
+            "WornOn": "Body",
+            "Describe": "false"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "TauChime"
+    },
+    {
+        "src": "/assets/images/Textures/Items/TauHeadpiece.png",
+        "cleanedName": "crystalline halo",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "2",
+            "DV": "0",
+            "Ego": "1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "TauHeadpiece"
+    },
+    {
+        "src": "/assets/images/Textures/Items/TauDagger.png",
+        "cleanedName": "crystalline jile",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "Stat": "Ego",
+            "MaxStrengthBonus": "9",
+            "BaseDamage": "1d12+2",
+            "Skill": "ShortBlades"
+        },
+        "slots": "Hand",
+        "name": "TauDagger"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Nachams Ribbon.png",
+        "cleanedName": "Nacham's ribbon",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Nacham's Ribbon"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Dagashas Spur.png",
+        "cleanedName": "Dagasha's spur",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "3",
+            "DV": "-1",
+            "WornOn": "Head"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Dagasha's Spur"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Kahs Loop.png",
+        "cleanedName": "Kah's loop",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Kah's Loop"
+    },
+    {
+        "src": "/assets/images/Textures/Items/The Kesil Face.png",
+        "cleanedName": "Kesil Face",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "3",
+            "SpeedBonus": "10",
+            "Strength": "1",
+            "Toughness": "1",
+            "Agility": "1",
+            "Ego": "1",
+            "Willpower": "1",
+            "Intelligence": "1",
+            "Heat": "10",
+            "Cold": "10",
+            "Acid": "10",
+            "Elec": "10",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "The Kesil Face"
+    },
+    {
+        "src": "/assets/images/Textures/Items/The Shemesh Face.png",
+        "cleanedName": "Shemesh Face",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "3",
+            "SpeedBonus": "10",
+            "Strength": "1",
+            "Toughness": "1",
+            "Agility": "1",
+            "Ego": "1",
+            "Willpower": "1",
+            "Intelligence": "1",
+            "Heat": "10",
+            "Cold": "10",
+            "Acid": "10",
+            "Elec": "10",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "The Shemesh Face"
+    },
+    {
+        "src": "/assets/images/Textures/Items/The Earth Face.png",
+        "cleanedName": "Earth Face",
+        "tier": "7",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "2",
+            "Strength": "1",
+            "Toughness": "1",
+            "Agility": "1",
+            "Ego": "1",
+            "Willpower": "1",
+            "Intelligence": "1",
+            "Heat": "10",
+            "Cold": "10",
+            "Acid": "10",
+            "Elec": "10",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "The Earth Face"
+    },
+    {
+        "src": "/assets/images/Textures/Items/The Levant Face.png",
+        "cleanedName": "Levant Face",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "Strength": "1",
+            "Toughness": "1",
+            "Agility": "1",
+            "Ego": "1",
+            "Willpower": "1",
+            "Intelligence": "1",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "The Levant Face"
+    },
+    {
+        "src": "/assets/images/Textures/Items/The Olive Face.png",
+        "cleanedName": "Olive Face",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "1",
+            "Strength": "1",
+            "Toughness": "1",
+            "Agility": "1",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "The Olive Face"
+    },
+    {
+        "src": "/assets/images/Textures/Items/The Nil Face.png",
+        "cleanedName": "Null Face",
+        "tier": "6",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Face"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "The Nil Face"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Otherpearl.png",
+        "cleanedName": "Otherpearl",
+        "armorPart": {
+            "Name": "Armor",
+            "DV": "1",
+            "MA": "2",
+            "WornOn": "Arm",
+            "AV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Otherpearl"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Flange from the Great Machine.png",
+        "cleanedName": "flange from the Great Machine",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "10",
+            "DV": "-4",
+            "Strength": "1",
+            "Agility": "1",
+            "Toughness": "1",
+            "Intelligence": "1",
+            "Ego": "1",
+            "Willpower": "1",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Flange from the Great Machine"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Sail from the Great Machine.png",
+        "cleanedName": "sail from the Great Machine",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Back",
+            "AV": "2",
+            "DV": "2",
+            "Strength": "1",
+            "Agility": "1",
+            "Toughness": "1",
+            "Intelligence": "1",
+            "Ego": "1",
+            "Willpower": "1"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Sail from the Great Machine"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gauge from the Great Machine.png",
+        "cleanedName": "gauge from the Great Machine",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Face",
+            "AV": "2",
+            "DV": "2",
+            "Strength": "1",
+            "Agility": "1",
+            "Toughness": "1",
+            "Intelligence": "1",
+            "Ego": "1",
+            "Willpower": "1"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Face",
+        "name": "Gauge from the Great Machine"
+    },
+    {
+        "src": "/assets/images/Textures/Items/SalthopperMandible.png",
+        "cleanedName": "salthopper mandible",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "1d10",
+            "Skill": "LongBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "SalthopperMandible"
+    },
+    {
+        "src": "/assets/images/Textures/Items/ForceKnife.png",
+        "cleanedName": "force knife",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d8",
+            "Skill": "ShortBlades",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "ForceKnife"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Fidget Cell.png",
+        "cleanedName": "fidget cell",
+        "tier": "1",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Fidget Cell"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Pickaxe.png",
+        "cleanedName": "pickaxe",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "4",
+            "BaseDamage": "1d3+1",
+            "Skill": "Axe",
+            "Stat": "Strength"
+        },
+        "slots": "Hand",
+        "name": "Pickaxe"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Nanopneumatic Jackhammer.png",
+        "cleanedName": "nanopneumatic jackhammer",
+        "tier": "2",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "3",
+            "BaseDamage": "2d4",
+            "Skill": "Cudgel",
+            "Stat": "Strength"
+        },
+        "slots": "Hand,Hand,Back",
+        "name": "Nanopneumatic Jackhammer"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Hoversled.png",
+        "cleanedName": "hoversled",
+        "tier": "4",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Floating Nearby"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "Hoversled"
+    },
+    {
+        "src": "/assets/images/Textures/Items/TemplarPhylactery.png",
+        "cleanedName": "Templar phylactery",
+        "tier": "6",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "1",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hand",
+        "name": "TemplarPhylactery"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Camel Bladder.png",
+        "cleanedName": "camel bladder",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Back"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Back",
+        "name": "Camel Bladder"
+    },
+    {
+        "src": "/assets/images/Textures/Items/StorageTank.png",
+        "cleanedName": "storage tank",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "StorageTank"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gourd.png",
+        "cleanedName": "gourd",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "0",
+            "WornOn": "Arm"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Arm",
+        "name": "Gourd"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Girshling Fangs.png",
+        "cleanedName": "girshling fangs",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d6",
+            "Skill": "ShortBlades",
+            "Stat": "Strength",
+            "Slot": "Face"
+        },
+        "slots": "Face",
+        "name": "Girshling Fangs"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Rank Fangs.png",
+        "cleanedName": "rank fangs",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d6",
+            "Skill": "ShortBlades",
+            "Stat": "Strength",
+            "Slot": "Face"
+        },
+        "slots": "Face",
+        "name": "Rank Fangs"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Incandescent Fangs.png",
+        "cleanedName": "incandescent fangs",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d6",
+            "Skill": "ShortBlades",
+            "Stat": "Strength",
+            "Slot": "Face"
+        },
+        "slots": "Face",
+        "name": "Incandescent Fangs"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Zigzag Fangs.png",
+        "cleanedName": "zigzag fangs",
+        "tier": "3",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "MaxStrengthBonus": "5",
+            "BaseDamage": "1d6",
+            "Skill": "ShortBlades",
+            "Stat": "Strength",
+            "Slot": "Face"
+        },
+        "slots": "Face",
+        "name": "Zigzag Fangs"
+    },
+    {
+        "src": "/assets/images/Textures/Items/LightCircleEhalcodon.png",
+        "cleanedName": "circle of light in the chord of Ehalcodon",
+        "tier": "8",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Floating Nearby",
+            "AV": "0",
+            "Describe": "false",
+            "DV": "0"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Floating Nearby",
+        "name": "LightCircleEhalcodon"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Gimeleth.png",
+        "cleanedName": "gimeleth",
+        "tier": "9",
+        "armorPart": null,
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "PenBonus": "1",
+            "MaxStrengthBonus": "10",
+            "BaseDamage": "9d3",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Hand",
+        "name": "Gimeleth"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Qorish Veil.png",
+        "cleanedName": "Qorish sorceress veil",
+        "armorPart": {
+            "Name": "Armor",
+            "WornOn": "Head",
+            "AV": "0",
+            "DV": "4"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Head",
+        "name": "Qorish Veil"
+    },
+    {
+        "src": "/assets/images/Textures/Items/Qorish Gown.png",
+        "cleanedName": "Qorish sorceress gown",
+        "armorPart": {
+            "Name": "Armor",
+            "AV": "0",
+            "DV": "4",
+            "WornOn": "Body"
+        },
+        "weaponPart": {
+            "Name": "MeleeWeapon",
+            "BaseDamage": "1d2",
+            "Stat": "Strength",
+            "Skill": "Cudgel"
+        },
+        "slots": "Body",
+        "name": "Qorish Gown"
+    }
+]

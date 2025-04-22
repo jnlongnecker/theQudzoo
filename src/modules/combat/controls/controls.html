@@ -1,12 +1,1 @@
-<template>
-    <div class="container">
-        <div class="tabs" onclick={changeTab}>
-            <button class="tab selected">Character Builder</button>
-            <button class="tab">Combat Builder</button>
-        </div>
-        <div class="panel">
-            <combat-builder if:true={showBuilder} character={creature}></combat-builder>
-            <combat-combat-controls if:true={showCombat} character={creature} enemy={enemy}></combat-combat-controls>
-        </div>
-    </div>
-</template>
+<template><input-button onclick={runTest} variant="stat" size="thin">Run Test</input-button></template>

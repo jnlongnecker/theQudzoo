@@ -441,7 +441,7 @@
                 "ShortName": "HP",
                 "Min": "0",
                 "Max": "64000",
-                "Value": "16"
+                "Value": "0"
             },
             {
                 "Name": "Energy",

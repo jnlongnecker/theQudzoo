@@ -74,7 +74,7 @@ class BodyPart extends Part {
     onAttach(host) {
         super.onAttach(host);
 
-        GetAttacksEvent.register(host, (event) => this.handleGetAttacksEvent(event));
+        GetAttacksEvent.register(host, (event) => this.handleGetAttacksEvent(event), this.id);
     }
 
     doesAttack() {
@@ -109,15 +109,18 @@ class BodyPart extends Part {
     }
 
     equip(item) {
-        if (!this.canUnequip()) return false;
-        this._cachedWeapon.dirty = true;
-        if (this.shouldEquipAsDefaultBehavior(item)) {
-            this.defaultBehavior = item;
-        }
+        if (!item) return false;
+        if (!this.canUnequip()) { return false; }
+        // Mark if this item should be equipped in a default equipment slot
+        let defaultEquipper = this.shouldEquipAsDefaultBehavior(item);
+
+        // Get slot and candidate info
         let slots = item.usesSlots.split(',');
         let candidates = this.host.anatomy.getEquipCandidates(item, this);
         let equippers = [];
-        let addedThis = false;
+        let addedThis = false; // Track whether we've added the current limb to the equipper list
+
+        // Go through candidates and fill out a candidate for each slot
         for (let slot of slots) {
             if (slot === this.slot && !addedThis) { equippers.push(this); addedThis = true; continue; }
             let bestMatch;
@@ -125,14 +128,25 @@ class BodyPart extends Part {
                 if (candidate.slot === slot && candidate.item === null) { bestMatch = candidate; break; }
                 else if (candidate.slot === slot && candidate.canUnequip()) { bestMatch = candidate; }
             }
+            // If we're missing a match after exhausting all candidates, we're missing an open slot needed and must stop
             if (!bestMatch) {
-                throw `Missing slot ${slot} to equip ${item.name}.`;
+                throw `Missing slot ${slot} to equip ${item.displayName}.`;
             }
             equippers.push(bestMatch);
         }
+
+        // Equip the item in each slot needed
         for (let equipper of equippers) {
-            equipper.item = item;
+            if (defaultEquipper) {
+                equipper.defaultBehavior = item;
+                item.onEquip(this);
+            } else {
+                this.host.anatomy.unequipAll(equipper.item);
+                equipper.item = item;
+                item.onEquip(this);
+            }
         }
+        this._cachedWeapon.dirty = true;
 
         this.host.anatomy.recheckEquipmentList(this);
         return true;
@@ -144,12 +158,13 @@ class BodyPart extends Part {
         return true;
     }
 
-    unequip() {
-        if (this.item === null) return true;
-        if (this.item.hasTag('NaturalGear')) return false;
+    unequip(recheck = false) {
+        if (!this.item) return;
+        this.item.onUnequip();
         this.item = null;
-        this.host.anatomy.recheckEquipmentList(this);
-        return true;
+        if (recheck) {
+            this.host.anatomy.recheckEquipmentList(this);
+        }
     }
 
     getOffhandChance(actualPart = null) {
@@ -176,8 +191,12 @@ class BodyPart extends Part {
 
     attackName(modifier = '') {
         let prefix = this.isPrimary ? 'Primary Hand ' : 'Offhand ';
-        let itemName = this.item !== null ? this.item.name : this.defaultBehavior ? this.defaultBehavior.name : this.name;
+        let itemName = this.item !== null ? this.item.displayName : this.defaultBehavior ? this.defaultBehavior.displayName : this.name;
         return `${prefix}${modifier} Attack (${itemName}) - ${this.name}`;
+    }
+
+    getMenuName() {
+        return this.name;
     }
 
     // Standard human limbs
@@ -217,11 +236,20 @@ export class Anatomy {
     }
 
     getLimbArray(currLimb, array = []) {
+        if (!currLimb) currLimb = this.body;
         array.push(currLimb);
         for (let part of currLimb.dependentParts) {
             this.getLimbArray(part, array);
         }
         return array;
+    }
+
+    unequipAll(item, recheck = false) {
+        if (!item) return;
+        for (let limb of this.getLimbArray(this.body)) {
+            if (!limb.item) continue;
+            if (limb.item.id === item.id) limb.unequip(recheck);
+        }
     }
 
     setDefaultPrimaryLimb() {
@@ -247,6 +275,10 @@ export class Anatomy {
             limb.isPrimary = false;
         }
         primaryLimb.isPrimary = true;
+    }
+
+    getLimbsWithSlot(slot) {
+        return this.getLimbArray(this.body).filter(limb => limb.slot === slot);
     }
 
     amFirstEquipped(limb) {
@@ -302,8 +334,14 @@ export class Anatomy {
         anat.equipmentList.push(rightHand);
 
         anat.body.dependentParts.push(head, back, armLeft, armRight, hands, feet, float);
-        rightHand.defaultBehavior = Item.fist();
-        leftHand.defaultBehavior = Item.fist();
+        let rightFist = Item.fist();
+        let leftFist = Item.fist();
+        rightHand.defaultBehavior = rightFist;
+        leftHand.defaultBehavior = leftFist;
+
+        rightFist.onEquip(rightHand);
+        leftFist.onEquip(leftHand);
+
         return anat;
     }
 }

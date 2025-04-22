@@ -7,7 +7,7 @@ export class AttackerPart extends Part {
     onAttach(host) {
         super.onAttach(host);
 
-        ActivatedActionEvent.register(this.host, (event) => this.handleActivatedAction(event));
+        ActivatedActionEvent.register(this.host, (event) => this.handleActivatedAction(event), this.id);
     }
 
     handleActivatedAction(event) {

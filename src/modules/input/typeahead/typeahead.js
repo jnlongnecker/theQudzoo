@@ -32,6 +32,12 @@ export default class Typeahead extends LightningElement {
         return this.filteredOptions.length > 0 && !this.unfocused;
     }
 
+    @api
+    clear() {
+        this.value = '';
+        this.filteredOptions = [];
+    }
+
     updateFilter(event) {
         this.value = event.target.value;
         this.dispatchEvent(new CustomEvent('filterchange', { detail: event.target.value }));

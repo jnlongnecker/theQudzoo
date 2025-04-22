@@ -3,4809 +3,4122 @@
         "src": "/assets/images/Textures/Creatures/BaseIssachari.png",
         "cleanedName": "Issachari raider",
         "factions": "Issachari tribe",
-        "level": "1",
         "name": "BaseIssachari"
     },
     {
         "src": "/assets/images/Textures/Creatures/AppleFarmer.png",
         "cleanedName": "apple farmer",
         "factions": "Farmers' Guild",
-        "level": "5",
         "name": "AppleFarmer"
     },
     {
         "src": "/assets/images/Textures/Creatures/AppleFarmerDaughter.png",
         "cleanedName": "apple farmer's daughter",
         "factions": "Farmers' Guild",
-        "level": "1",
         "name": "AppleFarmerDaughter"
     },
     {
         "src": "/assets/images/Textures/Creatures/Baboon.png",
         "cleanedName": "baboon",
         "factions": "baboons",
-        "level": "5",
         "name": "Baboon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Hulking Baboon.png",
         "cleanedName": "hulking baboon",
         "factions": "baboons",
-        "level": "5",
         "name": "Hulking Baboon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Shrewd Baboon.png",
         "cleanedName": "shrewd baboon",
         "factions": "baboons",
-        "level": "5",
         "name": "Shrewd Baboon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Baboon Hero 1.png",
         "cleanedName": "baboon hero",
         "factions": "baboons",
-        "level": "5",
         "name": "Baboon Hero 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Bat.png",
         "cleanedName": "bat",
         "factions": "winged mammals",
-        "level": "1",
         "name": "Bat"
     },
     {
         "src": "/assets/images/Textures/Creatures/Bear.png",
         "cleanedName": "bear",
         "factions": "bears",
-        "level": "6",
         "name": "Bear"
     },
     {
         "src": "/assets/images/Textures/Creatures/Pig.png",
         "cleanedName": "pig",
         "factions": "Farmers' Guild",
-        "level": "1",
         "name": "Pig"
     },
     {
         "src": "/assets/images/Textures/Creatures/Farm Pig.png",
         "cleanedName": "pig",
         "factions": "Farmers' Guild",
-        "level": "1",
         "name": "Farm Pig"
     },
     {
         "src": "/assets/images/Textures/Creatures/Boar.png",
         "cleanedName": "boar",
         "factions": "swine",
-        "level": "1",
         "name": "Boar"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cannibal.png",
         "cleanedName": "cannibal",
         "factions": "cannibals",
-        "level": "3",
         "name": "Cannibal"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cave Spider.png",
         "cleanedName": "cave spider",
         "factions": "arachnids",
-        "level": "5",
         "name": "Cave Spider"
     },
     {
         "src": "/assets/images/Textures/Creatures/Ray Cat.png",
         "cleanedName": "ray cat",
         "factions": "cats",
-        "level": "1",
         "name": "Ray Cat"
     },
     {
         "src": "/assets/images/Textures/Creatures/Farm Ray Cat.png",
         "cleanedName": "ray cat",
         "factions": "cats",
-        "level": "1",
         "name": "Farm Ray Cat"
     },
     {
         "src": "/assets/images/Textures/Creatures/Joppa Ray Cat.png",
         "cleanedName": "ray cat",
         "factions": "cats",
-        "level": "1",
         "name": "Joppa Ray Cat"
     },
     {
         "src": "/assets/images/Textures/Creatures/Croc.png",
         "cleanedName": "croc",
         "factions": "unshelled reptiles",
-        "level": "3",
         "name": "Croc"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dog.png",
         "cleanedName": "feral dog",
         "factions": "dogs",
-        "level": "1",
         "name": "Dog"
     },
     {
         "src": "/assets/images/Textures/Creatures/Chromeling.png",
         "cleanedName": "chromeling",
         "factions": "Barathrumites",
-        "level": "5",
         "name": "Chromeling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Sleeping Chromeling.png",
         "cleanedName": "chromeling",
         "factions": "Barathrumites",
-        "level": "5",
         "name": "Sleeping Chromeling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Electrofuge.png",
         "cleanedName": "electrofuge",
         "factions": "arachnids",
-        "level": "5",
         "name": "Electrofuge"
     },
     {
         "src": "/assets/images/Textures/Creatures/GiantAmoeba.png",
         "cleanedName": "giant amoeba",
         "factions": "oozes",
-        "level": "1",
         "name": "GiantAmoeba"
     },
     {
         "src": "/assets/images/Textures/Creatures/Farm GiantAmoeba.png",
         "cleanedName": "giant amoeba",
         "factions": "Farmers' Guild",
-        "level": "1",
         "name": "Farm GiantAmoeba"
     },
     {
         "src": "/assets/images/Textures/Creatures/Giant Beetle.png",
         "cleanedName": "giant beetle",
         "factions": "insects",
-        "level": "10",
         "name": "Giant Beetle"
     },
     {
         "src": "/assets/images/Textures/Creatures/Farm Giant Beetle.png",
         "cleanedName": "giant beetle",
         "factions": "grazing hedonists",
-        "level": "10",
         "name": "Farm Giant Beetle"
     },
     {
         "src": "/assets/images/Textures/Creatures/Giant Centipede.png",
         "cleanedName": "giant centipede",
         "factions": "insects",
-        "level": "5",
         "name": "Giant Centipede"
     },
     {
         "src": "/assets/images/Textures/Creatures/GiantDragonfly.png",
         "cleanedName": "giant dragonfly",
         "factions": "grazing hedonists, insects",
-        "level": "1",
         "name": "GiantDragonfly"
     },
     {
         "src": "/assets/images/Textures/Creatures/Glowcrow.png",
         "cleanedName": "glowcrow",
         "factions": "birds",
-        "level": "1",
         "name": "Glowcrow"
     },
     {
         "src": "/assets/images/Textures/Creatures/Glowfish.png",
         "cleanedName": "glowfish",
         "factions": "fish",
-        "level": "1",
         "name": "Glowfish"
     },
     {
         "src": "/assets/images/Textures/Creatures/Uplifted Glowfish.png",
         "cleanedName": "glowfish",
         "factions": "fish",
-        "level": "1",
         "name": "Uplifted Glowfish"
     },
     {
         "src": "/assets/images/Textures/Creatures/Glowpad.png",
         "cleanedName": "glowpad",
         "factions": "flowers",
-        "level": "1",
         "name": "Glowpad"
     },
     {
         "src": "/assets/images/Textures/Creatures/Uplifted Glowpad.png",
         "cleanedName": "glowpad",
         "factions": "flowers",
-        "level": "1",
         "name": "Uplifted Glowpad"
     },
     {
         "src": "/assets/images/Textures/Creatures/Goat.png",
         "cleanedName": "goat",
         "factions": "grazing hedonists",
-        "level": "1",
         "name": "Goat"
     },
     {
         "src": "/assets/images/Textures/Creatures/Farm Goat.png",
         "cleanedName": "goat",
         "factions": "grazing hedonists",
-        "level": "1",
         "name": "Farm Goat"
     },
     {
         "src": "/assets/images/Textures/Creatures/Horned Chameleon.png",
         "cleanedName": "horned chameleon",
         "factions": "unshelled reptiles",
-        "level": "5",
         "name": "Horned Chameleon"
     },
     {
         "src": "/assets/images/Textures/Creatures/IrritableTortoise.png",
         "cleanedName": "irritable tortoise",
         "factions": "tortoises",
-        "level": "5",
         "name": "IrritableTortoise"
     },
     {
         "src": "/assets/images/Textures/Creatures/Jilted Lover.png",
         "cleanedName": "jilted lover",
         "factions": "vines",
-        "level": "1",
         "name": "Jilted Lover"
     },
     {
         "src": "/assets/images/Textures/Creatures/PigFarmer.png",
         "cleanedName": "pig farmer",
         "factions": "Farmers' Guild",
-        "level": "1",
         "name": "PigFarmer"
     },
     {
         "src": "/assets/images/Textures/Creatures/StiltPigFarmer.png",
         "cleanedName": "pig farmer",
         "factions": "Farmers' Guild",
-        "level": "1",
         "name": "StiltPigFarmer"
     },
     {
         "src": "/assets/images/Textures/Creatures/Prickler.png",
         "cleanedName": "prickler",
         "factions": "flowers",
-        "level": "5",
         "name": "Prickler"
     },
     {
         "src": "/assets/images/Textures/Creatures/Qudzu.png",
         "cleanedName": "qudzu",
         "factions": "vines",
-        "level": "2",
         "name": "Qudzu"
     },
     {
         "src": "/assets/images/Textures/Creatures/Salamander.png",
         "cleanedName": "salamander",
         "factions": "unshelled reptiles",
-        "level": "1",
         "name": "Salamander"
     },
     {
         "src": "/assets/images/Textures/Creatures/Scorpiock.png",
         "cleanedName": "scorpiock",
         "factions": "arachnids",
-        "level": "5",
         "name": "Scorpiock"
     },
     {
         "src": "/assets/images/Textures/Creatures/Scrap-clad Hermit.png",
         "cleanedName": "scrap-clad hermit",
         "factions": "hermits",
-        "level": "4",
         "name": "Scrap-clad Hermit"
     },
     {
         "src": "/assets/images/Textures/Creatures/Seed-Spitting Vine.png",
         "cleanedName": "seed-spitting vine",
         "factions": "vines",
-        "level": "1",
         "name": "Seed-Spitting Vine"
     },
     {
         "src": "/assets/images/Textures/Creatures/WatervineFarmer.png",
         "cleanedName": "watervine farmer",
         "factions": "Farmers' Guild",
-        "level": "1",
         "name": "WatervineFarmer"
     },
     {
         "src": "/assets/images/Textures/Creatures/WatervineFarmerJoppa.png",
         "cleanedName": "watervine farmer",
         "factions": "villagers of Joppa",
-        "level": "1",
         "name": "WatervineFarmerJoppa"
     },
     {
         "src": "/assets/images/Textures/Creatures/Young Ivory.png",
         "cleanedName": "young ivory",
         "factions": "roots",
-        "level": "3",
         "name": "Young Ivory"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw.png",
         "cleanedName": "snapjaw",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Scavenger 0.png",
         "cleanedName": "snapjaw scavenger",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Scavenger 0"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Scavenger 1.png",
         "cleanedName": "snapjaw scavenger",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Scavenger 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Scavenger 2.png",
         "cleanedName": "snapjaw scavenger",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Scavenger 2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Hunter 0.png",
         "cleanedName": "snapjaw hunter",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Hunter 0"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Hunter 1.png",
         "cleanedName": "snapjaw hunter",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Hunter 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Hunter 2.png",
         "cleanedName": "snapjaw hunter",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Hunter 2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Shotgunner 0.png",
         "cleanedName": "snapjaw shotgunner",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Shotgunner 0"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Shotgunner 1.png",
         "cleanedName": "snapjaw shotgunner",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Shotgunner 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Shotgunner 2.png",
         "cleanedName": "snapjaw shotgunner",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Shotgunner 2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Brute 0.png",
         "cleanedName": "snapjaw brute",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Brute 0"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Brute 1.png",
         "cleanedName": "snapjaw brute",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Brute 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Brute 2.png",
         "cleanedName": "snapjaw brute",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Brute 2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Warrior 0.png",
         "cleanedName": "snapjaw warrior",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Warrior 0"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Warrior 1.png",
         "cleanedName": "snapjaw warrior",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Warrior 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Warrior 2.png",
         "cleanedName": "snapjaw warrior",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Warrior 2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Warlord 0.png",
         "cleanedName": "snapjaw warlord",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Warlord 0"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Warlord 1.png",
         "cleanedName": "snapjaw warlord",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Warlord 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Warlord 2.png",
         "cleanedName": "snapjaw warlord",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Warlord 2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Fort Snapjaw Warlord.png",
         "cleanedName": "snapjaw warlord",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Fort Snapjaw Warlord"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Hero 0.png",
         "cleanedName": "snapjaw warlord",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Hero 0"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Hero 1.png",
         "cleanedName": "snapjaw warlord",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Hero 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Hero Stopsvaalinn.png",
         "cleanedName": "snapjaw warlord",
         "factions": "snapjaws",
-        "level": "1",
         "name": "Snapjaw Hero Stopsvaalinn"
     },
     {
         "src": "/assets/images/Textures/Creatures/Aloe Porta.png",
         "cleanedName": "aloe porta",
         "factions": "succulents",
-        "level": "8",
         "name": "Aloe Porta"
     },
     {
         "src": "/assets/images/Textures/Creatures/Beetlebum.png",
         "cleanedName": "beetlebum",
         "factions": "grazing hedonists, insects",
-        "level": "8",
         "name": "Beetlebum"
     },
     {
         "src": "/assets/images/Textures/Creatures/Farm Beetlebum.png",
         "cleanedName": "beetlebum",
         "factions": "grazing hedonists",
-        "level": "8",
         "name": "Farm Beetlebum"
     },
     {
         "src": "/assets/images/Textures/Creatures/Bloated Leech.png",
         "cleanedName": "bloated leech",
         "factions": "worms",
-        "level": "8",
         "name": "Bloated Leech"
     },
     {
         "src": "/assets/images/Textures/Creatures/ClockworkBeetle.png",
         "cleanedName": "clockwork beetle",
         "factions": "insects, robots",
-        "level": "10",
         "name": "ClockworkBeetle"
     },
     {
         "src": "/assets/images/Textures/Creatures/Issachari Raider.png",
         "cleanedName": "Issachari raider",
         "factions": "Issachari tribe",
-        "level": "8",
         "name": "Issachari Raider"
     },
     {
         "src": "/assets/images/Textures/Creatures/Issachari Rifler.png",
         "cleanedName": "Issachari rifler",
         "factions": "Issachari tribe",
-        "level": "8",
         "name": "Issachari Rifler"
     },
     {
         "src": "/assets/images/Textures/Creatures/Two-Headed Boar.png",
         "cleanedName": "two-headed boar",
         "factions": "swine",
-        "level": "6",
         "name": "Two-Headed Boar"
     },
     {
         "src": "/assets/images/Textures/Creatures/Guard Dog.png",
         "cleanedName": "guard dog",
         "factions": "dogs, Farmers' Guild",
-        "level": "8",
         "name": "Guard Dog"
     },
     {
         "src": "/assets/images/Textures/Creatures/Chute Crab.png",
         "cleanedName": "chute crab",
         "factions": "crabs",
-        "level": "7",
         "name": "Chute Crab"
     },
     {
         "src": "/assets/images/Textures/Creatures/Eyeless Crab.png",
         "cleanedName": "eyeless crab",
         "factions": "crabs",
-        "level": "7",
         "name": "Eyeless Crab"
     },
     {
         "src": "/assets/images/Textures/Creatures/Farm Eyeless Crab.png",
         "cleanedName": "eyeless crab",
         "factions": "Farmers' Guild",
-        "level": "7",
         "name": "Farm Eyeless Crab"
     },
     {
         "src": "/assets/images/Textures/Creatures/Feral Lah.png",
         "cleanedName": "feral lah",
         "factions": "flowers",
-        "level": "10",
         "name": "Feral Lah"
     },
     {
         "src": "/assets/images/Textures/Creatures/Feral Lah Pod.png",
         "cleanedName": "tumbling pod",
         "factions": "flowers",
-        "level": "2",
         "name": "Feral Lah Pod"
     },
     {
         "src": "/assets/images/Textures/Creatures/Giant Centipede Nest.png",
         "cleanedName": "giant centipede nest",
         "factions": "insects",
-        "level": "10",
         "name": "Giant Centipede Nest"
     },
     {
         "src": "/assets/images/Textures/Creatures/Glowmoth.png",
         "cleanedName": "glowmoth",
         "factions": "insects",
-        "level": "6",
         "name": "Glowmoth"
     },
     {
         "src": "/assets/images/Textures/Creatures/Hide-Sheathed Hermit.png",
         "cleanedName": "hide-sheathed hermit",
         "factions": "hermits",
-        "level": "8",
         "name": "Hide-Sheathed Hermit"
     },
     {
         "src": "/assets/images/Textures/Creatures/Honey Skunk.png",
         "cleanedName": "honey skunk",
         "factions": "hermits",
-        "level": "9",
         "name": "Honey Skunk"
     },
     {
         "src": "/assets/images/Textures/Creatures/Knollworm.png",
         "cleanedName": "knollworm",
         "factions": "worms",
-        "level": "7",
         "name": "Knollworm"
     },
     {
         "src": "/assets/images/Textures/Creatures/Leech.png",
         "cleanedName": "leech",
         "factions": "worms",
-        "level": "6",
         "name": "Leech"
     },
     {
         "src": "/assets/images/Textures/Creatures/Farm Leech.png",
         "cleanedName": "leech",
         "factions": "Farmers' Guild",
-        "level": "6",
         "name": "Farm Leech"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Pilgrim.png",
         "cleanedName": "Mechanimist pilgrim",
         "factions": "Mechanimists",
-        "level": "8",
         "name": "Mechanimist Pilgrim"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Pilgrim Still.png",
         "cleanedName": "Mechanimist pilgrim",
         "factions": "Mechanimists",
-        "level": "8",
         "name": "Mechanimist Pilgrim Still"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechnamist rummager.png",
         "cleanedName": "Mechanimist rummager",
         "factions": "Mechanimists",
-        "level": "8",
         "name": "Mechnamist rummager"
     },
     {
         "src": "/assets/images/Textures/Creatures/Miner Mk I.png",
         "cleanedName": "miner Mk I",
         "factions": "robots",
-        "level": "9",
         "name": "Miner Mk I"
     },
     {
         "src": "/assets/images/Textures/Creatures/Novice of the Sightless Way 2.png",
         "cleanedName": "novice of the Sightless Way",
         "factions": "Seekers of the Sightless Way",
-        "level": "8",
         "name": "Novice of the Sightless Way 2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Novice of the Sightless Way 3.png",
         "cleanedName": "novice of the Sightless Way",
         "factions": "Seekers of the Sightless Way",
-        "level": "8",
         "name": "Novice of the Sightless Way 3"
     },
     {
         "src": "/assets/images/Textures/Creatures/Plated Knollworm.png",
         "cleanedName": "plated knollworm",
         "factions": "worms",
-        "level": "8",
         "name": "Plated Knollworm"
     },
     {
         "src": "/assets/images/Textures/Creatures/Salthopper.png",
         "cleanedName": "salthopper",
         "factions": "insects",
-        "level": "9",
         "name": "Salthopper"
     },
     {
         "src": "/assets/images/Textures/Creatures/Seedsprout Worm.png",
         "cleanedName": "seedsprout worm",
         "factions": "worms",
-        "level": "9",
         "name": "Seedsprout Worm"
     },
     {
         "src": "/assets/images/Textures/Creatures/Segmented Mirthworm.png",
         "cleanedName": "segmented mirthworm",
         "factions": "worms",
-        "level": "7",
         "name": "Segmented Mirthworm"
     },
     {
         "src": "/assets/images/Textures/Creatures/Scrapbot.png",
         "cleanedName": "scrap shoveler",
         "factions": "robots",
-        "level": "10",
         "name": "Scrapbot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Scrapbot Mechanimist.png",
         "cleanedName": "reprogrammed scrap shoveler",
         "factions": "Mechanimists",
-        "level": "10",
         "name": "Scrapbot Mechanimist"
     },
     {
         "src": "/assets/images/Textures/Creatures/Slugsnout.png",
         "cleanedName": "slugsnout",
         "factions": "swine",
-        "level": "9",
         "name": "Slugsnout"
     },
     {
         "src": "/assets/images/Textures/Creatures/Waydroid.png",
         "cleanedName": "waydroid",
         "factions": "robots",
-        "level": "10",
         "name": "Waydroid"
     },
     {
         "src": "/assets/images/Textures/Creatures/Sleeping Waydroid.png",
         "cleanedName": "waydroid",
         "factions": "Barathrumites",
-        "level": "10",
         "name": "Sleeping Waydroid"
     },
     {
         "src": "/assets/images/Textures/Creatures/Sprouting Orb.png",
         "cleanedName": "sprouting orb",
         "factions": "urchins",
-        "level": "6",
         "name": "Sprouting Orb"
     },
     {
         "src": "/assets/images/Textures/Creatures/Templar Squire.png",
         "cleanedName": "Templar squire",
         "factions": "Putus Templar",
-        "level": "9",
         "name": "Templar Squire"
     },
     {
         "src": "/assets/images/Textures/Creatures/Thirst Thistle.png",
         "cleanedName": "thirst thistle",
         "factions": "flowers",
-        "level": "7",
         "name": "Thirst Thistle"
     },
     {
         "src": "/assets/images/Textures/Creatures/Trash Monk.png",
         "cleanedName": "trash monk",
         "factions": "hermits",
-        "level": "8",
         "name": "Trash Monk"
     },
     {
         "src": "/assets/images/Textures/Creatures/Worm of the Earth.png",
         "cleanedName": "worm of the earth",
         "factions": "worms",
-        "level": "7",
         "name": "Worm of the Earth"
     },
     {
         "src": "/assets/images/Textures/Creatures/RedrockGirshling.png",
         "cleanedName": "defanged girshling",
         "factions": "arachnids, Girsh",
-        "level": "9",
         "name": "RedrockGirshling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Defanged Girshling.png",
         "cleanedName": "defanged girshling",
         "factions": "arachnids, Girsh",
-        "level": "9",
         "name": "Defanged Girshling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Rank Girshling.png",
         "cleanedName": "rank girshling",
         "factions": "arachnids, Girsh",
-        "level": "9",
         "name": "Rank Girshling"
     },
     {
         "src": "/assets/images/Textures/Items/Rank Girshling Cresh.png",
         "cleanedName": "girshling cresh",
         "factions": "Girsh",
-        "level": "1",
         "name": "Rank Girshling Cresh"
     },
     {
         "src": "/assets/images/Textures/Creatures/Conjoined Girshling.png",
         "cleanedName": "conjoined girshlings",
         "factions": "arachnids, Girsh",
-        "level": "9",
         "name": "Conjoined Girshling"
     },
     {
         "src": "/assets/images/Textures/Items/Conjoined Girshling Cresh.png",
         "cleanedName": "girshling cresh",
         "factions": "Girsh",
-        "level": "1",
         "name": "Conjoined Girshling Cresh"
     },
     {
         "src": "/assets/images/Textures/Creatures/Plasmatic Girshling.png",
         "cleanedName": "plasmatic girshling",
         "factions": "arachnids, Girsh",
-        "level": "9",
         "name": "Plasmatic Girshling"
     },
     {
         "src": "/assets/images/Textures/Items/Plasmatic Girshling Cresh.png",
         "cleanedName": "girshling cresh",
         "factions": "Girsh",
-        "level": "1",
         "name": "Plasmatic Girshling Cresh"
     },
     {
         "src": "/assets/images/Textures/Creatures/Polarized Girshling.png",
         "cleanedName": "polarized girshling",
         "factions": "arachnids, Girsh",
-        "level": "9",
         "name": "Polarized Girshling"
     },
     {
         "src": "/assets/images/Textures/Items/Polarized Girshling Cresh.png",
         "cleanedName": "girshling cresh",
         "factions": "Girsh",
-        "level": "1",
         "name": "Polarized Girshling Cresh"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cryptic Girshling.png",
         "cleanedName": "cryptic girshling",
         "factions": "arachnids, Girsh",
-        "level": "9",
         "name": "Cryptic Girshling"
     },
     {
         "src": "/assets/images/Textures/Items/Cryptic Girshling Cresh.png",
         "cleanedName": "girshling cresh",
         "factions": "Girsh",
-        "level": "1",
         "name": "Cryptic Girshling Cresh"
     },
     {
         "src": "/assets/images/Textures/Creatures/Burrowing Girshling.png",
         "cleanedName": "burrowing girshling",
         "factions": "arachnids, Girsh",
-        "level": "9",
         "name": "Burrowing Girshling"
     },
     {
         "src": "/assets/images/Textures/Items/Burrowing Girshling Cresh.png",
         "cleanedName": "girshling cresh",
         "factions": "Girsh",
-        "level": "1",
         "name": "Burrowing Girshling Cresh"
     },
     {
         "src": "/assets/images/Textures/Creatures/HindrenVillager.png",
         "cleanedName": "hindren villager",
         "factions": "hindren of Bey Lah",
-        "level": "8",
         "name": "HindrenVillager"
     },
     {
         "src": "/assets/images/Textures/Creatures/ProsperousHindrenTrader.png",
         "cleanedName": "hindren trader",
         "factions": "hindren of Bey Lah",
-        "level": "16",
         "name": "ProsperousHindrenTrader"
     },
     {
         "src": "/assets/images/Textures/Creatures/HindrenAfflicted.png",
         "cleanedName": "hindren afflicted",
         "factions": "hindren of Bey Lah",
-        "level": "8",
         "name": "HindrenAfflicted"
     },
     {
         "src": "/assets/images/Textures/Creatures/FaundrenVillager.png",
         "cleanedName": "faundren villager",
         "factions": "hindren of Bey Lah",
-        "level": "3",
         "name": "FaundrenVillager"
     },
     {
         "src": "/assets/images/Textures/Creatures/HindrenScout.png",
         "cleanedName": "hindren scout",
         "factions": "hindren of Bey Lah",
-        "level": "9",
         "name": "HindrenScout"
     },
     {
         "src": "/assets/images/Textures/Creatures/HindrenPariah.png",
         "cleanedName": "hindren pariah",
         "factions": "pariahs",
-        "level": "14",
         "name": "HindrenPariah"
     },
     {
         "src": "/assets/images/Textures/Creatures/HindrenScoutPariah.png",
         "cleanedName": "hindren scout and pariah",
         "factions": "pariahs",
-        "level": "14",
         "name": "HindrenScoutPariah"
     },
     {
         "src": "/assets/images/Textures/Creatures/BaseWoodsprog.png",
         "cleanedName": "woodsprog",
         "factions": "grazing hedonists",
-        "level": "7",
         "name": "BaseWoodsprog"
     },
     {
         "src": "/assets/images/Textures/Creatures/Woodsprog.png",
         "cleanedName": "woodsprog",
         "factions": "grazing hedonists",
-        "level": "7",
         "name": "Woodsprog"
     },
     {
         "src": "/assets/images/Textures/Creatures/Woodsprog Kyakukya.png",
         "cleanedName": "woodsprog",
         "factions": "villagers of Kyakukya",
-        "level": "7",
         "name": "Woodsprog Kyakukya"
     },
     {
         "src": "/assets/images/Textures/Creatures/Naphtaali Forager.png",
         "cleanedName": "Naphtaali forager",
         "factions": "Naphtaali tribe",
-        "level": "7",
         "name": "Naphtaali Forager"
     },
     {
         "src": "/assets/images/Textures/Creatures/Naphtaali Tinker.png",
         "cleanedName": "Naphtaali tinker",
         "factions": "Naphtaali tribe",
-        "level": "9",
         "name": "Naphtaali Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Naphtaali Nimrod.png",
         "cleanedName": "Naphtaali nimrod",
         "factions": "Naphtaali tribe",
-        "level": "9",
         "name": "Naphtaali Nimrod"
     },
     {
         "src": "/assets/images/Textures/Creatures/Naphtaali Jeer.png",
         "cleanedName": "Naphtaali jeer",
         "factions": "Naphtaali tribe",
-        "level": "8",
         "name": "Naphtaali Jeer"
     },
     {
         "src": "/assets/images/Textures/Creatures/Naphtaali Sap.png",
         "cleanedName": "Naphtaali sap",
         "factions": "Naphtaali tribe",
-        "level": "7",
         "name": "Naphtaali Sap"
     },
     {
         "src": "/assets/images/Textures/Creatures/Unplanished Godhed.png",
         "cleanedName": "unplanished godhed",
         "factions": "Naphtaali tribe, robots",
-        "level": "9",
         "name": "Unplanished Godhed"
     },
     {
         "src": "/assets/images/Textures/Creatures/Planished Godhed.png",
         "cleanedName": "planished godhed",
         "factions": "Naphtaali tribe, robots",
-        "level": "9",
         "name": "Planished Godhed"
     },
     {
         "src": "/assets/images/Textures/Creatures/Agolfly.png",
         "cleanedName": "agolfly",
         "factions": "insects, Girsh",
-        "level": "15",
         "name": "Agolfly"
     },
     {
         "src": "/assets/images/Textures/Creatures/Agolmaggot.png",
         "cleanedName": "agolmaggot",
         "factions": "Girsh, insects",
-        "level": "12",
         "name": "Agolmaggot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Aloe Volta.png",
         "cleanedName": "aloe volta",
         "factions": "succulents",
-        "level": "13",
         "name": "Aloe Volta"
     },
     {
         "src": "/assets/images/Textures/Creatures/Albino ape.png",
         "cleanedName": "albino ape",
         "factions": "apes",
-        "level": "12",
         "name": "Albino ape"
     },
     {
         "src": "/assets/images/Textures/Creatures/Arconaut.png",
         "cleanedName": "arconaut",
         "factions": "grazing hedonists",
-        "level": "14",
         "name": "Arconaut"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cave Arconaut.png",
         "cleanedName": "arconaut",
         "factions": "grazing hedonists",
-        "level": "14",
         "name": "Cave Arconaut"
     },
     {
         "src": "/assets/images/Textures/Creatures/Arconaut Still.png",
         "cleanedName": "arconaut",
         "factions": "grazing hedonists",
-        "level": "14",
         "name": "Arconaut Still"
     },
     {
         "src": "/assets/images/Textures/Creatures/Barkbiter.png",
         "cleanedName": "barkbiter",
         "factions": "bears",
-        "level": "15",
         "name": "Barkbiter"
     },
     {
         "src": "/assets/images/Textures/Creatures/Chitinous Puma.png",
         "cleanedName": "chitinous puma",
         "factions": "cats",
-        "level": "12",
         "name": "Chitinous Puma"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dawnglider.png",
         "cleanedName": "dawnglider",
         "factions": "birds, unshelled reptiles",
-        "level": "15",
         "name": "Dawnglider"
     },
     {
         "src": "/assets/images/Textures/Creatures/Disciple of the Sightless Way.png",
         "cleanedName": "disciple of the Sightless Way",
         "factions": "Seekers of the Sightless Way",
-        "level": "12",
         "name": "Disciple of the Sightless Way"
     },
     {
         "src": "/assets/images/Textures/Creatures/Drillbot.png",
         "cleanedName": "drillbot",
         "factions": "robots",
-        "level": "12",
         "name": "Drillbot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Equimax.png",
         "cleanedName": "equimax",
         "factions": "grazing hedonists, equines",
-        "level": "14",
         "name": "Equimax"
     },
     {
         "src": "/assets/images/Textures/Creatures/Fire ant.png",
         "cleanedName": "fire ant",
         "factions": "insects",
-        "level": "13",
         "name": "Fire ant"
     },
     {
         "src": "/assets/images/Textures/Creatures/Fire Snout.png",
         "cleanedName": "fire snout",
         "factions": "swine",
-        "level": "13",
         "name": "Fire Snout"
     },
     {
         "src": "/assets/images/Textures/Creatures/Fork-Horned Gnu.png",
         "cleanedName": "fork-horned gnu",
         "factions": "antelopes",
-        "level": "12",
         "name": "Fork-Horned Gnu"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gelatinous Wedge.png",
         "cleanedName": "gelatinous wedge",
         "factions": "oozes",
-        "level": "13",
         "name": "Gelatinous Wedge"
     },
     {
         "src": "/assets/images/Textures/Creatures/Ghost Perch.png",
         "cleanedName": "ghost perch",
         "factions": "fish",
-        "level": "13",
         "name": "Ghost Perch"
     },
     {
         "src": "/assets/images/Textures/Creatures/Giant Beetle Nest.png",
         "cleanedName": "giant beetle nest",
         "factions": "insects",
-        "level": "15",
         "name": "Giant Beetle Nest"
     },
     {
         "src": "/assets/images/Textures/Creatures/Girshworm.png",
         "cleanedName": "girshworm",
         "factions": "worms, Girsh",
-        "level": "14",
         "name": "Girshworm"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gyre Wight of Agolgot.png",
         "cleanedName": "gyre wight of Agolgot",
         "factions": "Gyre wights",
-        "level": "14",
         "name": "Gyre Wight of Agolgot"
     },
     {
         "src": "/assets/images/Textures/Creatures/RedrockGyreWight.png",
         "cleanedName": "gyre wight of Agolgot",
         "factions": "Gyre wights",
-        "level": "14",
         "name": "RedrockGyreWight"
     },
     {
         "src": "/assets/images/Textures/Creatures/Still Gyre Wight of Agolgot.png",
         "cleanedName": "gyre wight of Agolgot",
         "factions": "Gyre wights",
-        "level": "14",
         "name": "Still Gyre Wight of Agolgot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Uplifted Still Gyre Wight of Agolgot.png",
         "cleanedName": "gyre wight of Agolgot",
         "factions": "Gyre wights",
-        "level": "14",
         "name": "Uplifted Still Gyre Wight of Agolgot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Herding Dog.png",
         "cleanedName": "herding dog",
         "factions": "dogs, Farmers' Guild",
-        "level": "12",
         "name": "Herding Dog"
     },
     {
         "src": "/assets/images/Textures/Creatures/Ice frog.png",
         "cleanedName": "ice frog",
         "factions": "frogs",
-        "level": "12",
         "name": "Ice frog"
     },
     {
         "src": "/assets/images/Textures/Creatures/Infiltrator.png",
         "cleanedName": "infiltrator",
         "factions": "Putus Templar",
-        "level": "13",
         "name": "Infiltrator"
     },
     {
         "src": "/assets/images/Textures/Creatures/Plated Chromeling.png",
         "cleanedName": "plated chromeling",
         "factions": "Barathrumites",
-        "level": "12",
         "name": "Plated Chromeling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Prism Perch.png",
         "cleanedName": "prism perch",
         "factions": "fish",
-        "level": "14",
         "name": "Prism Perch"
     },
     {
         "src": "/assets/images/Textures/Creatures/Quillipede.png",
         "cleanedName": "quillipede",
         "factions": "insects",
-        "level": "13",
         "name": "Quillipede"
     },
     {
         "src": "/assets/images/Textures/Creatures/Rifle Turret Tinker.png",
         "cleanedName": "rifle turret tinker",
         "factions": "robots",
-        "level": "14",
         "name": "Rifle Turret Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Rustacean.png",
         "cleanedName": "rustacean",
         "factions": "crabs",
-        "level": "12",
         "name": "Rustacean"
     },
     {
         "src": "/assets/images/Textures/Creatures/Sawhander.png",
         "cleanedName": "saw-hander",
         "factions": "robots",
-        "level": "15",
         "name": "Sawhander"
     },
     {
         "src": "/assets/images/Textures/Creatures/SewageEel.png",
         "cleanedName": "sewage eel",
         "factions": "fish",
-        "level": "13",
         "name": "SewageEel"
     },
     {
         "src": "/assets/images/Textures/Creatures/Sleeping Plated Chromeling.png",
         "cleanedName": "plated chromeling",
         "factions": "Barathrumites",
-        "level": "12",
         "name": "Sleeping Plated Chromeling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Spark Tick.png",
         "cleanedName": "spark tick",
         "factions": "arachnids",
-        "level": "15",
         "name": "Spark Tick"
     },
     {
         "src": "/assets/images/Textures/Creatures/Two-Headed Slugsnout.png",
         "cleanedName": "two-headed slugsnout",
         "factions": "swine",
-        "level": "14",
         "name": "Two-Headed Slugsnout"
     },
     {
         "src": "/assets/images/Textures/Creatures/Worker ant.png",
         "cleanedName": "worker ant",
         "factions": "insects",
-        "level": "13",
         "name": "Worker ant"
     },
     {
         "src": "/assets/images/Textures/Creatures/Voider.png",
         "cleanedName": "voider",
         "factions": "arachnids",
-        "level": "15",
         "name": "Voider"
     },
     {
         "src": "/assets/images/Textures/Creatures/Yonderbrush.png",
         "cleanedName": "yonderbrush",
         "factions": "trees",
-        "level": "11",
         "name": "Yonderbrush"
     },
     {
         "src": "/assets/images/Textures/Creatures/Goatfolk Bully.png",
         "cleanedName": "goatfolk bully",
         "factions": "goatfolk",
-        "level": "15",
         "name": "Goatfolk Bully"
     },
     {
         "src": "/assets/images/Textures/Creatures/Goatfolk Hornblower.png",
         "cleanedName": "goatfolk hornblower",
         "factions": "goatfolk",
-        "level": "15",
         "name": "Goatfolk Hornblower"
     },
     {
         "src": "/assets/images/Textures/Creatures/Goatfolk Sower.png",
         "cleanedName": "goatfolk sower",
         "factions": "goatfolk",
-        "level": "15",
         "name": "Goatfolk Sower"
     },
     {
         "src": "/assets/images/Textures/Creatures/Goatfolk Yurtwarden.png",
         "cleanedName": "goatfolk yurtwarden",
         "factions": "goatfolk",
-        "level": "15",
         "name": "Goatfolk Yurtwarden"
     },
     {
         "src": "/assets/images/Textures/Creatures/Goatfolk Shaman.png",
         "cleanedName": "goatfolk shaman",
         "factions": "goatfolk",
-        "level": "15",
         "name": "Goatfolk Shaman"
     },
     {
         "src": "/assets/images/Textures/Creatures/Crazed Goatfolk Shaman 1.png",
         "cleanedName": "goatfolk shaman",
         "factions": "Children of Mamon",
-        "level": "15",
         "name": "Crazed Goatfolk Shaman 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Crazed Goatfolk Shaman 2.png",
         "cleanedName": "goatfolk shaman",
         "factions": "Children of Mamon",
-        "level": "15",
         "name": "Crazed Goatfolk Shaman 2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Goatfolk Hero 1.png",
         "cleanedName": "goatfolk shaman",
         "factions": "goatfolk",
-        "level": "15",
         "name": "Goatfolk Hero 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Goatfolk Thrall.png",
         "cleanedName": "goatfolk thrall",
         "factions": "Children of Mamon",
-        "level": "15",
         "name": "Goatfolk Thrall"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Feeder.png",
         "cleanedName": "snapjaw feeder",
         "factions": "snapjaws",
-        "level": "11",
         "name": "Snapjaw Feeder"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Spearfiend.png",
         "cleanedName": "snapjaw spearfiend",
         "factions": "snapjaws",
-        "level": "12",
         "name": "Snapjaw Spearfiend"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Trapper.png",
         "cleanedName": "snapjaw trapper",
         "factions": "snapjaws",
-        "level": "13",
         "name": "Snapjaw Trapper"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snapjaw Howler.png",
         "cleanedName": "snapjaw howler",
         "factions": "snapjaws",
-        "level": "15",
         "name": "Snapjaw Howler"
     },
     {
         "src": "/assets/images/Textures/Creatures/Aloe Pyra.png",
         "cleanedName": "aloe pyra",
         "factions": "succulents",
-        "level": "18",
         "name": "Aloe Pyra"
     },
     {
         "src": "/assets/images/Textures/Creatures/Asphodelyte.png",
         "cleanedName": "asphodelyte",
         "factions": "Consortium of Phyta, flowers",
-        "level": "18",
         "name": "Asphodelyte"
     },
     {
         "src": "/assets/images/Textures/Creatures/Black Jel.png",
         "cleanedName": "black jell",
         "factions": "oozes",
-        "level": "18",
         "name": "Black Jel"
     },
     {
         "src": "/assets/images/Textures/Creatures/Blue Jel.png",
         "cleanedName": "blue jell",
         "factions": "grazing hedonists, oozes",
-        "level": "18",
         "name": "Blue Jel"
     },
     {
         "src": "/assets/images/Textures/Creatures/Brown Sludge.png",
         "cleanedName": "brown jell",
         "factions": "oozes",
-        "level": "18",
         "name": "Brown Sludge"
     },
     {
         "src": "/assets/images/Textures/Creatures/Chaingun Turret Tinker.png",
         "cleanedName": "chaingun turret tinker",
         "factions": "robots",
-        "level": "19",
         "name": "Chaingun Turret Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cloneling.png",
         "cleanedName": "cloneling",
         "factions": "robots",
-        "level": "16",
         "name": "Cloneling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cragmensch Brainer.png",
         "cleanedName": "cragmensch brainer",
         "factions": "cragmensch",
-        "level": "20",
         "name": "Cragmensch Brainer"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cragmensch Boulderer.png",
         "cleanedName": "cragmensch boulderer",
         "factions": "cragmensch",
-        "level": "20",
         "name": "Cragmensch Boulderer"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cragmensch Luminary.png",
         "cleanedName": "cragmensch luminary",
         "factions": "cragmensch",
-        "level": "20",
         "name": "Cragmensch Luminary"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dervish of the Sightless Way.png",
         "cleanedName": "dervish of the Sightless Way",
         "factions": "Seekers of the Sightless Way",
-        "level": "19",
         "name": "Dervish of the Sightless Way"
     },
     {
         "src": "/assets/images/Textures/Creatures/Drowsing Urchin.png",
         "cleanedName": "drowsing urchin",
         "factions": "urchins",
-        "level": "16",
         "name": "Drowsing Urchin"
     },
     {
         "src": "/assets/images/Textures/Creatures/Electric Snail.png",
         "cleanedName": "electric snail",
         "factions": "mollusks",
-        "level": "16",
         "name": "Electric Snail"
     },
     {
         "src": "/assets/images/Textures/Creatures/Farm Electric Snail.png",
         "cleanedName": "electric snail",
         "factions": "Farmers' Guild",
-        "level": "16",
         "name": "Farm Electric Snail"
     },
     {
         "src": "/assets/images/Textures/Creatures/Eyeless King Crab.png",
         "cleanedName": "eyeless king crab",
         "factions": "crabs",
-        "level": "21",
         "name": "Eyeless King Crab"
     },
     {
         "src": "/assets/images/Textures/Creatures/Eyeless King Crab Hero.png",
         "cleanedName": "eyeless king crab",
         "factions": "crabs",
-        "level": "21",
         "name": "Eyeless King Crab Hero"
     },
     {
         "src": "/assets/images/Textures/Creatures/Fire Ant Queen.png",
         "cleanedName": "fire ant queen",
         "factions": "insects",
-        "level": "16",
         "name": "Fire Ant Queen"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gelatinous Frustum.png",
         "cleanedName": "gelatinous frustum",
         "factions": "oozes",
-        "level": "18",
         "name": "Gelatinous Frustum"
     },
     {
         "src": "/assets/images/Textures/Creatures/Green Goo.png",
         "cleanedName": "green jell",
         "factions": "oozes",
-        "level": "18",
         "name": "Green Goo"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gyre Wight of Bethsaida.png",
         "cleanedName": "gyre wight of Bethsaida",
         "factions": "Gyre wights",
-        "level": "18",
         "name": "Gyre Wight of Bethsaida"
     },
     {
         "src": "/assets/images/Textures/Creatures/Still Gyre Wight of Bethsaida.png",
         "cleanedName": "gyre wight of Bethsaida",
         "factions": "Gyre wights",
-        "level": "18",
         "name": "Still Gyre Wight of Bethsaida"
     },
     {
         "src": "/assets/images/Textures/Creatures/Uplifted Still Gyre Wight of Bethsaida.png",
         "cleanedName": "gyre wight of Bethsaida",
         "factions": "Gyre wights",
-        "level": "18",
         "name": "Uplifted Still Gyre Wight of Bethsaida"
     },
     {
-        "src": "/assets/images/Textures/Creatures/Gyre Wight of Shug&#x27;ruith.png",
+        "src": "/assets/images/Textures/Creatures/Gyre Wight of Shugruith.png",
         "cleanedName": "gyre wight of Shug'ruith",
         "factions": "Gyre wights",
-        "level": "18",
         "name": "Gyre Wight of Shug'ruith"
     },
     {
-        "src": "/assets/images/Textures/Creatures/Still Gyre Wight of Shug&#x27;ruith.png",
+        "src": "/assets/images/Textures/Creatures/Still Gyre Wight of Shugruith.png",
         "cleanedName": "gyre wight of Shug'ruith",
         "factions": "Gyre wights",
-        "level": "18",
         "name": "Still Gyre Wight of Shug'ruith"
     },
     {
-        "src": "/assets/images/Textures/Creatures/Uplifted Still Gyre Wight of Shug&#x27;ruith.png",
+        "src": "/assets/images/Textures/Creatures/Uplifted Still Gyre Wight of Shugruith.png",
         "cleanedName": "gyre wight of Shug'ruith",
         "factions": "Gyre wights",
-        "level": "18",
         "name": "Uplifted Still Gyre Wight of Shug'ruith"
     },
     {
         "src": "/assets/images/Textures/Creatures/Holographic Ivory.png",
         "cleanedName": "holographic ivory",
         "factions": "roots",
-        "level": "17",
         "name": "Holographic Ivory"
     },
     {
         "src": "/assets/images/Textures/Creatures/Humor.png",
         "cleanedName": "humor",
         "factions": "oozes",
-        "level": "17",
         "name": "Humor"
     },
     {
         "src": "/assets/images/Textures/Creatures/Hyrkhound.png",
         "cleanedName": "hyrkhound",
         "factions": "dogs",
-        "level": "18",
         "name": "Hyrkhound"
     },
     {
         "src": "/assets/images/Textures/Creatures/Ixlthyxl.png",
         "cleanedName": "ixlthyxl",
         "factions": "fish",
-        "level": "18",
         "name": "Ixlthyxl"
     },
     {
         "src": "/assets/images/Textures/Creatures/Juice Sap.png",
         "cleanedName": "juice sap",
         "factions": "winged mammals",
-        "level": "16",
         "name": "Juice Sap"
     },
     {
         "src": "/assets/images/Textures/Creatures/Livid Creeper.png",
         "cleanedName": "livid creeper",
         "factions": "vines",
-        "level": "20",
         "name": "Livid Creeper"
     },
     {
         "src": "/assets/images/Textures/Creatures/Low-Light Laser Turret Tinker.png",
         "cleanedName": "low-light laser turret tinker",
         "factions": "robots",
-        "level": "19",
         "name": "Low-Light Laser Turret Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Luminous Hoarshroom.png",
         "cleanedName": "luminous hoarshroom",
         "factions": "fungi",
-        "level": "17",
         "name": "Luminous Hoarshroom"
     },
     {
         "src": "/assets/images/Textures/Creatures/Lurking Beth.png",
         "cleanedName": "lurking beth",
         "factions": "roots",
-        "level": "18",
         "name": "Lurking Beth"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mercurial.png",
         "cleanedName": "mercurial",
         "factions": "robots",
-        "level": "20",
         "name": "Mercurial"
     },
     {
         "src": "/assets/images/Textures/Creatures/Miner Mk II.png",
         "cleanedName": "miner Mk II",
         "factions": "robots",
-        "level": "19",
         "name": "Miner Mk II"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mysterious Gunslinger.png",
         "cleanedName": "mysterious gunslinger",
         "factions": "mysterious strangers",
-        "level": "19",
         "name": "Mysterious Gunslinger"
     },
     {
         "src": "/assets/images/Textures/Creatures/Plastronoid.png",
         "cleanedName": "plastronoid",
         "factions": "robots",
-        "level": "19",
         "name": "Plastronoid"
     },
     {
         "src": "/assets/images/Textures/Creatures/Psyberneticist.png",
         "cleanedName": "psyberneticist",
         "factions": "Mechanimists",
-        "level": "16",
         "name": "Psyberneticist"
     },
     {
         "src": "/assets/images/Textures/Creatures/Spitting Slug.png",
         "cleanedName": "spitting slug",
         "factions": "mollusks",
-        "level": "16",
         "name": "Spitting Slug"
     },
     {
         "src": "/assets/images/Textures/Creatures/Traipsing Mortar.png",
         "cleanedName": "traipsing mortar",
         "factions": "robots",
-        "level": "15",
         "name": "Traipsing Mortar"
     },
     {
         "src": "/assets/images/Textures/Creatures/Twinning Lamprey.png",
         "cleanedName": "twinning lamprey",
         "factions": "fish",
-        "level": "18",
         "name": "Twinning Lamprey"
     },
     {
         "src": "/assets/images/Textures/Creatures/Breather.png",
         "cleanedName": "breathbeard",
         "factions": "unshelled reptiles",
-        "level": "18",
         "name": "Breather"
     },
     {
         "src": "/assets/images/Textures/Creatures/FireBreather.png",
         "cleanedName": "flamebeard",
         "factions": "unshelled reptiles",
-        "level": "18",
         "name": "FireBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/IceBreather.png",
         "cleanedName": "sleetbeard",
         "factions": "unshelled reptiles",
-        "level": "18",
         "name": "IceBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/CorrosiveBreather.png",
         "cleanedName": "tartbeard",
         "factions": "unshelled reptiles",
-        "level": "18",
         "name": "CorrosiveBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/NormalityBreather.png",
         "cleanedName": "nullbeard",
         "factions": "unshelled reptiles",
-        "level": "18",
         "name": "NormalityBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/PoisonBreather.png",
         "cleanedName": "gallbeard",
         "factions": "unshelled reptiles",
-        "level": "18",
         "name": "PoisonBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/SleepBreather.png",
         "cleanedName": "dreambeard",
         "factions": "unshelled reptiles",
-        "level": "18",
         "name": "SleepBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/StunBreather.png",
         "cleanedName": "stillbeard",
         "factions": "unshelled reptiles",
-        "level": "18",
         "name": "StunBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/ConfusionBreather.png",
         "cleanedName": "mazebeard",
         "factions": "unshelled reptiles",
-        "level": "18",
         "name": "ConfusionBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/Troll Foal.png",
         "cleanedName": "troll foal",
         "factions": "trolls",
-        "level": "15",
         "name": "Troll Foal"
     },
     {
         "src": "/assets/images/Textures/Creatures/Troll King 1.png",
         "cleanedName": "Jotun, Who Parts Limbs",
         "factions": "trolls",
-        "level": "17",
         "name": "Troll King 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Troll King 2.png",
         "cleanedName": "Fjorn-Kosef, Who Knits The Icy Lattice",
         "factions": "trolls",
-        "level": "19",
         "name": "Troll King 2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Troll King 3.png",
         "cleanedName": "Haggabah, Who Plies The Umbral Path",
         "factions": "trolls",
-        "level": "19",
         "name": "Troll King 3"
     },
     {
         "src": "/assets/images/Textures/Creatures/Addling Urchin.png",
         "cleanedName": "addling urchin",
         "factions": "urchins",
-        "level": "21",
         "name": "Addling Urchin"
     },
     {
         "src": "/assets/images/Textures/Creatures/Adiyy.png",
         "cleanedName": "adiyy",
         "factions": "insects",
-        "level": "25",
         "name": "Adiyy"
     },
     {
         "src": "/assets/images/Textures/Creatures/Agolzvuv.png",
         "cleanedName": "agolzvuv",
         "factions": "insects, Girsh",
-        "level": "22",
         "name": "Agolzvuv"
     },
     {
         "src": "/assets/images/Textures/Creatures/Aloe Fugues.png",
         "cleanedName": "aloe fugues",
         "factions": "succulents",
-        "level": "23",
         "name": "Aloe Fugues"
     },
     {
         "src": "/assets/images/Textures/Items/Baetyl.png",
         "cleanedName": "baetyl",
         "factions": "baetyls",
-        "level": "25",
         "name": "Baetyl"
     },
     {
         "src": "/assets/images/Textures/Items/SparkingBaetyl.png",
         "cleanedName": "sparking baetyl",
         "factions": "baetyls",
-        "level": "25",
         "name": "SparkingBaetyl"
     },
     {
         "src": "/assets/images/Textures/Creatures/BananaRancher.png",
         "cleanedName": "banana rancher",
         "factions": "Farmers' Guild",
-        "level": "22",
         "name": "BananaRancher"
     },
     {
         "src": "/assets/images/Textures/Creatures/Bloated Pearlfrog.png",
         "cleanedName": "bloated pearlfrog",
         "factions": "frogs",
-        "level": "24",
         "name": "Bloated Pearlfrog"
     },
     {
         "src": "/assets/images/Textures/Creatures/Boosterbot.png",
         "cleanedName": "boosterbot",
         "factions": "robots",
-        "level": "25",
         "name": "Boosterbot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cyclopean Gibbon.png",
         "cleanedName": "cyclopean gibbon",
         "factions": "apes",
-        "level": "22",
         "name": "Cyclopean Gibbon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Diplomacy Droid.png",
         "cleanedName": "diplomacy droid",
         "factions": "robots",
-        "level": "23",
         "name": "Diplomacy Droid"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gelatinous Prism.png",
         "cleanedName": "gelatinous prism",
         "factions": "oozes",
-        "level": "23",
         "name": "Gelatinous Prism"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gyrohumor.png",
         "cleanedName": "gyrohumor",
         "factions": "oozes",
-        "level": "22",
         "name": "Gyrohumor"
     },
     {
         "src": "/assets/images/Textures/Creatures/FungusPuffer1.png",
         "cleanedName": "brooding goldpuff",
         "factions": "fungi",
-        "level": "23",
         "name": "FungusPuffer1"
     },
     {
         "src": "/assets/images/Textures/Creatures/FungusPuffer2.png",
         "cleanedName": "brooding azurepuff",
         "factions": "fungi",
-        "level": "23",
         "name": "FungusPuffer2"
     },
     {
         "src": "/assets/images/Textures/Creatures/FungusPuffer3.png",
         "cleanedName": "brooding rosepuff",
         "factions": "fungi",
-        "level": "23",
         "name": "FungusPuffer3"
     },
     {
         "src": "/assets/images/Textures/Creatures/FungusPuffer4.png",
         "cleanedName": "brooding jadepuff",
         "factions": "fungi",
-        "level": "23",
         "name": "FungusPuffer4"
     },
     {
         "src": "/assets/images/Textures/Creatures/Juicing Cannibal.png",
         "cleanedName": "juicing cannibal",
         "factions": "cannibals",
-        "level": "21",
         "name": "Juicing Cannibal"
     },
     {
         "src": "/assets/images/Textures/Creatures/Laser Turret Tinker.png",
         "cleanedName": "laser turret tinker",
         "factions": "robots",
-        "level": "24",
         "name": "Laser Turret Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Missile Cannibal.png",
         "cleanedName": "juicing cannibal",
         "factions": "cannibals",
-        "level": "21",
         "name": "Missile Cannibal"
     },
     {
         "src": "/assets/images/Textures/Creatures/Ickslug.png",
         "cleanedName": "ickslug",
         "factions": "mollusks",
-        "level": "21",
         "name": "Ickslug"
     },
     {
         "src": "/assets/images/Textures/Creatures/Irritable Palm.png",
         "cleanedName": "irritable palm",
         "factions": "trees",
-        "level": "23",
         "name": "Irritable Palm"
     },
     {
         "src": "/assets/images/Textures/Creatures/Lagroot.png",
         "cleanedName": "lagroot",
         "factions": "roots",
-        "level": "23",
         "name": "Lagroot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mimic.png",
         "cleanedName": "mimic",
         "factions": "unshelled reptiles",
-        "level": "25",
         "name": "Mimic"
     },
     {
         "src": "/assets/images/Textures/Creatures/Molting Basilisk.png",
         "cleanedName": "molting basilisk husk",
         "factions": "unshelled reptiles",
-        "level": "25",
         "name": "Molting Basilisk"
     },
     {
         "src": "/assets/images/Textures/Creatures/Normality Bot.png",
         "cleanedName": "anomaly extinguisher",
         "factions": "robots",
-        "level": "22",
         "name": "Normality Bot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Phase Spider.png",
         "cleanedName": "phase spider",
         "factions": "arachnids",
-        "level": "25",
         "name": "Phase Spider"
     },
     {
         "src": "/assets/images/Textures/Creatures/Phase Spider Coward.png",
         "cleanedName": "phase spider",
         "factions": "grazing hedonists, arachnids",
-        "level": "25",
         "name": "Phase Spider Coward"
     },
     {
         "src": "/assets/images/Textures/Creatures/Pulsed Field Magnet.png",
         "cleanedName": "pulsed field magnet",
         "factions": "robots",
-        "level": "25",
         "name": "Pulsed Field Magnet"
     },
     {
         "src": "/assets/images/Textures/Creatures/Quartz Baboon.png",
         "cleanedName": "quartz baboon",
         "factions": "baboons",
-        "level": "22",
         "name": "Quartz Baboon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Red Death Dacca.png",
         "cleanedName": "red death dacca",
         "factions": "trees",
-        "level": "24",
         "name": "Red Death Dacca"
     },
     {
         "src": "/assets/images/Textures/Creatures/Rimewyk.png",
         "cleanedName": "rimewyk",
         "factions": "unshelled reptiles",
-        "level": "22",
         "name": "Rimewyk"
     },
     {
         "src": "/assets/images/Textures/Creatures/Slumberling.png",
         "cleanedName": "slumberling",
         "factions": "bears",
-        "level": "21",
         "name": "Slumberling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Snailmother.png",
         "cleanedName": "snailmother",
         "factions": "mollusks",
-        "level": "25",
         "name": "Snailmother"
     },
     {
         "src": "/assets/images/Textures/Creatures/SoupSludgeSpawnerTier5.png",
         "cleanedName": "soupy sludge",
         "factions": "oozes",
-        "level": "24",
         "name": "SoupSludgeSpawnerTier5"
     },
     {
         "src": "/assets/images/Textures/Creatures/Urchin Belcher.png",
         "cleanedName": "urchin belcher",
         "factions": "fish",
-        "level": "23",
         "name": "Urchin Belcher"
     },
     {
         "src": "/assets/images/Textures/Creatures/Waveform Worm.png",
         "cleanedName": "waveform worm",
         "factions": "worms",
-        "level": "25",
         "name": "Waveform Worm"
     },
     {
         "src": "/assets/images/Textures/Creatures/White Esh.png",
         "cleanedName": "white esh",
         "factions": "birds",
-        "level": "21",
         "name": "White Esh"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Zealot.png",
         "cleanedName": "Mechanimist zealot",
         "factions": "Mechanimists",
-        "level": "16",
         "name": "Mechanimist Zealot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Catechist.png",
         "cleanedName": "Mechanimist catechist",
         "factions": "Mechanimists",
-        "level": "25",
         "name": "Mechanimist Catechist"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Choraler.png",
         "cleanedName": "Mechanimist choraler",
         "factions": "Mechanimists",
-        "level": "20",
         "name": "Mechanimist Choraler"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Houndmaster.png",
         "cleanedName": "Mechanimist houndmaster",
         "factions": "Mechanimists",
-        "level": "25",
         "name": "Mechanimist Houndmaster"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Priest 1.png",
         "cleanedName": "Mechanimist priest",
         "factions": "Mechanimists",
-        "level": "25",
         "name": "Mechanimist Priest 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Preacher 1.png",
         "cleanedName": "Mechanimist preacher",
         "factions": "Mechanimists",
-        "level": "25",
         "name": "Mechanimist Preacher 1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Preacher 2.png",
         "cleanedName": "Mechanimist preacher",
         "factions": "Mechanimists",
-        "level": "25",
         "name": "Mechanimist Preacher 2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Preacher 3.png",
         "cleanedName": "Mechanimist preacher",
         "factions": "Mechanimists",
-        "level": "25",
         "name": "Mechanimist Preacher 3"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Preacher 4.png",
         "cleanedName": "Mechanimist preacher",
         "factions": "Mechanimists",
-        "level": "25",
         "name": "Mechanimist Preacher 4"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Temple Paladin.png",
         "cleanedName": "Mechanimist paladin",
         "factions": "Mechanimists",
-        "level": "25",
         "name": "Mechanimist Temple Paladin"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanimist Warden.png",
         "cleanedName": "warden of the Sanctum",
         "factions": "Mechanimists",
-        "level": "25",
         "name": "Mechanimist Warden"
     },
     {
         "src": "/assets/images/Textures/Creatures/Stilt Warden.png",
         "cleanedName": "protector of the Stilt",
         "factions": "Mechanimists",
-        "level": "26",
         "name": "Stilt Warden"
     },
     {
         "src": "/assets/images/Textures/Creatures/Banner-Knight Templar.png",
         "cleanedName": "Banner-Knight Templar",
         "factions": "Putus Templar",
-        "level": "24",
         "name": "Banner-Knight Templar"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gunner-Knight Templar.png",
         "cleanedName": "Gunner-Knight Templar",
         "factions": "Putus Templar",
-        "level": "24",
         "name": "Gunner-Knight Templar"
     },
     {
         "src": "/assets/images/Textures/Creatures/Knight Commander of the Holy Temple.png",
         "cleanedName": "Knight Commander of the Holy Temple",
         "factions": "Putus Templar",
-        "level": "25",
         "name": "Knight Commander of the Holy Temple"
     },
     {
         "src": "/assets/images/Textures/Creatures/Uplifted Knight Commander.png",
         "cleanedName": "Knight Commander of the Holy Temple",
         "factions": "Putus Templar",
-        "level": "25",
         "name": "Uplifted Knight Commander"
     },
     {
         "src": "/assets/images/Textures/Creatures/Knight Templar.png",
         "cleanedName": "Knight Templar",
         "factions": "Putus Templar",
-        "level": "24",
         "name": "Knight Templar"
     },
     {
         "src": "/assets/images/Textures/Creatures/Newfather.png",
         "cleanedName": "newfather",
         "factions": "Putus Templar",
-        "level": "24",
         "name": "Newfather"
     },
     {
         "src": "/assets/images/Textures/Creatures/Phylactery Squire.png",
         "cleanedName": "phylactery squire",
         "factions": "Putus Templar",
-        "level": "26",
         "name": "Phylactery Squire"
     },
     {
         "src": "/assets/images/Textures/Creatures/Wraith-Knight Templar.png",
         "cleanedName": "Wraith-Knight Templar of the Binary Honorum",
         "factions": "Putus Templar",
-        "level": "24",
         "name": "Wraith-Knight Templar"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gyre Wight of Rermadon.png",
         "cleanedName": "gyre wight of Rermadon",
         "factions": "Gyre wights",
-        "level": "22",
         "name": "Gyre Wight of Rermadon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Still Gyre Wight of Rermadon.png",
         "cleanedName": "gyre wight of Rermadon",
         "factions": "Gyre wights",
-        "level": "22",
         "name": "Still Gyre Wight of Rermadon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Uplifted Still Gyre Wight of Rermadon.png",
         "cleanedName": "gyre wight of Rermadon",
         "factions": "Gyre wights",
-        "level": "22",
         "name": "Uplifted Still Gyre Wight of Rermadon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gyre Wight of Qas.png",
         "cleanedName": "gyre wight of Qas",
         "factions": "Gyre wights",
-        "level": "23",
         "name": "Gyre Wight of Qas"
     },
     {
         "src": "/assets/images/Textures/Creatures/Still Gyre Wight of Qas.png",
         "cleanedName": "gyre wight of Qas",
         "factions": "Gyre wights",
-        "level": "23",
         "name": "Still Gyre Wight of Qas"
     },
     {
         "src": "/assets/images/Textures/Creatures/Uplifted Still Gyre Wight of Qas.png",
         "cleanedName": "gyre wight of Qas",
         "factions": "Gyre wights",
-        "level": "23",
         "name": "Uplifted Still Gyre Wight of Qas"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gyre Wight of Qon.png",
         "cleanedName": "gyre wight of Qon",
         "factions": "Gyre wights",
-        "level": "23",
         "name": "Gyre Wight of Qon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Still Gyre Wight of Qon.png",
         "cleanedName": "gyre wight of Qon",
         "factions": "Gyre wights",
-        "level": "23",
         "name": "Still Gyre Wight of Qon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Uplifted Still Gyre Wight of Qon.png",
         "cleanedName": "gyre wight of Qon",
         "factions": "Gyre wights",
-        "level": "23",
         "name": "Uplifted Still Gyre Wight of Qon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Bone Worm.png",
         "cleanedName": "bone worm",
         "factions": "worms",
-        "level": "26",
         "name": "Bone Worm"
     },
     {
         "src": "/assets/images/Textures/Creatures/Caravan Guard.png",
         "cleanedName": "caravan guard",
         "factions": "dromad merchants",
-        "level": "30",
         "name": "Caravan Guard"
     },
     {
         "src": "/assets/images/Textures/Creatures/Conservator.png",
         "cleanedName": "conservator",
         "factions": "robots",
-        "level": "30",
         "name": "Conservator"
     },
     {
         "src": "/assets/images/Textures/Creatures/Conservator Special.png",
         "cleanedName": "conservator",
         "factions": "robots",
-        "level": "30",
         "name": "Conservator Special"
     },
     {
         "src": "/assets/images/Textures/Creatures/Crypt Ferret.png",
         "cleanedName": "crypt ferret",
         "factions": "",
-        "level": "26",
         "name": "Crypt Ferret"
     },
     {
         "src": "/assets/images/Textures/Creatures/Deep Slumberling.png",
         "cleanedName": "deep slumberling",
         "factions": "bears",
-        "level": "30",
         "name": "Deep Slumberling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Fulcrete Catapult.png",
         "cleanedName": "fulcrete catapult",
         "factions": "robots",
-        "level": "29",
         "name": "Fulcrete Catapult"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gelatinous Cupola.png",
         "cleanedName": "gelatinous cupola",
         "factions": "oozes",
-        "level": "28",
         "name": "Gelatinous Cupola"
     },
     {
         "src": "/assets/images/Textures/Creatures/Graverobber.png",
         "cleanedName": "graverobber",
         "factions": "grazing hedonists",
-        "level": "26",
         "name": "Graverobber"
     },
     {
         "src": "/assets/images/Textures/Creatures/Goatfolk Qlippoth.png",
         "cleanedName": "goatfolk qlippoth",
         "factions": "goatfolk",
-        "level": "29",
         "name": "Goatfolk Qlippoth"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gorged Growth.png",
         "cleanedName": "gorged growth",
         "factions": "roots",
-        "level": "28",
         "name": "Gorged Growth"
     },
     {
         "src": "/assets/images/Textures/Creatures/Greater Voider.png",
         "cleanedName": "greater voider",
         "factions": "arachnids",
-        "level": "27",
         "name": "Greater Voider"
     },
     {
         "src": "/assets/images/Textures/Creatures/High Dervish of the Sightless Way.png",
         "cleanedName": "high dervish of the Sightless Way",
         "factions": "Seekers of the Sightless Way",
-        "level": "29",
         "name": "High Dervish of the Sightless Way"
     },
     {
         "src": "/assets/images/Textures/Creatures/Holographic Beth.png",
         "cleanedName": "holographic beth",
         "factions": "roots",
-        "level": "27",
         "name": "Holographic Beth"
     },
     {
         "src": "/assets/images/Textures/Creatures/Junk Dollar.png",
         "cleanedName": "junk dollar",
         "factions": "urchins",
-        "level": "30",
         "name": "Junk Dollar"
     },
     {
         "src": "/assets/images/Textures/Creatures/Life Sap.png",
         "cleanedName": "life sap",
         "factions": "winged mammals",
-        "level": "26",
         "name": "Life Sap"
     },
     {
         "src": "/assets/images/Textures/Creatures/Madpole.png",
         "cleanedName": "madpole",
         "factions": "fish",
-        "level": "27",
         "name": "Madpole"
     },
     {
         "src": "/assets/images/Textures/Creatures/Miner Mk III.png",
         "cleanedName": "miner Mk III",
         "factions": "robots",
-        "level": "29",
         "name": "Miner Mk III"
     },
     {
         "src": "/assets/images/Textures/Creatures/Ogre Ape.png",
         "cleanedName": "ogre ape",
         "factions": "apes",
-        "level": "30",
         "name": "Ogre Ape"
     },
     {
         "src": "/assets/images/Textures/Creatures/Panhumor.png",
         "cleanedName": "panhumor",
         "factions": "oozes",
-        "level": "27",
         "name": "Panhumor"
     },
     {
         "src": "/assets/images/Textures/Creatures/Purple Jell.png",
         "cleanedName": "purple jell",
         "factions": "oozes",
-        "level": "28",
         "name": "Purple Jell"
     },
     {
         "src": "/assets/images/Textures/Creatures/Random Turret Tinker.png",
         "cleanedName": "dynamic turret tinker",
         "factions": "robots",
-        "level": "29",
         "name": "Random Turret Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Rhinox.png",
         "cleanedName": "rhinox",
         "factions": "",
-        "level": "29",
         "name": "Rhinox"
     },
     {
         "src": "/assets/images/Textures/Creatures/Rocket Turret Tinker.png",
         "cleanedName": "rocket turret tinker",
         "factions": "robots",
-        "level": "29",
         "name": "Rocket Turret Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Slynth Wanderer.png",
         "cleanedName": "slynth",
         "factions": "newly sentient beings",
-        "level": "30",
         "name": "Slynth Wanderer"
     },
     {
         "src": "/assets/images/Textures/Creatures/SoupSludgeSpawnerTier6.png",
         "cleanedName": "soupy sludge",
         "factions": "oozes",
-        "level": "29",
         "name": "SoupSludgeSpawnerTier6"
     },
     {
         "src": "/assets/images/Textures/Creatures/Strip Fly.png",
         "cleanedName": "strip fly",
         "factions": "robots",
-        "level": "26",
         "name": "Strip Fly"
     },
     {
         "src": "/assets/images/Textures/Creatures/Trash Abbot.png",
         "cleanedName": "trash abbot",
         "factions": "hermits",
-        "level": "30",
         "name": "Trash Abbot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Urn Porter.png",
         "cleanedName": "urn duster",
         "factions": "grazing hedonists, robots",
-        "level": "26",
         "name": "Urn Porter"
     },
     {
         "src": "/assets/images/Textures/Creatures/Vantabud.png",
         "cleanedName": "vantabud",
         "factions": "flowers",
-        "level": "26",
         "name": "Vantabud"
     },
     {
         "src": "/assets/images/Textures/Creatures/Elder Breather.png",
         "cleanedName": "elder breathbeard",
         "factions": "unshelled reptiles",
-        "level": "28",
         "name": "Elder Breather"
     },
     {
         "src": "/assets/images/Textures/Creatures/ElderFireBreather.png",
         "cleanedName": "elder flamebeard",
         "factions": "unshelled reptiles",
-        "level": "28",
         "name": "ElderFireBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/ElderIceBreather.png",
         "cleanedName": "elder sleetbeard",
         "factions": "unshelled reptiles",
-        "level": "28",
         "name": "ElderIceBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/ElderCorrosiveBreather.png",
         "cleanedName": "elder tartbeard",
         "factions": "unshelled reptiles",
-        "level": "28",
         "name": "ElderCorrosiveBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/ElderNormalityBreather.png",
         "cleanedName": "elder nullbeard",
         "factions": "unshelled reptiles",
-        "level": "28",
         "name": "ElderNormalityBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/ElderPoisonBreather.png",
         "cleanedName": "elder gallbeard",
         "factions": "unshelled reptiles",
-        "level": "28",
         "name": "ElderPoisonBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/ElderSleepBreather.png",
         "cleanedName": "elder dreambeard",
         "factions": "unshelled reptiles",
-        "level": "28",
         "name": "ElderSleepBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/ElderStunBreather.png",
         "cleanedName": "elder stillbeard",
         "factions": "unshelled reptiles",
-        "level": "28",
         "name": "ElderStunBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/ElderConfusionBreather.png",
         "cleanedName": "elder mazebeard",
         "factions": "unshelled reptiles",
-        "level": "28",
         "name": "ElderConfusionBreather"
     },
     {
         "src": "/assets/images/Textures/Creatures/MopangoCharioteer.png",
         "cleanedName": "mopango charioteer",
         "factions": "mopango",
-        "level": "26",
         "name": "MopangoCharioteer"
     },
     {
         "src": "/assets/images/Textures/Creatures/MopangoPilgrim.png",
         "cleanedName": "mopango pilgrim",
         "factions": "mopango",
-        "level": "26",
         "name": "MopangoPilgrim"
     },
     {
         "src": "/assets/images/Textures/Creatures/MopangoPilgrim Still.png",
         "cleanedName": "mopango pilgrim",
         "factions": "mopango",
-        "level": "26",
         "name": "MopangoPilgrim Still"
     },
     {
         "src": "/assets/images/Textures/Creatures/MopangoTombdweller.png",
         "cleanedName": "mopango tombdweller",
         "factions": "mopango",
-        "level": "26",
         "name": "MopangoTombdweller"
     },
     {
         "src": "/assets/images/Textures/Creatures/MopangoWatcher.png",
         "cleanedName": "mopango watcher",
         "factions": "mopango",
-        "level": "28",
         "name": "MopangoWatcher"
     },
     {
         "src": "/assets/images/Textures/Creatures/Blast Cannon Tinker.png",
         "cleanedName": "blast cannon tinker",
         "factions": "robots",
-        "level": "34",
         "name": "Blast Cannon Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Crypt Sitter.png",
         "cleanedName": "crypt sitter",
         "factions": "robots",
-        "level": "31",
         "name": "Crypt Sitter"
     },
     {
         "src": "/assets/images/Textures/Creatures/Crypt Sitter Special.png",
         "cleanedName": "crypt sitter",
         "factions": "robots",
-        "level": "31",
         "name": "Crypt Sitter Special"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dream Wren.png",
         "cleanedName": "dream wren",
         "factions": "Chavvah, the Tree of Life",
-        "level": "35",
         "name": "Dream Wren"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dream Wren Chavvah.png",
         "cleanedName": "dream wren",
         "factions": "Chavvah, the Tree of Life",
-        "level": "35",
         "name": "Dream Wren Chavvah"
     },
     {
         "src": "/assets/images/Textures/Creatures/Enigma Snail.png",
         "cleanedName": "enigma snail",
         "factions": "mollusks",
-        "level": "32",
         "name": "Enigma Snail"
     },
     {
         "src": "/assets/images/Textures/Creatures/Eigenturret Tinker.png",
         "cleanedName": "eigenturret tinker",
         "factions": "robots",
-        "level": "34",
         "name": "Eigenturret Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Elder Lagroot.png",
         "cleanedName": "elder lagroot",
         "factions": "roots",
-        "level": "33",
         "name": "Elder Lagroot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gelatinous Antiprism.png",
         "cleanedName": "gelatinous antiprism",
         "factions": "oozes",
-        "level": "33",
         "name": "Gelatinous Antiprism"
     },
     {
         "src": "/assets/images/Textures/Creatures/Glittermensch Brainer.png",
         "cleanedName": "glittermensch brainer",
         "factions": "cragmensch",
-        "level": "31",
         "name": "Glittermensch Brainer"
     },
     {
         "src": "/assets/images/Textures/Creatures/Glittermensch Boulderer.png",
         "cleanedName": "glittermensch boulderer",
         "factions": "cragmensch",
-        "level": "32",
         "name": "Glittermensch Boulderer"
     },
     {
         "src": "/assets/images/Textures/Creatures/Glittermensch Luminary.png",
         "cleanedName": "glittermensch luminary",
         "factions": "cragmensch",
-        "level": "35",
         "name": "Glittermensch Luminary"
     },
     {
         "src": "/assets/images/Textures/Creatures/Great Saltback.png",
         "cleanedName": "great saltback",
         "factions": "dromad merchants, tortoises",
-        "level": "31",
         "name": "Great Saltback"
     },
     {
         "src": "/assets/images/Textures/Creatures/Interdictor.png",
         "cleanedName": "interdictor",
         "factions": "robots",
-        "level": "32",
         "name": "Interdictor"
     },
     {
         "src": "/assets/images/Textures/Creatures/Kaleidoslug.png",
         "cleanedName": "kaleidoslug",
         "factions": "grazing hedonists",
-        "level": "32",
         "name": "Kaleidoslug"
     },
     {
         "src": "/assets/images/Textures/Creatures/Farm Kaleidoslug.png",
         "cleanedName": "kaleidoslug",
         "factions": "grazing hedonists",
-        "level": "32",
         "name": "Farm Kaleidoslug"
     },
     {
         "src": "/assets/images/Textures/Creatures/Lithofex.png",
         "cleanedName": "lithofex",
         "factions": "unshelled reptiles",
-        "level": "35",
         "name": "Lithofex"
     },
     {
         "src": "/assets/images/Textures/Creatures/Memory Eater.png",
         "cleanedName": "memory eater",
         "factions": "fish",
-        "level": "33",
         "name": "Memory Eater"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mirror Bug.png",
         "cleanedName": "mirror bug",
         "factions": "insects",
-        "level": "31",
         "name": "Mirror Bug"
     },
     {
         "src": "/assets/images/Textures/Creatures/Quartziferous Mirror.png",
         "cleanedName": "quartziferous mirror",
         "factions": "insects",
-        "level": "35",
         "name": "Quartziferous Mirror"
     },
     {
         "src": "/assets/images/Textures/Creatures/Quatravolt Glider.png",
         "cleanedName": "quatravolt glider",
         "factions": "fish",
-        "level": "32",
         "name": "Quatravolt Glider"
     },
     {
         "src": "/assets/images/Textures/Creatures/Plasma Jelly.png",
         "cleanedName": "plasma jelly",
         "factions": "oozes",
-        "level": "34",
         "name": "Plasma Jelly"
     },
     {
         "src": "/assets/images/Textures/Creatures/Red Jell.png",
         "cleanedName": "red jell",
         "factions": "oozes",
-        "level": "33",
         "name": "Red Jell"
     },
     {
         "src": "/assets/images/Textures/Creatures/Reef Hermit.png",
         "cleanedName": "reef hermit",
         "factions": "hermits",
-        "level": "31",
         "name": "Reef Hermit"
     },
     {
         "src": "/assets/images/Textures/Creatures/SoupSludgeSpawnerTier7.png",
         "cleanedName": "soupy sludge",
         "factions": "oozes",
-        "level": "34",
         "name": "SoupSludgeSpawnerTier7"
     },
     {
         "src": "/assets/images/Textures/Creatures/Stat Sap.png",
         "cleanedName": "stat sap",
         "factions": "winged mammals",
-        "level": "31",
         "name": "Stat Sap"
     },
     {
         "src": "/assets/images/Textures/Creatures/Strength Sap.png",
         "cleanedName": "strength sap",
         "factions": "winged mammals",
-        "level": "31",
         "name": "Strength Sap"
     },
     {
         "src": "/assets/images/Textures/Creatures/Toughness Sap.png",
         "cleanedName": "vigor sap",
         "factions": "winged mammals",
-        "level": "31",
         "name": "Toughness Sap"
     },
     {
         "src": "/assets/images/Textures/Creatures/Agility Sap.png",
         "cleanedName": "quick sap",
         "factions": "winged mammals",
-        "level": "31",
         "name": "Agility Sap"
     },
     {
         "src": "/assets/images/Textures/Creatures/Intelligence Sap.png",
         "cleanedName": "smarts sap",
         "factions": "winged mammals",
-        "level": "31",
         "name": "Intelligence Sap"
     },
     {
         "src": "/assets/images/Textures/Creatures/Ego Sap.png",
         "cleanedName": "ego sap",
         "factions": "winged mammals",
-        "level": "31",
         "name": "Ego Sap"
     },
     {
         "src": "/assets/images/Textures/Creatures/Willpower Sap.png",
         "cleanedName": "will sap",
         "factions": "winged mammals",
-        "level": "31",
         "name": "Willpower Sap"
     },
     {
         "src": "/assets/images/Textures/Creatures/Tongue Tyrant.png",
         "cleanedName": "tongue tyrant",
         "factions": "flowers",
-        "level": "33",
         "name": "Tongue Tyrant"
     },
     {
         "src": "/assets/images/Textures/Creatures/Trining Lamprey.png",
         "cleanedName": "trining lamprey",
         "factions": "fish",
-        "level": "33",
         "name": "Trining Lamprey"
     },
     {
         "src": "/assets/images/Textures/Creatures/Sultan Croc.png",
         "cleanedName": "sultan croc",
         "factions": "unshelled reptiles",
-        "level": "32",
         "name": "Sultan Croc"
     },
     {
         "src": "/assets/images/Textures/Creatures/Svardym Hatchling.png",
         "cleanedName": "svardym hatchling",
         "factions": "svardym",
-        "level": "25",
         "name": "Svardym Hatchling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Svardym Scrounge.png",
         "cleanedName": "svardym scrounge",
         "factions": "svardym",
-        "level": "30",
         "name": "Svardym Scrounge"
     },
     {
         "src": "/assets/images/Textures/Creatures/Svardym Jut.png",
         "cleanedName": "svardym jut",
         "factions": "svardym",
-        "level": "32",
         "name": "Svardym Jut"
     },
     {
         "src": "/assets/images/Textures/Creatures/Svardym Eld.png",
         "cleanedName": "svardym eld",
         "factions": "svardym",
-        "level": "34",
         "name": "Svardym Eld"
     },
     {
         "src": "/assets/images/Textures/Creatures/Arch Dervish of the Sightless Way.png",
         "cleanedName": "arch dervish of the Sightless Way",
         "factions": "Seekers of the Sightless Way",
-        "level": "39",
         "name": "Arch Dervish of the Sightless Way"
     },
     {
         "src": "/assets/images/Textures/Creatures/Astral Tabby.png",
         "cleanedName": "astral tabby",
         "factions": "cats",
-        "level": "36",
         "name": "Astral Tabby"
     },
     {
         "src": "/assets/images/Textures/Creatures/Chrome Pyramid.png",
         "cleanedName": "chrome pyramid",
         "factions": "robots",
-        "level": "56",
         "name": "Chrome Pyramid"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dawning Ape.png",
         "cleanedName": "dawning ape",
         "factions": "apes",
-        "level": "37",
         "name": "Dawning Ape"
     },
     {
         "src": "/assets/images/Textures/Creatures/Decarbonizer.png",
         "cleanedName": "decarbonizer",
         "factions": "robots",
-        "level": "40",
         "name": "Decarbonizer"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dreamcrungle.png",
         "cleanedName": "dreamcrungle",
         "factions": "mysterious strangers",
-        "level": "36",
         "name": "Dreamcrungle"
     },
     {
         "src": "/assets/images/Textures/Creatures/Galgal.png",
         "cleanedName": "galgal",
         "factions": "robots",
-        "level": "40",
         "name": "Galgal"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gamma Moth.png",
         "cleanedName": "gamma moth",
         "factions": "insects",
-        "level": "39",
         "name": "Gamma Moth"
     },
     {
         "src": "/assets/images/Textures/Creatures/Grand Newfather.png",
         "cleanedName": "grand newfather",
         "factions": "Putus Templar",
-        "level": "39",
         "name": "Grand Newfather"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gyre Wight Apotheote.png",
         "cleanedName": "gyre wight apotheote",
         "factions": "Gyre wights",
-        "level": "36",
         "name": "Gyre Wight Apotheote"
     },
     {
         "src": "/assets/images/Textures/Creatures/Great Magma Crab.png",
         "cleanedName": "great magma crab",
         "factions": "crabs",
-        "level": "40",
         "name": "Great Magma Crab"
     },
     {
         "src": "/assets/images/Textures/Creatures/Leering Stalker.png",
         "cleanedName": "leering stalker",
         "factions": "robots",
-        "level": "45",
         "name": "Leering Stalker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Monad.png",
         "cleanedName": "monad",
         "factions": "highly entropic beings",
-        "level": "40",
         "name": "Monad"
     },
     {
         "src": "/assets/images/Textures/Creatures/n-Dimensional Starshell.png",
         "cleanedName": "n-dimensional starshell",
         "factions": "tortoises",
-        "level": "37",
         "name": "n-Dimensional Starshell"
     },
     {
         "src": "/assets/images/Textures/Creatures/Phase Cannon Tinker.png",
         "cleanedName": "phase cannon tinker",
         "factions": "robots",
-        "level": "39",
         "name": "Phase Cannon Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Saltwurm.png",
         "cleanedName": "salt kraken",
         "factions": "grazing hedonists, mollusks",
-        "level": "40",
         "name": "Saltwurm"
     },
     {
         "src": "/assets/images/Textures/Creatures/SoupSludgeSpawnerTier8.png",
         "cleanedName": "soupy sludge",
         "factions": "oozes",
-        "level": "39",
         "name": "SoupSludgeSpawnerTier8"
     },
     {
         "src": "/assets/images/Textures/Creatures/Star Kraken.png",
         "cleanedName": "star kraken",
         "factions": "mysterious strangers",
-        "level": "45",
         "name": "Star Kraken"
     },
     {
         "src": "/assets/images/Textures/Creatures/Unimax.png",
         "cleanedName": "unimax",
         "factions": "grazing hedonists, equines",
-        "level": "36",
         "name": "Unimax"
     },
     {
         "src": "/assets/images/Textures/Creatures/Vantabloom.png",
         "cleanedName": "vantabloom",
         "factions": "flowers",
-        "level": "36",
         "name": "Vantabloom"
     },
     {
         "src": "/assets/images/Textures/Creatures/Zero Jell.png",
         "cleanedName": "zero jell",
         "factions": "oozes",
-        "level": "38",
         "name": "Zero Jell"
     },
     {
         "src": "/assets/images/Textures/Creatures/VehicleTemplarMech1.png",
         "cleanedName": "temple mecha mk Ia",
         "factions": "",
-        "level": "40",
         "name": "VehicleTemplarMech1"
     },
     {
         "src": "/assets/images/Textures/Creatures/VehicleTemplarMech1_Battle.png",
         "cleanedName": "temple mecha mk Ia",
         "factions": "",
-        "level": "40",
         "name": "VehicleTemplarMech1_Battle"
     },
     {
         "src": "/assets/images/Textures/Creatures/VehicleTemplarMech2_Battle.png",
         "cleanedName": "temple mecha mk Ib",
         "factions": "",
-        "level": "40",
         "name": "VehicleTemplarMech2_Battle"
     },
     {
         "src": "/assets/images/Textures/Creatures/VehicleTemplarMech2.png",
         "cleanedName": "temple mecha mk Ib",
         "factions": "",
-        "level": "40",
         "name": "VehicleTemplarMech2"
     },
     {
         "src": "/assets/images/Textures/Creatures/VehicleTemplarMech3.png",
         "cleanedName": "temple mecha mk II",
         "factions": "",
-        "level": "45",
         "name": "VehicleTemplarMech3"
     },
     {
         "src": "/assets/images/Textures/Creatures/VehicleTemplarMech1_Unpiloted_EmptyCore.png",
         "cleanedName": "temple mecha mk Ia",
         "factions": "",
-        "level": "40",
         "name": "VehicleTemplarMech1_Unpiloted_EmptyCore"
     },
     {
         "src": "/assets/images/Textures/Creatures/VehicleTemplarMech1_Unpiloted_LowCore.png",
         "cleanedName": "temple mecha mk Ia",
         "factions": "",
-        "level": "40",
         "name": "VehicleTemplarMech1_Unpiloted_LowCore"
     },
     {
         "src": "/assets/images/Textures/Creatures/VehicleTemplarMech2_Unpiloted_EmptyCore.png",
         "cleanedName": "temple mecha mk Ib",
         "factions": "",
-        "level": "40",
         "name": "VehicleTemplarMech2_Unpiloted_EmptyCore"
     },
     {
         "src": "/assets/images/Textures/Creatures/VehicleTemplarMech2_Unpiloted_LowCore.png",
         "cleanedName": "temple mecha mk Ib",
         "factions": "",
-        "level": "40",
         "name": "VehicleTemplarMech2_Unpiloted_LowCore"
     },
     {
         "src": "/assets/images/Textures/Creatures/Daughter of Exile.png",
         "cleanedName": "daughter of Exile",
         "factions": "Daughters of Exile",
-        "level": "24",
         "name": "Daughter of Exile"
     },
     {
         "src": "/assets/images/Textures/Creatures/Giant Clam.png",
         "cleanedName": "giant clam",
         "factions": "mollusks",
-        "level": "1",
         "name": "Giant Clam"
     },
     {
         "src": "/assets/images/Textures/Creatures/PsychicSeekerHunter.png",
         "cleanedName": "hunter of the Sightless Way",
         "factions": "Seekers of the Sightless Way",
-        "level": "1",
         "name": "PsychicSeekerHunter"
     },
     {
         "src": "/assets/images/Textures/Creatures/Yd Junk Dollar.png",
         "cleanedName": "junk dollar",
         "factions": "denizens of the Yd Freehold",
-        "level": "30",
         "name": "Yd Junk Dollar"
     },
     {
         "src": "/assets/images/Textures/Creatures/TinkerTurret.png",
         "cleanedName": "turret",
         "factions": "robots",
-        "level": "15",
         "name": "TinkerTurret"
     },
     {
         "src": "/assets/images/Textures/Creatures/SecurityTurret.png",
         "cleanedName": "musket turret",
         "factions": "robots",
-        "level": "15",
         "name": "SecurityTurret"
     },
     {
         "src": "/assets/images/Textures/Creatures/RifleTurret.png",
         "cleanedName": "rifle turret",
         "factions": "robots",
-        "level": "15",
         "name": "RifleTurret"
     },
     {
         "src": "/assets/images/Textures/Creatures/Microturret.png",
         "cleanedName": "microturret",
         "factions": "robots",
-        "level": "15",
         "name": "Microturret"
     },
     {
         "src": "/assets/images/Textures/Creatures/ChaingunTurret.png",
         "cleanedName": "chaingun turret",
         "factions": "robots",
-        "level": "15",
         "name": "ChaingunTurret"
     },
     {
         "src": "/assets/images/Textures/Creatures/LaserTurret.png",
         "cleanedName": "laser turret",
         "factions": "robots",
-        "level": "15",
         "name": "LaserTurret"
     },
     {
         "src": "/assets/images/Textures/Creatures/ChainLaserEmplacement.png",
         "cleanedName": "chain laser emplacement",
         "factions": "robots",
-        "level": "25",
         "name": "ChainLaserEmplacement"
     },
     {
         "src": "/assets/images/Textures/Creatures/GritGateChainLaserEmplacement.png",
         "cleanedName": "chain laser emplacement",
         "factions": "Barathrumites",
-        "level": "25",
         "name": "GritGateChainLaserEmplacement"
     },
     {
         "src": "/assets/images/Textures/Creatures/GritGateChainLaserEmplacement_On.png",
         "cleanedName": "chain laser emplacement",
         "factions": "Barathrumites",
-        "level": "25",
         "name": "GritGateChainLaserEmplacement_On"
     },
     {
         "src": "/assets/images/Textures/Creatures/RocketTurret.png",
         "cleanedName": "rocket turret",
         "factions": "robots",
-        "level": "15",
         "name": "RocketTurret"
     },
     {
         "src": "/assets/images/Textures/Creatures/Barathrumite Tinker.png",
         "cleanedName": "Barathrumite tinker",
         "factions": "Barathrumites",
-        "level": "20",
         "name": "Barathrumite Tinker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Barathrumite Arconaut.png",
         "cleanedName": "Barathrumite arconaut",
         "factions": "Barathrumites",
-        "level": "20",
         "name": "Barathrumite Arconaut"
     },
     {
         "src": "/assets/images/Textures/Creatures/Barathrumite Tinker Omonporch.png",
         "cleanedName": "Barathrumite tinker",
         "factions": "Barathrumites",
-        "level": "20",
         "name": "Barathrumite Tinker Omonporch"
     },
     {
         "src": "/assets/images/Textures/Creatures/Barathrumite Arconaut Omonporch.png",
         "cleanedName": "Barathrumite arconaut",
         "factions": "Barathrumites",
-        "level": "20",
         "name": "Barathrumite Arconaut Omonporch"
     },
     {
         "src": "/assets/images/Textures/Creatures/LiquidLichen.png",
         "cleanedName": "liquidlichen",
         "factions": "fungi",
-        "level": "25",
         "name": "LiquidLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/LiquidLichen Minor.png",
         "cleanedName": "liquidlichen",
         "factions": "fungi",
-        "level": "15",
         "name": "LiquidLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/honeyLichen.png",
         "cleanedName": "giant honey weep",
         "factions": "fungi",
-        "level": "25",
         "name": "honeyLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/honeyLichen Minor.png",
         "cleanedName": "honey weep",
         "factions": "fungi",
-        "level": "15",
         "name": "honeyLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/waxLichen.png",
         "cleanedName": "giant wax weep",
         "factions": "fungi",
-        "level": "25",
         "name": "waxLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/waxLichen Minor.png",
         "cleanedName": "wax weep",
         "factions": "fungi",
-        "level": "15",
         "name": "waxLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/inkLichen.png",
         "cleanedName": "giant ink weep",
         "factions": "fungi",
-        "level": "25",
         "name": "inkLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/inkLichen Minor.png",
         "cleanedName": "ink weep",
         "factions": "fungi",
-        "level": "15",
         "name": "inkLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/sapLichen.png",
         "cleanedName": "giant sap weep",
         "factions": "fungi",
-        "level": "25",
         "name": "sapLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/sapLichen Minor.png",
         "cleanedName": "sap weep",
         "factions": "fungi",
-        "level": "15",
         "name": "sapLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/lavaLichen.png",
         "cleanedName": "giant lava weep",
         "factions": "fungi",
-        "level": "25",
         "name": "lavaLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/lavaLichen Minor.png",
         "cleanedName": "lava weep",
         "factions": "fungi",
-        "level": "15",
         "name": "lavaLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/acidLichen.png",
         "cleanedName": "giant acid weep",
         "factions": "fungi",
-        "level": "25",
         "name": "acidLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/acidLichen Minor.png",
         "cleanedName": "acid weep",
         "factions": "fungi",
-        "level": "15",
         "name": "acidLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/wineLichen.png",
         "cleanedName": "giant wine weep",
         "factions": "fungi",
-        "level": "25",
         "name": "wineLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/wineLichen Minor.png",
         "cleanedName": "wine weep",
         "factions": "fungi",
-        "level": "15",
         "name": "wineLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/slimeLichen.png",
         "cleanedName": "giant slime weep",
         "factions": "fungi",
-        "level": "25",
         "name": "slimeLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/slimeLichen Minor.png",
         "cleanedName": "slime weep",
         "factions": "fungi",
-        "level": "15",
         "name": "slimeLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/ciderLichen.png",
         "cleanedName": "giant cider weep",
         "factions": "fungi",
-        "level": "25",
         "name": "ciderLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/ciderLichen Minor.png",
         "cleanedName": "cider weep",
         "factions": "fungi",
-        "level": "15",
         "name": "ciderLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/waterLichen.png",
         "cleanedName": "giant water weep",
         "factions": "fungi",
-        "level": "25",
         "name": "waterLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/waterLichen Minor.png",
         "cleanedName": "water weep",
         "factions": "fungi",
-        "level": "15",
         "name": "waterLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/gelLichen.png",
         "cleanedName": "giant gel weep",
         "factions": "fungi",
-        "level": "25",
         "name": "gelLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/gelLichen Minor.png",
         "cleanedName": "gel weep",
         "factions": "fungi",
-        "level": "15",
         "name": "gelLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/asphaltLichen.png",
         "cleanedName": "giant asphalt weep",
         "factions": "fungi",
-        "level": "25",
         "name": "asphaltLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/asphaltLichen Minor.png",
         "cleanedName": "asphalt weep",
         "factions": "fungi",
-        "level": "15",
         "name": "asphaltLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/saltLichen.png",
         "cleanedName": "giant salt weep",
         "factions": "fungi",
-        "level": "25",
         "name": "saltLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/saltLichen Minor.png",
         "cleanedName": "salt weep",
         "factions": "fungi",
-        "level": "15",
         "name": "saltLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/oilLichen.png",
         "cleanedName": "giant oil weep",
         "factions": "fungi",
-        "level": "25",
         "name": "oilLichen"
     },
     {
         "src": "/assets/images/Textures/Creatures/oilLichen Minor.png",
         "cleanedName": "oil weep",
         "factions": "fungi",
-        "level": "15",
         "name": "oilLichen Minor"
     },
     {
         "src": "/assets/images/Textures/Creatures/Prey Cherub.png",
         "cleanedName": "grazing cherub",
         "factions": "grazing hedonists",
-        "level": "40",
         "name": "Prey Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Prey Cherub.png",
         "cleanedName": "mechanical grazing cherub",
         "factions": "grazing hedonists",
-        "level": "31",
         "name": "Mechanical Prey Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Baboons Cherub.png",
         "cleanedName": "baboon cherub",
         "factions": "baboons",
-        "level": "40",
         "name": "Baboons Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Baboons Cherub.png",
         "cleanedName": "mechanical baboon cherub",
         "factions": "baboons",
-        "level": "31",
         "name": "Mechanical Baboons Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Apes Cherub.png",
         "cleanedName": "ape cherub",
         "factions": "apes",
-        "level": "40",
         "name": "Apes Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Apes Cherub.png",
         "cleanedName": "mechanical ape cherub",
         "factions": "apes",
-        "level": "31",
         "name": "Mechanical Apes Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Crabs Cherub.png",
         "cleanedName": "crab cherub",
         "factions": "crabs",
-        "level": "40",
         "name": "Crabs Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Crabs Cherub.png",
         "cleanedName": "mechanical crab cherub",
         "factions": "crabs",
-        "level": "31",
         "name": "Mechanical Crabs Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Bears Cherub.png",
         "cleanedName": "bear cherub",
         "factions": "bears",
-        "level": "40",
         "name": "Bears Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Bears Cherub.png",
         "cleanedName": "mechanical bear cherub",
         "factions": "bears",
-        "level": "31",
         "name": "Mechanical Bears Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Winged Mammals Cherub.png",
         "cleanedName": "bat cherub",
         "factions": "winged mammals",
-        "level": "40",
         "name": "Winged Mammals Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Winged Mammals Cherub.png",
         "cleanedName": "mechanical bat cherub",
         "factions": "winged mammals",
-        "level": "31",
         "name": "Mechanical Winged Mammals Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Birds Cherub.png",
         "cleanedName": "bird cherub",
         "factions": "birds",
-        "level": "40",
         "name": "Birds Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Birds Cherub.png",
         "cleanedName": "mechanical bird cherub",
         "factions": "birds",
-        "level": "31",
         "name": "Mechanical Birds Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Fish Cherub.png",
         "cleanedName": "fish cherub",
         "factions": "fish",
-        "level": "40",
         "name": "Fish Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Fish Cherub.png",
         "cleanedName": "mechanical fish cherub",
         "factions": "fish",
-        "level": "31",
         "name": "Mechanical Fish Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Insects Cherub.png",
         "cleanedName": "insect cherub",
         "factions": "insects",
-        "level": "40",
         "name": "Insects Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Insects Cherub.png",
         "cleanedName": "mechanical insect cherub",
         "factions": "insects",
-        "level": "31",
         "name": "Mechanical Insects Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Swine Cherub.png",
         "cleanedName": "swine cherub",
         "factions": "swine",
-        "level": "40",
         "name": "Swine Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Swine Cherub.png",
         "cleanedName": "mechanical swine cherub",
         "factions": "swine",
-        "level": "31",
         "name": "Mechanical Swine Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Reptiles Cherub.png",
         "cleanedName": "reptile cherub",
         "factions": "unshelled reptiles",
-        "level": "40",
         "name": "Reptiles Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Reptiles Cherub.png",
         "cleanedName": "mechanical reptile cherub",
         "factions": "unshelled reptiles",
-        "level": "31",
         "name": "Mechanical Reptiles Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cannibals Cherub.png",
         "cleanedName": "cannibal cherub",
         "factions": "cannibals",
-        "level": "40",
         "name": "Cannibals Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Cannibals Cherub.png",
         "cleanedName": "mechanical cannibal cherub",
         "factions": "cannibals",
-        "level": "31",
         "name": "Mechanical Cannibals Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Arachnids Cherub.png",
         "cleanedName": "spider cherub",
         "factions": "arachnids",
-        "level": "40",
         "name": "Arachnids Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Arachnids Cherub.png",
         "cleanedName": "mechanical spider cherub",
         "factions": "arachnids",
-        "level": "31",
         "name": "Mechanical Arachnids Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Cats Cherub.png",
         "cleanedName": "cat cherub",
         "factions": "cats",
-        "level": "40",
         "name": "Cats Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Cats Cherub.png",
         "cleanedName": "mechanical cat cherub",
         "factions": "cats",
-        "level": "31",
         "name": "Mechanical Cats Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dogs Cherub.png",
         "cleanedName": "dog cherub",
         "factions": "dogs",
-        "level": "40",
         "name": "Dogs Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Dogs Cherub.png",
         "cleanedName": "mechanical dog cherub",
         "factions": "dogs",
-        "level": "31",
         "name": "Mechanical Dogs Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mollusks Cherub.png",
         "cleanedName": "mollusk cherub",
         "factions": "mollusks",
-        "level": "40",
         "name": "Mollusks Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Mollusks Cherub.png",
         "cleanedName": "mechanical mollusk cherub",
         "factions": "mollusks",
-        "level": "31",
         "name": "Mechanical Mollusks Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Tortoises Cherub.png",
         "cleanedName": "tortoise cherub",
         "factions": "tortoises",
-        "level": "40",
         "name": "Tortoises Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Tortoises Cherub.png",
         "cleanedName": "mechanical tortoise cherub",
         "factions": "tortoises",
-        "level": "31",
         "name": "Mechanical Tortoises Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Robots Cherub.png",
         "cleanedName": "robot cherub",
         "factions": "robots",
-        "level": "40",
         "name": "Robots Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Robots Cherub.png",
         "cleanedName": "mechanical robot cherub",
         "factions": "robots",
-        "level": "31",
         "name": "Mechanical Robots Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Baetyls Cherub.png",
         "cleanedName": "baetyl cherub",
         "factions": "baetyls",
-        "level": "40",
         "name": "Baetyls Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Baetyls Cherub.png",
         "cleanedName": "mechanical baetyl cherub",
         "factions": "baetyls",
-        "level": "31",
         "name": "Mechanical Baetyls Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Antelopes Cherub.png",
         "cleanedName": "antelope cherub",
         "factions": "antelopes",
-        "level": "40",
         "name": "Antelopes Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Antelopes Cherub.png",
         "cleanedName": "mechanical antelope cherub",
         "factions": "antelopes",
-        "level": "31",
         "name": "Mechanical Antelopes Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Worms Cherub.png",
         "cleanedName": "worm cherub",
         "factions": "worms",
-        "level": "40",
         "name": "Worms Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Worms Cherub.png",
         "cleanedName": "mechanical worm cherub",
         "factions": "worms",
-        "level": "31",
         "name": "Mechanical Worms Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Oozes Cherub.png",
         "cleanedName": "ooze cherub",
         "factions": "oozes",
-        "level": "40",
         "name": "Oozes Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Oozes Cherub.png",
         "cleanedName": "mechanical ooze cherub",
         "factions": "oozes",
-        "level": "31",
         "name": "Mechanical Oozes Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Equines Cherub.png",
         "cleanedName": "equine cherub",
         "factions": "equines",
-        "level": "40",
         "name": "Equines Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Equines Cherub.png",
         "cleanedName": "mechanical equine cherub",
         "factions": "equines",
-        "level": "31",
         "name": "Mechanical Equines Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Newly Sentient Beings Cherub.png",
         "cleanedName": "pottery cherub",
         "factions": "newly sentient beings",
-        "level": "40",
         "name": "Newly Sentient Beings Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Newly Sentient Beings Cherub.png",
         "cleanedName": "mechanical pottery cherub",
         "factions": "newly sentient beings",
-        "level": "31",
         "name": "Mechanical Newly Sentient Beings Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Hermits Cherub.png",
         "cleanedName": "hermit cherub",
         "factions": "hermits",
-        "level": "40",
         "name": "Hermits Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Hermits Cherub.png",
         "cleanedName": "mechanical hermit cherub",
         "factions": "hermits",
-        "level": "31",
         "name": "Mechanical Hermits Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Frogs Cherub.png",
         "cleanedName": "frog cherub",
         "factions": "frogs",
-        "level": "40",
         "name": "Frogs Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Frogs Cherub.png",
         "cleanedName": "mechanical frog cherub",
         "factions": "frogs",
-        "level": "31",
         "name": "Mechanical Frogs Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Strangers Cherub.png",
         "cleanedName": "stranger cherub",
         "factions": "mysterious strangers",
-        "level": "40",
         "name": "Strangers Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Strangers Cherub.png",
         "cleanedName": "mechanical stranger cherub",
         "factions": "mysterious strangers",
-        "level": "31",
         "name": "Mechanical Strangers Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Flowers Cherub.png",
         "cleanedName": "flower cherub",
         "factions": "flowers",
-        "level": "40",
         "name": "Flowers Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Flowers Cherub.png",
         "cleanedName": "mechanical flower cherub",
         "factions": "flowers",
-        "level": "31",
         "name": "Mechanical Flowers Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Roots Cherub.png",
         "cleanedName": "root cherub",
         "factions": "roots",
-        "level": "40",
         "name": "Roots Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Roots Cherub.png",
         "cleanedName": "mechanical root cherub",
         "factions": "roots",
-        "level": "31",
         "name": "Mechanical Roots Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Fungi Cherub.png",
         "cleanedName": "mushroom cherub",
         "factions": "fungi",
-        "level": "40",
         "name": "Fungi Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Fungi Cherub.png",
         "cleanedName": "mechanical mushroom cherub",
         "factions": "fungi",
-        "level": "31",
         "name": "Mechanical Fungi Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Vines Cherub.png",
         "cleanedName": "vine cherub",
         "factions": "vines",
-        "level": "40",
         "name": "Vines Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Vines Cherub.png",
         "cleanedName": "mechanical vine cherub",
         "factions": "vines",
-        "level": "31",
         "name": "Mechanical Vines Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Urchins Cherub.png",
         "cleanedName": "urchin cherub",
         "factions": "urchins",
-        "level": "40",
         "name": "Urchins Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Urchins Cherub.png",
         "cleanedName": "mechanical urchin cherub",
         "factions": "urchins",
-        "level": "31",
         "name": "Mechanical Urchins Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Succulents Cherub.png",
         "cleanedName": "fractus cherub",
         "factions": "succulents",
-        "level": "40",
         "name": "Succulents Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Succulents Cherub.png",
         "cleanedName": "mechanical fractus cherub",
         "factions": "succulents",
-        "level": "31",
         "name": "Mechanical Succulents Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Trees Cherub.png",
         "cleanedName": "tree cherub",
         "factions": "trees",
-        "level": "40",
         "name": "Trees Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mechanical Trees Cherub.png",
         "cleanedName": "mechanical tree cherub",
         "factions": "trees",
-        "level": "31",
         "name": "Mechanical Trees Cherub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Agolgot.png",
         "cleanedName": "Girsh Agolgot",
         "factions": "Girsh",
-        "level": "50",
         "name": "Agolgot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Bethsaida.png",
         "cleanedName": "Girsh Bethsaida",
         "factions": "Girsh",
-        "level": "50",
         "name": "Bethsaida"
     },
     {
         "src": "/assets/images/Textures/Creatures/Rermadon.png",
         "cleanedName": "Girsh Rermadon",
         "factions": "Girsh",
-        "level": "50",
         "name": "Rermadon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Qas.png",
         "cleanedName": "Girsh Qas",
         "factions": "Girsh",
-        "level": "50",
         "name": "Qas"
     },
     {
         "src": "/assets/images/Textures/Creatures/Qon.png",
         "cleanedName": "Girsh Qon",
         "factions": "Girsh",
-        "level": "50",
         "name": "Qon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Shugruith.png",
         "cleanedName": "Girsh Shug'ruith the Burrower",
         "factions": "Girsh",
-        "level": "50",
         "name": "Shugruith"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dromad.png",
         "cleanedName": "dromad",
         "factions": "dromad merchants",
-        "level": "1",
         "name": "Dromad"
     },
     {
         "src": "/assets/images/Textures/Creatures/DromadTrader1.png",
         "cleanedName": "dromad trader",
         "factions": "dromad merchants",
-        "level": "15",
         "name": "DromadTrader1"
     },
     {
         "src": "/assets/images/Textures/Creatures/DromadTrader2.png",
         "cleanedName": "dromad trader",
         "factions": "dromad merchants",
-        "level": "20",
         "name": "DromadTrader2"
     },
     {
         "src": "/assets/images/Textures/Creatures/DromadTrader3.png",
         "cleanedName": "dromad trader",
         "factions": "dromad merchants",
-        "level": "25",
         "name": "DromadTrader3"
     },
     {
         "src": "/assets/images/Textures/Creatures/DromadTrader4.png",
         "cleanedName": "dromad trader",
         "factions": "dromad merchants",
-        "level": "30",
         "name": "DromadTrader4"
     },
     {
         "src": "/assets/images/Textures/Creatures/DromadTrader5.png",
         "cleanedName": "dromad trader",
         "factions": "dromad merchants",
-        "level": "35",
         "name": "DromadTrader5"
     },
     {
         "src": "/assets/images/Textures/Creatures/DromadTrader6.png",
         "cleanedName": "dromad trader",
         "factions": "dromad merchants",
-        "level": "40",
         "name": "DromadTrader6"
     },
     {
         "src": "/assets/images/Textures/Creatures/DromadTrader7.png",
         "cleanedName": "dromad trader",
         "factions": "dromad merchants",
-        "level": "45",
         "name": "DromadTrader7"
     },
     {
         "src": "/assets/images/Textures/Creatures/DromadTrader8.png",
         "cleanedName": "dromad trader",
         "factions": "dromad merchants",
-        "level": "50",
         "name": "DromadTrader8"
     },
     {
         "src": "/assets/images/Textures/Creatures/HumanApothecary1.png",
         "cleanedName": "human apothecary",
         "factions": "Merchants' Guild",
-        "level": "9",
         "name": "HumanApothecary1"
     },
     {
         "src": "/assets/images/Textures/Creatures/HumanTinker1.png",
         "cleanedName": "human tinker",
         "factions": "Merchants' Guild",
-        "level": "9",
         "name": "HumanTinker1"
     },
     {
         "src": "/assets/images/Textures/Creatures/AppleMerchant.png",
         "cleanedName": "apple farmer",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "AppleMerchant"
     },
     {
         "src": "/assets/images/Textures/Creatures/Bookbinder.png",
         "cleanedName": "bookbinder",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Bookbinder"
     },
     {
         "src": "/assets/images/Textures/Creatures/Scribe.png",
         "cleanedName": "scribe",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Scribe"
     },
     {
         "src": "/assets/images/Textures/Creatures/Beekeeper.png",
         "cleanedName": "beekeeper",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Beekeeper"
     },
     {
         "src": "/assets/images/Textures/Creatures/Apothecary.png",
         "cleanedName": "apothecary",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Apothecary"
     },
     {
         "src": "/assets/images/Textures/Items/Kipper.png",
         "cleanedName": "kipper",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Kipper"
     },
     {
         "src": "/assets/images/Textures/Creatures/Vintner.png",
         "cleanedName": "vintner",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Vintner"
     },
     {
         "src": "/assets/images/Textures/Creatures/Shoemaker.png",
         "cleanedName": "shoemaker",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Shoemaker"
     },
     {
         "src": "/assets/images/Textures/Creatures/Hatter.png",
         "cleanedName": "hatter",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Hatter"
     },
     {
         "src": "/assets/images/Textures/Creatures/Glover.png",
         "cleanedName": "glover",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Glover"
     },
     {
         "src": "/assets/images/Textures/Items/Chef.png",
         "cleanedName": "chef",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Chef"
     },
     {
         "src": "/assets/images/Textures/Items/StiltChef.png",
         "cleanedName": "chef",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "StiltChef"
     },
     {
         "src": "/assets/images/Textures/Creatures/Haberdasher.png",
         "cleanedName": "haberdasher",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Haberdasher"
     },
     {
         "src": "/assets/images/Textures/Creatures/Armorer.png",
         "cleanedName": "armorer",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Armorer"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gunsmith.png",
         "cleanedName": "gunsmith",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Gunsmith"
     },
     {
         "src": "/assets/images/Textures/Creatures/Grenadier.png",
         "cleanedName": "grenadier",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Grenadier"
     },
     {
         "src": "/assets/images/Textures/Creatures/IchorMerchant.png",
         "cleanedName": "ichor merchant",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "IchorMerchant"
     },
     {
         "src": "/assets/images/Textures/Creatures/Jeweler.png",
         "cleanedName": "jeweler",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Jeweler"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gemcutter.png",
         "cleanedName": "gemcutter",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Gemcutter"
     },
     {
         "src": "/assets/images/Textures/Creatures/DiskMerchant.png",
         "cleanedName": "schematics drafter",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "DiskMerchant"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gutsmonger.png",
         "cleanedName": "gutsmonger",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "Gutsmonger"
     },
     {
         "src": "/assets/images/Textures/Creatures/CrabFarmer.png",
         "cleanedName": "crab farmer",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "CrabFarmer"
     },
     {
         "src": "/assets/images/Textures/Creatures/LeechFarmer.png",
         "cleanedName": "leech farmer",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "LeechFarmer"
     },
     {
         "src": "/assets/images/Textures/Creatures/CatHerder.png",
         "cleanedName": "cat herder",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "CatHerder"
     },
     {
         "src": "/assets/images/Textures/Creatures/AmoebaFarmer.png",
         "cleanedName": "amoeba farmer",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "AmoebaFarmer"
     },
     {
         "src": "/assets/images/Textures/Creatures/SnailFarmer.png",
         "cleanedName": "snail farmer",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "SnailFarmer"
     },
     {
         "src": "/assets/images/Textures/Creatures/GoatHerder.png",
         "cleanedName": "goat herder",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "GoatHerder"
     },
     {
         "src": "/assets/images/Textures/Creatures/BeetleFarmer.png",
         "cleanedName": "beetle farmer",
         "factions": "Merchants' Guild",
-        "level": "1",
         "name": "BeetleFarmer"
     },
     {
         "src": "/assets/images/Textures/Creatures/ElderBob.png",
         "cleanedName": "Elder Irudad",
         "factions": "villagers of Joppa",
-        "level": "29",
         "name": "ElderBob"
     },
     {
         "src": "/assets/images/Textures/Creatures/Nima Ruda.png",
         "cleanedName": "Nima Ruda",
         "factions": "villagers of Joppa",
-        "level": "18",
         "name": "Nima Ruda"
     },
     {
         "src": "/assets/images/Textures/Creatures/Argyve.png",
         "cleanedName": "Argyve",
         "factions": "villagers of Joppa, Barathrumites",
-        "level": "22",
         "name": "Argyve"
     },
     {
         "src": "/assets/images/Textures/Creatures/Ctesiphus.png",
         "cleanedName": "Ctesiphus",
         "factions": "villagers of Joppa",
-        "level": "1",
         "name": "Ctesiphus"
     },
     {
         "src": "/assets/images/Textures/Creatures/Tam.png",
         "cleanedName": "Tam",
         "factions": "dromad merchants, villagers of Joppa",
-        "level": "20",
         "name": "Tam"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mehmet.png",
         "cleanedName": "Mehmet",
         "factions": "villagers of Joppa",
-        "level": "16",
         "name": "Mehmet"
     },
     {
         "src": "/assets/images/Textures/Creatures/WatervineFarmerConvert.png",
         "cleanedName": "watervine farmer and Mechanimist convert",
         "factions": "",
-        "level": "3",
         "name": "WatervineFarmerConvert"
     },
     {
         "src": "/assets/images/Textures/Creatures/JoppaFarmerConvert.png",
         "cleanedName": "watervine farmer and Mechanimist convert",
         "factions": "",
-        "level": "3",
         "name": "JoppaFarmerConvert"
     },
     {
         "src": "/assets/images/Textures/Creatures/PigFarmerConvert.png",
         "cleanedName": "pig farmer and Mechanimist convert",
         "factions": "",
-        "level": "3",
         "name": "PigFarmerConvert"
     },
     {
         "src": "/assets/images/Textures/Creatures/CannibalConvert.png",
         "cleanedName": "cannibal and Mechanimist convert",
         "factions": "",
-        "level": "3",
         "name": "CannibalConvert"
     },
     {
         "src": "/assets/images/Textures/Creatures/IssachariConvert.png",
         "cleanedName": "Issachari raider and Mechanimist convert",
         "factions": "",
-        "level": "8",
         "name": "IssachariConvert"
     },
     {
         "src": "/assets/images/Textures/Creatures/Warden Yrame.png",
         "cleanedName": "Warden Yrame",
         "factions": "Fellowship of Wardens",
-        "level": "1",
         "name": "Warden Yrame"
     },
     {
         "src": "/assets/images/Textures/Creatures/OasisGlowpad.png",
         "cleanedName": "oddly-hued glowpad",
         "factions": "Consortium of Phyta",
-        "level": "40",
         "name": "OasisGlowpad"
     },
     {
         "src": "/assets/images/Textures/Creatures/High Priest Eschelstadt.png",
         "cleanedName": "Eschelstadt II",
         "factions": "Mechanimists",
-        "level": "30",
         "name": "High Priest Eschelstadt"
     },
     {
         "src": "/assets/images/Textures/Creatures/Warden Esthers.png",
         "cleanedName": "Wardens Esther",
         "factions": "Fellowship of Wardens",
-        "level": "30",
         "name": "Warden Esthers"
     },
     {
         "src": "/assets/images/Textures/Creatures/Six Day Choraler.png",
         "cleanedName": "Mechanimist choraler",
         "factions": "Mechanimists",
-        "level": "20",
         "name": "Six Day Choraler"
     },
     {
         "src": "/assets/images/Textures/Creatures/SixDayZealot.png",
         "cleanedName": "zealot of the Six Day Stilt",
         "factions": "Mechanimists",
-        "level": "1",
         "name": "SixDayZealot"
     },
     {
         "src": "/assets/images/Textures/Creatures/LoudSixDayZealot.png",
         "cleanedName": "zealot of the Six Day Stilt",
         "factions": "Mechanimists",
-        "level": "1",
         "name": "LoudSixDayZealot"
     },
     {
         "src": "/assets/images/Textures/Creatures/Lulihart.png",
         "cleanedName": "Lulihart",
         "factions": "pariahs",
-        "level": "20",
         "name": "Lulihart"
     },
     {
         "src": "/assets/images/Textures/Creatures/Tszappur.png",
         "cleanedName": "Tszappur",
         "factions": "Cult of the Coiled Lamb",
-        "level": "19",
         "name": "Tszappur"
     },
     {
         "src": "/assets/images/Textures/Creatures/Shem -1.png",
         "cleanedName": "Shem -1",
         "factions": "Barathrumites",
-        "level": "5",
         "name": "Shem -1"
     },
     {
         "src": "/assets/images/Textures/Creatures/Otho.png",
         "cleanedName": "Otho",
         "factions": "Barathrumites",
-        "level": "28",
         "name": "Otho"
     },
     {
         "src": "/assets/images/Textures/Creatures/Q Girl.png",
         "cleanedName": "Q Girl",
         "factions": "Barathrumites",
-        "level": "28",
         "name": "Q Girl"
     },
     {
         "src": "/assets/images/Textures/Creatures/Barathrum.png",
         "cleanedName": "Barathrum the Old",
         "factions": "Barathrumites",
-        "level": "50",
         "name": "Barathrum"
     },
     {
         "src": "/assets/images/Textures/Creatures/Rodanis Y.png",
         "cleanedName": "Rodanis Y",
         "factions": "Barathrumites, robots",
-        "level": "33",
         "name": "Rodanis Y"
     },
     {
         "src": "/assets/images/Textures/Creatures/Sparafucile.png",
         "cleanedName": "Sparafucile",
         "factions": "Barathrumites",
-        "level": "24",
         "name": "Sparafucile"
     },
     {
         "src": "/assets/images/Textures/Creatures/Jacobo.png",
         "cleanedName": "Jacobo",
         "factions": "Barathrumites",
-        "level": "22",
         "name": "Jacobo"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dardi.png",
         "cleanedName": "Dardi",
         "factions": "Barathrumites",
-        "level": "25",
         "name": "Dardi"
     },
     {
         "src": "/assets/images/Textures/Creatures/Hortensa.png",
         "cleanedName": "Hortensa",
         "factions": "Barathrumites",
-        "level": "31",
         "name": "Hortensa"
     },
     {
         "src": "/assets/images/Textures/Creatures/Iseppa.png",
         "cleanedName": "Iseppa",
         "factions": "Barathrumites",
-        "level": "19",
         "name": "Iseppa"
     },
     {
         "src": "/assets/images/Textures/Creatures/Neek.png",
         "cleanedName": "Neek",
         "factions": "Barathrumites",
-        "level": "16",
         "name": "Neek"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mafeo.png",
         "cleanedName": "Mafeo",
         "factions": "Barathrumites",
-        "level": "25",
         "name": "Mafeo"
     },
     {
         "src": "/assets/images/Textures/Creatures/Aloysius.png",
         "cleanedName": "Aloysius",
         "factions": "Barathrumites",
-        "level": "32",
         "name": "Aloysius"
     },
     {
         "src": "/assets/images/Textures/Creatures/OthoCopy.png",
         "cleanedName": "Urshiib Librarian",
         "factions": "Barathrumites",
-        "level": "28",
         "name": "OthoCopy"
     },
     {
         "src": "/assets/images/Textures/Creatures/MafeoCopy.png",
         "cleanedName": "Urshiib Merchant",
         "factions": "Barathrumites",
-        "level": "25",
         "name": "MafeoCopy"
     },
     {
         "src": "/assets/images/Textures/Creatures/Euclid.png",
         "cleanedName": "Euclid",
         "factions": "Barathrumites",
-        "level": "16",
         "name": "Euclid"
     },
     {
         "src": "/assets/images/Textures/Creatures/Eskhind.png",
         "cleanedName": "Eskhind",
         "factions": "pariahs",
-        "level": "16",
         "name": "Eskhind"
     },
     {
         "src": "/assets/images/Textures/Creatures/Meyehind.png",
         "cleanedName": "Meyehind",
         "factions": "pariahs",
-        "level": "8",
         "name": "Meyehind"
     },
     {
         "src": "/assets/images/Textures/Creatures/Liihart.png",
         "cleanedName": "Liihart",
         "factions": "pariahs",
-        "level": "8",
         "name": "Liihart"
     },
     {
         "src": "/assets/images/Textures/Creatures/Isahind.png",
         "cleanedName": "Isahind",
         "factions": "hindren of Bey Lah",
-        "level": "10",
         "name": "Isahind"
     },
     {
         "src": "/assets/images/Textures/Creatures/Neelahind.png",
         "cleanedName": "Warden Neelahind",
         "factions": "Fellowship of Wardens, hindren of Bey Lah",
-        "level": "20",
         "name": "Neelahind"
     },
     {
         "src": "/assets/images/Textures/Creatures/Keh.png",
         "cleanedName": "Hindriarch Keh",
         "factions": "hindren of Bey Lah",
-        "level": "21",
         "name": "Keh"
     },
     {
         "src": "/assets/images/Textures/Creatures/PariahKeh.png",
         "cleanedName": "Keh-hind",
         "factions": "hindren of Bey Lah",
-        "level": "21",
         "name": "PariahKeh"
     },
     {
         "src": "/assets/images/Textures/Creatures/Kesehind.png",
         "cleanedName": "Kesehind",
         "factions": "hindren of Bey Lah",
-        "level": "12",
         "name": "Kesehind"
     },
     {
         "src": "/assets/images/Textures/Creatures/Angohind.png",
         "cleanedName": "Angohind",
         "factions": "hindren of Bey Lah",
-        "level": "6",
         "name": "Angohind"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mayor Nuntu.png",
         "cleanedName": "Mayor Nuntu",
         "factions": "villagers of Kyakukya",
-        "level": "24",
         "name": "Mayor Nuntu"
     },
     {
         "src": "/assets/images/Textures/Creatures/Warden Indrix.png",
         "cleanedName": "Warden Indrix",
         "factions": "Fellowship of Wardens, pariahs",
-        "level": "27",
         "name": "Warden Indrix"
     },
     {
         "src": "/assets/images/Textures/Creatures/Crowsong.png",
         "cleanedName": "Crowsong",
         "factions": "villagers of Kyakukya, mysterious strangers",
-        "level": "24",
         "name": "Crowsong"
     },
     {
         "src": "/assets/images/Textures/Creatures/Yurl.png",
         "cleanedName": "Yurl",
         "factions": "Consortium of Phyta, villagers of Kyakukya",
-        "level": "18",
         "name": "Yurl"
     },
     {
         "src": "/assets/images/Textures/Creatures/Erah.png",
         "cleanedName": "Ciderer Erah",
         "factions": "villagers of Kyakukya",
-        "level": "19",
         "name": "Erah"
     },
     {
         "src": "/assets/images/Textures/Creatures/Wild Water Merchant.png",
         "cleanedName": "wild-eyed water merchant",
         "factions": "grazing hedonists, Children of Mamon",
-        "level": "11",
         "name": "Wild Water Merchant"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mamon.png",
         "cleanedName": "goatfolk shaman",
         "factions": "Children of Mamon",
-        "level": "19",
         "name": "Mamon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Oboroqoru.png",
         "cleanedName": "Oboroqoru",
         "factions": "apes",
-        "level": "40",
         "name": "Oboroqoru"
     },
     {
         "src": "/assets/images/Textures/Creatures/GolgothaSlog.png",
         "cleanedName": "Slog of the Cloaca",
         "factions": "mollusks",
-        "level": "17",
         "name": "GolgothaSlog"
     },
     {
         "src": "/assets/images/Textures/Creatures/Alchemist.png",
         "cleanedName": "alchemist",
         "factions": "grazing hedonists",
-        "level": "30",
         "name": "Alchemist"
     },
     {
         "src": "/assets/images/Textures/Creatures/Skybear.png",
         "cleanedName": "Saad Amus",
         "factions": "",
-        "level": "35",
         "name": "Skybear"
     },
     {
         "src": "/assets/images/Textures/Creatures/SkybearClone.png",
         "cleanedName": "clone of Saad Amus",
         "factions": "",
-        "level": "35",
         "name": "SkybearClone"
     },
     {
         "src": "/assets/images/Textures/Creatures/Phinae Hoshaiah.png",
         "cleanedName": "Phinae Hoshaiah",
         "factions": "Mechanimists",
-        "level": "20",
         "name": "Phinae Hoshaiah"
     },
     {
         "src": "/assets/images/Textures/Items/BethesdaBaetyl.png",
         "cleanedName": "baetyl",
         "factions": "baetyls",
-        "level": "25",
         "name": "BethesdaBaetyl"
     },
     {
         "src": "/assets/images/Textures/Creatures/Asphodel.png",
         "cleanedName": "Asphodel",
         "factions": "Consortium of Phyta, flowers",
-        "level": "30",
         "name": "Asphodel"
     },
     {
         "src": "/assets/images/Textures/Creatures/Grand Newfather_Warleader.png",
         "cleanedName": "grand newfather",
         "factions": "Putus Templar",
-        "level": "39",
         "name": "Grand Newfather_Warleader"
     },
     {
         "src": "/assets/images/Textures/Creatures/VehicleTemplarMech3_Warleader.png",
         "cleanedName": "temple mecha mk II",
         "factions": "",
-        "level": "45",
         "name": "VehicleTemplarMech3_Warleader"
     },
     {
         "src": "/assets/images/Textures/Terrain/Haddas.png",
         "cleanedName": "Mayor Haddas",
         "factions": "villagers of Ezra, trees",
-        "level": "31",
         "name": "Haddas"
     },
     {
         "src": "/assets/images/Textures/Creatures/Warden 1-FF.png",
         "cleanedName": "Warden 1-FF",
         "factions": "Fellowship of Wardens",
-        "level": "30",
         "name": "Warden 1-FF"
     },
     {
         "src": "/assets/images/Textures/Items/Sixshrew.png",
         "cleanedName": "Sixshrew",
         "factions": "Consortium of Phyta, villagers of Ezra",
-        "level": "27",
         "name": "Sixshrew"
     },
     {
         "src": "/assets/images/Textures/Creatures/Zothom.png",
         "cleanedName": "Zothom the Penitent",
         "factions": "pariahs",
-        "level": "24",
         "name": "Zothom"
     },
     {
         "src": "/assets/images/Textures/Creatures/Yla Haj.png",
         "cleanedName": "Yla Haj",
         "factions": "Daughters of Exile",
-        "level": "29",
         "name": "Yla Haj"
     },
     {
         "src": "/assets/images/Textures/Creatures/PaxKlanq.png",
         "cleanedName": "Pax Klanq",
         "factions": "fungi",
-        "level": "30",
         "name": "PaxKlanq"
     },
     {
         "src": "/assets/images/Textures/Creatures/PaxKlanq2.png",
         "cleanedName": "Pax Klanq",
         "factions": "Barathrumites",
-        "level": "30",
         "name": "PaxKlanq2"
     },
     {
         "src": "/assets/images/Textures/Creatures/Hamilcrab.png",
         "cleanedName": "Hamilcrab",
         "factions": "crabs, Merchants' Guild",
-        "level": "40",
         "name": "Hamilcrab"
     },
     {
         "src": "/assets/images/Textures/Creatures/k-Goninon.png",
         "cleanedName": "k-Goninon",
         "factions": "oozes",
-        "level": "30",
         "name": "k-Goninon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Biographer.png",
         "cleanedName": "Herododicus",
         "factions": "grazing hedonists, robots",
-        "level": "26",
         "name": "Biographer"
     },
     {
         "src": "/assets/images/Textures/Creatures/Nacham.png",
         "cleanedName": "Nacham",
         "factions": "mopango",
-        "level": "30",
         "name": "Nacham"
     },
     {
         "src": "/assets/images/Textures/Creatures/Vaam.png",
         "cleanedName": "Va'am",
         "factions": "mopango",
-        "level": "30",
         "name": "Vaam"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dagasha.png",
         "cleanedName": "Dagasha",
         "factions": "mopango",
-        "level": "30",
         "name": "Dagasha"
     },
     {
         "src": "/assets/images/Textures/Creatures/Kah.png",
         "cleanedName": "Kah",
         "factions": "mopango",
-        "level": "30",
         "name": "Kah"
     },
     {
         "src": "/assets/images/Textures/Creatures/Doyoba.png",
         "cleanedName": "Doyoba",
         "factions": "mopango",
-        "level": "28",
         "name": "Doyoba"
     },
     {
         "src": "/assets/images/Textures/Creatures/Dadogom.png",
         "cleanedName": "Dadogom",
         "factions": "mopango",
-        "level": "28",
         "name": "Dadogom"
     },
     {
         "src": "/assets/images/Textures/Creatures/Gyamyo.png",
         "cleanedName": "Gyamyo",
         "factions": "mopango",
-        "level": "28",
         "name": "Gyamyo"
     },
     {
         "src": "/assets/images/Textures/Creatures/Yona.png",
         "cleanedName": "Yona",
         "factions": "mopango",
-        "level": "28",
         "name": "Yona"
     },
     {
         "src": "/assets/images/Textures/Creatures/Vivira.png",
         "cleanedName": "Vivira",
         "factions": "mopango",
-        "level": "25",
         "name": "Vivira"
     },
     {
         "src": "/assets/images/Textures/Creatures/Agyra.png",
         "cleanedName": "Agyra",
         "factions": "mopango",
-        "level": "28",
         "name": "Agyra"
     },
     {
         "src": "/assets/images/Textures/Creatures/Lebah.png",
         "cleanedName": "Lebah",
         "factions": "mopango",
-        "level": "28",
         "name": "Lebah"
     },
     {
         "src": "/assets/images/Textures/Creatures/Rainwater Shomer.png",
         "cleanedName": "Rainwater Shomer",
         "factions": "",
-        "level": "40",
         "name": "Rainwater Shomer"
     },
     {
         "src": "/assets/images/Textures/Creatures/Mak.png",
         "cleanedName": "Mak",
         "factions": "denizens of the Yd Freehold",
-        "level": "41",
         "name": "Mak"
     },
     {
         "src": "/assets/images/Textures/Creatures/Goek.png",
         "cleanedName": "Goek",
         "factions": "denizens of the Yd Freehold",
-        "level": "40",
         "name": "Goek"
     },
     {
         "src": "/assets/images/Textures/Creatures/Geeub.png",
         "cleanedName": "Geeub",
         "factions": "denizens of the Yd Freehold",
-        "level": "40",
         "name": "Geeub"
     },
     {
         "src": "/assets/images/Textures/Creatures/Bep.png",
         "cleanedName": "Bep",
         "factions": "denizens of the Yd Freehold",
-        "level": "30",
         "name": "Bep"
     },
     {
         "src": "/assets/images/Textures/Creatures/Krka.png",
         "cleanedName": "Krka",
         "factions": "denizens of the Yd Freehold",
-        "level": "30",
         "name": "Krka"
     },
     {
         "src": "/assets/images/Textures/Creatures/Tillifergaewicz.png",
         "cleanedName": "Tillifergaewicz",
         "factions": "denizens of the Yd Freehold, Consortium of Phyta",
-        "level": "26",
         "name": "Tillifergaewicz"
     },
     {
         "src": "/assets/images/Textures/Creatures/Rokhas.png",
         "cleanedName": "Rokhas",
         "factions": "denizens of the Yd Freehold",
-        "level": "26",
         "name": "Rokhas"
     },
     {
         "src": "/assets/images/Textures/Creatures/Une.png",
         "cleanedName": "Warden Une",
         "factions": "Fellowship of Wardens",
-        "level": "35",
         "name": "Une"
     },
     {
         "src": "/assets/images/Textures/Creatures/Many Eyes.png",
         "cleanedName": "Many Eyes",
         "factions": "denizens of the Yd Freehold",
-        "level": "40",
         "name": "Many Eyes"
     },
     {
         "src": "/assets/images/Textures/Creatures/Thah.png",
         "cleanedName": "Thah",
         "factions": "newly sentient beings",
-        "level": "30",
         "name": "Thah"
     },
     {
@@ -4854,126 +4167,108 @@
         "src": "/assets/images/Textures/Creatures/Santalalotze.png",
         "cleanedName": "Santalalotze",
         "factions": "Chavvah, the Tree of Life, Consortium of Phyta",
-        "level": "40",
         "name": "Santalalotze"
     },
     {
         "src": "/assets/images/Textures/Creatures/BaseTau.png",
         "cleanedName": "hunter of the Sightless Way",
         "factions": "Seekers of the Sightless Way",
-        "level": "38",
         "name": "BaseTau"
     },
     {
         "src": "/assets/images/Textures/Creatures/TauNoLonger.png",
         "cleanedName": "Tau-No-Longer",
         "factions": "Seekers of the Sightless Way",
-        "level": "38",
         "name": "TauNoLonger"
     },
     {
         "src": "/assets/images/Textures/Creatures/TauWanderer.png",
         "cleanedName": "Wandering Tau",
         "factions": "pariahs",
-        "level": "38",
         "name": "TauWanderer"
     },
     {
         "src": "/assets/images/Textures/Creatures/AoygNoLonger.png",
         "cleanedName": "Aoyg-No-Longer",
         "factions": "Seekers of the Sightless Way",
-        "level": "40",
         "name": "AoygNoLonger"
     },
     {
         "src": "/assets/images/Textures/Creatures/0lam.png",
         "cleanedName": "0lam",
         "factions": "highly entropic beings, mollusks",
-        "level": "66",
         "name": "0lam"
     },
     {
         "src": "/assets/images/Textures/Creatures/AgateSeveranceStar.png",
         "cleanedName": "Agate Severance Star",
         "factions": "pariahs",
-        "level": "24",
         "name": "AgateSeveranceStar"
     },
     {
         "src": "/assets/images/Textures/Creatures/Ehalcodon.png",
         "cleanedName": "Starformed Ehalcodon",
         "factions": "Girsh",
-        "level": "60",
         "name": "Ehalcodon"
     },
     {
         "src": "/assets/images/Textures/Creatures/Prism Girshling.png",
         "cleanedName": "prism girshling",
         "factions": "arachnids, Girsh",
-        "level": "9",
         "name": "Prism Girshling"
     },
     {
         "src": "/assets/images/Textures/Items/Prism Girshling Cresh.png",
         "cleanedName": "prism cresh",
         "factions": "Girsh",
-        "level": "1",
         "name": "Prism Girshling Cresh"
     },
     {
         "src": "/assets/images/Textures/Vehicles/Mover.png",
         "cleanedName": "mover",
         "factions": "",
-        "level": "1",
         "name": "Mover"
     },
     {
         "src": "/assets/images/Textures/Items/Mover Baetyl.png",
         "cleanedName": "pilot baetyl",
         "factions": "baetyls",
-        "level": "25",
         "name": "Mover Baetyl"
     },
     {
         "src": "/assets/images/Textures/Creatures/Sheyd.png",
         "cleanedName": "sheyd",
         "factions": "grazing hedonists",
-        "level": "29",
         "name": "Sheyd"
     },
     {
         "src": "/assets/images/Textures/Creatures/Engine Crabs.png",
         "cleanedName": "engine crabs",
         "factions": "crabs",
-        "level": "4",
         "name": "Engine Crabs"
     },
     {
         "src": "/assets/images/Textures/Creatures/Spoken Ionic.png",
         "cleanedName": "Spoken Ionic Within Covalency Heart",
         "factions": "mysterious strangers",
-        "level": "120",
         "name": "Spoken Ionic"
     },
     {
         "src": "/assets/images/Textures/Creatures/Godling.png",
         "cleanedName": "Girsh godling",
         "factions": "",
-        "level": "20",
         "name": "Godling"
     },
     {
         "src": "/assets/images/Textures/Creatures/True Godling.png",
         "cleanedName": "Girsh godling",
         "factions": "",
-        "level": "20",
         "name": "True Godling"
     },
     {
         "src": "/assets/images/Textures/Creatures/Fool of the Gyre.png",
         "cleanedName": "fool of the Gyre",
         "factions": "Gyre wights",
-        "level": "14",
         "name": "Fool of the Gyre"
     }
 ]

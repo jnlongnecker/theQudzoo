@@ -2,8 +2,10 @@ import {
     DiceRoll, Roll,
     getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random
 } from "./rolls";
-import { ActivatedActionEvent } from "./events";
+import { ActivatedActionEvent, GetItemShortDescriptionEvent, GetItemStatDescriptionEvent, GetItemFlavorDescriptionEvent } from "./events";
 import { Creature } from "./creature";
+import { Item } from "./items";
+import * as helperParts from "./helperParts/module";
 
 
 class Combat {
@@ -184,5 +186,5 @@ export {
 
     DiceRoll, Roll, getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random,
 
-    Creature
+    Creature, GetItemShortDescriptionEvent, Item, GetItemStatDescriptionEvent, GetItemFlavorDescriptionEvent
 };

@@ -370,7 +370,7 @@ function formatDirectory(qudDir) {
 function qudDirToQudzooDir(qudDir, item) {
     let name = item.Name ? item.Name : item.Command;
     name = name.replace(/\//g, '');
-    name = name.replace(/'/g, '&#x27;');
+    name = name.replace(/'/g, '');
     name = name.replace(/:/g, '');
     let formattedDir = formatDirectory(qudDir);
     return formattedDir.substring(0, formattedDir.indexOf('\\') + 1) + `${name}.png`;
@@ -600,7 +600,7 @@ function unformatDisplayName(displayName) {
 */
 
 exports.filterToPreviews = function (objects, factions) {
-    let ret = { meleeWeapons: [], armor: [], creatures: [] };
+    let ret = { items: [], creatures: [] };
     for (let key in objects) {
         let item = objects[key];
 
@@ -619,8 +619,7 @@ exports.filterToPreviews = function (objects, factions) {
         if (item.Name.includes('Clue_')) continue; // Skip if bey lah clue
         if (!isCreature && !isArmor && !isMeleeWeapon) continue;
 
-        if (isArmor) { ret.armor.push(buildArmorPreview(item)) }
-        else if (isMeleeWeapon) { ret.meleeWeapons.push(buildMeleePreview(item)) }
+        if (isArmor || isMeleeWeapon) { ret.items.push(buildItemPreview(item)) }
         else if (isCreature) {
             let creature = buildCreaturePreview(item, factions);
             if (creature) ret.creatures.push(creature);
@@ -629,27 +628,22 @@ exports.filterToPreviews = function (objects, factions) {
     return ret;
 }
 
-function buildArmorPreview(item) {
+function buildItemPreview(item) {
     let src = getTilePath(item);
     let fullName = buildFullName(item);
     fullName = oldMarkupToNewMarkup(fullName);
     let cleanedName = unformatDisplayName(fullName);
     let armorPart = getPart(item, 'Armor');
-    let tier = getTag(item, 'Tier')?.Value;
-    return {
-        src, cleanedName, tier, armorPart, name: item.Name
-    };
-}
-
-function buildMeleePreview(item) {
-    let src = getTilePath(item);
-    let fullName = buildFullName(item);
-    fullName = oldMarkupToNewMarkup(fullName);
-    let cleanedName = unformatDisplayName(fullName);
     let weaponPart = getPart(item, 'MeleeWeapon');
     let tier = getTag(item, 'Tier')?.Value;
+
+    let slotsTag = getTag(item, 'UsesSlots');
+    let slots;
+    if (slotsTag) slots = slotsTag.Value;
+    else if (armorPart) slots = armorPart.WornOn;
+    else slots = weaponPart?.Slot ? weaponPart.Slot : 'Hand';
     return {
-        src, cleanedName, tier, weaponPart, name: item.Name
+        src, cleanedName, tier, armorPart, weaponPart, slots, name: item.Name
     };
 }
 
@@ -681,7 +675,7 @@ function buildCreaturePreview(item, factions) {
 */
 
 exports.filterToDetails = function (objects) {
-    let ret = { meleeWeapons: {}, armor: {}, creatures: {} };
+    let ret = { items: {}, creatures: {} };
     for (let key in objects) {
         let item = objects[key];
 
@@ -700,9 +694,9 @@ exports.filterToDetails = function (objects) {
         let cleanedName = unformatDisplayName(fullName);
         item.src = src;
         item.cleanedName = cleanedName;
+        item.displayName = fullName;
 
-        if (isArmor) { ret.armor[item.Name] = item; }
-        else if (isMeleeWeapon) { ret.meleeWeapons[item.Name] = item; }
+        if (isArmor || isMeleeWeapon) { ret.items[item.Name] = item; }
         else if (isCreature) { ret.creatures[item.Name] = item; }
     }
     return ret;

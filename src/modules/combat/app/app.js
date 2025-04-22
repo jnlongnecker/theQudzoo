@@ -74,6 +74,7 @@ export default class App extends LightningElement {
         try {
             action.apply(creature);
         } catch (e) {
+            console.log(e);
             this.sendMessageToLog(e);
             return;
         }
@@ -86,5 +87,43 @@ export default class App extends LightningElement {
         if (this.creature.level === 1) return;
         this.actionLog.applyLevelReset();
         this.sendMessageToLog('{{Y|Reset to level 1.}}');
+    }
+
+    selectedOption = 'attributes';
+
+    get attrSelected() {
+        return this.selectedOption === 'attributes';
+    }
+    get equipSelected() {
+        return this.selectedOption === 'equipment';
+    }
+    get skillSelected() {
+        return this.selectedOption === 'skills';
+    }
+    get mutSelected() {
+        return this.selectedOption === 'mutations';
+    }
+    get combatSelected() {
+        return this.selectedOption === 'combat';
+    }
+
+    get attrClass() {
+        return this.attrSelected ? 'icon-button selected' : 'icon-button';
+    }
+    get equipClass() {
+        return this.equipSelected ? 'icon-button selected' : 'icon-button';
+    }
+    get skillClass() {
+        return this.skillSelected ? 'icon-button selected' : 'icon-button';
+    }
+    get mutClass() {
+        return this.mutSelected ? 'icon-button selected' : 'icon-button';
+    }
+    get combatClass() {
+        return this.combatSelected ? 'icon-button selected' : 'icon-button';
+    }
+
+    swapPanel(evt) {
+        this.selectedOption = evt.currentTarget.dataset.option;
     }
 }

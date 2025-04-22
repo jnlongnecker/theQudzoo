@@ -50,11 +50,8 @@ exports.processPreviewRequest = async (res, req) => {
             case 'creatures':
                 response = qudData.getCreaturePreviews(req, res);
                 break;
-            case 'melee':
-                response = qudData.getMeleePreviews(req, res);
-                break;
-            case 'armor':
-                response = qudData.getArmorPreviews(req, res);
+            case 'items':
+                response = qudData.getItemPreviews(req, res);
                 break;
             default:
                 res.status(400);
@@ -77,11 +74,8 @@ exports.processDetailsRequest = async (res, req) => {
             case 'creatures':
                 response = qudData.getCreatureDetails(req, res);
                 break;
-            case 'melee':
-                response = qudData.getMeleeDetails(req, res);
-                break;
-            case 'armor':
-                response = qudData.getArmorDetails(req, res);
+            case 'items':
+                response = qudData.getItemDetails(req, res);
                 break;
             case 'starts':
                 response = startsDetails;

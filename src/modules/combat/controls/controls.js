@@ -1,38 +1,32 @@
-import { LightningElement, api } from "lwc";
-import { register } from "c/componentEvents";
+import { api, LightningElement } from "lwc";
+import { Combat } from "combat/calculator";
 
 export default class Controls extends LightningElement {
 
-    showCombat;
-    showBuilder = true;
+    practicalCharacter;
+    practicalEnemy;
+    skillManager;
 
-    _creature;
-    @api mode;
-    @api enemy;
-
-    @api get creature() {
-        return this._creature;
+    @api get character() {
+        return this.practicalCharacter;
+    }
+    set character(val) {
+        if (!val) return;
+        this.practicalCharacter = val;
     }
 
-    set creature(value) {
-        if (!value) return;
-        this._creature = value;
+    @api get enemy() {
+        return this.practicalEnemy;
+    }
+    set enemy(val) {
+        if (!val) return;
+        this.practicalEnemy = val;
     }
 
-    constructor() {
-        super();
-
-        register('refreshplayerevent', (e) => { this.creature = e.detail });
-        register('refreshenemyevent', (e) => { this.enemy = e.detail });
-    }
-
-    changeTab(event) {
-        let target = event.target;
-        for (let child of event.currentTarget.children) {
-            child.classList.remove('selected');
-        }
-        target.classList.add('selected');
-        this.showBuilder = target.innerHTML == 'Character Builder';
-        this.showCombat = target.innerHTML == 'Combat Builder';
+    runTest() {
+        this.practicalCharacter.addSkill('Cudgel_Bludgeon');
+        let combat = new Combat(this.practicalCharacter, this.practicalEnemy);
+        combat.bumpAttack();
+        console.log(combat);
     }
 }

@@ -1,1 +1,49 @@
-<template>Equipment</template>
+<template>
+    <div class="container">
+        <div class="equipment-list">
+            <template for:each={equipmentList} for:item="limb">
+                <div class={limb.lineClass} key={limb.id} data-identifier={limb.id} onclick={handleLimbSelect}>
+                    <span class="limb-name">{limb.limbName}</span>
+                    <span class="item-icon">
+                        <img class={limb.imageClass} src={limb.src} if:true={limb.src} />
+                    </span>
+                    <span class="item-description">
+                        <build-markdown-renderer modes="collapse-line all-qud-font bolded inline no-highlight"
+                            single-line raw-text={limb.desc}></build-markdown-renderer>
+                    </span>
+                </div>
+            </template>
+        </div>
+        <div class="item-selection">
+            <input-typeahead placeholder="Search for an item" name="item-picker" options={items}
+                onselected={handleSelection} onfilterchange={handleFilterChange}>
+            </input-typeahead>
+            <div class="item-details">
+                <div class="preview-box">
+                    <img class="item-preview" src={selectedItem.token} if:true={selectedItem} />
+                </div>
+                <div class="details">
+                    <build-markdown-renderer modes="collapse-line no-highlight all-qud-font bolded inline" single-line
+                        raw-text={selectedItem.displayName} if:true={selectedItem}></build-markdown-renderer>
+                    <build-markdown-renderer modes="collapse-line no-highlight all-qud-font bolded inline" single-line
+                        raw-text={selectedStats} if:true={selectedItem}></build-markdown-renderer>
+                    <div class="controls">
+                        <input-button size="small" variant="thin toughness" onclick={unequipSelected}
+                            if:true={selectedItem}>
+                            <span class="button-details">
+                                <input-icon variant="cross" size="normal"></input-icon>
+                                Unequip
+                            </span>
+                        </input-button>
+                        <input-button size="small" variant="thin willpower" onclick={setPrimaryLimb}>
+                            <span class="button-details">
+                                <input-icon variant="diamond" size="normal"></input-icon>
+                                Set Primary
+                            </span>
+                        </input-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

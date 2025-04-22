@@ -1,4 +1,5 @@
 import { capitalize } from 'c/utilities';
+import { Item } from "combat/calculator";
 
 class AttributeChangeAction {
 
@@ -162,4 +163,69 @@ class LevelUpAction {
     }
 }
 
-export { AttributeChangeAction, RandomizeAttributesAction, ResetAttributesAction, LevelUpAction };
+class EquipItemAction {
+    reversible = false;
+    undoOnLevelReset = false;
+
+    item;
+    limbNum;
+
+    constructor(itemDetails, limbNum) {
+        this.item = Item.fromObject(itemDetails);
+        this.limbNum = limbNum;
+    }
+
+    apply(character) {
+        let limbArray = character.anatomy.getLimbArray();
+        if (limbArray.length <= this.limbNum) throw "Error: Creature doesn't have corresponding limb.";
+        let limb = limbArray[this.limbNum];
+        let result = limb.equip(this.item);
+        if (!result) throw "Error: Failed to equip.";
+    }
+
+    print() {
+        return `Equipped ${this.item.displayName}.`;
+    }
+}
+
+class UnequipAction {
+    reversible = false;
+    undoOnLevelReset = false;
+
+    item;
+
+    constructor(item) {
+        this.item = item;
+    }
+
+    apply(character) {
+        character.anatomy.unequipAll(this.item, true);
+    }
+
+    print() {
+        return `Unequipped ${this.item.displayName}.`
+    }
+}
+
+class SetPrimaryAction {
+    reversible = false;
+    undoOnLevelReset = false;
+
+    limbNum;
+
+    constructor(limbNum) {
+        this.limbNum = limbNum;
+    }
+
+    apply(character) {
+        let limbArray = character.anatomy.getLimbArray();
+        if (limbArray.length <= this.limbNum) throw "Error: Creature doesn't have corresponding limb.";
+        character.anatomy.setPrimaryLimb(limbArray[this.limbNum]);
+    }
+
+    print() {
+        return 'Updated primary limb.'
+    }
+}
+
+export { AttributeChangeAction, RandomizeAttributesAction, ResetAttributesAction, LevelUpAction, EquipItemAction, UnequipAction, SetPrimaryAction };

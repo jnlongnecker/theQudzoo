@@ -6,7 +6,7 @@ export class Cudgel_Bludgeon extends SkillPart {
 
     onAttach(host) {
         super.onAttach(host);
-        AttackEvent.register(host, (event) => this.handleAttackEvent(event));
+        AttackEvent.register(host, (event) => this.handleAttackEvent(event), this.id);
     }
 
     handleAttackEvent(evt) {

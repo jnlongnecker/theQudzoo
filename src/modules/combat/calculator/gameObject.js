@@ -1,3 +1,6 @@
+import { deregisterObject } from "./events";
+import { partRegistry } from "./metadata";
+
 export class Tag {
     name;
     value;
@@ -23,7 +26,7 @@ export class GameObject {
         let slotTag = this.getTag('UsesSlots');
         let baseSlots = slotTag ? slotTag.value.split(',').length : 1;
         let physics = this.getPart('Physics');
-        return (physics?.UsesTwoSlots ? 2 : 1) * baseSlots;
+        return (physics?.usesTwoSlots ? 2 : 1) * baseSlots;
     }
 
     get usesSlots() {
@@ -32,12 +35,12 @@ export class GameObject {
         let armor = this.getPart('Armor');
         let slotTag = this.getTag('UsesSlots');
         if (slotTag) slot = slotTag.value;
-        else if (armor) slot = armor.WornOn;
+        else if (armor) slot = armor.slot;
         else if (wep && wep.Slot) slot = wep.Slot;
 
         let physics = this.getPart('Physics');
 
-        return (physics?.UsesTwoSlots ? `${slot},${slot}` : slot);
+        return (physics?.usesTwoSlots ? `${slot},${slot}` : slot);
     }
 
     fire(event) {
@@ -87,6 +90,15 @@ export class GameObject {
         part.onDetach(this);
     }
 
+    attachPartFromObj(partObj) {
+        let partConstructor = partRegistry.getConstructorFor(partObj.Name);
+        if (partConstructor !== null) {
+            this.attachPart(new partConstructor(partObj));
+        } else {
+            console.log(`No part for ${partObj.Name}`);
+        }
+    }
+
     addTag(tag) {
         tag = new Tag(tag);
         if (this.getTag(tag)) return;
@@ -107,5 +119,9 @@ export class GameObject {
 
     hasPart(part) {
         return this.getPart(part) !== undefined;
+    }
+
+    destroy() {
+        deregisterObject(this);
     }
 }

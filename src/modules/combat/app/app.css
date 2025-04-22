@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid white;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .creatures {
@@ -23,4 +23,68 @@
 .log-container {
     display: flex;
     justify-content: center;
+}
+
+.icon-tab-container {
+    display: flex;
+    padding: 0.25rem 20%;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+.icon-tab-container::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 60%;
+    background-color: var(--text-color-light);
+    z-index: -1;
+}
+
+.control-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.pane-label {
+    background-color: var(--bg-color-dark);
+    outline: 2px solid var(--bg-color-dark);
+    padding: 0 0.25rem;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 2.5rem;
+    opacity: 0;
+}
+
+.icon-button {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--bg-color-dark);
+    filter: grayscale();
+}
+
+.selected {
+    filter: none;
+    border-style: inset;
+}
+
+.selected + .pane-label {
+    opacity: 1;
+}
+
+.icon-button:hover {
+    cursor: pointer;
+    filter: none;
+}
+
+.icon-button:hover + .pane-label {
+    opacity: 1;
+}
+
+.icon-button.selected:hover {
+    cursor: default;
 }

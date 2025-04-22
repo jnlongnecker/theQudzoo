@@ -7,41 +7,63 @@ class EventManager {
         if (!registry) this.creatureRegistry[creature.id] = {};
     }
 
-    register(creature, eventName, callback, priority) {
+    register(creature, eventName, callback, partId) {
         this.registerCreature(creature);
         let registry = this.creatureRegistry[creature.id];
         if (!registry[eventName]) {
-            registry[eventName] = [[], [], [], [], []];
+            registry[eventName] = {};
             this.creatureRegistry[creature.id] = registry;
         }
-        registry[eventName][priority - 1].push(callback);
+        let callbacks = registry[eventName];
+        if (!callbacks[partId]) {
+            registry[eventName][partId] = [];
+            this.creatureRegistry[creature.id] = registry;
+        }
+        registry[eventName][partId].push(callback);
     }
 
     handle(creature, event) {
         let registry = this.creatureRegistry[creature.id]
         if (!registry) return;
         let callbacks = registry[event.constructor.name];
-        if (!Array.isArray(callbacks)) return;
+        if (callbacks === undefined) return;
 
-        for (let callbackPriorityList of callbacks)
-            for (let callback of callbackPriorityList)
+        for (let partCbs in callbacks) {
+            for (let callback of callbacks[partCbs])
                 callback(event);
+        }
+    }
+
+    deregister(creature, partId) {
+        let registry = this.creatureRegistry[creature.id];
+        if (!registry) return;
+        for (let eventName in registry) {
+            registry[eventName][partId] = undefined;
+        }
+    }
+
+    deregisterObject(id) {
+        let registry = this.creatureRegistry[id];
+        if (!registry) return;
+        this.creatureRegistry[id] = undefined;
     }
 }
 
 const eventManager = new EventManager();
 
+export function deregisterPart(creature, part) {
+    eventManager.deregister(creature, part.id);
+}
+
+export function deregisterObject(obj) {
+    eventManager.deregisterObject(obj.id);
+}
+
 class BaseEvent {
-    priority;
 
-    constructor(priority) {
-        if (!priority) priority = 3;
-        this.priority = priority;
-    }
-
-    static register(host, callback, priority = 3) {
-        if (!priority || priority <= 0 || priority > 5) priority = 3;
-        eventManager.register(host, this.name, callback, priority);
+    static register(host, callback, partId) {
+        if (!partId) throw `No part ID supplied to ${this.name}.`
+        eventManager.register(host, this.name, callback, partId);
     }
 
     handle(creature) {
@@ -105,4 +127,22 @@ export class GetAttackCountEvent extends BaseEvent {
     attacks = [];
 
     constructor(attack, isPrimary = false) { super(); this.attack = attack; this.isPrimary = isPrimary; this.attacks.push(attack); }
+}
+
+export class GetItemShortDescriptionEvent extends BaseEvent {
+    description = '';
+
+    constructor() { super(); }
+}
+
+export class GetItemStatDescriptionEvent extends BaseEvent {
+    description = '';
+
+    constructor() { super(); }
+}
+
+export class GetItemFlavorDescriptionEvent extends BaseEvent {
+    description = '';
+
+    constructor() { super(); }
 }

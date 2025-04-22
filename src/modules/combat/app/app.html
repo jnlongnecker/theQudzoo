@@ -2,7 +2,45 @@
     <div class="container">
         <section class="app-container">
             <combat-character-controls></combat-character-controls>
-            <combat-controls></combat-controls>
+            <div class="main-panel">
+                <div class="icon-tab-container">
+                    <div class="control-pane">
+                        <button class={attrClass} data-option="attributes" onclick={swapPanel}>
+                            <img src="/assets/images/Textures/Abilities/CommandWillForceStrength.png" />
+                        </button>
+                        <label class="pane-label">Attributes</label>
+                    </div>
+                    <div class="control-pane">
+                        <button class={equipClass} data-option="equipment" onclick={swapPanel}>
+                            <img src="/assets/images/Textures/Items/Cudgel8th.png" />
+                        </button>
+                        <label class="pane-label">Equipment</label>
+                    </div>
+                    <div class="control-pane">
+                        <button class={skillClass} data-option="skills" onclick={swapPanel}>
+                            <img src="/assets/images/Textures/Items/AphorismsAboutBirds.png" />
+                        </button>
+                        <label class="pane-label">Skills</label>
+                    </div>
+                    <div class="control-pane">
+                        <button class={mutClass} data-option="mutations" onclick={swapPanel}>
+                            <img src="/assets/images/Textures/Mutations/Chimera.png" />
+                        </button>
+                        <label class="pane-label">Mutations</label>
+                    </div>
+                    <div class="control-pane">
+                        <button class={combatClass} data-option="combat" onclick={swapPanel}>
+                            <img src="/assets/images/Textures/Abilities/Berserk!.png" />
+                        </button>
+                        <label class="pane-label">Combat</label>
+                    </div>
+                </div>
+                <combat-attribute-controls if:true={attrSelected}></combat-attribute-controls>
+                <combat-equipment-controls if:true={equipSelected} character={creature}></combat-equipment-controls>
+                <combat-skill-controls if:true={skillSelected}></combat-skill-controls>
+                <combat-mutation-controls if:true={mutSelected}></combat-mutation-controls>
+                <combat-controls if:true={combatSelected} character={creature} enemy={enemy}></combat-controls>
+            </div>
             <combat-creature-picker></combat-creature-picker>
         </section>
         <section class="log-container" data-updates={changes}>

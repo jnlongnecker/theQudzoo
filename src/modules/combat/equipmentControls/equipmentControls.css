@@ -1,0 +1,96 @@
+.limb-line {
+    display: grid;
+    padding: 5px 0;
+    grid-template-columns: 20ch 16px 1fr;
+    gap: 5px;
+    font-family: var(--qud-font);
+}
+
+.selected {
+    background-color: #15535244;
+}
+
+.limb-line:hover {
+    cursor: pointer;
+    background-color: #15535244;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 60ch;
+}
+
+.equipment-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.faded {
+    filter: drop-shadow(1000px -1px 0 #155352);
+    transform: translateX(-1000px);
+}
+
+.full {
+    transform: translateY(-1px);
+}
+
+.item-image {
+    position: absolute;
+}
+
+.item-selection {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.preview-box {
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: var(--bg-color-dark);
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.item-preview {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    image-rendering: pixelated;
+}
+
+.primary .limb-name::before {
+    content: "*";
+    color: var(--willpower-color);
+    font-family: var(--qud-font);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.button-details {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}

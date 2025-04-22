@@ -65,6 +65,7 @@ input:focus {
 
 .container {
     position: relative;
+    width: fit-content;
 }
 
 .options {
@@ -74,4 +75,5 @@ input:focus {
     overflow-x: hidden;
     width: 100%;
     background-color: var(--bg-color-dark);
+    z-index: 20;
 }

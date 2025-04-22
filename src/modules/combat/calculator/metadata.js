@@ -22,7 +22,6 @@ class PartRegistry {
 export let skillPartRegistry = new PartRegistry();
 export let partRegistry = new PartRegistry();
 export let mutationPartRegistry = new PartRegistry();
-export let cyberneticPartRegistry = new PartRegistry();
 
 export function skillPart(...targets) {
     skillPartRegistry.register(targets);
@@ -34,10 +33,6 @@ export function part(...targets) {
 
 export function mutationPart(...targets) {
     mutationPartRegistry.register(targets);
-}
-
-export function cyberneticPart(...targets) {
-    cyberneticPartRegistry.register(targets);
 }
 
 export function skillPartModule(module) {
@@ -52,14 +47,14 @@ export function mutationPartModule(module) {
     for (let key in module) {
         let potentialPart = module[key];
         if (!Part.prototype.isPrototypeOf(potentialPart.prototype)) continue;
-        skillPart(potentialPart);
+        mutationPart(potentialPart);
     }
 }
 
-export function cyberneticPartModule(module) {
+export function partModule(module) {
     for (let key in module) {
         let potentialPart = module[key];
         if (!Part.prototype.isPrototypeOf(potentialPart.prototype)) continue;
-        skillPart(potentialPart);
+        part(potentialPart);
     }
 }
