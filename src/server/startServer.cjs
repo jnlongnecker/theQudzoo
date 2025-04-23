@@ -38,11 +38,11 @@ app.get("/api/codes/parse/:info", (req, res) => {
     api.processBuildRequest(res, req, 'parse').then(result => res.json(result));
 });
 app.get("/api/previews/:info", (req, res) => {
-    // res.set("Cache-control", `public, max-age=${longCache}`);
+    res.set("Cache-control", `public, max-age=${longCache}`);
     api.processPreviewRequest(res, req).then(result => res.json(result));
 });
 app.get("/api/details/:info", (req, res) => {
-    // res.set("Cache-control", `public, max-age=${longCache}`);
+    res.set("Cache-control", `public, max-age=${longCache}`);
     api.processDetailsRequest(res, req).then(result => res.json(result));
 });
 app.post("/db/login", (req, res) => {

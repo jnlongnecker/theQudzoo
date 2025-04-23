@@ -701,3 +701,44 @@ exports.filterToDetails = function (objects) {
     }
     return ret;
 }
+
+/* 
+
+    ============================== END OBJECT DETAILS PROCESSING =============================
+
+
+    ============================== SKILL DATA PROCESSING =============================
+    
+*/
+
+exports.formatSkillData = function (skills) {
+    let skillArray = [];
+    for (let categoryName in skills) {
+        let category = skills[categoryName];
+        let categorySkills = [];
+        for (let power of category.other) {
+            let src = '/assets/images/Textures/' + qudDirToQudzooDir(power.Tile, power).replace(/\\/g, '/');
+            categorySkills.push({
+                name: power.Class,
+                displayName: power.Name,
+                cost: power.Cost,
+                attribute: power.Attribute,
+                minimum: power.Minimum,
+                token: src,
+                description: power.Description
+            });
+        }
+        let src = '/assets/images/Textures/' + qudDirToQudzooDir(category.Tile, category).replace(/\\/g, '/');
+        skillArray.push({
+            name: category.Class,
+            displayName: category.Name,
+            cost: category.Cost,
+            attribute: category.Attribute,
+            minimum: category.Minimum,
+            token: src,
+            description: category.Description,
+            categorySkills
+        });
+    }
+    return skillArray;
+}

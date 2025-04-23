@@ -35,9 +35,9 @@
                         <label class="pane-label">Combat</label>
                     </div>
                 </div>
-                <combat-attribute-controls if:true={attrSelected}></combat-attribute-controls>
+                <combat-attribute-controls if:true={attrSelected} creature={creature}></combat-attribute-controls>
                 <combat-equipment-controls if:true={equipSelected} character={creature}></combat-equipment-controls>
-                <combat-skill-controls if:true={skillSelected}></combat-skill-controls>
+                <combat-skill-controls if:true={skillSelected} creature={creature}></combat-skill-controls>
                 <combat-mutation-controls if:true={mutSelected}></combat-mutation-controls>
                 <combat-controls if:true={combatSelected} character={creature} enemy={enemy}></combat-controls>
             </div>

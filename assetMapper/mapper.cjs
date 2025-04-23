@@ -22,11 +22,19 @@ switch (func) {
     case 'detail': writeObjectDetails(); break;
     case 'allobject':
     case 'allobjects': writeObjectPreviews(); writeObjectDetails(); break;
+    case 'skill':
+    case 'skills': writeSkillData(); break;
 }
 
 function test() {
     let objects = readToObject('Factions.xml');
     fs.writeFileSync(`${outputDirectory}xmlObjectsItems.json`, JSON.stringify(objects, undefined, 4), { flag: 'w' });
+}
+
+function writeSkillData() {
+    let objects = readToObject('Skills.xml');
+    let skillData = parser.formatSkillData(objects);
+    fs.writeFileSync(`${outputDirectory}skillData.json`, JSON.stringify(skillData, undefined, 4), { flag: 'w' });
 }
 
 function writeObjectPreviews() {

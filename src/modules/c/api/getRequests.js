@@ -96,7 +96,11 @@ async function getStats() {
     return await getMiddleware("/api/stats");
 }
 
+async function getSkillData() {
+    return await getMiddleware("/api/skillData");
+}
+
 export {
     getBuilds, getAuthenticatedUser, isLoggedIn, getMutations, getCybernetics,
-    getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems, getPreviews, getDetails
+    getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems, getPreviews, getDetails, getSkillData
 };

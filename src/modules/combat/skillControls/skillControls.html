@@ -1,1 +1,55 @@
-<template>Skills</template>
+<template>
+    <template if:true={selectedCategory}>
+        <div class="selected-category-grid">
+            <div class="category-info">
+                <div class="category">
+                    <button class="category-btn no-hover">
+                        <img src={selectedCategory.token} />
+                    </button>
+                    <label class="category-label">{selectedCategory.displayName}</label>
+                </div>
+                <input-button size="small" variant="thin toughness" onclick={handleBack}>
+                    <span class="button-details">
+                        <input-icon variant="back" size="normal"></input-icon>
+                        Back
+                    </span>
+                </input-button>
+                <div class="skill-info" if:true={selectedSkill}>
+                    <p class="skill-costs">
+                        {selectedSkill.cost} pts | {selectedSkill.minimum} {selectedSkill.attribute}
+                    </p>
+                    <p class="skill-costs" if:true={selectedSkill.requires}>
+                        {selectedSkill.requires}
+                    </p>
+                    <p class="skill-description">
+                        {selectedSkill.description}
+                    </p>
+                </div>
+            </div>
+            <div class="skill-grid">
+                <template for:each={selectedCategory.categorySkills} for:item="skill">
+                    <div class="category" key={skill.name}>
+                        <button class="category-btn" onclick={selectSkill} onmouseenter={updateBlurb}
+                            data-skill={skill.name}>
+                            <img src={skill.token} />
+                        </button>
+                        <label class="category-label">{skill.displayName}</label>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </template>
+    <template if:false={selectedCategory}>
+        <div class="category-grid">
+            <template for:each={skills} for:item="skill">
+                <div class="category" key={skill.name}>
+                    <button class="category-btn" onclick={selectCategory} data-category={skill.name}>
+                        <img src={skill.token} />
+                    </button>
+                    <label class="category-label">{skill.displayName}</label>
+                </div>
+            </template>
+        </div>
+    </template>
+    <p class="skill-costs">{skillPoints} SP</p>
+</template>

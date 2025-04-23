@@ -121,7 +121,11 @@ export default class Icon extends LightningElement {
         diamond: {
             path: "M480-200 200-480l280-280 280 280-280 280Zm0-114 166-166-166-166-166 166 166 166Zm0-166Z",
             viewBox: "0 -960 960 960"
-        }
+        },
+        back: {
+            path: "m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z",
+            viewBox: "0 -960 960 960"
+        },
 
     }
 

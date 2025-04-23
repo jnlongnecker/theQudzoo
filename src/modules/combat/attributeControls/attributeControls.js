@@ -30,6 +30,12 @@ export default class AttributeControls extends LightningElement {
         return this.level == 1;
     }
 
+    @api
+    get creature() { }
+    set creature(value) {
+        this.handleCreatureRefresh({ detail: value });
+    }
+
     @track
     modifiers;
 

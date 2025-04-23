@@ -26,6 +26,8 @@ export class GameObject {
         let slotTag = this.getTag('UsesSlots');
         let baseSlots = slotTag ? slotTag.value.split(',').length : 1;
         let physics = this.getPart('Physics');
+        let gigantic = this.getPart('ModGigantic');
+        if (gigantic) baseSlots *= 2;
         return (physics?.usesTwoSlots ? 2 : 1) * baseSlots;
     }
 
@@ -39,6 +41,9 @@ export class GameObject {
         else if (wep && wep.Slot) slot = wep.Slot;
 
         let physics = this.getPart('Physics');
+        let gigantic = this.getPart('ModGigantic');
+
+        if (gigantic) slot = `${slot},${slot}`;
 
         return (physics?.usesTwoSlots ? `${slot},${slot}` : slot);
     }

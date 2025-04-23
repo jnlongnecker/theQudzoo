@@ -1,0 +1,1321 @@
+[
+    {
+        "name": "Acrobatics",
+        "displayName": "Acrobatics",
+        "cost": "75",
+        "attribute": "Strength",
+        "token": "/assets/images/Textures/Abilities/Acrobatics.png",
+        "description": "You are skilled at acrobatics.",
+        "categorySkills": [
+            {
+                "name": "Acrobatics_SwiftReflexes",
+                "displayName": "Swift Reflexes",
+                "cost": "0",
+                "attribute": "Agility",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Swift Reflexes.png",
+                "description": "You gain a +5 bonus to your DV when flinching away from missile attacks."
+            },
+            {
+                "name": "Acrobatics_Dodge",
+                "displayName": "Spry",
+                "cost": "100",
+                "attribute": "Agility",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Spry.png",
+                "description": "You gain a +2 bonus to your DV."
+            },
+            {
+                "name": "Acrobatics_Jump",
+                "displayName": "Jump",
+                "cost": "100",
+                "attribute": "Strength",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Jump.png",
+                "description": "You jump into an unoccupied square within range 2. You cannot jump over a square occupied by a creature."
+            },
+            {
+                "name": "Acrobatics_Tumble",
+                "displayName": "Tumble",
+                "cost": "150",
+                "attribute": "Agility",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Tumble.png",
+                "description": "You gain a +1 bonus to your DV. Additionally, Juke's cooldown is reduced to 20.",
+                "requires": "Juke"
+            }
+        ]
+    },
+    {
+        "name": "Axe",
+        "displayName": "Axe",
+        "cost": "50",
+        "attribute": "Strength",
+        "token": "/assets/images/Textures/Abilities/Axe.png",
+        "description": "You are skilled with axes.",
+        "categorySkills": [
+            {
+                "name": "Axe_Expertise",
+                "displayName": "Axe Proficiency",
+                "cost": "0",
+                "attribute": "Strength",
+                "minimum": "0",
+                "token": "/assets/images/Textures/Abilities/Axe Proficiency.png",
+                "description": "You get +2 to hit with axes."
+            },
+            {
+                "name": "Axe_Cleave",
+                "displayName": "Cleave",
+                "cost": "150",
+                "attribute": "Strength",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Cleave.png",
+                "description": "Whenever you hit an opponent with an axe, there's a 75% chance you cleave their armor, giving them a -1 penalty to their AV. This penalty can stack a number of times up to half your Str modifier, rounded up, +1 on a critical hit."
+            },
+            {
+                "name": "Cudgel_ChargingStrike",
+                "displayName": "Charging Strike",
+                "cost": "100",
+                "attribute": "Strength",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Charging Strike.png",
+                "description": "When you charge with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled. When you charge with a cudgel and hit, you automatically daze your opponent.",
+                "requires": "Cleave | Charge"
+            },
+            {
+                "name": "Axe_Dismember",
+                "displayName": "Dismember",
+                "cost": "150",
+                "attribute": "Strength",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Dismember.png",
+                "description": "Activated; cooldown 30. Axe attack. If you hit and penetrate, you dismember one of their limbs at random and they start bleeding (1-2 damage per turn. toughness save; difficulty 35). Additionally, your axe attacks that penetrate have a percentage chance to dismember: 3% for one-handed axes and 6% for two-handed axes."
+            },
+            {
+                "name": "Axe_HookAndDrag",
+                "displayName": "Hook and Drag",
+                "cost": "150",
+                "attribute": "Strength",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Hook and Drag.png",
+                "description": "Activated; cooldown 50. You grab an opponent's limb with the heel of your axe. If successful, you pull your opponent with you as you move and make a free attack with your axe. Your opponent gets a chance to resist the move (strength save; difficulty 20 + your Str modifier) and a chance to break free at the start of their turn (same save). Lasts for 9 rounds or until you dismember the opponent."
+            },
+            {
+                "name": "Axe_Decapitate",
+                "displayName": "Decapitate",
+                "cost": "150",
+                "attribute": "Strength",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Decapitate.png",
+                "description": "Heads are added to the list of possible limbs you can dismember. Chopping off the only head of a creature kills them instantly. If the creature has multiple heads, they start bleeding profusely (2-3 damage per turn. toughness save; difficulty 35).",
+                "requires": "Dismember"
+            },
+            {
+                "name": "Axe_Berserk",
+                "displayName": "Berserk!",
+                "cost": "300",
+                "attribute": "Strength",
+                "minimum": "29",
+                "token": "/assets/images/Textures/Abilities/Berserk!.png",
+                "description": "Activated; cooldown 100.\r\nYou enter a blood frenzy, and for 5 rounds your chance to dismember with axe attacks is 100%. To use Berserk, Dismember must be off cooldown, and using Berserk puts Dismember on cooldown.",
+                "requires": "Dismember"
+            }
+        ]
+    },
+    {
+        "name": "Rifles",
+        "displayName": "Bow and Rifle",
+        "cost": "100",
+        "attribute": "Agility",
+        "token": "/assets/images/Textures/Abilities/Bow and Rifle.png",
+        "description": "You are skilled with bows and rifles.",
+        "categorySkills": [
+            {
+                "name": "Rifle_SteadyHands",
+                "displayName": "Steady Hands",
+                "cost": "0",
+                "attribute": "Agility",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Steady Hands.png",
+                "description": "For the purpose of determining your accuracy with bows and rifles, your agility is treated as if it were 4 points higher."
+            },
+            {
+                "name": "Rifle_DrawABead",
+                "displayName": "Draw a Bead",
+                "cost": "0",
+                "attribute": "Agility",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Draw a Bead.png",
+                "description": "You spend a turn to draw a bead on a target and mark it. Whenever you fire at a marked target with a bow or rifle, your agility is treated as if it were 2 points higher for the purpose of determining your accuracy. You may only mark one target at a time. Targets get unmarked if you lose vision of them."
+            },
+            {
+                "name": "Rifle_SuppressiveFire",
+                "displayName": "Suppressive Fire",
+                "cost": "150",
+                "attribute": "Agility",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Suppressive Fire.png",
+                "description": "You fire at a marked target. If your shot penetrates, your target is suppressed and can't move for 3-5 rounds. Then your target is unmarked.",
+                "requires": "Draw a Bead"
+            },
+            {
+                "name": "Rifle_FlatteningFire",
+                "displayName": "Flattening Fire",
+                "cost": "200",
+                "attribute": "Agility",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Flattening Fire.png",
+                "description": "As long as your target is surrounded by 6 or more solid obstacles, Suppressive Fire is upgraded to Flattening Fire. Flattening Fire also knocks your target prone and disarms them.",
+                "requires": "Draw a Bead"
+            },
+            {
+                "name": "Rifle_WoundingFire",
+                "displayName": "Wounding Fire",
+                "cost": "150",
+                "attribute": "Agility",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Wounding Fire.png",
+                "description": "You fire at a marked target. For each penetration on each shot that hits, your target bleeds 1 point of damage per round (save: 20 + max damage of the weapon). Then your target is unmarked.",
+                "requires": "Draw a Bead"
+            },
+            {
+                "name": "Rifle_DisorientingFire",
+                "displayName": "Disorienting Fire",
+                "cost": "200",
+                "attribute": "Agility",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Disorienting Fire.png",
+                "description": "As long as your target can't see or hear any faction allies, Wounding Fire is upgraded to Disorienting Fire. Disorienting Fire also reduces your target's DV and MA by 4.",
+                "requires": "Draw a Bead | Wounding Fire"
+            },
+            {
+                "name": "Rifle_SureFire",
+                "displayName": "Sure Fire",
+                "cost": "150",
+                "attribute": "Agility",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Sure Fire.png",
+                "description": "You fire at a marked target with no accuracy penalty (the accuracy of your weapon still matters). Then your target is unmarked.",
+                "requires": "Draw a Bead | Sure Fire"
+            },
+            {
+                "name": "Rifle_BeaconFire",
+                "displayName": "Beacon Fire",
+                "cost": "200",
+                "attribute": "Agility",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Beacon Fire.png",
+                "description": "As long as your target is flaming, luminous, or phosphorescent, Sure Fire is upgraded to Beacon Fire. Beacon Fire shots are also treated as critical hits.",
+                "requires": "Draw a Bead"
+            },
+            {
+                "name": "Rifle_OneShot",
+                "displayName": "Ultra Fire",
+                "cost": "300",
+                "attribute": "Agility",
+                "minimum": "29",
+                "token": "/assets/images/Textures/Abilities/Ultra Fire.png",
+                "description": "Cooldown 100. You fire at a marked target. Your shot combines the effects of all the other Fire powers you have."
+            }
+        ]
+    },
+    {
+        "name": "CookingAndGathering",
+        "displayName": "Cooking and Gathering",
+        "cost": "100",
+        "attribute": "Intelligence",
+        "token": "/assets/images/Textures/Abilities/Cooking and Gathering.png",
+        "description": "You are skilled at cooking and gathering meal ingredients.",
+        "categorySkills": [
+            {
+                "name": "CookingAndGathering_MealPreparation",
+                "displayName": "Meal Preparation",
+                "cost": "0",
+                "attribute": "Intelligence",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Abilities/Meal Preparation.png",
+                "description": "While at a campfire, you can cook from recipes, choose up to two ingredients to cook with, and preserve fresh foods.\r\nMeals cooked from recipes bestow special status effects. Meals cooked with selected ingredients bestow dynamically-generated status effects.\r\nPreserved foods are used as meal ingredients."
+            },
+            {
+                "name": "CookingAndGathering_Harvestry",
+                "displayName": "Harvestry",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Abilities/Harvestry.png",
+                "description": "You can harvest fresh ingredients and other usable parts from plants."
+            },
+            {
+                "name": "CookingAndGathering_Butchery",
+                "displayName": "Butchery",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Abilities/Butchery.png",
+                "description": "You can butcher fresh ingredients and other usable parts from animal corpses."
+            },
+            {
+                "name": "CookingAndGathering_Spicer",
+                "displayName": "Spicer",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Spicer.png",
+                "description": "When you choose ingredients to cook with, you can choose up to three instead of two. Meals cooked with three ingredients bestow more powerful status effects."
+            },
+            {
+                "name": "CookingAndGathering_CarbideChef",
+                "displayName": "Carbide Chef",
+                "cost": "100",
+                "attribute": "Intelligence",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Carbide Chef.png",
+                "description": "Whenever you gain a level, and 5% of the time you explore a new map, you become inspired for two days. While inspired, the next time you cook a meal by choosing ingredients, you get a choice of three dynamically-generated effects to apply. You create a recipe for the chosen effect."
+            }
+        ]
+    },
+    {
+        "name": "Cudgel",
+        "displayName": "Cudgel",
+        "cost": "50",
+        "attribute": "Strength",
+        "token": "/assets/images/Textures/Abilities/Cudgel.png",
+        "description": "You are skilled with crushing and bludgeoning weapons.",
+        "categorySkills": [
+            {
+                "name": "Cudgel_Expertise",
+                "displayName": "Cudgel Proficiency",
+                "cost": "0",
+                "attribute": "Strength",
+                "minimum": "0",
+                "token": "/assets/images/Textures/Abilities/Cudgel Proficiency.png",
+                "description": "You get +2 to hit with cudgels."
+            },
+            {
+                "name": "Cudgel_Bludgeon",
+                "displayName": "Bludgeon",
+                "cost": "150",
+                "attribute": "Strength",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Bludgeon.png",
+                "description": "Whenever you hit with a cudgel, there's a 50% chance to daze your opponent (-4 int, -4 agi, -10 movespeed) for 3-4 rounds. If you daze a dazed opponent, they're stunned for 1 round instead (cannot take actions and 0 DV)."
+            },
+            {
+                "name": "Cudgel_ChargingStrike",
+                "displayName": "Charging Strike",
+                "cost": "100",
+                "attribute": "Strength",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Charging Strike.png",
+                "description": "When you charge with a cudgel and hit, you automatically daze your opponent. When you charge with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled.",
+                "requires": "Bludgeon | Charge"
+            },
+            {
+                "name": "Cudgel_Conk",
+                "displayName": "Conk",
+                "cost": "150",
+                "attribute": "Strength",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Conk.png",
+                "description": "Activated; cooldown 10.\r\nYou make an attack with a cudgel at an adjacent opponent. If you hit, you automatically daze them for 3-4 rounds. Dazing a dazed opponent stuns them. Conking a stunned opponent instead knocks them unconscious for 30-40 rounds (unconscious opponents wake up dazed when they take damage).",
+                "requires": "Bludgeon"
+            },
+            {
+                "name": "Cudgel_Backswing",
+                "displayName": "Backswing",
+                "cost": "100",
+                "attribute": "Strength",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Backswing.png",
+                "description": "Whenever you make a cudgel attack with your primary hand, there's a 25% chance you make an additional free attack with the same hand."
+            },
+            {
+                "name": "Cudgel_Slam",
+                "displayName": "Slam",
+                "cost": "150",
+                "attribute": "Strength",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Slam.png",
+                "description": "Activated; cooldown 50. You make an attack with a cudgel at an adjacent opponent with +1 to your penetration roll. If you hit, you slam your opponent backwards up to 3 spaces, pushing other creatures and breaking through walls if their AVs are less than 5 times your Strength modifier. Opponents who get pushed are stunned for 1 round plus an additional round for each space pushed. Opponents who are pushed through or against walls take extra weapon damage for each wall. Gigantic opponents don't get pushed but are still stunned for 1 round. Destroys a wall or door if its AV is under 5 times your Strength modifier."
+            },
+            {
+                "name": "Cudgel_SmashUp",
+                "displayName": "Demolish",
+                "cost": "300",
+                "attribute": "Strength",
+                "minimum": "29",
+                "token": "/assets/images/Textures/Abilities/Demolish.png",
+                "description": "Activated; cooldown 100.\r\nFor the next 5 rounds, your chance to daze with cudgel attacks is 100% and Slam has no cooldown. To use Demolish, Slam must be off cooldown, and using Demolish puts Slam on cooldown.",
+                "requires": "Slam"
+            }
+        ]
+    },
+    {
+        "name": "Customs",
+        "displayName": "Customs and Folklore",
+        "cost": "150",
+        "attribute": "Intelligence",
+        "token": "/assets/images/Textures/Abilities/Customs and Folklore.png",
+        "description": "You are familiar with the customs and folklore of Qud.",
+        "categorySkills": [
+            {
+                "name": "Customs_Tactful",
+                "displayName": "Tactful",
+                "cost": "0",
+                "attribute": "Intelligence",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Tactful.png",
+                "description": "Whenever you begin the water ritual with a new creature, you gain 25 bonus reputation. If you purchase this power after you treat with a creature, you gain 25 bonus reputation the next time you treat with them."
+            },
+            {
+                "name": "Customs_TrashDivining",
+                "displayName": "Trash Divining",
+                "cost": "150",
+                "attribute": "Intelligence",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Trash Divining.png",
+                "description": "Whenever you rifle through trash, there's a 5% chance you piece together clues and learn a random secret."
+            }
+        ]
+    },
+    {
+        "name": "SingleWeaponFighting",
+        "displayName": "Single Weapon Fighting",
+        "cost": "100",
+        "attribute": "Agility|Strength",
+        "token": "/assets/images/Textures/Abilities/Single Weapon Fighting.png",
+        "description": "You may choose not to make offhand attacks in exchange for mastery with a single weapon.",
+        "categorySkills": [
+            {
+                "name": "SingleWeaponFighting_OpportuneAttacks",
+                "displayName": "Opportune Attacks",
+                "cost": "0",
+                "attribute": "Agility|Strength",
+                "minimum": "17|17",
+                "token": "/assets/images/Textures/Abilities/Opportune Attacks.png",
+                "description": "Whenever you score a critical hit with a melee weapon while single-weapon fighting, the cooldowns of up to two random weapon or shield skills are immediately refreshed."
+            },
+            {
+                "name": "SingleWeaponFighting_WeaponExpertise",
+                "displayName": "Weapon Expertise",
+                "cost": "150",
+                "attribute": "Agility|Strength",
+                "minimum": "21|21",
+                "token": "/assets/images/Textures/Abilities/Weapon Expertise.png",
+                "description": "Whenever you make a melee attack while single-weapon fighting, there's a 50% chance you immediately make a second attack for free."
+            },
+            {
+                "name": "SingleWeaponFighting_PenetratingStrikes",
+                "displayName": "Penetrating Strikes",
+                "cost": "200",
+                "attribute": "Agility|Strength",
+                "minimum": "23|23",
+                "token": "/assets/images/Textures/Abilities/Penetrating Strikes.png",
+                "description": "While single-weapon fighting, your melee attacks always penetrate one extra time."
+            },
+            {
+                "name": "SingleWeaponFighting_WeaponMastery",
+                "displayName": "Weapon Mastery",
+                "cost": "300",
+                "attribute": "Agility|Strength",
+                "minimum": "29|29",
+                "token": "/assets/images/Textures/Abilities/Weapon Mastery.png",
+                "description": "Whenever you make a melee attack while single-weapon fighting, immediately make a second attack for free.",
+                "requires": "Weapon Expertise"
+            }
+        ]
+    },
+    {
+        "name": "Multiweapon_Fighting",
+        "displayName": "Multiweapon Fighting",
+        "cost": "150",
+        "attribute": "Agility",
+        "token": "/assets/images/Textures/Abilities/Multiweapon Fighting.png",
+        "description": "You are skilled at multiweapon fighting. Your chance to attack with offhand weapons is increased.",
+        "categorySkills": [
+            {
+                "name": "Multiweapon_Flurry",
+                "displayName": "Flurry",
+                "cost": "0",
+                "attribute": "Agility|Strength",
+                "minimum": "17|17",
+                "token": "/assets/images/Textures/Abilities/Flurry.png",
+                "description": "Activated; cooldown 60. You make an attack with every weapon-wielding limb, including extra limbs granted by mutation or technology."
+            },
+            {
+                "name": "Multiweapon_Proficiency",
+                "displayName": "Multiweapon Proficiency",
+                "cost": "0",
+                "attribute": "Agility|Strength",
+                "minimum": "17|17",
+                "token": "/assets/images/Textures/Abilities/Multiweapon Proficiency.png",
+                "description": "Your chance to strike with each of your offhand weapons is increased by 20%."
+            },
+            {
+                "name": "Multiweapon_Expertise",
+                "displayName": "Multiweapon Expertise",
+                "cost": "150",
+                "attribute": "Agility|Strength",
+                "minimum": "23|23",
+                "token": "/assets/images/Textures/Abilities/Multiweapon Expertise.png",
+                "description": "Your chance to strike with each of your offhand weapons is increased by 35%.",
+                "requires": "Multiweapon Proficiency"
+            },
+            {
+                "name": "Multiweapon_Mastery",
+                "displayName": "Multiweapon Mastery",
+                "cost": "200",
+                "attribute": "Agility|Strength",
+                "minimum": "27|27",
+                "token": "/assets/images/Textures/Abilities/Multiweapon Mastery.png",
+                "description": "Your chance to strike with each of your offhand weapons is increased by 50%.",
+                "requires": "Multiweapon Expertise"
+            }
+        ]
+    },
+    {
+        "name": "Endurance",
+        "displayName": "Endurance",
+        "cost": "100",
+        "attribute": "Toughness",
+        "token": "/assets/images/Textures/Abilities/Endurance.png",
+        "description": "You are skilled at enduring harsh conditions and situations.",
+        "categorySkills": [
+            {
+                "name": "Endurance_ShakeItOff",
+                "displayName": "Shake It Off",
+                "cost": "0",
+                "attribute": "Toughness",
+                "minimum": "0",
+                "token": "/assets/images/Textures/Abilities/Shake It Off.png",
+                "description": "Each round you are dazed or stunned, you have a (Toughness-10)% chance to shake off the effect. You also take 25% less damage from poison."
+            },
+            {
+                "name": "Endurance_Swimming",
+                "displayName": "Swimming",
+                "cost": "100",
+                "attribute": "Toughness",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Abilities/Swimming.png",
+                "description": "Reduces the movement speed penalty when swimming (normally 50 points) by 25 points."
+            },
+            {
+                "name": "Endurance_PoisonTolerance",
+                "displayName": "Poison Tolerance",
+                "cost": "100",
+                "attribute": "Toughness",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Poison Tolerance.png",
+                "description": "You take 25% less damage from poison."
+            },
+            {
+                "name": "Endurance_Weathered",
+                "displayName": "Weathered",
+                "cost": "200",
+                "attribute": "Toughness",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Weathered.png",
+                "description": "You take 15% less damage from heating and cooling effects. Additionally, the severities of effects that change your temperature are reduced by 15%."
+            },
+            {
+                "name": "Endurance_Juicer",
+                "displayName": "Juicer",
+                "cost": "150",
+                "attribute": "Toughness",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Juicer.png",
+                "description": "You may ingest one additional tonic without it reacting adversely to the tonic you have already ingested."
+            },
+            {
+                "name": "Endurance_Calloused",
+                "displayName": "Calloused",
+                "cost": "200",
+                "attribute": "Toughness",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Calloused.png",
+                "description": "Your natural AV improves to 1."
+            },
+            {
+                "name": "Endurance_Longstrider",
+                "displayName": "Longstrider",
+                "cost": "250",
+                "attribute": "Toughness",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Longstrider.png",
+                "description": "You may sprint for an additional 10 turns."
+            }
+        ]
+    },
+    {
+        "name": "Physic",
+        "displayName": "Physic",
+        "cost": "50",
+        "attribute": "Intelligence",
+        "token": "/assets/images/Textures/Abilities/Physic.png",
+        "description": "You are skilled at physicking.",
+        "categorySkills": [
+            {
+                "name": "Physic_StaunchWounds",
+                "displayName": "Staunch Wounds",
+                "cost": "0",
+                "attribute": "Intelligence",
+                "minimum": "0",
+                "token": "/assets/images/Textures/Abilities/Staunch Wounds.png",
+                "description": "Bandages you apply are much more effective at stopping bleeding."
+            },
+            {
+                "name": "Physic_Nostrums",
+                "displayName": "Nostrums",
+                "cost": "100",
+                "attribute": "Intelligence",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Nostrums.png",
+                "description": "You can treat bleeding, poison, illness, and disease onset for you and your companions at a campfire."
+            },
+            {
+                "name": "Physic_AmputateLimb",
+                "displayName": "Amputate Limb",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Amputate Limb.png",
+                "description": "You can voluntarily amputate your own limbs and the limbs of infected companions."
+            },
+            {
+                "name": "Physic_Apothecary",
+                "displayName": "Apothecary",
+                "cost": "100",
+                "attribute": "Intelligence",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Apothecary.png",
+                "description": "Healing tonics you apply last an extra round."
+            }
+        ]
+    },
+    {
+        "name": "HeavyWeapons",
+        "displayName": "Heavy Weapon",
+        "cost": "100",
+        "attribute": "Strength",
+        "token": "/assets/images/Textures/Abilities/Heavy Weapon.png",
+        "description": "You are skilled with heavy weapons.",
+        "categorySkills": [
+            {
+                "name": "HeavyWeapons_StrappingShoulders",
+                "displayName": "Strapping Shoulders",
+                "cost": "0",
+                "attribute": "Strength",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Strapping Shoulders.png",
+                "description": "You shoulder your weapons more effectively. Heavy weapons count for half their weight toward your encumbrance."
+            },
+            {
+                "name": "HeavyWeapons_Tank",
+                "displayName": "Tank",
+                "cost": "150",
+                "attribute": "Strength",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Tank.png",
+                "description": "You suffer no movement penalty while wielding a heavy weapon."
+            },
+            {
+                "name": "HeavyWeapons_Sweep",
+                "displayName": "Sweep",
+                "cost": "200",
+                "attribute": "Strength",
+                "minimum": "27",
+                "token": "/assets/images/Textures/Abilities/Sweep.png",
+                "description": "You fire 5 shots with your heavy weapon, sweeping over a 90 degree cone. Your heavy weapon is reloaded before each shot."
+            }
+        ]
+    },
+    {
+        "name": "LongBlades",
+        "displayName": "Long Blade",
+        "cost": "100",
+        "attribute": "Agility",
+        "token": "/assets/images/Textures/Abilities/Long Blade.png",
+        "description": "You are skilled with long thrusting and slashing blades.",
+        "categorySkills": [
+            {
+                "name": "LongBladesProficiency",
+                "displayName": "Long Blade Proficiency",
+                "cost": "0",
+                "attribute": "Strength",
+                "minimum": "0",
+                "token": "/assets/images/Textures/Abilities/Long Blade Proficiency.png",
+                "description": "You gain access to two stances.\r\nAggressive stance: With a long blade in your primary hand, your long blade and short blade attacks gain +1 to your penetration roll but -2 to hit.\r\nDefensive stance: While wielding a long blade in your primary hand, you gain +2 DV."
+            },
+            {
+                "name": "LongBladesLunge",
+                "displayName": "Lunge",
+                "cost": "200",
+                "attribute": "Agility",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Lunge.png",
+                "description": "Activated; cooldown 15.\r\nAggressive stance: Lunge through an empty space at an opponent and attack with +2 to your penetration roll. You must move through the empty space.\r\nDefensive stance: Attack an opponent then lunge backward 2 spaces.\r\nDueling stance: Attack an opponent with +1 to your penetration roll. The attack is guaranteed to hit and penetrate at least once."
+            },
+            {
+                "name": "LongBladesSwipe",
+                "displayName": "Swipe",
+                "cost": "200",
+                "attribute": "Strength",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Swipe.png",
+                "description": "Activated; cooldown 15.\r\nAggressive stance: Make an attack against all adjacent opponents.\r\nDefensive stance: Push all adjacent creatures back 1 space and attempt to trip opponents (strength/agility save; difficulty 30).\r\nDueling stance: Attack an opponent and attempt to disarm them (strength save; difficulty 25 + your Agi modifier). The attack is guaranteed to hit and penetrate at least once."
+            },
+            {
+                "name": "LongBladesDuelingStance",
+                "displayName": "Dueling Stance",
+                "cost": "200",
+                "attribute": "Intelligence",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Dueling Stance.png",
+                "description": "You gain access to dueling stance. While wielding a long blade in your primary hand, you get +2 to hit with long blades and short blades."
+            },
+            {
+                "name": "LongBladesImprovedAggressiveStance",
+                "displayName": "Improved Aggressive Stance",
+                "cost": "100",
+                "attribute": "Strength",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Improved Aggressive Stance.png",
+                "description": "Your penetration bonus in aggressive stance is increased to +2, but your to-hit penalty is increased to -3."
+            },
+            {
+                "name": "LongBladesImprovedDefensiveStance",
+                "displayName": "Improved Defensive Stance",
+                "cost": "100",
+                "attribute": "Agility",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Improved Defensive Stance.png",
+                "description": "Your DV bonus in defensive stance is increased to +3."
+            },
+            {
+                "name": "LongBladesImprovedDuelistStance",
+                "displayName": "Improved Dueling Stance",
+                "cost": "100",
+                "attribute": "Intelligence",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Improved Dueling Stance.png",
+                "description": "Your to-hit bonus in dueling stance is increased to +3.",
+                "requires": "Dueling Stance"
+            },
+            {
+                "name": "LongBladesDeathblow",
+                "displayName": "En Garde!",
+                "cost": "300",
+                "attribute": "Strength,Agility|Agility,Strength",
+                "minimum": "29,23|29,23",
+                "token": "/assets/images/Textures/Abilities/En Garde!.png",
+                "description": "Activated; cooldown 100. For the next 10 rounds, Lunge and Swipe have no cooldown."
+            }
+        ]
+    },
+    {
+        "name": "Persuasion",
+        "displayName": "Persuasion",
+        "cost": "100",
+        "attribute": "Ego",
+        "token": "/assets/images/Textures/Abilities/Persuasion.png",
+        "description": "You are skilled at convincing others.",
+        "categorySkills": [
+            {
+                "name": "Persuasion_MenacingStare",
+                "displayName": "Menacing Stare",
+                "cost": "0",
+                "attribute": "Ego",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Menacing Stare.png",
+                "description": "You stare down a nearby opponent and send them fleeing in terror."
+            },
+            {
+                "name": "Persuasion_Intimidate",
+                "displayName": "Intimidate",
+                "cost": "200",
+                "attribute": "Ego",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Intimidate.png",
+                "description": "Cooldown 50. You try to terrify adjacent, hostile creatures (1d8 + [Ego modifier] penetration roll vs. MA). On success, a frightened creature flees from you for 6d4 rounds."
+            },
+            {
+                "name": "Persuasion_Berate",
+                "displayName": "Berate",
+                "cost": "150",
+                "attribute": "Ego",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Berate.png",
+                "description": "Cooldown 50. You shame a nearby creature for 6d6 rounds, giving it a -4 penalty to DV, to-hit, Ego, Willpower and a -10% penalty to quickness."
+            },
+            {
+                "name": "Persuasion_SnakeOiler",
+                "displayName": "Snake Oiler",
+                "cost": "150",
+                "attribute": "Ego",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Snake Oiler.png",
+                "description": "For purposes of bartering, your ego is treated as though it were 4 points higher."
+            },
+            {
+                "name": "Persuasion_Proselytize",
+                "displayName": "Proselytize",
+                "cost": "300",
+                "attribute": "Ego",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Proselytize.png",
+                "description": "You persuade an intelligent creature to join you."
+            },
+            {
+                "name": "Persuasion_InspiringPresence",
+                "displayName": "Inspiring Presence",
+                "cost": "250",
+                "attribute": "Ego",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Inspiring Presence.png",
+                "description": "Your words embolden your companions."
+            }
+        ]
+    },
+    {
+        "name": "Pistol",
+        "displayName": "Pistol",
+        "cost": "100",
+        "attribute": "Agility",
+        "token": "/assets/images/Textures/Abilities/Pistol.png",
+        "description": "You are skilled with pistols of various kinds.",
+        "categorySkills": [
+            {
+                "name": "Pistol_SteadyHands",
+                "displayName": "Steady Hand",
+                "cost": "0",
+                "attribute": "Agility",
+                "minimum": "0",
+                "token": "/assets/images/Textures/Abilities/Steady Hand.png",
+                "description": "For purposes of determining your accuracy with pistols, your agility is treated as if it were 4 points higher."
+            },
+            {
+                "name": "Pistol_Akimbo",
+                "displayName": "Akimbo",
+                "cost": "150",
+                "attribute": "Agility",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Akimbo.png",
+                "description": "Whenever you make a ranged attack while wielding multiple guns, you fire a shot with each of them."
+            },
+            {
+                "name": "Pistol_WeakSpotter",
+                "displayName": "Weak Spotter",
+                "cost": "150",
+                "attribute": "Agility",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Weak Spotter.png",
+                "description": "You are 5% more likely to score critical hits with pistols (standard chance is 5%)."
+            },
+            {
+                "name": "Pistol_SlingAndRun",
+                "displayName": "Sling and Run",
+                "cost": "50",
+                "attribute": "Agility",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Sling and Run.png",
+                "description": "You receive no accuracy penalties for firing pistols while running."
+            },
+            {
+                "name": "Pistol_DisarmingShot",
+                "displayName": "Disarming Shot",
+                "cost": "100",
+                "attribute": "Agility",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Disarming Shot.png",
+                "description": "You have an agility-based chance to disarm your opponent when you score a hit with a pistol."
+            },
+            {
+                "name": "Pistol_DeadShot",
+                "displayName": "Dead Shot",
+                "cost": "200",
+                "attribute": "Agility",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Dead Shot.png",
+                "description": "Critical hits you score with pistols are more deadly."
+            },
+            {
+                "name": "Pistol_EmptyTheClips",
+                "displayName": "Empty the Clips",
+                "cost": "300",
+                "attribute": "Agility",
+                "minimum": "27",
+                "token": "/assets/images/Textures/Abilities/Empty the Clips.png",
+                "description": "Cooldown 200. For 20 rounds, firing a pistol only takes half a round instead of a full round."
+            },
+            {
+                "name": "Pistol_FastestGun",
+                "displayName": "Fastest Gun in the Rust",
+                "cost": "400",
+                "attribute": "Agility",
+                "minimum": "29",
+                "token": "/assets/images/Textures/Abilities/Fastest Gun in the Rust.png",
+                "description": "The action cost of firing pistols is reduced by 25%."
+            }
+        ]
+    },
+    {
+        "name": "Discipline",
+        "displayName": "Self-discipline",
+        "cost": "150",
+        "attribute": "Willpower",
+        "token": "/assets/images/Textures/Abilities/Self-discipline.png",
+        "description": "You are skilled at maintaining self-discipline.",
+        "categorySkills": [
+            {
+                "name": "Discipline_Meditate",
+                "displayName": "Meditate",
+                "cost": "0",
+                "attribute": "Willpower",
+                "minimum": "0",
+                "token": "/assets/images/Textures/Abilities/Meditate.png",
+                "description": "While meditating, you regenerate three times as fast, and negative status effects wear out three times as fast. The only action you can take while meditating is Wait. You stop meditating if you take damage in a single round exceeding (Willpower*3)-60. If you rest for 10 or more turns, you automatically begin meditating."
+            },
+            {
+                "name": "Discipline_FastingWay",
+                "displayName": "Fasting Way",
+                "cost": "50",
+                "attribute": "Willpower",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Fasting Way.png",
+                "description": "You hunger and thirst at one-half the normal rate.\r\nMetabolic effects from meals last twice as long."
+            },
+            {
+                "name": "Discipline_IronMind",
+                "displayName": "Iron Mind",
+                "cost": "100",
+                "attribute": "Willpower",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Iron Mind.png",
+                "description": "Each round you are confused, you have a (Willpower-10)% chance to shake off the effect."
+            },
+            {
+                "name": "Discipline_Lionheart",
+                "displayName": "Lionheart",
+                "cost": "100",
+                "attribute": "Willpower",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Lionheart.png",
+                "description": "Each round you are terrified, you have a (Willpower-10)% chance to shake off the effect."
+            },
+            {
+                "name": "Discipline_Conatus",
+                "displayName": "Conatus",
+                "cost": "150",
+                "attribute": "Willpower",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Conatus.png",
+                "description": "You may sprint for an additional 10 turns."
+            },
+            {
+                "name": "Discipline_MindOverBody",
+                "displayName": "Mind over Body",
+                "cost": "150",
+                "attribute": "Willpower",
+                "minimum": "29",
+                "token": "/assets/images/Textures/Abilities/Mind over Body.png",
+                "description": "You hunger and thirst at one-sixth rate.\r\nMetabolic effects from meals last six times as long.\r\nYou suffer no penalty for becoming famished."
+            }
+        ]
+    },
+    {
+        "name": "Shield",
+        "displayName": "Shield",
+        "cost": "100",
+        "attribute": "Strength",
+        "token": "/assets/images/Textures/Abilities/Shield.png",
+        "description": "You are skilled at wielding shields.",
+        "categorySkills": [
+            {
+                "name": "Shield_Block",
+                "displayName": "Block",
+                "cost": "0",
+                "attribute": "Strength",
+                "minimum": "0",
+                "token": "/assets/images/Textures/Abilities/Block.png",
+                "description": "As long as you wield a shield, there is a 50% chance you block one melee attack per round. When you block an attack, you add the shield's AV bonus to your AV for that attack. If you equip multiple shields, the one block per round limit is per shield, and you only can attempt to block a given attack once, using your best usable shield."
+            },
+            {
+                "name": "Shield_Slam",
+                "displayName": "Shield Slam",
+                "cost": "100",
+                "attribute": "Strength",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Shield Slam.png",
+                "description": "Activated; cooldown 40. You attempt to knock an opponent down and deal (Str modifier)d2 + your shield's AV bonus in damage. Your opponent gets a chance to resist (strength save; difficulty 20 + your Str modifier). Whenever you charge an opponent with a shield equipped, you get a free Shield Slam attack against them."
+            },
+            {
+                "name": "Shield_DeftBlocking",
+                "displayName": "Deft Blocking",
+                "cost": "200",
+                "attribute": "Agility",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Deft Blocking.png",
+                "description": "Your chance to block with a shield improves to 75%."
+            },
+            {
+                "name": "Shield_SwiftBlocking",
+                "displayName": "Swift Blocking",
+                "cost": "200",
+                "attribute": "Agility",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Swift Blocking.png",
+                "description": "You may block an additional attack per round per shield."
+            },
+            {
+                "name": "Shield_StaggeringBlock",
+                "displayName": "Staggering Block",
+                "cost": "200",
+                "attribute": "Strength",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Staggering Block.png",
+                "description": "Whenever you block an opponent's attack, there is a (Strength*2)-35% chance that your opponent is stunned for 1d2 rounds."
+            },
+            {
+                "name": "Shield_ShieldWall",
+                "displayName": "Shield Wall",
+                "cost": "200",
+                "attribute": "Willpower",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Shield Wall.png",
+                "description": "For the next three rounds, you automatically block all incoming melee attacks (may not be used with bucklers)."
+            }
+        ]
+    },
+    {
+        "name": "ShortBlades",
+        "displayName": "Short Blade",
+        "cost": "50",
+        "attribute": "Agility",
+        "token": "/assets/images/Textures/Abilities/Short Blade.png",
+        "description": "You are skilled with small one-handed knives and blades.",
+        "categorySkills": [
+            {
+                "name": "ShortBlades_Expertise",
+                "displayName": "Short Blade Expertise",
+                "cost": "0",
+                "attribute": "Agility",
+                "minimum": "0",
+                "token": "/assets/images/Textures/Abilities/Short Blade Expertise.png",
+                "description": "You get +1 to hit with short blades. Also, the action costs of attacking with a short blade in your primary hand is reduced by 25%."
+            },
+            {
+                "name": "ShortBlades_Bloodletter",
+                "displayName": "Bloodletter",
+                "cost": "150",
+                "attribute": "Agility",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Bloodletter.png",
+                "description": "Your short blade attacks that penetrate have a 75% chance to cause your opponent to bleed (0-1 damage per turn. toughness save; difficulty 20 + your Agi modifier). The opponent saves to stop bleeding each round, and the save difficulty decreases by 1 each round. This effect can stack a number of times equal to 1 plus your Agi modifier."
+            },
+            {
+                "name": "ShortBlades_Jab",
+                "displayName": "Jab",
+                "cost": "100",
+                "attribute": "Agility",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Jab.png",
+                "description": "Whenever you make an offhand attack with a short blade, you immediately make another attack with that same weapon. Flurry attacks do not trigger this."
+            },
+            {
+                "name": "ShortBlades_Hobble",
+                "displayName": "Hobble",
+                "cost": "150",
+                "attribute": "Agility",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Hobble.png",
+                "description": "You make an attack with a short blade in your primary hand, looking for a weak spot in your opponent's armor. If you hit, you penetrate exactly once and hobble them (-50% movespeed for 16-20 rounds)."
+            },
+            {
+                "name": "ShortBlades_PointedCircle",
+                "displayName": "Pointed Circle",
+                "cost": "100",
+                "attribute": "Agility",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Pointed Circle.png",
+                "description": "Whenever you juke an opponent while wielding a short blade in your primary hand, you make a free attack. If you have Bloodletter, the attack's chance to cause bleeding is 100%.",
+                "requires": "Juke"
+            },
+            {
+                "name": "ShortBlades_Rejoinder",
+                "displayName": "Rejoinder",
+                "cost": "250",
+                "attribute": "Agility",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Rejoinder.png",
+                "description": "Once per turn, when an opponent misses you with a melee attack, there's a 40% chance you make a free attack with a short blade you're wielding."
+            },
+            {
+                "name": "ShortBlades_Shank",
+                "displayName": "Shank",
+                "cost": "250",
+                "attribute": "Agility",
+                "minimum": "27",
+                "token": "/assets/images/Textures/Abilities/Shank.png",
+                "description": "Activated; cooldown 10 (primary) or 20 (offhand). You make a melee attack with a short blade in your primary hand (preferred) or offhand. If you hit, the attack gets +2 to penetration rolls for each negative status effect your opponent suffers from."
+            }
+        ]
+    },
+    {
+        "name": "Tactics",
+        "displayName": "Tactics",
+        "cost": "50",
+        "attribute": "Agility",
+        "token": "/assets/images/Textures/Abilities/Tactics.png",
+        "description": "You are aware of basic combat tactics.",
+        "categorySkills": [
+            {
+                "name": "Tactics_Hurdle",
+                "displayName": "Hurdle",
+                "cost": "0",
+                "attribute": "Agility",
+                "minimum": "0",
+                "token": "/assets/images/Textures/Abilities/Hurdle.png",
+                "description": "You receive no penalty to your DV while sprinting and can jump without interrupting your sprint."
+            },
+            {
+                "name": "Tactics_Throwing",
+                "displayName": "Deft Throwing",
+                "cost": "50",
+                "attribute": "Agility",
+                "minimum": "10",
+                "token": "/assets/images/Textures/Abilities/Deft Throwing.png",
+                "description": "Your throw range is increased by 3 and your throw variance is halved when throwing at a target inside your throw range."
+            },
+            {
+                "name": "Tactics_Charge",
+                "displayName": "Charge",
+                "cost": "150",
+                "attribute": "Strength",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Charge.png",
+                "description": "You charge forward two or three squares and perform a melee attack with +1 to your penetration roll."
+            },
+            {
+                "name": "Tactics_Kickback",
+                "displayName": "Kickback",
+                "cost": "50",
+                "attribute": "Strength",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Kickback.png",
+                "description": "Whenever you fire a missile weapon at a target in melee range, you attempt to kick the target backwards."
+            },
+            {
+                "name": "Tactics_Juke",
+                "displayName": "Juke",
+                "cost": "200",
+                "attribute": "Agility",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Juke.png",
+                "description": "Activated; cooldown 40. You move one square at no action cost. You may swap squares with a hostile opponent."
+            }
+        ]
+    },
+    {
+        "name": "Tinkering",
+        "displayName": "Tinkering",
+        "cost": "100",
+        "attribute": "Intelligence",
+        "token": "/assets/images/Textures/Abilities/Tinkering.png",
+        "description": "You are skilled at examining, building, repairing and modding artifacts.",
+        "categorySkills": [
+            {
+                "name": "Tinkering_GadgetInspector",
+                "displayName": "Gadget Inspector",
+                "cost": "0",
+                "attribute": "Intelligence",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Abilities/Gadget Inspector.png",
+                "description": "You are much more successful at examining artifacts, and you can deploy wiring."
+            },
+            {
+                "name": "Tinkering_Disassemble",
+                "displayName": "Disassemble",
+                "cost": "100",
+                "attribute": "Intelligence",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Abilities/Disassemble.png",
+                "description": "You can disassemble scrap and artifacts for bits. You get the most significant bit from the item schematic plus a 50% chance to receive each remaining bit."
+            },
+            {
+                "name": "Tinkering_ReverseEngineer",
+                "displayName": "Reverse Engineer",
+                "cost": "100",
+                "attribute": "Intelligence",
+                "minimum": "25",
+                "token": "/assets/images/Textures/Abilities/Reverse Engineer.png",
+                "description": "Whenever you disassemble an item, you have a 25% chance to learn how to build the item. If the item was modded, you also have a 15% chance per mod to learn the mod.",
+                "requires": "Disassemble"
+            },
+            {
+                "name": "Tinkering_Scavenger",
+                "displayName": "Scavenger",
+                "cost": "100",
+                "attribute": "Intelligence",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Abilities/Scavenger.png",
+                "description": "Whenever you step over garbage, you astutely rifle through it and occasionally discover scrap. Additionally, you harvest extra scrap from robots you destroy."
+            },
+            {
+                "name": "Tinkering_Repair",
+                "displayName": "Repair",
+                "cost": "100",
+                "attribute": "Intelligence",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Items/Repair.png",
+                "description": "You may repair broken items with Bits."
+            },
+            {
+                "name": "Tinkering_DeployTurret",
+                "displayName": "Deploy Turret",
+                "cost": "100",
+                "attribute": "Intelligence",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Deploy Turret.png",
+                "description": "You may deploy missile weapons as static turrets."
+            },
+            {
+                "name": "Tinkering_LayMine",
+                "displayName": "Lay Mine / Set Bomb",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Lay Mine  Set Bomb.png",
+                "description": "You may lay down grenades as mines or set them as bombs."
+            },
+            {
+                "name": "Tinkering_Tinker1",
+                "displayName": "Tinker I",
+                "cost": "100",
+                "attribute": "Intelligence",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Tinker I.png",
+                "description": "You may build items from low-tier schematics and you get 1 free schematic. You can also recharge energy cells and capacitors."
+            },
+            {
+                "name": "Tinkering_Tinker2",
+                "displayName": "Tinker II",
+                "cost": "200",
+                "attribute": "Intelligence",
+                "minimum": "23",
+                "token": "/assets/images/Textures/Abilities/Tinker II.png",
+                "description": "You may build items from medium-tier schematics and you get 1 free schematic.",
+                "requires": "Tinker I"
+            },
+            {
+                "name": "Tinkering_Tinker3",
+                "displayName": "Tinker III",
+                "cost": "300",
+                "attribute": "Intelligence",
+                "minimum": "29",
+                "token": "/assets/images/Textures/Abilities/Tinker III.png",
+                "description": "You may build items from high-tier schematics and you get 1 free schematic.",
+                "requires": "Tinker II"
+            }
+        ]
+    },
+    {
+        "name": "Survival",
+        "displayName": "Wayfaring",
+        "cost": "100",
+        "attribute": "Intelligence",
+        "token": "/assets/images/Textures/Abilities/Wayfaring.png",
+        "description": "You are skilled at wilderness survival.",
+        "categorySkills": [
+            {
+                "name": "Survival_Camp",
+                "displayName": "Make Camp",
+                "cost": "0",
+                "attribute": "Intelligence",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Items/Make Camp.png",
+                "description": "Start a campfire for cooking meals and preserving foods."
+            },
+            {
+                "name": "Survival_Trailblazer",
+                "displayName": "Mind's Compass",
+                "cost": "0",
+                "attribute": "Intelligence",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Abilities/Minds Compass.png",
+                "description": "Doubles the chance of regaining your bearings when you are lost.\r\nReduces chance of getting lost by about 15%.\r\nYou travel on the world map twice as quickly."
+            },
+            {
+                "name": "Survival_PlainsSurvival",
+                "displayName": "Wilderness Lore: Flower Fields",
+                "cost": "25",
+                "attribute": "Intelligence",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Abilities/Wilderness Lore Flower Fields.png",
+                "description": "Doubles the chance of interesting encounters while traveling through the flower fields on the world map.\r\nReduces the chance of getting lost in the flower fields from base 12% to 1%.\r\nOn the world map, you travel through the flower fields twice as quickly."
+            },
+            {
+                "name": "Survival_SaltmarshSurvival",
+                "displayName": "Wilderness Lore: Marshes",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "15",
+                "token": "/assets/images/Textures/Abilities/Wilderness Lore Marshes.png",
+                "description": "Doubles the chance of interesting encounters while traveling through the salt marshes and watervine fields on the world map.\r\nReduces the chance of getting lost in the salt marshes and watervine fields from base 12% to 1%.\r\nOn the world map, you travel through the salt marshes and watervine fields twice as quickly."
+            },
+            {
+                "name": "Survival_MountainsSurvival",
+                "displayName": "Wilderness Lore: Hills and Mountains",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Wilderness Lore Hills and Mountains.png",
+                "description": "Doubles the chance of interesting encounters while traveling through the hills and mountains on the world map.\r\nReduces the chance of getting lost in the hills and mountains from base 12% to 1%.\r\nOn the world map, you travel through the hills and mountains twice as quickly."
+            },
+            {
+                "name": "Survival_DesertCanyonSurvival",
+                "displayName": "Wilderness Lore: Canyons",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "17",
+                "token": "/assets/images/Textures/Abilities/Wilderness Lore Canyons.png",
+                "description": "Doubles the chance of interesting encounters while traveling through the desert canyons on the world map.\r\nReduces the chance of getting lost in the desert canyons from base 12% to 1%.\r\nOn the world map, you travel through the desert canyons twice as quickly."
+            },
+            {
+                "name": "Survival_SaltDesertSurvival",
+                "displayName": "Wilderness Lore: Salt Dunes",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Wilderness Lore Salt Dunes.png",
+                "description": "Doubles the chance of interesting encounters while traveling through the salt dunes on the world map.\r\nReduces the chance of getting lost in the salt dunes from base 10% to 1%.\r\nOn the world map, you travel through the salt dunes twice as quickly."
+            },
+            {
+                "name": "Survival_JungleSurvival",
+                "displayName": "Wilderness Lore: Jungles",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Wilderness Lore Jungles.png",
+                "description": "Doubles the chance of interesting encounters while traveling through the jungles on the world map.\r\nReduces the chance of getting lost in the jungles from base 12% to 1%.\r\nOn the world map, you travel through the jungles twice as quickly."
+            },
+            {
+                "name": "Survival_RiversLakesSurvival",
+                "displayName": "Wilderness Lore: Rivers and Lakes",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "19",
+                "token": "/assets/images/Textures/Abilities/Wilderness Lore Rivers and Lakes.png",
+                "description": "Doubles the chance of interesting encounters while traveling across rivers and lakes on the world map.\r\nReduces the chance of getting lost in rivers and lakes from base 12% to 1%.\r\nOn the world map, you travel across rivers and lakes twice as quickly."
+            },
+            {
+                "name": "Survival_RuinsSurvival",
+                "displayName": "Wilderness Lore: Ruins",
+                "cost": "50",
+                "attribute": "Intelligence",
+                "minimum": "21",
+                "token": "/assets/images/Textures/Abilities/Wilderness Lore Ruins.png",
+                "description": "Doubles the chance of interesting encounters while traveling through chrome ruins on the world map.\r\nReduces the chance of getting lost in ruins from base 12% to 1%.\r\nOn the world map, you travel through ruins twice as quickly."
+            }
+        ]
+    }
+]

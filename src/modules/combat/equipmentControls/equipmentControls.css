@@ -17,7 +17,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 60ch;
+    grid-template-columns: 1fr 45ch;
 }
 
 .equipment-list {

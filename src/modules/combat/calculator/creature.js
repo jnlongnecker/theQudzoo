@@ -280,6 +280,7 @@ class Creature extends GameObject {
     effects;
     isKin;
     attributeExpenditure;
+    skillExpenditure = { spent: 0, latestLevel: 1 }
     parts = [];
     skills = {};
     actions = [];
@@ -301,6 +302,9 @@ class Creature extends GameObject {
         for (let tag of obj.tags) {
             creature.addTag(tag);
         }
+        for (let partObj of obj.parts) {
+            creature.attachPartFromObj(partObj);
+        }
         creature.anatomy = Anatomy.fromPart(obj.parts.find(part => part.Name === 'Body'));
         creature.anatomy.attach(creature);
         creature.anatomy.setDefaultPrimaryLimb();
@@ -313,8 +317,13 @@ class Creature extends GameObject {
             for (let skill in obj.skills) { creature.addSkill(skill); }
         }
 
-        console.log(creature);
         return creature;
+    }
+
+    get skillPoints() {
+        let basePoints = this.isKin ? 70 : 50;
+        let perLevel = basePoints + (this.stats.Intelligence.value - 10) * 4;
+        return perLevel * (this.skillExpenditure.latestLevel - 1);
     }
 
     addSkill(skillObj) {
@@ -329,6 +338,11 @@ class Creature extends GameObject {
     levelUp() {
         this.level++;
         this.level < this.hpFromLevelUpRolls.length ? undefined : this.rollLevelUpHp();
+
+        if (this.skillExpenditure.latestLevel < this.level) {
+            this.skillExpenditure.latestLevel = this.level;
+        }
+
         let allUp = this.level % 6 == 0;
         let point = (this.level + 3) % 6 == 0;
 

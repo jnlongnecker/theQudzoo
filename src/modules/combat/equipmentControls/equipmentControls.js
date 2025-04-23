@@ -1,24 +1,40 @@
 import { api, LightningElement } from "lwc";
 import { GetItemShortDescriptionEvent, GetItemStatDescriptionEvent, GetItemFlavorDescriptionEvent } from "combat/calculator";
 import { getPreviews, getDetails } from "c/api";
-import { fire } from "c/componentEvents";
+import { fire, register } from "c/componentEvents";
 import { EquipItemAction, UnequipAction, SetPrimaryAction } from "combat/actions";
 
 export default class EquipmentControls extends LightningElement {
-    @api character;
+    _character;
 
     items = [];
     selectedSlot;
     selectedItem;
     selectedStats;
     selected = 5;
+    equipmentList = [];
 
-    get equipmentList() {
-        if (!this.character) return [];
+    @api
+    get character() {
+        return this._character;
+    }
 
+    set character(value) {
+        this.handlePlayerRefresh({ detail: value })
+    }
+
+    constructor() {
+        super();
+        register('refreshplayerevent', (e) => this.handlePlayerRefresh(e));
+    }
+
+    handlePlayerRefresh(event) {
+        if (event) {
+            this._character = event.detail;
+        }
         let baseList = this.character.anatomy.getLimbArray();
         let id = 0;
-        return baseList.map(limb => {
+        this.equipmentList = baseList.map(limb => {
             let desc = '-';
             let src = false;
             let imageClass = 'item-image';
@@ -64,6 +80,7 @@ export default class EquipmentControls extends LightningElement {
         let id = event.currentTarget.dataset.identifier;
         this.typeahead.clear();
         this.selected = Number.parseInt(id);
+        this.handlePlayerRefresh();
     }
 
     async handleSelection(event) {
