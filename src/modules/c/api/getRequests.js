@@ -100,7 +100,11 @@ async function getSkillData() {
     return await getMiddleware("/api/skillData");
 }
 
+async function getSubtypes() {
+    return await getMiddleware("/api/subtypeData");
+}
+
 export {
     getBuilds, getAuthenticatedUser, isLoggedIn, getMutations, getCybernetics,
-    getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems, getPreviews, getDetails, getSkillData
+    getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems, getPreviews, getDetails, getSkillData, getSubtypes
 };

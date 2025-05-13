@@ -2,6 +2,7 @@ import { track, LightningElement } from "lwc";
 import { getDetails } from "c/api";
 import { LevelUpAction } from "combat/actions";
 import { fire, register } from "c/componentEvents";
+import Modal from "c/modal";
 
 export default class CharacterControls extends LightningElement {
 
@@ -35,7 +36,24 @@ export default class CharacterControls extends LightningElement {
         fire('actionevent', { detail: new LevelUpAction() });
     }
 
-    sendActionLevelReset() {
-        fire('resetactionevent');
+    async sendActionLevelReset() {
+        if (await this.confirmLevelReset()) fire('resetactionevent');
+    }
+
+    async confirmLevelReset() {
+        let result;
+        try {
+            result = await Modal.open({
+                title: 'Confirm Level Reset',
+                bodyText: `This action will reset your character to level 1. This is not reversible. Confirm reset to level 1?`,
+                options: [
+                    { value: 'yes', label: 'Confirm' },
+                    { value: 'no', label: 'Cancel' },
+                ]
+            });
+        } catch (e) {
+            return false;
+        }
+        return result === 'yes';
     }
 }

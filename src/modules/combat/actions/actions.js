@@ -228,4 +228,85 @@ class SetPrimaryAction {
     }
 }
 
-export { AttributeChangeAction, RandomizeAttributesAction, ResetAttributesAction, LevelUpAction, EquipItemAction, UnequipAction, SetPrimaryAction };
+class AddSkillAction {
+    reversible = true;
+    undoOnLevelReset = true;
+
+    mode;
+    skillDetails;
+
+    constructor(mode, skillDetails) {
+        this.mode = mode;
+        this.skillDetails = skillDetails;
+    }
+
+    validateApply(character) {
+        if (character.skills[this.skillDetails.name]) throw `Already have the ${this.skillDetails.displayName} skill.`;
+        if (this.skillDetails.requires) {
+            let prereqs = this.skillDetails.requires.split(',');
+            for (let req of prereqs) {
+                if (!character.skills.req) throw `Missing prerequisite skill ${req}.`;
+            }
+        }
+        let attributeReqs = this.skillDetails.attribute.split('|');
+        let valueReqs = this.skillDetails.minimum.split('|');
+        let meetsAttrReqs = false;
+        for (let i = 0; i < attributeReqs.length; i++) {
+            let attr = attributeReqs[i].split(',');
+            let values = valueReqs[i].split(',');
+            let meetsAllReqs = true;
+            for (let j = 0; j < attr.length; j++) {
+                let att = attr[j];
+                let val = Number.parseInt(values[j]);
+                if (character.stats[att].value < val) meetsAllReqs = false;
+            }
+            meetsAttrReqs |= meetsAllReqs;
+        }
+        if (!meetsAttrReqs) throw `Attribute requisites are not met.`;
+
+        if (this.mode !== 'level') return;
+        let cost = Number.parseInt(this.skillDetails.cost);
+        let avail = character.skillPoints - character.skillExpenditure.spent;
+        if (cost > avail) throw `Not enough skill points, ${cost - avail} SP short.`;
+    }
+
+    apply(character) {
+        this.validateApply(character);
+        character.addSkill({ Name: this.skillDetails.name });
+        if (this.mode === 'level') {
+            character.skillExpenditure.spent += Number.parseInt(this.skillDetails.cost);
+        }
+    }
+
+    reverse(character) {
+        character.removeSkill({ Name: this.skillDetails.name });
+        if (this.mode === 'level') {
+            character.skillExpenditure.spent -= Number.parseInt(this.skillDetails.cost);
+        }
+    }
+
+    print() {
+        return `Added the ${this.skillDetails.displayName} skill.`;
+    }
+}
+
+class SubtypeChangeAction {
+    reversible = false;
+    undoOnLevelReset = false;
+
+    subtype;
+
+    constructor(subtype) {
+        this.subtype = subtype;
+    }
+
+    apply(character) {
+        character.changeSubtype(this.subtype);
+    }
+
+    print() {
+        return `Changed subtype to ${this.subtype.name}.`
+    }
+}
+
+export { AttributeChangeAction, RandomizeAttributesAction, ResetAttributesAction, LevelUpAction, EquipItemAction, UnequipAction, SetPrimaryAction, AddSkillAction, SubtypeChangeAction };

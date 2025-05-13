@@ -2,7 +2,7 @@
     <template if:true={selectedCategory}>
         <div class="selected-category-grid">
             <div class="category-info">
-                <div class="category">
+                <div class={selectedCategory.class}>
                     <button class="category-btn no-hover">
                         <img src={selectedCategory.token} />
                     </button>
@@ -18,8 +18,8 @@
                     <p class="skill-costs">
                         {selectedSkill.cost} pts | {selectedSkill.minimum} {selectedSkill.attribute}
                     </p>
-                    <p class="skill-costs" if:true={selectedSkill.requires}>
-                        {selectedSkill.requires}
+                    <p class="skill-costs" if:true={selectedSkill.requiresDisplay}>
+                        {selectedSkill.requiresDisplay}
                     </p>
                     <p class="skill-description">
                         {selectedSkill.description}
@@ -28,7 +28,7 @@
             </div>
             <div class="skill-grid">
                 <template for:each={selectedCategory.categorySkills} for:item="skill">
-                    <div class="category" key={skill.name}>
+                    <div class={skill.class} key={skill.name}>
                         <button class="category-btn" onclick={selectSkill} onmouseenter={updateBlurb}
                             data-skill={skill.name}>
                             <img src={skill.token} />
@@ -42,7 +42,7 @@
     <template if:false={selectedCategory}>
         <div class="category-grid">
             <template for:each={skills} for:item="skill">
-                <div class="category" key={skill.name}>
+                <div class={skill.class} key={skill.name}>
                     <button class="category-btn" onclick={selectCategory} data-category={skill.name}>
                         <img src={skill.token} />
                     </button>
@@ -51,5 +51,5 @@
             </template>
         </div>
     </template>
-    <p class="skill-costs">{skillPoints} SP</p>
+    <p class="skill-costs" if:true={isLevelMode}>{skillPoints} SP</p>
 </template>

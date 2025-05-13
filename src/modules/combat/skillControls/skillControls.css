@@ -11,6 +11,10 @@
     text-align: center;
 }
 
+.unlocked .category-btn {
+    border-color: var(--mutation-color);
+}
+
 .category-btn {
     background-color: var(--bg-color-dark);
     border: 1px solid white;
@@ -27,6 +31,12 @@
 .no-hover:hover {
     cursor: default;
     border-color: white;
+}
+
+.unlocked .no-hover:hover,
+.unlocked.skill .category-btn:hover {
+    cursor: default;
+    border-color: var(--mutation-color);
 }
 
 .category img {
@@ -54,7 +64,7 @@
 
 .selected-category-grid {
     display: grid;
-    grid-template-columns: 70ch 1fr;
+    grid-template-columns: 1fr 350px;
     justify-items: center;
 }
 

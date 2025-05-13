@@ -15,16 +15,21 @@ class ComponentEventHandler {
 
     fire(eventName, eventDetails) {
         let callbackList = this.registry[eventName];
-        if (!callbackList) return;
+        if (!callbackList) return true;
 
-        for (let cb of callbackList) cb(eventDetails);
+        let result = true;
+        for (let cb of callbackList) {
+            let singleResult = cb(eventDetails);
+            if (singleResult !== undefined) result = result && singleResult;
+        }
+        return result;
     }
 }
 
 const handler = new ComponentEventHandler();
 
 export function fire(eventName, eventDetails) {
-    handler.fire(eventName, eventDetails);
+    return handler.fire(eventName, eventDetails);
 }
 
 export function register(eventName, callback) {

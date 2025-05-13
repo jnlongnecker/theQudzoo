@@ -4,6 +4,7 @@ import { compileSugar, compileShaders } from "c/api";
 export default class MarkdownRenderer extends LightningElement {
 
     @api singleLine = false;
+    @api slowLoad = false;
     @api modes = '';
     static converter;
     markdownHtml;
@@ -22,6 +23,9 @@ export default class MarkdownRenderer extends LightningElement {
             value = 'Looks like this description tried to inject a script. Not allowed >:('
         }
         this._rawText = value;
+        if (this.containerRef && !this.slowLoad) {
+            this.containerRef.innerHTML = value;
+        }
 
         if (this.singleLine) {
             compileShaders(value).then(result => {
@@ -49,6 +53,7 @@ export default class MarkdownRenderer extends LightningElement {
     renderedCallback() {
         if (!this.containerRef) {
             this.containerRef = this.template.querySelector('div');
+            if (!this.slowLoad) this.containerRef.innerHTML = this._rawText;
         }
         if (window['showdown'] && !MarkdownRenderer.converter) {
             MarkdownRenderer.converter = new window['showdown'].Converter();

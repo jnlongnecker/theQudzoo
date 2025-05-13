@@ -1,0 +1,505 @@
+{
+    "castes": [
+        {
+            "name": "Ekuemekiyye",
+            "displayName": "The Toxic Arboreta of Ekuemekiyye, the Holy City",
+            "categoryCastes": [
+                {
+                    "stats": [
+                        {
+                            "Name": "Intelligence",
+                            "Bonus": 3
+                        }
+                    ],
+                    "skills": {
+                        "CookingAndGathering": "Cooking and Gathering",
+                        "CookingAndGathering_Harvestry": "Harvestry",
+                        "Axe": "Axe",
+                        "Rifles": "Bow and Rifle",
+                        "Survival_JungleSurvival": "Wilderness Lore: Jungles"
+                    },
+                    "saveModifiers": [
+                        {
+                            "Vs": "Bleeding",
+                            "Amount": "2"
+                        }
+                    ],
+                    "name": "Horticulturist",
+                    "token": "/assets/images/Textures/Creatures/Horticulturist.png"
+                },
+                {
+                    "stats": [
+                        {
+                            "Name": "Ego",
+                            "Bonus": 3
+                        }
+                    ],
+                    "skills": {
+                        "Cudgel": "Cudgel",
+                        "Physic": "Physic",
+                        "Physic_Nostrums": "Nostrums",
+                        "Persuasion": "Persuasion",
+                        "Persuasion_SnakeOiler": "Snake Oiler",
+                        "Persuasion_Intimidate": "Intimidate",
+                        "Survival_JungleSurvival": "Wilderness Lore: Jungles"
+                    },
+                    "saveModifiers": [
+                        {
+                            "Vs": "Bleeding",
+                            "Amount": "2"
+                        }
+                    ],
+                    "name": "Priest of All Suns",
+                    "token": "/assets/images/Textures/Creatures/Priest of All Suns.png"
+                },
+                {
+                    "stats": [
+                        {
+                            "Name": "Willpower",
+                            "Bonus": 2
+                        },
+                        {
+                            "Name": "Toughness",
+                            "Bonus": 2
+                        }
+                    ],
+                    "skills": {
+                        "Axe": "Axe",
+                        "CookingAndGathering_Butchery": "Butchery",
+                        "Discipline_Lionheart": "Lionheart",
+                        "Endurance_PoisonTolerance": "Poison Tolerance",
+                        "Survival_JungleSurvival": "Wilderness Lore: Jungles"
+                    },
+                    "saveModifiers": [
+                        {
+                            "Vs": "Bleeding",
+                            "Amount": "2"
+                        }
+                    ],
+                    "name": "Priest of All Moons",
+                    "token": "/assets/images/Textures/Creatures/Priest of All Moons.png"
+                },
+                {
+                    "stats": [
+                        {
+                            "Name": "Agility",
+                            "Bonus": 3
+                        }
+                    ],
+                    "skills": {
+                        "Multiweapon_Fighting": "Multiweapon Fighting",
+                        "Multiweapon_Proficiency": "Multiweapon Proficiency",
+                        "Multiweapon_Expertise": "Multiweapon Expertise",
+                        "Survival_JungleSurvival": "Wilderness Lore: Jungles"
+                    },
+                    "saveModifiers": [
+                        {
+                            "Vs": "Bleeding",
+                            "Amount": "2"
+                        }
+                    ],
+                    "name": "Syzygyrior",
+                    "token": "/assets/images/Textures/Creatures/Syzygyrior.png"
+                }
+            ]
+        },
+        {
+            "name": "Ibul",
+            "displayName": "The Ice-Sheathed Arcology of Ibul",
+            "categoryCastes": [
+                {
+                    "stats": [
+                        {
+                            "Name": "Intelligence",
+                            "Bonus": 3
+                        },
+                        {
+                            "Name": "ColdResistance",
+                            "Bonus": 15
+                        }
+                    ],
+                    "skills": {
+                        "Tinkering": "Tinkering",
+                        "Tinkering_Repair": "Repair",
+                        "Tinkering_Disassemble": "Disassemble",
+                        "Tinkering_DeployTurret": "Deploy Turret",
+                        "Tinkering_Tinker1": "Tinker I",
+                        "Tinkering_Tinker2": "Tinker II"
+                    },
+                    "name": "Artifex",
+                    "token": "/assets/images/Textures/Creatures/Artifex.png"
+                },
+                {
+                    "stats": [
+                        {
+                            "Name": "Ego",
+                            "Bonus": 3
+                        },
+                        {
+                            "Name": "ColdResistance",
+                            "Bonus": 15
+                        }
+                    ],
+                    "skills": {
+                        "Persuasion_InspiringPresence": "Inspiring Presence",
+                        "Persuasion_Proselytize": "Proselytize"
+                    },
+                    "name": "Consul",
+                    "token": "/assets/images/Textures/Creatures/Consul.png"
+                },
+                {
+                    "stats": [
+                        {
+                            "Name": "Strength",
+                            "Bonus": 2
+                        },
+                        {
+                            "Name": "Toughness",
+                            "Bonus": 1
+                        },
+                        {
+                            "Name": "Willpower",
+                            "Bonus": 1
+                        },
+                        {
+                            "Name": "ColdResistance",
+                            "Bonus": 15
+                        }
+                    ],
+                    "skills": {
+                        "LongBlades": "Long Blade",
+                        "Shield": "Shield",
+                        "Shield_Slam": "Shield Slam",
+                        "Rifles": "Bow and Rifle"
+                    },
+                    "name": "Praetorian",
+                    "token": "/assets/images/Textures/Creatures/Praetorian.png"
+                },
+                {
+                    "stats": [
+                        {
+                            "Name": "Agility",
+                            "Bonus": 2
+                        },
+                        {
+                            "Name": "Intelligence",
+                            "Bonus": 2
+                        },
+                        {
+                            "Name": "ColdResistance",
+                            "Bonus": 15
+                        }
+                    ],
+                    "skills": {
+                        "ShortBlades": "Short Blade",
+                        "ShortBlades_Hobble": "Hobble",
+                        "Pistol": "Pistol",
+                        "Pistol_WeakSpotter": "Weak Spotter",
+                        "Acrobatics": "Acrobatics",
+                        "Acrobatics_Dodge": "Spry",
+                        "Tactics": "Tactics"
+                    },
+                    "name": "Eunuch",
+                    "token": "/assets/images/Textures/Creatures/Eunuch.png"
+                }
+            ]
+        },
+        {
+            "name": "Yawningmoon",
+            "displayName": "The Crustal Mortars of Yawningmoon",
+            "categoryCastes": [
+                {
+                    "stats": [
+                        {
+                            "Name": "Strength",
+                            "Bonus": 3
+                        },
+                        {
+                            "Name": "HeatResistance",
+                            "Bonus": 15
+                        }
+                    ],
+                    "skills": {
+                        "Cudgel": "Cudgel",
+                        "Cudgel_Slam": "Slam",
+                        "HeavyWeapons": "Heavy Weapon",
+                        "Endurance_Calloused": "Calloused"
+                    },
+                    "name": "Child of the Hearth",
+                    "token": "/assets/images/Textures/Creatures/Child of the Hearth.png"
+                },
+                {
+                    "stats": [
+                        {
+                            "Name": "Agility",
+                            "Bonus": 2
+                        },
+                        {
+                            "Name": "Strength",
+                            "Bonus": 1
+                        },
+                        {
+                            "Name": "Ego",
+                            "Bonus": 1
+                        },
+                        {
+                            "Name": "HeatResistance",
+                            "Bonus": 15
+                        }
+                    ],
+                    "skills": {
+                        "ShortBlades": "Short Blade",
+                        "Axe": "Axe",
+                        "Axe_Cleave": "Cleave",
+                        "Multiweapon_Fighting": "Multiweapon Fighting",
+                        "Multiweapon_Proficiency": "Multiweapon Proficiency",
+                        "Discipline_IronMind": "Iron Mind"
+                    },
+                    "name": "Child of the Wheel",
+                    "token": "/assets/images/Textures/Creatures/Child of the Wheel.png"
+                },
+                {
+                    "stats": [
+                        {
+                            "Name": "Toughness",
+                            "Bonus": 3
+                        },
+                        {
+                            "Name": "HeatResistance",
+                            "Bonus": 15
+                        }
+                    ],
+                    "skills": {
+                        "HeavyWeapons": "Heavy Weapon",
+                        "HeavyWeapons_Tank": "Tank",
+                        "Endurance": "Endurance",
+                        "Survival_MountainsSurvival": "Wilderness Lore: Hills and Mountains",
+                        "Survival_DesertCanyonSurvival": "Wilderness Lore: Canyons"
+                    },
+                    "name": "Child of the Deep",
+                    "token": "/assets/images/Textures/Creatures/Child of the Deep.png"
+                },
+                {
+                    "stats": [
+                        {
+                            "Name": "Willpower",
+                            "Bonus": 4
+                        },
+                        {
+                            "Name": "HeatResistance",
+                            "Bonus": 15
+                        }
+                    ],
+                    "skills": {
+                        "Discipline": "Self-discipline",
+                        "Discipline_FastingWay": "Fasting Way",
+                        "Discipline_Lionheart": "Lionheart",
+                        "Endurance_PoisonTolerance": "Poison Tolerance",
+                        "Persuasion": "Persuasion",
+                        "Persuasion_Intimidate": "Intimidate"
+                    },
+                    "name": "Fuming God-Child",
+                    "token": "/assets/images/Textures/Creatures/Fuming God-Child.png"
+                }
+            ]
+        }
+    ],
+    "callings": [
+        {
+            "stats": [
+                {
+                    "Name": "Ego",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "Persuasion_Intimidate": "Intimidate",
+                "Persuasion_Proselytize": "Proselytize",
+                "Customs": "Customs and Folklore"
+            },
+            "name": "Apostle",
+            "token": "/assets/images/Textures/Creatures/Apostle.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Agility",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "ShortBlades": "Short Blade",
+                "Tinkering": "Tinkering",
+                "Tinkering_Scavenger": "Scavenger",
+                "Acrobatics": "Acrobatics",
+                "Acrobatics_Dodge": "Spry"
+            },
+            "name": "Arconaut",
+            "token": "/assets/images/Textures/Creatures/Arconaut.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Willpower",
+                    "Bonus": 3
+                },
+                {
+                    "Name": "Strength",
+                    "Bonus": -1
+                }
+            ],
+            "skills": {
+                "Cudgel": "Cudgel",
+                "Persuasion_Berate": "Berate",
+                "Endurance_Calloused": "Calloused"
+            },
+            "name": "Greybeard",
+            "token": "/assets/images/Textures/Creatures/Greybeard.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Agility",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "Pistol": "Pistol",
+                "Pistol_Akimbo": "Akimbo"
+            },
+            "name": "Gunslinger",
+            "token": "/assets/images/Textures/Creatures/Gunslinger.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Strength",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "Axe": "Axe",
+                "Axe_Dismember": "Dismember",
+                "Tactics_Charge": "Charge",
+                "CookingAndGathering_Butchery": "Butchery"
+            },
+            "name": "Marauder",
+            "token": "/assets/images/Textures/Creatures/Marauder.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Willpower",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "Discipline": "Self-discipline",
+                "Discipline_FastingWay": "Fasting Way",
+                "Discipline_IronMind": "Iron Mind",
+                "Survival": "Wayfaring"
+            },
+            "name": "Pilgrim",
+            "token": "/assets/images/Textures/Creatures/Pilgrim.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Toughness",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "Survival": "Wayfaring",
+                "Survival_SaltDesertSurvival": "Wilderness Lore: Salt Dunes",
+                "CookingAndGathering_Harvestry": "Harvestry",
+                "Survival_Trailblazer": "Mind's Compass",
+                "Endurance_Weathered": "Weathered"
+            },
+            "name": "Nomad",
+            "token": "/assets/images/Textures/Creatures/Nomad.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Intelligence",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "Tinkering": "Tinkering",
+                "Physic": "Physic",
+                "Physic_Nostrums": "Nostrums",
+                "CookingAndGathering_Harvestry": "Harvestry",
+                "Tactics": "Tactics",
+                "Customs": "Customs and Folklore"
+            },
+            "name": "Scholar",
+            "token": "/assets/images/Textures/Creatures/Scholar.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Intelligence",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "Tinkering": "Tinkering",
+                "Tinkering_LayMine": "Lay Mine / Set Bomb",
+                "Tinkering_Disassemble": "Disassemble",
+                "Tinkering_Repair": "Repair",
+                "Tinkering_Tinker1": "Tinker I"
+            },
+            "name": "Tinker",
+            "token": "/assets/images/Textures/Creatures/Tinker.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Strength",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "LongBlades": "Long Blade",
+                "Shield": "Shield",
+                "Shield_Slam": "Shield Slam",
+                "Rifles": "Bow and Rifle",
+                "Pistol": "Pistol"
+            },
+            "name": "Warden",
+            "token": "/assets/images/Textures/Creatures/Warden.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Ego",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "ShortBlades": "Short Blade",
+                "Persuasion_SnakeOiler": "Snake Oiler"
+            },
+            "name": "Water Merchant",
+            "token": "/assets/images/Textures/Creatures/Water Merchant.png"
+        },
+        {
+            "stats": [
+                {
+                    "Name": "Toughness",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "CookingAndGathering": "Cooking and Gathering",
+                "CookingAndGathering_Harvestry": "Harvestry",
+                "Axe": "Axe",
+                "Survival_SaltmarshSurvival": "Wilderness Lore: Marshes"
+            },
+            "name": "Watervine Farmer",
+            "token": "/assets/images/Textures/Creatures/Watervine Farmer.png"
+        }
+    ]
+}

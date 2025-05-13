@@ -1,0 +1,91 @@
+figure {
+    text-align: center;
+    font-family: var(--qud-font);
+    opacity: 0.3;
+    transition: 0.25s;
+    margin: 0;
+}
+
+figure:has(.selected) {
+    opacity: 1;
+}
+
+figure img {
+    image-rendering: pixelated;
+    filter: grayscale(100%);
+    padding: 0 1rem;
+    height: 3rem;
+    border-left: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+}
+
+figure:hover {
+    cursor: pointer;
+    color: var(--stat-color);
+    opacity: 1;
+}
+
+figure:hover img {
+    filter: grayscale(0);
+    border-left: 1px solid var(--stat-color);
+    border-right: 1px solid var(--stat-color);
+}
+
+figure .selected {
+    filter: grayscale(0);
+    border-left: 1px solid var(--stat-color);
+    border-right: 1px solid var(--stat-color);
+}
+
+.genotype-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 35ch 1fr;
+}
+
+.calling-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.caste-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.category-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.starters {
+    min-height: 18rem;
+}
+
+.mutant-title {
+    height: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+.Ekuemekiyye {
+    color: var(--willpower-color);
+}
+.Ibul {
+    color: var(--intelligence-color);
+}
+.Yawningmoon {
+    color: var(--toughness-color);
+}

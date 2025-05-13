@@ -24,11 +24,21 @@ switch (func) {
     case 'allobjects': writeObjectPreviews(); writeObjectDetails(); break;
     case 'skill':
     case 'skills': writeSkillData(); break;
+    case 'subtype':
+    case 'subtypes': writeSubtypeDetails(); break;
 }
 
 function test() {
-    let objects = readToObject('Factions.xml');
+    let objects = readToObject('Subtypes.xml');
     fs.writeFileSync(`${outputDirectory}xmlObjectsItems.json`, JSON.stringify(objects, undefined, 4), { flag: 'w' });
+}
+
+function writeSubtypeDetails() {
+    let objects = readToObject('Skills.xml');
+    let skillData = parser.formatSkillData(objects);
+    let subtypeXmlJson = readXMLFile('Subtypes.xml');
+    let subtypeData = parser.formatSubtypeData(subtypeXmlJson, skillData);
+    fs.writeFileSync(`${outputDirectory}subtypeData.json`, JSON.stringify(subtypeData, undefined, 4), { flag: 'w' });
 }
 
 function writeSkillData() {

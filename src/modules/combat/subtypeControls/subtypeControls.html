@@ -1,0 +1,44 @@
+<template>
+
+    <div class="container">
+        <div>
+            <div class="genotype-switch">
+                <label>Genotype</label>
+                <input-switch left="Mutant" right="True Kin" uncheckcolor="mutant" checkcolor="cybernetic"
+                    onswitch={toggleGenotype}></input-switch>
+            </div>
+            <div class="starters">
+                <build-markdown-renderer raw-text={subtypeHtml} slow-load></build-markdown-renderer>
+            </div>
+        </div>
+
+        <div class="caste-grid" if:true={isKin}>
+            <template for:each={castes} for:item="category">
+                <div key={category.name} class="category-column">
+                    <p class={category.name}>{category.displayName}</p>
+                    <template for:each={category.categoryCastes} for:item="caste">
+                        <figure key={caste.name} class="calling-card" onmouseover={casteHovered}
+                            onclick={subtypeSelected} data-subtype={caste.name}>
+                            <img src={caste.token} class={caste.class} />
+                            <figcaption>{caste.name}</figcaption>
+                        </figure>
+                    </template>
+                </div>
+
+            </template>
+        </div>
+
+        <div if:false={isKin}>
+            <p class="mutant-title">Mutant Callings</p>
+            <div class="calling-grid">
+                <template for:each={callings} for:item="calling">
+                    <figure key={calling.name} class="calling-card" onmouseover={callingHovered}
+                        onclick={subtypeSelected} data-subtype={calling.name}>
+                        <img src={calling.token} class={calling.class} />
+                        <figcaption>{calling.name}</figcaption>
+                    </figure>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

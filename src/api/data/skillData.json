@@ -42,7 +42,8 @@
                 "minimum": "23",
                 "token": "/assets/images/Textures/Abilities/Tumble.png",
                 "description": "You gain a +1 bonus to your DV. Additionally, Juke's cooldown is reduced to 20.",
-                "requires": "Juke"
+                "requires": "Tactics_Juke",
+                "requiresDisplay": "Juke"
             }
         ]
     },
@@ -80,7 +81,8 @@
                 "minimum": "19",
                 "token": "/assets/images/Textures/Abilities/Charging Strike.png",
                 "description": "When you charge with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled. When you charge with a cudgel and hit, you automatically daze your opponent.",
-                "requires": "Cleave | Charge"
+                "requires": "Axe_Cleave,Tactics_Charge",
+                "requiresDisplay": "Cleave, Charge"
             },
             {
                 "name": "Axe_Dismember",
@@ -108,7 +110,8 @@
                 "minimum": "25",
                 "token": "/assets/images/Textures/Abilities/Decapitate.png",
                 "description": "Heads are added to the list of possible limbs you can dismember. Chopping off the only head of a creature kills them instantly. If the creature has multiple heads, they start bleeding profusely (2-3 damage per turn. toughness save; difficulty 35).",
-                "requires": "Dismember"
+                "requires": "Axe_Dismember",
+                "requiresDisplay": "Dismember"
             },
             {
                 "name": "Axe_Berserk",
@@ -118,7 +121,8 @@
                 "minimum": "29",
                 "token": "/assets/images/Textures/Abilities/Berserk!.png",
                 "description": "Activated; cooldown 100.\r\nYou enter a blood frenzy, and for 5 rounds your chance to dismember with axe attacks is 100%. To use Berserk, Dismember must be off cooldown, and using Berserk puts Dismember on cooldown.",
-                "requires": "Dismember"
+                "requires": "Axe_Dismember",
+                "requiresDisplay": "Dismember"
             }
         ]
     },
@@ -156,7 +160,8 @@
                 "minimum": "19",
                 "token": "/assets/images/Textures/Abilities/Suppressive Fire.png",
                 "description": "You fire at a marked target. If your shot penetrates, your target is suppressed and can't move for 3-5 rounds. Then your target is unmarked.",
-                "requires": "Draw a Bead"
+                "requires": "Rifle_DrawABead",
+                "requiresDisplay": "Draw a Bead"
             },
             {
                 "name": "Rifle_FlatteningFire",
@@ -166,7 +171,8 @@
                 "minimum": "25",
                 "token": "/assets/images/Textures/Abilities/Flattening Fire.png",
                 "description": "As long as your target is surrounded by 6 or more solid obstacles, Suppressive Fire is upgraded to Flattening Fire. Flattening Fire also knocks your target prone and disarms them.",
-                "requires": "Draw a Bead"
+                "requires": "Rifle_DrawABead,Rifle_SuppressiveFire",
+                "requiresDisplay": "Draw a Bead, Suppressive Fire"
             },
             {
                 "name": "Rifle_WoundingFire",
@@ -176,7 +182,8 @@
                 "minimum": "19",
                 "token": "/assets/images/Textures/Abilities/Wounding Fire.png",
                 "description": "You fire at a marked target. For each penetration on each shot that hits, your target bleeds 1 point of damage per round (save: 20 + max damage of the weapon). Then your target is unmarked.",
-                "requires": "Draw a Bead"
+                "requires": "Rifle_DrawABead",
+                "requiresDisplay": "Draw a Bead"
             },
             {
                 "name": "Rifle_DisorientingFire",
@@ -186,7 +193,8 @@
                 "minimum": "25",
                 "token": "/assets/images/Textures/Abilities/Disorienting Fire.png",
                 "description": "As long as your target can't see or hear any faction allies, Wounding Fire is upgraded to Disorienting Fire. Disorienting Fire also reduces your target's DV and MA by 4.",
-                "requires": "Draw a Bead | Wounding Fire"
+                "requires": "Rifle_DrawABead,Rifle_WoundingFire",
+                "requiresDisplay": "Draw a Bead, Wounding Fire"
             },
             {
                 "name": "Rifle_SureFire",
@@ -196,7 +204,8 @@
                 "minimum": "19",
                 "token": "/assets/images/Textures/Abilities/Sure Fire.png",
                 "description": "You fire at a marked target with no accuracy penalty (the accuracy of your weapon still matters). Then your target is unmarked.",
-                "requires": "Draw a Bead | Sure Fire"
+                "requires": "Rifle_DrawABead",
+                "requiresDisplay": "Draw a Bead"
             },
             {
                 "name": "Rifle_BeaconFire",
@@ -206,7 +215,8 @@
                 "minimum": "25",
                 "token": "/assets/images/Textures/Abilities/Beacon Fire.png",
                 "description": "As long as your target is flaming, luminous, or phosphorescent, Sure Fire is upgraded to Beacon Fire. Beacon Fire shots are also treated as critical hits.",
-                "requires": "Draw a Bead"
+                "requires": "Rifle_DrawABead,Rifle_SureFire",
+                "requiresDisplay": "Draw a Bead, Sure Fire"
             },
             {
                 "name": "Rifle_OneShot",
@@ -215,7 +225,9 @@
                 "attribute": "Agility",
                 "minimum": "29",
                 "token": "/assets/images/Textures/Abilities/Ultra Fire.png",
-                "description": "Cooldown 100. You fire at a marked target. Your shot combines the effects of all the other Fire powers you have."
+                "description": "Cooldown 100. You fire at a marked target. Your shot combines the effects of all the other Fire powers you have.",
+                "requires": "Rifle_DrawABead",
+                "requiresDisplay": "Draw a Bead"
             }
         ]
     },
@@ -308,7 +320,8 @@
                 "minimum": "19",
                 "token": "/assets/images/Textures/Abilities/Charging Strike.png",
                 "description": "When you charge with a cudgel and hit, you automatically daze your opponent. When you charge with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled.",
-                "requires": "Bludgeon | Charge"
+                "requires": "Cudgel_Bludgeon,Tactics_Charge",
+                "requiresDisplay": "Bludgeon, Charge"
             },
             {
                 "name": "Cudgel_Conk",
@@ -318,7 +331,8 @@
                 "minimum": "21",
                 "token": "/assets/images/Textures/Abilities/Conk.png",
                 "description": "Activated; cooldown 10.\r\nYou make an attack with a cudgel at an adjacent opponent. If you hit, you automatically daze them for 3-4 rounds. Dazing a dazed opponent stuns them. Conking a stunned opponent instead knocks them unconscious for 30-40 rounds (unconscious opponents wake up dazed when they take damage).",
-                "requires": "Bludgeon"
+                "requires": "Cudgel_Bludgeon",
+                "requiresDisplay": "Bludgeon"
             },
             {
                 "name": "Cudgel_Backswing",
@@ -346,7 +360,8 @@
                 "minimum": "29",
                 "token": "/assets/images/Textures/Abilities/Demolish.png",
                 "description": "Activated; cooldown 100.\r\nFor the next 5 rounds, your chance to daze with cudgel attacks is 100% and Slam has no cooldown. To use Demolish, Slam must be off cooldown, and using Demolish puts Slam on cooldown.",
-                "requires": "Slam"
+                "requires": "Cudgel_Slam",
+                "requiresDisplay": "Slam"
             }
         ]
     },
@@ -421,7 +436,8 @@
                 "minimum": "29|29",
                 "token": "/assets/images/Textures/Abilities/Weapon Mastery.png",
                 "description": "Whenever you make a melee attack while single-weapon fighting, immediately make a second attack for free.",
-                "requires": "Weapon Expertise"
+                "requires": "SingleWeaponFighting_WeaponExpertise",
+                "requiresDisplay": "Weapon Expertise"
             }
         ]
     },
@@ -459,7 +475,8 @@
                 "minimum": "23|23",
                 "token": "/assets/images/Textures/Abilities/Multiweapon Expertise.png",
                 "description": "Your chance to strike with each of your offhand weapons is increased by 35%.",
-                "requires": "Multiweapon Proficiency"
+                "requires": "Multiweapon_Proficiency",
+                "requiresDisplay": "Multiweapon Proficiency"
             },
             {
                 "name": "Multiweapon_Mastery",
@@ -469,7 +486,8 @@
                 "minimum": "27|27",
                 "token": "/assets/images/Textures/Abilities/Multiweapon Mastery.png",
                 "description": "Your chance to strike with each of your offhand weapons is increased by 50%.",
-                "requires": "Multiweapon Expertise"
+                "requires": "Multiweapon_Expertise",
+                "requiresDisplay": "Multiweapon Expertise"
             }
         ]
     },
@@ -699,7 +717,8 @@
                 "minimum": "21",
                 "token": "/assets/images/Textures/Abilities/Improved Dueling Stance.png",
                 "description": "Your to-hit bonus in dueling stance is increased to +3.",
-                "requires": "Dueling Stance"
+                "requires": "LongBladesDuelingStance",
+                "requiresDisplay": "Dueling Stance"
             },
             {
                 "name": "LongBladesDeathblow",
@@ -1038,7 +1057,8 @@
                 "minimum": "23",
                 "token": "/assets/images/Textures/Abilities/Pointed Circle.png",
                 "description": "Whenever you juke an opponent while wielding a short blade in your primary hand, you make a free attack. If you have Bloodletter, the attack's chance to cause bleeding is 100%.",
-                "requires": "Juke"
+                "requires": "Tactics_Juke",
+                "requiresDisplay": "Juke"
             },
             {
                 "name": "ShortBlades_Rejoinder",
@@ -1149,7 +1169,8 @@
                 "minimum": "25",
                 "token": "/assets/images/Textures/Abilities/Reverse Engineer.png",
                 "description": "Whenever you disassemble an item, you have a 25% chance to learn how to build the item. If the item was modded, you also have a 15% chance per mod to learn the mod.",
-                "requires": "Disassemble"
+                "requires": "Tinkering_Disassemble",
+                "requiresDisplay": "Disassemble"
             },
             {
                 "name": "Tinkering_Scavenger",
@@ -1204,7 +1225,8 @@
                 "minimum": "23",
                 "token": "/assets/images/Textures/Abilities/Tinker II.png",
                 "description": "You may build items from medium-tier schematics and you get 1 free schematic.",
-                "requires": "Tinker I"
+                "requires": "Tinkering_Tinker1",
+                "requiresDisplay": "Tinker I"
             },
             {
                 "name": "Tinkering_Tinker3",
@@ -1214,7 +1236,8 @@
                 "minimum": "29",
                 "token": "/assets/images/Textures/Abilities/Tinker III.png",
                 "description": "You may build items from high-tier schematics and you get 1 free schematic.",
-                "requires": "Tinker II"
+                "requires": "Tinkering_Tinker2",
+                "requiresDisplay": "Tinker II"
             }
         ]
     },

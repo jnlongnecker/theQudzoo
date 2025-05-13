@@ -3,17 +3,27 @@ import { Creature } from "combat/calculator";
 import { fire, register } from "c/componentEvents";
 
 export default class App extends LightningElement {
-    creature;
+    @track creature;
     enemy;
 
     actionLog;
+    mode = 'level';
+    level = 1;
+    isKin = false;
 
     constructor() {
         super();
-        register('actionevent', (event) => { this.handleActionGeneral(event) });
+        register('actionevent', (event) => { return this.handleActionGeneral(event) });
+        register('modechangeevent', (event) => { this.mode = event.detail });
+        register('genotypechangeevent', (event) => {
+            this.creature.isKin = event.detail;
+            this.isKin = event.detail;
+            fire('refreshplayerevent', { detail: this.creature });
+        });
         register('resetactionevent', (event) => { this.handleActionLevelReset(event) });
         register('playerchangeevent', (event) => { this.updatePlayer(event) });
         register('enemychangeevent', (event) => { this.updateEnemy(event) });
+        register('refreshplayerevent', (event) => { this.level = this.creature.level });
     }
 
     updatePlayer(event) {
@@ -76,7 +86,7 @@ export default class App extends LightningElement {
         } catch (e) {
             console.log(e);
             this.sendMessageToLog(e);
-            return;
+            return false;
         }
         this.sendActionToLog(action);
         this.creature = creature;
@@ -89,7 +99,7 @@ export default class App extends LightningElement {
         this.sendMessageToLog('{{Y|Reset to level 1.}}');
     }
 
-    selectedOption = 'attributes';
+    selectedOption = 'subtype';
 
     get attrSelected() {
         return this.selectedOption === 'attributes';
@@ -106,6 +116,12 @@ export default class App extends LightningElement {
     get combatSelected() {
         return this.selectedOption === 'combat';
     }
+    get cybSelected() {
+        return this.selectedOption === 'cybernetics';
+    }
+    get subSelected() {
+        return this.selectedOption === 'subtype';
+    }
 
     get attrClass() {
         return this.attrSelected ? 'icon-button selected' : 'icon-button';
@@ -121,6 +137,16 @@ export default class App extends LightningElement {
     }
     get combatClass() {
         return this.combatSelected ? 'icon-button selected' : 'icon-button';
+    }
+    get cybClass() {
+        return this.cybSelected ? 'icon-button selected' : 'icon-button';
+    }
+    get subClass() {
+        return this.subSelected ? 'icon-button selected' : 'icon-button';
+    }
+
+    get isLevelOne() {
+        return this.level <= 1;
     }
 
     swapPanel(evt) {

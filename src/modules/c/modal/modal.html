@@ -1,0 +1,21 @@
+<template>
+    <div class="master">
+        <div class="overlay" onclick={handleClose}></div>
+        <div class="container">
+            <button class="close" onclick={handleClose}>&times;</button>
+            <fieldset>
+                <legend class="header">{title}</legend>
+                <div class="body">
+                    <build-markdown-renderer modes="collapse-line all-qud-font bolded inline no-highlight"
+                        raw-text={bodyText} slow-load></build-markdown-renderer>
+                </div>
+            </fieldset>
+            <div class="footer">
+                <template for:each={options} for:item="option" if:true={options}>
+                    <input-button key={option.value} data-value={option.value}
+                        onclick={handleOption}>{option.label}</input-button>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

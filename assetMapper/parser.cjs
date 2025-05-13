@@ -713,11 +713,13 @@ exports.filterToDetails = function (objects) {
 
 exports.formatSkillData = function (skills) {
     let skillArray = [];
+    let skillNameToDisplayName = {};
     for (let categoryName in skills) {
         let category = skills[categoryName];
         let categorySkills = [];
         for (let power of category.other) {
             let src = '/assets/images/Textures/' + qudDirToQudzooDir(power.Tile, power).replace(/\\/g, '/');
+            skillNameToDisplayName[power.Class] = power.Name;
             categorySkills.push({
                 name: power.Class,
                 displayName: power.Name,
@@ -725,7 +727,8 @@ exports.formatSkillData = function (skills) {
                 attribute: power.Attribute,
                 minimum: power.Minimum,
                 token: src,
-                description: power.Description
+                description: power.Description,
+                requires: power.Prereq,
             });
         }
         let src = '/assets/images/Textures/' + qudDirToQudzooDir(category.Tile, category).replace(/\\/g, '/');
@@ -740,5 +743,85 @@ exports.formatSkillData = function (skills) {
             categorySkills
         });
     }
+    for (let category of skillArray) {
+        for (let skill of category.categorySkills) {
+            if (!skill.requires) continue;
+            skill.requiresDisplay = skill.requires.split(',').map(name => skillNameToDisplayName[name]).join(', ');
+        }
+    }
     return skillArray;
+}
+
+/* 
+
+    ============================== END SKILL DATA PROCESSING =============================
+
+
+    ============================== SUBTYPE DATA PROCESSING =============================
+    
+*/
+
+exports.formatSubtypeData = function (subtypes, skillData) {
+    let castes = subtypes.children[0];
+    let callings = subtypes.children[1];
+
+    let formattedCasteCategories = [];
+    for (let category of castes.children) {
+        let categoryCastes = [];
+        for (let caste of category.children) {
+            categoryCastes.push(buildSubtype(caste, skillData));
+        }
+        let formattedCategory = {
+            name: category.attributes[0].value,
+            displayName: unformatDisplayName(category.attributes[1].value),
+            categoryCastes
+        }
+        formattedCasteCategories.push(formattedCategory);
+    }
+
+    let formattedCallings = [];
+    for (let calling of callings.children) {
+        formattedCallings.push(buildSubtype(calling, skillData));
+    }
+    return { castes: formattedCasteCategories, callings: formattedCallings };
+}
+
+function buildSubtype(subtypeInfo, skillData) {
+    let subtype = { stats: [], skills: {} };
+    for (let power of subtypeInfo.children) {
+        if (power.name === 'stat') {
+            subtype.stats.push({ Name: power.attributes[0].value, Bonus: Number.parseInt(power.attributes[1].value) });
+        }
+        if (power.name === 'skills') {
+            for (let skillInfo of power.children) {
+                let skillName = skillInfo.attributes[0].value;
+                let skillDisplayName = findSkillDisplayName(skillName, skillData);
+                subtype.skills[skillName] = skillDisplayName;
+            }
+        }
+        if (power.name === 'savemodifiers') {
+            subtype.saveModifiers = [];
+            for (let modifier of power.children) {
+                let modifierData = {};
+                for (let attribute of modifier.attributes) {
+                    modifierData[attribute.name] = attribute.value;
+                }
+                subtype.saveModifiers.push(modifierData);
+            }
+        }
+    }
+    subtype.name = subtypeInfo.attributes.find(attribute => attribute.name === 'Name').value;
+    subtype.token = subtypeInfo.attributes.find(attribute => attribute.name === 'Tile').value;
+    subtype.token = '/assets/images/Textures/' + qudDirToQudzooDir(subtype.token, { Name: subtype.name }).replace(/\\/g, '/');
+
+    return subtype;
+}
+
+function findSkillDisplayName(skillName, skillData) {
+    for (let category of skillData) {
+        if (category.name === skillName) return category.displayName;
+        for (let skill of category.categorySkills) {
+            if (skill.name === skillName) return skill.displayName;
+        }
+    }
 }

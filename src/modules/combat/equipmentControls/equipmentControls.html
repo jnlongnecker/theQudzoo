@@ -9,7 +9,7 @@
                     </span>
                     <span class="item-description">
                         <build-markdown-renderer modes="collapse-line all-qud-font bolded inline no-highlight"
-                            single-line raw-text={limb.desc}></build-markdown-renderer>
+                            single-line slow-load raw-text={limb.desc}></build-markdown-renderer>
                     </span>
                 </div>
             </template>
@@ -24,9 +24,9 @@
                 </div>
                 <div class="details">
                     <build-markdown-renderer modes="collapse-line no-highlight all-qud-font bolded inline" single-line
-                        raw-text={selectedItem.displayName} if:true={selectedItem}></build-markdown-renderer>
+                        slow-load raw-text={selectedItem.displayName} if:true={selectedItem}></build-markdown-renderer>
                     <build-markdown-renderer modes="collapse-line no-highlight all-qud-font bolded inline" single-line
-                        raw-text={selectedStats} if:true={selectedItem}></build-markdown-renderer>
+                        slow-load raw-text={selectedStats} if:true={selectedItem}></build-markdown-renderer>
                     <div class="controls">
                         <input-button size="small" variant="thin toughness" onclick={unequipSelected}
                             if:true={selectedItem}>

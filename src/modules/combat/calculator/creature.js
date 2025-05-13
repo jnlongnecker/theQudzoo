@@ -1,5 +1,5 @@
 import { Anatomy } from "./anatomy";
-import { SkillAddedEvent } from "./events";
+import { SkillAddedEvent, SkillRemovedEvent } from "./events";
 import { random, Roll } from "./rolls";
 import { Skills } from "./skillParts/module";
 import { GameObject } from "./gameObject";
@@ -280,10 +280,12 @@ class Creature extends GameObject {
     effects;
     isKin;
     attributeExpenditure;
+    subtype;
     skillExpenditure = { spent: 0, latestLevel: 1 }
     parts = [];
     skills = {};
     actions = [];
+
 
     hpFromLevelUpRolls = [0, 0];
     minLevel;
@@ -316,6 +318,7 @@ class Creature extends GameObject {
             creature.attachPart(new Skills());
             for (let skill in obj.skills) { creature.addSkill(skill); }
         }
+        if (obj.subtype) creature.changeSubtype(obj.subtype);
 
         return creature;
     }
@@ -331,8 +334,30 @@ class Creature extends GameObject {
         this.fire(new SkillAddedEvent(skillObj.Name));
     }
 
+    removeSkill(skillObj) {
+        this.skills[skillObj.Name] = false;
+        this.fire(new SkillRemovedEvent(skillObj.Name));
+    }
+
     rollStats() {
         this.stats.rollStats(this.level);
+    }
+
+    changeSubtype(subtype) {
+        if (this.subtype) {
+            for (let skill in this.subtype.skills) this.removeSkill({ Name: skill });
+            for (let shifter of this.subtype.shifters) this.stats.removeShifter(shifter);
+        }
+
+        for (let skill in subtype.skills) this.addSkill({ Name: skill });
+        subtype.shifters = [];
+        for (let stat of subtype.stats) {
+            subtype.shifters.push(this.stats.addShifter(stat.Name, stat.Bonus));
+        }
+        this.token = subtype.token;
+
+        this.subtype = subtype;
+        this.stats.recalculateHp(this.hpFromLevelUpRolls, this.level);
     }
 
     levelUp() {

@@ -4,6 +4,12 @@
             <combat-character-controls></combat-character-controls>
             <div class="main-panel">
                 <div class="icon-tab-container">
+                    <div class="control-pane" if:true={isLevelOne}>
+                        <button class={subClass} data-option="subtype" onclick={swapPanel}>
+                            <img src="/assets/images/Textures/Creatures/Nomad.png" />
+                        </button>
+                        <label class="pane-label">Subtype</label>
+                    </div>
                     <div class="control-pane">
                         <button class={attrClass} data-option="attributes" onclick={swapPanel}>
                             <img src="/assets/images/Textures/Abilities/CommandWillForceStrength.png" />
@@ -28,6 +34,12 @@
                         </button>
                         <label class="pane-label">Mutations</label>
                     </div>
+                    <div class="control-pane" if:true={isKin}>
+                        <button class={cybClass} data-option="cybernetics" onclick={swapPanel}>
+                            <img src="/assets/images/Textures/Items/Pentaceps.png" />
+                        </button>
+                        <label class="pane-label">Cybernetics</label>
+                    </div>
                     <div class="control-pane">
                         <button class={combatClass} data-option="combat" onclick={swapPanel}>
                             <img src="/assets/images/Textures/Abilities/Berserk!.png" />
@@ -35,10 +47,13 @@
                         <label class="pane-label">Combat</label>
                     </div>
                 </div>
-                <combat-attribute-controls if:true={attrSelected} creature={creature}></combat-attribute-controls>
+                <combat-subtype-controls creature={creature} if:true={subSelected}></combat-subtype-controls>
+                <combat-attribute-controls if:true={attrSelected} creature={creature}
+                    mode={mode}></combat-attribute-controls>
                 <combat-equipment-controls if:true={equipSelected} character={creature}></combat-equipment-controls>
-                <combat-skill-controls if:true={skillSelected} creature={creature}></combat-skill-controls>
+                <combat-skill-controls if:true={skillSelected} creature={creature} mode={mode}></combat-skill-controls>
                 <combat-mutation-controls if:true={mutSelected}></combat-mutation-controls>
+                <combat-cybernetic-controls if:true={cybSelected}></combat-cybernetic-controls>
                 <combat-controls if:true={combatSelected} character={creature} enemy={enemy}></combat-controls>
             </div>
             <combat-creature-picker></combat-creature-picker>

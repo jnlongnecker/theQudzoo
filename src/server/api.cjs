@@ -123,6 +123,7 @@ exports.processRequest = async (res, req) => {
             case "castes":
             case "cybernetics":
             case "skillData":
+            case "subtypeData":
                 response = await getData(path);
                 res.status(200);
                 return response;

@@ -282,6 +282,21 @@
         "Inherits": "Humanoid",
         "clean": true,
         "src": "/assets/images/Textures/Creatures/Apostle.png",
+        "subtype": {
+            "stats": [
+                {
+                    "Name": "Ego",
+                    "Bonus": 2
+                }
+            ],
+            "skills": {
+                "Persuasion_Intimidate": "Intimidate",
+                "Persuasion_Proselytize": "Proselytize",
+                "Customs": "Customs and Folklore"
+            },
+            "name": "Apostle",
+            "token": "/assets/images/Textures/Creatures/Apostle.png"
+        },
         "cleanedName": "Mutant"
     },
     "BaseTrueKin": {
@@ -582,6 +597,29 @@
         "Inherits": "BaseHumanoid",
         "clean": true,
         "src": "/assets/images/Textures/Creatures/Horticulturist.png",
+        "subtype": {
+            "stats": [
+                {
+                    "Name": "Intelligence",
+                    "Bonus": 3
+                }
+            ],
+            "skills": {
+                "CookingAndGathering": "Cooking and Gathering",
+                "CookingAndGathering_Harvestry": "Harvestry",
+                "Axe": "Axe",
+                "Rifles": "Bow and Rifle",
+                "Survival_JungleSurvival": "Wilderness Lore: Jungles"
+            },
+            "saveModifiers": [
+                {
+                    "Vs": "Bleeding",
+                    "Amount": "2"
+                }
+            ],
+            "name": "Horticulturist",
+            "token": "/assets/images/Textures/Creatures/Horticulturist.png"
+        },
         "cleanedName": "True Kin"
     }
 }

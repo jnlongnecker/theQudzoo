@@ -100,6 +100,12 @@ export class SkillAddedEvent extends BaseEvent {
     constructor(skillName) { super(); this.skillName = skillName; }
 }
 
+export class SkillRemovedEvent extends BaseEvent {
+    skillName;
+
+    constructor(skillName) { super(); this.skillName = skillName; }
+}
+
 export class ActivatedActionEvent extends BaseEvent {
     actionId;
     details;
