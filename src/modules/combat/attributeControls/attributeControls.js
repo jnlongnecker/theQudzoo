@@ -117,6 +117,14 @@ export default class AttributeControls extends LightningElement {
         let creature = event.detail;
         if (creature == undefined) return;
         let stats = creature.stats;
+        this.modifiers = {
+            Strength: stats.Strength.shift,
+            Agility: stats.Agility.shift,
+            Toughness: stats.Toughness.shift,
+            Willpower: stats.Willpower.shift,
+            Intelligence: stats.Intelligence.shift,
+            Ego: stats.Ego.shift
+        }
         this.attributes = this.attributes.map(item => {
             switch (item.name) {
                 case 'Strength':
