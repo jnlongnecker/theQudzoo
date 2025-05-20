@@ -346,10 +346,12 @@ class Creature extends GameObject {
     changeSubtype(subtype) {
         if (this.subtype) {
             for (let skill in this.subtype.skills) this.removeSkill({ Name: skill });
+            for (let skill of this.subtype.autoSkills) this.removeSkill({ Name: skill });
             for (let shifter of this.subtype.shifters) this.stats.removeShifter(shifter);
         }
 
         for (let skill in subtype.skills) this.addSkill({ Name: skill });
+        for (let skill of subtype.autoSkills) this.addSkill({ Name: skill });
         subtype.shifters = [];
         for (let stat of subtype.stats) {
             subtype.shifters.push(this.stats.addShifter(stat.Name, stat.Bonus));

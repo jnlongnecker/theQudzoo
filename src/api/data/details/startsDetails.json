@@ -289,6 +289,7 @@
                     "Bonus": 2
                 }
             ],
+            "autoSkills": ["Customs_Tactful"],
             "skills": {
                 "Persuasion_Intimidate": "Intimidate",
                 "Persuasion_Proselytize": "Proselytize",
@@ -611,6 +612,12 @@
                 "Rifles": "Bow and Rifle",
                 "Survival_JungleSurvival": "Wilderness Lore: Jungles"
             },
+            "autoSkills": [
+                "CookingAndGathering_MealPreparation",
+                "Axe_Expertise",
+                "Rifle_SteadyHands",
+                "Rifle_DrawABead"
+            ],
             "saveModifiers": [
                 {
                     "Vs": "Bleeding",

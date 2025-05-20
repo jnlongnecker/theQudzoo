@@ -740,7 +740,7 @@ exports.formatSkillData = function (skills) {
             minimum: category.Minimum,
             token: src,
             description: category.Description,
-            categorySkills
+            categorySkills,
         });
     }
     for (let category of skillArray) {
@@ -787,7 +787,7 @@ exports.formatSubtypeData = function (subtypes, skillData) {
 }
 
 function buildSubtype(subtypeInfo, skillData) {
-    let subtype = { stats: [], skills: {} };
+    let subtype = { stats: [], skills: {}, autoSkills: [] };
     for (let power of subtypeInfo.children) {
         if (power.name === 'stat') {
             subtype.stats.push({ Name: power.attributes[0].value, Bonus: Number.parseInt(power.attributes[1].value) });
@@ -797,6 +797,9 @@ function buildSubtype(subtypeInfo, skillData) {
                 let skillName = skillInfo.attributes[0].value;
                 let skillDisplayName = findSkillDisplayName(skillName, skillData);
                 subtype.skills[skillName] = skillDisplayName;
+                for (let autoSkill of findFreeSkillsFromThis(skillName, skillData)) {
+                    subtype.autoSkills.push(autoSkill);
+                }
             }
         }
         if (power.name === 'savemodifiers') {
@@ -824,4 +827,15 @@ function findSkillDisplayName(skillName, skillData) {
             if (skill.name === skillName) return skill.displayName;
         }
     }
+}
+
+function findFreeSkillsFromThis(skillName, skillData) {
+    let freeSkillNames = [];
+    for (let category of skillData) {
+        if (category.name !== skillName) continue;
+        for (let skill of category.categorySkills) {
+            if (skill.cost == 0) freeSkillNames.push(skill.name);
+        }
+    }
+    return freeSkillNames;
 }
