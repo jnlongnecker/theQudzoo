@@ -26,11 +26,19 @@ switch (func) {
     case 'skills': writeSkillData(); break;
     case 'subtype':
     case 'subtypes': writeSubtypeDetails(); break;
+    case 'mutation':
+    case 'mutations': writeMutationData(); break;
 }
 
 function test() {
-    let objects = readToObject('Subtypes.xml');
+    let objects = readToObject('Mutations.xml');
     fs.writeFileSync(`${outputDirectory}xmlObjectsItems.json`, JSON.stringify(objects, undefined, 4), { flag: 'w' });
+}
+
+function writeMutationData() {
+    let mutations = readToObject('Mutations.xml');
+    let mutationData = parser.formatMutationData(mutations);
+    fs.writeFileSync(`${outputDirectory}mutationData.json`, JSON.stringify(mutationData, undefined, 4), { flag: 'w' });
 }
 
 function writeSubtypeDetails() {

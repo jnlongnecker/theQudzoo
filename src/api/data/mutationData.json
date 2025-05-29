@@ -1,0 +1,681 @@
+{
+    "Morphotypes": {
+        "name": "Morphotypes",
+        "displayName": "Morphotypes",
+        "mutations": [
+            {
+                "name": "Chimera",
+                "class": "Chimera",
+                "cost": 1,
+                "max": 1,
+                "exclusions": "Esper,*Mental,*MentalDefects",
+                "token": "/assets/images/Textures/Mutations/Chimera.png"
+            },
+            {
+                "name": "Esper",
+                "class": "Esper",
+                "cost": 1,
+                "max": 1,
+                "exclusions": "Chimera,*Physical,*PhysicalDefects",
+                "token": "/assets/images/Textures/Mutations/Esper.png"
+            },
+            {
+                "name": "Unstable Genome",
+                "class": "UnstableGenome",
+                "cost": 3,
+                "max": 99,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Unstable Genome.png"
+            }
+        ]
+    },
+    "Physical": {
+        "name": "Physical",
+        "displayName": "Physical Mutations",
+        "mutations": [
+            {
+                "name": "Adrenal Control",
+                "class": "AdrenalControl2",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Adrenal Control.png"
+            },
+            {
+                "name": "Beak",
+                "class": "Beak",
+                "cost": 1,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Beak.png"
+            },
+            {
+                "name": "Burrowing Claws",
+                "class": "BurrowingClaws",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Burrowing Claws.png"
+            },
+            {
+                "name": "Carapace",
+                "class": "Carapace",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "Quills",
+                "token": "/assets/images/Textures/Mutations/Carapace.png"
+            },
+            {
+                "name": "Corrosive Gas Generation",
+                "class": "CorrosiveGasGeneration",
+                "cost": 3,
+                "max": 1,
+                "token": "/assets/images/Textures/Mutations/Corrosive Gas Generation.png"
+            },
+            {
+                "name": "Double-muscled",
+                "class": "HeightenedStrength",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Double-muscled.png"
+            },
+            {
+                "name": "Electrical Generation",
+                "class": "ElectricalGeneration",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Electrical Generation.png"
+            },
+            {
+                "name": "Electromagnetic Pulse",
+                "class": "ElectromagneticPulse",
+                "cost": 2,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Electromagnetic Pulse.png"
+            },
+            {
+                "name": "Flaming Ray",
+                "class": "FlamingRay",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "Freezing Ray",
+                "token": "/assets/images/Textures/Mutations/Flaming Ray.png"
+            },
+            {
+                "name": "Freezing Ray",
+                "class": "FreezingRay",
+                "cost": 5,
+                "max": 1,
+                "exclusions": "Flaming Ray",
+                "token": "/assets/images/Textures/Mutations/Freezing Ray.png"
+            },
+            {
+                "name": "Heightened Hearing",
+                "class": "HeightenedHearing",
+                "cost": 2,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Heightened Hearing.png"
+            },
+            {
+                "name": "Heightened Quickness",
+                "class": "HeightenedSpeed",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Heightened Quickness.png"
+            },
+            {
+                "name": "Horns",
+                "class": "Horns",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Horns.png"
+            },
+            {
+                "name": "Multiple Arms",
+                "class": "MultipleArms",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Multiple Arms.png"
+            },
+            {
+                "name": "Multiple Legs",
+                "class": "MultipleLegs",
+                "cost": 5,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Multiple Legs.png"
+            },
+            {
+                "name": "Night Vision",
+                "class": "DarkVision",
+                "cost": 1,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Night Vision.png"
+            },
+            {
+                "name": "Phasing",
+                "class": "Phasing",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Phasing.png"
+            },
+            {
+                "name": "Photosynthetic Skin",
+                "class": "PhotosyntheticSkin",
+                "cost": 2,
+                "max": 1,
+                "exclusions": "Albino,Carnivorous",
+                "token": "/assets/images/Textures/Mutations/Photosynthetic Skin.png"
+            },
+            {
+                "name": "Quills",
+                "class": "Quills",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "Carapace",
+                "token": "/assets/images/Textures/Mutations/Quills.png"
+            },
+            {
+                "name": "Regeneration",
+                "class": "Regeneration",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Regeneration.png"
+            },
+            {
+                "name": "Sleep Gas Generation",
+                "class": "SleepGasGeneration",
+                "cost": 3,
+                "max": 1,
+                "token": "/assets/images/Textures/Mutations/Sleep Gas Generation.png"
+            },
+            {
+                "name": "Slime Glands",
+                "class": "SlimeGlands",
+                "cost": 1,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Slime Glands.png"
+            },
+            {
+                "name": "Spinnerets",
+                "class": "Spinnerets",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Spinnerets.png"
+            },
+            {
+                "name": "Stinger (Confusing Venom)",
+                "class": "Stinger",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "Stinger (Paralyzing Venom),Stinger (Poisoning Venom)",
+                "token": "/assets/images/Textures/Mutations/Stinger (Confusing Venom).png",
+                "variant": "Stinger Confusion"
+            },
+            {
+                "name": "Stinger (Paralyzing Venom)",
+                "class": "Stinger",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "Stinger (Confusing Venom),Stinger (Poisoning Venom)",
+                "token": "/assets/images/Textures/Mutations/Stinger (Paralyzing Venom).png",
+                "variant": "Stinger Paralysis"
+            },
+            {
+                "name": "Stinger (Poisoning Venom)",
+                "class": "Stinger",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "Stinger (Confusing Venom),Stinger (Paralyzing Venom)",
+                "token": "/assets/images/Textures/Mutations/Stinger (Poisoning Venom).png",
+                "variant": "Stinger Poison"
+            },
+            {
+                "name": "Thick Fur",
+                "class": "ThickFur",
+                "cost": 1,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Thick Fur.png"
+            },
+            {
+                "name": "Triple-jointed",
+                "class": "HeightenedAgility",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Triple-jointed.png"
+            },
+            {
+                "name": "Two-headed",
+                "class": "TwoHeaded",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Two-headed.png"
+            },
+            {
+                "name": "Two-hearted",
+                "class": "TwoHearted",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Two-hearted.png"
+            },
+            {
+                "name": "Wings",
+                "class": "Wings",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Wings.png"
+            }
+        ]
+    },
+    "PhysicalDefects": {
+        "name": "PhysicalDefects",
+        "displayName": "Physical Defects",
+        "mutations": [
+            {
+                "name": "Albino",
+                "class": "Albino",
+                "cost": -2,
+                "max": 1,
+                "exclusions": "Photosynthetic Skin",
+                "token": "/assets/images/Textures/Mutations/Albino.png"
+            },
+            {
+                "name": "Amphibious",
+                "class": "Amphibious",
+                "cost": -3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Amphibious.png"
+            },
+            {
+                "name": "Brittle Bones",
+                "class": "BrittleBones",
+                "cost": -4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Brittle Bones.png"
+            },
+            {
+                "name": "Nerve Poppy",
+                "class": "Analgesia",
+                "cost": -2,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Nerve Poppy.png"
+            },
+            {
+                "name": "Carnivorous",
+                "class": "Carnivorous",
+                "cost": -2,
+                "max": 1,
+                "exclusions": "Photosynthetic Skin",
+                "token": "/assets/images/Textures/Items/Carnivorous.png"
+            },
+            {
+                "name": "Cold-Blooded",
+                "class": "ColdBlooded",
+                "cost": -2,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Cold-Blooded.png"
+            },
+            {
+                "name": "Electromagnetic Impulse",
+                "class": "ElectromagneticImpulse",
+                "cost": -2,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Electromagnetic Impulse.png"
+            },
+            {
+                "name": "Hooks for Feet",
+                "class": "HooksForFeet",
+                "cost": -4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Hooks for Feet.png"
+            },
+            {
+                "name": "Irritable Genome",
+                "class": "IrritableGenome",
+                "cost": -4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Irritable Genome.png"
+            },
+            {
+                "name": "Myopic",
+                "class": "Myopia",
+                "cost": -3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Myopic.png"
+            },
+            {
+                "name": "Spontaneous Combustion",
+                "class": "SpontaneousCombustion",
+                "cost": -3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Spontaneous Combustion.png"
+            },
+            {
+                "name": "Tonic Allergy",
+                "class": "TonicAllergy",
+                "cost": -4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Tonic Allergy.png"
+            }
+        ]
+    },
+    "Mental": {
+        "name": "Mental",
+        "displayName": "Mental Mutations",
+        "mutations": [
+            {
+                "name": "Beguiling",
+                "class": "Beguiling",
+                "cost": 5,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Beguiling.png"
+            },
+            {
+                "name": "Burgeoning",
+                "class": "Burgeoning",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Burgeoning.png"
+            },
+            {
+                "name": "Clairvoyance",
+                "class": "Clairvoyance",
+                "cost": 2,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Clairvoyance.png"
+            },
+            {
+                "name": "Confusion",
+                "class": "Confusion",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Confusion.png"
+            },
+            {
+                "name": "Cryokinesis",
+                "class": "Cryokinesis",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Cryokinesis.png"
+            },
+            {
+                "name": "Disintegration",
+                "class": "Disintegration",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Disintegration.png"
+            },
+            {
+                "name": "Domination",
+                "class": "Domination",
+                "cost": 5,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Domination.png"
+            },
+            {
+                "name": "Ego Projection",
+                "class": "WillForce",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Ego Projection.png"
+            },
+            {
+                "name": "Force Bubble",
+                "class": "ForceBubble",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Force Bubble.png"
+            },
+            {
+                "name": "Force Wall",
+                "class": "ForceWall",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Force Wall.png"
+            },
+            {
+                "name": "Kindle",
+                "class": "Kindle",
+                "cost": 1,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Kindle.png"
+            },
+            {
+                "name": "Light Manipulation",
+                "class": "LightManipulation",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Light Manipulation.png"
+            },
+            {
+                "name": "Mass Mind",
+                "class": "MassMind",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Mass Mind.png"
+            },
+            {
+                "name": "Mental Mirror",
+                "class": "MentalMirror",
+                "cost": 2,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Mental Mirror.png"
+            },
+            {
+                "name": "Precognition",
+                "class": "Precognition",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Precognition.png"
+            },
+            {
+                "name": "Psychometry",
+                "class": "Psychometry",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "Dystechnia",
+                "token": "/assets/images/Textures/Mutations/Psychometry.png"
+            },
+            {
+                "name": "Pyrokinesis",
+                "class": "Pyrokinesis",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Pyrokinesis.png"
+            },
+            {
+                "name": "Sense Psychic",
+                "class": "SensePsychic",
+                "cost": 1,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Sense Psychic.png"
+            },
+            {
+                "name": "Spacetime Vortex",
+                "class": "SpacetimeVortex",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Spacetime Vortex.png"
+            },
+            {
+                "name": "Stunning Force",
+                "class": "StunningForce",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Stunning Force.png"
+            },
+            {
+                "name": "Sunder Mind",
+                "class": "SunderMind",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Sunder Mind.png"
+            },
+            {
+                "name": "Syphon Vim",
+                "class": "LifeDrain",
+                "cost": 3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Syphon Vim.png"
+            },
+            {
+                "name": "Telepathy",
+                "class": "Telepathy",
+                "cost": 1,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Telepathy.png"
+            },
+            {
+                "name": "Teleportation",
+                "class": "Teleportation",
+                "cost": 5,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Teleportation.png"
+            },
+            {
+                "name": "Teleport Other",
+                "class": "TeleportOther",
+                "cost": 2,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Teleport Other.png"
+            },
+            {
+                "name": "Time Dilation",
+                "class": "TimeDilation",
+                "cost": 4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Time Dilation.png"
+            },
+            {
+                "name": "Temporal Fugue",
+                "class": "TemporalFugue",
+                "cost": 5,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Temporal Fugue.png"
+            }
+        ]
+    },
+    "MentalDefects": {
+        "name": "MentalDefects",
+        "displayName": "Mental Defects",
+        "mutations": [
+            {
+                "name": "Amnesia",
+                "class": "Amnesia",
+                "cost": -2,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Amnesia.png"
+            },
+            {
+                "name": "Blinking Tic",
+                "class": "BlinkingTic",
+                "cost": -3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Blinking Tic.png"
+            },
+            {
+                "name": "Dystechnia",
+                "class": "Dystechnia",
+                "cost": -2,
+                "max": 1,
+                "exclusions": "Psychometry",
+                "token": "/assets/images/Textures/Mutations/Dystechnia.png"
+            },
+            {
+                "name": "Evil Twin",
+                "class": "EvilTwin",
+                "cost": -3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Evil Twin.png"
+            },
+            {
+                "name": "Narcolepsy",
+                "class": "Narcolepsy",
+                "cost": -3,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Narcolepsy.png"
+            },
+            {
+                "name": "Psionic Migraines",
+                "class": "PsionicMigraines",
+                "cost": -4,
+                "max": 1,
+                "exclusions": "Horns",
+                "token": "/assets/images/Textures/Mutations/Psionic Migraines.png"
+            },
+            {
+                "name": "Quantum Jitters",
+                "class": "QuantumJitters",
+                "cost": -4,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Quantum Jitters.png"
+            },
+            {
+                "name": "Socially Repugnant",
+                "class": "SociallyRepugnant",
+                "cost": -2,
+                "max": 1,
+                "exclusions": "",
+                "token": "/assets/images/Textures/Mutations/Socially Repugnant.png"
+            }
+        ]
+    }
+}

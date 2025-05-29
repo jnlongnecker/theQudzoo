@@ -104,7 +104,12 @@ async function getSubtypes() {
     return await getMiddleware("/api/subtypeData");
 }
 
+async function getMutationData() {
+    return await getMiddleware("/api/mutationData");
+}
+
 export {
     getBuilds, getAuthenticatedUser, isLoggedIn, getMutations, getCybernetics,
-    getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems, getPreviews, getDetails, getSkillData, getSubtypes
+    getCastes, getCallings, getAttributes, getSkills, getStats, getCreatures, getItems, getPreviews, getDetails, getSkillData, getSubtypes,
+    getMutationData
 };

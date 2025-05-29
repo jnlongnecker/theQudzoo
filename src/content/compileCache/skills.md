@@ -1270,7 +1270,7 @@ This one is unusual because it's not that it does something that is particularly
 
 </div>
 
-It's 50 skill points, why not? You'll use less water and your metabolizing effects will last longer. Don't take it before you get your build up and running, but otherwise it's convenient. If you use the <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Mutations/Amphibious.png" /></span><span class="mutation">Amphibious<span class="nowrap">s<span class="injected"><span class="Y">(<span class="nowrap">(<span class="injected"><span class="r">D</span></span>)</span></span></span></span></span></span> defect, then this is a good offset to that as well and if you have <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Mutations/Photosynthetic Skin.png" /></span><span class="mutation">Photosynthetic Skin</span></span> (or just cook a lot) then your buffs last longer.
+It's 50 skill points, why not? You'll use less water and your metabolizing effects will last longer. Don't take it before you get your build up and running, but otherwise it's convenient. If you use the <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Mutations/Amphibious.png" /></span><span class="mutation">Amphibious<span class="injected"><span class="Y">(<span class="injected"><span class="r">D</span></span>)</span></span></span></span> defect, then this is a good offset to that as well and if you have <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Mutations/Photosynthetic Skin.png" /></span><span class="mutation">Photosynthetic Skin</span></span> (or just cook a lot) then your buffs last longer.
 
 ### Lionheart
 

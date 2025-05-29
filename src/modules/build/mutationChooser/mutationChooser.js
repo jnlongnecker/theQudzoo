@@ -235,7 +235,6 @@ export default class MutationChooser extends LightningElement {
                 variantName: mut.variant
             }
             this.mutationPayload.mutations.push(mutObj);
-            console.log(mutObj)
         }
         this.mutationPayload.mpRemaining = this.points;
 

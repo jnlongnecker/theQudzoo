@@ -839,3 +839,36 @@ function findFreeSkillsFromThis(skillName, skillData) {
     }
     return freeSkillNames;
 }
+
+/* 
+
+    ============================== END SUBTYPE DATA PROCESSING =============================
+
+
+    ============================== MUTATION DATA PROCESSING =============================
+    
+*/
+
+exports.formatMutationData = function (objects) {
+    let mutations = {};
+    for (let category in objects) {
+        let categoryData = objects[category];
+        mutations[category] = {
+            name: categoryData.Name,
+            displayName: unformatDisplayName(categoryData.DisplayName),
+            mutations: categoryData.mutations.reduce((array, mut) => {
+                if (mut.Prerelease) return array;
+                array.push({
+                    name: mut.Name, class: mut.Class,
+                    cost: Number.parseInt(mut.Cost),
+                    max: Number.parseInt(mut.MaxSelected),
+                    exclusions: mut.Exclusions,
+                    token: '/assets/images/Textures/' + qudDirToQudzooDir(mut.Tile, mut).replace(/\\/g, '/'),
+                    variant: mut.Variant
+                });
+                return array;
+            }, [])
+        }
+    }
+    return mutations;
+}

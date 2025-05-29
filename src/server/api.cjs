@@ -124,6 +124,7 @@ exports.processRequest = async (res, req) => {
             case "cybernetics":
             case "skillData":
             case "subtypeData":
+            case "mutationData":
                 response = await getData(path);
                 res.status(200);
                 return response;

@@ -1,6 +1,6 @@
-import Part from '../parts';
+import { MutationPart } from './base';
 
-export class AdrenalControl2 extends Part {
+export class AdrenalControl2 extends MutationPart {
 
 
     static getQuicknessBonus(level) {
@@ -15,21 +15,31 @@ export class AdrenalControl2 extends Part {
         return "You regulate your body's release of adrenaline.";
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `You can increase your body's adrenaline flow for 20 rounds.\nWhile it's flowing,  you gain ` +
-            `+{{C|${AdrenalControl2.getQuicknessBonus(level)}}} quickness and other physical mutations gain ` +
-            `+{{C|${AdrenalControl2.getRankBonus(level)}}} rank.\nCooldown: 200 rounds`;
+            `+${AdrenalControl2.getQuicknessBonus(level)} quickness and other physical mutations gain ` +
+            `+${AdrenalControl2.getRankBonus(level)} rank.\nCooldown: 200 rounds`;
     }
 }
 
-export class Beak extends Part {
+export class Beak extends MutationPart {
+
+    static getVariants() {
+        return [
+            { type: "Beak", name: "Beak" },
+            { type: "Bill", name: "Beak Bill" },
+            { type: "Rostrum", name: "Beak Rostrum" },
+            { type: "Frill", name: "Beak Frill" },
+            { type: "Proboscis", name: "Beak Proboscis" },
+        ];
+    }
 
     static getDescription(variantName) {
         return `Your face bears a sightly ${variantName}.\n\n+1 Ego\nYou occasionally peck at your opponents.\n+200 reputation with {{w|birds}}`;
     }
 }
 
-export class BurrowingClaws extends Part {
+export class BurrowingClaws extends MutationPart {
 
     static getWallBonusPenetration(level) {
         return level * 3;
@@ -57,14 +67,14 @@ export class BurrowingClaws extends Part {
         return `You bear spade-like claws that can burrow through the earth.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Claw penetration vs wall: ${BurrowingClaws.getWallBonusPenetration(level)}
         Claws destroy walls after ${BurrowingClaws.getWallHitsRequired(level)} penetrating hits.
         Claws are also a short-blade class natural weapon that deal ${BurrowingClaws.getClawsDamage(level)} base damage to non-walls.`;
     }
 }
 
-export class Carapace extends Part {
+export class Carapace extends MutationPart {
 
     static getAV(level) {
         return 3 + Math.floor(level / 2);
@@ -86,18 +96,18 @@ export class Carapace extends Part {
         return `You are protected by a durable carapace.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `+${Carapace.getAV(level)} AV
         ${Carapace.getDV(level)} DV
         +${Carapace.getHeatResistance(level)} Heat Resistance
         +${Carapace.getColdResistance(level)} Cold Resistance
         +400 reputation with {{w|tortoises}}
-        You may tighten your carapace to recieve double the AV bonus at a -2 DV penalty as long as you remain still.
+        You may tighten your carapace to recieve double the AV bonus at a -2 DV penalty as long as you remain still.\n
         Cannot wear body armor.`;
     }
 }
 
-export class CorrosiveGasGeneration extends Part {
+export class CorrosiveGasGeneration extends MutationPart {
 
     static getDuration(level) {
         return level + 2;
@@ -111,30 +121,33 @@ export class CorrosiveGasGeneration extends Part {
         return `You release a burst of corrosive gas around yourself.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Releases gas for ${CorrosiveGasGeneration.getDuration(level)} rounds
         Cooldown: ${CorrosiveGasGeneration.getCooldown(level)} rounds`;
     }
 }
 
-export class DarkVision extends Part {
+export class DarkVision extends MutationPart {
 
     static getDescription() {
         return `You see in the dark.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return ``;
     }
 }
 
-export class ElectricalGeneration extends Part {
+export class ElectricalGeneration extends MutationPart {
+
+    static getMaxCharge(level) { }
+    static getBaseChargePerTurn(level) { }
 
     static getDescription() {
         return `You accrue electrical charge that you can use and discharge to deal damage.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Maximum charge: {{C|${ElectricalGeneration.getMaxCharge(level)}}}
         Accrue base {{C|${ElectricalGeneration.getBaseChargePerTurn(level)}}} charge per turn
         Can discharge all held charge damage for 1d4 damage per 1000 charge
@@ -146,7 +159,7 @@ export class ElectricalGeneration extends Part {
     }
 }
 
-export class ElectromagneticPulse extends Part {
+export class ElectromagneticPulse extends MutationPart {
 
     static getRadius(level) {
         if (level < 5) return 2;
@@ -169,7 +182,7 @@ export class ElectromagneticPulse extends Part {
         return `You generate an electromagnetic pulse that disables nearby artifacts and machines.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         let radius = ElectromagneticPulse.getRadius(level);
         return `Area: ${radius}x${radius} centered around yourself
         Duration: ${ElectromagneticPulse.getDuration(level)} rounds
@@ -177,37 +190,51 @@ export class ElectromagneticPulse extends Part {
     }
 }
 
-export class FlamingRay extends Part {
+export class FlamingRay extends MutationPart {
 
     static getRange(level) { return 10; }
     static getHeatOnHitAmount(level) { return `${level * 2}d8`; }
     static getDamage(level) { return `${level}d4`; }
     static getCooldown(level) { return 10; }
+    static getVariants() {
+        return [
+            { type: "Hands", name: "Ghostly Flames" },
+            { type: "Face", name: "Ghostly Flames Face" },
+            { type: "Feet", name: "Ghostly Flames Feet" },
+        ];
+    }
 
     static getDescription() {
         return `You emit a ray of flame.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Emits a ${FlamingRay.getRange(level)}-square ray of flame in the direction of your choice.
-        Damage: ${FlamingRay.getDamage(level)}
+        Damage: ${FlamingRay.getDamage(level)}\n
         Cooldown: ${FlamingRay.getCooldown(level)} rounds
         Melee attacks heat opponents by ${FlamingRay.getHeatOnHitAmount(level)} degrees`;
     }
 }
 
-export class FreezingRay extends Part {
+export class FreezingRay extends MutationPart {
 
     static getRange(level) { return 10; }
     static getCoolOnHitAmount(level) { return `-${level * 2}d8`; }
     static getDamage(level) { return `${level}d3`; }
     static getCooldown(level) { return 20; }
+    static getVariants() {
+        return [
+            { type: "Hands", name: "Icy Vapor" },
+            { type: "Face", name: "Icy Vapor Face" },
+            { type: "Feet", name: "Icy Vapor Feet" },
+        ];
+    }
 
     static getDescription() {
         return `You emit a ray of frost.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Emits a ${FreezingRay.getRange(level)}-square ray of frost in the direction of your choice.
         Damage: ${FreezingRay.getDamage(level)}
         Cooldown: ${FreezingRay.getCooldown(level)} rounds
@@ -215,7 +242,7 @@ export class FreezingRay extends Part {
     }
 }
 
-export class HeightenedAgility extends Part {
+export class HeightenedAgility extends MutationPart {
 
     static getCooldownCancelChance(level) { return 7 + level * 3; }
     static getAgilityBonus(level) { return 2 + Math.floor((level - 1) / 2); }
@@ -224,13 +251,13 @@ export class HeightenedAgility extends Part {
         return `Your joints stretch much further than usual.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `+${HeightenedAgility.getAgilityBonus(level)} Agility
         ${HeightenedAgility.getCooldownCancelChance(level)}% chance that Sprint and skills with Agility prerequisites don't go on cooldown after use`;
     }
 }
 
-export class HeightenedHearing extends Part {
+export class HeightenedHearing extends MutationPart {
 
     static getRadius(level) {
         if (level < 10) return 3 + level * 2;
@@ -241,13 +268,13 @@ export class HeightenedHearing extends Part {
         return `You are possessed of unnaturally acute hearing.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `You detect the presence of creatures within a radius of ${HeightenedHearing.getRadius(level)}.
         Chance to identify nearby detected creatures`;
     }
 }
 
-export class HeightenedSpeed extends Part {
+export class HeightenedSpeed extends MutationPart {
 
     static getSpeedBonus(level) { return 13 + 2 * level; }
 
@@ -255,12 +282,12 @@ export class HeightenedSpeed extends Part {
         return `You are gifted with tremendous speed.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `+${HeightenedSpeed.getSpeedBonus(level)} Quickness`;
     }
 }
 
-export class HeightenedStrength extends Part {
+export class HeightenedStrength extends MutationPart {
 
     static getDazedChance(level) { return 13 + 2 * level; }
     static getStrengthBonus(level) { return 2 + Math.floor((level - 1) / 2); }
@@ -269,23 +296,32 @@ export class HeightenedStrength extends Part {
         return `You are possessed of hulking strength.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `+${HeightenedStrength.getStrengthBonus(level)} Strength
         ${HeightenedStrength.getDazedChance(level)}% chance to daze your opponent on a successful melee attack for 2-3 rounds`;
     }
 }
 
-export class Horns extends Part {
+export class Horns extends MutationPart {
 
     static getAV(level) { return 1 + Math.floor((level - 1) / 3); }
     static getBaseDamage(level) { return `2d${3 + Math.floor(level / 3)}`; }
     static getToHitBonus(level) { return Math.floor(level / 2) + 1; }
+    static getVariants() {
+        return [
+            { type: "Horns", name: "Horns" },
+            { type: "Horn", name: "Horns Single" },
+            { type: "Antlers", name: "Horns Casque" },
+            { type: "Casque", name: "Horns Antlers" },
+            { type: "Spiral Horn", name: "Horns Spiral" },
+        ];
+    }
 
     static getDescription(variantName) {
         return `Horns jut out of your head.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `20% chance on melee attack to gore  your opponent
         Damage increment: ${Horns.getBaseDamage(level)}
         To-hit bonus: ${Horns.getToHitBonus(level)}
@@ -296,7 +332,7 @@ export class Horns extends Part {
     }
 }
 
-export class MultipleArms extends Part {
+export class MultipleArms extends MutationPart {
 
     static getAttackChance(level) { return 7 + level * 3; }
 
@@ -304,12 +340,12 @@ export class MultipleArms extends Part {
         return `You have an extra set of arms.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `${MultipleArms.getAttackChance(level)}% chance for each extra arm to deliver an additional melee attack whenever you make a melee attack`;
     }
 }
 
-export class MultipleLegs extends Part {
+export class MultipleLegs extends MutationPart {
 
     static getMoveSpeedBonus(level) { return level * 20; }
     static getCarryCapacityBonus(level) { return level + 5; }
@@ -318,24 +354,24 @@ export class MultipleLegs extends Part {
         return `You have an extra set of legs.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `+${MultipleLegs.getMoveSpeedBonus(level)} move speed
         +${MultipleLegs.getCarryCapacityBonus(level)}% carry capacity`;
     }
 }
 
-export class NightVision extends Part {
+export class NightVision extends MutationPart {
 
     static getDescription() {
-        return `You see in the dark.\n`;
+        return `You see in the dark.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return ``;
     }
 }
 
-export class Phasing extends Part {
+export class Phasing extends MutationPart {
 
     static getDuration(level) { return 6 + level; }
     static getBaseCooldown(level) { return 103 - 3 * level; }
@@ -344,13 +380,13 @@ export class Phasing extends Part {
         return `You may phase through solid objects for brief periods of time.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Duration: ${Phasing.getDuration(level)} rounds
         Cooldown: ${Phasing.getBaseCooldown(level)} rounds`;
     }
 }
 
-export class PhotosyntheticSkin extends Part {
+export class PhotosyntheticSkin extends MutationPart {
 
     static getBonusDuration(level) { Math.floor((level - 1) / 4) + 1; }
     static getBonusRegeneration(level) { return 20 + level * 10 }
@@ -362,7 +398,7 @@ export class PhotosyntheticSkin extends Part {
         return `You replenish yourself by absorbing sunlight through your hearty green skin.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `You can bask in the sunlight instead of eating a meal to gain a special metabolizing effect for ${PhotosyntheticSkin.getBonusDuration(level)} day(s): +${PhotosyntheticSkin.getBonusRegeneration(level)}% to natural healing rate and +${PhotosyntheticSkin.getBonusQuickness(level)} Quickness
         While in the sunlight, you accrue starch and lignin that you can use as ingredients in meals you cook (max ${PhotosyntheticSkin.getStarchServings(level)} of each).
         +${PhotosyntheticSkin.getBonusCamouflage(level)} DV while occupying the same space as foliage
@@ -370,7 +406,7 @@ export class PhotosyntheticSkin extends Part {
     }
 }
 
-export class Quills extends Part {
+export class Quills extends MutationPart {
 
     static getAV(level) { return Math.max(2, Math.floor(level / 3 + 2)); }
     static getAVPenalty(level) { return Math.floor(Quills.getAV(level) / 2); }
@@ -382,7 +418,7 @@ export class Quills extends Part {
         return `Hundreds of needle-pointed quills cover your body.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `${Quills.baseQuills(level)} quills
         May expel 10% of your quills in a burst around yourself ({{c|→}}${Quills.getQuillPenetration(level) + 4}{{r|♥}}1d3)
         Regenerate quills at the approximate rate of ${Quills.getRegenRate(level)} per round
@@ -393,7 +429,7 @@ export class Quills extends Part {
     }
 }
 
-export class Regeneration extends Part {
+export class Regeneration extends MutationPart {
 
     static getRegenerationBonus(level) { return 0.1 + 0.1 * level; }
     static getRegenerationChance(level) { return level * 10; }
@@ -403,7 +439,7 @@ export class Regeneration extends Part {
         return `Your wounds heal very quickly.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         let debuffChance = Regeneration.getDebuffChance(level);
         let debuffText = level < 5 ? `minor physical debuff` : `physical debuff`;
         let decapitationText = Regeneration.getRegenerationChance(level) >= 100 ? `You cannot be decapitated\n` : ``;
@@ -414,7 +450,7 @@ export class Regeneration extends Part {
     }
 }
 
-export class SleepGasGeneration extends Part {
+export class SleepGasGeneration extends MutationPart {
 
     static getReleaseDuration(level) { return level + 2; }
     static getReleaseCooldown(level) { return 40; }
@@ -423,24 +459,24 @@ export class SleepGasGeneration extends Part {
         return `You release a burst of sleep gas around yourself.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Releases gas for ${SleepGasGeneration.getReleaseDuration(level)} rounds
         Cooldown: ${SleepGasGeneration.getReleaseCooldown(level)} rounds`;
     }
 }
 
-export class SlimeGlands extends Part {
+export class SlimeGlands extends MutationPart {
 
     static getDescription() {
         return `You produce a viscous slime that you can spit at things.\n\nCovers an area with slime\nRange: 8\nArea: 3x3\nCooldown: 40 rounds\nYou can walk over slime without slipping.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return ``;
     }
 }
 
-export class Spinnerets extends Part {
+export class Spinnerets extends MutationPart {
 
     static getMoveSaveModifier(level) { return 5 + level; }
     static getDuration(level) { return 5 + level; }
@@ -461,7 +497,7 @@ export class Spinnerets extends Part {
     }
 }
 
-export class Stinger extends Part {
+export class Stinger extends MutationPart {
 
     static getPenetration(level) {
         if (level >= 2) return Math.min(9, Math.floor((level - 2) / 3 + 4));
@@ -511,7 +547,7 @@ export class Stinger extends Part {
         return `You bear a tail with a stinger that delivers ${variantText} venom to your enemies.`;
     }
 
-    static getLevelText(level, variant) {
+    static getLevelText(level, levelup, variant) {
         return `20% chance on melee attack to sting your opponent ({{c|→}}${Stinger.getPenetration(level) + 4} {{r|♥}}${Stinger.getDamage(level)})
         Stinger is a long blade and can only penetrate once.
         Always sting on charge or lunge.
@@ -523,29 +559,18 @@ export class Stinger extends Part {
     }
 }
 
-export class ThickFur extends Part {
+export class ThickFur extends MutationPart {
 
     static getDescription() {
         return `You are covered in a thick coat of fur, which protects you from the elements.\n\n+5 Heat Resistance\n+5 Cold Resistance\n+100 reputation with {{w|apes}}, {{w|baboons}}, {{w|bears}}, and {{w|grazing hedonists}}`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return ``;
     }
 }
 
-export class TEMPLATE extends Part {
-
-    static getDescription() {
-        return ``;
-    }
-
-    static getLevelText(level) {
-        return ``;
-    }
-}
-
-export class TwoHeaded extends Part {
+export class TwoHeaded extends MutationPart {
 
     static getReducedMentalActionCost(level) { return 15 + 5 * level; }
     static getShakeOff(level) { return 50; }
@@ -554,13 +579,13 @@ export class TwoHeaded extends Part {
         return `You have two heads.`;
     }
 
-    static getLevelText(level) {
-        return `Mental actions have ${TwoHeaded.getReducedMentalActionCost(level)}% lower actoin costs
+    static getLevelText(level, levelup) {
+        return `Mental actions have ${TwoHeaded.getReducedMentalActionCost(level)}% lower action costs
         ${TwoHeaded.getShakeOff(level)}% chance initially and each round to shake off a negative mental status effect`;
     }
 }
 
-export class TwoHearted extends Part {
+export class TwoHearted extends MutationPart {
 
     static getSprintBonus(level) { return 20 + level * 10; }
     static getToughnessBonus(level) { return 2 + Math.floor((level - 1) / 2); }
@@ -569,13 +594,13 @@ export class TwoHearted extends Part {
         return `You have two hearts.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `+${TwoHearted.getToughnessBonus(level)} Toughness
         You can sprint for ${TwoHearted.getSprintBonus(level)}% longer.`;
     }
 }
 
-export class Wings extends Part {
+export class Wings extends MutationPart {
 
     static sprintingMoveSpeedBonus(level) { return 0.1 + 0.1 * level; }
     static getJumpDistanceBonus(level) { return Math.floor(1 + level / 3); }
@@ -586,7 +611,7 @@ export class Wings extends Part {
         return `You fly.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         let mapBonusSpeed = 1.5 + 0.5 * level;
         let mapLostBonus = 36 + level * 4;
         return `You travel on the world map at ${mapBonusSpeed}x speed

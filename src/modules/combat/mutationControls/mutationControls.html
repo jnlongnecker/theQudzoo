@@ -1,1 +1,43 @@
-<template>Mutations</template>
+<template>
+    <section>
+        <div class="mutations">
+            <template for:each={mutations} for:item="category">
+                <fieldset key={category.id}>
+                    <legend class={category.class}>{category.data.displayName}</legend>
+                    <ul>
+                        <template for:each={category.data.mutations} for:item="mut">
+                            <div class={mut.format} key={mut.name} onmouseenter={mutHover} onclick={mutClick}
+                                data-name={mut.name} data-category={category.data.name}>
+                                <div class="mutation-line">
+                                    <span>
+                                        [<span class="marker">{mut.marker}</span>]
+                                    </span>
+                                    <span>
+                                        [<span class="positive">{mut.cost}</span>]
+                                    </span>
+                                    <span class="mutation-name">
+                                        {mut.name}
+                                    </span>
+                                </div>
+                                <div class="info-btn">
+                                    <button class="v-button" onclick={showInfo} data-class={mut.class}>Info</button>
+                                </div>
+                            </div>
+                        </template>
+                    </ul>
+                </fieldset>
+            </template>
+        </div>
+        <hr />
+        <div class={blurbClass} onclick={hideBlurb}>
+            <fieldset>
+                <legend>{selectedMutation}</legend>
+                <div class="blurb-format">
+                    <img if:true={selectedSrc} src={selectedSrc} class="mut-img" />
+                    <build-markdown-renderer modes="all-qud-font bolded inline no-highlight" slow-load shaders-only
+                        raw-text={selectedText} if:true={selectedText}></build-markdown-renderer>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+</template>

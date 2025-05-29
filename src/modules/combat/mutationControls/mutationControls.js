@@ -1,3 +1,96 @@
-import { LightningElement } from "lwc";
+import { LightningElement, track } from "lwc";
+import { mutationPartRegistry } from 'combat/calculator';
+import { getMutationData } from "c/api";
 
-export default class MutationControls extends LightningElement { }
+const CATEGORY_IDX = {
+    Morphotypes: 0,
+    Physical: 1,
+    PhysicalDefects: 2,
+    Mental: 3,
+    MentalDefects: 4,
+}
+
+export default class MutationControls extends LightningElement {
+
+    @track mutations = [];
+    selectedMutation = '';
+    selectedSrc;
+    selectedText = '';
+
+    constructor() {
+        super();
+        this.pullMutationData();
+    }
+
+    mutHover(event) {
+        let name = event.target.dataset.name;
+        let category = event.target.dataset.category;
+        for (let mutation of this.mutations[CATEGORY_IDX[category]].data.mutations) {
+            if (mutation.name === name) {
+                this.selectedMutation = this.trueDisplayName(mutation);
+                this.selectedSrc = mutation.token;
+                this.selectedText = this.buildFullBlurb(mutation);
+                return;
+            }
+        }
+    }
+
+    mutClick(event) {
+
+    }
+
+    /* ==== HELPERS ==== */
+
+    trueDisplayName(mutationData) {
+        if (!mutationData.selectedVariant) return mutationData.name;
+        if (mutationData.name.includes('Ray')) return `${mutationData.name} (${mutationData.selectedVariant.type})`;
+        return mutationData.selectedVariant.type;
+    }
+
+    buildFullBlurb(mutationData, level = 1, levelup = false) {
+        let variant = this.getVariantName(mutationData);
+        let description = this.getDescription(mutationData.class, variant);
+        let levelText = this.getLevelText({ className: mutationData.class, variant: mutationData.variant, level, levelup });
+
+        let blurb = this.collapseSpace(`{{C|${description}}}\n\n${levelText}`);
+        return blurb;
+    }
+
+    getDescription(className, variant) {
+        return mutationPartRegistry.getConstructorFor(className).getDescription(variant);
+    }
+
+    getLevelText({ className, level = 1, variant, levelup = false } = {}) {
+        return mutationPartRegistry.getConstructorFor(className).getLevelText(level, levelup, variant);
+    }
+
+    getVariantName(mutationData) {
+        let variantData = mutationData.selectedVariant;
+        let variants = mutationPartRegistry.getConstructorFor(mutationData.class).getVariants();
+        if (variants.length === 0 && !variantData) return '';
+        if (!variantData) return variants[0].type;
+        return variantData.type;
+    }
+
+    collapseSpace(text) {
+        let chars = [];
+        let startIgnore = false;
+        for (let char of text) {
+            if (char !== ' ') startIgnore = false;
+            if (char === '\n') { startIgnore = true; chars.push('<br />') }
+            if (!startIgnore) chars.push(char);
+        }
+        return chars.join('');
+    }
+
+    async pullMutationData() {
+        let mutationData = await getMutationData();
+        this.mutations.push({ id: 1, class: 'morphotypes', data: mutationData.Morphotypes });
+        this.mutations.push({ id: 2, class: 'positive', data: mutationData.Physical });
+        this.mutations.push({ id: 3, class: 'negative', data: mutationData.PhysicalDefects });
+        this.mutations.push({ id: 4, class: 'positive', data: mutationData.Mental });
+        this.mutations.push({ id: 5, class: 'negative', data: mutationData.MentalDefects });
+
+        console.log(this.mutations)
+    }
+}

@@ -3,6 +3,7 @@ import { compileSugar, compileShaders } from "c/api";
 
 export default class MarkdownRenderer extends LightningElement {
 
+    @api shadersOnly = false;
     @api singleLine = false;
     @api slowLoad = false;
     @api modes = '';
@@ -27,14 +28,20 @@ export default class MarkdownRenderer extends LightningElement {
             this.containerRef.innerHTML = value;
         }
 
-        if (this.singleLine) {
+        if (this.singleLine || this.shadersOnly) {
             compileShaders(value).then(result => {
                 if (!MarkdownRenderer.converter) {
                     MarkdownRenderer.converter = new window['showdown'].Converter();
                 }
 
                 let text = result.compiled;
-                this.containerRef.innerHTML = text;
+                if (!this.singleLine) {
+                    text = text.replace(/\n\g/, '<br />');
+                    this.markdownHtml = MarkdownRenderer.converter.makeHtml(text);
+                    this.containerRef.innerHTML = this.markdownHtml;
+                } else {
+                    this.containerRef.innerHTML = text;
+                }
             });
         } else {
             compileSugar(value).then(result => {

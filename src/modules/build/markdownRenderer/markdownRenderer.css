@@ -27,6 +27,10 @@
     outline: 0;
 }
 
+.no-highlight .injected {
+    white-space: initial;
+}
+
 .injected {
     text-overflow: ellipsis;
     overflow: hidden;

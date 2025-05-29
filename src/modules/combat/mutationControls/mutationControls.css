@@ -1,0 +1,249 @@
+@import "styles/scrollbar";
+@import "styles/syntax";
+
+h2 {
+    font-family: var(--qud-font);
+    text-align: center;
+    font-weight: 400;
+    color: var(--stat-color);
+}
+
+section {
+    display: grid;
+    padding: 0 1rem;
+    grid-template-columns: 1fr 1.5rem 2fr;
+}
+
+hr {
+    width: 0.5rem;
+    height: 100%;
+    overflow-y: scroll;
+    border: 0;
+    margin: 0 0.5rem;
+}
+
+fieldset {
+    border: 1px solid var(--text-color);
+    font-family: var(--qud-font);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding-right: 0;
+}
+
+legend {
+    font-size: 1.25rem;
+    border-right: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+    padding: 0 0.5rem;
+}
+
+ul {
+    padding: 0;
+}
+
+.marker {
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    width: 1ch;
+}
+
+.selectable:hover {
+    color: var(--mutation-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.disabled {
+    opacity: 0.3;
+}
+
+.disabled:hover {
+    cursor: default;
+}
+
+.morphotype {
+    color: var(--stat-color);
+}
+
+.blurb {
+    overflow-y: scroll;
+    padding-right: 0.5rem;
+}
+
+.levelBlurb {
+    color: var(--skills-color);
+}
+
+.mutations {
+    overflow-y: scroll;
+    direction: rtl;
+    padding-left: 0.5rem;
+    max-height: 50vh;
+}
+
+.mutations * {
+    direction: ltr;
+}
+
+.mutation-line {
+    display: grid;
+    grid-template-columns: 3ch 4ch 1fr;
+    align-items: center;
+}
+
+.mut-img {
+    height: 6rem;
+    margin-top: 1rem;
+    justify-self: center;
+    image-rendering: pixelated;
+}
+
+.selectable,
+.disabled {
+    display: flex;
+    justify-content: space-between;
+}
+
+.variations {
+    direction: rtl;
+    display: inline-block;
+}
+
+.multi-btn {
+    margin-left: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.v-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: var(--text-color-faded);
+    font-family: var(--qud-font);
+    margin: 0;
+    padding: 0;
+}
+
+.v-button:hover {
+    color: var(--stat-color);
+    cursor: pointer;
+}
+
+.blurb-format {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 1rem;
+}
+
+.chosen {
+    color: var(--mutation-color);
+}
+
+.multi-chosen {
+    color: var(--mutation-color);
+}
+
+.multi-chosen .marker {
+    font-family: var(--qud-font);
+}
+
+.positive {
+    color: var(--willpower-color);
+}
+
+.negative {
+    color: var(--qudzoo-color);
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 0.5rem;
+    font-family: var(--qud-font);
+    width: 100%;
+}
+
+.options > span:first-child {
+    flex-grow: 1;
+    min-width: 100%;
+    text-align: center;
+    color: var(--text-color-faded);
+}
+
+.options button {
+    width: 20ch;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--text-color-faded);
+    color: var(--text-color-faded);
+    font-family: var(--qud-font);
+}
+
+.options button:hover {
+    cursor: pointer;
+    background-color: var(--hover-darken);
+    color: var(--stat-color);
+    border-color: var(--stat-color);
+}
+
+.info-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1.5rem;
+        padding: 0 0 0 1rem;
+    }
+
+    legend {
+        text-align: center;
+    }
+
+    fieldset {
+        padding: 0;
+    }
+
+    fieldset ul > * {
+        margin: 0.5rem;
+    }
+
+    .blurb {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .blurb.show-blurb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blurb fieldset {
+        background-color: var(--bg-color-dark);
+        border: 2px solid var(--text-color);
+        padding: 0.25rem 1rem 1rem;
+    }
+
+    .blurb legend {
+        background-color: var(--bg-color-dark);
+        border-top: 2px solid var(--text-color);
+    }
+
+    .info-btn {
+        display: block;
+    }
+}

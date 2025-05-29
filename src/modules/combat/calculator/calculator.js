@@ -5,7 +5,9 @@ import {
 import { ActivatedActionEvent, GetItemShortDescriptionEvent, GetItemStatDescriptionEvent, GetItemFlavorDescriptionEvent } from "./events";
 import { Creature } from "./creature";
 import { Item } from "./items";
+import { mutationPartRegistry } from "./metadata";
 import * as helperParts from "./helperParts/module";
+import * as mutationParts from "./mutationParts/module";
 
 
 class Combat {
@@ -186,5 +188,7 @@ export {
 
     DiceRoll, Roll, getModifier, chanceForOneSuccess, chanceForThreeSuccess, chanceToSucceed, expectedPenetrations, rollPenetrations, random,
 
-    Creature, GetItemShortDescriptionEvent, Item, GetItemStatDescriptionEvent, GetItemFlavorDescriptionEvent
+    Creature, GetItemShortDescriptionEvent, Item, GetItemStatDescriptionEvent, GetItemFlavorDescriptionEvent,
+
+    mutationPartRegistry,
 };

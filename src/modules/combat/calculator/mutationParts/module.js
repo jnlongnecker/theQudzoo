@@ -1,0 +1,11 @@
+import * as mentalDefects from './mentalDefects';
+import * as mentalMutations from './mentalMutations';
+import * as physicalDefects from './physicalDefects';
+import * as physicalMutation from './physicalMutations';
+import * as morphotypes from './morphotypes';
+import { mutationPartModule } from '../metadata';
+mutationPartModule(mentalDefects);
+mutationPartModule(mentalMutations);
+mutationPartModule(physicalDefects);
+mutationPartModule(physicalMutation);
+mutationPartModule(morphotypes);

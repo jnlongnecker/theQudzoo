@@ -1,6 +1,6 @@
-import Part from '../parts';
+import { MutationPart } from './base';
 
-export class Chimera extends Part {
+export class Chimera extends MutationPart {
 
     static getDescription() {
         return `You only manifest physical mutations, and all of your mutation choices when manifesting a new mutation are physical.\n\nWhenever you manifest a new mutation, one of your choices will also cause you to grow a new limb at random.`;
@@ -11,7 +11,7 @@ export class Chimera extends Part {
     }
 }
 
-export class Esper extends Part {
+export class Esper extends MutationPart {
 
     // Fun fact: This used to make you better at psionic Sifrah games
     static getDescription() {
@@ -23,7 +23,7 @@ export class Esper extends Part {
     }
 }
 
-export class UnstableGenome extends Part {
+export class UnstableGenome extends MutationPart {
 
     static getDescription() {
         return `You gain one extra mutation each time you buy this, but the mutations don't manifest right away.\nWhenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.`;

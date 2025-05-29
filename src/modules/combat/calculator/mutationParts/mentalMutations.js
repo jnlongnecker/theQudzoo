@@ -1,6 +1,6 @@
-import Part from '../parts';
+import { MutationPart } from './base';
 
-export class Beguiling extends Part {
+export class Beguiling extends MutationPart {
 
     static hpBonus(level) {
         return level * 5;
@@ -10,12 +10,12 @@ export class Beguiling extends Part {
         return `You beguile a nearby creature into serving you loyally.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Mental attack versus a creature with a mind\nSuccess roll: ${level} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level\nRange: 1\nBeguiled creature: +${Beguiling.hpBonus(level)} bonus hit points\nCooldown: 50 rounds`;
     }
 }
 
-export class Burgeoning extends Part {
+export class Burgeoning extends MutationPart {
 
     static getCooldown(level) {
         return Math.max(5, 115 - 10 * level);
@@ -25,14 +25,14 @@ export class Burgeoning extends Part {
         return `You cause plants to spontaneously grow in a nearby area, hindering your enemies.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         let text = `Range: 8\nArea: 3x3 + growth into adjacent tiles\nCooldown: ${Burgeoning.getCooldown(level)} rounds\n`;
         if (level > 1) text += `More powerful plants summoned\n`;
         return text + `+200 reputation with {{w|the Consortium of Phyta}}`;
     }
 }
 
-export class Clairvoyance extends Part {
+export class Clairvoyance extends MutationPart {
 
     static getVisionRadius(level) {
         return level > 15 ? level + 3 : 'whole map';
@@ -50,14 +50,14 @@ export class Clairvoyance extends Part {
         return `You briefly gain vision of a nearby area.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Vision radius: ${Clairvoyance.getVisionRadius(level)}
         Vision duration: ${Clairvoyance.getVisionDuration(level)}
         Cooldown: ${Clairvoyance.getCooldown(level)}`;
     }
 }
 
-export class Confusion extends Part {
+export class Confusion extends MutationPart {
 
     static getMentalPenalty(level) {
         return Math.min(10, Math.floor((level - 1) / 2 + 3));
@@ -91,7 +91,7 @@ export class Confusion extends Part {
         return `You confuse nearby enemies.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Affected creatures act semi-randomly and receive a -${Confusion.getMentalPenalty(level)} penalty to their mental abilities.
         Cone angle: ${Confusion.getConeAngle(level)} degrees
         Cone length: ${Confusion.getConeLength(level)}
@@ -100,7 +100,7 @@ export class Confusion extends Part {
     }
 }
 
-export class Cryokinesis extends Part {
+export class Cryokinesis extends MutationPart {
 
     static getDuration(level) {
         return 3;
@@ -130,7 +130,7 @@ export class Cryokinesis extends Part {
         return `You chill a nearby area with your mind.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Chills affected area over ${Cryokinesis.getDuration(level)} rounds, dealing damage and freezing things
         Range: ${Cryokinesis.getRange(level)}
         Area: ${Cryokinesis.getSize(level)}x${Cryokinesis.getSize(level)}
@@ -141,7 +141,7 @@ export class Cryokinesis extends Part {
     }
 }
 
-export class Disintegration extends Part {
+export class Disintegration extends MutationPart {
 
     static getNonStructureDamage(level) {
         return `${level}d10+${2 * level}`;
@@ -159,7 +159,7 @@ export class Disintegration extends Part {
         return `You disintegrate nearby matter.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Area: 7x7 around self
         Damage to non-structural objects: ${Disintegration.getNonStructureDamage(level)}
         Damage to structural objecst: ${Disintegration.getStructureDamage(level)}
@@ -168,7 +168,7 @@ export class Disintegration extends Part {
     }
 }
 
-export class Domination extends Part {
+export class Domination extends MutationPart {
 
     static getCooldown(level) {
         return 75;
@@ -182,7 +182,7 @@ export class Domination extends Part {
         return `You garrote an adjacent creature's mind and control its actions while your own body lies dormant.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Mental attack versus creature with a mind
         Success roll: ${level} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level
         Range: 1
@@ -191,7 +191,7 @@ export class Domination extends Part {
     }
 }
 
-export class ForceBubble extends Part {
+export class ForceBubble extends MutationPart {
 
     static getDuration(level) { return 9 + level * 3 + 1; }
     static getCooldown(level) { return 100; }
@@ -200,7 +200,7 @@ export class ForceBubble extends Part {
         return `You generate a forcefield around yourself.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Creates a 3x3 forcefield centered on yourself
         Duration: ${ForceBubble.getDuration(level)} rounds
         Cooldown: ${ForceBubble.getCooldown(level)} rounds
@@ -208,7 +208,7 @@ export class ForceBubble extends Part {
     }
 }
 
-export class ForceWall extends Part {
+export class ForceWall extends MutationPart {
 
     static getDuration(level) { return 14 + level * 2; }
     static getCooldown(level) { return 100; }
@@ -217,7 +217,7 @@ export class ForceWall extends Part {
         return `You generate a wall of force that protects you from your enemies.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Creates 9 contiguous squares of immobile forcefield.
         Duration: ${ForceWall.getDuration(level)} rounds
         Cooldown: ${ForceWall.getCooldown(level)} rounds
@@ -225,21 +225,20 @@ export class ForceWall extends Part {
     }
 }
 
-export class Kindle extends Part {
+export class Kindle extends MutationPart {
 
     static getDescription() {
-        return `You ignite a small fire with your mind.
-        
+        return `You ignite a small fire with your mind.\n
         Range: 12
         Cooldown: 50`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return ``;
     }
 }
 
-export class LifeDrain extends Part {
+export class LifeDrain extends MutationPart {
 
     static getDuration(level) { return 20; }
     static getCooldown(level) { return 200; }
@@ -248,17 +247,16 @@ export class LifeDrain extends Part {
         return `You bond with a nearby organic creature and leech its life force.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Mental attack versus an organic creature
         Drains ${level} hit point(s) per round
         Target gets a mental save to resist damage each round
         Duration: ${LifeDrain.getDuration(level)} rounds
-        Cooldown: ${LifeDrain.getCooldown(level)} rounds
-        `;
+        Cooldown: ${LifeDrain.getCooldown(level)} rounds`;
     }
 }
 
-export class LightManipulation extends Part {
+export class LightManipulation extends MutationPart {
 
     static getMaxLightRadius(level) { 4 + Math.floor(level / 2); }
     static getDamage(level) {
@@ -290,7 +288,7 @@ export class LightManipulation extends Part {
         return `You manipulate light to your advantage.`;
     }
 
-    static getLevelText(level, willpower) {
+    static getLevelText(level, levelup, willpower) {
         return `You produce ambient light within a radius of ${LightManipulation.getMaxLightRadius(level)}.
         You may focus the light into a laser beam, temporarily reducing the radius of your ambient light by 1.
         Laser damage increment: ${LightManipulation.getDamage(level)}
@@ -300,7 +298,7 @@ export class LightManipulation extends Part {
     }
 }
 
-export class MassMind extends Part {
+export class MassMind extends MutationPart {
 
     static getCooldown(level) { return Math.max(100, 500 - 50 * level); }
 
@@ -308,7 +306,7 @@ export class MassMind extends Part {
         return `You tap into the aggregate mind and steal power from other espers.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Refreshes all mental mutations
         Cooldown: ${MassMind.getCooldown(level)} rounds
         Cooldown is not affected by Willpower
@@ -318,7 +316,7 @@ export class MassMind extends Part {
     }
 }
 
-export class MentalMirror extends Part {
+export class MentalMirror extends MutationPart {
 
     static getMABonus(level) { return 3 + level; }
     static getCooldown(level) { return 50; }
@@ -327,14 +325,14 @@ export class MentalMirror extends Part {
         return `You reflect mental attacks back at your attackers.`;
     }
 
-    static getLevelText(level) {
-        return `When you suffer a mental attack while Mental Mirro is off cooldown, you gain ${MentalMirror.getMABonus(level)} mental armor (MA).
+    static getLevelText(level, levelup) {
+        return `When you suffer a mental attack while Mental Mirror is off cooldown, you gain ${MentalMirror.getMABonus(level)} mental armor (MA).
         If the attack then fails to penetrate your MA, it's reflected back at your attacker.
         Cooldown: ${MentalMirror.getCooldown(level)}`;
     }
 }
 
-export class Precognition extends Part {
+export class Precognition extends MutationPart {
 
     static getDuration(level) { return 4 * level + 12; }
     static getCooldown(level) { return 500; }
@@ -343,14 +341,14 @@ export class Precognition extends Part {
         return `You peer into your near future.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `You may activate this power and then later revert to the point in time when you activated it.
         Duration between use and reversion: ${Precognition.getDuration(level)} rounds
         Cooldown: ${Precognition.getCooldown(level)} rounds`;
     }
 }
 
-export class Psychometry extends Part {
+export class Psychometry extends MutationPart {
 
     static getIdentifiableComplexity(level) { return 4 + Math.floor(level / 2); }
     static getLearnableComplexity(level) { return 2 + Math.floor((level - 1) / 2); }
@@ -360,14 +358,14 @@ export class Psychometry extends Part {
     }
 
     // Fun fact: This used to add a turn to tinkering and ritual Sifrah games
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Unerringly identify artifacts up to complexity tier ${Psychometry.getIdentifiableComplexity(level)}
         Learn how to construct identified artifacts up to complexity tier ${Psychometry.getLearnableComplexity(level)} (must have the appropriate Tinker skill).
         You may open security doors and use some secure devices by touching them.`;
     }
 }
 
-export class Pyrokinesis extends Part {
+export class Pyrokinesis extends MutationPart {
 
     static getDuration(level) { return 3; }
     static getRange(level) { return 8; }
@@ -385,7 +383,7 @@ export class Pyrokinesis extends Part {
         return `You heat a nearby area with your mind.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Toasts affected area over ${Pyrokinesis.getDuration(level)} rounds
         Range: ${Pyrokinesis.getRange(level)}
         Area: ${Pyrokinesis.getSize(level)}x${Pyrokinesis.getSize(level)}
@@ -396,18 +394,18 @@ export class Pyrokinesis extends Part {
     }
 }
 
-export class SensePsychic extends Part {
+export class SensePsychic extends MutationPart {
 
     static getDescription() {
         return `You can sense other mental mutants through the psychic aether.\n\nYou detect the presence of psychic enemies within a radius of 9.\nThere's a chance you identify detected enemies.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return ``;
     }
 }
 
-export class SpacetimeVortex extends Part {
+export class SpacetimeVortex extends MutationPart {
 
     static getCooldown(level) { return Math.max(5, 550 - 50 * level); }
 
@@ -415,7 +413,7 @@ export class SpacetimeVortex extends Part {
         return `You sunder spacetime, sending things nearby careening through a tear in the cosmic fabric.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         let bonusText = level > 10 ? `\nBonus duration: ${level - 10} rounds` : ``;
         return `Summons a vortex that swallows everything in its path.${bonusText}
         Cooldown: ${SpacetimeVortex.getCooldown(level)} rounds
@@ -424,7 +422,7 @@ export class SpacetimeVortex extends Part {
     }
 }
 
-export class StunningForce extends Part {
+export class StunningForce extends MutationPart {
 
     static getCooldown(level) { return 50; }
     static getRange(level) { return 8; }
@@ -447,7 +445,7 @@ export class StunningForce extends Part {
     }
 }
 
-export class SunderMind extends Part {
+export class SunderMind extends MutationPart {
 
     static getDamageDice(level) {
         switch (level) {
@@ -464,7 +462,7 @@ export class SunderMind extends Part {
         return `You sunder the mind of an enemy, leaving them reeling in pain.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.
         Taking any action other than passing the turn will break the connection.
         Each round you make a mental attack vs mental armor (MA).
@@ -475,19 +473,19 @@ export class SunderMind extends Part {
     }
 }
 
-export class Telepathy extends Part {
+export class Telepathy extends MutationPart {
 
     // Fun fact: this was apparently "useful" in social and psionic Sifrah games. How? Who knows.
     static getDescription() {
         return `You may communicate with others through the psychic aether.\n\nChat with anyone in vision\nTakes you much less time to issue orders to companions`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return ``;
     }
 }
 
-export class Teleportation extends Part {
+export class Teleportation extends MutationPart {
 
     static getCooldown(level) { return Math.max(103 - 3 * level, 5); }
     static getRadius(level) { return Math.max(13 - level, 2); }
@@ -496,14 +494,14 @@ export class Teleportation extends Part {
         return `You teleport to a nearby location.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Teleport to a random location within a designated area.
         Uncertainty radius: ${Teleportation.getRadius(level)}
         Cooldown: ${Teleportation.getCooldown(level)} rounds`;
     }
 }
 
-export class TeleportOther extends Part {
+export class TeleportOther extends MutationPart {
 
     static getCooldownTurns(level) { return Math.max(115 - 10 * level, 5); }
 
@@ -511,12 +509,12 @@ export class TeleportOther extends Part {
         return `You teleport an adjacent creature to a random nearby location.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Cooldown: ${TeleportOther.getCooldownTurns(level)} rounds`;
     }
 }
 
-export class TemporalFugue extends Part {
+export class TemporalFugue extends MutationPart {
 
     static getDuration(level) { return 20 + 2 * Math.floor(level / 2); }
     static getCopies(level) { return Math.floor((level - 1) / 2 + 1); }
@@ -526,14 +524,14 @@ export class TemporalFugue extends Part {
         return `You quickly pass back and forth through time creating multiple copies of yourself.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Duration: ${TemporalFugue.getDuration(level)} rounds
         Copies: ${TemporalFugue.getCopies(level)}
         Cooldown: ${TemporalFugue.getCooldown(level)} rounds`;
     }
 }
 
-export class TimeDilation extends Part {
+export class TimeDilation extends MutationPart {
 
     static calculateQuicknessPenaltyMultiplier(distance, maxRange, level) {
         return Math.pow(maxRange - distance, 2) * (.0005 * level + 0.0085);
@@ -546,7 +544,7 @@ export class TimeDilation extends Part {
         return `You distort time around your person in order to slow down your enemies.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         let range = TimeDilation.getRange(level);
         let penalty1 = Math.floor(TimeDilation.calculateQuicknessPenaltyMultiplier(1, range, level) * 100);
         let penalty4 = Math.floor(TimeDilation.calculateQuicknessPenaltyMultiplier(4, range, level) * 100)
@@ -560,7 +558,7 @@ export class TimeDilation extends Part {
     }
 }
 
-export class WillForce extends Part {
+export class WillForce extends MutationPart {
 
     static getLowDuration(level) { return 16 + 2 * level; }
     static getHighDuration(level) { return 20 + 2 * level; }
@@ -570,7 +568,7 @@ export class WillForce extends Part {
         return `Through sheer force of will, you perform uncanny physical feats.`;
     }
 
-    static getLevelText(level) {
+    static getLevelText(level, levelup) {
         return `Augments one physical attribute by an amount equal to twice your Ego bonus
         Duration: ${WillForce.getLowDuration(level)}-${WillForce.getHighDuration(level)} rounds
         Cooldown: ${WillForce.getCooldown(level)} rounds`;
