@@ -1,6 +1,7 @@
 import { LightningElement, track } from "lwc";
 import { Creature } from "combat/calculator";
 import { fire, register } from "c/componentEvents";
+import Toast from "c/toast";
 
 export default class App extends LightningElement {
     @track creature;

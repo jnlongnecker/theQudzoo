@@ -102,7 +102,7 @@ export class Carapace extends MutationPart {
         +${Carapace.getHeatResistance(level)} Heat Resistance
         +${Carapace.getColdResistance(level)} Cold Resistance
         +400 reputation with {{w|tortoises}}
-        You may tighten your carapace to recieve double the AV bonus at a -2 DV penalty as long as you remain still.\n
+        You may tighten your carapace to recieve double the AV bonus at a -2 DV penalty as long as you remain still.
         Cannot wear body armor.`;
     }
 }
@@ -210,7 +210,7 @@ export class FlamingRay extends MutationPart {
 
     static getLevelText(level, levelup) {
         return `Emits a ${FlamingRay.getRange(level)}-square ray of flame in the direction of your choice.
-        Damage: ${FlamingRay.getDamage(level)}\n
+        Damage: ${FlamingRay.getDamage(level)}
         Cooldown: ${FlamingRay.getCooldown(level)} rounds
         Melee attacks heat opponents by ${FlamingRay.getHeatOnHitAmount(level)} degrees`;
     }

@@ -1,0 +1,16 @@
+<template>
+    <div class="master">
+        <div class={containerClass} onanimationend={handleAnimationEnd}>
+            <div class="icon">
+                <input-icon variant={icon} title={variant} size="huge"></input-icon>
+            </div>
+            <div class="body">
+                <p class="label">{label}</p>
+                <p class="message">{message}</p>
+            </div>
+            <div class="button-container">
+                <button class="close" onclick={handleClose}>&times;</button>
+            </div>
+        </div>
+    </div>
+</template>

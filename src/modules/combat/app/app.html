@@ -52,7 +52,7 @@
                     mode={mode}></combat-attribute-controls>
                 <combat-equipment-controls if:true={equipSelected} character={creature}></combat-equipment-controls>
                 <combat-skill-controls if:true={skillSelected} creature={creature} mode={mode}></combat-skill-controls>
-                <combat-mutation-controls if:true={mutSelected}></combat-mutation-controls>
+                <combat-mutation-controls if:true={mutSelected} creature={creature}></combat-mutation-controls>
                 <combat-cybernetic-controls if:true={cybSelected}></combat-cybernetic-controls>
                 <combat-controls if:true={combatSelected} character={creature} enemy={enemy}></combat-controls>
             </div>

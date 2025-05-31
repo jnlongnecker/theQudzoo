@@ -1,7 +1,7 @@
 <template>
     <c-sugar-injector></c-sugar-injector>
     <template if:true={buildInfo}>
-        <c-popup show={deleting} onclose={cancelDelete}>
+        <!-- <c-popup show={deleting} onclose={cancelDelete}>
             <span slot="header">Deleting {buildName}</span>
             <p>
                 <img src={subtypeImg} />
@@ -16,7 +16,7 @@
             <input-button slot="input" size="thin large" variant="toughness" onclick={confirmDelete}>
                 Delete
             </input-button>
-        </c-popup>
+        </c-popup> -->
         <a href={staticLink}>
             <div class={cardClass}>
                 <div class="header">

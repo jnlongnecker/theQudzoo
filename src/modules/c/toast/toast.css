@@ -1,0 +1,116 @@
+@keyframes slideIn {
+    0% {
+        bottom: 10rem;
+    }
+    100% {
+        bottom: 0rem;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        bottom: 0rem;
+    }
+    100% {
+        bottom: 10rem;
+    }
+}
+
+p {
+    font-family: var(--qud-font);
+    margin: 0;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.icon {
+    justify-self: center;
+}
+
+.master {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.container {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 60vw;
+    min-width: 10rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--bg-color-dark);
+    box-shadow: 0px 10px 10px 0px rgba(25, 25, 25, 0.8);
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem;
+    gap: 1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: forwards slideIn 0.5s;
+}
+
+.slide-out {
+    animation: forwards slideOut 0.5s;
+}
+
+.close {
+    justify-self: center;
+    border-radius: 100%;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2.5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255);
+    border: none;
+    color: var(--button-color);
+}
+
+.close:hover {
+    cursor: pointer;
+    background-color: rgb(155, 155, 155);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    background-color: #0f3b3a;
+    --button-color: #0f3b3a;
+    color: #b1c9c3;
+    fill: white;
+}
+
+.success {
+    background-color: #009403;
+    --button-color: #009403;
+    color: #0f3b3a;
+    fill: white;
+}
+
+.error {
+    background-color: #d74200;
+    --button-color: #d74200;
+    color: #0f3b3a;
+    fill: white;
+}
+
+.warning {
+    background-color: #e99f10;
+    --button-color: #e99f10;
+    color: #0f3b3a;
+    fill: white;
+}

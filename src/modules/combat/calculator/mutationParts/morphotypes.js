@@ -26,7 +26,7 @@ export class Esper extends MutationPart {
 export class UnstableGenome extends MutationPart {
 
     static getDescription() {
-        return `You gain one extra mutation each time you buy this, but the mutations don't manifest right away.\nWhenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.`;
+        return `You gain one extra mutation each time you buy this, but the mutations don't manifest right away.\n\nWhenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.`;
     }
 
     static getLevelText(level) {

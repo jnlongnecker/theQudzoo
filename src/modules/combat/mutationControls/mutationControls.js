@@ -1,6 +1,7 @@
-import { LightningElement, track } from "lwc";
+import { api, LightningElement, track } from "lwc";
 import { mutationPartRegistry } from 'combat/calculator';
 import { getMutationData } from "c/api";
+import { fire, register } from "c/componentEvents";
 
 const CATEGORY_IDX = {
     Morphotypes: 0,
@@ -13,16 +14,25 @@ const CATEGORY_IDX = {
 export default class MutationControls extends LightningElement {
 
     @track mutations = [];
+    selectedMutations = [];
     selectedMutation = '';
     selectedSrc;
     selectedText = '';
     variantChoices = [];
     mutationInLimbo;
     popup;
+    stats;
+
+    @api
+    get creature() { }
+    set creature(value) {
+        this.handlePlayerRefresh({ detail: value });
+    }
 
     constructor() {
         super();
         this.pullMutationData();
+        register('refreshplayerevent', (e) => this.handlePlayerRefresh(e));
     }
 
     renderedCallback() {
@@ -39,7 +49,14 @@ export default class MutationControls extends LightningElement {
     }
 
     mutClick(event) {
+        let name = event.target.dataset.name;
+        let category = event.target.dataset.category;
+        let mutation = this.getMutation(category, name);
 
+        if (mutation.marker === ' ') {
+            mutation.marker = '■';
+            mutation.numSelected = mutation.numSelected ? 1 : mutation.numSelected + 1;
+        }
     }
 
     chooseVariant(event) {
@@ -65,6 +82,11 @@ export default class MutationControls extends LightningElement {
         this.popup.close();
     }
 
+    handlePlayerRefresh(event) {
+        let creature = event.detail;
+        this.stats = creature.stats;
+    }
+
     /* ==== HELPERS ==== */
 
     trueDisplayName(mutationData) {
@@ -74,9 +96,9 @@ export default class MutationControls extends LightningElement {
     }
 
     buildFullBlurb(mutationData, level = 1, levelup = false) {
-        let variant = this.getVariantName(mutationData);
+        let variant = mutationData.class === 'LightManipulation' ? this.getVariantName(mutationData) : this.stats.Willpower.value;
         let description = this.getDescription(mutationData.class, variant);
-        let levelText = this.getLevelText({ className: mutationData.class, variant: mutationData.variant, level, levelup });
+        let levelText = this.getLevelText({ className: mutationData.class, variant, level, levelup });
 
         let blurb = this.collapseSpace(`{{C|${description}}}\n\n${levelText}`);
         return blurb;
