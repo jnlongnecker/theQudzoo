@@ -2,14 +2,14 @@ import { api, LightningElement } from "lwc";
 
 export default class Popup extends LightningElement {
 
-    @api
     show = false;
 
-    stopProp(event) {
-        event.stopPropagation();
+    @api open() {
+        this.show = true;
     }
 
-    closePopup() {
+    @api close() {
         this.dispatchEvent(new CustomEvent('close'));
+        this.show = false;
     }
 }

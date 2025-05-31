@@ -859,7 +859,7 @@ exports.formatMutationData = function (objects) {
             mutations: categoryData.mutations.reduce((array, mut) => {
                 if (mut.Prerelease) return array;
                 array.push({
-                    name: mut.Name, class: mut.Class,
+                    name: mut.Name, class: mut.Class, displayName: mut.Name,
                     cost: Number.parseInt(mut.Cost),
                     max: Number.parseInt(mut.MaxSelected),
                     exclusions: mut.Exclusions,

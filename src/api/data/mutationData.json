@@ -6,6 +6,7 @@
             {
                 "name": "Chimera",
                 "class": "Chimera",
+                "displayName": "Chimera",
                 "cost": 1,
                 "max": 1,
                 "exclusions": "Esper,*Mental,*MentalDefects",
@@ -14,6 +15,7 @@
             {
                 "name": "Esper",
                 "class": "Esper",
+                "displayName": "Esper",
                 "cost": 1,
                 "max": 1,
                 "exclusions": "Chimera,*Physical,*PhysicalDefects",
@@ -22,6 +24,7 @@
             {
                 "name": "Unstable Genome",
                 "class": "UnstableGenome",
+                "displayName": "Unstable Genome",
                 "cost": 3,
                 "max": 99,
                 "exclusions": "",
@@ -36,6 +39,7 @@
             {
                 "name": "Adrenal Control",
                 "class": "AdrenalControl2",
+                "displayName": "Adrenal Control",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -44,6 +48,7 @@
             {
                 "name": "Beak",
                 "class": "Beak",
+                "displayName": "Beak",
                 "cost": 1,
                 "max": 1,
                 "exclusions": "",
@@ -52,6 +57,7 @@
             {
                 "name": "Burrowing Claws",
                 "class": "BurrowingClaws",
+                "displayName": "Burrowing Claws",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -60,6 +66,7 @@
             {
                 "name": "Carapace",
                 "class": "Carapace",
+                "displayName": "Carapace",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "Quills",
@@ -68,6 +75,7 @@
             {
                 "name": "Corrosive Gas Generation",
                 "class": "CorrosiveGasGeneration",
+                "displayName": "Corrosive Gas Generation",
                 "cost": 3,
                 "max": 1,
                 "token": "/assets/images/Textures/Mutations/Corrosive Gas Generation.png"
@@ -75,6 +83,7 @@
             {
                 "name": "Double-muscled",
                 "class": "HeightenedStrength",
+                "displayName": "Double-muscled",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -83,6 +92,7 @@
             {
                 "name": "Electrical Generation",
                 "class": "ElectricalGeneration",
+                "displayName": "Electrical Generation",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -91,6 +101,7 @@
             {
                 "name": "Electromagnetic Pulse",
                 "class": "ElectromagneticPulse",
+                "displayName": "Electromagnetic Pulse",
                 "cost": 2,
                 "max": 1,
                 "exclusions": "",
@@ -99,6 +110,7 @@
             {
                 "name": "Flaming Ray",
                 "class": "FlamingRay",
+                "displayName": "Flaming Ray",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "Freezing Ray",
@@ -107,6 +119,7 @@
             {
                 "name": "Freezing Ray",
                 "class": "FreezingRay",
+                "displayName": "Freezing Ray",
                 "cost": 5,
                 "max": 1,
                 "exclusions": "Flaming Ray",
@@ -115,6 +128,7 @@
             {
                 "name": "Heightened Hearing",
                 "class": "HeightenedHearing",
+                "displayName": "Heightened Hearing",
                 "cost": 2,
                 "max": 1,
                 "exclusions": "",
@@ -123,6 +137,7 @@
             {
                 "name": "Heightened Quickness",
                 "class": "HeightenedSpeed",
+                "displayName": "Heightened Quickness",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -131,6 +146,7 @@
             {
                 "name": "Horns",
                 "class": "Horns",
+                "displayName": "Horns",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -139,6 +155,7 @@
             {
                 "name": "Multiple Arms",
                 "class": "MultipleArms",
+                "displayName": "Multiple Arms",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -147,6 +164,7 @@
             {
                 "name": "Multiple Legs",
                 "class": "MultipleLegs",
+                "displayName": "Multiple Legs",
                 "cost": 5,
                 "max": 1,
                 "exclusions": "",
@@ -155,6 +173,7 @@
             {
                 "name": "Night Vision",
                 "class": "DarkVision",
+                "displayName": "Night Vision",
                 "cost": 1,
                 "max": 1,
                 "exclusions": "",
@@ -163,6 +182,7 @@
             {
                 "name": "Phasing",
                 "class": "Phasing",
+                "displayName": "Phasing",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -171,6 +191,7 @@
             {
                 "name": "Photosynthetic Skin",
                 "class": "PhotosyntheticSkin",
+                "displayName": "Photosynthetic Skin",
                 "cost": 2,
                 "max": 1,
                 "exclusions": "Albino,Carnivorous",
@@ -179,6 +200,7 @@
             {
                 "name": "Quills",
                 "class": "Quills",
+                "displayName": "Quills",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "Carapace",
@@ -187,6 +209,7 @@
             {
                 "name": "Regeneration",
                 "class": "Regeneration",
+                "displayName": "Regeneration",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -195,6 +218,7 @@
             {
                 "name": "Sleep Gas Generation",
                 "class": "SleepGasGeneration",
+                "displayName": "Sleep Gas Generation",
                 "cost": 3,
                 "max": 1,
                 "token": "/assets/images/Textures/Mutations/Sleep Gas Generation.png"
@@ -202,6 +226,7 @@
             {
                 "name": "Slime Glands",
                 "class": "SlimeGlands",
+                "displayName": "Slime Glands",
                 "cost": 1,
                 "max": 1,
                 "exclusions": "",
@@ -210,6 +235,7 @@
             {
                 "name": "Spinnerets",
                 "class": "Spinnerets",
+                "displayName": "Spinnerets",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -218,6 +244,7 @@
             {
                 "name": "Stinger (Confusing Venom)",
                 "class": "Stinger",
+                "displayName": "Stinger (Confusing Venom)",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "Stinger (Paralyzing Venom),Stinger (Poisoning Venom)",
@@ -227,6 +254,7 @@
             {
                 "name": "Stinger (Paralyzing Venom)",
                 "class": "Stinger",
+                "displayName": "Stinger (Paralyzing Venom)",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "Stinger (Confusing Venom),Stinger (Poisoning Venom)",
@@ -236,6 +264,7 @@
             {
                 "name": "Stinger (Poisoning Venom)",
                 "class": "Stinger",
+                "displayName": "Stinger (Poisoning Venom)",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "Stinger (Confusing Venom),Stinger (Paralyzing Venom)",
@@ -245,6 +274,7 @@
             {
                 "name": "Thick Fur",
                 "class": "ThickFur",
+                "displayName": "Thick Fur",
                 "cost": 1,
                 "max": 1,
                 "exclusions": "",
@@ -253,6 +283,7 @@
             {
                 "name": "Triple-jointed",
                 "class": "HeightenedAgility",
+                "displayName": "Triple-jointed",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -261,6 +292,7 @@
             {
                 "name": "Two-headed",
                 "class": "TwoHeaded",
+                "displayName": "Two-headed",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -269,6 +301,7 @@
             {
                 "name": "Two-hearted",
                 "class": "TwoHearted",
+                "displayName": "Two-hearted",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -277,6 +310,7 @@
             {
                 "name": "Wings",
                 "class": "Wings",
+                "displayName": "Wings",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -291,6 +325,7 @@
             {
                 "name": "Albino",
                 "class": "Albino",
+                "displayName": "Albino",
                 "cost": -2,
                 "max": 1,
                 "exclusions": "Photosynthetic Skin",
@@ -299,6 +334,7 @@
             {
                 "name": "Amphibious",
                 "class": "Amphibious",
+                "displayName": "Amphibious",
                 "cost": -3,
                 "max": 1,
                 "exclusions": "",
@@ -307,6 +343,7 @@
             {
                 "name": "Brittle Bones",
                 "class": "BrittleBones",
+                "displayName": "Brittle Bones",
                 "cost": -4,
                 "max": 1,
                 "exclusions": "",
@@ -315,6 +352,7 @@
             {
                 "name": "Nerve Poppy",
                 "class": "Analgesia",
+                "displayName": "Nerve Poppy",
                 "cost": -2,
                 "max": 1,
                 "exclusions": "",
@@ -323,6 +361,7 @@
             {
                 "name": "Carnivorous",
                 "class": "Carnivorous",
+                "displayName": "Carnivorous",
                 "cost": -2,
                 "max": 1,
                 "exclusions": "Photosynthetic Skin",
@@ -331,6 +370,7 @@
             {
                 "name": "Cold-Blooded",
                 "class": "ColdBlooded",
+                "displayName": "Cold-Blooded",
                 "cost": -2,
                 "max": 1,
                 "exclusions": "",
@@ -339,6 +379,7 @@
             {
                 "name": "Electromagnetic Impulse",
                 "class": "ElectromagneticImpulse",
+                "displayName": "Electromagnetic Impulse",
                 "cost": -2,
                 "max": 1,
                 "exclusions": "",
@@ -347,6 +388,7 @@
             {
                 "name": "Hooks for Feet",
                 "class": "HooksForFeet",
+                "displayName": "Hooks for Feet",
                 "cost": -4,
                 "max": 1,
                 "exclusions": "",
@@ -355,6 +397,7 @@
             {
                 "name": "Irritable Genome",
                 "class": "IrritableGenome",
+                "displayName": "Irritable Genome",
                 "cost": -4,
                 "max": 1,
                 "exclusions": "",
@@ -363,6 +406,7 @@
             {
                 "name": "Myopic",
                 "class": "Myopia",
+                "displayName": "Myopic",
                 "cost": -3,
                 "max": 1,
                 "exclusions": "",
@@ -371,6 +415,7 @@
             {
                 "name": "Spontaneous Combustion",
                 "class": "SpontaneousCombustion",
+                "displayName": "Spontaneous Combustion",
                 "cost": -3,
                 "max": 1,
                 "exclusions": "",
@@ -379,6 +424,7 @@
             {
                 "name": "Tonic Allergy",
                 "class": "TonicAllergy",
+                "displayName": "Tonic Allergy",
                 "cost": -4,
                 "max": 1,
                 "exclusions": "",
@@ -393,6 +439,7 @@
             {
                 "name": "Beguiling",
                 "class": "Beguiling",
+                "displayName": "Beguiling",
                 "cost": 5,
                 "max": 1,
                 "exclusions": "",
@@ -401,6 +448,7 @@
             {
                 "name": "Burgeoning",
                 "class": "Burgeoning",
+                "displayName": "Burgeoning",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -409,6 +457,7 @@
             {
                 "name": "Clairvoyance",
                 "class": "Clairvoyance",
+                "displayName": "Clairvoyance",
                 "cost": 2,
                 "max": 1,
                 "exclusions": "",
@@ -417,6 +466,7 @@
             {
                 "name": "Confusion",
                 "class": "Confusion",
+                "displayName": "Confusion",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -425,6 +475,7 @@
             {
                 "name": "Cryokinesis",
                 "class": "Cryokinesis",
+                "displayName": "Cryokinesis",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -433,6 +484,7 @@
             {
                 "name": "Disintegration",
                 "class": "Disintegration",
+                "displayName": "Disintegration",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -441,6 +493,7 @@
             {
                 "name": "Domination",
                 "class": "Domination",
+                "displayName": "Domination",
                 "cost": 5,
                 "max": 1,
                 "exclusions": "",
@@ -449,6 +502,7 @@
             {
                 "name": "Ego Projection",
                 "class": "WillForce",
+                "displayName": "Ego Projection",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -457,6 +511,7 @@
             {
                 "name": "Force Bubble",
                 "class": "ForceBubble",
+                "displayName": "Force Bubble",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -465,6 +520,7 @@
             {
                 "name": "Force Wall",
                 "class": "ForceWall",
+                "displayName": "Force Wall",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -473,6 +529,7 @@
             {
                 "name": "Kindle",
                 "class": "Kindle",
+                "displayName": "Kindle",
                 "cost": 1,
                 "max": 1,
                 "exclusions": "",
@@ -481,6 +538,7 @@
             {
                 "name": "Light Manipulation",
                 "class": "LightManipulation",
+                "displayName": "Light Manipulation",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -489,6 +547,7 @@
             {
                 "name": "Mass Mind",
                 "class": "MassMind",
+                "displayName": "Mass Mind",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -497,6 +556,7 @@
             {
                 "name": "Mental Mirror",
                 "class": "MentalMirror",
+                "displayName": "Mental Mirror",
                 "cost": 2,
                 "max": 1,
                 "exclusions": "",
@@ -505,6 +565,7 @@
             {
                 "name": "Precognition",
                 "class": "Precognition",
+                "displayName": "Precognition",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -513,6 +574,7 @@
             {
                 "name": "Psychometry",
                 "class": "Psychometry",
+                "displayName": "Psychometry",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "Dystechnia",
@@ -521,6 +583,7 @@
             {
                 "name": "Pyrokinesis",
                 "class": "Pyrokinesis",
+                "displayName": "Pyrokinesis",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -529,6 +592,7 @@
             {
                 "name": "Sense Psychic",
                 "class": "SensePsychic",
+                "displayName": "Sense Psychic",
                 "cost": 1,
                 "max": 1,
                 "exclusions": "",
@@ -537,6 +601,7 @@
             {
                 "name": "Spacetime Vortex",
                 "class": "SpacetimeVortex",
+                "displayName": "Spacetime Vortex",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -545,6 +610,7 @@
             {
                 "name": "Stunning Force",
                 "class": "StunningForce",
+                "displayName": "Stunning Force",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -553,6 +619,7 @@
             {
                 "name": "Sunder Mind",
                 "class": "SunderMind",
+                "displayName": "Sunder Mind",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -561,6 +628,7 @@
             {
                 "name": "Syphon Vim",
                 "class": "LifeDrain",
+                "displayName": "Syphon Vim",
                 "cost": 3,
                 "max": 1,
                 "exclusions": "",
@@ -569,6 +637,7 @@
             {
                 "name": "Telepathy",
                 "class": "Telepathy",
+                "displayName": "Telepathy",
                 "cost": 1,
                 "max": 1,
                 "exclusions": "",
@@ -577,6 +646,7 @@
             {
                 "name": "Teleportation",
                 "class": "Teleportation",
+                "displayName": "Teleportation",
                 "cost": 5,
                 "max": 1,
                 "exclusions": "",
@@ -585,6 +655,7 @@
             {
                 "name": "Teleport Other",
                 "class": "TeleportOther",
+                "displayName": "Teleport Other",
                 "cost": 2,
                 "max": 1,
                 "exclusions": "",
@@ -593,6 +664,7 @@
             {
                 "name": "Time Dilation",
                 "class": "TimeDilation",
+                "displayName": "Time Dilation",
                 "cost": 4,
                 "max": 1,
                 "exclusions": "",
@@ -601,6 +673,7 @@
             {
                 "name": "Temporal Fugue",
                 "class": "TemporalFugue",
+                "displayName": "Temporal Fugue",
                 "cost": 5,
                 "max": 1,
                 "exclusions": "",
@@ -615,6 +688,7 @@
             {
                 "name": "Amnesia",
                 "class": "Amnesia",
+                "displayName": "Amnesia",
                 "cost": -2,
                 "max": 1,
                 "exclusions": "",
@@ -623,6 +697,7 @@
             {
                 "name": "Blinking Tic",
                 "class": "BlinkingTic",
+                "displayName": "Blinking Tic",
                 "cost": -3,
                 "max": 1,
                 "exclusions": "",
@@ -631,6 +706,7 @@
             {
                 "name": "Dystechnia",
                 "class": "Dystechnia",
+                "displayName": "Dystechnia",
                 "cost": -2,
                 "max": 1,
                 "exclusions": "Psychometry",
@@ -639,6 +715,7 @@
             {
                 "name": "Evil Twin",
                 "class": "EvilTwin",
+                "displayName": "Evil Twin",
                 "cost": -3,
                 "max": 1,
                 "exclusions": "",
@@ -647,6 +724,7 @@
             {
                 "name": "Narcolepsy",
                 "class": "Narcolepsy",
+                "displayName": "Narcolepsy",
                 "cost": -3,
                 "max": 1,
                 "exclusions": "",
@@ -655,6 +733,7 @@
             {
                 "name": "Psionic Migraines",
                 "class": "PsionicMigraines",
+                "displayName": "Psionic Migraines",
                 "cost": -4,
                 "max": 1,
                 "exclusions": "Horns",
@@ -663,6 +742,7 @@
             {
                 "name": "Quantum Jitters",
                 "class": "QuantumJitters",
+                "displayName": "Quantum Jitters",
                 "cost": -4,
                 "max": 1,
                 "exclusions": "",
@@ -671,6 +751,7 @@
             {
                 "name": "Socially Repugnant",
                 "class": "SociallyRepugnant",
+                "displayName": "Socially Repugnant",
                 "cost": -2,
                 "max": 1,
                 "exclusions": "",

@@ -1,15 +1,19 @@
 <template>
-    <div class="popup-background" onclick={closePopup} if:true={show}>
-        <div class="popup-container" onclick={stopProp}>
+    <div class="master" if:true={show}>
+        <div class="overlay" onclick={close}></div>
+        <div class="container">
+            <button class="close" onclick={close}>&times;</button>
             <fieldset>
-                <legend>
+                <legend class="header">
                     <slot name="header"></slot>
                 </legend>
-                <slot></slot>
-                <div class="buttons">
-                    <slot name="input"></slot>
+                <div class="body">
+                    <slot></slot>
                 </div>
             </fieldset>
+            <div class="footer">
+                <slot name="input"></slot>
+            </div>
         </div>
     </div>
 </template>
