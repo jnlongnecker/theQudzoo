@@ -78,6 +78,7 @@
                 "displayName": "Corrosive Gas Generation",
                 "cost": 3,
                 "max": 1,
+                "exclusions": "",
                 "token": "/assets/images/Textures/Mutations/Corrosive Gas Generation.png"
             },
             {
@@ -221,6 +222,7 @@
                 "displayName": "Sleep Gas Generation",
                 "cost": 3,
                 "max": 1,
+                "exclusions": "",
                 "token": "/assets/images/Textures/Mutations/Sleep Gas Generation.png"
             },
             {

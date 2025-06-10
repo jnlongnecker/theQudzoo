@@ -862,7 +862,7 @@ exports.formatMutationData = function (objects) {
                     name: mut.Name, class: mut.Class, displayName: mut.Name,
                     cost: Number.parseInt(mut.Cost),
                     max: Number.parseInt(mut.MaxSelected),
-                    exclusions: mut.Exclusions,
+                    exclusions: mut.Exclusions ? mut.Exclusions : "",
                     token: '/assets/images/Textures/' + qudDirToQudzooDir(mut.Tile, mut).replace(/\\/g, '/'),
                     variant: mut.Variant
                 });

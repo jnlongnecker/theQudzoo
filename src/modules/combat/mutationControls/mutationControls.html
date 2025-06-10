@@ -18,24 +18,53 @@
                     <legend class={category.class}>{category.data.displayName}</legend>
                     <ul>
                         <template for:each={category.data.mutations} for:item="mut">
-                            <div class={mut.format} key={mut.name} onmouseenter={mutHover} onclick={mutClick}
-                                data-name={mut.name} data-category={category.data.name}>
-                                <div class="mutation-line">
-                                    <span>
-                                        [<span class="marker">{mut.marker}</span>]
-                                    </span>
-                                    <span>
-                                        [<span class="positive">{mut.cost}</span>]
-                                    </span>
-                                    <span class="mutation-name">
-                                        {mut.displayName}
-                                    </span>
-                                    <div class="variations" if:true={mut.variants}>
-                                        <button class="v-button" onclick={chooseVariant}
-                                            data-category={category.data.name} data-name={mut.name}>Variant</button>
+                            <template if:true={mut.selectable}>
+                                <div class="selectable" key={mut.name} onmouseenter={mutHover} onclick={mutClick}
+                                    data-name={mut.name} data-category={category.data.name}>
+                                    <div class={mut.format}>
+                                        <div class="mutation-line">
+                                            <span>
+                                                [<span class="marker">{mut.marker}</span>]
+                                            </span>
+                                            <span>
+                                                [<span class="positive">{mut.cost}</span>]
+                                            </span>
+                                            <span class="mutation-name">
+                                                {mut.displayName}
+                                            </span>
+                                            <div class="variations" if:true={mut.variants}>
+                                                <button class="v-button" onclick={chooseVariant}
+                                                    data-category={category.data.name}
+                                                    data-name={mut.name}>Variant</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </template>
+                            <template if:false={mut.selectable}>
+                                <div class="disabled" key={mut.name} onmouseenter={mutHover} data-name={mut.name}
+                                    data-category={category.data.name}>
+                                    <div class={mut.format}>
+                                        <div class="mutation-line">
+                                            <span>
+                                                [<span class="marker">{mut.marker}</span>]
+                                            </span>
+                                            <span>
+                                                [<span class="positive">{mut.cost}</span>]
+                                            </span>
+                                            <span class="mutation-name">
+                                                {mut.displayName}
+                                            </span>
+                                            <div class="variations" if:true={mut.variants}>
+                                                <button class="v-button" onclick={chooseVariant}
+                                                    data-category={category.data.name}
+                                                    data-name={mut.name}>Variant</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+
                         </template>
                     </ul>
                 </fieldset>
@@ -55,4 +84,7 @@
             </fieldset>
         </div>
     </section>
+    <div class="options">
+        <span>Points Remaining: {mutationPoints}</span>
+    </div>
 </template>

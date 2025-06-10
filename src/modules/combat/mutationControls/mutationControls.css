@@ -97,11 +97,6 @@ ul {
     align-items: center;
 }
 
-.mutation-line:hover {
-    color: var(--mutation-color);
-    cursor: pointer;
-}
-
 .legend-img {
     text-align: center;
     min-height: 3rem;

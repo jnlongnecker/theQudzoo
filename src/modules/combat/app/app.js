@@ -85,7 +85,7 @@ export default class App extends LightningElement {
         try {
             action.apply(creature);
         } catch (e) {
-            console.log(e);
+            console.error(e);
             this.sendMessageToLog(e);
             return false;
         }

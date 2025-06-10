@@ -309,4 +309,31 @@ class SubtypeChangeAction {
     }
 }
 
-export { AttributeChangeAction, RandomizeAttributesAction, ResetAttributesAction, LevelUpAction, EquipItemAction, UnequipAction, SetPrimaryAction, AddSkillAction, SubtypeChangeAction };
+class BaseMutationChangeAction {
+    reversible = true;
+    undoOnLevelReset = false;
+
+    mutation;
+    added;
+
+    constructor(mutation, added) {
+        this.mutation = mutation; this.added = added;
+    }
+
+    apply(character) {
+        if (this.added) character.addMutation(this.mutation);
+        else character.removeMutation(this.mutation);
+    }
+
+    reverse(character) {
+        if (this.added) character.removeMutation(this.mutation);
+        else character.addMutation(this.mutation);
+    }
+
+    print() {
+        if (this.added) return `Added the ${this.mutation.displayName} mutation.`;
+        else return `Removed the ${this.mutation.displayName} mutation.`;
+    }
+}
+
+export { AttributeChangeAction, RandomizeAttributesAction, ResetAttributesAction, LevelUpAction, EquipItemAction, UnequipAction, SetPrimaryAction, AddSkillAction, SubtypeChangeAction, BaseMutationChangeAction };

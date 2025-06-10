@@ -3,6 +3,7 @@ import { SkillAddedEvent, SkillRemovedEvent } from "./events";
 import { random, Roll } from "./rolls";
 import { Skills } from "./skillParts/module";
 import { GameObject } from "./gameObject";
+import { mutationPartRegistry } from "./metadata";
 
 class Stat {
     _value;
@@ -274,8 +275,8 @@ class Creature extends GameObject {
     token;
     level;
     stats;
-    mutations;
-    cybernetics;
+    mutations = [];
+    cybernetics = [];
     anatomy;
     effects;
     isKin;
@@ -285,7 +286,7 @@ class Creature extends GameObject {
     parts = [];
     skills = {};
     actions = [];
-
+    mutationPoints = 0;
 
     hpFromLevelUpRolls = [0, 0];
     minLevel;
@@ -301,6 +302,7 @@ class Creature extends GameObject {
         if (isPlayer) creature.stats.recalculateHp(0, creature.level);
         else creature.rollStats();
         creature.isKin = undefined !== obj.stats.find(tag => tag.Name === 'Genotype' && tag.Value === 'True Kin');
+        creature.mutationPoints = creature.isKin || creature.level > 1 ? 0 : 12;
         for (let tag of obj.tags) {
             creature.addTag(tag);
         }
@@ -327,6 +329,20 @@ class Creature extends GameObject {
         let basePoints = this.isKin ? 70 : 50;
         let perLevel = basePoints + (this.stats.Intelligence.value - 10) * 4;
         return perLevel * (this.skillExpenditure.latestLevel - 1);
+    }
+
+    addMutation(mutation) {
+        this.mutationPoints -= mutation.cost;
+        let mutationPart = new (mutationPartRegistry.getConstructorFor(mutation.class));
+        mutation.part = mutationPart;
+        this.mutations.push(mutation);
+        this.attachPart(mutationPart);
+    }
+
+    removeMutation(mutation) {
+        this.mutationPoints += mutation.cost;
+        this.mutations = this.mutations.filter(mut => mut !== mutation);
+        this.detachPart(mutation.part);
     }
 
     addSkill(skillObj) {

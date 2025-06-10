@@ -2,6 +2,7 @@ import { api, LightningElement, track } from "lwc";
 import { mutationPartRegistry } from 'combat/calculator';
 import { getMutationData } from "c/api";
 import { fire, register } from "c/componentEvents";
+import { BaseMutationChangeAction } from "combat/actions";
 
 const CATEGORY_IDX = {
     Morphotypes: 0,
@@ -23,6 +24,8 @@ export default class MutationControls extends LightningElement {
     popup;
     stats;
 
+    mutationPoints = 0;
+
     @api
     get creature() { }
     set creature(value) {
@@ -40,8 +43,8 @@ export default class MutationControls extends LightningElement {
     }
 
     mutHover(event) {
-        let name = event.target.dataset.name;
-        let category = event.target.dataset.category;
+        let name = event.currentTarget.dataset.name;
+        let category = event.currentTarget.dataset.category;
         let mutation = this.getMutation(category, name);
         this.selectedMutation = mutation.displayName;
         this.selectedSrc = mutation.token;
@@ -49,14 +52,32 @@ export default class MutationControls extends LightningElement {
     }
 
     mutClick(event) {
-        let name = event.target.dataset.name;
-        let category = event.target.dataset.category;
+        let name = event.currentTarget.dataset.name;
+        let category = event.currentTarget.dataset.category;
         let mutation = this.getMutation(category, name);
+        let cost = mutation.cost;
 
-        if (mutation.marker === ' ') {
-            mutation.marker = '■';
-            mutation.numSelected = mutation.numSelected ? 1 : mutation.numSelected + 1;
+        mutation.category = category;
+
+        if (mutation.max === 1) {
+            mutation.numSelected = mutation.numSelected === 1 ? 0 : 1;
+            mutation.marker = mutation.numSelected === 1 ? '■' : ' ';
+            mutation.format = mutation.numSelected === 1 ? 'chosen' : '';
+        } else {
+            let wrap = mutation.cost > this.mutationPoints;
+            if (mutation.numSelected === undefined) mutation.numSelected = 0;
+            cost = mutation.numSelected * mutation.cost;
+            mutation.numSelected = wrap ? 0 : mutation.numSelected + 1;
+            mutation.marker = mutation.numSelected === 0 ? ' ' : `${mutation.numSelected}`;
+            mutation.format = mutation.numSelected >= 1 ? 'multi-chosen' : '';
         }
+        let deselected = mutation.numSelected === 0;
+        if (deselected) {
+            this.selectedMutations = this.selectedMutations.filter(m => m !== mutation);
+        } else { this.selectedMutations.push(mutation); }
+        this.mutationPoints = !deselected ? this.mutationPoints - mutation.cost : this.mutationPoints + cost;
+        this.calculateMutationSelectConsequences();
+        fire('actionevent', { detail: new BaseMutationChangeAction(mutation, !deselected) });
     }
 
     chooseVariant(event) {
@@ -85,6 +106,7 @@ export default class MutationControls extends LightningElement {
     handlePlayerRefresh(event) {
         let creature = event.detail;
         this.stats = creature.stats;
+        this.mutationPoints = creature.mutationPoints;
     }
 
     /* ==== HELPERS ==== */
@@ -144,11 +166,51 @@ export default class MutationControls extends LightningElement {
         return chars.join('');
     }
 
+    calculateMutationSelectConsequences() {
+        let exclusions = this.selectedMutations.map(m => m.exclusions).join(',');
+        let categories = this.selectedMutations.map(m => m.category);
+        for (let category of this.mutations) {
+            category = category.data;
+            if (exclusions.includes(category.name)) {
+                for (let mutation of category.mutations) mutation.selectable = false;
+            } else {
+                for (let mutation of category.mutations) {
+                    if (exclusions.includes(mutation.name)) mutation.selectable = false;
+                    else if (mutation.exclusions.includes('*')) {
+                        let excludeThisMutation = categories.reduce((running, curr) => {
+                            return running || mutation.exclusions.includes(curr)
+                        }, false);
+                        if (excludeThisMutation) mutation.selectable = false;
+                        else if (mutation.format) mutation.selectable = true;
+                        else if (mutation.cost > this.mutationPoints) mutation.selectable = false;
+                        else mutation.selectable = true;
+                    }
+                    else if (mutation.format) mutation.selectable = true;
+                    else if (mutation.cost > this.mutationPoints) mutation.selectable = false;
+                    else mutation.selectable = true;
+                }
+            }
+        }
+    }
+
     async pullMutationData() {
         let mutationData = await getMutationData();
         mutationData.Physical.mutations = mutationData.Physical.mutations.map(mut => {
             mut.variants = this.getVariants(mut);
+            mut.selectable = true;
             return mut;
+        });
+        mutationData.Morphotypes.mutations = mutationData.Morphotypes.mutations.map(mut => {
+            mut.selectable = true; return mut;
+        });
+        mutationData.PhysicalDefects.mutations = mutationData.PhysicalDefects.mutations.map(mut => {
+            mut.selectable = true; return mut;
+        });
+        mutationData.Mental.mutations = mutationData.Mental.mutations.map(mut => {
+            mut.selectable = true; return mut;
+        });
+        mutationData.MentalDefects.mutations = mutationData.MentalDefects.mutations.map(mut => {
+            mut.selectable = true; return mut;
         });
         this.mutations.push({ id: 1, class: 'morphotypes', data: mutationData.Morphotypes });
         this.mutations.push({ id: 2, class: 'positive', data: mutationData.Physical });
