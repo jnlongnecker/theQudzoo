@@ -1,5 +1,6 @@
 import { capitalize } from 'c/utilities';
 import { Item } from "combat/calculator";
+import RapidAdvanceModal from "combat/rapidAdvanceModal";
 
 class AttributeChangeAction {
 
@@ -152,6 +153,10 @@ class LevelUpAction {
 
     apply(character) {
         character.levelUp();
+        RapidAdvanceModal.open({
+            title: 'Rapid Advancement',
+            character
+        })
     }
 
     reverse(character) {
@@ -336,4 +341,41 @@ class BaseMutationChangeAction {
     }
 }
 
-export { AttributeChangeAction, RandomizeAttributesAction, ResetAttributesAction, LevelUpAction, EquipItemAction, UnequipAction, SetPrimaryAction, AddSkillAction, SubtypeChangeAction, BaseMutationChangeAction };
+class RankUpMutation {
+    reversible = true;
+    undoOnLevelReset = true;
+
+    mutationData;
+    rapidAdvance;
+
+    constructor(mutationData, rapidAdvance) {
+        this.mutationData = mutationData;
+        this.rapidAdvance = rapidAdvance;
+    }
+
+    apply(character) {
+        if (!this.mutationData.part.canRank(character.level)) {
+            throw `Cannot rank up ${this.mutationData.name}.`
+        }
+        if (this.rapidAdvance) {
+            this.mutationData.part.enhancements += 3;
+            return;
+        }
+        character.rankUpMutation(this.mutationData.part);
+    }
+
+    reverse(character) {
+        if (this.rapidAdvance) {
+            this.mutationData.part.enhancements -= 3;
+            return;
+        }
+        character.rankDownMutation(this.mutationData.part);
+    }
+
+    print() {
+        return this.rapidAdvance ? `Rapidly advanced the ${this.mutationData.name} mutation.` : `Ranked up the ${this.mutationData.name} mutation.`
+    }
+
+}
+
+export { AttributeChangeAction, RandomizeAttributesAction, ResetAttributesAction, LevelUpAction, EquipItemAction, UnequipAction, SetPrimaryAction, AddSkillAction, SubtypeChangeAction, BaseMutationChangeAction, RankUpMutation };

@@ -369,6 +369,16 @@ class Creature extends GameObject {
         this.detachPart(mutation.part);
     }
 
+    rankUpMutation(mutationPart) {
+        mutationPart.rank++;
+        this.mutationPoints--;
+    }
+
+    rankDownMutation(mutationPart) {
+        mutationPart.rank--;
+        this.mutationPoints++;
+    }
+
     addSkill(skillObj) {
         this.skills[skillObj.Name] = true;
         this.fire(new SkillAddedEvent(skillObj.Name));

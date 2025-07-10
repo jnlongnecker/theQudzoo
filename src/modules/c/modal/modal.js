@@ -25,6 +25,8 @@ export default class Modal extends LightningElement {
     @api bodyStyle = '';
     @api options = [];
 
+    @api connectedCallback() { }
+
     close(result, reject) {
         if (reject) {
             this.reject(reject);

@@ -2,7 +2,7 @@ import { api, LightningElement, track } from "lwc";
 import { mutationPartRegistry } from 'combat/calculator';
 import { getMutationData } from "c/api";
 import { fire, register } from "c/componentEvents";
-import { BaseMutationChangeAction } from "combat/actions";
+import { BaseMutationChangeAction, RankUpMutation } from "combat/actions";
 import Modal from "c/modal";
 
 const CATEGORY_IDX = {
@@ -103,6 +103,14 @@ export default class MutationControls extends LightningElement {
         }
         this.selectedTextLevelUp = this.buildFullBlurb(mutation, part.rank + 1, true);
         this.popup.open();
+        mutation.part = part;
+        this.limboPart = mutation;
+    }
+
+    cancelRankUp() { this.popup.close(); this.limboPart = undefined; }
+    confirmRankUp() {
+        this.popup.close();
+        fire('actionevent', { detail: new RankUpMutation(this.limboPart, false) });
     }
 
     chooseVariant(event) {

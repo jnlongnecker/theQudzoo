@@ -137,15 +137,14 @@ ul {
     font-weight: 700;
     font-size: 1.125rem;
     text-align: center;
+    border-bottom: 1px solid white;
+    margin: 1em clamp(0px, 20%, 150px);
 }
 
 .divider {
-    font-family: var(--qud-font);
-    font-weight: 700;
-    font-size: 2rem;
     align-self: center;
     justify-self: center;
-    transform: scaleY(3.5);
+    fill: var(--text-color-light);
 }
 
 .multi-btn {

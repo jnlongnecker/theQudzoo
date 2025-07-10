@@ -6,14 +6,11 @@
             <fieldset>
                 <legend class="header">{title}</legend>
                 <div class="body">
-                    <build-markdown-renderer if:true={bodyText}
-                        modes="collapse-line all-qud-font bolded inline no-highlight" raw-text={bodyText}
-                        slow-load></build-markdown-renderer>
                 </div>
             </fieldset>
             <div class="footer">
                 <template for:each={options} for:item="option" if:true={options}>
-                    <input-button key={option.value} data-value={option.value}
+                    <input-button key={option.label} data-value={option.value}
                         onclick={handleOption}>{option.label}</input-button>
                 </template>
             </div>
