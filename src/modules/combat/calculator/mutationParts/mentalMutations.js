@@ -227,6 +227,8 @@ export class ForceWall extends MutationPart {
 
 export class Kindle extends MutationPart {
 
+    getMaxRank() { return 1; }
+
     static getDescription() {
         return `You ignite a small fire with your mind.\n
         Range: 12
@@ -396,6 +398,8 @@ export class Pyrokinesis extends MutationPart {
 
 export class SensePsychic extends MutationPart {
 
+    getMaxRank() { return 1; }
+
     static getDescription() {
         return `You can sense other mental mutants through the psychic aether.\n\nYou detect the presence of psychic enemies within a radius of 9.\nThere's a chance you identify detected enemies.`;
     }
@@ -474,6 +478,8 @@ export class SunderMind extends MutationPart {
 }
 
 export class Telepathy extends MutationPart {
+
+    getMaxRank() { return 1; }
 
     // Fun fact: this was apparently "useful" in social and psionic Sifrah games. How? Who knows.
     static getDescription() {

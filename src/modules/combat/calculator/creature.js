@@ -331,16 +331,40 @@ class Creature extends GameObject {
         return perLevel * (this.skillExpenditure.latestLevel - 1);
     }
 
+    getMutation(mutationClass) {
+        for (let mutation in this.mutations) {
+            if (mutation.class === mutationClass) return mutation.part;
+        }
+    }
+
     addMutation(mutation) {
+        let hasMutation = this.mutations.find(mut => mut.name === mutation.name);
         this.mutationPoints -= mutation.cost;
-        let mutationPart = new (mutationPartRegistry.getConstructorFor(mutation.class));
+
+        let mutationPart;
+        if (hasMutation) {
+            if (mutation.max === 1) this.mutationPoints += mutation.cost;
+            if (mutation.max < mutation.numSelected) return;
+            mutationPart = mutation.part;
+        } else {
+            mutationPart = new (mutationPartRegistry.getConstructorFor(mutation.class));
+        }
+
+        let variants = mutation.variants;
+        if (variants) mutationPart.variant = (mutation.selectedVariant || variants[0]).name;
+        mutationPart.rank = mutation.numSelected;
+        mutationPart.enhancements = 0;
         mutation.part = mutationPart;
-        this.mutations.push(mutation);
-        this.attachPart(mutationPart);
+
+        if (!hasMutation) {
+            this.mutations.push(mutation);
+            this.attachPart(mutationPart);
+        }
     }
 
     removeMutation(mutation) {
-        this.mutationPoints += mutation.cost;
+        if (!mutation.part) return;
+        this.mutationPoints += mutation.cost * mutation.part.rank;
         this.mutations = this.mutations.filter(mut => mut !== mutation);
         this.detachPart(mutation.part);
     }
@@ -380,6 +404,7 @@ class Creature extends GameObject {
 
     levelUp() {
         this.level++;
+        if (!this.isKin) this.mutationPoints = this.level - 1;
         this.level < this.hpFromLevelUpRolls.length ? undefined : this.rollLevelUpHp();
 
         if (this.skillExpenditure.latestLevel < this.level) {
@@ -400,6 +425,10 @@ class Creature extends GameObject {
         let allDown = this.level % 6 == 0;
         let pointDown = (this.level + 3) % 6 == 0;
         this.level--;
+        if (!this.isKin) {
+            this.mutationPoints = this.level - 1;
+            if (this.level === 1) this.mutationPoints = this.mutations.reduce((points, mut) => points -= mut.cost, 12);
+        }
 
         if (allDown) this.stats.attributeAllDown();
         if (pointDown) this.attributeExpenditure.leveledPoints--;

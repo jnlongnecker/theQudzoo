@@ -1,17 +1,35 @@
 <template>
     <c-popup>
-        <span slot="header">:choose variant:</span>
-        <ul class="insert-variant">
-            <template for:each={variantChoices} for:item="variant" for:index="i">
-                <li key={variant.name}>
-                    <button class="v-button" data-index={i} onclick={variantChosen}>
-                        {variant.type}
-                    </button>
-                </li>
-            </template>
-        </ul>
+        <template if:true={levelOne}>
+            <span slot="header">:choose variant:</span>
+            <ul class="insert-variant">
+                <template for:each={variantChoices} for:item="variant" for:index="i">
+                    <li key={variant.name}>
+                        <button class="v-button" data-index={i} onclick={variantChosen}>
+                            {variant.type}
+                        </button>
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <template if:false={levelOne}>
+            <span slot="header">:{selectedMutation}:</span>
+            <div class="popup-container">
+                <div>
+                    <p>Current Level</p>
+                    <build-markdown-renderer modes="all-qud-font bolded inline no-highlight" slow-load shaders-only
+                        raw-text={selectedText}></build-markdown-renderer>
+                </div>
+                <span class="divider">></span>
+                <div>
+                    <p>Next Level</p>
+                    <build-markdown-renderer modes="all-qud-font bolded inline no-highlight" slow-load shaders-only
+                        raw-text={selectedTextLevelUp}></build-markdown-renderer>
+                </div>
+            </div>
+        </template>
     </c-popup>
-    <section>
+    <section if:true={levelOne}>
         <div class="mutations">
             <template for:each={mutations} for:item="category">
                 <fieldset key={category.id}>
@@ -72,6 +90,45 @@
         </div>
         <hr />
         <div class="blurb" onclick={hideBlurb}>
+            <fieldset>
+                <legend class="legend-img">
+                    <img if:true={selectedSrc} src={selectedSrc} class="mut-img" />
+                </legend>
+                <div class="blurb-format">
+                    <span>{selectedMutation}</span>
+                    <build-markdown-renderer modes="all-qud-font bolded inline no-highlight" slow-load shaders-only
+                        raw-text={selectedText} if:true={selectedText}></build-markdown-renderer>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <section if:false={levelOne}>
+        <div class="mutations">
+            <fieldset>
+                <legend>
+                    Mutations
+                </legend>
+                <ul>
+                    <template for:each={mutationList} for:item="mut">
+                        <div class="selectable" key={mut.name} onmouseenter={mutHover} onclick={upgradeMutation}
+                            data-name={mut.name} data-category={mut.category}>
+                            <div>
+                                <div class="mutation-line-leveled">
+                                    <span>
+                                        {mut.displayName}
+                                    </span>
+                                    <span if:true={mut.rank}>
+                                        ({mut.rank})
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </ul>
+            </fieldset>
+        </div>
+        <hr />
+        <div class="blurb">
             <fieldset>
                 <legend class="legend-img">
                     <img if:true={selectedSrc} src={selectedSrc} class="mut-img" />

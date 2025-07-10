@@ -1,3 +1,5 @@
+@import "styles/scrollbar";
+
 fieldset {
     border-right: 0;
     border-left: 0;
@@ -69,6 +71,8 @@ fieldset {
 .body {
     text-align: initial;
     min-height: 20vh;
+    max-height: calc(60vh - 4rem);
+    overflow-y: auto;
 }
 
 .footer {

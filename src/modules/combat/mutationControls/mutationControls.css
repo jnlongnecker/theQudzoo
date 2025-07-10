@@ -72,7 +72,7 @@ ul {
 .blurb {
     overflow-y: scroll;
     padding-right: 0.5rem;
-    max-height: 50vh;
+    height: 50vh;
 }
 
 .levelBlurb {
@@ -83,7 +83,7 @@ ul {
     overflow-y: scroll;
     direction: rtl;
     padding-left: 0.5rem;
-    max-height: 50vh;
+    height: 50vh;
     padding-top: 0.75rem;
 }
 
@@ -95,6 +95,12 @@ ul {
     display: grid;
     grid-template-columns: 3ch 4ch 1fr 8ch;
     align-items: center;
+}
+
+.mutation-line-leveled {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1ch;
 }
 
 .legend-img {
@@ -118,6 +124,28 @@ ul {
 .variations {
     direction: rtl;
     display: inline-block;
+}
+
+.popup-container {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    gap: 12px;
+}
+
+.popup-container p {
+    font-family: var(--qud-font);
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.divider {
+    font-family: var(--qud-font);
+    font-weight: 700;
+    font-size: 2rem;
+    align-self: center;
+    justify-self: center;
+    transform: scaleY(3.5);
 }
 
 .multi-btn {

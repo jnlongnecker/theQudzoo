@@ -24,6 +24,8 @@ export class AdrenalControl2 extends MutationPart {
 
 export class Beak extends MutationPart {
 
+    getMaxRank() { return 1; }
+
     static getVariants() {
         return [
             { type: "Beak", name: "Beak" },
@@ -128,6 +130,8 @@ export class CorrosiveGasGeneration extends MutationPart {
 }
 
 export class DarkVision extends MutationPart {
+
+    getMaxRank() { return 1; }
 
     static getDescription() {
         return `You see in the dark.`;
@@ -362,6 +366,8 @@ export class MultipleLegs extends MutationPart {
 
 export class NightVision extends MutationPart {
 
+    getMaxRank() { return 1; }
+
     static getDescription() {
         return `You see in the dark.`;
     }
@@ -467,6 +473,8 @@ export class SleepGasGeneration extends MutationPart {
 
 export class SlimeGlands extends MutationPart {
 
+    getMaxRank() { return 1; }
+
     static getDescription() {
         return `You produce a viscous slime that you can spit at things.\n\nCovers an area with slime\nRange: 8\nArea: 3x3\nCooldown: 40 rounds\nYou can walk over slime without slipping.`;
     }
@@ -560,6 +568,8 @@ export class Stinger extends MutationPart {
 }
 
 export class ThickFur extends MutationPart {
+
+    getMaxRank() { return 1; }
 
     static getDescription() {
         return `You are covered in a thick coat of fur, which protects you from the elements.\n\n+5 Heat Resistance\n+5 Cold Resistance\n+100 reputation with {{w|apes}}, {{w|baboons}}, {{w|bears}}, and {{w|grazing hedonists}}`;

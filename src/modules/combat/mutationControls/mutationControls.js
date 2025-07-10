@@ -3,6 +3,7 @@ import { mutationPartRegistry } from 'combat/calculator';
 import { getMutationData } from "c/api";
 import { fire, register } from "c/componentEvents";
 import { BaseMutationChangeAction } from "combat/actions";
+import Modal from "c/modal";
 
 const CATEGORY_IDX = {
     Morphotypes: 0,
@@ -19,12 +20,15 @@ export default class MutationControls extends LightningElement {
     selectedMutation = '';
     selectedSrc;
     selectedText = '';
+    selectedTextLevelUp = '';
     variantChoices = [];
     mutationInLimbo;
     popup;
     stats;
 
     mutationPoints = 0;
+    level = 1;
+    mutationList = [];
 
     @api
     get creature() { }
@@ -36,6 +40,10 @@ export default class MutationControls extends LightningElement {
         super();
         this.pullMutationData();
         register('refreshplayerevent', (e) => this.handlePlayerRefresh(e));
+    }
+
+    get levelOne() {
+        return this.level <= 1;
     }
 
     renderedCallback() {
@@ -80,6 +88,23 @@ export default class MutationControls extends LightningElement {
         fire('actionevent', { detail: new BaseMutationChangeAction(mutation, !deselected) });
     }
 
+    upgradeMutation(event) {
+        if (this.mutationPoints === 0) return;
+        let name = event.currentTarget.dataset.name;
+        let category = event.currentTarget.dataset.category;
+        let part = this.mutationList.find(m => m.name === name).part;
+        let mutation = this.getMutation(category, name);
+        if (!part.canRank(this.level)) {
+            Modal.open({
+                title: 'Cannot Rank Up',
+                bodyText: `This mutation cannot yet be ranked up; it's capped by your level or is at maximum rank.`,
+                options: [{ value: 'yes', label: 'Ok' },]
+            })
+        }
+        this.selectedTextLevelUp = this.buildFullBlurb(mutation, part.rank + 1, true);
+        this.popup.open();
+    }
+
     chooseVariant(event) {
         let name = event.currentTarget.dataset.name;
         let category = event.currentTarget.dataset.category;
@@ -101,12 +126,29 @@ export default class MutationControls extends LightningElement {
         this.mutationInLimbo.displayName = displayName;
         this.selectedMutation = displayName;
         this.popup.close();
+
+        if (this.mutationInLimbo.numSelected >= 1) {
+            fire('actionevent', { detail: new BaseMutationChangeAction(this.mutationInLimbo, true) });
+        }
     }
 
     handlePlayerRefresh(event) {
         let creature = event.detail;
         this.stats = creature.stats;
         this.mutationPoints = creature.mutationPoints;
+        this.level = creature.level;
+        this.mutationList = creature.mutations.map(mut => {
+            let rank = mut.part.getMaxRank() <= 1 ? undefined : mut.part.getRank(this.level);
+            return {
+                name: mut.name,
+                displayName: mut.displayName,
+                class: mut.class,
+                category: mut.category,
+                token: mut.token,
+                part: mut.part,
+                rank
+            }
+        });
     }
 
     /* ==== HELPERS ==== */
@@ -118,7 +160,7 @@ export default class MutationControls extends LightningElement {
     }
 
     buildFullBlurb(mutationData, level = 1, levelup = false) {
-        let variant = mutationData.class === 'LightManipulation' ? this.getVariantName(mutationData) : this.stats.Willpower.value;
+        let variant = mutationData.class === 'LightManipulation' ? this.stats.Willpower.value : this.getVariantName(mutationData);
         let description = this.getDescription(mutationData.class, variant);
         let levelText = this.getLevelText({ className: mutationData.class, variant, level, levelup });
 
@@ -173,6 +215,8 @@ export default class MutationControls extends LightningElement {
             category = category.data;
             if (exclusions.includes(category.name)) {
                 for (let mutation of category.mutations) mutation.selectable = false;
+            } else if (category.name.includes('Defect') && categories.find(c => c.includes('Defect'))) {
+                for (let mutation of category.mutations) mutation.selectable = false;
             } else {
                 for (let mutation of category.mutations) {
                     if (exclusions.includes(mutation.name)) mutation.selectable = false;
@@ -190,6 +234,9 @@ export default class MutationControls extends LightningElement {
                     else mutation.selectable = true;
                 }
             }
+        }
+        for (let mutation of this.selectedMutations) {
+            mutation.selectable = true;
         }
     }
 
@@ -217,7 +264,5 @@ export default class MutationControls extends LightningElement {
         this.mutations.push({ id: 3, class: 'negative', data: mutationData.PhysicalDefects });
         this.mutations.push({ id: 4, class: 'positive', data: mutationData.Mental });
         this.mutations.push({ id: 5, class: 'negative', data: mutationData.MentalDefects });
-
-        console.log(this.mutations)
     }
 }

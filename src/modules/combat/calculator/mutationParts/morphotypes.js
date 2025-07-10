@@ -2,6 +2,8 @@ import { MutationPart } from './base';
 
 export class Chimera extends MutationPart {
 
+    getMaxRank() { return 1; }
+
     static getDescription() {
         return `You only manifest physical mutations, and all of your mutation choices when manifesting a new mutation are physical.\n\nWhenever you manifest a new mutation, one of your choices will also cause you to grow a new limb at random.`;
     }
@@ -12,6 +14,8 @@ export class Chimera extends MutationPart {
 }
 
 export class Esper extends MutationPart {
+
+    getMaxRank() { return 1; }
 
     // Fun fact: This used to make you better at psionic Sifrah games
     static getDescription() {
