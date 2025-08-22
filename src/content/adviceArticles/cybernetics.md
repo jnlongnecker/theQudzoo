@@ -715,7 +715,7 @@ Here we arrive at the highest tier of unarmed damage, 3d4 per hit which brings i
 
 Additionally, the crysteel hand bones will always be outscaled by the Fist of the Ape God as it will _also_ scale with Strength infinitely and we can one-hand that with giant hands, which leaves us room to wield a Shield or offhand Short Blade _and_ allows us to wield double rifles. By the time we get to the point that Multiweapon Fighting with crysteel hand bones becomes stronger than this combination in terms of melee DPS, we're doing so much damage anyway that it simply doesn't matter anymore.
 
-Additionally, uncapped PV only does so much to help you due to the way the penetration formula works. The simple version is this: If your PV exceeds the enemy AV by 3 or more, more PV _does not help you_. So that uncapped PV will help on those stupidly high AV enemies, sure, but those enemies are always better beaten in other ways or by using the Penetrating Strikes skill.
+For what it's worth, uncapped PV only does so much to help you due to the way the penetration formula works. The simple version is this: If your PV cap exceeds the enemy AV by 3 or more, a higher PV cap _does not help you_. So that uncapped PV will help on those stupidly high AV enemies, sure, but those enemies are always better beaten in other ways or by using the Penetrating Strikes skill.
 
 If you for some reason have an unbelievably high Strength score to make use of the uncapped PV before you get access to {{K|flawless {{crysteel|crysteel}}}} / {{zetachrome|zetachrome}} weaponry / Fist of the Ape God, then this can be a good weapon in the meantime. But once you get there (which should be pretty soon), you can free up the 8 points and cybernetic slot for something else.
 
