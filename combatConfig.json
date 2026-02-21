@@ -1,0 +1,9 @@
+{
+    "id": "Combat-Calculator",
+    "path": "/combat",
+    "contentTemplate": "$contentDir/combatInfo.md",
+    "layoutTemplate": "$layoutsDir/combat_layout.njk",
+    "properties": {
+        "preview": "/assets/images/pyramids.png"
+    }
+}
