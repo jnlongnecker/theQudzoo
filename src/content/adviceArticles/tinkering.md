@@ -21,7 +21,7 @@ Grenade tinkering is such a huge part of Tinkering in general that if you consid
 
 If you're clever and plan things out, you can set up time-bombs in combat but you oftentimes don't gain much from that since equipping a thrown item it completely free to do. More often, you're going to be throwing them, which is also good for you since the useful grenades tend to have a considerable area of effect.
 
-Grenades come in 3 tiers: mk I, mk II and mk III, the only exceptions being the phase shift grenade mk I and the Hand-E-Nuke which is less of a "grenade" and more of a "map deletion" so I won't be generally considering the latter when I talk about grenades. Phase shift grenades are just not good ever really, the phase-conjugate mod does what you need in this grenade but for any grenade. By extension, the mk I grenades are generally just too weak to be worth your time.
+Grenades come in 3 tiers: mk I, mk II and mk III, the only exceptions being the phase shift grenade mk I and the ||Rare grenade|Hand-E-Nuke|| which is less of a "grenade" and more of a "map deletion" so I won't be generally considering the latter when I talk about grenades. Phase shift grenades are just not good ever really, the phase-conjugate mod does what you need in this grenade but for any grenade. By extension, the mk I grenades are generally just too weak to be worth your time.
 
 #### Defensive Grenades
 
@@ -95,7 +95,7 @@ Normally, sturdy isn't worth that much as items don't break or become damaged en
 
 </div>
 
-Drum-loaded will increase the capacity of the weapon before it needs to reload by 20% or by 1, whichever is higher. For these weapons, this is actually pretty decent as there are not a ton of mods that these weapon types really thirst for. Unless you're planning on modifying your gun with {{phase-harmonic|phase-harmonic}} / phase-conjugate, this is a good pick.
+Drum-loaded will increase the capacity of the weapon before it needs to reload by 20% or by 1, whichever is higher. For these weapons, this is actually pretty decent as there are not a ton of mods that these weapon types really thirst for. Unless you're planning on modifying your gun with {{phase-harmonic|phase-harmonic}} / {{phase-harmonic|phase-conjugate}}, this is a good pick.
 
 #### Liquid-Cooled
 
@@ -185,7 +185,7 @@ Poor Cudgels getting the short end of the stick for this mod, because this is ea
 
 </div>
 
-Thrown weapons are definitely underdeveloped and hardly used; there's not many good mods in general for these so increasing the throw range with this mod is pretty good. If you're throwing something, it's probably a grenade anyway so this can be expensive to tinker on your grenades but can be worth it on a few to get really long range tosses in. You could also use this on all of Jotun's throwing axes and get some pretty ridiculous range on them which may be what you want if you're not a big fan of ranged weapons or are using a relic ranged weapon for its bonuses.
+Thrown weapons are definitely underdeveloped and hardly used; there's not many good mods in general for these so increasing the throw range with this mod is pretty good. If you're throwing something, it's probably a grenade anyway so this can be expensive to tinker on your grenades but can be worth it on a few to get really long range tosses in. You could also use this on all of ||Mid game boss' item|Jotun's throwing axes|| and get some pretty ridiculous range on them which may be what you want if you're not a big fan of ranged weapons or are using a relic ranged weapon for its bonuses.
 
 #### Masterwork
 
@@ -441,12 +441,12 @@ Jacked allows the artifact, while equipped, to make use of the onboard power sys
 
 Particularly good jacked candidates:
 
--   Energy weapons
--   Force bracelets
--   Hologram bracelets / tri-hologram bracelets
--   Geomagnetic disc
--   Precision nanon fingers
--   Night-sight interpolators.
+- Energy weapons
+- Force bracelets
+- Hologram bracelets / tri-hologram bracelets
+- Geomagnetic disc
+- Precision nanon fingers
+- Night-sight interpolators.
 
 Of course, if you don't have an onboard power system this is always going to be a pass.
 
@@ -464,12 +464,12 @@ While not every powered item can benefit from {{overloaded|overloaded}}, a consi
 
 Items that particularly benefit from being {{overloaded|overloaded}} are:
 
--   high-voltage arc winders
--   geomagnetic disc
--   gas tumbler
--   precision nanon fingers
--   ulnar stimulators
--   night-sight interpolators
+- high-voltage arc winders
+- geomagnetic disc
+- gas tumbler
+- precision nanon fingers
+- ulnar stimulators
+- night-sight interpolators
 
 Note that for these you'll also want them to be sturdy.
 
@@ -525,7 +525,9 @@ If your own Esper abilities don't rely significantly on normality, if you have h
 
 </div>
 
-This is a nifty mod that will switch the phase of the grenade as it explodes, meaning it will never affect the same phase as you. Unless you have Phasing, this is not particularly useful as very few creatures can even exit the normal phase as I mentioned with {{phase-harmonic|phase-harmonic}}. Where this mod differs is that any grenade with this mod is always safe for you to use regardless of where you throw it. This makes it ideal for the most destructive of grenades and especially ideal for the Hand-E-Nuke; as long as you have a way to shift out-of-phase in order to use it on normal creatures. If you don't have a reliable way to phase, this is pretty useless unless you want to take it to throw explosives at astral tabbies.
+This is a nifty mod that will switch the phase of the grenade as it explodes, meaning it will never affect the same phase as you. Unless you have Phasing, this is not particularly useful as very few creatures can even exit the normal phase as I mentioned with {{phase-harmonic|phase-harmonic}}. Where this mod differs is that any grenade with this mod is always safe for you to use regardless of where you throw it. This makes it ideal for the most destructive of grenades and especially ideal for the ||Aforementioned rare map deleter grenade|Hand-E-Nuke||; as long as you have a way to shift out-of-phase in order to use it on normal creatures. If you don't have a reliable way to phase, this is pretty useless unless you want to take it to throw explosives at astral tabbies.
+
+||Hidden endgame bosses and their mechanics|If you kill Shug'ruith, all further Nephilim will have omni-phase which means they interact will all phases simultaneously. Usually, this is to counter you Phasing spammers, but with this mod it enables you to now hit only the Nephilim and not yourself. Really convenient to have if you're planning on taking out the Nephilim.||
 
 #### Co-Processor
 
@@ -551,7 +553,7 @@ Most of the cybernetics that this improves are either fairly rare or not great, 
 
 </div>
 
-Refractive adds a chance to refract light-based attacks from you depending on what piece of gear it is applied to. Body / back slot items add 40%, hand shields add 30%, accessories add 20% and bucklers / other items add 10%. Note the keyword here is _refract_ light, not reflect. This means it simply bends the light attack away from you and doesn't necessarily return to sender. It won't hurt you now, but it won't necessarily hurt the attacker either. It's cool, but not necessarily that worthwhile due to the low amount of creatures that would use light-based attacks in the first place. Notable here, however, is that the {{!|mutating gaze}} of a gamma moth is **not** considered a light-based attack and cannot be refracted, so don't expect this to save you.
+Refractive adds a chance to refract light-based attacks from you depending on what piece of gear it is applied to. Body / back slot items add 40%, hand shields add 30%, accessories add 20% and bucklers / other items add 10%. Note the keyword here is _refract_ light, not reflect. This means it simply bends the light attack away from you and doesn't necessarily return to sender. It won't hurt you now, but it won't necessarily hurt the attacker either. It's cool, but not necessarily that worthwhile due to the low amount of creatures that would use light-based attacks in the first place. ||Endgame enemy with a special mechanic|Notable here, however, is that the {{!|mutating gaze}} of a gamma moth is **not** considered a light-based attack and cannot be refracted, so don't expect this to save you.||
 
 #### Radio-Powered
 

@@ -22,30 +22,30 @@ This is also a place that I like to start setting up reputation for the future. 
 
 #### Must-Have
 
--   Equipment for every gear slot
--   <span class="injected"><span class="Y">Steel</span></span> or above weaponry
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Mechanical Wings.png" /></span><span class="object">Mechanical wings</span></span>
+- Equipment for every gear slot
+- <span class="injected"><span class="Y">Steel</span></span> or above weaponry
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Mechanical Wings.png" /></span><span class="object">Mechanical wings</span></span>
 
 #### Nice-to-Have
 
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Small Sphere of Negative Weight.png" /></span><span class="object">Small sphere of negative weight</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Pickaxe.png" /></span><span class="object"><span class="injected"><span class="c">Pickaxe</span></span></span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Miner&#x27;s Helmet.png" /></span><span class="object">Miner's helmet</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Small Sphere of Negative Weight.png" /></span><span class="object">Small sphere of negative weight</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Pickaxe.png" /></span><span class="object"><span class="injected"><span class="c">Pickaxe</span></span></span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Miner&#x27;s Helmet.png" /></span><span class="object">Miner's helmet</span></span>
 
 ### Skill Wishlist - Red Rock
 
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Swift Reflexes.png" /></span><span class="skill">Swift Reflexes</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Acrobatics.png" /></span><span class="skill">Acrobatics</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Hurdle.png" /></span><span class="skill">Hurdle</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Charge.png" /></span><span class="skill">Charge</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Opportune Attacks.png" /></span><span class="skill">Opportune Attacks</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Multiweapon Proficiency.png" /></span><span class="skill">Multiweapon Proficiency</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Mind&#x27;s Compass.png" /></span><span class="skill">Mind's Compass</span></span>
--   Basic weapon skills
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Swift Reflexes.png" /></span><span class="skill">Swift Reflexes</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Acrobatics.png" /></span><span class="skill">Acrobatics</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Hurdle.png" /></span><span class="skill">Hurdle</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Charge.png" /></span><span class="skill">Charge</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Opportune Attacks.png" /></span><span class="skill">Opportune Attacks</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Multiweapon Proficiency.png" /></span><span class="skill">Multiweapon Proficiency</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Mind&#x27;s Compass.png" /></span><span class="skill">Mind's Compass</span></span>
+- Basic weapon skills
 
 ## Grit Gate (Level 10-18)
 
-The second section involves the quests just up to Decoding the Signal, all revolving around gaining access to the Barathrumite compound at Grit Gate. In this section, I spend most of my time preparing for Bethesda Susa as I'm already prepared for Golgotha from the previous section. In fact, there are some times that I've already gained access to Grit Gate in its entirety by this level. Regardless, after gaining access to Grit Gate I will go through the first Historic Site that can always be found from the statue in the zone north of Joppa, and then start leveling up through the jungle. Goatfolk and their villages are great places to find good loot in preparation for Bethesda Susa, and I'll also start investigating the Six Day Stilt for Schrodinger pages and Eater's Nectar in particular.
+The second section involves the quests just up to Decoding the Signal, all revolving around gaining access to the Barathrumite compound at Grit Gate. In this section, I spend most of my time preparing for Bethesda Susa as I'm already prepared for Golgotha from the previous section. In fact, there are some times that I've already gained access to Grit Gate in its entirety by this level. Regardless, after gaining access to Grit Gate I will go through the first Historic Site that can always be found from the statue in the zone north of Joppa, and then start leveling up through the jungle. Goatfolk and their villages are great places to find good loot in preparation for Bethesda Susa, and I'll also start investigating the Six Day Stilt for Schrodinger pages and <span class="injected"><span class="W">E</span><span class="w">a</span><span class="g">t</span><span class="G">e</span><span class="W">r</span><span class="w">'</span><span class="g">s</span><span class="G"> </span><span class="W">N</span><span class="w">e</span><span class="g">c</span><span class="G">t</span><span class="W">a</span><span class="w">r</span></span> in particular.
 
 In this tier I start to leverage more reputation. Warden rep should be stacked pretty high by this point, and the Raising Indrix side quest can help a lot in both boosting reputation and gaining a strong weapon for Bethesda Susa. I gain <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Tinkering.png" /></span><span class="skill">Tinkering</span></span> for reputation from the Barathrumites and <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Meal Preparation.png" /></span><span class="skill">Meal Preparation</span></span> from Mayor <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Creatures/Mayor Nuntu.png" /></span><span class="object">Nuntu</span></span> at Kyakukya.
 
@@ -85,32 +85,32 @@ If you're set on killing <span class="nowrap"><span class="injected"><span class
 
 #### Must-Have
 
--   Sparbine
--   <span class="injected"><span class="b">Carbide</span></span> or above weaponry
--   <span class="injected"><span class="Y">Steel</span></span> tier or above equipment for every slot
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Glowsphere.png" /></span><span class="object"><span class="injected"><span class="Y">Glowsphere</span></span></span></span> / <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Floating Glowsphere.png" /></span><span class="object">floating <span class="injected"><span class="Y">glowsphere</span></span></span></span> (if no <span class="nowrap"><span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Mutations/Night Vision.png" /></span><span class="mutation">Night Vision</span></span>)</span>
+- Sparbine
+- <span class="injected"><span class="b">Carbide</span></span> or above weaponry
+- <span class="injected"><span class="Y">Steel</span></span> tier or above equipment for every slot
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Glowsphere.png" /></span><span class="object"><span class="injected"><span class="Y">Glowsphere</span></span></span></span> / <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Floating Glowsphere.png" /></span><span class="object">floating <span class="injected"><span class="Y">glowsphere</span></span></span></span> (if no <span class="nowrap"><span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Mutations/Night Vision.png" /></span><span class="mutation">Night Vision</span></span>)</span>
 
 #### Nice-to-Have
 
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Hologram Bracelet.png" /></span><span class="object"><span class="injected"><span class="b">H</span><span class="B">o</span><span class="C">l</span><span class="c">o</span><span class="b">g</span><span class="B">r</span><span class="C">a</span><span class="c">m</span></span> bracelet</span></span>
--   Elemental damage option
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Creatures/Sowers_Seed.png" /></span><span class="object">Sower's seeds</span></span> x30
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Stopsvaalinn.png" /></span><span class="object"><span class="injected"><span class="R">S</span><span class="r">t</span><span class="K">o</span><span class="y">p</span><span class="Y">s</span><span class="R">v</span><span class="r">a</span><span class="K">l</span><span class="y">i</span><span class="Y">n</span><span class="R">n</span></span></span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Hologram Bracelet.png" /></span><span class="object"><span class="injected"><span class="b">H</span><span class="B">o</span><span class="C">l</span><span class="c">o</span><span class="b">g</span><span class="B">r</span><span class="C">a</span><span class="c">m</span></span> bracelet</span></span>
+- Elemental damage option
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Creatures/Sowers_Seed.png" /></span><span class="object">Sower's seeds</span></span> x30
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Stopsvaalinn.png" /></span><span class="object"><span class="injected"><span class="R">S</span><span class="r">t</span><span class="K">o</span><span class="y">p</span><span class="Y">s</span><span class="R">v</span><span class="r">a</span><span class="K">l</span><span class="y">i</span><span class="Y">n</span><span class="R">n</span></span></span></span>
 
 ### Skill Wishlist - Grit Gate
 
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Tinker I.png" /></span><span class="skill">Tinker I</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Disassemble.png" /></span><span class="skill">Disassemble</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Multiweapon Expertise.png" /></span><span class="skill">Multiweapon Expertise</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Penetrating Strikes.png" /></span><span class="skill">Penetrating Strikes</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Weapon Expertise.png" /></span><span class="skill">Weapon Expertise</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Shake It Off.png" /></span><span class="skill">Shake It Off</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Meal Preparation.png" /></span><span class="skill">Meal Preparation</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Block.png" /></span><span class="skill">Block</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Juke.png" /></span><span class="skill">Juke</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Snake Oiler.png" /></span><span class="skill">Snake Oiler</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Wilderness Lore Jungles.png" /></span><span class="skill">Wilderness Lore: Jungles</span></span>
--   Mid-Level Weapon Skills
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Tinker I.png" /></span><span class="skill">Tinker I</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Disassemble.png" /></span><span class="skill">Disassemble</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Multiweapon Expertise.png" /></span><span class="skill">Multiweapon Expertise</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Penetrating Strikes.png" /></span><span class="skill">Penetrating Strikes</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Weapon Expertise.png" /></span><span class="skill">Weapon Expertise</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Shake It Off.png" /></span><span class="skill">Shake It Off</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Meal Preparation.png" /></span><span class="skill">Meal Preparation</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Block.png" /></span><span class="skill">Block</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Juke.png" /></span><span class="skill">Juke</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Snake Oiler.png" /></span><span class="skill">Snake Oiler</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Wilderness Lore Jungles.png" /></span><span class="skill">Wilderness Lore: Jungles</span></span>
+- Mid-Level Weapon Skills
 
 ## Bethesda Susa (Level 18-26)
 
@@ -170,30 +170,30 @@ If you happen to have it, an <span class="injected"><span class="icon-container"
 
 #### Must-Have
 
--   <span class="injected"><span class="K">Fullerite</span></span> and above weaponry
--   Piecemeal <span class="nowrap"><span class="injected"><span class="y">c</span><span class="y">r</span><span class="K">y</span><span class="g">s</span><span class="g">t</span><span class="K">e</span><span class="y">e</span><span class="y">l</span></span>+</span> tier equipment
+- <span class="injected"><span class="K">Fullerite</span></span> and above weaponry
+- Piecemeal <span class="nowrap"><span class="injected"><span class="y">c</span><span class="y">r</span><span class="K">y</span><span class="g">s</span><span class="g">t</span><span class="K">e</span><span class="y">e</span><span class="y">l</span></span>+</span> tier equipment
 
 #### Nice-to-Have
 
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Portable Wall.png" /></span><span class="object">Portable walls</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/FactionDeed.png" /></span><span class="object">Schrodinger page from the <span class="injected"><span class="K">Annals of Qud</span></span></span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Metamorphic Polygel.png" /></span><span class="object"><span class="injected"><span class="y">M</span><span class="y">e</span><span class="y">t</span><span class="Y">a</span><span class="Y">m</span><span class="Y">o</span><span class="M">r</span><span class="M">p</span><span class="M">h</span><span class="m">i</span><span class="m">c</span><span class="m"> </span><span class="m">p</span><span class="y">o</span><span class="y">l</span><span class="y">y</span><span class="Y">g</span><span class="Y">e</span><span class="Y">l</span></span></span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Freeze Ray.png" /></span><span class="object"><span class="injected"><span class="C">Freeze</span></span> ray</span></span> / <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Flamethrower.png" /></span><span class="object">flamethrower</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Ceremonial Khopesh.png" /></span><span class="object">Ceremonial vibrokhopesh</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Portable Wall.png" /></span><span class="object">Portable walls</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/FactionDeed.png" /></span><span class="object">Schrodinger page from the <span class="injected"><span class="K">Annals of Qud</span></span></span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Metamorphic Polygel.png" /></span><span class="object"><span class="injected"><span class="y">M</span><span class="y">e</span><span class="y">t</span><span class="Y">a</span><span class="Y">m</span><span class="Y">o</span><span class="M">r</span><span class="M">p</span><span class="M">h</span><span class="m">i</span><span class="m">c</span><span class="m"> </span><span class="m">p</span><span class="y">o</span><span class="y">l</span><span class="y">y</span><span class="Y">g</span><span class="Y">e</span><span class="Y">l</span></span></span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Freeze Ray.png" /></span><span class="object"><span class="injected"><span class="C">Freeze</span></span> ray</span></span> / <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Flamethrower.png" /></span><span class="object">flamethrower</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Ceremonial Khopesh.png" /></span><span class="object">Ceremonial vibrokhopesh</span></span>
 
 ### Skill Wishlist - Bethesda Susa
 
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Calloused.png" /></span><span class="skill">Calloused</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Weathered.png" /></span><span class="skill">Weathered</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Tinker II.png" /></span><span class="skill">Tinker II</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Multiweapon Mastery.png" /></span><span class="skill">Multiweapon Mastery</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Weapon Mastery.png" /></span><span class="skill">Weapon Mastery</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Tumble.png" /></span><span class="skill">Tumble</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Jump.png" /></span><span class="skill">Jump</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Meditate.png" /></span><span class="skill">Meditate</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Bow and Rifle.png" /></span><span class="skill">Bow and Rifle</span></span>
--   Basic <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Pistol.png" /></span><span class="skill">Pistol</span></span> skills
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Deft Blocking.png" /></span><span class="skill">Deft Blocking</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Calloused.png" /></span><span class="skill">Calloused</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Weathered.png" /></span><span class="skill">Weathered</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Tinker II.png" /></span><span class="skill">Tinker II</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Multiweapon Mastery.png" /></span><span class="skill">Multiweapon Mastery</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Weapon Mastery.png" /></span><span class="skill">Weapon Mastery</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Tumble.png" /></span><span class="skill">Tumble</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Jump.png" /></span><span class="skill">Jump</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Meditate.png" /></span><span class="skill">Meditate</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Bow and Rifle.png" /></span><span class="skill">Bow and Rifle</span></span>
+- Basic <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Pistol.png" /></span><span class="skill">Pistol</span></span> skills
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Deft Blocking.png" /></span><span class="skill">Deft Blocking</span></span>
 
 ## Tomb of the Eaters (Level 26-35)
 
@@ -313,21 +313,21 @@ Barring that, you can also lock them down with stun capabilities; <span class="i
 
 #### Must-Have
 
--   <span class="injected"><span class="K">Flawless <span class="injected"><span class="y">c</span><span class="y">r</span><span class="K">y</span><span class="g">s</span><span class="g">t</span><span class="K">e</span><span class="y">e</span><span class="y">l</span></span></span></span> weaponry
--   1 <span class="injected"><span class="m">z</span><span class="M">e</span><span class="Y">t</span><span class="C">a</span><span class="c">c</span><span class="c">h</span><span class="C">r</span><span class="Y">o</span><span class="M">m</span><span class="m">e</span></span> weapon
--   Full <span class="injected"><span class="K">flawless <span class="injected"><span class="y">c</span><span class="y">r</span><span class="K">y</span><span class="g">s</span><span class="g">t</span><span class="K">e</span><span class="y">e</span><span class="y">l</span></span></span></span> tier gear
--   25 <span class="injected"><span class="stat-container"><img class="inline-icon" src="/icons/Text/dodgeValue.png" /></span><span class="stat">DV</span></span> with some armor / weapon configuration
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Light Rail.png" /></span><span class="object"><span class="injected"><span class="W">Light</span></span> rail</span></span> / <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/High-Voltage Arc Winder.png" /></span><span class="object"><span class="injected"><span class="W">high-voltage</span></span> arc winder</span></span> x2 / <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Hand Rail.png" /></span><span class="object"><span class="injected"><span class="W">hand</span></span> rail</span></span> x2
+- <span class="injected"><span class="K">Flawless <span class="injected"><span class="y">c</span><span class="y">r</span><span class="K">y</span><span class="g">s</span><span class="g">t</span><span class="K">e</span><span class="y">e</span><span class="y">l</span></span></span></span> weaponry
+- 1 <span class="injected"><span class="m">z</span><span class="M">e</span><span class="Y">t</span><span class="C">a</span><span class="c">c</span><span class="c">h</span><span class="C">r</span><span class="Y">o</span><span class="M">m</span><span class="m">e</span></span> weapon
+- Full <span class="injected"><span class="K">flawless <span class="injected"><span class="y">c</span><span class="y">r</span><span class="K">y</span><span class="g">s</span><span class="g">t</span><span class="K">e</span><span class="y">e</span><span class="y">l</span></span></span></span> tier gear
+- 25 <span class="injected"><span class="stat-container"><img class="inline-icon" src="/icons/Text/dodgeValue.png" /></span><span class="stat">DV</span></span> with some armor / weapon configuration
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Light Rail.png" /></span><span class="object"><span class="injected"><span class="W">Light</span></span> rail</span></span> / <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/High-Voltage Arc Winder.png" /></span><span class="object"><span class="injected"><span class="W">high-voltage</span></span> arc winder</span></span> x2 / <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Hand Rail.png" /></span><span class="object"><span class="injected"><span class="W">hand</span></span> rail</span></span> x2
 
 #### Nice-to-Have
 
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Anti-Gravity Boots.png" /></span><span class="object"><span class="injected"><span class="K">Anti-gravity boots</span></span></span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/3D Cobblers.png" /></span><span class="object">3D cobblers</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Psychic Meridian.png" /></span><span class="object"><span class="injected"><span class="K">P</span><span class="K">s</span><span class="y">y</span><span class="y">c</span><span class="y">h</span><span class="m">i</span><span class="M">c</span><span class="M"> </span><span class="M">m</span><span class="M">e</span><span class="m">r</span><span class="y">i</span><span class="y">d</span><span class="y">i</span><span class="K">a</span><span class="K">n</span></span></span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Tri-Hologram Bracelet.png" /></span><span class="object">Tri-<span class="injected"><span class="b">h</span><span class="B">o</span><span class="C">l</span><span class="c">o</span><span class="b">g</span><span class="B">r</span><span class="C">a</span><span class="c">m</span></span> bracelet</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Leyline Puppeteers.png" /></span><span class="object"><span class="injected"><span class="K">L</span><span class="K">e</span><span class="y">y</span><span class="y">l</span><span class="y">i</span><span class="m">n</span><span class="M">e</span><span class="M"> </span><span class="M">p</span><span class="M">u</span><span class="m">p</span><span class="y">p</span><span class="y">e</span><span class="y">t</span><span class="K">e</span><span class="K">e</span><span class="K">r</span><span class="K">s</span></span></span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/The Kesil Face.png" /></span><span class="object"><span class="injected"><span class="m">K</span><span class="m">e</span><span class="M">s</span><span class="Y">i</span><span class="y">l</span></span> Face</span></span>
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Night-Sight Interpolators.png" /></span><span class="object"><span class="injected"><span class="K">Night-sight</span></span> interpolators</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Anti-Gravity Boots.png" /></span><span class="object"><span class="injected"><span class="K">Anti-gravity boots</span></span></span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/3D Cobblers.png" /></span><span class="object">3D cobblers</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Psychic Meridian.png" /></span><span class="object"><span class="injected"><span class="K">P</span><span class="K">s</span><span class="y">y</span><span class="y">c</span><span class="y">h</span><span class="m">i</span><span class="M">c</span><span class="M"> </span><span class="M">m</span><span class="M">e</span><span class="m">r</span><span class="y">i</span><span class="y">d</span><span class="y">i</span><span class="K">a</span><span class="K">n</span></span></span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Tri-Hologram Bracelet.png" /></span><span class="object">Tri-<span class="injected"><span class="b">h</span><span class="B">o</span><span class="C">l</span><span class="c">o</span><span class="b">g</span><span class="B">r</span><span class="C">a</span><span class="c">m</span></span> bracelet</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Leyline Puppeteers.png" /></span><span class="object"><span class="injected"><span class="K">L</span><span class="K">e</span><span class="y">y</span><span class="y">l</span><span class="y">i</span><span class="m">n</span><span class="M">e</span><span class="M"> </span><span class="M">p</span><span class="M">u</span><span class="m">p</span><span class="y">p</span><span class="y">e</span><span class="y">t</span><span class="K">e</span><span class="K">e</span><span class="K">r</span><span class="K">s</span></span></span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/The Kesil Face.png" /></span><span class="object"><span class="injected"><span class="m">K</span><span class="m">e</span><span class="M">s</span><span class="Y">i</span><span class="y">l</span></span> Face</span></span>
+- <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Night-Sight Interpolators.png" /></span><span class="object"><span class="injected"><span class="K">Night-sight</span></span> interpolators</span></span>
 
 ### Skill Wishlist - Tomb of the Eaters
 

@@ -8,6 +8,7 @@
     "scripts": {
         "clean": "rm -r src/content/compileCache/*",
         "clean:cache": "rm -rf __lwr_cache__",
+        "compile": "node ./src/scripts/compile.cjs",
         "dev": "nodenv src/server/startServer.cjs -f",
         "start": "node src/server/startServer.cjs prod",
         "start:compat": "lwr serve --mode compat",

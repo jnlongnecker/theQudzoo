@@ -28,7 +28,7 @@ Aside from containing the first historic site, desert canyons don't have a lot g
 
 While most creatures in the desert canyons are of little threat, the most dangerous is probably the salthopper. It has the capability to Sprint, so the best way to avoid it is to let it Sprint up to you and hit you. This will disable its Sprint, allowing you to activate yours and get away.
 
-The snapjaw that currently holds Stopsvalinn _does_ exist in a random zone in the desert canyons, but it has become much more difficult to find than in the past so it's not as worth it to seek out anymore. If you get lucky then great, but don't spend too much time on it.
+The snapjaw that currently holds ||Secret artifact|Stopsvalinn|| _does_ exist in a random zone in the desert canyons, but it has become much more difficult to find than in the past so it's not as worth it to seek out anymore. If you get lucky then great, but don't spend too much time on it.
 
 ## Salt Dunes
 
@@ -99,7 +99,7 @@ There's a healthy mix of creatures that can be found here, but like I mentioned 
 
 There is nothing in the rivers except for blood and anger. It is highly recommended to simply avoid this terrain, and exclusively for 1 single excruciatingly common creature: the madpole. With quite high AV, the madpole is a nuisance more than a threat, but without 18+ AV a madpole is a run-ender to a laissez-faire Qud runner. They latch onto you and Dismember you piece by piece, and they are everywhere in the rivers.
 
-If you are favored by Fish, then by all means wander the rivers as now they aren't much of a threat to you. But before that, there's simply nothing here. There are fish lairs (as you might imagine) and flower lairs for glowpads, but it's usually not worth dealing with madpole around every corner. There is a chance that Oboroqoru's lair is in a river tile, in which case just try and avoid the madpole if you're going to explore it.
+If you are favored by Fish, then by all means wander the rivers as now they aren't much of a threat to you. But before that, there's simply nothing here. There are fish lairs (as you might imagine) and flower lairs for glowpads, but it's usually not worth dealing with madpole around every corner. There is a chance that ||Secret endgame creature|Oboroqoru's lair is in a river tile||, in which case just try and avoid the madpole if you're going to explore it.
 
 ## Banana Grove
 
@@ -151,7 +151,7 @@ Svardym eld are hit-or-miss. They have absolutely _massive_ Ego bonuses, which m
 
 The Palladium Reef has the same threats as Lake Hinnom, with the added threats of tongue tyrants, quatravolt gliders, and galgal. In return, mucking about in the reef has the chance to spawn a dram of {{sunslag|sunslag}}; extremely valuable to find and the primary bit of loot you'll find here. Outside of that, reef hermits are an easy kill and have tons of high tier artifacts on them to loot.
 
-You can find the cradle of Girsh Rermadon here, as well as the Hydropon. These take a considerable effort to find, so make sure you're methodical in your approach so you don't end up missing zones. The forgotten ruins here also occasionally spawn with some valuable chests, but they're pretty few and far between.
+You can find ||Hidden endgame creature|the cradle of Girsh Rermadon here||, as well as the Hydropon. These take a considerable effort to find, so make sure you're methodical in your approach so you don't end up missing zones. The forgotten ruins here also occasionally spawn with some valuable chests, but they're pretty few and far between.
 
 The biggest threat as mentioned are the galgal. They tend to be found within the palladium strut reefs themselves, which is just the worst because they obscure vision leaving you clueless to their location until you're right next to them. For that reason, **always** come to the Palladium Reef with several EMP grenades to disable galgal. If you can get distance on them, they'll prefer to shoot at your with their naser cannon. This will not only ground you if you are flying, but it also is a normality gun that can disable force fields. While this is a powerful weapon, it pales in comparison to their Run Over ability so do not approach one that is shooting at you. Instead, try and shoot back with arc winders as they have fairly high AV.
 
@@ -183,6 +183,6 @@ If you don't want to do this, then you can instead have a way to disarm the pyra
 
 Keeping the chrome pyramid disabled for you to start to tear it to pieces is a great strategy. Cudgels work especially well here, as does the ceremonial vibrokhopesh and electric modded weapons. Corrosive Gas Generation is the ultimate chrome pyramid killer as you will very quickly shred it to pieces with this mutation being highly ranked. Outside of these methods, grenades work particularly well once you disable the force field with an EMP. Just like anything without 100 cold resistance; freeze grenade mk III really do wonders at locking these guys down. You can also use arc winders to hit the force field and have the electricity simply arc through and hit the pyramid, or do something similar with Electrical Generation.
 
-Regardless of how you choose to kill your first chrome pyramid or first chrome pyramid of the run, you'll probably not want to spare the effort every single time one pops up on the Moon Stair, so for simplicity's sake just come with some EMPs and run away. Chavvah is located here in the Moon Stair, as is the chuppah of Qas and Qon. Again, if you're searching for the chuppah make sure to come with a strategy so you don't miss one zone and have to re-comb the map.
+Regardless of how you choose to kill your first chrome pyramid or first chrome pyramid of the run, you'll probably not want to spare the effort every single time one pops up on the Moon Stair, so for simplicity's sake just come with some EMPs and run away. Chavvah is located here in the Moon Stair, as is ||Hidden endgame creature|the chuppah of Qas and Qon.|| Again, if you're searching for ||Same hidden endgame creature|the chuppah|| make sure to come with a strategy so you don't miss one zone and have to re-comb the map.
 
 A piece of advise for those traveling through; since you can't travel through the Moon Stair on the world map, you have to move zone-by-zone. If you manage to move to a new parasang, you can go to the world map and then re-enter the same parasang from the center zone. This way you can skip a few zones, especially if you are traveling north-to-south.

@@ -2,23 +2,23 @@ import { LightningElement, api } from "lwc";
 
 export default class InspectImage extends LightningElement {
 
-    imageLink;
+	imageLink;
 
-    activated = false;
+	activated = false;
 
-    connectedCallback() {
-        let contentImages = document.querySelectorAll("*:not(.injected) img");
+	connectedCallback() {
+		let contentImages = document.querySelectorAll("img:not(.inline-icon)");
 
-        for (let image of contentImages) {
-            image.addEventListener("click", (event) => {
-                this.imageLink = event.currentTarget.getAttribute("src");
-                this.activated = true;
-            });
-        }
-    }
+		for (let image of contentImages) {
+			image.addEventListener("click", (event) => {
+				this.imageLink = event.currentTarget.getAttribute("src");
+				this.activated = true;
+			});
+		}
+	}
 
-    deactivate() {
-        this.imageLink = "";
-        this.activated = false;
-    }
+	deactivate() {
+		this.imageLink = "";
+		this.activated = false;
+	}
 }

@@ -150,11 +150,13 @@ Immunity to stun and daze? Yes, please! This is an unbelievably good cybernetic 
 
 **Useful Through:** Tier 2
 
-**General Rating:** <span class="icon-container thumb-down"><input-icon variant="thumbDown"></input-icon></span>
+**General Rating:** <span class="icon-container thumb-up"><input-icon variant="thumbUp"></input-icon></span>
 
 </div>
 
-The problem with Schemasoft {{Y|[low-tier]}} is that although it will give access to _every_ Tinker I recipe of a specific type, it does not give access to any mods. Because that's really the whole point of Tinker I, this is not that great. You'll outgrow this pretty quickly, but if you've got nothing else you may find something useful in there if you get Grenades since you _do_ get access to some still pretty strong mk III grenades like freeze and high explosive.
+The recipes this unlocks aren't that amazing, (and even if they were, you'd still need Tinker I to make them), but it will unlock mods which is incredible. To make things better, you don't even need Tinker I to make use of the mods! It breaks when uninstalled, but it's cheap enough and common enough that it shouldn't be a big issue.
+
+A notable exception to the overall bad recipes are the grenades. It definitely helps to be able to make a copy of a mk III grenade for you to use Psychometry on after so you don't need to constantly have this installed. Keep one around for when you need to tinker and switch it out after.
 
 ### Schemasoft [mid-tier]
 
@@ -164,11 +166,15 @@ The problem with Schemasoft {{Y|[low-tier]}} is that although it will give acces
 
 **Useful Through:** Tier 3
 
-**General Rating:** <span class="icon-container thumb-down"><input-icon variant="thumbDown"></input-icon></span>
+**General Rating:** <span class="icon-container thumb-up"><input-icon variant="thumbUp"></input-icon></span>
 
 </div>
 
-While most classes of Schemasoft {{Y|[mid-tier]}} aren't super great, the rifle and utility categories can be quite good; especially the utility as that's the main reason to get Tinker II in the first place. The other categories are pretty lackluster as they don't really have much going for them. Just as an example, the tonics category just gives access to Eaters' nectar injectors and sphynx salt injectors. Pretty underwhelming considering how rare their components are. Of course, this cybernetic becomes obsolete the moment you find the normal data disks for the artifacts you really want to use, but if you've got the space until then this is a pretty decent choice.
+While most classes of Schemasoft {{Y|[mid-tier]}} aren't super great, the rifle and utility categories can be quite good; especially the utility as that's the main reason to get Tinker II in the first place. Notably, you get everything you would get from the low tier version within the same class; but that's really only exciting because of grenades.
+
+Just like Schemasoft {{Y|[low-tier]}}, you unlock relevant mods for the class of schematics you get and can make use of them without having Tinker II. Not only do you get access to Tinker II mods, but also Tinker I mods!
+
+Not all classes are good, but if you get one that isn't Tonic, Heavy weapon, or Pistol it's definitely worth keeping around for when you need to tinker up some mods or if you have Tinker II and want some utility items / grenades.
 
 ### Skillsoft [high sp]
 
@@ -207,10 +213,13 @@ This just gives you 2 Willpower. Don't get me wrong, Willpower is great. But is 
 **Useful Through:** Tier 5
 
 **General Rating:** <span class="icon-container thumb-down"><input-icon variant="thumbDown"></input-icon></span>
+<span class="icon-container thumb-up"><input-icon variant="thumbUp"></input-icon></span>
 
 </div>
 
-The big pain point of Tinker III is just getting the Intelligence necessary to buy it. With Schemasoft {{Y|[high-tier]}}, you skip that entirely for a category of equipment. Unfortunately since all Schemasoft cybernetics are destroyed upon removal, we do have to make the most out of this once we have it installed. Therefore, you should hold on to one of these if you find a good one (like armor or utility) until you have the bits to make what you want, and then craft any artifacts you want to have. Uninstall after you're done. Should you just walk around with it installed? Probably not.
+The big pain point of Tinker III is just getting the Intelligence necessary to buy it. With Schemasoft {{Y|[high-tier]}}, you only skip costly schematic purchases and only for a certain class of item. You still need Tinker III to actually make the unique stuff you unlock here, so it's not that great. Tinker II is a lot more achievable and you do get those recipes within the class, so this can substitute for a Schemasoft {{Y|[mid-tier]}} if you get a useful class.
+
+You are able to utilize the mods you get, and Tinker III mods can be good if you manage to get something like nanon (Rifle class) or morphogenetic (Melee weapon class). Otherwise, this mostly just acts as a more costly Schemasoft {{Y|[mid-tier]}} for most of us.
 
 ### Social Coprocessor
 
@@ -256,7 +265,7 @@ This cybernetic is in a strange place. You get all the skills from a particular 
 
 If you happen to pick this up before you get something that can go in your face slot, it's only 1 license point for +1 Ego. Not too bad, but since true kin aren't using any mental mutations, 1 Ego is not really impactful. Swap it out once you get something better.
 
-Something to note is that in the late game, many true kin acquire mutations via gamma moths or {{brainbrine|brain brine}}. Mental mutations will benefit from Ego and thus this becomes more useful, but if you're capable of this and trying to gain mental mutation ranks, you're just as capable to farm for Eaters' nectar injectors and using a better cybernetic.
+Something to note is that in the late game, many true kin acquire mutations ||True-kin mutation gaining method|via gamma moths or {{brainbrine|brain brine}}||. Mental mutations will benefit from Ego and thus this becomes more useful, but if you're capable of this and trying to gain mental mutation ranks, you're just as capable to farm for Eaters' nectar injectors and using a better cybernetic.
 
 ### Optical Bioscanner
 
@@ -386,7 +395,7 @@ We've got +2 Toughness, which will give us bonus hitpoints equal to 2 x Level an
 
 </div>
 
-It doesn't prevent fungal infections, and the only real place you're going to be getting diseases (if you get any at all) is going to be at Golgotha. It'll also give you immunity to poison, but poison is a very uncommon damage type that just gets less and less common as the game goes on. If you find this pre-Golgotha, it's going to be one of the only cybernetics that you'll even be able to install, but it will likely be worth it for that dungeon. Additionally, the Irisdual Beam of Nephilim is 1 part poison damage, so if you want to try and take as little damage as possible from that then slot this in (there are other ways to negate poison damage without this though). Other than that, body cybernetics are just far too competitive.
+It doesn't prevent fungal infections, and the only real place you're going to be getting diseases (if you get any at all) is going to be at Golgotha. It'll also give you immunity to poison, but poison is a very uncommon damage type that just gets less and less common as the game goes on. If you find this pre-Golgotha, it's going to be one of the only cybernetics that you'll even be able to install, but it will likely be worth it for that dungeon. ||Hidden boss creature ability|Additionally, the Irisdual Beam of Nephilim is 1 part poison damage, so if you want to try and take as little damage as possible from that then slot this in (there are other ways to negate poison damage without this though).|| Other than that, body cybernetics are just far too competitive.
 
 ### Equipment Rack
 
@@ -446,9 +455,9 @@ For quite a large portion of the game, this is just not very useful in general. 
 
 </div>
 
-This cybernetic will save you from death or from 50% damage once and then be permanently destroyed. This means that you are making yourself weaker for you to eventually be saved from a single hit. The problem is that if you're taking 50% of your HP in a single hit or you're taking lethal damage, saving yourself from that only 1 time likely is **not** enough. This also will not prevent instant death from sources that ignore HP, like coming into phase in a wall or by drinking {{neutronic|neutron flux}}.
+This cybernetic will save you from death or from 50% damage once and then be permanently destroyed. This means that you are making yourself weaker for you to eventually be saved from a single hit. The problem is that if you're taking 50% of your HP in a single hit or you're taking lethal damage, saving yourself from that only 1 time likely is **not** enough. This also will not prevent instant death from sources that ignore HP, ||Instant death methods|like coming into phase in a wall or by drinking {{neutronic|neutron flux}}.||
 
-The only legitimate scenario where this will save you is if you are nuked by the alchemist throwing {{neutronic|neutron flux}} at you, by a literal Hand-E-Nuke, or by some other high-damage explosive. These are very rare to begin with, so give this one a pass. There is a niche this cybernetic has with extreme DV builds where it can actually come in handy in saving you from an errant crit, but if your build is that full of holes already you probably have bigger problems than what body slot cybernetic to use.
+The only legitimate scenario where this will save you is if you are nuked by ||Surprise massive damage sources|the alchemist throwing {{neutronic|neutron flux}} at you, by a literal Hand-E-Nuke||, or by some other high-damage explosive. These are very rare to begin with, so give this one a pass. There is a niche this cybernetic has with extreme DV builds where it can actually come in handy in saving you from an errant crit, but if your build is that full of holes already you probably have bigger problems than what body slot cybernetic to use.
 
 ### Biodynamic Power Plant
 
@@ -580,8 +589,8 @@ Ranged weapons are very good, the only downside is that they can miss their targ
 
 The difference between the bionic arm and other cybernetics that increase your stats are twofold:
 
--   They don't increase Strength
--   They take up a competitive cybernetics slot
+- They don't increase Strength
+- They take up a competitive cybernetics slot
 
 Since neither downsides are true for bionic arm, it makes it quite a bit better. Of course, this assumes that Strength is actually important for your build in some way, which may not necessarily be true. If you are rocking a melee build, there actually aren't an extensive repertoire of cybernetics to improve your melee capabilities so this is a fantastic one to add to give your hits a bit more juice. You'll still have another arm slot to add something else, or you can go all-in and use two bionic arms to get a +4 to Strength.
 
@@ -713,11 +722,11 @@ Typically, if you have even average Intelligence you will have no difficulty ide
 
 Here we arrive at the highest tier of unarmed damage, 3d4 per hit which brings it to be slightly better on average than the crysteel mace. Unfortunately for this cybernetic, it's double the cost of the prior tier (fullerite hand bones) and there are no further tiers of hand bone while there are further tiers of Cudgels: {{K|flawless {{crysteel|crysteel}}}} and {{zetachrome|zetachrome}}. While the raw damage per penetration caps off here, the PV does not. This is where the crysteel hand bones have the potential to outscale conventional weaponry. This does require a significant Strength score and while it can result in some of the highest damage _possible_ in a single hit by a melee weapon, the fact of the matter is that it's just not that necessary.
 
-Additionally, the crysteel hand bones will always be outscaled by the Fist of the Ape God as it will _also_ scale with Strength infinitely and we can one-hand that with giant hands, which leaves us room to wield a Shield or offhand Short Blade _and_ allows us to wield double rifles. By the time we get to the point that Multiweapon Fighting with crysteel hand bones becomes stronger than this combination in terms of melee DPS, we're doing so much damage anyway that it simply doesn't matter anymore.
+Additionally, the crysteel hand bones will always be outscaled by the ||Endgame hidden weapon|Fist of the Ape God|| as it will _also_ scale with Strength infinitely and we can one-hand that with giant hands, which leaves us room to wield a Shield or offhand Short Blade _and_ allows us to wield double rifles. By the time we get to the point that Multiweapon Fighting with crysteel hand bones becomes stronger than this combination in terms of melee DPS, we're doing so much damage anyway that it simply doesn't matter anymore.
 
 For what it's worth, uncapped PV only does so much to help you due to the way the penetration formula works. The simple version is this: If your PV cap exceeds the enemy AV by 3 or more, a higher PV cap _does not help you_. So that uncapped PV will help on those stupidly high AV enemies, sure, but those enemies are always better beaten in other ways or by using the Penetrating Strikes skill.
 
-If you for some reason have an unbelievably high Strength score to make use of the uncapped PV before you get access to {{K|flawless {{crysteel|crysteel}}}} / {{zetachrome|zetachrome}} weaponry / Fist of the Ape God, then this can be a good weapon in the meantime. But once you get there (which should be pretty soon), you can free up the 8 points and cybernetic slot for something else.
+If you for some reason have an unbelievably high Strength score to make use of the uncapped PV before you get access to {{K|flawless {{crysteel|crysteel}}}} / {{zetachrome|zetachrome}} weaponry / ||Same endgame hidden weapon|Fist of the Ape God||, then this can be a good weapon in the meantime. But once you get there (which should be pretty soon), you can free up the 8 points and cybernetic slot for something else.
 
 ## Cybernetics - Feet Only
 
@@ -751,11 +760,11 @@ The main use for this is that it prevents slipping of all kinds and from being m
 
 I'll take a moment and list out some of the less-obvious cases where you would be moved if not for anchor spikes:
 
--   Stunning Force
--   Blast cannon (turrets or leering stalker)
--   Industrial Fans
--   Conveyor Belts
--   Force Bubble from another creature
+- Stunning Force
+- Blast cannon (turrets or leering stalker)
+- Industrial Fans
+- Conveyor Belts
+- Force Bubble from another creature
 
 Additionally, anchor spikes will prevent you from being knocked prone which is a major plus for this cybernetic in all tiers of play (even the galgal and Shield Slam knockdown), but especially for Golgotha as you won't have to worry about getting knocked prone in sludge and getting diseased or poisoned or having your gear rust away. The feet slot is very competitive, but if you wish to keep the option of anti-gravity boots, keep around anchor spikes especially if you're not going to be melee focused.
 
@@ -847,7 +856,7 @@ I will say one thing that needs to be talked about more about this cybernetic is
 
 Now, about the cost. This is a **permanent** change, so you need to be sure of your build before you install this. You lose the ability to wear normal footgear and can instead only wear tread guards, which can result in 2 _maximum_ AV granted when both treads are worn and **no** chance to improve DV. These are also quite rare to find, and most of the time I've actually had to craft them before I could find a single one. While these _can_ be modded, none of the applicable mods give statistics except for refractive which is not as impressive as spring-loaded and fitted with cleats. To be fair, we already get those benefits from motorized treads anyway, but the point being here is that we're not getting much more than the bonus movespeed from this cybernetic in the grand scheme of things.
 
-For that movement speed, we have a maximum possible AV bonus of 2 compared to the zetachrome pumps which give 4 AV. This isn't as significant a cost as a true kin, as we can use sphynx salt injector Precognition in order to consume {{neutronic|neutron flux}} safely and get our AV up that way, but we're still going to be slightly behind in AV in full gear compared to a true kin that does not get the motorized treads. To be clear, this trade off is still usually worth it, especially for ranged builds.
+For that movement speed, we have a maximum possible AV bonus of 2 compared to the zetachrome pumps which give 4 AV. This isn't as significant a cost as a true kin, as we can use sphynx salt injector Precognition in order to ||Rare liquid effect|consume {{neutronic|neutron flux}} safely|| and get our AV up that way, but we're still going to be slightly behind in AV in full gear compared to a true kin that does not get the motorized treads. To be clear, this trade off is still usually worth it, especially for ranged builds.
 
 The trade offs unfortunately don't end there. We are also prevented from wearing anti-gravity boots, which means our only chance for perfect Flight as a true kin is relegated to the ultra-rare and very costly cathedra. Flight is an extremely powerful ability, but it becomes significantly less powerful when the chance to fall is present, like in the non-footgear Flight options.
 
@@ -889,11 +898,11 @@ Always knowing where the stairs are is really quite nice for exploring zones a b
 
 16% chance to refract light-based attacks. Let's go down the list of sources of light-based attacks:
 
--   Light Manipulation
--   Light rail
--   Hand rail
--   Laser pistol
--   Laser rifle
+- Light Manipulation
+- Light rail
+- Hand rail
+- Laser pistol
+- Laser rifle
 
 Pick something else.
 
@@ -1029,11 +1038,11 @@ Palladium electrodeposits grant 20 units of compute power, and you can install m
 
 Now, what improves with compute power? Since cybernetics are not that easy to swap out on a whim, we're interested in including them as part of our build. Here are the relevant cybernetics and items that you'll likely be interested in improving:
 
--   Cathedra
--   High-fidelity matter recompositer
--   Inflatable axons
--   Penetrating radar
--   Point-defense drone
+- Cathedra
+- High-fidelity matter recompositer
+- Inflatable axons
+- Penetrating radar
+- Point-defense drone
 
 Each palladium electrodeposits will improve these by 20%. None of these items or cybernetics are really so good that we would want to give up one or more cybernetic slots in order to improve them this small amount. If you happen to have one and you also have a free slot for the palladium electrodeposits, it's worth installing just for the bonus. If not, you should be able to find something better.
 
@@ -1175,7 +1184,7 @@ Perhaps it's just because I've done a lot of mutant runs where rebuking robots i
 
 </div>
 
-Conceptually, this is really cool. Practically, the only creature that you'll reasonably encounter that is phased will be the astral tabby and that's _always_ phased and can't hit you normally. For you min-maxers that like to collect mutations on true kin, even if you get Phasing from a gamma moth or from cooking you won't want this cybernetic because it results in creatures also being able to interact with _you_ as well. Since phase is a non-issue in the normal game, this is just not a useful cybernetic to install.
+Conceptually, this is really cool. Practically, the only creature that you'll reasonably encounter that is phased will be the astral tabby and that's _always_ phased and can't hit you normally. For you min-maxers that like to collect mutations on true kin, even if you get Phasing ||True-kin mutation gain method|from a gamma moth or|| from cooking you won't want this cybernetic because it results in creatures also being able to interact with _you_ as well. Since phase is a non-issue in the normal game, this is just not a useful cybernetic to install.
 
 ### Anomaly Fumigator
 

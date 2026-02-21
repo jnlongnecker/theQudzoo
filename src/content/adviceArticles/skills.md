@@ -668,7 +668,7 @@ Very, very few enemies have this skill, so not having it simply puts you on par 
 
 </div>
 
-If you're particularly worried about Slog and scorpiocks, then taking this skill is fine to do early. The issue with this skill is that it's 100 skill points for a damage type that is just extremely rare and becomes even rarer post Golgotha. Something to note is that despite looking very similar, poison gas and corrosive gas are different with corrosive gas being more prevalent, more dangerous, and most importantly of all not poison. Take this skill if you're still uncomfortable around Golgotha otherwise you can skip.
+If you're particularly worried about ||Early game boss|Slog|| and scorpiocks, then taking this skill is fine to do early. The issue with this skill is that it's 100 skill points for a damage type that is just extremely rare and becomes even rarer post Golgotha. Something to note is that despite looking very similar, poison gas and corrosive gas are different with corrosive gas being more prevalent, more dangerous, and most importantly of all not poison. Take this skill if you're still uncomfortable around Golgotha otherwise you can skip.
 
 ### Weathered
 
@@ -1062,7 +1062,7 @@ Bleeding typically is not a big problem, but there are a couple late-game source
 
 There are a few issues with this skill, so let's first cover what it does so we can pick it apart properly. You can instantly cure bleeding, poison, illness and the onset of diseases for anyone in your party, given that you have the resources to do so. Let's start with poison and illness.
 
-There are extremely few sources of poison in the game. There is poison gas, which only a single creature can generate (girshworms) or comes from poison gas grenades, there is the poison stinger which only comes from scorpiocks (a rare, very early game enemy) and there is the poison from Slog, the unique boss at the bottom of Golgotha. Illness is the condition that comes at the end of being poisoned. Let's be real, you're not using this skill for either of those, especially since all illness does is temporarily remove your ability to regen health.
+There are extremely few sources of poison in the game. There is poison gas, which only a single creature can generate (girshworms) or comes from poison gas grenades, there is the poison stinger which only comes from scorpiocks (a rare, very early game enemy) and there is the poison from ||Early game boss|Slog, the unique boss at the bottom of Golgotha||. Illness is the condition that comes at the end of being poisoned. Let's be real, you're not using this skill for either of those, especially since all illness does is temporarily remove your ability to regen health.
 
 Bleeding can be cured here, but unfortunately you must already have Staunch Wounds to get this skill. If you have Staunch Wounds, you don't need to treat bleeding at a campfire. You can just use one of your hundreds of bandages to do so. If you're at a campfire, it means you're out of danger and also means you can probably just let the bleed heal naturally as well.
 
@@ -1288,9 +1288,9 @@ It's 50 skill points, why not? You'll use less water and your metabolizing effec
 
 There are 3 creatures that are default hostile to you that will cause the terrified effect:
 
--   Dreadroot
--   Feral lah
--   Knight Commander of the Holy Temple
+- Dreadroot
+- Feral lah
+- Knight Commander of the Holy Temple
 
 The first 2 are {{!|trash}}, ignore them. You probably won't even have the Willpower needed for this by the time they're of concern. The Knight Commander however makes this more interesting. Typically, these will be legendary creatures in charge of Templar war bands, giving them very high Ego. This means they will reliably cause terrified form a distance with their Menacing Stare skill, and this can be a positional nightmare. Not only will it break your position but also give the Knight Commander more opportunities to lock you down, supplementing this with Shield Slam. Consider this skill by A Call to Arms if you don't have Two-headed, otherwise give it a miss.
 
@@ -1442,7 +1442,7 @@ This skill is by no means reliable in any way. With very high Strength, it can b
 
 </div>
 
-Shield Wall is like other stance skills, it has zero activation cost. Unlike other stance skills, it has much more attainable costs and the benefits are equally huge. Unfortunately, it does only last 3 turns which isn't much, but can be the difference between life and death if you get yourself caught with enemies on all sides since it literally does block every attack for those 3 turns, regardless of your other Shield skills and regardless of just how many attacks are made against you. You could have 9 Oboroqoru using Flurry for a total of 54 attacks in one turn, Shield Wall will block them all. Note that blocking means that you get the benefit of your Shield; which for the non-bucklers that you can use this with means you get a significant increase but doesn't make you invincible.
+Shield Wall is like other stance skills, it has zero activation cost. Unlike other stance skills, it has much more attainable costs and the benefits are equally huge. Unfortunately, it does only last 3 turns which isn't much, but can be the difference between life and death if you get yourself caught with enemies on all sides since it literally does block every attack for those 3 turns, regardless of your other Shield skills and regardless of just how many attacks are made against you. You could have 9 ||Hidden endgame creature, it has a lot of limbs trust me|Oboroqoru|| using Flurry for a total of 54 attacks in one turn, Shield Wall will block them all. Note that blocking means that you get the benefit of your Shield; which for the non-bucklers that you can use this with means you get a significant increase but doesn't make you invincible.
 
 The real thing that puts this stance over others despite its short duration is that it also has a fairly short cooldown as well; meaning that at high Willpower you can essentially just spam this for massive AV benefit. While high AV won't make you invincible to everything, it will make you exceptionally difficult to kill for the vast majority of creatures. However, the big caveat is that there are relic / {{extradimensional|extradimensional}} shields that gain a bonus to block will let you reach a natural 100% block chance. If you have one of those, this leans more towards unnecessary.
 

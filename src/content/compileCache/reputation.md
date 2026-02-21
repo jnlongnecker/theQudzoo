@@ -322,7 +322,7 @@ In an ideal world, you'll want your reputation with these factions to be at _lea
 
 <span class="injected"><span class="Y">Snapjaws: -249</span></span>
 
-<span class="nowrap"><span class="injected"><span class="R">Succulents: -600</span></span>\</span>*
+<span class="injected"><span class="R">Succulents: -600</span></span> \*
 
 <span class="injected"><span class="g">Sultan Cult: 250</span></span>
 
@@ -348,7 +348,7 @@ In an ideal world, you'll want your reputation with these factions to be at _lea
 
 <span class="injected"><span class="Y">Vines: -249</span></span>
 
-<span class="nowrap"><span class="injected"><span class="R">Water Barons: -600</span></span>\</span>*
+<span class="injected"><span class="R">Water Barons: -600</span></span> \*
 
 <span class="injected"><span class="g">Winged Mammals: 250</span></span>
 

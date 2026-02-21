@@ -200,7 +200,7 @@ Critical hits are the obvious bane for a <span class="injected"><span class="sta
 
 #### Counters to DV
 
--   Abilities that always hit (sting, <span class="nowrap"><span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Hook and Drag.png" /></span><span class="skill">Hook and Drag</span></span>)</span>
+-   Abilities that always hit <span class="nowrap">(<span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Mutations/CommandSting.png" /></span><span class="skill">Sting</span></span>,</span> <span class="nowrap"><span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Abilities/Hook and Drag.png" /></span><span class="skill">Hook and Drag</span></span>)</span>
 -   Explosions (robots)
 -   Breath weapons (unshelled reptiles)
 -   Status conditions (stunned, stuck, frozen, etc)

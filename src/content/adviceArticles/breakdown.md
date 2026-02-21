@@ -22,30 +22,30 @@ Slugsnouts aren't actually that threatening if you know how to deal with them. T
 
 #### Must-Have
 
--   Equipment for every gear slot
--   {{Y|Steel}} or above weaponry
--   Mechanical wings
+- Equipment for every gear slot
+- {{Y|Steel}} or above weaponry
+- Mechanical wings
 
 #### Nice-to-Have
 
--   Small sphere of negative weight
--   Pickaxe
--   Miner's helmet
+- Small sphere of negative weight
+- Pickaxe
+- Miner's helmet
 
 ### Skill Wishlist - Red Rock
 
--   Swift Reflexes
--   Acrobatics
--   Hurdle
--   Charge
--   Opportune Attacks
--   Multiweapon Proficiency
--   Mind's Compass
--   Basic weapon skills
+- Swift Reflexes
+- Acrobatics
+- Hurdle
+- Charge
+- Opportune Attacks
+- Multiweapon Proficiency
+- Mind's Compass
+- Basic weapon skills
 
 ## Grit Gate (Level 10-18)
 
-The second section involves the quests just up to Decoding the Signal, all revolving around gaining access to the Barathrumite compound at Grit Gate. In this section, I spend most of my time preparing for Bethesda Susa as I'm already prepared for Golgotha from the previous section. In fact, there are some times that I've already gained access to Grit Gate in its entirety by this level. Regardless, after gaining access to Grit Gate I will go through the first Historic Site that can always be found from the statue in the zone north of Joppa, and then start leveling up through the jungle. Goatfolk and their villages are great places to find good loot in preparation for Bethesda Susa, and I'll also start investigating the Six Day Stilt for Schrodinger pages and Eater's Nectar in particular.
+The second section involves the quests just up to Decoding the Signal, all revolving around gaining access to the Barathrumite compound at Grit Gate. In this section, I spend most of my time preparing for Bethesda Susa as I'm already prepared for Golgotha from the previous section. In fact, there are some times that I've already gained access to Grit Gate in its entirety by this level. Regardless, after gaining access to Grit Gate I will go through the first Historic Site that can always be found from the statue in the zone north of Joppa, and then start leveling up through the jungle. Goatfolk and their villages are great places to find good loot in preparation for Bethesda Susa, and I'll also start investigating the Six Day Stilt for Schrodinger pages and {{nectar|Eater's Nectar}} in particular.
 
 In this tier I start to leverage more reputation. Warden rep should be stacked pretty high by this point, and the Raising {{!|Indrix}} side quest can help a lot in both boosting reputation and gaining a strong weapon for Bethesda Susa. I gain Tinkering for reputation from the Barathrumites and Meal Preparation from Mayor Nuntu at Kyakukya.
 
@@ -85,32 +85,32 @@ If you're set on killing Slog, make sure you've got good gear. As outlined above
 
 #### Must-Have
 
--   Sparbine
--   {{b|Carbide}} or above weaponry
--   {{Y|Steel}} tier or above equipment for every slot
--   Glowsphere / floating glowsphere (if no Night Vision)
+- Sparbine
+- {{b|Carbide}} or above weaponry
+- {{Y|Steel}} tier or above equipment for every slot
+- Glowsphere / floating glowsphere (if no Night Vision)
 
 #### Nice-to-Have
 
--   Hologram bracelet
--   Elemental damage option
--   Sower's seeds x30
--   Stopsvalinn
+- Hologram bracelet
+- Elemental damage option
+- Sower's seeds x30
+- Stopsvalinn
 
 ### Skill Wishlist - Grit Gate
 
--   Tinker I
--   Disassemble
--   Multiweapon Expertise
--   Penetrating Strikes
--   Weapon Expertise
--   Shake It Off
--   Meal Preparation
--   Block
--   Juke
--   Snake Oiler
--   Wilderness Lore: Jungles
--   Mid-Level Weapon Skills
+- Tinker I
+- Disassemble
+- Multiweapon Expertise
+- Penetrating Strikes
+- Weapon Expertise
+- Shake It Off
+- Meal Preparation
+- Block
+- Juke
+- Snake Oiler
+- Wilderness Lore: Jungles
+- Mid-Level Weapon Skills
 
 ## Bethesda Susa (Level 18-26)
 
@@ -170,30 +170,30 @@ If you happen to have it, an ontological anchor dropped to the floor is a cute s
 
 #### Must-Have
 
--   {{K|Fullerite}} and above weaponry
--   Piecemeal {{crysteel|crysteel}}+ tier equipment
+- {{K|Fullerite}} and above weaponry
+- Piecemeal {{crysteel|crysteel}}+ tier equipment
 
 #### Nice-to-Have
 
--   Portable walls
--   Schrodinger page from the Annals of Qud
--   Metamorphic polygel
--   Freeze ray / flamethrower
--   Ceremonial vibrokhopesh
+- Portable walls
+- Schrodinger page from the Annals of Qud
+- Metamorphic polygel
+- Freeze ray / flamethrower
+- Ceremonial vibrokhopesh
 
 ### Skill Wishlist - Bethesda Susa
 
--   Calloused
--   Weathered
--   Tinker II
--   Multiweapon Mastery
--   Weapon Mastery
--   Tumble
--   Jump
--   Meditate
--   Bow and Rifle
--   Basic Pistol skills
--   Deft Blocking
+- Calloused
+- Weathered
+- Tinker II
+- Multiweapon Mastery
+- Weapon Mastery
+- Tumble
+- Jump
+- Meditate
+- Bow and Rifle
+- Basic Pistol skills
+- Deft Blocking
 
 ## Tomb of the Eaters (Level 26-35)
 
@@ -313,21 +313,21 @@ Barring that, you can also lock them down with stun capabilities; Cudgels perfor
 
 #### Must-Have
 
--   {{K|Flawless {{crysteel|crysteel}}}} weaponry
--   1 {{zetachrome|zetachrome}} weapon
--   Full {{K|flawless {{crysteel|crysteel}}}} tier gear
--   25 DV with some armor / weapon configuration
--   Light rail / high-voltage arc winder x2 / hand rail x2
+- {{K|Flawless {{crysteel|crysteel}}}} weaponry
+- 1 {{zetachrome|zetachrome}} weapon
+- Full {{K|flawless {{crysteel|crysteel}}}} tier gear
+- 25 DV with some armor / weapon configuration
+- Light rail / high-voltage arc winder x2 / hand rail x2
 
 #### Nice-to-Have
 
--   Anti-gravity boots
--   3D cobblers
--   Psychic meridian
--   Tri-hologram bracelet
--   Leyline puppeteers
--   Kesil Face
--   Night-sight interpolators
+- Anti-gravity boots
+- 3D cobblers
+- Psychic meridian
+- Tri-hologram bracelet
+- Leyline puppeteers
+- Kesil Face
+- Night-sight interpolators
 
 ### Skill Wishlist - Tomb of the Eaters
 

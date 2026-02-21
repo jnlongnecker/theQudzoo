@@ -78,8 +78,8 @@ Below the date, you can see a number of icons. These are for mouse players and w
 
 To the left of these icons and below the majority of our statistics are two large bars, one green and one grey. As you might be able to tell by the text within the bars, the green bar is our current Hitpoints <span class="nowrap">(<span class="injected"><span class="stat-container"><img class="inline-icon" src="/icons/Text/hitpoints.png" /></span><span class="stat">HP</span></span>)</span> and the grey bar is our current level (LVL) and experience points (EXP) towards our next level. As you might imagine, if your <span class="injected"><span class="stat-container"><img class="inline-icon" src="/icons/Text/hitpoints.png" /></span><span class="stat">HP</span></span> is reduced to 0, your character dies and what happens next depends on the game mode you chose before starting the game:
 
--   If you picked Classic, the character is dead for good and the save is deleted.
--   If you picked Roleplay or Wander, you will respawn at your last village checkpoint.
+- If you picked Classic, the character is dead for good and the save is deleted.
+- If you picked Roleplay or Wander, you will respawn at your last village checkpoint.
 
 Other than this, there is no difference whatsoever between Classic and Roleplay game modes. You will not be locked out of any achievements, endings, secrets, anything at all if you did not pick Classic. With Wander, the only difference is the EXP drops and what creatures are hostile to you.
 
@@ -107,11 +107,11 @@ _Once more, let's bring back that image for reference_
 
 There are actually 2 bars here, but the top one is skinny and easily missed. The top details 3 things:
 
--   Active effects
-    -   These are things that are currently ailing your character, and can be good or bad. You can see more detailed information by going to the effects menu (<span class="nowrap">[<span class="injected"><span class="W">x</span></span>]</span> > <span class="nowrap">[<span class="injected"><span class="W">e</span></span>]</span>).
--   Current target
-    -   This is information about the creature you have targeted. Unless done manually, this will be whatever you've been attacking. Look here to easily see how the combat is going for you.
--   Missile weapon information
-    -   If you have a missle weapon (bow or gun) equipped, you'll see a readout here of which weapon it is and how much ammunition you have left before needing to reload.
+- Active effects
+    - These are things that are currently ailing your character, and can be good or bad. You can see more detailed information by going to the effects menu (<span class="nowrap">[<span class="injected"><span class="W">x</span></span>]</span> > <span class="nowrap">[<span class="injected"><span class="W">e</span></span>]</span>).
+- Current target
+    - This is information about the creature you have targeted. Unless done manually, this will be whatever you've been attacking. Look here to easily see how the combat is going for you.
+- Missile weapon information
+    - If you have a missle weapon (bow or gun) equipped, you'll see a readout here of which weapon it is and how much ammunition you have left before needing to reload.
 
 Finally, we have the <span class="nowrap">[<span class="injected"><span class="W">a</span></span>]</span>bilities bar. This is a subset of the current activated or toggleable <span class="nowrap">[<span class="injected"><span class="W">a</span></span>]</span>bilities you have. By pressing the key indicated in [ ], you can activate that ability. `Ctrl + Tab` will scroll the bar to the next set down, while `Ctrl + Shift + Tab` scrolls the bar up. If you want to reorder the abilities, you do so in the <span class="nowrap">[<span class="injected"><span class="W">a</span></span>]</span>bilities menu with <span class="nowrap">[<span class="injected"><span class="W">+</span></span>]</span> and <span class="nowrap">[<span class="injected"><span class="W">-</span></span>]</span>. This will grow out as you level up and learn more things that you can do.

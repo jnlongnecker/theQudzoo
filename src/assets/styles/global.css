@@ -4,13 +4,15 @@
 
 :root {
     --main-font: "Open Sans", sans-serif;
-    --qud-font: "Source Code Pro", "Open Sans", "Segoe UI", "Consolas",
+    --qud-font:
+        "Source Code Pro", "Open Sans", "Segoe UI", "Consolas",
         "Lucida Console", "Courier New", "Courier";
     --bg-color: radial-gradient(
         rgba(5, 41, 41, 0.902),
         rgba(14, 25, 25, 0.902)
     );
     --bg-color-dark: #0f3b3a;
+    --bg-color-dark-faded: #0f3b3a75;
     --hover-darken: rgba(8, 14, 14, 0.3);
     --text-color: white;
     --text-color-inverted: black;
