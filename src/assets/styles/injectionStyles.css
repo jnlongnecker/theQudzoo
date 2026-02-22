@@ -16,12 +16,22 @@
     vertical-align: top;
 }
 
-.spoiler {
-    color: rgba(0, 0, 0, 0);
+.spoiler-text {
+    display: none;
+    font-family: var(--qud-font);
+    font-weight: 700;
 }
 
-.spoiler * {
-    opacity: 0;
+.spoiler .spoiler-text {
+    display: inline;
+}
+
+.spoiler-content {
+    display: inline;
+}
+
+.spoiler .spoiler-content {
+    display: none;
 }
 
 .spoiler img:hover {

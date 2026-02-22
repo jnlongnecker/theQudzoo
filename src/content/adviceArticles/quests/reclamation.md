@@ -2,6 +2,12 @@
 
 ---
 
+> <span class="centered"> < !---- Spoilers ahead ----! ></span>
+> <br>
+> <br>
+> <br>
+> <span class="centered">This is an endgame story quest guide, there WILL be spoilers ahead!</span>
+
 The Golem created successfully, it is time to ascend the Spindle with Barathrum. But hark, something stirs in the trees. Live and drink, mevyn.
 
 <div class="section-info">
@@ -58,12 +64,12 @@ Partway through the quest, the world will quake and you will receive a popup let
 
 The 6 naturally occurring Nephilim are the following:
 
--   Qas
--   Qon
--   Rermadon
--   Agolgot
--   Bethsaida
--   Shug'ruith
+- Qas
+- Qon
+- Rermadon
+- Agolgot
+- Bethsaida
+- Shug'ruith
 
 Each one has 4,000 HP, 60 in all resistances, and a special mutation called the Irisdual Beam, which is the primary gimmick of the Nephilim as a group. The Irisdual Beam is a special attack with a long cooldown that fires in 3 directions above 50% HP and 6 directions below 50% HP. There is 1 turn of windup for the beam before it fires, and at least 1 beam will target you directly. The beam does incredible damage if it connects and ignores DV and, to an extent, AV. The way the damage of the beam works is it has 7 damage types: Acid, Cold, Electric, Heat, Poison, Umbral and Cosmic. Umbral is the same damage type as Haggabah's hands, and Cosmic is the same damage type as a chrome pyramid's distortion field (melee attack). Umbral and Cosmic cannot be reduced in any way, but the other damage types absolutely can.
 
@@ -137,15 +143,15 @@ Rermadon's cradle is found on the Palladium Reef, while the chuppah of Qas and Q
 
 My suggested way of combing these places for the Nephilim is as follows:
 
--   Pick a parasang in the southern tip of the environment
--   Enter that parasang
--   Move south to the southern zone, then explore the southwest and southeast zones
-    -   When I say "explore", I mean only visit that zone and immediately return
--   Move back to the center zone
--   Explore the east and west zones
--   Move to the north zone
--   Explore the northeast and northwest zones
--   Move to the southern zone of the next parasang to the north
+- Pick a parasang in the southern tip of the environment
+- Enter that parasang
+- Move south to the southern zone, then explore the southwest and southeast zones
+    - When I say "explore", I mean only visit that zone and immediately return
+- Move back to the center zone
+- Explore the east and west zones
+- Move to the north zone
+- Explore the northeast and northwest zones
+- Move to the southern zone of the next parasang to the north
 
 As you do this, if you find the cradle of Rermadon or chuppah of Qas and Qon, you will receive a notification that you have done so and your search is complete. As you repeat this pattern, you will explore every single zone of every parasang in a north-to-south strip. Once you complete one strip, you move on to the next strip until you eventually find what you're looking for. In case this explanation was too confusing to follow, here's a video of the process (with god mode turned on for ease of demonstration):
 
@@ -167,12 +173,12 @@ If you find the cradle without finding the mouth, it will actually be deep under
 
 Once you kill a Nephilim, they give a buff to all the remaining Nephilim. Notably, if you pacify them instead they do not give this buff (pacification requires 1 dram of cloning draught to perform the water ritual and 200 reputation with the Girsh faction). Here are the buffs each Nephilim gives:
 
--   Agolgot: 4 limbs with the spotted claw natural weapon
--   Bethsaida: +50% HP
--   Rermadon: +80 to acid, electric, cold and heat resistance
--   Qas: +25 quickness
--   Qon: +25 quickness
--   Shug'ruith: +10 AV, +10 DV, omniphase
+- Agolgot: 4 limbs with the spotted claw natural weapon
+- Bethsaida: +50% HP
+- Rermadon: +80 to acid, electric, cold and heat resistance
+- Qas: +25 quickness
+- Qon: +25 quickness
+- Shug'ruith: +10 AV, +10 DV, omniphase
 
 Therefore, the order in which you defeat the Nephilim will change how difficult the remainder of the Nephilim are. There are many orders to suggest, but each one will be more or less effective depending on your build. We also must consider the possibility of pacifying Nephilim as well, but for my own sanity I'll be considering pacifying only 1 Nephilim due to how much reputation is necessary. It should go without saying, but if you are able to pacify more that's going to make things easier the more you can pacify rather than kill.
 
@@ -246,28 +252,28 @@ Ehalcodon additionally has all the buffs from prior Nephilim (even if pacified),
 
 Your general strategy should be the following:
 
--   Allow Ehalcodon to fire Irisdual Beam
--   Get close to Ehalcodon to force it to use Quantum Fugue
--   Kite around the clones, throwing grenades at any creshes that spawn
--   Dodge the Quantum Fugue enhanced Irisdual Beam
--   Wait for Quantum Fugue to expire
--   Attack Ehalcodon
--   Dodge Irisdual Beam
--   Attack Ehalcodon
--   Dodge Irisdual Beam
--   Attack Ehalcodon until qe uses Quantum Fugue
+- Allow Ehalcodon to fire Irisdual Beam
+- Get close to Ehalcodon to force it to use Quantum Fugue
+- Kite around the clones, throwing grenades at any creshes that spawn
+- Dodge the Quantum Fugue enhanced Irisdual Beam
+- Wait for Quantum Fugue to expire
+- Attack Ehalcodon
+- Dodge Irisdual Beam
+- Attack Ehalcodon
+- Dodge Irisdual Beam
+- Attack Ehalcodon until qe uses Quantum Fugue
 
 During this fight, you should make heavy use of grenades to supplement your damage. Plasma is especially helpful in allowing freeze grenades to work; carrying a spaser rifle can be quite handy in order to reapply the coated in plasma debuff. Flashbang grenades combined with MA targeting attacks can be absolutely devastating, but due to Ehalcodon's even better Willpower than other Nephilim it becomes a challenge to keep qem confused. Keep a healthy stockpile of urberries and salve injectors in order to sustain the damage that Ehalcodon will inevitably do, and keep in mind that you can always retreat to the world map to heal up in safety.
 
 Some additional things to consider:
 
--   You can use Force Wall in combination with a longreach grappling gun in order to quickly escape an Irisdual Beam path
--   You can use Force Wall and the space inverter to swap places with your wall to do the same, just less accurately
--   While walls often won't last long, the longreach grappling gun and space inverter can still help if there are walls on the screen
--   The longreach grappling gun can help close the distance to reduce travel time
--   A love injector can work against Ehalcodon, qe is not immune
--   Similarly, a flashbang + Beguiling can work
-    -   Ehalcodon is level 60, so you'll need to be relative in level for this to work
-    -   Beguililng can be gained by cooking with congealed love
--   While Ehalcodon _does_ have Regeneration 10 qe can only regenerate one limb at a time. Enough glazed weapons (dismember on hit) can still remove so many limbs so quickly that there may be turns where qe cannot attack, or at least not attack with the starprint hoof
--   If you can manage a {{plasma|coated in plasma}} debuff on Ehalcodon, you can disintegrate qem with enough heat (rocket skates, Pyrokinesis, Flaming Ray, flaming mod, thermal grenade mk III, etc)
+- You can use Force Wall in combination with a longreach grappling gun in order to quickly escape an Irisdual Beam path
+- You can use Force Wall and the space inverter to swap places with your wall to do the same, just less accurately
+- While walls often won't last long, the longreach grappling gun and space inverter can still help if there are walls on the screen
+- The longreach grappling gun can help close the distance to reduce travel time
+- A love injector can work against Ehalcodon, qe is not immune
+- Similarly, a flashbang + Beguiling can work
+    - Ehalcodon is level 60, so you'll need to be relative in level for this to work
+    - Beguililng can be gained by cooking with congealed love
+- While Ehalcodon _does_ have Regeneration 10 qe can only regenerate one limb at a time. Enough glazed weapons (dismember on hit) can still remove so many limbs so quickly that there may be turns where qe cannot attack, or at least not attack with the starprint hoof
+- If you can manage a {{plasma|coated in plasma}} debuff on Ehalcodon, you can disintegrate qem with enough heat (rocket skates, Pyrokinesis, Flaming Ray, flaming mod, thermal grenade mk III, etc)

@@ -2,6 +2,12 @@
 
 ---
 
+> <span class="centered"> < !---- Spoilers ahead ----! ></span>
+> <br>
+> <br>
+> <br>
+> <span class="centered">This is an endgame story quest guide, there WILL be spoilers ahead!</span>
+
 With Grit Gate secured, we finally meet the enigmatic leader of the Barathrumites, Barathrum himself. In order to further the goals of the enclave, he has tasked us with securing the assistance of a fungi who owes a favor. Live and drink, disciple.
 
 <div class="section-info">

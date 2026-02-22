@@ -2,6 +2,12 @@
 
 ---
 
+> <span class="centered"> < !---- Spoilers ahead ----! ></span>
+> <br>
+> <br>
+> <br>
+> <span class="centered">This is an endgame story quest guide, there WILL be spoilers ahead!</span>
+
 Having returned from Omonporch, we didn't come alone. A strange rumbling around the compound brings unwanted visitors, and we must now defend Grit Gate in its time of need. To Arms! Live and drink, journeyfriend.
 
 <div class="section-info">

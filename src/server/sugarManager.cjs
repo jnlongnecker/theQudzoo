@@ -391,7 +391,8 @@ function injectSpoiler(index, markdown) {
 	let text = markdown.substring(descriptionMark + 1, index);
 	let currToken = [];
 	currToken.push(`<span class="spoiler spoiler-background" title="${spoilerText}" onclick="this.classList.toggle('spoiler');">`);
-	currToken.push(runCompilation(text));
+	currToken.push(`<span class="spoiler-text">${spoilerText}</span>`);
+	currToken.push(`<span class="spoiler-content">${runCompilation(text)}</span>`);
 	currToken.push('</span>');
 
 	return {

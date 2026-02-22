@@ -221,6 +221,12 @@ video {
     align-items: center;
 }
 
+.centered {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
 #mobile-contents {
     display: none;
 }

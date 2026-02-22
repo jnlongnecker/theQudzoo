@@ -2,6 +2,12 @@
 
 ---
 
+> <span class="centered"> < !---- Spoilers ahead ----! ></span>
+> <br>
+> <br>
+> <br>
+> <span class="centered">This is an endgame story quest guide, there WILL be spoilers ahead!</span>
+
 The plan to the Spindle has gone slightly awry and now instead of the lifter, the plan is to ascend in the interior of a Golem of overwhelming power. In order to complete the construction of the behemoth, a strange variety of materials must be assembled. Live and drink, mevyn.
 
 <div class="section-info">
@@ -61,15 +67,15 @@ The atzmus is a severed body part from a random creature around Qud. If that cre
 
 One of the best atzmus was as I just mentioned: one of your own limbs. This is certainly the easiest and most reliable atzmus to get, however the problem is that the mutation you get is random and if you are a true kin, this is likely not a viable option for you for obvious reasons. Curiously enough, there are actually not many powerful atzmus available, so I'll list out some of the more interesting options:
 
--   Wings 10 from giant dragonfly, white esh or adiyy
--   Horns 15 from unimax
--   Regeneration 20 from star kraken
--   Carapace 15 or Spacetime Vortex from n-dimensional starshell
--   Temporal Fugue 7 or Electrical Generation 10 from quatravolt glider
--   Temporal Fugue 14 or Teleportation 1 from cyclopean gibbon
--   Random 4 level 9-12 physical mutations from gyre wight apotheote
--   Two-headed from two-headed boars and two-headed slugsnouts
--   Plasma Emission from plasma jelly
+- Wings 10 from giant dragonfly, white esh or adiyy
+- Horns 15 from unimax
+- Regeneration 20 from star kraken
+- Carapace 15 or Spacetime Vortex from n-dimensional starshell
+- Temporal Fugue 7 or Electrical Generation 10 from quatravolt glider
+- Temporal Fugue 14 or Teleportation 1 from cyclopean gibbon
+- Random 4 level 9-12 physical mutations from gyre wight apotheote
+- Two-headed from two-headed boars and two-headed slugsnouts
+- Plasma Emission from plasma jelly
 
 To me, Carapace in particular is quite interesting as the AV increase makes our overwhelming death machine even harder to damage, but we unfortunately don't get high level Carapace guaranteed from any creature. The highest level guaranteed Carapace is found from the great saltback, and that's only level 5 Carapace. Two-headed is also one that should be heavily considered; it's a fantastic mutation to combat Qon specifically so if you don't have a good way of killing her it may be a good idea to take that mutation for your Golem just in case.
 
@@ -85,11 +91,11 @@ Axes by contrast have a lot of their benefit reduced due to the raw damage outpu
 
 Chances are fairly high that you already have most if not all the incantations possible from simply playing the game. There are some clear options for me to choose from that I'll point out here.
 
--   +6 Levels: falling in/out of love or witnessing a pentasludge or stronger
--   4 random pieces of gigantic armor: reading a white or relic book
--   +15 paired quickness: Most quest completions
--   Legendary kill: +10% critical hit chance
--   +12 levels, -10 Ego: Completing Fraying Favorites
+- +6 Levels: falling in/out of love or witnessing a pentasludge or stronger
+- 4 random pieces of gigantic armor: reading a white or relic book
+- +15 paired quickness: Most quest completions
+- Legendary kill: +10% critical hit chance
+- +12 levels, -10 Ego: Completing Fraying Favorites
 
 Even though I list multiple here as interesting, the +6 levels is pretty clearly the winner in my eyes. Not only do you get 6 levels of increased HP, but also 6 mutations points, a rapid advancement, +1 to all attributes and 6 levels worth of skill points. Pretty tough to beat for sure. The only competition is the +12 levels from completing the Fraying Favorites quest, which does take some time in order to complete. It's a good quest to do anyways, so if you happen to have done it or are willing to take the time it's definitely the better option. Unless you are for some reason trying to make an Esper golem work, Ego is useless on a golem so it's a free trade.
 
@@ -97,9 +103,9 @@ Even though I list multiple here as interesting, the +6 levels is pretty clearly
 
 Again, chances are you have the hamsa already that you'd want to use, but you've got a fairly overwhelming wealth of options here. I'll list off some of my favorites.
 
--   A beaded bracelet / armor piece: +6 AV
--   Melee Weapon: 15% lower melee action cost
--   Fix-It spray foam or Book: 800 skill points
+- A beaded bracelet / armor piece: +6 AV
+- Melee Weapon: 15% lower melee action cost
+- Fix-It spray foam or Book: 800 skill points
 
 Yeah, not too much super interesting to me here. I like the survivability of the AV since more often than not I don't have much (if any) armor on my Golem. You shouldn't have to go searching for anything here.
 
@@ -171,13 +177,13 @@ Not only do pools of this liquid appear after the death of a zero jell, there ar
 
 Our final threat, and easily the most dangerous: the infamous chrome pyramid. If you are somehow unacquainted, here is what you can look forward to:
 
--   Quickly regenerating Force Bubble that is always on
--   A swarm rack, which is a missile shotgun
--   Ability to assemble missiles when out
--   4,000 HP
--   35 AV
--   A high accuracy, extremely deadly melee attack with an unavoidable damage type
--   The ability to teleport, just in case you thought you could run
+- Quickly regenerating Force Bubble that is always on
+- A swarm rack, which is a missile shotgun
+- Ability to assemble missiles when out
+- 4,000 HP
+- 35 AV
+- A high accuracy, extremely deadly melee attack with an unavoidable damage type
+- The ability to teleport, just in case you thought you could run
 
 There is a lot that I could say here in regards to how you should kill one, but in all honesty you shouldn't really try and kill these unless it becomes a matter of pride. Instead, you should focus on escaping as quickly as possible. This is easier said than done as the chrome pyramid is capable of Teleportation, but luckily for us it is still a robot and suffers from the universal weakness of all robots: EMP. Make sure you have a few EMP grenade mk III in reserve for your escape, as the first may only be enough to get it to burn its Teleportation cooldown. Additionally, if you must endure a turn or two where it can fire on you, make sure you are not next to any terrain and you stand as far as possible from it so the spray of missiles hits you as little as possible. Alternatively, having 25 DV and the Swift Reflexes skill makes it so the missiles will _never_ contact you, allowing you to move in safety as long as they don't explode on nearby terrain.
 
