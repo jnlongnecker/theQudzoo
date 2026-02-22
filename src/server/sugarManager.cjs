@@ -259,39 +259,16 @@ function checkMatches(currToken, markdown, i) {
 
 		// If this was a perfect match, mark it as the match
 		if (index + wordModifier.length === tokenLen && index === sugarObj.name.length) {
-			let puncMods = calculatePunctuationModifiers(i, markdown, tokenLen);
 			let resultObj = {
 				match: sugarObj,
-				start: i - tokenLen - puncMods.startOffset, end: i + puncMods.endOffset,
-				injectionMarkup: puncMods.prefix + buildInjectionMarkup(sugarObj, wordModifier, capitalize) + puncMods.suffix
+				start: i - tokenLen, end: i,
+				injectionMarkup: buildInjectionMarkup(sugarObj, wordModifier, capitalize)
 			};
 			perfectMatch = resultObj;
 		}
 	}
 
 	return { matches, perfectMatch };
-}
-
-function calculatePunctuationModifiers(i, markdown, tokenLen) {
-	let prefix = '';
-	let suffix = '';
-	let startOffset = 0;
-	let endOffset = 0;
-	let startIdx = i - tokenLen - 1;
-	// Test if this term is preceeded by acceptable punctuation
-	if (markdown[startIdx]?.trim() && !/[>\{\}]/.test(markdown[startIdx])) {
-		prefix = `<span class="nowrap">${markdown[startIdx]}`;
-		startOffset = 1;
-	}
-	// Test if this term is succeeded by acceptable punctuation
-	if (markdown[i]?.trim() && !/[<\{\}]/.test(markdown[i])) {
-		suffix = `${markdown[i]}</span>`;
-		endOffset = 1;
-	}
-	// Cover bases if the term had punctuation on only one side to not drop any spans
-	if (prefix.length > 0 && suffix.length === 0) suffix = "</span>"
-	if (prefix.length === 0 && suffix.length > 0) prefix = '<span class="nowrap">';
-	return { prefix, suffix, startOffset, endOffset };
 }
 
 const correctedDir = '/icons/';
@@ -318,7 +295,29 @@ function buildInjectionMarkup(sugarObj, wordModifier, capitalize) {
 		name = name.substring(0, i) + capital + name.substring(i + 1);
 	}
 
-	return `${sugarObj.prefix}${formatAll(0, name, false)}${sugarObj.suffix}`;
+	let innerMarkup = formatAll(0, name, false);
+	let markupParts = innerMarkup.split(' ');
+	let preParts = [];
+	let postParts = [];
+	let splitCount = 0;
+	for (let part of markupParts) {
+		if (splitCount > 1) {
+			postParts.push(part);
+			continue;
+		}
+		if (part.startsWith('class="')) {
+			preParts.push(part);
+			continue;
+		}
+		splitCount++;
+		if (splitCount === 1) preParts.push(part);
+		else postParts.push(part);
+	}
+	const preMarkup = preParts.join(' ') + '</span> ';
+	const postMarkup = postParts.join(' ');
+	innerMarkup = preMarkup + postMarkup;
+
+	return `${sugarObj.prefix}${innerMarkup.trim()}${sugarObj.suffix}`;
 }
 
 function skipIgnoredMarkdown(index, markdown) {
@@ -434,17 +433,14 @@ function formatString(index, markdown, preservePunctuation = true) {
 	}
 
 	let puncResult = { startOffset: 0, endOffset: 0, prefix: '', suffix: '' };
-	// Detect if punctuation surrounds this term and add nowrap if so
-	if (preservePunctuation) {
-		puncResult = calculatePunctuationModifiers(index + 2, markdown, index + 2 - start);
-	}
+
 	// Apply the shader
 	currToken = shader.apply(currToken);
 	return {
 		didFormat: true,
-		start: start - puncResult.startOffset,
-		end: index + 2 + puncResult.endOffset,
-		injectionMarkup: puncResult.prefix + currToken.join('') + puncResult.suffix
+		start: start,
+		end: index + 2,
+		injectionMarkup: currToken.join('')
 	};
 }
 

@@ -10,11 +10,11 @@ First, the mechanic. From <span class="injected"><span class="Y">-249</span></sp
 
 From <span class="injected"><span class="r">-599</span></span> to <span class="injected"><span class="r">-250</span></span> reputation, you are <span class="injected"><span class="r">disliked</span></span> by that faction. Docile creatures will still not attack you unless provoked, but neutral enemies will attack you. The vast majority of "enemy" factions start off in this range, like Robots and Seekers of the Sightless Way. Very few creatures are docile, so for nearly all factions you want to be out of this range as soon as possible.
 
-Anything beyond <span class="injected"><span class="R">-600</span></span> reputation and you are <span class="injected"><span class="R">despised</span></span> by that faction. Everything from that faction will attack you on sight. There is very little functional difference between being <span class="injected"><span class="R">despised</span></span> and <span class="nowrap"><span class="injected"><span class="r">disliked</span></span>,</span> so if you are not planning on becoming at least <span class="injected"><span class="Y">neutral</span></span> with that faction at some point, just let your reputation here drop as much as you like.
+Anything beyond <span class="injected"><span class="R">-600</span></span> reputation and you are <span class="injected"><span class="R">despised</span></span> by that faction. Everything from that faction will attack you on sight. There is very little functional difference between being <span class="injected"><span class="R">despised</span></span> and <span class="injected"><span class="r">disliked</span></span>, so if you are not planning on becoming at least <span class="injected"><span class="Y">neutral</span></span> with that faction at some point, just let your reputation here drop as much as you like.
 
 From <span class="injected"><span class="g">250</span></span> to <span class="injected"><span class="g">599</span></span> reputation, you are <span class="injected"><span class="g">favored</span></span> by that faction. All creatures from that faction will not attack you unless provoked. In most cases, going to this point is just unnecessary as it isn't functionally different from being <span class="injected"><span class="Y">neutral</span></span> but for factions like Flowers and Winged Mammals, this level of investment is necessary as the standout members are aggressive. Being at this level also allows you to enter holy sites of that faction without provoking them, but only Apes, Baboons, Mechanimists, Gyre Wights and Cult factions actually have holy sites to begin with.
 
-Anything beyond <span class="injected"><span class="G">600</span></span> reputation and you are <span class="injected"><span class="G">revered</span></span> by that faction. Members will actively attack creatures that attack you and will not immediately turn hostile if you attack an ally of theirs. This is quite the difficult level to attain and is usually not worth the investment. For most factions, there isn't anything worth noting besides the above. However, it's worth a mention that if you're <span class="injected"><span class="G">revered</span></span> by the Consortium of Phyta, you can just command <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Creatures/Asphodel.png" /></span><span class="object">Asphodel</span></span> to lease control of the Spindle instead of suffering any reputation penalties from that quest.
+Anything beyond <span class="injected"><span class="G">600</span></span> reputation and you are <span class="injected"><span class="G">revered</span></span> by that faction. Members will actively attack creatures that attack you and will not immediately turn hostile if you attack an ally of theirs. This is quite the difficult level to attain and is usually not worth the investment. For most factions, there isn't anything worth noting besides the above. However, it's worth a mention that if you're <span class="injected"><span class="G">revered</span></span> by the Consortium of Phyta, you can just command <span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Creatures/Asphodel.png" /></span>Asphodel</span></span></span> to lease control of the Spindle instead of suffering any reputation penalties from that quest.
 
 In addition to these mechanics, having a higher reputation will result in you having better prices with the merchants of that faction while lower reputation will result in you having worse prices.
 
@@ -34,7 +34,7 @@ Antelopes
 
 Birds
 
-<span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Creatures/Cannibal.png" /></span><span class="object">Cannibals</span></span>
+<span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Creatures/Cannibal.png" /></span>Cannibals</span></span></span>
 
 Children of Mamon
 
@@ -52,7 +52,7 @@ Newly Sentient Beings
 
 Roots
 
-<span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Creatures/Snapjaw.png" /></span><span class="object">Snapjaws</span></span>
+<span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Creatures/Snapjaw.png" /></span>Snapjaws</span></span></span>
 
 Succulents
 
@@ -70,9 +70,9 @@ These factions are not completely inconsequential, but are generally weaker than
 
 Arachnids
 
-<span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Creatures/Baboon.png" /></span><span class="object">Baboons</span></span>
+<span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Creatures/Baboon.png" /></span>Baboons</span></span></span>
 
-<span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Creatures/Bear.png" /></span><span class="object">Bears</span></span>
+<span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Creatures/Bear.png" /></span>Bears</span></span></span>
 
 Cats
 
@@ -116,7 +116,7 @@ These factions will start off <span class="injected"><span class="Y">neutral</sp
 
 Apes
 
-<span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Baetyl.png" /></span><span class="object"><span class="injected"><span class="G">Baetyls</span></span></span></span>
+<span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Items/Baetyl.png" /></span><span class="injected"><span class="G">Baetyls</span></span></span></span></span>
 
 Barathrumites
 
@@ -124,7 +124,7 @@ Cult of the Coiled Lamb
 
 Denizens of the Yd Freehold
 
-<span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Creatures/Dromad.png" /></span><span class="object">Dromad</span></span> Merchants
+<span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Creatures/Dromad.png" /></span>Dromad</span></span></span> Merchants
 
 Fungi
 
@@ -182,13 +182,13 @@ Winged Mammals
 
 ### High Priority
 
-Factions in this group you should go out of your way in order to improve. Search out legendary creatures in order to improve your faction relations at every possible opportunity. Use <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/LoveTonic.png" /></span><span class="object"><span class="injected"><span class="Y">l</span><span class="R">o</span><span class="Y">v</span><span class="Y">e</span></span> injectors</span></span> to water ritual these legendary creatures if they are aggressive to you.
+Factions in this group you should go out of your way in order to improve. Search out legendary creatures in order to improve your faction relations at every possible opportunity. Use <span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Items/LoveTonic.png" /></span><span class="injected"><span class="Y">l</span><span class="R">o</span><span class="Y">v</span><span class="Y">e</span></span></span> injectors</span></span> to water ritual these legendary creatures if they are aggressive to you.
 
 <div class="section-info">
 
 Fish
 
-<span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Terrain/Flowers.png" /></span><span class="object">Flowers</span></span>
+<span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Terrain/Flowers.png" /></span>Flowers</span></span></span>
 
 Insects
 
@@ -202,7 +202,7 @@ Unshelled Reptiles
 
 ### Critical Priority
 
-Factions here are so important you should increase reputation with them in every way possible. These factions are prime candidates for a <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/FactionDeed.png" /></span><span class="object">Schrodinger page from the <span class="injected"><span class="K">Annals of Qud</span></span></span></span> and you should seek out any and all improvements you find. Avoid decreasing reputation at all costs, even forsaking powerful gear in order to avoid lowering reputation.
+Factions here are so important you should increase reputation with them in every way possible. These factions are prime candidates for a <span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Items/FactionDeed.png" /></span>Schrodinger</span> page from the <span class="injected"><span class="K">Annals of Qud</span></span></span></span> and you should seek out any and all improvements you find. Avoid decreasing reputation at all costs, even forsaking powerful gear in order to avoid lowering reputation.
 
 <div class="section-info">
 
@@ -216,7 +216,7 @@ Seekers of the Sightless Way
 
 ### Mechanimists
 
-If you paid close attention, you'll have noticed that the Mechanimists are not listed in any of the groups. This faction falls in its own special category since you can improve your reputation through offering artifacts, which is **far** easier than scouring the map for legendary creatures. Post Bethesda Susa, your reputation here doesn't matter very much as long as you keep it at least <span class="nowrap"><span class="injected"><span class="Y">neutral</span></span>.</span> In fact, since legendary Mechanimists will hold <span class="nowrap"><span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/NectarTonic.png" /></span><span class="object"><span class="injected"><span class="Y">E</span><span class="Y">a</span><span class="M">t</span><span class="Y">e</span><span class="Y">r</span><span class="Y">s</span><span class="Y">'</span></span> <span class="injected"><span class="W">n</span><span class="w">e</span><span class="g">c</span><span class="G">t</span><span class="W">a</span><span class="w">r</span></span> injectors</span></span>,</span> there is very good reason to kill legendary members and just accept the hit to your reputation. Just be sure you'll stay <span class="injected"><span class="Y">neutral</span></span> so that you can boost yourself out of the danger zone without being swarmed by angry priests.
+If you paid close attention, you'll have noticed that the Mechanimists are not listed in any of the groups. This faction falls in its own special category since you can improve your reputation through offering artifacts, which is **far** easier than scouring the map for legendary creatures. Post Bethesda Susa, your reputation here doesn't matter very much as long as you keep it at least <span class="injected"><span class="Y">neutral</span></span>. In fact, since legendary Mechanimists will hold <span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Items/NectarTonic.png" /></span><span class="injected"><span class="Y">E</span><span class="Y">a</span><span class="M">t</span><span class="Y">e</span><span class="Y">r</span><span class="Y">s</span><span class="Y">'</span></span></span> <span class="injected"><span class="W">n</span><span class="w">e</span><span class="g">c</span><span class="G">t</span><span class="W">a</span><span class="w">r</span></span> injectors</span></span>, there is very good reason to kill legendary members and just accept the hit to your reputation. Just be sure you'll stay <span class="injected"><span class="Y">neutral</span></span> so that you can boost yourself out of the danger zone without being swarmed by angry priests.
 
 ## Target Reputation
 

@@ -34,15 +34,15 @@ These are the most helpful and most-used keybinds for you to be familiar with.
 
 ## Adventuring
 
--   <span class="injected"><span class="stat-container"><img class="inline-icon" src="/icons/Text/armorValue.png" /></span><span class="stat">AV</span></span> = Armor Value, reduces damage when hit by normal weapons
--   <span class="injected"><span class="stat-container"><img class="inline-icon" src="/icons/Text/dodgeValue.png" /></span><span class="stat">DV</span></span> = Dodge Value, avoids damage entirely
--   <span class="injected"><span class="stat">MA</span></span> = Mental Armor, reduces damage from mental attacks
+-   <span class="injected"><span class="stat"><span class="nowrap"><span class="stat-container"><img class="inline-icon" src="/icons/Text/armorValue.png" /></span>AV</span></span></span> = Armor Value, reduces damage when hit by normal weapons
+-   <span class="injected"><span class="stat"><span class="nowrap"><span class="stat-container"><img class="inline-icon" src="/icons/Text/dodgeValue.png" /></span>DV</span></span></span> = Dodge Value, avoids damage entirely
+-   <span class="injected"><span class="stat"><span class="nowrap">MA</span></span></span> = Mental Armor, reduces damage from mental attacks
 -   QN = Quickness, higher means you do stuff faster
 -   MS = Move Speed, higher means move actions are faster
 
 ---
 
--   Try to hit 8 <span class="injected"><span class="stat-container"><img class="inline-icon" src="/icons/Text/armorValue.png" /></span><span class="stat">AV</span></span>
+-   Try to hit 8 <span class="injected"><span class="stat"><span class="nowrap"><span class="stat-container"><img class="inline-icon" src="/icons/Text/armorValue.png" /></span>AV</span></span></span>
 -   Try to keep <span class="attribute intelligence">128 - 194 drams</span> of water
 -   1 parasang = 9 zones
 -   1 world map tile = 1 parasang
@@ -53,7 +53,7 @@ These are the most helpful and most-used keybinds for you to be familiar with.
 -   Avoid <span class="attribute strength">Very Tough</span> or harder creatures
 -   Don't be afraid to run away
 -   Always keep a ranged weapon equipped
--   Keep a <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Items/Blank Recoiler.png" /></span><span class="object"><span class="injected"><span class="Y">recoiler</span></span></span></span> on you
+-   Keep a <span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Items/Blank Recoiler.png" /></span><span class="injected"><span class="Y">recoiler</span></span></span></span></span> on you
 -   Health ranges: `Badly Wounded` > `Wounded` > `Injured` > `Fine` > `Perfect`
 -   Selling for 4x an items weight is "weight efficient"
 
@@ -88,7 +88,7 @@ A simplified view of factions and reputation at your convenience.
 -   Robots
 -   Seekers of the Sightless Way
 -   Fish
--   <span class="injected"><span class="icon-container"><img class="inline-icon" src="/icons/Terrain/Flowers.png" /></span><span class="object">Flowers</span></span>
+-   <span class="injected"><span class="object"><span class="nowrap"><span class="icon-container">&nbsp;&nbsp;<img class="inline-icon" src="/icons/Terrain/Flowers.png" /></span>Flowers</span></span></span>
 -   Insects
 -   Svardym
 

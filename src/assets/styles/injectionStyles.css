@@ -7,13 +7,22 @@
 }
 
 .injected {
-    white-space: pre;
     font-family: var(--qud-font);
     font-weight: 700;
-    max-width: 100%;
-    position: relative;
-    display: inline-block;
     vertical-align: top;
+    border: solid 4px transparent;
+}
+
+.injected:hover {
+    background-color: var(--bg-color-dark);
+    border: solid 4px var(--bg-color-dark);
+    border-radius: 5px;
+}
+
+.injected:hover .injected,
+.injected .injected,
+.injected .injected:hover {
+    border: none;
 }
 
 .spoiler-text {
@@ -41,38 +50,14 @@
 .spoiler-background {
     position: relative;
     max-width: 100%;
-    display: inline-block;
     vertical-align: top;
-}
-
-.spoiler-background::before {
-    position: absolute;
-    content: "";
-    z-index: -1;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
     background-color: var(--bg-color-dark);
-    outline: solid 4px var(--bg-color-dark);
+    border: solid 4px var(--bg-color-dark);
     border-radius: 5px;
 }
 
 .spoiler-background:hover {
     cursor: pointer;
-}
-
-.injected:hover::before {
-    position: absolute;
-    content: "";
-    z-index: -1;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: var(--bg-color-dark);
-    outline: solid 4px var(--bg-color-dark);
-    border-radius: 5px;
 }
 
 .misc {
@@ -143,8 +128,6 @@
 }
 
 .icon-container {
-    display: inline-block;
-    min-width: 16px;
     height: 1rem;
     position: relative;
     margin-right: 2px;

@@ -138,7 +138,7 @@ If your build is flowing well; you're survivable and your combat feels good, sta
 
 ## Tier 4 - Point Spread
 
-During your run, you will have a number of points to use to improve your character. For true kin, this is solely attribute points as cybernetics by their nature are flexible and dynamic. Cybernetics should be adopted as part or support of of the strategy of the build. For mutants, the point spread is both attribute points and mutation points.
+During your run, you will have a number of points to use to improve your character. For true kin, this is solely attribute points as cybernetics by their nature are flexible and dynamic. Cybernetics should be adopted as part or support of the strategy of the build. For mutants, the point spread is both attribute points and mutation points.
 
 ### Attribute Points
 
@@ -178,11 +178,11 @@ While having high AV can potentially net you invulnerability to _conventional_ a
 
 #### Counters to AV
 
--   Elemental damage (oozes)
--   Explosions (robots)
--   Vibro weapons (saw-hander, ickslugs)
--   On-Hit effects (stun)
--   Penetrating Strikes
+- Elemental damage (oozes)
+- Explosions (robots)
+- Vibro weapons (saw-hander, ickslugs)
+- On-Hit effects (stun)
+- Penetrating Strikes
 
 ### Dodge Value (DV)
 
@@ -200,12 +200,12 @@ Critical hits are the obvious bane for a DV build. However, it's not the only on
 
 #### Counters to DV
 
--   Abilities that always hit (sting, Hook and Drag)
--   Explosions (robots)
--   Breath weapons (unshelled reptiles)
--   Status conditions (stunned, stuck, frozen, etc)
--   Critical hits
--   High to-hit bonuses (cherubim, chrome pyramid)
+- Abilities that always hit (sting, Hook and Drag)
+- Explosions (robots)
+- Breath weapons (unshelled reptiles)
+- Status conditions (stunned, stuck, frozen, etc)
+- Critical hits
+- High to-hit bonuses (cherubim, chrome pyramid)
 
 ## Build Conclusions
 
