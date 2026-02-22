@@ -158,7 +158,7 @@ As you do this, if you find the cradle of Rermadon or chuppah of Qas and Qon, yo
 ---
 
 <video controls>
-    <source src="/1/asset/s/latest/public/assets/images/reclamation/combing.mp4" type="video/mp4">
+    <source src="/assets/images/reclamation/combing.mp4" type="video/mp4">
 </video>
 
 ### Shug'ruith the Burrower
@@ -228,7 +228,7 @@ The confused effect does 2 very helpful things: it will lower DV and lower MA si
 
 If you have a high Ego score, consider gathering some psionic weapons from arch dervishes. Not only will the Nephilim be confused and unable to retaliate properly, but you will also be doing incredible damage as you will easily be able to penetrate 11+ times per hit. The primary weakness to this build is that the Nephilim also have the Iron Mind skill, which allows them to somewhat reliably remove the confused effect on them so you'll have to come with a healthy amount of flashbang grenades for this strategy. If you don't have a high Ego score, not to worry because the Nephilim do.
 
-In the If, Then, Else quest, if you kill Tau-No after she gifts you the crystalline halo, it will turn into the crystalline jile. The jile is a unique Short Blade that targets MA using the _target's Ego_ to determine PV. This means you can have 1 Ego and still gain great benefit from this weapon against creatures that have high Ego scores themselves and our Nephilim fall within this category. The flashbang will reduce their Ego by a bit, so it will always be better to use psionic weapons instead and have high (34+) Ego but this method will still easily net 100+ damage _per hit_ of the jile. Combine this with Multiweapon Fighting and Jab after duplicating the jile with metamorphic polygel and you will be ripping through the Nephilim.
+In the If, Then, Else quest, if you kill Tau-No-Longer after she gifts you the crystalline halo, it will turn into the crystalline jile. The jile is a unique Short Blade that targets MA using the _target's Ego_ to determine PV. This means you can have 1 Ego and still gain great benefit from this weapon against creatures that have high Ego scores themselves and our Nephilim fall within this category. The flashbang will reduce their Ego by a bit, so it will always be better to use psionic weapons instead and have high (34+) Ego but this method will still easily net 100+ damage _per hit_ of the jile. Combine this with Multiweapon Fighting and Jab after duplicating the jile with metamorphic polygel and you will be ripping through the Nephilim.
 
 As mentioned, a lot of the trouble with flashbang grenades is that the confusion is often removed by the Nephilim with their Iron Mind skill. If you use zigzag fangs, they have a 15% chance of applying confused albiet at a lower power than a flashbang grenade mk III. It still is a powerful enough effect to do incredible amounts of damage, but the added benefit is that it is applied on hit and is a Short Blade. This means it benefits from Jab and you can improve your chance of applying confused by wearing precision nanon fingers. With this strategy, you are able to do tons of damage and keep the Nephilim locked down in confusion, resulting in you taking basically zero damage.
 
