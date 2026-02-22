@@ -172,11 +172,15 @@
 .thumb-up {
     fill: var(--willpower-color);
     top: 2px;
+    display: inline-block;
+    max-width: 16px;
 }
 
 .thumb-down {
     fill: var(--qudzoo-color);
     top: 2px;
+    display: inline-block;
+    max-width: 16px;
 }
 
 .r,
