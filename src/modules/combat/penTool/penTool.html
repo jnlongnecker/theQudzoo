@@ -1,21 +1,20 @@
 <template>
-    <section>
-        <form>
-            <div class="form-section">
-                <label><span class="stat pv">PV</span> (displayed)</label>
-                <input-number onchange={updatePV} value={pv}></input-number>
-            </div>
-            <div class="form-section">
-                <label>
-                    <img class="inline-icon"
-                        src="/1/asset/s/latest/public/assets/corrected/Textures/Text/armorValue.png">
-                    <span class="stat">AV</span> (displayed)</label>
-                <input-number onchange={updateAV} value={av}></input-number>
-            </div>
-        </form>
-        <div class="result-section">
-            <h2>: expected penetrations :</h2>
-            <p class="result">{result}</p>
-        </div>
-    </section>
+	<section>
+		<form>
+			<div class="form-section">
+				<label><span class="stat pv">PV</span> (displayed)</label>
+				<input-number onchange={updatePV} value={pv}></input-number>
+			</div>
+			<div class="form-section">
+				<label>
+					<img class="inline-icon" src="/assets/images/Textures/Text/armorValue.png">
+					<span class="stat">AV</span> (displayed)</label>
+				<input-number onchange={updateAV} value={av}></input-number>
+			</div>
+		</form>
+		<div class="result-section">
+			<h2>: expected penetrations :</h2>
+			<p class="result">{result}</p>
+		</div>
+	</section>
 </template>
